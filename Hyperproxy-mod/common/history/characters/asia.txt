@@ -1,0 +1,35 @@
+﻿CHARACTERS = {
+	c:CHI ?= {
+		create_character = {
+		# Mao Zedong
+			first_name = "Mao"
+			last_name = "Zedong"
+			culture = han
+			historical = yes
+			ig_leader = yes
+			ruler = yes
+			age = 77
+			interest_group = ig_revsoc
+			ideology = ideology_vanguardist
+			traits = {
+			}
+		}
+	}
+	c:JAP ?= {
+		create_character = {
+		# Eisaku Sato
+			first_name = "Eisaku"
+			last_name = "Sato"
+			culture = japanese
+			historical = yes
+			ig_leader = yes
+			ruler = yes
+			age = 69
+			interest_group = ig_cons
+			ideology = ig_royalist
+			traits = {
+			}
+		}
+
+	}	
+}

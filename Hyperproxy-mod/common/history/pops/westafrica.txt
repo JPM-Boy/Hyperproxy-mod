@@ -1,0 +1,316 @@
+﻿POPS = {
+	s:STATE_SENEGAL = {
+		region_state:JLF = {
+			create_pop = {
+				culture = west_nigritic
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_GAMBIA = {
+		region_state:BND = {
+			create_pop = {
+				culture = west_nigritic
+				size = 600000
+			}
+		}
+		region_state:SRR = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1000000
+			}
+		}
+		region_state:KBU = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1000000
+			}
+		}
+		region_state:BSS = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_GUINEA = {
+		region_state:FTJ = {
+			create_pop = {
+				culture = west_nigritic
+				size = 2000000
+			}
+		}
+		region_state:MDK = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1000000
+			}
+		}
+		region_state:SSU = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_SIERRA_LEONE = {
+		region_state:SIL = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1500000
+			}
+		}
+		region_state:KNM = {
+			create_pop = {
+				culture = west_nigritic
+				size = 1500000
+			}
+		}
+	}
+	s:STATE_LIBERIA = {
+		region_state:LIB = {
+			create_pop = {
+				culture = west_nigritic
+				size = 2000000
+			}
+		}
+	}
+	s:STATE_EASTERN_MALI = {
+		region_state:MAL = {
+			create_pop = {
+				culture = west_nigritic
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_WESTERN_MALI = {
+		region_state:MAL = {
+			create_pop = {
+				culture = west_nigritic
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_VOLTA = {
+		region_state:MOS = {
+			create_pop = {
+				culture = east_nigritic
+				size = 6000000
+			}
+		}
+	}
+	s:STATE_WINDWARD_COAST = {
+		region_state:KBD = {
+			create_pop = {
+				culture = east_nigritic
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_IVORY_COAST = {
+		region_state:AYI = {
+			create_pop = {
+				culture = east_nigritic
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_GHANA = {
+		region_state:ASH = {
+			create_pop = {
+				culture = east_nigritic
+				size = 6000000
+			}
+		}
+		region_state:KNG = {
+			create_pop = {
+				culture = east_nigritic
+				size = 5000000
+			}
+		}
+	}
+	s:STATE_TOGO = {
+		region_state:EWE = {
+			create_pop = {
+				culture = east_nigritic
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_DAHOMEY = {
+		region_state:DAH = {
+			create_pop = {
+				culture = east_nigritic
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_HAUSALAND = {
+		region_state:SOK = {
+			create_pop = {
+				culture = hausa
+				size = 10000000
+			}
+		}
+	}
+	s:STATE_EAST_HAUSALAND = {
+		region_state:SOK = {
+			create_pop = {
+				culture = hausa
+				size = 10000000
+			}
+		}
+	}
+	s:STATE_BORNU = {
+		region_state:SOK = {
+			create_pop = {
+				culture = hausa
+				size = 3500000
+			}
+		}
+	}
+	s:STATE_YORUBA_STATES = {
+		region_state:SOK = {
+			create_pop = {
+				culture = east_nigritic
+				size = 10000000
+			}
+		}
+	}
+	s:STATE_BENIN = {
+		region_state:SOK = {
+			create_pop = {
+				culture = east_nigritic
+				size = 10000000
+			}
+		}
+	}
+	s:STATE_NIGERIA = {
+		region_state:SOK = {
+			create_pop = {
+				culture = east_nigritic
+				size = 10000000
+			}
+		}
+	}
+	s:STATE_NIGER_DELTA = {
+		region_state:IBO = {
+			create_pop = {
+				culture = east_nigritic
+				size = 13000000
+			}
+		}
+	}
+	s:STATE_NORTH_CAMEROON = {
+		region_state:IBO = {
+			create_pop = {
+				culture = east_nigritic
+				size = 2000000
+			}
+		}
+		region_state:BMM = {
+			create_pop = {
+				culture = east_nigritic
+				size = 500000
+			}
+		}
+		region_state:BRG = {
+			create_pop = {
+				culture = east_nigritic
+				size = 1250000
+			}
+		}
+	}
+	s:STATE_WADDAI = {
+		region_state:BOR = {
+			create_pop = {
+				culture = fur
+				size = 1000000
+			}
+		}
+		region_state:WAD = {
+			create_pop = {
+				culture = fur
+				size = 1000000
+			}
+		}
+		region_state:BGI = {
+			create_pop = {
+				culture = fur
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_UBANGI_SHARI = {
+		region_state:ZND = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 1000000
+			}
+		}
+		region_state:DAK = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 1000000
+			}
+		}
+		region_state:DLA = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_SOUTH_CAMEROON = {
+		region_state:OYO = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 5000000
+			}
+		}
+		region_state:BMM = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 1000000
+			}
+		}
+		region_state:BEN = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 250000
+			}
+		}
+	}
+	s:STATE_GABON = {
+		region_state:BEN = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 800000
+			}
+		}
+		region_state:BMM = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 100000
+			}
+		}
+		region_state:LNG = {
+			create_pop = {
+				culture = equatorial_bantu
+				size = 600000
+			}
+		}
+	}
+	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
+		region_state:GBR = {
+			create_pop = {
+				culture = french
+				size = 100000
+			}
+			create_pop = {
+				culture = british
+				size = 100000
+			}
+		}
+	}
+}

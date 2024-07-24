@@ -1,0 +1,26 @@
+﻿french_investors_accepted = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 3
+}
+
+french_investors_rejected = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -3
+}
+
+french_hippie_communism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_approval_add = 3
+}
+
+french_media = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 3
+	interest_group_pop_attraction_mult = 0.15
+}
+
+british_media = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_approval_add = 3
+    interest_group_pop_attraction_mult = 0.15
+}

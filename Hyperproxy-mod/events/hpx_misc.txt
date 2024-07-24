@@ -1,0 +1,51 @@
+﻿namespace = hpx_misc
+
+
+hpx_misc.1 = { # Lore
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/unspecific_politicians_arguing.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	title = hpx_misc.1.t
+	desc = hpx_misc.1.d 
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				desc = hpx_misc.1.f.RUS
+				trigger = {
+					exists = c:RUS
+					THIS = c:RUS
+				}
+			}
+			triggered_desc = {
+				desc = hpx_misc.1.f.council_republic
+				trigger = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			triggered_desc = {
+				desc = hpx_misc.1.f
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	duration = 0
+
+	immediate = {
+		this = {
+			save_scope_as = nation_scope
+		}
+	}
+	option = {
+		name = hpx_misc.1.a
+		default_option = yes
+	}
+	after = {
+		bpm_refresh_parties = yes
+	}
+}

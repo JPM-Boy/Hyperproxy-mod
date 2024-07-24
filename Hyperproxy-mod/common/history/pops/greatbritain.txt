@@ -1,0 +1,241 @@
+﻿POPS = {
+	s:STATE_ULSTER = {
+		region_state:IRE = {
+			create_pop = {
+				culture = irish # Catholics
+				size = 1183122
+			}
+			create_pop = {
+				culture = british # Anglicans
+				size = 407111
+			}
+			create_pop = {
+				culture = irish # Anglicans
+				religion = protestant
+				size = 71843
+			}
+			create_pop = {
+				culture = scottish  # Presbyterians and Methodists
+				size = 575084
+			}
+			create_pop = {
+				culture = irish  # Presbyterians and Methodists
+				religion = protestant
+				size = 101485
+			}
+		}
+	}
+	s:STATE_MUNSTER = {
+		region_state:IRE = {
+			create_pop = {
+				culture = irish # Catholics
+				size = 2214388
+			}
+			create_pop = {
+				culture = british # Anglicans
+				size = 71856
+			}
+			create_pop = {
+				culture = irish # Anglicans
+				religion = protestant
+				size = 47904
+			}
+			create_pop = {
+				culture = british  # Presbyterians and Methodists
+				size = 10049
+			}
+			create_pop = {
+				culture = irish  # Presbyterians and Methodists
+				religion = protestant
+				size = 4040
+			}
+		}
+	}
+	s:STATE_LEINSTER = {
+		region_state:IRE = {
+			create_pop = {
+				culture = irish # Catholics
+				size = 1677581
+			}
+			create_pop = {
+				culture = british # Anglicans
+				size = 160989
+			}
+			create_pop = {
+				culture = irish # Anglicans
+				religion = protestant
+				size = 68994
+			}
+			create_pop = {
+				culture = british  # Presbyterians and Methodists
+				size = 14385
+			}
+			create_pop = {
+				culture = scottish  # Presbyterians and Methodists
+				size = 4300
+			}
+			create_pop = {
+				culture = irish  # Presbyterians and Methodists
+				religion = protestant
+				size = 8007
+			}
+			create_pop = {
+				culture = british
+				religion = jewish
+				size = 237
+			}
+		}
+	}
+	s:STATE_CONNAUGHT = {
+		region_state:IRE = {
+			create_pop = {
+				culture = irish # Catholics
+				size = 1319428
+			}
+			create_pop = {
+				culture = british # Anglicans
+				size = 28463
+			}
+			create_pop = {
+				culture = irish # Anglicans
+				religion = protestant
+				size = 33413
+			}
+		}
+	}
+	s:STATE_HIGHLANDS = {
+		region_state:GBR = {
+			create_pop = {
+				culture = scottish
+				size = 1000000
+			}
+			create_pop = {
+				culture = scottish
+				religion = catholic
+				size = 8000
+			}
+		}
+	}
+	s:STATE_LOWLANDS = {
+		region_state:GBR = {
+			create_pop = {
+				culture = scottish
+				size = 3397200
+			}
+			create_pop = {
+				culture = scottish
+				religion = catholic
+				size = 402000
+			}
+			create_pop = {
+				culture = irish
+				size = 29400
+			}
+		}
+	}
+	s:STATE_WALES = {
+		region_state:GBR = {
+			create_pop = {
+				culture = welsh
+				size = 2000000
+			}
+			create_pop = {
+				culture = british
+				size = 1200000
+			}
+		}
+	}
+	s:STATE_LANCASHIRE = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 8026592
+			}
+			create_pop = {
+				culture = irish
+				size = 80700
+			}
+		}
+	}
+	s:STATE_YORKSHIRE = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 7986404
+			}
+			create_pop = {
+				culture = irish
+				size = 16000
+			}
+			create_pop = {
+				culture = british
+				religion = catholic
+				size = 48000
+			}
+		}
+	}
+	s:STATE_MIDLANDS = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 10543604
+			}
+			create_pop = {
+				culture = british
+				religion = catholic
+				size = 24400
+			}
+			create_pop = {
+				culture = irish
+				size = 12000
+			}
+		}
+	}
+	s:STATE_WEST_COUNTRY = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 2969600
+			}
+			create_pop = {
+				culture = british
+				religion = catholic
+				size = 12400
+			}
+			create_pop = {
+				culture = irish
+				size = 4400
+			}
+		}
+	}
+	s:STATE_EAST_ANGLIA = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 6565208
+			}
+			create_pop = {
+				culture = british
+				religion = catholic
+				size = 8000
+			}
+		}
+	}
+	s:STATE_HOME_COUNTIES = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 12657596
+			}
+			create_pop = {
+				culture = british
+				religion = catholic
+				size = 100000
+			}
+			create_pop = {
+				culture = irish
+				size = 28400
+			}
+		}
+	}
+}

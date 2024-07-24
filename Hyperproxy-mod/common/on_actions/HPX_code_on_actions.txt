@@ -1,0 +1,8 @@
+﻿on_monthly_pulse_country = {
+	on_actions = {
+		on_monthly_hpx
+	}
+}
+
+on_monthly_hpx = {
+}

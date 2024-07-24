@@ -1,0 +1,39 @@
+widget = {
+    layer = top
+    
+    name = space_race_button
+    position = { 0 830}
+    size = { 40 40 }
+    using = Animation_ShowHide_Quick
+
+    sidepanel_button_small = {
+        name = "space_race_shortcut_button"
+        size = { 42 40 }
+        alpha = 0.7
+        tooltip = "Space Race"
+        
+        onclick = "[GetScriptedGui('toggle_my_window').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
+        blockoverride "icon" {
+            texture = "gfx/interface/icons/military_icons/overseas_supply.dds"
+        }
+        
+        blockoverride "icon_size" {
+            size = { 25 25 }
+        }
+        
+        state = {
+            name = _mouse_enter
+            alpha = 1
+            duration = 0.7
+            using = Animation_Curve_Default
+        }
+
+        state = {
+            name = _mouse_leave
+            alpha = 0.7
+            duration = 0.2
+            using = Animation_Curve_Default
+        }
+    }
+}

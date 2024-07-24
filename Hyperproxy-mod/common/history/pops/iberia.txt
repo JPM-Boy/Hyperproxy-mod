@@ -1,0 +1,211 @@
+﻿POPS = {
+	s:STATE_CATALONIA = {
+		region_state:CAT = {
+			create_pop = {
+				culture = catalan
+				size = 4500000
+			}
+			create_pop = {
+				culture = occitan
+				size = 300000
+			}
+			create_pop = {
+				culture = spanish
+				size = 100000
+			}
+		}
+	}
+	s:STATE_BALEARES = {
+		region_state:CAT = {
+			create_pop = {
+				culture = catalan
+				size = 500000
+			}
+		}
+	}
+	s:STATE_ARAGON = {
+		region_state:CAT = {
+			create_pop = {
+				culture = spanish
+				size = 300000
+			}
+			create_pop = {
+				culture = catalan
+				size = 700000
+			}
+		}
+	}
+	s:STATE_VALENCIA = {
+		region_state:CAT = {
+			create_pop = {
+				culture = catalan
+				size = 2500000
+			}
+			create_pop = {
+				culture = spanish
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_NAVARRA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = basque
+				size = 1800000
+			}
+			create_pop = {
+				culture = spanish
+				size = 700000
+			}
+		}
+	}
+	s:STATE_ASTURIAS = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 1200000
+			}
+			create_pop = {
+				culture = galician
+				size = 200000
+			}
+			create_pop = {
+				culture = basque
+				size = 100000
+			}
+		}
+	}
+	s:STATE_CASTILE = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 2700000
+			}
+		}
+	}
+	s:STATE_BADAJOZ = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 400000
+			}
+			create_pop = {
+				culture = andalusian
+				size = 700000
+			}
+		}
+	}
+	s:STATE_TOLEDO = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 3500000
+			}
+			create_pop = {
+				culture = andalusian
+				size = 1500000
+			}
+		}
+	}
+	s:STATE_GRANADA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = andalusian
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_ANDALUSIA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = andalusian
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_ALENTEJO = {
+		region_state:SPA = {
+			create_pop = {
+				culture = andalusian
+				size = 1500000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_ESTREMADURA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = portuguese
+				size = 2000000
+			}
+			create_pop = {
+				culture = andalusian
+				size = 600000
+			}
+		}
+	}
+	s:STATE_BEIRA = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 1500000
+			}
+			create_pop = {
+				culture = galician
+				size = 500000
+			}
+		}
+	}
+	s:STATE_GALICIA = {
+		region_state:POR = {
+			create_pop = {
+				culture = galician
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_AZORES = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 300000
+			}
+		}
+	}
+	s:STATE_CAPE_VERDE = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 300000
+			}
+		}
+	}
+	s:STATE_MADEIRA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = portuguese
+				size = 120000
+			}
+			create_pop = {
+				culture = andalusian
+				size = 120000
+			}
+		}
+	}
+	s:STATE_CANARY_ISLANDS = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 500000
+			}
+			create_pop = {
+				culture = andalusian
+				size = 600000
+			}
+		}
+	}
+
+}

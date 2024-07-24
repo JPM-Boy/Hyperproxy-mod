@@ -1,0 +1,400 @@
+﻿POPS = {
+	s:STATE_LOWER_EGYPT = {
+		region_state:EGY = {
+			create_pop = {
+				culture = misri
+				size = 15000000
+			}
+		}
+	}
+	s:STATE_SINAI = {
+		region_state:EGY = {
+			create_pop = {
+				culture = misri
+				size = 350000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_MIDDLE_EGYPT = {
+		region_state:EGY = {
+			create_pop = {
+				culture = misri
+				size = 9000000
+			}
+		}
+	}
+	s:STATE_UPPER_EGYPT = {
+		region_state:EGY = {
+			create_pop = {
+				culture = misri
+				size = 6000000
+			}
+		}
+	}
+	s:STATE_MATRUH = {
+		region_state:EGY = {
+			create_pop = {
+				culture = misri
+				size = 3000000
+			}
+			create_pop = {
+				culture = berber
+				size = 400000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 200000
+			}
+		}
+	}
+	s:STATE_EGYPTIAN_DESERT = {
+		region_state:EGY = {
+			create_pop = {
+				culture = misri
+				size = 1500000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 700000
+			}
+		}
+	}
+	s:STATE_LIBYA = {
+		region_state:TRI = {
+			create_pop = {
+				culture = maghrebi
+				size = 1300000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 800000
+			}
+		}
+	}
+	s:STATE_TRIPOLI = {
+		region_state:TRI = {
+			create_pop = {
+				culture = maghrebi
+				size = 500000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 700000
+			}
+		}
+	}
+	s:STATE_LIBYAN_DESERT = {
+		region_state:TRI = {
+			create_pop = {
+				culture = bedouin
+				size = 100000
+			}
+			create_pop = {
+				culture = teda
+				size = 20000
+			}
+			create_pop = {
+				culture = tuareg
+				size = 15000
+			}
+		}
+	}
+	s:STATE_TUNISIA = {
+		region_state:TUN = {
+			create_pop = {
+				culture = maghrebi
+				size = 6500000
+			}
+		}
+	}
+	s:STATE_ALGIERS = {
+		region_state:ALD = {
+			create_pop = {
+				culture = maghrebi
+				size = 7000000
+			}
+			create_pop = {
+				culture = berber
+				size = 2000000
+			}
+		}
+	}
+	s:STATE_CONSTANTINE = {
+		region_state:ALD = {
+			create_pop = {
+				culture = berber
+				size = 2500000
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 2200000
+			}
+		}
+	}
+	s:STATE_ORAN = {
+		region_state:ALD = {
+			create_pop = {
+				culture = maghrebi
+				size = 2850000
+			}
+			create_pop = {
+				culture = berber
+				size = 1000000
+			}
+		}
+	}
+	s:STATE_SAHARA = {
+		region_state:ALD = {
+			create_pop = {
+				culture = tuareg
+				size = 300000
+			}
+			create_pop = {
+				culture = berber
+				size = 100000
+			}
+		}
+	}
+	s:STATE_EAST_SAHARA = {
+		region_state:ALD = {
+			create_pop = {
+				culture = tuareg
+				size = 400000
+			}
+			create_pop = {
+				culture = berber
+				size = 100000
+			}
+		}
+	}
+	s:STATE_AL_RIF = {
+		region_state:SPA = {
+			create_pop = {
+				culture = maghrebi
+				size = 1500000
+			}
+			create_pop = {
+				culture = andalusian
+				size = 300000
+			}
+		}
+	}
+	s:STATE_FEZ = {
+		region_state:MOR = {
+			create_pop = {
+				culture = maghrebi
+				size = 5000000
+			}
+			create_pop = {
+				culture = berber
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_MARRAKECH = {
+		region_state:MOR = {
+			create_pop = {
+				culture = maghrebi
+				size = 4000000
+			}
+			create_pop = {
+				culture = berber
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_INNER_MOROCCO = {
+		region_state:MOR = {
+			create_pop = {
+				culture = berber
+				size = 1800000
+			}
+			create_pop = {
+				culture = maghrebi
+				size = 900000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 500000
+			}
+		}
+	}
+	s:STATE_WEST_SAHARA = {
+		region_state:SAH = {
+			create_pop = {
+				culture = berber
+				size = 500000
+			}
+			create_pop = {
+				culture = bedouin
+				size = 100000
+			}
+		}
+	}
+	s:STATE_MAURITANIA = {
+		region_state:OUA = {
+			create_pop = {
+				culture = bidan
+				size = 1000000
+			}
+			create_pop = {
+				culture = haratin
+				size = 800000
+			}
+		}
+	}
+	s:STATE_INNER_MAURITANIA = {
+		region_state:OUA = {
+			create_pop = {
+				culture = bidan
+				size = 200000
+			}
+			create_pop = {
+				culture = mande
+				size = 75000
+			}
+		}
+	}
+	s:STATE_TIMBUKTU = {
+		region_state:ADG = {
+			create_pop = {
+				culture = songhai
+				size = 1800000
+			}
+			create_pop = {
+				culture = tuareg
+				size = 600000
+			}
+			create_pop = {
+				culture = mande
+				size = 200000
+			}
+			create_pop = {
+				culture = fulbe
+				size = 300000
+			}
+		}
+	}
+	s:STATE_NIGER = {
+		region_state:AIR = {
+			create_pop = {
+				culture = tuareg
+				size = 900000
+			}
+			create_pop = {
+				culture = hausa
+				size = 500000
+			}
+		}
+	}
+	s:STATE_CHAD = {
+		region_state:AIR = {
+			create_pop = {
+				culture = bedouin
+				size = 250000
+			}
+			create_pop = {
+				culture = equatorial_bantu
+				size = 150000
+			}
+		}
+	}
+	s:STATE_OUTER_HAUSALAND = {
+		region_state:AIR = {
+			create_pop = {
+				culture = kanuri
+				size = 1400000
+			}
+			create_pop = {
+				culture = equatorial_bantu
+				size = 300000
+			}
+		}
+		region_state:HAU = {
+			create_pop = {
+				culture = hausa
+				size = 3000000
+			}
+			create_pop = {
+				culture = dyula
+				size = 1000000
+			}
+			create_pop = {
+				culture = equatorial_bantu
+				size = 500000
+			}
+		}
+	}
+	s:STATE_DONGOLA = {
+		region_state:SUD = {
+			create_pop = {
+				culture = bedouin
+				size = 800000
+			}
+			create_pop = {
+				culture = sudanese
+				size = 750000
+			}
+			create_pop = {
+				culture = beja
+				size = 750000
+			}
+		}
+	}
+	s:STATE_DARFUR = {
+		region_state:SUD = {
+			create_pop = {
+				culture = fur
+				size = 4000000
+			}
+			create_pop = {
+				culture = dinka
+				size = 500000
+			}
+		}
+	}
+	s:STATE_KORDOFAN = {
+		region_state:SUD = {
+			create_pop = {
+				culture = sudanese
+				size = 3000000
+			}
+			create_pop = {
+				culture = nuba
+				size = 2500000
+			}
+		}
+	}
+	s:STATE_BLUE_NILE = {
+		region_state:SUD = {
+			create_pop = {
+				culture = sudanese
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_EQUATORIA = {
+		region_state:SUD = {
+			create_pop = {
+				culture = nilotic
+				size = 3000000
+			}
+			create_pop = {
+				culture = azande
+				size = 2000000
+			}
+			create_pop = {
+				culture = nuer
+				size = 500000
+			}
+			create_pop = {
+				culture = dinka
+				size = 400000
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+﻿namespace = bpm_ig_attraction_utils
+
+# Monthly
+bpm_ig_attraction_utils.1 = {
+	type = country_event
+	placement = root
+	hidden = yes
+
+	immediate = {
+		bpm_cache_country_variables_monthly_effect = yes
+	}
+}
+
+# Half yearly
+bpm_ig_attraction_utils.2 = {
+	type = country_event
+	placement = root
+	hidden = yes
+
+	immediate = {
+		bpm_cache_country_variables_half_yearly_effect = yes
+	}
+}
+

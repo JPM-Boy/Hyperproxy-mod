@@ -1,0 +1,151 @@
+﻿# These are used in various places for UI hints; since the game can't actually check them (unlike stellaris), their effects must still be defined elsewhere explicitly in script.
+
+# Party bans
+bpm_decorative_ban_reactionaries = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_ban_socialists = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_ban_reactionaries_plus = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_ban_socialists_plus = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_ban_liberals = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_ban_antiliberals = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_ban_everyone_but_ruler = {
+	neutral = yes
+	boolean = yes
+}
+
+# Labor Union laws
+bpm_decorative_trade_unions_non_institutional = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_trade_unions_force_leader_moderate = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_trade_unions_force_leader_non_socialist = {
+	neutral = yes
+	boolean = yes
+}
+bpm_decorative_trade_unions_force_leader_vanguardist = {
+	neutral = yes
+	boolean = yes
+}
+
+# Foreign policy
+bpm_decorative_can_not_invade = {
+	good = no
+	boolean = yes
+}
+bpm_decorative_can_not_invade_no_annex = {
+	good = no
+	boolean = yes
+}
+bpm_decorative_can_not_join_alliances = {
+	good = no
+	boolean = yes
+}
+bpm_decorative_can_not_stay_peaceful = {
+	good = no
+	boolean = yes
+}
+
+# Stability/rigidity
+bpm_decorative_modify_rigidity = {
+	good = yes
+	boolean = no
+}
+bpm_decorative_modify_rigidity_rate = {
+	good = yes
+	boolean = no
+}
+bpm_decorative_modify_rigidity_per_suffrage_investment = {
+	good = yes
+	boolean = no
+}
+bpm_decorative_modify_rigidity_per_police_investment = {
+	good = yes
+	boolean = no
+}
+bpm_decorative_modify_rigidity_per_security_investment = {
+	good = yes
+	boolean = no
+}
+bpm_decorative_modify_rigidity_per_culture_investment = {
+	good = yes
+	boolean = no
+}
+bpm_decorative_modify_rigidity_rate_per_police_investment = {
+	good = yes
+	boolean = no
+	num_decimals = 2
+}
+bpm_decorative_modify_rigidity_rate_per_security_investment = {
+	good = yes
+	boolean = no
+	num_decimals = 2
+}
+
+# Institutions
+bpm_decorative_modify_mapi_per_centralization_investment = {
+	good = yes
+	boolean = no
+	num_decimals = 2
+}
+bpm_decorative_modify_sol_per_workplace_safety_investment = {
+	good = yes
+	boolean = no
+	num_decimals = 2
+}
+bpm_decorative_modify_throughput_per_workplace_safety_investment = {
+	good = yes
+	boolean = no
+	num_decimals = 2
+}
+
+# Repeatable Laws
+bpm_decorative_repeatable_effect_no_permanent = {
+	neutral = yes
+	boolean = yes
+}
+
+bpm_decorative_repeatable_effect_temporary = {
+	neutral = yes
+	boolean = yes
+}
+
+bpm_decorative_repeatable_stronger_from_home_affairs = {
+	neutral = yes
+	boolean = yes
+}
+
+bpm_decorative_repeatable_stronger_from_culture = {
+	neutral = yes
+	boolean = yes
+}
+
+bpm_decorative_repeatable_stronger_from_centralization = {
+	neutral = yes
+	boolean = yes
+}
+
+bmp_decorative_repeatable_stronger_from_professional_officers = {
+	neutral = yes
+	boolean = yes
+}

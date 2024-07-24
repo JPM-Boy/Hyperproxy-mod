@@ -1,0 +1,9 @@
+﻿lawgroup_edu_centralization = {
+	law_group_category = economy
+	affected_by_regime_change = yes
+	base_enactment_days = 150
+	enactment_approval_mult = 2.0
+	
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 1
+}

@@ -1,0 +1,51 @@
+﻿french_english_progress_bar = {
+ 	name = "french_english_progress_bar_name"
+ 	desc = "french_english_progress_bar_france_desc"
+ 	second_desc = "french_english_progress_bar_britain_desc"
+
+ 	double_sided_gold = yes
+
+ 	monthly_progress = {
+		if = {
+			limit = {
+				exists = global_var:anglo_french_balance_passive_var
+			}
+			add = {
+			   desc = "french_english_progress_passive_balance"
+			   value = global_var:anglo_french_balance_passive_var
+		    }
+		}
+		if = {
+			limit = {
+				exists = global_var:anglo_french_balance_ig_var
+			}
+			add = {
+		    	desc = "french_english_ig_progress_balance"
+		    	value = global_var:anglo_french_balance_ig_var
+		    }
+		}
+		if = {
+			limit = {
+				exists = global_var:anglo_french_balance_radical_var
+			}
+			add = {
+		    	desc = "french_english_radicals_progress_balance"
+		    	value = global_var:anglo_french_balance_radical_var
+		    }
+		}
+		if = {
+			limit = {
+				exists = global_var:anglo_french_balance_event_var
+			}
+			add = {
+				desc = "french_english_events_progress_balance"
+		    	value = global_var:anglo_french_balance_event_var
+		    }
+		}
+ 	}
+
+ 	start_value = 100
+ 	min_value = 0
+ 	max_value = 200
+}
+

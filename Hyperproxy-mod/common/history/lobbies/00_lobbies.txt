@@ -1,0 +1,113 @@
+﻿LOBBIES = {
+	c:AUS = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:POL = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:CZH = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:HUN = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:BUL = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:GRE = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:WAL = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:VEL = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:VEN = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:NGF = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:ALB = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:COR = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+	c:SRB = {
+		create_political_lobby = {  
+			type = lobby_pro_country  
+			target = c:RUS
+			add_interest_group = ig:ig_refsoc
+			add_interest_group = ig:ig_revsoc
+		}	
+	}
+}	
+
+
+
+
+
+
+

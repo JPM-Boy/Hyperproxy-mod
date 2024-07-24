@@ -1,0 +1,13 @@
+﻿toggle_my_window = {
+    effect = {
+        if = {
+            limit = {
+                has_variable = show_my_window
+            }
+            remove_variable = show_my_window
+        }
+        else = {
+            set_variable = show_my_window
+        }
+    }
+}

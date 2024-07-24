@@ -1,0 +1,235 @@
+﻿BHT = {
+	color = {174 99 255}
+	
+	country_type = recognized
+
+	tier = hegemony
+	
+	cultures = { assamese avadhi baluchi bengali bihari gujarati kanauji kannada malayalam marathi oriya panjabi pashtun rajput sindi tamil telegu }
+	capital = STATE_DELHI
+}
+CEY = {
+	color = {188 107 101}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { sinhala }
+	capital = STATE_CEYLON
+}
+BGL = {
+	color = {129 163 88}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bengali bihari }
+	capital = STATE_SOUTH_BENGAL
+}
+NAX = {
+	color = {255 73 53}
+	country_type = recognized
+	tier = principality
+	cultures = {
+		assamese bengali
+	}
+	capital = STATE_ASSAM
+}
+
+NEP = {
+	color = {211 112 155}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { nepali }
+	capital = STATE_HIMALAYAS
+}
+
+SIK = {
+	color = {216 150 80}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { tibetan }
+	capital = STATE_HIMALAYAS
+}
+
+BHU = {
+	color = {255 159 99}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { tibetan }
+	capital = STATE_HIMALAYAS
+}
+
+TIB = {
+	color = {234 218 154}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { tibetan }
+	capital = STATE_LHASA
+}
+
+CHI = {
+	color = {255 33 169}
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { manchu han } 
+	capital = STATE_BEIJING
+}
+
+MGL = {
+	color = {255 73 86}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { mongol }
+	capital = STATE_URGA
+}
+
+KOR = {
+	color = {193 221 164}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { korean }
+	capital = STATE_SEOUL
+}
+
+JAP = {
+	color = {255 242 66}
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+
+TPG = {
+	color = {41 155 132}
+	country_type = recognized
+	tier = empire
+	cultures = { han hakka }
+	religion = protestant
+	capital = STATE_NANJING
+}
+
+DAI = {
+	color = {255 92 73}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { vietnamese }
+	capital = STATE_TONKIN
+}
+
+LAO = {
+	color = {234 169 56}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { lao }
+	capital = STATE_LAOS
+	is_named_from_capital = yes
+}
+
+CAM = {
+	color = {178 127 96}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { khmer }
+	capital = STATE_CAMBODIA
+}
+
+SAI = {
+	color = {79 136 221}
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { vietnamese }
+	capital = STATE_MEKONG
+}
+
+SIA = {
+	color = {216 62 106} 
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { thai }
+	capital = STATE_BANGKOK
+}
+
+BUR = {
+	color = {137 86 45}
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { burmese }
+	capital = STATE_BURMA
+}
+
+JOH = {
+	color = {82 142 108}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	capital = STATE_MALAYA
+	cultures = { malay }
+}
+
+BRU = {
+	color = {226 217 45}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bornean }
+	capital = STATE_NORTH_BORNEO
+}
+
+PHI = {
+	color = {110 178 183}
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { filipino spanish }
+	capital = STATE_LUZON
+}

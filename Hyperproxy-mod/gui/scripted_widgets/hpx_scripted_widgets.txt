@@ -1,0 +1,2 @@
+﻿gui/HPX_space_race_button.gui = space_race_button
+gui/HPX_space_race_main.gui = space_panel

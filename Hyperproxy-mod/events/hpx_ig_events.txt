@@ -1,0 +1,97 @@
+﻿namespace = hpx_ig
+
+hpx_ig.1 = { # Socdems
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_ig.1.t
+	desc = hpx_ig.1.d
+	flavor = hpx_ig.1.f
+	duration = 3
+
+	immediate = {
+		set_variable = local_socdem_split_var
+	}
+
+	option = {
+		name = hpx_ig.1.a
+		default_option = yes
+		trigger_event = {id = hpx_ig.2 months = 1}
+	}
+}
+
+hpx_ig.2 = {# Init
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		bpm_initialize_socdem = yes
+	}
+}
+
+hpx_ig.3 = { # Neolibs
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	title = hpx_ig.3.t
+	desc = hpx_ig.3.d
+	flavor = hpx_ig.3.f
+	duration = 3
+
+	immediate = {
+		set_variable = local_neolib_split_var
+	}
+
+	option = {
+		name = hpx_ig.3.a
+		default_option = yes
+		trigger_event = {id = hpx_ig.4 months = 1}
+	}
+}
+
+hpx_ig.4 = {# Init
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		bpm_initialize_neolib = yes
+	}
+}
+
+hpx_ig.5 = { # Progs
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_ig.5.t
+	desc = hpx_ig.5.d
+	flavor = hpx_ig.5.f
+	duration = 3
+
+	immediate = {
+		set_variable = local_prog_split_var
+	}
+
+	option = {
+		name = hpx_ig.5.a
+		default_option = yes
+		trigger_event = {id = hpx_ig.6 months = 1}
+	}
+}
+
+hpx_ig.6 = {# Init
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		bpm_initialize_prog = yes
+	}
+}

@@ -1,0 +1,654 @@
+﻿# Bastion of the Intelligenstia, also appeals to Industrialists
+# Can sometimes sway PB and Rural Folk when they have common interests
+
+centre_right_party = {
+	color = hsv{ 0.16 1 0.9 }
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = party_liberal
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	icon = {
+		default = "/gfx/interface/icons/political_parties/liberal.dds"
+	}
+	unlocking_technologies = {
+		conglomerates
+	}
+	# THIS IS RUN ONLY ONCE AT GAME START
+	valid_for_country = {
+		always = yes
+	}
+	available_for_interest_group = {
+		bpm_ig_enabled = yes
+		NOT = { bpm_is_party_banned = { PARTY = centre_right_party } }
+		owner = {
+			country_has_voting_franchise = yes
+		}
+		leader = { # far right won't join liberal parties
+			NOR = {
+				bpm_leader_is_reactionary = yes
+				bpm_leader_is_fascist = yes
+			}
+		}
+		NAND = { # far left won't join liberal parties
+			bpm_ig_is_institutional = no
+			leader = { bpm_leader_is_radical_socialist = yes }
+		}
+		NOR = {
+			bpm_ig_is_traditionalist = yes
+			bpm_ig_is_fascist = yes
+			bpm_ig_is_actually_desiring_socialism = yes
+		}
+		NOT = { # unreformed conservatives should not join the liberals
+			bpm_ig_is_non_paternal_conservative = yes 
+		}
+		OR = {
+			is_interest_group_type = ig_ecologist
+			is_interest_group_type = ig_rightpop
+			is_interest_group_type = ig_prog
+			is_interest_group_type = ig_liberal
+			is_interest_group_type = ig_neolib
+			is_interest_group_type = ig_cons
+			bpm_ig_is_institutional = yes
+		}
+	}
+	join_weight = {
+		value = {
+			value = 0
+			desc = "base_value"
+		}
+		if = {
+			limit = {
+				leader = { has_variable = centre_right_party_leader }
+			}
+			add = {
+				value = 100
+				desc = "bpm_historical_leader"
+			}
+		}
+		if = {
+			limit = {
+				leader = { has_variable = anti_centre_right_party_leader }
+			}
+			add = {
+				value = -100
+				desc = "bpm_historical_leader"
+			}
+		}
+		if = {
+			limit = {
+				var:bpm_current_party ?= {
+					is_party_type = centre_right_party
+					has_party_member = prev
+				}
+			}
+			add = {
+				value = bpm_party_loyalty_values
+			}
+		}
+		if = {
+			limit = {
+				owner = { bpm_country_has_two_party_system = yes }
+			}
+			add = {
+				value = 2
+				desc = "bpm_two_party_system"
+			}
+		}
+		if = {
+			limit = {
+				leader = { has_ideology = ideology:ideology_moderate }
+			}
+			add = {
+				leader = {
+					value = popularity
+					add = 100
+					divide = 20
+					floor = yes
+					modulo = 2
+					multiply = 3
+				}
+				desc = "bpm_from_moderatism"
+			}
+		}
+		if = {
+			limit = {
+				owner = { bpm_country_has_historical_two_party_system = yes }
+			}
+			add = {
+				leader = {
+					value = popularity
+					if = {
+						limit = { popularity < 0 }
+						multiply = -1
+					}
+					modulo = 2
+					multiply = 5
+
+				}
+				desc = "bpm_from_coalition"
+			}
+		}
+		if = { # liberals love liberalism
+			limit = {
+				bpm_ig_is_liberal = yes
+				bpm_ig_is_radical_liberal = no
+			}
+			add = {
+				value = 5
+				desc = "bpm_from_liberal_ig"
+			}
+		}
+		if = { # liberals love liberalism
+			limit = {
+				is_interest_group_type = ig_liberal
+			}
+			add = {
+				value = 10
+				desc = "bpm_from_main_liberal_ig"
+			}
+		}
+		if = { # radicals like liberalism
+			limit = { bpm_ig_is_radical_liberal = yes }
+				add = {
+					value = 3
+					desc = "bpm_from_radical_ig"
+				}
+		}
+		if = { # liberals love liberalism
+			limit = {
+				leader = {
+					bpm_leader_is_liberal = yes
+					bpm_leader_is_radical_liberal = no
+					bpm_leader_is_progressive_liberal = no
+				}
+			}
+			add = {
+				value = 6
+				desc = "from_liberal_leader"
+			}
+		}
+		if = { # various progressives are inclined towards liberalism
+			limit = {
+				leader = { 
+					bpm_leader_is_progressive_liberal = yes
+					bpm_leader_is_radical_liberal = no
+				}
+			}
+			add = {
+				value = 4
+				desc = "from_progressivism"
+			}
+		}
+		if = { # urban IGs prefer liberals
+			limit = {
+				bpm_ig_is_urban_institutional = yes
+			}
+			add = {
+				value = 2
+				desc = "bpm_from_urban"
+			}
+		}
+		if = { # proletarians lean towards liberals
+			limit = {
+				bpm_ig_is_proletarian = yes
+			}
+			add = {
+				value = 3
+				desc = "bpm_from_proletarian"
+			}
+		}
+		if = { # radicals will cooperate with weaker liberals
+			limit = {
+				is_interest_group_type = ig_prog
+				is_powerful = no
+				owner = {
+					any_interest_group = {
+						is_powerful = no
+						is_interest_group_type = ig_liberal
+					}
+				}
+			}
+			add = {	
+				value = 15
+				desc = "bpm_from_liberal_coalition"
+			}
+		}
+		if = { # against hereditary bureacrats
+			limit = {
+				law_stance = {
+					law = law_type:law_hereditary_bureaucrats
+					value < neutral
+				}
+				owner = {
+					has_law = law_type:law_hereditary_bureaucrats
+				}
+			}
+			add = {
+				value = 3
+				desc = "from_hereditary_offices"
+			}
+		}
+		if = { # armed forces will join if a more powerful member has jingoist leader
+			limit = {
+				is_interest_group_type = ig_armed_forces
+				exists = owner.py:centre_right_party
+				owner = {
+					any_interest_group = {
+						is_member_of_party = owner.py:centre_right_party
+						is_powerful = yes
+						leader = { has_ideology = ideology:ideology_jingoist_leader }
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_jingoist_party_leader"
+			}
+		}
+		if = { # against illiteracy and religious education
+			limit = {
+				law_stance = {
+					law = law_type:law_religious_schools
+					value < neutral
+				}
+				law_stance = {
+					law = law_type:law_no_schools
+					value < neutral
+				}
+				owner = {
+					OR = {
+						has_law = law_type:law_religious_schools
+						has_law = law_type:law_no_schools
+					}
+				}
+			}
+			add = {
+				value = 3
+				desc = "from_no_or_religious_schools"
+			}
+		}
+		if = { # anti-censorship
+			limit = {
+				law_stance = {
+					law = law_type:law_outlawed_dissent
+					value < neutral
+				}
+				owner = { has_law = law_type:law_outlawed_dissent }
+			}
+			add = {
+				value = 3
+				desc = from_outlawed_dissent
+			}
+		}
+		if = { # anticlerical
+			limit = {
+				OR = {
+					bpm_ig_is_non_religious = yes
+					leader = { has_ideology = ideology:ideology_atheist }
+				}
+			}
+			add = {
+				value = 3
+				desc = "bpm_from_anticlerical"
+			}
+		}
+		if = { # republican
+			limit = {
+				OR = {
+					bpm_ig_is_republican = yes
+					leader = { bpm_leader_is_republican_liberal = yes }
+				}
+				owner = {
+					OR = {
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_theocracy
+					}
+				}
+			}
+			add = {
+				value = 3
+				desc = "from_republican"
+			}
+		}
+		if = { # peasants opposition to debt slavery
+			limit = {
+				owner = {
+					has_law = law_type:law_debt_slavery
+				}
+				OR = {
+					has_ideology = ideology:ideology_sta_decentralized_state
+					has_ideology = ideology:ideology_sta_subjugated_state
+					leader = { has_ideology = ideology:ideology_abolitionist }
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_debt_slavery"
+			}
+		}
+		if = { # general anti-slavery
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_legacy_slavery
+						has_law = law_type:law_slave_trade
+					}
+				}
+				OR = {
+					bpm_ig_is_socialist = yes
+					bpm_ig_is_radical_liberal = yes
+					leader = {
+						has_ideology = ideology:ideology_abolitionist
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_slavery"
+			}
+		}
+		if = { # committed anti-slavery
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_legacy_slavery
+						has_law = law_type:law_slave_trade
+					}
+					ig:ig_liberal = {
+						leader = {
+							OR = {
+								has_ideology = ideology:ideology_abolitionist
+								has_ideology = ideology:ideology_radical
+							}
+						}
+					}
+				}
+				OR = {
+					bpm_ig_is_abolitionist = yes			
+					leader = {
+						has_ideology = ideology:ideology_abolitionist
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "bpm_from_committed_antislavery"
+			}
+		}
+		if = { # anti-serfdom
+			limit = {
+				owner = {
+					has_law = law_type:law_serfdom
+				}
+				OR = {
+					bpm_ig_is_abolitionist = yes	
+					leader = {
+						bpm_leader_is_progressive_liberal = yes
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_serfdom"
+			}
+		}
+		if = { # imperial brazilian liberals like descentralism
+
+			limit = {
+				owner = {
+					country_has_primary_culture = cu:brazilian
+					OR = { 
+						has_law = law_type:law_monarchy 
+						has_law = law_type:law_theocracy
+					}
+				}
+				OR = {
+					has_ideology = ideology:ideology_sta_minimal_state
+					has_ideology = ideology:ideology_sta_decentralized_state
+					has_ideology = ideology:ideology_sta_federated_state
+				}
+			}
+			add = {
+				value = 10
+				desc = "from_descentralism"
+			}
+		}
+		if = { # north andean and mexican liberals like descentralism
+			limit = {
+				owner = {
+					OR = {
+						country_has_primary_culture = cu:north_andean
+						country_has_primary_culture = cu:mexican
+					}
+				}
+				OR = {
+					has_ideology = ideology:ideology_sta_minimal_state
+					has_ideology = ideology:ideology_sta_decentralized_state
+					has_ideology = ideology:ideology_sta_federated_state
+				}
+			}
+			add = {
+				value = 10
+				desc = "from_descentralism"
+			}
+		}
+		if = { # platinean liberals like centralism
+			limit = {
+				owner = {
+					country_has_primary_culture = cu:platinean
+					NOT = { THIS = c:PRG }
+				}
+				OR = {
+					has_ideology = ideology:ideology_sta_powerful_state
+					has_ideology = ideology:ideology_sta_security_state
+				}
+			}
+			add = {
+				value = 10
+				desc = "from_centralism"
+			}
+		}
+		if = { # conservative-liberals don't love radicals
+			limit = {
+				bpm_ig_is_liberal_conservative = yes
+				leader = { 
+					bpm_leader_is_radical_liberal = no
+				}
+				owner = {
+					py:centre_right_party ?= {
+						any_member = {
+							OR = {
+								bpm_ig_is_radical_liberal = yes
+								leader = { bpm_leader_is_radical_liberal = yes }
+							}
+						}
+					}
+				}
+			}
+			add = {
+				value = -5
+				desc = "bpm_from_dislike_radicals"
+			}
+		}
+		if = { # radicals don't love conservatives
+			limit = {
+				OR = {
+					is_interest_group_type = ig_prog
+					leader = { bpm_leader_is_radical_liberal = yes }
+				}
+				owner = {
+					py:centre_right_party ?= {
+						any_member = {
+							bpm_ig_is_liberal_conservative = yes
+							leader = { bpm_leader_is_radical_liberal = no }
+						}
+					}
+				}
+			}
+			add = {
+				value = -5
+				desc = "bpm_from_dislike_conservatives"
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						is_interest_group_type = ig_libertarian
+						NOT = { leader = { bpm_leader_is_progressive_liberal = yes } }
+					}
+					AND = {
+						is_interest_group_type = ig_neolib
+						leader = { bpm_leader_is_right_wing = yes }
+					}
+				}
+				owner = {
+					ig:ig_liberal = {
+						party ?= { is_party_type = centre_right_party }
+						leader = { bpm_leader_is_progressive_liberal = yes }
+					}
+				}
+			}
+			add = {
+				value = -2
+				desc = "bpm_from_dislike_progressives"
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_libertarian
+				owner = {
+					any_interest_group = {
+						has_ideology = ideology:ideology_wel_paternalistic_welfare
+						has_party = yes
+						party = { is_party_type = centre_right_party }
+					}
+				}
+			}
+			add = {
+				value = -5
+				desc = "bpm_from_dislike_paternalists"
+			}
+		}
+		if = { # Conservatives don't like liberals
+			limit = {
+				is_interest_group_type = ig_cons
+				owner = {
+					NAND = {
+						any_interest_group = {
+							is_powerful = no
+							OR = {
+								is_interest_group_type = ig_liberal
+								leader = { bpm_leader_is_moderate_liberal = yes }
+							}
+						}
+						any_interest_group = {
+							is_powerful = no
+							OR = {
+								bpm_ig_is_radical_right = yes
+								leader = { 
+									OR = {
+										bpm_leader_is_fascist = yes 
+										bpm_leader_is_reactionary = yes
+									}
+								}
+							}
+						}
+						any_interest_group = {
+							is_powerful = yes
+							OR = {
+								bpm_ig_is_socialist = yes
+								leader = { bpm_leader_is_socialist = yes }
+							}
+						}
+					}
+				}
+			}
+			add = {
+				value = -3
+				desc = "bpm_from_conservative_ig"
+			}
+		}
+		if = { # Conservatives join against socialism
+			limit = {
+				bpm_ig_is_liberal_conservative = yes
+				is_powerful = no
+				owner = {
+					AND = {
+						any_interest_group = {
+							is_powerful = no
+							OR = {
+								is_interest_group_type = ig_liberal
+								leader = { bpm_leader_is_moderate_liberal = yes }
+							}
+						}
+						any_interest_group = {
+							is_powerful = no
+							OR = {
+								bpm_ig_is_radical_right = yes
+								leader = { 
+									OR = {
+										bpm_leader_is_fascist = yes 
+										bpm_leader_is_reactionary = yes
+									}
+								}
+							}
+						}
+						any_interest_group = {
+							is_powerful = yes
+							OR = {
+								bpm_ig_is_socialist = yes
+								leader = { bpm_leader_is_socialist = yes }
+							}
+						}
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "bpm_from_powerful_socialists"
+			}
+		}
+		if = { # conservatives and moderates will join in council republic
+			limit = {
+				OR = {
+					OR = {
+						bpm_ig_is_moderate_conservative = yes
+						bpm_ig_is_liberal_conservative = yes
+					}
+					leader = { has_ideology = ideology:ideology_moderate }
+					leader = { bpm_leader_is_conservative = yes }
+				}
+				owner = { has_law = law_type:law_council_republic }
+			}
+			add = {
+				value = 10
+				desc = "bpm_from_liberals_in_soviet"
+			}
+		}
+		if = { # Anti-electoralism
+			limit = {
+				bpm_ig_is_anti_electoralist_socialist = yes
+			}
+			add = {
+				value = -10
+				desc = "bpm_anti_electoralist"
+			}
+		}
+		if = { # Strong anti-electoralism
+			limit = {
+				bpm_ig_is_strongly_anti_electoralist_socialist = yes
+			}
+			add = {
+				value = -30
+				desc = "bpm_strongly_anti_electoralist"
+			}
+		}	
+	}
+}

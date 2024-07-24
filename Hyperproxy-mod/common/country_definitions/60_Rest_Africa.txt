@@ -1,0 +1,360 @@
+﻿ERT = {
+	color = {102 152 82}
+	country_type = recognized
+	tier = principality
+	cultures = {
+		tigray
+	}
+	capital = STATE_ERITREA
+}
+PNT = {
+	color = {82 71 146}
+	country_type = recognized
+	tier = principality
+	cultures = {
+		somali
+	}
+	capital = STATE_SOMALILAND
+}
+
+AWS = {
+	color = { 125 125 100 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { afar tigray }
+	capital = STATE_GONDER
+}
+
+WSG = {
+	color = { 18 97 128 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+ETH = {
+	color = { 56  120  191 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { amhara oromo tigray }
+	capital = STATE_GONDER
+}
+
+GLD = {
+	color = { 38 160 67 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+
+KKY = {
+	color = { 169 52 90 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { kikuyu }
+	capital = STATE_KENYA
+}
+
+TRK = {
+	color = { 103 84 190 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { nilotic maasai }
+	capital = STATE_RIFT_VALLEY
+}
+
+BUG = {
+	color = { 21 21 227 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { baganda }
+	capital = STATE_UGANDA
+}
+
+BNY = {
+	color = { 174 24 66 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { baganda lacustrine_bantu }
+	capital = STATE_UGANDA
+}
+
+ANK = {
+	color = { 126 162 98 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { baganda lacustrine_bantu }
+	capital = STATE_UGANDA
+}
+
+RWD = {
+	color = { 213 160 18 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { ruanda }
+	capital = STATE_TANGANYIKA
+}
+
+BRD = {
+	color = { 21 191 16 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { rundi }
+	capital = STATE_TANGANYIKA
+}
+
+KRG = {
+	color = { 48 177 169 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { lacustrine_bantu baganda }
+	capital = STATE_TANGANYIKA
+}
+
+ZAN = {
+	color = { 166  189  199 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { swahili }
+	capital = STATE_ZANZIBAR
+	is_named_from_capital = yes
+}
+
+KON = {
+	color = { 199 160 139 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	religion = catholic
+	
+	cultures = { bakongo }
+	capital = STATE_BAS_CONGO
+}
+
+KZM = {
+	color = { 202 217 170 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { lunda }
+	capital = STATE_KAZEMBE
+}
+
+LND = {
+	color = { 199 60 39 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { lunda ovimbundu }
+	capital = STATE_EAST_ANGOLA
+}
+
+OVM = {
+	color = { 107 94 52 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { ovimbundu }
+	capital = STATE_SOUTH_ANGOLA
+}
+
+LZO = {
+	color = { 176 106 168 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { kavango_bantu }
+	capital = STATE_ZAMBIA
+}
+
+MRV = {
+	color = { 220 220 75 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { chewa }
+	capital = STATE_KAZEMBE
+}
+
+MNC = {
+	color = { 60 147 140 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { boer portuguese }
+	capital = STATE_ZAMBEZIA
+}
+
+MTB = {
+	color = { 142 80 55 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { boer }
+	capital = STATE_ZAMBEZI
+}
+
+MAD = {
+	color = { 117  150  120 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { malagasy }
+	capital = STATE_NORTH_MADAGASCAR
+}
+
+NAM = {
+	color = { 49 119 34 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { khoisan }
+	capital = STATE_NAMAQUALAND
+}
+
+HRO = {
+	color = { 221 140 40 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { herero khoisan }
+	capital = STATE_HEREROLAND
+}
+
+TSW = {
+	color = { 117 170 219 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { boer }
+	capital = STATE_BOTSWANA
+}
+
+TRN = {
+	color = { 140  183  154 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { boer }
+	capital = STATE_TRANSVAAL
+	is_named_from_capital = yes
+}
+
+SWZ = {
+	color = {82 71 146}
+	country_type = recognized
+	tier = principality
+	cultures = {
+		zulu
+	}
+	capital = STATE_TRANSVAAL
+}
+MPT = {
+	color = { 104 148 61 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { zulu }
+	capital = STATE_LOURENCO_MARQUES
+}
+
+ZUL = {
+	color = { 204  186  201 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { boer }
+	capital = STATE_ZULULAND
+	is_named_from_capital = yes
+}
+BST = {
+	color = { 137 106 217 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { sotho }
+	capital = STATE_ZULULAND
+}
+SAF = {
+	color = { 180  158  127 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { british boer }
+	capital = STATE_CAPE_COLONY
+}

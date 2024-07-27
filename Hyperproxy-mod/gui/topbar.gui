@@ -260,12 +260,12 @@ types topbar_components
 						name = dip_power_icon
 						position = { 0 2 }
 					}
-					textbox = {
-						raw_text = "#bold [GetPlayer.MakeScope.ScriptValue('inflation_value')|%|=-]#!"
-						align = left|nobaseline
-						autoresize = yes
-						parentanchor = vcenter
-					}
+					#textbox = {
+					#	raw_text = "#bold [GetPlayer.MakeScope.ScriptValue('inflation_value')|%|=-]#!"
+					#	align = left|nobaseline
+					#	autoresize = yes
+					#	parentanchor = vcenter
+					#}
 				}
 
 

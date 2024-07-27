@@ -276,37 +276,40 @@ hpx_GBR_event.7 = {#Dissolution English
 	duration = 3
 
 	immediate = {
-		set_capital = STATE_HOME_COUNTIES
-		remove_primary_culture = french
-		sr:region_france = {
-       		every_scope_state = {
-       			limit = {owner = c:GBR}
-       			save_scope_as = french_states
-       		}
-    	}
+		if = {
+			limit = {exists = c:FRA}
+			set_capital = STATE_HOME_COUNTIES
+			remove_primary_culture = french
+			sr:region_france = {
+       			every_scope_state = {
+       				limit = {owner = c:GBR}
+       				save_scope_as = french_states
+       			}
+    		}
 
-		create_country = {
- 			tag = FRA
- 			origin = c:GBR
- 			state = scope:french_states
-		}
-
-		sr:region_france = {
-			every_scope_state = {
-				limit = {owner = c:GBR}
-				set_state_owner = c:FRA
+			create_country = {
+ 				tag = FRA
+ 				origin = c:GBR
+ 				state = scope:french_states
 			}
-		}
 
-		sr:region_occitania = {
-			every_scope_state = {
-				limit = {owner = c:GBR}
-				set_state_owner = c:FRA
+			sr:region_france = {
+				every_scope_state = {
+					limit = {owner = c:GBR}
+					set_state_owner = c:FRA
+				}
 			}
-		}
 
-		c:FRA = {
-			set_capital = STATE_ILE_DE_FRANCE
+			sr:region_occitania = {
+				every_scope_state = {
+					limit = {owner = c:GBR}
+					set_state_owner = c:FRA
+				}
+			}
+
+			c:FRA = {
+				set_capital = STATE_ILE_DE_FRANCE
+			}
 		}
 	}
 
@@ -335,8 +338,8 @@ hpx_GBR_event.8 = {#Dissolution French
 	duration = 3
 
 	immediate = {
-		set_capital = STATE_ILE_DE_FRANCE
-
+		if = {
+		limit = {exists = c:SCO}
 		s:STATE_LOWLANDS = {
        		every_scope_state = {
        			limit = {owner = c:GBR}
@@ -353,6 +356,8 @@ hpx_GBR_event.8 = {#Dissolution French
 		s:STATE_HIGHLANDS.region_state:GBR = {
 			set_state_owner = c:SCO
 		}
+		}
+
 	}
 	option = {
 		name = hpx_GBR_event.8.a

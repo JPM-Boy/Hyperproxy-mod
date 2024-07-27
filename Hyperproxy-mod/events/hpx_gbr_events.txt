@@ -265,12 +265,19 @@ hpx_GBR_event.6 = {# Capital moves to Paris
 
 hpx_GBR_event.7 = {#Dissolution English
 	type = country_event
-	hidden = yes
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_GBR_event.7.t
+	desc = hpx_GBR_event.7.d
+	flavor = hpx_GBR_event.7.f
+	duration = 3
 
 	immediate = {
 		set_capital = STATE_HOME_COUNTIES
 		remove_primary_culture = french
-
 		sr:region_france = {
        		every_scope_state = {
        			limit = {owner = c:GBR}
@@ -301,14 +308,31 @@ hpx_GBR_event.7 = {#Dissolution English
 		c:FRA = {
 			set_capital = STATE_ILE_DE_FRANCE
 		}
-		
+	}
+
+	option = {
+		name = hpx_GBR_event.7.a
+		default_option = yes
+		play_as = c:FRA
+	}
+	option = {
+		name = hpx_GBR_event.7.b
+		default_option = yes
 	}
 	
 }
 
 hpx_GBR_event.8 = {#Dissolution French
 	type = country_event
-	hidden = yes
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_GBR_event.8.t
+	desc = hpx_GBR_event.8.d
+	flavor = hpx_GBR_event.8.f
+	duration = 3
 
 	immediate = {
 		set_capital = STATE_ILE_DE_FRANCE
@@ -329,7 +353,15 @@ hpx_GBR_event.8 = {#Dissolution French
 		s:STATE_HIGHLANDS.region_state:GBR = {
 			set_state_owner = c:SCO
 		}
-		
+	}
+	option = {
+		name = hpx_GBR_event.8.a
+		default_option = yes
+		play_as = c:SCO
+	}
+	option = {
+		name = hpx_GBR_event.8.b
+		default_option = yes
 	}
 	
 }

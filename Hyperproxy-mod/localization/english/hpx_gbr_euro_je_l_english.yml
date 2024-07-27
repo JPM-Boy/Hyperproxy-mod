@@ -78,3 +78,14 @@ hpx_GBR_event.5.f: "\"The grand halls of the Anglo-French Parliament reverberate
 hpx_GBR_event.5.a: "Backing the English Faction"
 hpx_GBR_event.5.b: "Backing the French Faction"
 
+hpx_GBR_event.7.t: "Anglo-French Union Dissolves"
+hpx_GBR_event.7.d: "The influence of English policies and culture has grown so overwhelming within the Anglo-French Union that France has declared its independence, officially dissolving the union. This historic decision marks the end of an ambitious political experiment and sets both nations on new, separate paths."
+hpx_GBR_event.7.f: "\"The once-united halls of the Anglo-French Parliament now stand empty, echoes of unity replaced by the silence of dissolution. The English influence, having grown ever more dominant, has proven too much for France to bear. In a bold move, French leaders have declared their independence, severing the bonds of the union. As flags are lowered and new ones raised, citizens of both nations grapple with the reality of a divided future. What lies ahead for these two great nations, now set on separate courses? Only time will tell.\""
+hpx_GBR_event.7.a: "France Declares Independence"
+hpx_GBR_event.7.b: "Union Ends Peacefully"
+
+hpx_GBR_event.8.t: "Scotland Secedes"
+hpx_GBR_event.8.d: "The dominance of French policies and culture within the Anglo-French Union has reached unprecedented levels, prompting Scotland to declare its independence. This significant move marks the end of Scotland's participation in the union and signals a new era of sovereignty for the Scottish people."
+hpx_GBR_event.8.f: "\"The highlands and cities of Scotland are abuzz with a newfound sense of freedom as the influence of French culture and policies becomes too overwhelming to ignore. Scottish leaders, seeking to preserve their unique heritage and autonomy, have declared independence from the Anglo-French Union. As the blue and white of the Scottish flag rises proudly over Edinburgh, the echoes of French dominance fade, and the Scottish people embrace a new chapter of self-determination. What will the future hold for Scotland, now that it has chosen its own path?\""
+hpx_GBR_event.7.a: "Scotland Declares Independence"
+hpx_GBR_event.7.b: "Union Ends Peacefully"

@@ -1,0 +1,20 @@
+﻿COUNTRIES = {
+	c:DAI = {
+		start_communist = yes
+	}
+	c:MGL = {
+		start_communist = yes
+	}
+	c:CHI = {
+		start_communist = yes
+	}
+	c:NAX = {
+		start_communist = yes
+	}
+	c:EOT = {
+		start_communist = yes
+	}
+	c:CAM = {
+		start_communist = yes
+	}
+}

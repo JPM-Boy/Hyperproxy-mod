@@ -1,0 +1,59 @@
+﻿COUNTRIES = {
+	c:SPA = {
+		start_militar = yes
+	}
+	c:POR = {
+		start_militar = yes
+	}
+	c:SWE = {
+		start_militar = yes
+	}
+	c:YUG = {
+		start_communist = yes
+	}
+	c:RUS = {
+		start_communist = yes
+	}
+	c:FIN = {
+		start_communist = yes
+	}
+	c:POL = {
+		start_communist = yes
+	}
+	c:VEL = {
+		start_communist = yes
+	}
+	c:SRB = {
+		start_communist = yes
+	}
+	c:NGF = {
+		start_communist = yes
+	}
+	c:CZH = {
+		start_communist = yes
+	}
+	c:AUS = {
+		start_communist = yes
+	}
+	c:HUN = {
+		start_communist = yes
+	}
+	c:WAL = {
+		start_communist = yes
+	}
+	c:BUL = {
+		start_communist = yes
+	}
+	c:GRE = {
+		start_communist = yes
+	}
+	c:ALB = {
+		start_communist = yes
+	}
+	c:VEN = {
+		start_communist = yes
+	}
+	c:COR = {
+		start_communist = yes
+	}
+}

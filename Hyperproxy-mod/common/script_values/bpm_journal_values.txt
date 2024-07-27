@@ -583,10 +583,10 @@ bpm_je_syndicalism_rate = {
 		}
 	}
 	if = {
-		limit = { exists = ig:ig_trade_unions }
+		limit = { exists = ig:ig_refsoc }
 		add = {
 			desc = "BPM_VALUE_FROM_TRADE_UNIONS_POPULARITY"
-			value = ig:ig_trade_unions.interest_group_population_percentage
+			value = ig:ig_refsoc.interest_group_population_percentage
 			multiply = 20
 		}
 	}
@@ -950,11 +950,11 @@ bpm_je_general_strike_power = {
 		desc = "BPM_VALUE_FROM_TRADE_UNIONS_APPROVAL_POPULARITY"
 		if = {
 			limit = {
-				ig:ig_trade_unions = {
+				ig:ig_refsoc = {
 					ig_approval < 5
 				}
 			}
-			ig:ig_trade_unions ?= {
+			ig:ig_refsoc ?= {
 				add = bpm_je_general_strike_quadratic_trade_union_support
 				# Scale by population
 				multiply = interest_group_population_percentage
@@ -968,11 +968,11 @@ bpm_je_general_strike_power = {
 		desc = "BPM_VALUE_FROM_TRADE_UNIONS_APPROVAL_CLOUT"
 		if = {
 			limit = {
-				ig:ig_trade_unions = {
+				ig:ig_refsoc = {
 					ig_approval < 5
 				}
 			}
-			ig:ig_trade_unions ?= {
+			ig:ig_refsoc ?= {
 				add = bpm_je_general_strike_quadratic_trade_union_support
 				# Scale by population
 				multiply = ig_clout
@@ -986,7 +986,7 @@ bpm_je_general_strike_power = {
 		desc = "BPM_VALUE_FROM_POPULAR_ANGRY_TRADE_UNIONS"
 		if = {
 			limit = {
-				ig:ig_trade_unions = {
+				ig:ig_refsoc = {
 					bpm_ig_is_popular = yes
 					ig_approval <= angry
 				}
@@ -1294,14 +1294,14 @@ bpm_je_general_strike_exhaustion_rate = {
 		# Larger and more powerful unions exhaust less
 		add = {
 			desc = "BPM_VALUE_FROM_TRADE_UNION_POPULARITY"
-			ig:ig_trade_unions ?= {
+			ig:ig_refsoc ?= {
 				subtract = interest_group_population_percentage
 				multiply = 100
 			}
 		}
 		add = {
 			desc = "BPM_VALUE_FROM_TRADE_UNION_CLOUT"
-			ig:ig_trade_unions ?= {
+			ig:ig_refsoc ?= {
 				subtract = ig_clout
 				multiply = 100
 			}

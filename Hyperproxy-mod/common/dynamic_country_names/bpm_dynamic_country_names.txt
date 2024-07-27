@@ -103,7 +103,7 @@
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
 						bpm_ig_is_left_wing = yes
-						is_interest_group_type = ig_trade_unions
+						is_interest_group_type = ig_refsoc
 						leader = { bpm_leader_is_left_wing = yes }
 					}
 				}
@@ -126,7 +126,7 @@
 				bpm_country_has_modern_agriculture = no
 				OR = {
 					ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
-					ig:ig_agrarian_populists = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_ecologist = { bpm_is_strongest_ig_in_government = yes }
 				}
 			}
 		}
@@ -147,7 +147,7 @@
 				bpm_country_has_modern_agriculture = yes
 				OR = {
 					ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
-					ig:ig_agrarian_populists = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_ecologist = { bpm_is_strongest_ig_in_government = yes }
 				}
 			}
 		}
@@ -170,7 +170,7 @@
 					OR = {
 						bpm_ig_is_lower_institutional = yes
 						bpm_ig_is_left_wing = yes
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						leader = { bpm_leader_is_left_wing = yes }
 					}
 				}
@@ -195,7 +195,7 @@
 					OR = {
 						bpm_ig_is_lower_institutional = yes
 						bpm_ig_is_left_wing = yes
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						leader = { bpm_leader_is_left_wing = yes }
 					}
 				}
@@ -302,7 +302,7 @@
 						ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
 						bpm_country_has_modern_agriculture = yes
 					}
-					ig:ig_agrarian_populists = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_ecologist = { bpm_is_strongest_ig_in_government = yes }
 				}
 			}
 		}

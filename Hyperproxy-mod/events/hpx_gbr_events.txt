@@ -368,7 +368,6 @@ hpx_GBR_event.8 = {#Dissolution French
 		name = hpx_GBR_event.8.b
 		default_option = yes
 	}
-	
 }
 
 

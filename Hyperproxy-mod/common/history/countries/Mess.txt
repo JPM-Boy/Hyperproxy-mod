@@ -7,6 +7,16 @@
 		start_militar = yes
 		activate_law = law_type:law_technocracy
 	}
+	every_country = {
+		limit = {
+			OR = {
+				country_is_in_north_america = yes
+				country_is_in_central_america = yes
+				country_is_in_south_america = yes
+			}
+		}
+		start_reactionary = yes
+	}
 	c:SPA = {
 		start_militar = yes
 	}

@@ -20,4 +20,31 @@
 	c:BOL = {
 		start_communist = yes
 	}
+	c:USA = {
+		start_presidential = yes
+	}
+	c:CAN = {
+		start_presidential = yes
+	}
+	c:MEX = {
+		start_presidential = yes
+	}
+	c:PEU = {
+		start_presidential = yes
+	}
+	c:CHL = {
+		start_presidential = yes
+	}
+	c:CLM = {
+		start_presidential = yes
+	}
+	c:VNZ = {
+		start_presidential = yes
+	}
+	c:ECU = {
+		start_presidential = yes
+	}
+	c:BRZ = {
+		start_presidential = yes
+	}
 }

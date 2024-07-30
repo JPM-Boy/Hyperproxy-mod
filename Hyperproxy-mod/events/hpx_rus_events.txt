@@ -1,4 +1,4 @@
-﻿namespace = hpx_RUS_event
+namespace = hpx_RUS_event
 
 hpx_RUS_event.1 = { # EU Creation
 	type = country_event
@@ -142,7 +142,7 @@ hpx_RUS_event.1 = { # EU Creation
 		}
 	}
 	option = {
-		name = hpx_RUS_event.1.ROM
+		name = hpx_RUS_event.1.MOL
 	}
 	option = {
 		name = hpx_RUS_event.1.TUK

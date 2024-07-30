@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 je_hpx_soviet_unity: "Stability of the Soviet Union"
 soviet_unity_bar_name: "Soviet Unity"
 soviet_unity_bar_desc: "Soviet Unity: [GetPlayer.MakeScope.Var('soviet_unity').GetValue|1]#!"
@@ -18,7 +18,7 @@ hpx_RUS_event.1.UKR: "#O #b Ukraine#!"
 hpx_RUS_event.1.BYE: "#O #b Belarus#!"
 hpx_RUS_event.1.TCS: "#O #b Transcaucassia#!"
 hpx_RUS_event.1.UBD: "#O #b Baltic#!"
-hpx_RUS_event.1.ROM: "#O #b Romania#!"
+hpx_RUS_event.1.MOL: "#O #b Moldavia#!"
 hpx_RUS_event.1.TUK: "#O #b Turkmenia#!"
 hpx_RUS_event.1.KZK: "#O #b Kazakhstan#!"
 hpx_RUS_event.1.CTA: "#O #b Central Asia#!"

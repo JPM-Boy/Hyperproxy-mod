@@ -3780,45 +3780,6 @@ on_wargoal_enforced = {
         		remove_modifier = modifier_herat_inspiration
         	}
         }
-		if = {
-			limit = {
-				scope:target = {
-					has_journal_entry = je_earn_recognition
-				}
-			}
-			scope:target = {
-				change_variable = {
-					name = recognition_progress_var
-					add = {
-						add = scope:wargoal_impact
-						multiply = -4
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				owner = {
-					has_journal_entry = je_earn_recognition
-				}
-				scope:target = {
-					OR = {
-						is_country_type = recognized
-						is_country_type = colonial
-					}
-					country_rank >= rank_value:major_power
-				}
-			}
-			owner = {
-				change_variable = {
-					name = recognition_progress_var
-					add = {
-						add = scope:wargoal_impact
-						multiply = 4
-					}
-				}
-			}
-		}
 	}
 }
 

@@ -736,7 +736,7 @@ ig_revolutions.8 = {
 
 	trigger = {
 		has_insurrectionary_interest_groups = yes
-		ig:ig_petty_bourgeoisie = {
+		ig:ig_armed_forces = {
 			is_revolutionary = no
 			is_in_government = no
 			is_marginal = no
@@ -751,7 +751,7 @@ ig_revolutions.8 = {
 	}
 
 	immediate = {
-		ig:ig_petty_bourgeoisie = {
+		ig:ig_armed_forces = {
 			save_scope_as = ig_pb_on_the_edge
 		}
 	}
@@ -762,7 +762,7 @@ ig_revolutions.8 = {
 		ai_chance = {
 			base = 30
 		}
-		ig:ig_petty_bourgeoisie = {
+		ig:ig_armed_forces = {
 	        add_modifier = {
 	            name = ig_concessions_and_appeasement
 	            months = 36
@@ -775,7 +775,7 @@ ig_revolutions.8 = {
 		ai_chance = {
 			base = 15
 		}
-		ig:ig_petty_bourgeoisie = {
+		ig:ig_armed_forces = {
 	    	join_revolution = yes
 	        add_modifier = {
 	            name = ig_unappeased
@@ -795,7 +795,7 @@ ig_revolutions.8 = {
 			base = 30
 			modifier = {
 				trigger = {
-					ig:ig_petty_bourgeoisie = {
+					ig:ig_armed_forces = {
 						is_powerful = yes
 					}
 				}
@@ -803,14 +803,14 @@ ig_revolutions.8 = {
 			}
 			modifier = {
 				trigger = {
-					ig:ig_petty_bourgeoisie = {
+					ig:ig_armed_forces = {
 						ig_approval < -3
 					}
 				}
 				add = -10
 			}
 		}
-		ig:ig_petty_bourgeoisie = {
+		ig:ig_armed_forces = {
 	        add_modifier = {
 	            name = ig_mass_arrests
 	            months = 12

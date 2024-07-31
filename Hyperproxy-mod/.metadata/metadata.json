@@ -21,7 +21,8 @@
       "common/parties",
       "common/history/population",
       "common/dynamic_country_names",
-      "common/dynamic_country_map_colors"
+      "common/dynamic_country_map_colors",
+      "events"
     ]
   }
 }

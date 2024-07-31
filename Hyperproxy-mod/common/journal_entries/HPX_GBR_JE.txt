@@ -42,7 +42,7 @@ je_hpx_eu_community = {
 	goal_add_value = {
 		value = 7
 	}
-
+	should_be_pinned_by_default = yes
 	progressbar = yes
 }
 
@@ -61,7 +61,14 @@ je_hpx_anglo_french_influence = {
 	}
 
 	possible = {
-		always = yes
+		OR = {
+			STATE_ILE_DE_FRANCE = {
+				capital = c:GBR
+			}
+			STATE_HOME_COUNTIES = {
+				capital = c:GBR
+			}
+		}
 	}
 
 	fail = {

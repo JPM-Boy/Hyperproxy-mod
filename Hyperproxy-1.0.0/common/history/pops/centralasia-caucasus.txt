@@ -1,0 +1,235 @@
+﻿POPS = {
+	s:STATE_TURKMENIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = turkmen
+				size = 1750000
+			}
+			create_pop = {
+				culture = uzbek
+				size = 500000
+			}
+		}
+	}
+	s:STATE_MERZ = {
+		region_state:RUS = {
+			create_pop = {
+				culture = turkmen
+				size = 1750000
+			}
+			create_pop = {
+				culture = uzbek
+				size = 500000
+			}
+		}
+	}
+	s:STATE_KHIVA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = uzbek
+				size = 3000000
+			}
+			create_pop = {
+				culture = kazak
+				size = 500000
+			}
+		}
+	}
+	s:STATE_UZBEKIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = uzbek
+				size = 7000000
+			}
+			create_pop = {
+				culture = kazak
+				size = 2500000
+			}
+		}
+	}
+	s:STATE_TAJIKISTAN = {
+		region_state:RUS = {
+			create_pop = {
+				culture = tajik
+				size = 3000000
+			}
+		}
+		region_state:AFG = {
+			create_pop = {
+				culture = tajik
+				size = 100000
+			}
+		}
+	}
+	s:STATE_KIRGHIZIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kirgiz
+				size = 2000000
+			}
+		}
+	}
+	s:STATE_FERGANA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kirgiz
+				size = 2000000
+			}
+		}
+	}
+	s:STATE_JETISY = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kazak
+				size = 2000000
+			}
+			create_pop = {
+				culture = uighur
+				size = 800000
+			}
+		}
+	}
+	s:STATE_SEMIRECHE = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kazak
+				size = 1500000
+			}
+		}
+	}
+	s:STATE_AKMOLINSK = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 3000000
+			}
+		}
+	}
+	s:STATE_SYRDARYA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kazak
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_URALSK = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kazak
+				size = 4000000
+			}
+			create_pop = {
+				culture = russian
+				size = 2500000
+			}
+		}
+	}
+	s:STATE_AKTOBE = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kazak
+				size = 4000000
+			}
+			create_pop = {
+				culture = russian
+				size = 2500000
+			}
+		}
+	}
+	s:STATE_AZERBAIJAN = {
+		region_state:RUS = {
+			create_pop = {
+				culture = azerbaijani
+				size = 6000000
+			}
+		}
+	}
+	s:STATE_ARMENIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = armenian
+				size = 5400000
+			}
+		}
+	}
+	s:STATE_GREATER_CAUCASUS = {
+		region_state:RUS = {
+			create_pop = {
+				culture = georgian
+				size = 4500000
+			}
+			create_pop = {
+				culture = north_caucasian
+				size = 100000
+			}
+		}
+	}
+	s:STATE_NORTH_CAUCASUS = {
+		region_state:RUS = {
+			create_pop = {
+				culture = north_caucasian
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_DAGESTAN = {
+		region_state:RUS = {
+			create_pop = {
+				culture = north_caucasian
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_KUBAN = {
+		region_state:RUS = {
+			create_pop = {
+				culture = circassian
+				size = 3000000
+			}
+			create_pop = {
+				culture = north_caucasian
+				size = 1500000
+			}
+		}
+	}
+	s:STATE_STAVROPOL = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 4000000
+			}
+		}
+	}
+	s:STATE_ASTRAKHAN = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 1100000
+			}
+		}
+	}
+	s:STATE_KALMYKIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = kalmyk
+				size = 400000
+			}
+		}
+	}
+	s:STATE_ROSTOV = {
+		region_state:RUS = {
+			create_pop = {
+				culture = russian
+				size = 2500000
+			}
+		}
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				size = 2700000
+			}
+		}
+	}
+
+}

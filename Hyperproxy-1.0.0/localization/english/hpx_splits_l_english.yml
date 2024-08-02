@@ -1,0 +1,28 @@
+﻿l_english:
+# SOCDEM SPLIT
+ hpx_ig.1.t:0 "Movement of the Rose"
+ hpx_ig.1.d:0 "As Capitalism is evolving into a new world that never has been so globalized, movements against the wild capitalism without limits and the authoritarian communist regimes has developed a new method of thought, the Third Way. Its members, the @ig_socdem! #yellow Social Democrats#!, have started organizing from universities and academia to the average citizen of our nation. This will surely impact the left."
+ hpx_ig.1.f:0 "In the best of cases, these two dimensions of Social Democracy were mutually reinforcing — welfare reforms promoting class confidence and organization, class mobilization giving renewed electoral mandates for further reformism, through a dense network of trade-union and party structures. \n\n-Perry Anderson,"The Light of Europe" (1992)"
+ hpx_ig.1.a:0 "A new Left-Wing movement?"
+
+ je_hpx_split_socdems:0 "The Third Way"
+ je_hpx_split_socdems_status:0 "Monitor the emergence of Social Democrats."
+ je_hpx_split_socdems_reason:0 "The recent economic and social debates within our country are giving rise to a coalition of former socialists and liberals, who strive for an hybrid system between capitalism and communism for our country, called also the Third Way or Social Democracy. They say that it is a perfect balance between economic growth from capitalism and a good quality of life from the far-left."
+
+ hpx_ig.3.t:0 "Movement of the Free Market"
+ hpx_ig.3.d:0 "In an era where global markets are more interconnected than ever, a new ideology championing economic freedom and minimal government intervention has emerged. Neoliberalism, emphasizing deregulation, privatization, and free-market capitalism, contrasts starkly with wild capitalism and restrictive communist regimes. Its proponents, the @ig_neolib! #blue Neoliberals#!, are rallying support from financial hubs and think tanks to everyday entrepreneurs. This movement is poised to redefine our nation's economic policies and political discourse."
+ hpx_ig.3.f:0 ""Neoliberalism is a philosophy that favors small government, minimal regulation, and free-market economics. It holds that human well-being can best be advanced by liberating individual entrepreneurial freedoms and skills within an institutional framework characterized by strong private property rights, free markets, and free trade. The role of the state is to create and preserve an institutional framework appropriate to such practices. The assumption is that the market, with its self-regulating mechanisms, will lead to the best outcomes for society." \n\n-David Harvey (2005)"
+ hpx_ig.3.a:0 "Interesting..."
+
+ je_hpx_split_neolibs:0 "The Neoliberal Shift"
+je_hpx_split_neolibs_status:0 "Monitor the rise of Neoliberals."
+je_hpx_split_neolibs_reason:0 "Recent economic and social debates within our country are fostering a coalition of former socialists and liberals advocating for a hybrid economic system that blends capitalism and individual freedom, known as Neoliberalism. They argue it achieves a balance between economic growth driven by free markets and the enhancement of individual prosperity."
+
+ je_hpx_split_prog:0 "New Progressism"
+ je_hpx_split_prog_status:0 "Monitor the emergence of Progressists."
+ je_hpx_split_prog_reason: "Recent economic and social debates within our country are fostering a coalition of forward-thinking individuals advocating for a hybrid system that blends economic innovation with social justice, known as Progressivism. They argue it achieves a balance between economic growth and equitable quality of life for all citizens."
+
+hpx_ig.5.t:0 "Movement of Progress"
+hpx_ig.5.d:0 "In an era where social awareness and economic innovation are more interconnected than ever, a new ideology championing social justice and sustainable development has emerged. Progressivism, emphasizing equality, environmental responsibility, and social reforms, contrasts starkly with both unregulated capitalism and restrictive communist regimes. Its proponents, the @ig_prog! #gold Progressives#!, are rallying support from grassroots movements and advocacy groups to everyday citizens. This movement is poised to redefine our nation's social and economic policies and political discourse."
+hpx_ig.5.f:0 "Progressivism is the belief that through reasoned discourse and proactive policy-making, we can advance the well-being of all citizens, ensuring equal opportunities, social justice, and a fair distribution of wealth. Progressives strive to address systemic issues and work towards a more inclusive and equitable society." \n\n-Theodore Roosevelt"
+ hpx_ig.5.a: "We should keep up with the times"

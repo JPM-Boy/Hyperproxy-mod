@@ -1,0 +1,32 @@
+﻿COUNTRIES = {
+	c:OVM = {
+		start_communist = yes
+	}
+	c:KON = {
+		start_communist = yes
+	}
+	c:MPT = {
+		start_communist = yes
+	}
+	c:NAM = {
+		start_communist = yes
+	}
+	c:WSG = {
+		start_communist = yes
+	}
+	c:ZND = {
+		start_communist = yes
+	}
+	c:HAU = {
+		start_communist = yes
+	}
+	c:MOS = {
+		start_communist = yes
+	}
+	c:MAL = {
+		start_communist = yes
+	}
+	c:SAH = {
+		start_communist = yes
+	}
+}

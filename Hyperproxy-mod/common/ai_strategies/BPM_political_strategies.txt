@@ -1,4 +1,4 @@
-﻿ai_strategy_conservative_agenda = {
+ai_strategy_conservative_agenda = {
 	icon = "gfx/interface/icons/ai_strategy_icons/conservative_agenda.dds"
 	
 	type = political
@@ -64,23 +64,22 @@
 	}		
 	
 	pro_interest_groups = {
-		ig_conservatives
+		ig_cons
 		ig_reactionaries
-		ig_national_liberals
+		ig_neolib
 		ig_devout
 		ig_landowners
 		ig_armed_forces
-		ig_petty_bourgeoisie
+		ig_urbanite
 	}
 
 	anti_interest_groups = {
-		ig_radicals
-		ig_trade_unions
-		ig_socialists
-		ig_revolutionist_socialists
-		ig_reformist_socialists
-		ig_anarchists
-		ig_agrarian_populists
+		ig_prog
+		ig_refsoc
+		ig_revsoc
+		ig_leftpop
+		ig_anarchist
+		ig_ecologist
 	}
 	
 	institution_scores = {
@@ -197,21 +196,19 @@ ai_strategy_reactionary_agenda = {
 	type = political
 	
 	pro_interest_groups = {
-		ig_reactionaries
+		ig_reactionary
 		ig_devout
 		ig_landowners
 		ig_armed_forces
 	}
 	
 	anti_interest_groups = {
-		ig_liberals
-		ig_radicals
-		ig_trade_unions
-		ig_socialists
-		ig_revolutionist_socialists
-		ig_reformist_socialists
-		ig_anarchists
-		ig_agrarian_populists
+		ig_liberal
+		ig_prog
+		ig_revsoc
+		ig_refsoc
+		ig_anarchist
+		ig_ecologist
 	}
 	
 	institution_scores = {
@@ -359,19 +356,18 @@ ai_strategy_progressive_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_liberals
-		ig_market_liberals
-		ig_radicals
-		ig_trade_unions
-		ig_agrarian_populists
+		ig_liberal
+		ig_libertarian
+		ig_prog
+		ig_ecologist
 	}
 
 	anti_interest_groups = {
-		ig_reactionaries
-		ig_fascists
+		ig_reactionary
+		ig_fascist
 		ig_landowners
 		ig_armed_forces
-		ig_petty_bourgeoisie
+		ig_urbanite
 	}
 
 	institution_scores = {
@@ -518,22 +514,20 @@ ai_strategy_progressive_conservative_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_conservatives
-		ig_national_liberals
+		ig_cons
+		ig_neolib
 		ig_devout
 	}
 
 	anti_interest_groups = {
-		ig_reactionaries
-		ig_fascists
-		ig_market_liberals
-		ig_radicals
-		ig_trade_unions
-		ig_socialists
-		ig_agrarian_populists
-		ig_reformist_socialists
-		ig_revolutionist_socialists	
-		ig_anarchists
+		ig_reactionary
+		ig_fascist
+		ig_libertarian
+		ig_prog
+		ig_ecologist
+		ig_refsoc
+		ig_revsoc	
+		ig_anarchist
 	}
 
 	institution_scores = {

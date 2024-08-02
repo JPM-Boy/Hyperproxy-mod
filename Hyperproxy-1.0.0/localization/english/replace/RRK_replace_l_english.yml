@@ -1,0 +1,13 @@
+﻿l_english:
+    # Government Type desc.
+    concept_government_type_ingame_added: 3 "\n\nThe $concept_government_type$ in [GetPlayer.GetNameNoFlag] is #tooltippable #tooltip:[GetPlayer.GetGovernment.GetTooltipTag],GOVERNMENT_TYPE_TOOLTIP_DESC [GetPlayer.GetGovernment.GetName]#!#!,[AddLocalizationIf(GetScriptedGui('RRK_sg_is_conmon').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End),'RRK_gov_type_head_of_gov')] for the following reasons:\n[GetPlayer.GetGovernment.GetPossibleTriggerDesc(AccessPlayer)]"
+    
+    RRK_gov_type_head_of_gov: " which has a separate [concept_RRK_head_of_gov].\n\n[GetPlayer.GetNameNoFlag] is a #tooltippable #tooltip:[GetPlayer.GetGovernment.GetTooltipTag],GOVERNMENT_TYPE_TOOLTIP_DESC [GetPlayer.GetGovernment.GetName]#!#!"
+    
+    # Subtitles - RRK-prefixed strings aren't replacements, but rather just placed here for convenience
+    RRK_CHARACTER_PANEL_RULER:   "[Concept('concept_ruler', Character.GetPrimaryRoleTitle)] of [Character.GetCountry.GetName]"
+    RRK_CHARACTER_PANEL_PREMIER: "[Concept('concept_RRK_head_of_gov', Character.GetCustom('RRK_cl_head_of_gov_title_character'))] of [Character.GetCountry.GetName]"
+    RRK_CHARACTER_PANEL_OTHER:   "[Character.GetPrimaryRoleName] in [Character.GetCountry.GetName]"
+    
+    CHARACTER_PANEL_SUBTITLE_OTHER: "[SelectLocalization(Character.IsRuler, 'RRK_CHARACTER_PANEL_RULER', 'RRK_CHAR_PNL_SUB_OTHER_2')]"
+    RRK_CHAR_PNL_SUB_OTHER_2:   "[SelectLocalization(GetScriptedGui('RRK_sg_is_head_of_gov').IsShown(GuiScope.SetRoot(Character.MakeScope).End), 'RRK_CHARACTER_PANEL_PREMIER', 'RRK_CHARACTER_PANEL_OTHER')]"

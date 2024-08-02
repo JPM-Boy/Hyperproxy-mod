@@ -1,0 +1,3 @@
+﻿country_can_form_power_bloc = {
+    always = yes
+}

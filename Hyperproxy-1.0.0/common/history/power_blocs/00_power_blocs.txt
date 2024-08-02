@@ -1,0 +1,92 @@
+﻿POWER_BLOCS = {
+	c:USA = {
+		create_power_bloc = {
+			name = NATO
+			map_color = { 38  84  154 }
+
+			founding_date = 1952.4.18 # Treaty of Paris (1783) comes into effect
+			identity = identity_military_treaty_organization
+			principle = principle_defensive_cooperation_1
+
+			# subjects are automatically part of the bloc
+			member = c:GER
+			member = c:NET
+			member = c:BEL
+			member = c:LUX
+			member = c:BAV
+			member = c:BRI
+			member = c:DEN
+			member = c:NOR
+			member = c:IRE
+			member = c:OCC
+			member = c:ITA
+			member = c:CAN
+			member = c:CSC
+		}
+	}
+	c:RUS ?= {
+		create_power_bloc = {
+			name = WARSAW_PACT
+
+			map_color = { 164 35 65 }
+
+			founding_date = 1955.5.14
+
+			identity = identity_ideological_union
+			principle = principle_ideological_truth_1
+
+			member = c:POL
+			member = c:CZH
+			member = c:VEL
+			member = c:SRB
+			member = c:NGF
+			member = c:AUS
+			member = c:VEN
+			member = c:HUN
+			member = c:WAL
+			member = c:BUL
+			member = c:GRE
+			member = c:ALB
+			member = c:MGL
+
+
+		}
+	} 
+	c:EGY ?= {
+		create_power_bloc = {
+			name = ARAB_UNION
+
+			map_color = { 160 220 90 }
+
+			founding_date = 1958.2.1
+
+			identity = identity_trade_league
+			principle = principle_external_trade_1
+
+			member = c:ARA
+			member = c:TRI
+			member = c:IRQ
+
+		}
+	}
+	c:SAF ?= {
+		create_power_bloc = {
+			name = BOER_UNION
+
+			map_color = { 255 140 0 }
+
+			founding_date = 1961.5.31
+
+			identity = identity_sovereign_empire
+			principle = principle_exploit_members_1
+
+			member = c:MNC
+			member = c:MTB
+			member = c:TSW
+			member = c:TRN
+			member = c:ZUL
+
+		}
+	}
+
+}

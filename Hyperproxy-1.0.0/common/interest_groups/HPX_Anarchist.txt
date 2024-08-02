@@ -1,0 +1,324 @@
+﻿ig_anarchist = {
+	color = hsv{ 0 0 0 }
+	texture = "gfx/interface/icons/ig_icons/anarchists.dds"
+	layer = "revolution_dynamic_petty_bourgeoisie"
+	index = 21
+	
+	ideologies = {
+		ideology_nonexistent
+	}
+	
+	enable = {
+		always = yes
+	}
+	
+	on_enable = {
+		ig:ig_anarchist = {
+			# set_ig_trait = ig_trait:ig_trait_left_systematic_corruption
+			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
+			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
+		}
+	}
+	on_disable = {}
+	on_character_ig_membership = {}
+	pop_potential = {
+		owner = {
+			NOT = { is_country_type = decentralized }
+		}
+	}
+	
+	pop_weight = {
+		value = 5
+
+		if = {
+			limit = { 
+				NOR = {
+					pop_employment_building_group = bg_agriculture
+					pop_employment_building_group = bg_ranching
+					pop_employment_building_group = bg_plantations
+				}
+			}
+			add = {
+				desc = "URBAN_POP"
+				value = 20
+			}
+			if = {
+				limit = { is_employed = no }
+				add = {
+					desc = "URBAN_UNEMPLOYED"
+					value = 100
+				}
+			}
+		}
+	
+		if = {
+			limit = { 
+				OR = {
+					is_pop_type = clerks
+					is_pop_type = laborers
+					is_pop_type = machinists
+				}
+			}
+			add = {
+				desc = "POP_PROLETARIAT"
+				value = 50
+			}
+			add = {
+				desc = "POP_EDUCATED_PROLETARIAT"
+				value = literacy_rate
+				multiply = 20
+			}
+		}
+
+		add = {
+			desc = "POP_EDUCATED_FARMERS"
+			if = {
+				limit = { 
+					OR = {
+						is_pop_type = peasants
+						is_pop_type = farmers
+					}
+				}
+				value = literacy_rate
+				multiply = 20
+			}
+		}	
+
+		add = {
+			desc = "POP_LEADERS"
+			if = {
+				limit = { 
+					OR = {
+						is_pop_type = academics
+						is_pop_type = engineers
+					}
+				}
+				value = 80
+			}
+		}
+
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = { 
+					is_pop_type = soldiers
+					owner = { has_variable = bpm_ig_laborers_angry_var }
+				}
+				value = 120
+			}
+		}
+		add = {
+			desc = "POPS_ANGER_SYMPATHY"
+			if = {
+				limit = { 
+					OR = {
+						is_pop_type = farmers
+						is_pop_type = academics
+					}
+					owner = { has_variable = bpm_ig_laborers_angry_var }
+				}
+				value = 100
+			}
+		}
+
+
+		add = {
+			desc = "POP_DISCRIMINATED"
+			if = {
+				limit = { 
+					pop_is_discriminated = yes
+				}
+				value = 60
+			}
+		}	
+		
+		add = ig_attraction_agrarian_socialism
+
+		if = {
+			limit = { owner = { bpm_performance_significant_country = yes } }
+			add = ig_attraction_tmp_bpm_non_rural_socialist
+			multiply = {
+				desc = "LEADER_POPULARITY"
+				scope:interest_group = {
+					leader = {
+						value = popularity
+						multiply = 0.01
+						add = 1
+						max = 2.0
+						min = 0.5
+					}
+				}
+			}	
+			multiply = bpm_ig_agitators_popularity
+			multiply = bpm_ig_ruler_popularity
+			multiply = ig_attraction_from_radicals_and_loyalists
+		}
+		
+		multiply = {
+			desc = "NO_UNIONS"	
+			value = 1.0
+
+			if = {
+				limit = { 
+					owner = { NOT = { has_variable = bpm_country_has_non_marginal_unions_history_var } }
+				}
+				value = 0.1
+			}		
+		}
+
+		multiply = {
+			desc = "WEAK_UNIONS"	
+			value = 1.0
+
+			if = {
+				limit = { 
+					owner = { NOT = { has_variable = bpm_country_has_established_unions_history_var } }
+				}
+				value = 0.5
+			}		
+		}
+
+		multiply = {
+			desc = "ESTABLISHED_UNIONS"	
+			value = 1.0
+
+			if = {
+				limit = { 
+					owner = { has_variable = bpm_country_has_powerful_unions_var }
+				}
+				value = 1.5
+			}		
+		}
+
+		multiply = {
+			desc = "AT_WAR"	
+			value = 1.0
+
+			if = {
+				limit = { 
+					owner = {
+						is_at_war = yes
+					}
+				}
+				value = 1.7
+			}		
+		}	
+		owner = {
+			if = {
+				limit = { has_global_variable = second_intl_chain_complete_var }
+				multiply = 1.0
+			}
+			else_if = {
+				limit = { has_global_variable = first_intl_chain_complete_var }
+				multiply = {
+					desc = "BEFORE_SECOND_INTERNATIONAL"
+					value = 0.7
+				}
+			}
+			else = {
+				multiply = {
+					desc = "BEFORE_FIRST_INTERNATIONAL"
+					value = 0.5
+				}
+			}
+		}
+		multiply = {
+			desc = "POLITICAL_AGITATION"	
+			value = 1.0
+			if = {
+				limit = { owner = { has_technology_researched = political_agitation } }
+				value = 1.3
+			}		
+		}
+		multiply = {
+			desc = "NO_ANARCHISM"	
+			value = 1.0
+
+			if = {
+				limit = { 
+					owner = {
+						NOT = { has_technology_researched = anarchism }
+					}
+				}
+				value = 0.7
+			}		
+		}	
+
+		multiply = {
+			desc = "NO_LABOR_MOVEMENT"	
+			value = 1.0
+			
+			if = {
+				limit = { 
+					owner = {
+						NOT = { has_technology_researched = labor_movement }
+					}
+				}
+				value = 0.7
+			}		
+		}		
+
+		multiply = {
+			desc = "NO_EGALITARIANISM"	
+			value = 1.0
+			
+			if = {
+				limit = { 
+					owner = {
+						NOT = { has_technology_researched = egalitarianism }
+					}
+				}
+				value = 0.5
+			}		
+		}
+	}
+	
+	monarch_weight = {
+		value = 0.0
+	}	
+
+	agitator_weight = {
+		value = 1.0
+		multiply = bpm_base_agitator_weight
+	}
+
+	commander_weight = {
+		value = 1.0
+		multiply = bpm_commander_assignment_from_laws_factor
+	}	
+	
+	noble_chance = {
+		value = 0.0
+	}
+	
+	female_commander_chance = {	
+		value = 1.0
+		multiply = bpm_female_commander_spawn_chance
+	}
+	
+	female_politician_chance = {
+		value = 1.0
+		multiply = bpm_female_character_spawn_chance
+	}	
+
+	female_agitator_chance = {
+		value = 1.0
+		multiply = bpm_female_character_spawn_chance		
+	}
+	
+	# The chance that a commander belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular commander in the IG
+	commander_leader_chance = {
+		value = 0.25
+		if = {
+			limit = {
+				exists = scope:character
+			}
+			multiply = {
+				value = 1
+				add = scope:character.popularity
+				min = 0
+			}
+		}
+	}
+}

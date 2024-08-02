@@ -1,0 +1,18 @@
+﻿DIPLOMACY = {
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:USA
+			type = rivalry
+		}
+	}
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+}	
+
+
+
+

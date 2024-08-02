@@ -1,0 +1,136 @@
+﻿MOR = {
+	color = { 224  146  113 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { maghrebi berber }
+	capital = STATE_FEZ
+}
+
+SAH = { # Sahrawi
+	color = { 220  202  96 }	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { berber }
+	capital = STATE_WEST_SAHARA
+}
+
+OUA = {
+	color = { 113 95 122 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bidan }
+	capital = STATE_INNER_MAURITANIA
+}
+
+MAL = {
+	color = { 75 179 27}
+	country_type = recognized
+	tier = kingdom
+	cultures = { bambara fulbe wolof mande }
+	capital = STATE_WESTERN_MALI
+}
+
+ADG = {
+	color = { 215 132 165 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { tuareg }
+	capital = STATE_TIMBUKTU
+}
+
+MOS = {
+	color = { 27 128 45 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mossi }
+	capital = STATE_VOLTA
+}
+
+HAU = {
+	color = { 225 185 85 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { hausa }
+	capital = STATE_OUTER_HAUSALAND
+}
+
+ALD = {
+	color = { 220  202  96 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { maghrebi berber }
+	
+	capital = STATE_ALGIERS
+}
+
+TUN = {
+	color = { 131  101  85 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { maghrebi }
+	capital = STATE_TUNISIA
+	is_named_from_capital = yes
+}
+
+TRI = {
+	color = { 180  137  148 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { maghrebi }
+	capital = STATE_TRIPOLI
+	is_named_from_capital = yes
+}
+
+AIR = {
+	color = { 30 31 162 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { tuareg }
+	capital = STATE_NIGER
+}
+
+EGY = {
+	color = { 255  205  155 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { misri }
+	capital = STATE_LOWER_EGYPT
+}
+
+SUD = { # Sudanese
+	color = { 189 159 69 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { sudanese beja bedouin }
+	capital = STATE_BLUE_NILE
+}

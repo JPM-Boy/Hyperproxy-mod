@@ -1,0 +1,6 @@
+﻿COUNTRIES = {
+	every_country = {
+		effect_starting_technology_tier_1_tech = yes
+		start_parliamentary = yes
+	}
+}

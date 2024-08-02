@@ -1,0 +1,88 @@
+﻿l_english:
+# Conservatives
+ig_cons:0 "Conservatives"
+ig_cons_only_icon:0 "@ig_cons!"
+ig_cons_desc:0 "Conservatives refer to the broad set of people who want to preserve the status quo, while situationally advancing or rolling back reforms in response to social crises. Since this is not a unified ideology, conservatives can be rife with internal conflicts, for instance, between those who support libertarianism vs. social paternalism, particularism vs. nationalism, or secularism vs. religious moralism."
+
+ig_english_cons: "English Conservatives"
+
+#Anarchists
+ig_anarchist:0 "Anarchists"
+ig_anarchist_only_icon:0 "@ig_anarchist!"
+ig_anarchist_desc:0 "Anarchists refer to the broad groups that believe in the immediate abolition of the state. Varied in specific beliefs, anarchists usually follow the tradition of Proudhon and Bakunin against other types of socialism, attempting to form non-hierarchical labor alliances seeking to either outgrow the state or overthrow it in one fell swoop."
+
+#Ecologists
+ig_ecologist:0 "Ecologists"
+ig_ecologist_only_icon:0 "@ig_ecologist!"
+ig_ecologist_desc:0 "Ecologists refer to the many movements which main objective is the preservation of the Earth and its Ecosystems. They usually mix with Liberals and other type of Progressist ideologies."
+
+ig_soc_ecologist: "Eco-Socialists"
+ig_english_ecologist: "English Hippies"
+
+#Fascists
+ig_fascist:0 "Fascists"
+ig_fascist_only_icon:0 "@ig_fascist!"
+ig_fascist_desc:0 "An extreme-right ideology, fascism is difficult to define in specific terms. Generally characterized by national chauvinism, a reverence of the state, and a rabid hostility to any Left-wing or perceived foreign elements, it is just as much inundated with contradictions -- while fascists often espouse deeply traditional values, they also glorify the efficiency of modern industry and war. This strange coupling of traditionalism with modernity is part of what sets e.g. clerical fascism apart from traditional moralism, and Italian Futurism apart from socialism."
+
+#Left Populists
+ig_leftpop:0 "Left-Wing Populists"
+ig_leftpop_only_icon:0 "@ig_leftpop!"
+ig_leftpop_desc:0 "Populism refers to the many movements usually centered in a single figure that appeal to the mainstream people who feel that the elites do not care about them."
+
+#Right Populists
+ig_rightpop:0 "Right-Wing Populists"
+ig_rightpop_only_icon:0 "@ig_rightpop!"
+ig_rightpop_desc:0 "Populism refers to the many movements usually centered in a single figure that appeal to the mainstream people who feel that the elites do not care about them."
+
+#Liberal
+ig_liberal:0 "Liberals"
+ig_liberal_only_icon:0 "@ig_liberal!"
+ig_liberal_desc:0 "Modern liberalism, focuses on individual freedoms, democratic governance, and the rule of law while advocating for economic policies that combine free-market principles with some level of government intervention. It prioritizes civil liberties, human rights, and equality of opportunity, emphasizing the importance of social welfare, education, and healthcare to ensure that all individuals can participate fully in society."
+
+ig_french_liberal: "French Republicans"
+
+#Libertarianism
+ig_libertarian:0 "Libertarians"
+ig_libertarian_only_icon:0 "@ig_libertarian!"
+ig_libertarian_desc:0 "Libertarianism, emphasizes individual freedom, limited government, and free-market capitalism. It advocates for minimal state intervention in personal and economic matters, prioritizing property rights, voluntary exchange, and personal responsibility. Libertarians seek to maximize personal autonomy and minimize the role of government in all aspects of life, supporting civil liberties, free speech, and privacy. Their focus is on reducing taxes, regulations, and government spending, believing that a free and open market best serves society's interests."
+
+#Neoliberals
+ig_neolib:0 "Neo-Liberals"
+ig_neolib_only_icon:0 "@ig_neolib!"
+ig_neolib_desc:0 "Neoliberalism, emphasizes free-market capitalism, deregulation, and privatization. It advocates for reducing government intervention in the economy, promoting competition, and encouraging private enterprise. Neoliberal policies often include tax cuts, trade liberalization, and labor market flexibility to foster economic growth and efficiency. It prioritizes individual entrepreneurial freedoms and market-based solutions over state control, aiming to create a more dynamic and globally integrated economy."
+
+#Progressists
+ig_prog:0 "Progressists"
+ig_prog_only_icon:0 "@ig_radicals!"
+ig_prog_desc:0 "Progressivism, focuses on addressing social inequalities and promoting social justice through active government intervention. It advocates for policies that expand social welfare, protect workers' rights, and ensure equal opportunities for all. Progressives support progressive taxation, universal healthcare, and strong environmental regulations. They emphasize the importance of inclusive governance, civil rights, and grassroots activism to create a fair and equitable society, striving for systemic reforms to address economic and social disparities."
+
+#Reactionaries
+ig_reactionary:0 "Reactionaries"
+ig_reactionary_only_icon:0 "@ig_reactionary!"
+ig_reactionary_desc:0 "Reactionaries are a broad tent of those who want to go back to the good old days, who unlike niche interest groups elevate their nostalgia to a general politics. The specifics of what they want depends on what the good old days were like (or seemed to be) in each particular country. Subsections of this group include monarchic absolutists, religious moralists, or even wealthy peasants"
+
+#Reformists
+ig_refsoc:0 "Reformist Socialists"
+ig_refsoc_only_icon:0 "@ig_refsoc!"
+ig_refsoc_desc:0 "Reformist Socialists vary in their commitment to reformism and socialism. On the radical end, such as the French Possibilists and the German USPD, are those who prioritize reforms in the present while holding revolution as a long-term goal. In the middle are those who believe that socialism can be attained by reforms alone, such as Eduard Bernstein's faction in the SPD. Finally, on the right wing are those who want to strike a compromise betwen capitalism and socialism, eventually becoming what we know as social democracy today."
+
+#Revolutionaries
+ig_revsoc:0 "Revolutionary Socialists"
+ig_revsoc_only_icon:0 "@ig_revsoc!"
+ig_revsoc_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
+
+ig_french_revsoc: "French Communists"
+
+#Socdems
+ig_socdem:0 "Social Democrats"
+ig_socdem_only_icon:0 "@ig_socdem!"
+ig_socdem_desc:0 "Social democracy, aims to integrate capitalist economies with substantial government intervention to achieve social justice and reduce economic inequality. It emphasizes comprehensive social welfare systems, including universal healthcare and education, as well as strong labor rights and protections. Social democrats advocate for progressive taxation and redistributive policies to ensure equitable wealth distribution. They prioritize democratic governance, civil liberties, and inclusive policies, striving to create a fair and just society while maintaining a regulated yet dynamic market economy."
+
+#Institutional IGs
+ig_urbanite:0 "Urbanites"
+ig_urbanite_only_icon:0 "@ig_urbanite!"
+ig_urbanite_desc:0 "WIP"
+
+ig_minority:0 "Minority Interests"
+ig_minority_only_icon:0 "@ig_minority!"
+ig_minority_desc:0 "WIP"

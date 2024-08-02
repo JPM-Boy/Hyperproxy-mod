@@ -1,0 +1,97 @@
+﻿# Very high liberalism, e.g. USA
+
+start_parliamentary = {
+	activate_law = law_type:law_parliamentary_republic
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_census_voting
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_private_schools
+	activate_law = law_type:law_no_workers_rights
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_mercantilism	
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_migration_controls
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_homesteading
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_purchased_officers
+}
+
+start_presidential = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_census_voting
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_private_schools
+	activate_law = law_type:law_no_workers_rights
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_mercantilism	
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_migration_controls
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_homesteading
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_purchased_officers
+}
+
+start_militar = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_state_religion
+	activate_law = law_type:law_military_junta
+	activate_law = law_type:law_national_supremacy
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_closed_borders
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_religious_schools
+	activate_law = law_type:law_party_single
+	activate_law = law_type:law_no_workers_rights
+	activate_law = law_type:law_militarized_police
+	activate_law = law_type:law_unitary
+}
+
+start_mon_militar = {
+	activate_law = law_type:law_monarchy
+	activate_law = law_type:law_state_religion
+	activate_law = law_type:law_military_junta
+	activate_law = law_type:law_national_supremacy
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_closed_borders
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_religious_schools
+	activate_law = law_type:law_party_single
+	activate_law = law_type:law_no_workers_rights
+	activate_law = law_type:law_militarized_police
+	activate_law = law_type:law_unitary
+}
+
+start_communist = {
+	activate_law = law_type:law_council_republic
+	activate_law = law_type:law_communist_dictatorship
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_national_militia
+	activate_law = law_type:law_national_guard
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_confederated
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_collectivized_agriculture
+	activate_law = law_type:law_militarized_police
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_public_health_insurance
+	activate_law = law_type:law_state_controlled_labor_unions
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_women_in_the_workplace
+	activate_law = law_type:law_migration_controls
+	
+}

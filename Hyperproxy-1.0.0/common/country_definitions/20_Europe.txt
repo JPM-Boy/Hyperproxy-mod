@@ -1,0 +1,483 @@
+﻿POR = {
+	color = rgb{0 158 186}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { galician portuguese }
+	capital = STATE_GALICIA
+}
+
+SCO = {
+	color = rgb{58 104 188}
+
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { scottish }
+	capital = STATE_LOWLANDS
+}
+
+SPA = {
+	color = {197 168 8}
+
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { spanish andalusian }
+	capital = STATE_TOLEDO
+}
+
+CAT = {
+	color = {221 144 0}
+
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { catalan }
+	capital = STATE_CATALONIA
+}
+
+OCC = {
+	color = {178 229 112}
+
+	country_type = recognized
+	tier = principality
+	cultures = { occitan }
+	capital = STATE_LANGUEDOC
+}
+
+GBR = {
+	color = {216 49 80}
+
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { british french }
+	capital = STATE_HOME_COUNTIES
+}
+
+FRA = {
+	color = {43 68 255}
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { french }
+	capital = STATE_ILE_DE_FRANCE
+}
+
+BRI = {
+	color = {101 140 145}
+
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { breton }
+	capital = STATE_BRITTANY
+	is_named_from_capital = yes
+}
+
+IRE = {
+	color = {110 221 112}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { irish }
+	capital = STATE_LEINSTER
+}
+
+ICL = {
+	color = {105 114 219}
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { icelandic }
+	capital = STATE_ICELAND
+	is_named_from_capital = yes
+}
+
+BEL = {
+	color = {233 114 255}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { flemish wallonian }	
+	capital = STATE_FLANDERS
+}
+
+NET = {
+	color = {255 153 0}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { dutch }
+	capital = STATE_HOLLAND
+}
+
+LUX = {
+	color = {221 191 113}
+	
+	country_type = recognized
+
+	tier = grand_principality
+	
+	cultures = { wallonian north_german }
+	capital = STATE_WALLONIA
+}
+
+LIE = {
+	color = {142 81 110}
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { wallonian }
+	capital = STATE_WALLONIA
+}
+
+SWI = {
+	color = {202 172 229}
+
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	capital = STATE_WEST_SWITZERLAND
+	cultures = { alemannic francoprovencal }
+	religion = protestant
+}
+
+GER = {
+	color = {153 153 153}
+
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { north_german south_german }
+	capital = STATE_NORTH_RHINE
+}
+
+DEN = {
+	color = {0 178 178}
+
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { danish }
+	capital = STATE_ZEALAND
+}
+
+FIN = {
+	color = {169 150 211}
+	
+	country_type = recognized
+
+	tier = grand_principality
+	
+	cultures = { finnish }
+	capital = STATE_SOUTHERN_FINLAND
+}
+
+NOR = {
+	color = {119 178 172}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures= { norwegian }
+	capital = STATE_EASTERN_NORWAY
+}
+
+SWE = {
+	color = {93 114 163}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { swedish }
+	capital = STATE_SVEALAND
+}
+
+BAV = {
+	color = {107 116 165}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { south_german }
+	capital = STATE_BAVARIA
+	is_named_from_capital = yes
+}
+
+COR = {
+	color = {102 108 127}
+	country_type = recognized
+	tier = principality
+	cultures = { corsican }
+	capital = STATE_CORSICA
+}
+
+SAR = {
+	color = {65 127 86}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+	is_named_from_capital = yes
+}
+
+ITA = {
+	color = {78 186 90}
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { north_italian south_italian }
+	capital = STATE_LAZIO
+}
+
+VEN = {
+	color = {174 216 84}
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+NGF = {
+	color = {173 87 87}
+	
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { sorb }
+	capital = STATE_BRANDENBURG
+}
+
+POL = {
+	color = {214 64 81}
+
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { polish }
+	capital = STATE_MAZOVIA
+}
+
+VEL = {
+	color = {186 142 132}
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { sorb }
+	capital = STATE_POMERANIA
+}
+
+SRB = { # Sorbia
+	color = {52 145 126}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { sorb }
+	
+	capital = STATE_SAXONY
+}
+
+CZH = {
+	color = {153 102 201}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { czech slovak }
+	capital = STATE_BOHEMIA
+}
+
+AUS = {
+	color = {214 87 140}
+
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { south_german }
+	capital = STATE_AUSTRIA
+}
+
+HUN = {
+	color = {164 170 138}
+
+
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { hungarian }
+	capital = STATE_CENTRAL_HUNGARY
+}
+
+WAL = {
+	color = {198 63 74}
+
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { romanian }
+	capital = STATE_WALLACHIA
+	is_named_from_capital = yes
+}
+
+YUG = {
+	color = {69 100 147}
+	
+	country_type = recognized
+
+	tier = empire
+	
+	capital = STATE_NORTHERN_SERBIA 
+	cultures = { serb croat bosniak }
+}
+
+ALB = {
+	color = {204 48 72}
+	
+	country_type = recognized
+
+	tier = principality
+	 
+	cultures = { albanian }
+	capital = STATE_ALBANIA
+	is_named_from_capital = yes
+}
+
+BUL = {
+	color = {20 160 158}	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { bulgarian }	
+	capital = STATE_BULGARIA
+}
+
+GRE = {
+	color = {178 85 125}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { greek }	
+	capital = STATE_ATTICA
+}
+
+RUS = {
+	color = {178 46 48}
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { russian }
+	capital = STATE_MOSCOW
+}
+
+UKR = {
+	color = { 62 90 240 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { ukrainian }
+	capital = STATE_KIEV
+}
+
+BYE = {
+	color = { 172  170  170 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { byelorussian }
+	capital = STATE_MINSK
+}
+
+UBD = {
+	color = { 142  140  84 }
+	
+	country_type = recognized
+
+	tier = grand_principality
+	
+	cultures = { latvian estonian lithuanian }
+	capital = STATE_RIGA
+}
+MOL = {
+	color = { 136  157  23 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { romanian }
+	capital = STATE_MOLDAVIA
+	is_named_from_capital = yes
+}
+CAU = {
+	color = { 200 100 55 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { azerbaijani armenian georgian }
+	capital = STATE_GREATER_CAUCASUS
+}

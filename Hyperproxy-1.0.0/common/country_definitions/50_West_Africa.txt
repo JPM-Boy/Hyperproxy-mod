@@ -1,0 +1,341 @@
+﻿#From Ndar to Congo
+JLF = {
+	color = { 215  215  125 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { wolof }
+	capital = STATE_SENEGAL
+}
+
+SRR = {
+	color = { 57 121 111 }
+	country_type = recognized
+	
+	tier = principality
+
+	religion = animist
+	
+	cultures = { mande }
+	capital = STATE_GAMBIA
+}
+
+BND = {
+	color = { 60 118 54 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { fulbe mande }
+	capital = STATE_GAMBIA
+}
+
+KBU = {
+	color = { 101 63 41 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mande }
+	
+	religion = animist
+	
+	capital = STATE_GAMBIA
+}
+
+BSS = { # Bassa
+	color = { 203 48 37 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bassa }
+	capital = STATE_LIBERIA
+}
+
+FTJ = {
+	color = { 230 125 127 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { fulbe }
+	capital = STATE_GUINEA
+}
+
+SIL = {
+	color = { 123  206  101 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { afro_caribbean }
+	capital = STATE_SIERRA_LEONE
+	is_named_from_capital = yes
+}
+
+KNM = {
+	color = { 200 172 105}
+	country_type = recognized
+	tier = principality
+	cultures = {
+		west_nigritic
+	}
+	capital = STATE_SIERRA_LEONE
+}
+
+MDK = {
+	color = { 191 83 53 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mande }
+	capital = STATE_GUINEA
+}
+
+SSU = {
+	color = { 69 109 142 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mande }
+	capital = STATE_GUINEA
+}
+
+LIB = {
+	color = { 193  138  83 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { afro_american }
+	capital = STATE_LIBERIA
+	is_named_from_capital = yes
+}
+
+KBD = {
+	color = { 117 36 54 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mande }
+	capital = STATE_WINDWARD_COAST
+}
+
+AYI = {
+	color = { 131 210 34 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { akan }
+	capital = STATE_IVORY_COAST
+}
+
+ASH = {
+	color = { 97 98 195 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { akan }
+	capital = STATE_GHANA
+}
+
+KNG = {
+	color = { 137 98 195 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { dyula senufo }
+	capital = STATE_IVORY_COAST
+}
+
+EWE = {
+	color = { 210 34 131 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { ewe }
+	capital = STATE_TOGO
+}
+
+DAH = {
+	color = { 11 84 179 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { fon }
+	capital = STATE_DAHOMEY
+}
+
+SOK = {
+	color = { 0 135 81 }
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { hausa fulbe }
+	capital = STATE_HAUSALAND
+}
+
+IBO = {
+	color = { 119 24 85 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { ibo }
+	capital = STATE_NIGER_DELTA
+}
+
+OYO = {
+	color = { 211 184 179 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { yoruba }
+	capital = STATE_YORUBA_STATES
+}
+
+BEN = {
+	color = { 110 173 129 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { edo }
+	capital = STATE_BENIN
+}
+
+BMM = {
+	color = { 197 201 163 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { equatorial_bantu }
+	religion = sunni
+	capital = STATE_NORTH_CAMEROON
+}
+
+BRG = {
+	color = { 218 231 235 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mande fulbe }
+	capital = STATE_HAUSALAND
+}
+
+DLA = {
+	color = { 22 121 17 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { equatorial_bantu }
+	capital = STATE_SOUTH_CAMEROON
+}
+
+BOR = {
+	color = { 30 131 162 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { kanuri }
+	capital = STATE_BORNU
+}
+
+WAD = {
+	color = { 194 66 41 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { fur }
+	capital = STATE_WADDAI
+}
+
+BGI = {
+	color = { 64 124 157 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { baguirmi }
+	capital = STATE_WADDAI
+}
+
+ZND = {
+	color = { 208 225 57 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { azande }
+	capital = STATE_CONGO_ORIENTALE
+}
+
+DAK = {
+	color = { 123 134 74 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { fur equatorial_bantu }
+	capital = STATE_UBANGI_SHARI
+}
+
+LNG = {
+	color = { 200 202 85 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bakongo }
+	capital = STATE_CONGO
+}
+
+BOB = {
+	color = { 211 149 112 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { mongo bakongo }
+	capital = STATE_EQUATEUR
+}
+
+TKE = {
+	color = { 99 160 139 }
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bakongo }
+	capital = STATE_CONGO
+}

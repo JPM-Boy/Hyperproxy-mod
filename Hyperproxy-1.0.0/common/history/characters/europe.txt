@@ -1,0 +1,272 @@
+﻿CHARACTERS = {
+	c:GBR = {
+		create_character = {
+		# Georges Pompidou
+			first_name = "Georges"
+			last_name = "Pompidou"
+			culture = french
+			historical = yes
+			ig_leader = yes
+			ruler = yes
+			birth_date = 1911.5.7
+			interest_group = ig_liberal
+			ideology = ideology_moderate
+			traits = {
+				meticulous
+			}
+		}
+	}
+	c:RUS = {
+		create_character = {
+		# Leonid Brezhev
+			first_name = "Leonid"
+			last_name = "Brezhev"
+			culture = ukrainian
+			historical = yes
+			ig_leader = yes
+			ruler = yes
+			age = 60
+			interest_group = ig_revsoc
+			ideology = ideology_communist
+			religion = atheist
+		}
+	}
+	c:SPA = {
+		create_character = {
+		# Francisco Franco ewww
+			first_name = "Luis"
+			last_name = "Carrero_Blanco"
+			culture = spanish
+			historical = yes
+			is_general = yes
+			hq = region_iberia
+			interest_group = ig_armed_forces
+			ideology = ideology_fascist
+			age = 66
+			ruler = yes
+		}
+	}
+	c:YUG = {
+		create_character = {
+			first_name = "Josip"
+			last_name = "Broz_Tito"
+			culture = croat
+			historical = yes
+			interest_group = ig_refsoc
+			ig_leader = yes
+			ideology = ideology_moderate
+			religion = atheist
+			age = 78
+			ruler = yes
+		}
+	}
+	c:GER = {
+		create_character = {
+			first_name = "Gustav"
+			last_name = "Heinemann"
+			culture = north_german
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_refsoc
+			ideology = ideology_moderate
+			age = 71
+			ruler = yes
+		}
+	}
+	c:POR = {
+		create_character = {
+			first_name = "Francisco"
+			last_name = "Franco"
+			culture = galician
+			historical = yes
+			interest_group = ig_reactionary
+			ideology = ideology_fascist
+			age = 78
+			ruler = yes
+		}
+	}
+	c:HUN = {
+		create_character = {
+			first_name = "Jenö"
+			last_name = "Fock"
+			culture = hungarian
+			historical = yes
+			interest_group = ig_revsoc
+			ideology = ideology_socialist_leader
+			religion = atheist
+			age = 54
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+	c:ITA = {
+		create_character = {
+			first_name = "Giuseppe"
+			last_name = "Saragat"
+			culture = north_italian
+			historical = yes
+			interest_group = ig_refsoc
+			ideology = ideology_socialist_leader
+			age = 72
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+	c:NGF = {
+		create_character = {
+			first_name = "Walter"
+			last_name = "Ulbricht"
+			culture = sorb
+			historical = yes
+			religion = atheist
+			interest_group = ig_revsoc
+			ideology = ideology_ethno_nationalist
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+	c:POL = {
+		create_character = {
+			first_name = "Wojciech"
+			last_name = "Jaruzelski"
+			culture = polish
+			historical = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_authoritarian
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+	c:NET = {
+		create_character = {
+			first_name = "Piet"
+			last_name = "De_Jong"
+			culture = dutch
+			historical = yes
+			interest_group = ig_cons
+			ideology = ideology_market_liberal
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+	c:SWI = {
+		create_character = {
+			first_name = "Hans_Peter"
+			last_name = "Tschudi"
+			culture = south_german
+			historical = yes
+			interest_group = ig_refsoc
+			ideology = ideology_market_liberal
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+	c:GRE = {
+		create_character = {
+			first_name = "Kostas"
+			last_name = "Koligiannis"
+			culture = greek
+			historical = yes
+			interest_group = ig_refsoc
+			ideology = ideology_vanguardist
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+	c:SWE = {
+		create_character = {
+			first_name = "Torsten"
+			last_name = "Rapp"
+			culture = swedish
+			historical = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			ruler = yes
+			ig_leader = yes
+			is_general = yes
+			hq = region_scandinavia
+		}
+	}
+
+	c:NOR = {
+		create_character = {
+			first_name = "Per"
+			last_name = "Borten"
+			culture = norwegian
+			historical = yes
+			interest_group = ig_ecologist
+			ideology = ideology_moderate
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+	c:FIN = {
+		create_character = {
+			first_name = "Aarne"
+			last_name = "Saarinen"
+			culture = finnish
+			historical = yes
+			interest_group = ig_refsoc
+			ideology = ideology_reformer
+			ruler = yes
+			ig_leader = yes
+			religion = atheist
+		}
+	}
+
+	c:DEN = {
+		create_character = {
+			first_name = "Hilmar"
+			last_name = "Baunsgaard"
+			culture = danish
+			historical = yes
+			interest_group = ig_liberal
+			ideology = ideology_moderate
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+	c:BAV = {
+		create_character = {
+			first_name = "Franz_Josef"
+			last_name = "Strauss"
+			culture = south_german
+			historical = yes
+			interest_group = ig_cons
+			ideology = ideology_moderate
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+	c:AUS = {
+		create_character = {
+			first_name = "Franz"
+			last_name = "Muhri"
+			culture = south_german
+			historical = yes
+			interest_group = ig_revsoc
+			ideology = ideology_vanguardist
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+	c:CZH = {
+		create_character = {
+			first_name = "Gustav"
+			last_name = "Husak"
+			culture = slovak
+			historical = yes
+			interest_group = ig_refsoc
+			ideology = ideology_reformist
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+
+}

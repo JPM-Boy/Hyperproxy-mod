@@ -1,0 +1,24 @@
+{
+  "name" : "Hyperproxy-1.0.0",
+  "id" : "",
+  "version" : "",
+  "supported_game_version" : "1.7.*",
+  "picture" : "thumbnail.png",
+  "short_description" : "",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true,
+    "replace_paths" : [
+      "common/history/pops",
+      "common/history/countries",
+      "common/history/characters",
+      "common/history/states",
+      "common/history/population",
+      "common/history/power_blocs",
+      "common/interest_groups",
+      "common/country_definitions",
+      "common/parties"
+    ]
+  }
+}

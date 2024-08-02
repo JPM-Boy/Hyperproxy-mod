@@ -1,0 +1,122 @@
+﻿TUR = {
+	color = {206 82 80}
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { turkish }
+	capital = STATE_EASTERN_THRACE
+}
+
+CYP = {
+	color = {255 230 45}
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { greek }
+	capital = STATE_CYPRUS
+	is_named_from_capital = yes
+}
+
+SYR = {
+	color = {127 133 255}
+	country_type = recognized
+	tier = principality
+	cultures = { mashriqi }
+	religion = sunni
+	capital = STATE_SYRIA
+}
+
+EOT = {
+	color = {234 75 133}
+	country_type = recognized
+	tier = principality
+	cultures = { mashriqi bedouin }
+	capital = STATE_TRANSJORDAN
+}
+
+ISR = {
+	color = {53 120 255}
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { ashkenazi }
+	religion = jewish
+	capital = STATE_PALESTINE
+}
+
+IRQ = {
+	color = {99 122 178}
+
+	
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { mashriqi }
+	capital = STATE_BAGHDAD
+}
+
+ARA = {
+	color = {199 214 100}
+
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { mashriqi bedouin misri yemenite }
+	capital = STATE_HEDJAZ
+}
+
+OMA = {
+	color = {255 50 255}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { bedouin }
+	religion = shiite
+	capital = STATE_OMAN
+	is_named_from_capital = yes
+}
+
+PER = {
+	color = {186 176 35}
+
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { persian}
+	capital = STATE_IRAKAJEMI
+}
+
+AFG = {
+	color = {158 193 98}
+	
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { pashtun tajik }
+	capital = STATE_EASTERN_AFGHANISTAN
+}
+
+PAK = {
+	color = {54 109 41}
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { kashmiri panjabi sindi baluchi pashtun }
+	religion = sunni
+	capital = STATE_SINDH
+}

@@ -1,0 +1,301 @@
+﻿
+andalusian={
+	color= { 98 152 32 }
+	religion = catholic
+	traits = { iberian_culture_group hispanophone european_heritage }
+	male_common_first_names={
+		Agustin
+		Alberto
+		Alejandro
+		Alfonso
+		Antonio
+		Antonio_Maria
+		Arsenio
+		Augusto
+		Baldomero
+		Baltasar
+		Benito
+		Bernardino
+		Bernardo
+		Calixto
+		Carlos
+		Celestino
+		Claudio
+		Cristobal
+		Diego
+		Dionisio
+		Damaso
+		Eduardo
+		Emilio
+		Estanislao
+		Federico
+		Felipe
+		Fernando
+		Francisco
+		Francisco_Javier
+		Felix
+		Gabino
+		Gabriel
+		Gaspar
+		Genaro
+		Gonzalo
+		Ignacio
+		Isidro
+		Jacobo
+		Jaime
+		Joaquin
+		JosE_
+		Jose_Antonio
+		Jose_Manuel
+		Jose_Maria
+		Juan
+		Juan_Bautista
+		Julio
+		Jorge
+		Leopoldo
+		Lorenzo
+		Luis
+		Manuel
+		Marcelo
+		Mariano
+		Mateo
+		Melchor
+		Miguel
+		Nicolas_2
+		Pablo
+		Pascual
+		Pedro
+		Rafael_2
+		Raimundo
+		Ramon
+		Ricardo
+		Santiago
+		Sebastian
+		Segismundo
+		Valeriano
+		Vicente
+		Alvaro
+	}
+	female_common_first_names = {
+		Adelaida
+		Alejandrina
+		Amalia
+		Antonia
+		Bonifacia
+		Carlota
+		Clotilde
+		Concepcion
+		Dolores
+		Emilia
+		Enriqueta
+		Eulalia
+		Faustina
+		Francisca
+		Guillermina
+		Herminia
+		Isabella
+		Joaquina
+		Manuela
+		Maria_2
+		Mariana
+		Martina
+		Robustiana
+		Rosa
+		Sabina
+		Teresa
+	}	
+	noble_last_names = {
+		Alvarez_de_Toledo de_Albornoz de_ArmendA_riz de_Almansa de_AlO_s de_Arteche
+		Barrionuevo de_Bohorques de_Bernuy de_Bago
+		Cabrera Cagigal_de_la_Vega Colon de_Carvajal del_Carmen_Contreras
+		DI_ez_de_Rivera de_Domecq
+		Fernandez_de_Cordoba de_la_Fuente Fitz-James_Stuart de_Figueroa Flores_de_SeptiE_n FernA_ndez-Zapata FernA_ndez_de_CO_rdoba
+		Garcia_de_la_Noceda GirO_n de_GuzmA_n de_Godoy GonzA_lez_de_Cienfuegos Grimaldi
+		Hidalgo_de_Cisneros
+		JordA_n_de_UrrI_es
+		LO_pez_de_Haro de_Llorach
+		MessI_a de_Mercader de_Mora de_Medina del_Milagro_Quesada
+		Ortiz_de_la_Riva O_Donnell Osorio_de_Moscoso de_Orozco
+		Primo_de_Rivera PE_rez_de_Herrasti de_Palafox PE_rez_de_GuzmA_n PiN_eiro de_Pedro del_Pilar_Osorio
+		de_QuirO_s de_Quintanilla
+		RamI_rez_de_Saavedra del_Rosario_FalcO_ del_Rosario_Vereterra de_Rojas de_Riquer Ruiz_de_Arana
+		SuA_rez_de_ArgudI_n de_Silva de_SatrU_stegui SaI_nz_de_la_Maza de_Samaniego de_Sentmenat de_Salavert de_Santiago_Concha Sanchiz
+		de_Tineo
+		de_Urquijo de_Uzqueta
+		de_Valda del_Valle de_Villalonga de_la_Vera ValdE_s
+		de_ZufI_a
+	}
+	common_last_names={
+		Acuna Aguirre Alcala-Zamora Allendesalazar Alonso Aranda Arguelles-Meres Asensio Aznar Alvarez Acedo Arabolaza Arrate Artola Aranzadi
+		Barradas Bugallal BotI_n Bonilla Belaunde Blanco
+		Cano Cervera Corsi Cuadrada Comamala
+		Diaz_2 DomI_nguez
+		Espartero Escoda EguiazA_bal
+		Fernandez Franco Fajardo
+		Garcia Gonzalez Gil Grasset Galatas
+		Heredia Hernandez Herrera Hevia
+		Izaguirre
+		Linares Lopez Lorenzana Landazabal LarraN_aga
+		Maroto Martinez-Campos Maura Menendez Miaja Millan-Astray Mina Mola Munoz Marquez MelE_ndez MedizA_bal Muguerza Moreira Mandiola Muguruza
+		Narvaez
+		Ortega Otero Onsalo OrdO_N_ez Olaso Ozores
+		Pavia Perez PajarO_n Pagaza Pattullo Pena
+		Queipo_de_Llano Quintana Quirante
+		Rodriguez Rojo Ruiz Reparez Ruete
+		Sanjurjo Serrano Silvestre Samitier Serrano Saprissa
+		Topete Tuduri Terradas Torralba
+		Valdes Varela Villapol Villar Vela Villota Vilalta Vallana VA_zquez
+		Weyler
+		Yague
+		Zamora Zabala
+	}
+	male_regal_first_names={
+		Alfonso Amadeo
+		Carlos
+		Felipe Fernando
+		JosE_ Juan_Carlos
+		Luis
+	}
+	female_regal_first_names={
+		Beatriz
+		Eulalia
+		Isabel
+		Luisa_Fernanda
+		Maria_2 MarI_a_Teresa
+	}
+	regal_last_names = {
+		de_BorbO_n
+		de_BorbO_n_Anjou
+		de_BorbO_n_Parma
+		de_Habsburgo
+		de_Orleans
+		de_Saboya
+		de_Wittelsbach
+	}	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+west_nigritic={
+	color= hsv{ 0.54 0.52 0.53 }
+	religion = sunni
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Abdullahi
+		Abubakar
+		Ahmadu
+		Alfa
+		Amadu
+		Balobo
+		Dan
+		Malam
+		Muhammed
+		Seku
+		Tidiani
+		Tukur
+		Umar
+		Usman
+		Yaqub
+		Yusufu
+	}
+	female_common_first_names = {
+		Aisha
+		Asmau
+		Hadiza
+		Saraki
+		Turai
+	}	
+	noble_last_names = {
+		Bayero
+		dan_Fodio
+		Denianke
+		Ribadu
+		Saraki
+		Toorodi
+	}
+	common_last_names={
+		Amadu
+		Bello
+		Dadi
+		Fodio
+		Ibrahim
+		Sa_id_Tall
+		zaki
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+east_nigritic={
+	color= hsv{ 0.98 0.38 0.94 }
+	religion = animist
+	traits = { west_african_culture_group african_heritage }
+	male_common_first_names={
+		Abisi
+		Adebo
+		Adelu
+		Ademufekun
+		Adeyemi
+		Agidigbo
+		Ajikin
+		Amodo
+		Atiba
+		Bello
+		Gbadegesin
+		Kase
+		Ladopo
+		Lauru
+		Lawani
+		Majotu
+		Makua
+		Oluewu
+		Onikepe
+		Siyanbola
+	}
+	female_common_first_names = {
+		Abibatu
+		Adebumi
+		Adesemi
+		Folashade
+		Funke
+		Idowu
+		Mulikat
+		Oluremi
+		Opo_Olu
+		Tejumade
+	}	
+	noble_last_names = {
+		Adelana
+		Ademola
+		Akinsuroju
+		Aladesanmi
+		Alakija
+		Dosunmu
+		Jadesimi
+		Mogaji
+		Ojulari
+		Ologbenla
+		Tinubu
+	}
+	common_last_names={
+		Adeniran
+		Agogoja
+		Alowolodu
+		Atobatele
+		Bezon
+		Bucknor
+		Dudu
+		Hungbo
+		Oladigbolu
+		Oyo
+		Tofa
+		Tonyon
+		Zumaw
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}

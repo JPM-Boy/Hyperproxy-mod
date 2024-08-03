@@ -1,8 +1,0 @@
-﻿l_braz_por:
-    RRK_UN_full_name:           "[ROOT.GetCharacter.GetFullName]"
-    RRK_UN_title_ruler:         "[ROOT.GetCharacter.GetCountry.GetRuler.GetPrimaryRoleTitle] "
-    RRK_UN_title_heir:          "[ROOT.GetCharacter.GetPrimaryRoleTitle] "
-    RRK_UN_title_general:       "$concept_general$ "
-    RRK_UN_title_admiral:       "$concept_admiral$ "
-    RRK_UN_title_none:          ""
-    RRK_UN_full_name_no_format: "[ROOT.GetCharacter.GetFullNameNoFormatting]"

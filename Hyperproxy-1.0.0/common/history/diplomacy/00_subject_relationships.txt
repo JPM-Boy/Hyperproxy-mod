@@ -1,8 +1,0 @@
-﻿DIPLOMACY = {
-	c:RUS = {
-		create_diplomatic_pact = {
-			country = c:FIN
-			type = puppet
-		}
-	}
-}

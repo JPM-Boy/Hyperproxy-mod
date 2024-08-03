@@ -1,7 +1,0 @@
-﻿l_english:
-hpx_misc.1.t: "The Current State of [SCOPE.sCountry('nation_scope').GetNameNoFlag]"
-hpx_misc.1.d: "Welcome to Hyperproxy, you chose the country of [SCOPE.sCountry('nation_scope').GetName]."
-hpx_misc.1.f.council_republic: "In 1970, the Warsaw Pact was in their largest extension. The country of Corsica just got a communist revolution and applied to join. Meanwhile China and Naxalia are the main communist nations in the east, each with their own struggle in their home regions."
-hpx_misc.1.f: "You have chosen a country without initial lore yet."
-hpx_misc.1.f.RUS: "The Soviet Union recently lost the Moon Race and they are working towards the Mars Race. The Soviet sphere of influence never has been so big. Now that the West is fractured, what is our next plan? We are waiting orders."
-hpx_misc.1.a: "Thank you"

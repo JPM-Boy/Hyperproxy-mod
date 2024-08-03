@@ -215,7 +215,6 @@
 			state_type = unincorporated
 		}
 		add_homeland = persian
-		add_homeland = turkmen
 		add_homeland = kurdish
 	}
 	s:STATE_KHUZESTAN = {

@@ -1,0 +1,162 @@
+﻿# European Community
+
+je_hpx_eu_community = {
+	icon = "gfx/interface/icons/timed_modifier_icons/EU.dds"
+
+	group = je_group_internal_affairs
+	scripted_button = convince_EU_button_key
+
+	is_shown_when_inactive = {
+		c:GBR = root
+	}
+
+	possible = {
+		always = yes
+	}
+
+	weight = 200
+
+
+	immediate = {
+		set_global_variable = {
+			name = EC_MEMBERS
+			value = 1
+		}
+	}
+
+	complete = {
+		global_var:EC_MEMBERS >= 8
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = hpx_EU_event.1
+			days = 0
+		}
+	}
+
+	current_value = {
+		value = global_var:EC_MEMBERS
+	}
+
+	goal_add_value = {
+		value = 7
+	}
+	should_be_pinned_by_default = yes
+	progressbar = yes
+}
+
+je_hpx_anglo_french_influence = {
+	icon = "gfx/interface/icons/timed_modifier_icons/GBR.dds"
+
+	group = je_group_internal_affairs
+
+	#scripted_button = change_capital_english_button_key
+	#scripted_button = change_capital_french_button_key
+	#scripted_button = english_boost_button_key
+	#scripted_button = french_boost_button_key
+
+	is_shown_when_inactive = {
+		c:GBR = root
+	}
+
+	possible = {
+		OR = {
+			STATE_ILE_DE_FRANCE = {
+				capital = c:GBR
+			}
+			STATE_HOME_COUNTIES = {
+				capital = c:GBR
+			}
+		}
+	}
+
+	fail = {
+		NOT = {has_state_in_state_region = STATE_ILE_DE_FRANCE}
+	}
+
+	immediate = {
+		set_global_variable = { name = anglo_influence_progress value = 100 }
+		set_global_variable = { name = french_influence_progress value = 100 }
+		
+		if = {
+			limit = {
+				is_player = yes
+			}
+			calculate_anglo_french_passive_progress = yes
+			calculate_anglo_french_ig_progress = yes
+			calculate_anglo_french_radical_progress = yes
+			calculate_anglo_french_event_progress = yes
+
+			scope:journal_entry = {
+				set_global_variable = { name = anglo_influence_progress value = "scripted_bar_progress(french_english_progress_bar)" }
+				set_global_variable = { name = french_influence_progress value = 200 }
+				change_global_variable = { name = french_influence_progress subtract = global_var:anglo_influence_progress }
+			}
+		}
+		sr:region_england = {
+			save_scope_as = england_region
+		}
+		sr:region_france = {
+			save_scope_as = france_region
+		}
+    }
+
+	weight = 150
+	on_weekly_pulse = {
+        effect = {
+			update_anglo_french_progressbar_tooltips = yes
+        }
+    }
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					is_player = yes
+				}
+				calculate_anglo_french_passive_progress = yes
+				calculate_anglo_french_ig_progress = yes
+				calculate_anglo_french_radical_progress = yes
+				calculate_anglo_french_event_progress = yes
+				calculate_anglo_french_events = yes
+			}
+		} 
+		random_events = {
+			200 = 0
+			10 = hpx_GBR_event.1
+			10 = hpx_GBR_event.2
+			10 = hpx_GBR_event.3
+			10 = hpx_GBR_event.4
+			10 = hpx_GBR_event.5
+		}
+		
+
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = anglo_french_influence_french
+				trigger = {
+					global_var:french_influence_progress >= 125
+				}
+			}
+			triggered_desc = {
+				desc = anglo_french_influence_anglo
+				trigger = {
+					global_var:anglo_influence_progress >= 125
+				}
+			}
+			triggered_desc = {
+				desc = anglo_french_influence_neutral
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	scripted_progress_bar = french_english_progress_bar
+	}

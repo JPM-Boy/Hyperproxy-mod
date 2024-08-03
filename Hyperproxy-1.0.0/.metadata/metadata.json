@@ -10,6 +10,8 @@
   "game_custom_data" : {
     "multiplayer_synchronized" : true,
     "replace_paths" : [
+      "common/country_definitions",
+      "common/defines",
       "common/history/pops",
       "common/history/countries",
       "common/history/characters",
@@ -17,8 +19,8 @@
       "common/history/population",
       "common/history/power_blocs",
       "common/interest_groups",
-      "common/country_definitions",
-      "common/parties"
+      "common/parties",
+      "common/journal_entries"
     ]
   }
 }

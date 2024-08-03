@@ -1,5 +1,5 @@
 {
-  "name" : "Hyperproxy-0.1.1",
+  "name" : "Hyperproxy-Mod",
   "id" : "",
   "version" : "",
   "supported_game_version" : "1.7.*",
@@ -10,22 +10,19 @@
   "game_custom_data" : {
     "multiplayer_synchronized" : true,
     "replace_paths" : [
-      "common/country_definitions",
-      "common/defines",
       "common/history/pops",
       "common/history/countries",
       "common/history/characters",
-      "common/history/states",
-      "common/history/population",
-      "common/history/power_blocs",
       "common/interest_groups",
-      "common/parties",
+      "common/country_definitions",
+      "common/power_blocs",
+      "common/history/states",
       "common/journal_entries",
-      "map_data/state_regions",
+      "common/parties",
+      "common/history/population",
       "common/dynamic_country_names",
       "common/dynamic_country_map_colors",
-      "events",
-      "gfx/map/textures"
+      "events"
     ]
   }
 }

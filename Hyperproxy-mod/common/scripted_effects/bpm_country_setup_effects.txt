@@ -381,4 +381,12 @@ bpm_setup_basic_igs = {
 		}
 		bpm_initialize_populism = yes
 	}
+	if = {
+		limit = { 
+			ig:ig_trade_unions ?= { has_ideology = ideology:ideology_nonexistent}
+			has_technology_researched = democracy
+		}
+		bpm_initialize_trade_unions = yes
+	}
+
 }

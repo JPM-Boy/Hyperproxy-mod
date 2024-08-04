@@ -128,6 +128,7 @@ KBD = {
 	
 	cultures = { mande }
 	capital = STATE_WINDWARD_COAST
+	religion = protestant
 }
 
 AYI = {
@@ -138,6 +139,7 @@ AYI = {
 	
 	cultures = { akan }
 	capital = STATE_IVORY_COAST
+	religion = protestant
 }
 
 ASH = {
@@ -149,6 +151,7 @@ ASH = {
 	
 	cultures = { akan }
 	capital = STATE_GHANA
+	religion = protestant
 }
 
 KNG = {
@@ -159,6 +162,7 @@ KNG = {
 	
 	cultures = { dyula senufo }
 	capital = STATE_IVORY_COAST
+	religion = protestant
 }
 
 EWE = {
@@ -169,6 +173,7 @@ EWE = {
 	
 	cultures = { ewe }
 	capital = STATE_TOGO
+	religion = protestant
 }
 
 DAH = {
@@ -179,6 +184,7 @@ DAH = {
 	
 	cultures = { fon }
 	capital = STATE_DAHOMEY
+	religion = protestant
 }
 
 SOK = {
@@ -190,6 +196,7 @@ SOK = {
 	
 	cultures = { hausa fulbe }
 	capital = STATE_HAUSALAND
+	religion = protestant
 }
 
 IBO = {

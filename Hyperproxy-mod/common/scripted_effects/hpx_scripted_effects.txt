@@ -195,3 +195,16 @@ setup_space_race_lists = {
 	add_to_global_variable_list = {name = manned_moon target = c:USA}
 
 }
+
+dissolve_soviet = {
+	create_country = {
+		tag = CRI
+		state = s:STATE_CRIMEA.region_state:RUS
+	}
+
+	create_country = {
+		tag = LIT
+		state = s:STATE_VILNIUS.region_state:RUS
+		state = s:STATE_KAUNAS.region_state:RUS
+	}
+}

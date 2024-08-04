@@ -7,6 +7,7 @@
 	
 	cultures = { balinese batak bornean dayak javan malay moluccan sumatran }
 	capital = STATE_WEST_JAVA
+	religion = sunni
 }
 
 AST = {

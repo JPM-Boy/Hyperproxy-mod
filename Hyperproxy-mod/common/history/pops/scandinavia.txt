@@ -245,7 +245,7 @@
 				size = 350000
 			}
 		}
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 1750000

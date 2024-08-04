@@ -1,4 +1,4 @@
-﻿POR = {
+POR = {
 	color = rgb{0 158 186}
 	
 	country_type = recognized
@@ -169,13 +169,11 @@ SWI = {
 	religion = protestant
 }
 
-GER = {
+WGE = {
 	color = {153 153 153}
-
-	
 	country_type = recognized
 
-	tier = empire
+	tier = kingdom
 	
 	cultures = { north_german south_german }
 	capital = STATE_NORTH_RHINE
@@ -279,7 +277,7 @@ VEN = {
 	capital = STATE_VENETIA
 }
 
-NGF = {
+EGE = {
 	color = {173 87 87}
 	
 	country_type = recognized
@@ -480,4 +478,49 @@ CAU = {
 	
 	cultures = { azerbaijani armenian georgian }
 	capital = STATE_GREATER_CAUCASUS
+}
+
+LIT = {
+	color = { 154  69  116 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { lithuanian }	
+	capital = STATE_KAUNAS
+}
+
+LAT = {
+	color = { 109  29  80 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { latvian }	
+	capital = STATE_RIGA
+}
+
+CRI = {
+	color = { 200  202  85 }
+	
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { tatar }
+	capital = STATE_CRIMEA
+	is_named_from_capital = yes
+}
+
+EST = {
+	color = { 99  137  153  }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { estonian }
+	capital = STATE_TALINN
 }

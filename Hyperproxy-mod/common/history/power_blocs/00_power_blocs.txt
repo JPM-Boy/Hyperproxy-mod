@@ -9,7 +9,7 @@
 			principle = principle_defensive_cooperation_1
 
 			# subjects are automatically part of the bloc
-			member = c:GER
+			member = c:WGE
 			member = c:NET
 			member = c:BEL
 			member = c:LUX
@@ -39,7 +39,7 @@
 			member = c:CZH
 			member = c:VEL
 			member = c:SRB
-			member = c:NGF
+			member = c:EGE
 			member = c:AUS
 			member = c:VEN
 			member = c:HUN

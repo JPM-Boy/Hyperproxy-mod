@@ -7,7 +7,15 @@
 	}
 
 	possible = {
-		var:soviet_unity <= 15
+		always = yes
+	}
+
+	effect = {
+		trigger_event = {
+			id = hpx_RUS_event.2
+			days = 0
+			popup = yes
+		}
 	}
 }
 

@@ -13,6 +13,7 @@
       "common/history/pops",
       "common/history/countries",
       "common/history/characters",
+      "common/history/diplomacy",
       "common/interest_groups",
       "common/country_definitions",
       "common/power_blocs",

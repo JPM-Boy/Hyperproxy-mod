@@ -3230,13 +3230,13 @@
 		}
 	}
 	s:STATE_ALSACE_LORRAINE={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_steel_mills"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_ALSACE_LORRAINE"
 					}
@@ -3248,7 +3248,7 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=4
 					}
 				}
@@ -3260,13 +3260,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_ALSACE_LORRAINE"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_HESSE"
 					}
@@ -3279,7 +3279,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=4
 						region="STATE_ALSACE_LORRAINE"
 					}
@@ -3305,7 +3305,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=5
 						region="STATE_ALSACE_LORRAINE"
 					}
@@ -5409,12 +5409,12 @@
 		}
 	}
 	s:STATE_ELBE={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -5425,7 +5425,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -5437,7 +5437,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_ELBE"
 					}
@@ -5449,7 +5449,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -5461,7 +5461,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_ELBE"
 					}
@@ -5474,7 +5474,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_ELBE"
 					}
@@ -5487,7 +5487,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_ELBE"
 					}
@@ -5663,12 +5663,12 @@
 		}
 	}
 	s:STATE_WESTPHALIA={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 					}
 				}
@@ -5680,7 +5680,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WESTPHALIA"
 					}
@@ -5693,13 +5693,13 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_WESTPHALIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WESTPHALIA"
 					}
@@ -5712,13 +5712,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_WESTPHALIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_BRANDENBURG"
 					}
@@ -5731,13 +5731,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WESTPHALIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_RUHR"
 					}
@@ -5750,7 +5750,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WESTPHALIA"
 					}
@@ -5763,7 +5763,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_WESTPHALIA"
 					}
@@ -5774,19 +5774,19 @@
 		}
 	}
 	s:STATE_ANHALT={
-		region_state:NGF={
+		region_state:EGE={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_ANHALT"
 					}
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_BRANDENBURG"
 					}
@@ -5799,7 +5799,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=5
 						region="STATE_ANHALT"
 					}
@@ -5812,7 +5812,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_ANHALT"
 					}
@@ -5825,7 +5825,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_ANHALT"
 					}
@@ -5838,7 +5838,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_ANHALT"
 					}
@@ -5849,12 +5849,12 @@
 		}
 	}
 	s:STATE_RHINELAND={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=5
 					}
 				}
@@ -5865,7 +5865,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 					}
 				}
@@ -5877,13 +5877,13 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_RHINELAND"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_RHINELAND"
 					}
@@ -5896,7 +5896,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=4
 						region="STATE_RHINELAND"
 					}
@@ -5909,7 +5909,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_RHINELAND"
 					}
@@ -5922,7 +5922,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=4
 						region="STATE_RHINELAND"
 					}
@@ -5935,7 +5935,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_RHINELAND"
 					}
@@ -5948,7 +5948,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_RHINELAND"
 					}
@@ -5961,7 +5961,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_RHINELAND"
 					}
@@ -5972,19 +5972,19 @@
 		}
 	}
 	s:STATE_NORTH_RHINE={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_NORTH_RHINE"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_NORTH_RHINE"
 					}
@@ -5997,7 +5997,7 @@
 				add_ownership={
 					building={
 						type="building_coal_mine"
-						country="c:GER"
+						country="c:WGE"
 						levels=4
 						region="STATE_NORTH_RHINE"
 					}
@@ -6010,7 +6010,7 @@
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_NORTH_RHINE"
 					}
@@ -6023,13 +6023,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=5
 						region="STATE_NORTH_RHINE"
 					}
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=5
 						region="STATE_RUHR"
 					}
@@ -6042,7 +6042,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_NORTH_RHINE"
 					}
@@ -6053,12 +6053,12 @@
 		}
 	}
 	s:STATE_BRANDENBURG={
-		region_state:NGF={
+		region_state:EGE={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=13
 					}
 				}
@@ -6069,7 +6069,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=3
 					}
 				}
@@ -6080,7 +6080,7 @@
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=4
 					}
 				}
@@ -6092,7 +6092,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_BRANDENBURG"
 					}
@@ -6105,13 +6105,13 @@
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_BRANDENBURG"
 					}
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=3
 						region="STATE_BRANDENBURG"
 					}
@@ -6124,13 +6124,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_BRANDENBURG"
 					}
 					building={
 						type="building_glassworks"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_BRANDENBURG"
 					}
@@ -6143,12 +6143,12 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_BRANDENBURG"
 					}
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 					}
 				}
@@ -6158,13 +6158,13 @@
 		}
 	}
 	s:STATE_SCHLESWIG_HOLSTEIN={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_SCHLESWIG_HOLSTEIN"
 					}
@@ -6177,7 +6177,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_SCHLESWIG_HOLSTEIN"
 					}
@@ -6190,7 +6190,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_SCHLESWIG_HOLSTEIN"
 					}
@@ -6203,13 +6203,13 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_SCHLESWIG_HOLSTEIN"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_SCHLESWIG_HOLSTEIN"
 					}
@@ -6221,7 +6221,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6270,12 +6270,12 @@
 		}
 	}
 	s:STATE_WURTTEMBERG={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6286,7 +6286,7 @@
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6298,13 +6298,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_WURTTEMBERG"
 					}
 					building={
 						type="building_tooling_workshops"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WURTTEMBERG"
 					}
@@ -6317,13 +6317,13 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_WURTTEMBERG"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_WURTTEMBERG"
 					}
@@ -6336,7 +6336,7 @@
 				add_ownership={
 					building={
 						type="building_paper_mills"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WURTTEMBERG"
 					}
@@ -6349,7 +6349,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=5
 						region="STATE_WURTTEMBERG"
 					}
@@ -6362,7 +6362,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_WURTTEMBERG"
 					}
@@ -6375,7 +6375,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_WURTTEMBERG"
 					}
@@ -6388,7 +6388,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_WURTTEMBERG"
 					}
@@ -6401,7 +6401,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_WURTTEMBERG"
 					}
@@ -6413,7 +6413,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6423,12 +6423,12 @@
 		}
 	}
 	s:STATE_BADEN={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6439,7 +6439,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6451,7 +6451,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=4
 						region="STATE_BADEN"
 					}
@@ -6464,7 +6464,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_BADEN"
 					}
@@ -6477,7 +6477,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_BADEN"
 					}
@@ -6490,7 +6490,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_BADEN"
 					}
@@ -6501,13 +6501,13 @@
 		}
 	}
 	s:STATE_HANNOVER={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_HANNOVER"
 					}
@@ -6519,7 +6519,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6530,7 +6530,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6541,7 +6541,7 @@
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6553,13 +6553,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HANNOVER"
 					}
 					building={
 						type="building_iron_mine"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HANNOVER"
 					}
@@ -6572,7 +6572,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_HANNOVER"
 					}
@@ -6585,7 +6585,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HANNOVER"
 					}
@@ -6597,7 +6597,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -6607,13 +6607,13 @@
 		}
 	}
 	s:STATE_BRUNSWICK={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_BRUNSWICK"
 					}
@@ -6626,7 +6626,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_BRUNSWICK"
 					}
@@ -6639,7 +6639,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_BRUNSWICK"
 					}
@@ -6888,12 +6888,12 @@
 		}
 	}
 	s:STATE_SAXONY={
-		region_state:NGF={
+		region_state:EGE={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -6904,7 +6904,7 @@
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -6916,13 +6916,13 @@
 				add_ownership={
 					building={
 						type="building_glassworks"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_SAXONY"
 					}
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=3
 						region="STATE_SAXONY"
 					}
@@ -6935,7 +6935,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=3
 						region="STATE_SAXONY"
 					}
@@ -6948,7 +6948,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=3
 						region="STATE_SAXONY"
 					}
@@ -6961,7 +6961,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_SAXONY"
 					}
@@ -6974,7 +6974,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=5
 						region="STATE_SAXONY"
 					}
@@ -6987,7 +6987,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7000,7 +7000,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7012,7 +7012,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 					}
 				}
@@ -7024,7 +7024,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_SAXONY"
 					}
@@ -7037,7 +7037,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7050,7 +7050,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7062,7 +7062,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=3
 					}
 				}
@@ -7074,7 +7074,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7087,7 +7087,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7099,7 +7099,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 					}
 				}
@@ -7111,7 +7111,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_SAXONY"
 					}
@@ -7124,7 +7124,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_SAXONY"
 					}
@@ -7136,7 +7136,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -7147,7 +7147,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -7157,13 +7157,13 @@
 		}
 	}
 	s:STATE_HESSE={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7175,7 +7175,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -7187,7 +7187,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7200,7 +7200,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7213,7 +7213,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_HESSE"
 					}
@@ -7226,7 +7226,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_HESSE"
 					}
@@ -7239,7 +7239,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_HESSE"
 					}
@@ -7252,7 +7252,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7265,7 +7265,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7278,7 +7278,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7291,7 +7291,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7304,7 +7304,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7317,7 +7317,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_HESSE"
 					}
@@ -7328,13 +7328,13 @@
 		}
 	}
 	s:STATE_MECKLENBURG={
-		region_state:NGF={
+		region_state:EGE={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=2
 						region="STATE_MECKLENBURG"
 					}
@@ -7347,7 +7347,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_MECKLENBURG"
 					}
@@ -7359,7 +7359,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -7371,7 +7371,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_MECKLENBURG"
 					}
@@ -7384,7 +7384,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 						region="STATE_MECKLENBURG"
 					}
@@ -7396,7 +7396,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NGF"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -7473,18 +7473,18 @@
 		}
 	}
 	s:STATE_RUHR={
-		region_state:GER={
+		region_state:WGE={
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_RUHR"
 					}
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 					}
 				}
@@ -7495,12 +7495,12 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_RUHR"
 					}
@@ -7513,12 +7513,12 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 						region="STATE_RUHR"
 					}
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -7531,7 +7531,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_BADEN"
 					}
@@ -7543,7 +7543,7 @@
 				building="building_explosives_factory"
 				add_ownership={
 					country={
-						country="c:GER"
+						country="c:WGE"
 						levels=1
 					}
 				}
@@ -7555,7 +7555,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_BADEN"
 					}
@@ -7568,13 +7568,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_RUHR"
 					}
 					building={
 						type="building_financial_district"
-						country="c:GER"
+						country="c:WGE"
 						levels=2
 						region="STATE_RHINE"
 					}
@@ -7587,7 +7587,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:GER"
+						country="c:WGE"
 						levels=3
 						region="STATE_RUHR"
 					}

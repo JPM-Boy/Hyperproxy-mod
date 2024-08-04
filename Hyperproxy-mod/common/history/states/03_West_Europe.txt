@@ -1,4 +1,4 @@
-﻿STATES = {
+STATES = {
 	s:STATE_HOME_COUNTIES = {
 		create_state = {
 			country = c:GBR
@@ -242,7 +242,7 @@
 	}
 	s:STATE_ALSACE_LORRAINE = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { "x4899A2" "x6E4891" "xCC3250" "xF0C0A0" }
 		}
 		
@@ -355,7 +355,7 @@
 	}
 	s:STATE_ELBE = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { x418061 xC08061 x68BE66 x587297 xF54C13 x392FDA xC080E0 xA5E2E8 x7C8FD3 }
 		}
 		
@@ -588,7 +588,7 @@
 	}
 	s:STATE_WESTPHALIA = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { x1DD141 xA08061 x218061 x418021 x4101A0 x910095 x9F0060 x1BA4F6}
 		}
 		
@@ -596,7 +596,7 @@
 	}
 	s:STATE_ANHALT = {
 		create_state = {
-			country = c:NGF
+			country = c:EGE
 			owned_provinces = { xA080E0 x12694A x618061 xCF5D8E x34386E xCBA4A5 xE0C0A0 xA51232 x3C9B93 x8A448C xED8F7B}
 		}
 		
@@ -604,7 +604,7 @@
 	}
 	s:STATE_RHINELAND = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { xD080A0 x904020 xC1B963 x5D7A68 x11C021 x707505}
 		}
 		
@@ -612,7 +612,7 @@
 	}
 	s:STATE_NORTH_RHINE = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { x9F4072 x8001E0 x834B66 x518021 x29CCD6 x486F6A }
 		}
 		
@@ -620,7 +620,7 @@
 	}
 	s:STATE_RUHR = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { "x2101E0" "x5101A0" "xD08021" x0180E0 }
 		}
 		
@@ -628,7 +628,7 @@
 	}
 	s:STATE_SCHLESWIG_HOLSTEIN = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { x804160 x64824C xE000A0 x60809F}
 		}
 		create_state = {
@@ -641,7 +641,7 @@
 	}
 	s:STATE_WURTTEMBERG = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { x118060 x100060 xC541D2 x8F0060 xDBB84C x908060}
 		}
 		
@@ -650,7 +650,7 @@
 	}
 	s:STATE_BADEN = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { xE0A2B9 xB00160 xB08061 xAEBA2A x318061 }
 		}
 		
@@ -659,7 +659,7 @@
 	}
 	s:STATE_HANNOVER = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { x165E05 x694B91 xBBA504 xECC3B4 xC00161 x4101E0 xBF00DF x4D62A0 x8080E0 x784B8E xF9DCA2 }
 		}
 		
@@ -683,7 +683,7 @@
 	}
 	s:STATE_SAXONY = {
 		create_state = {
-			country = c:NGF
+			country = c:EGE
 			owned_provinces = { xC00A37 x66FE0A x51C021 x5141A0 xD0C021 x795368 x917939 xAFDFBF x43CE26 x31E0C0 }
 		}
 				
@@ -701,7 +701,7 @@
 	}
 	s:STATE_BRUNSWICK = {	
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { xA001E0 x2180E0 xA61E6E x43D537 x4C16EA}
 		}
 		
@@ -709,7 +709,7 @@
 	}
 	s:STATE_HESSE = {
 		create_state = {
-			country = c:GER
+			country = c:WGE
 			owned_provinces = { xD04121 x3E794B x90C0A0 x1357DB x11C0A0 x1141A0 x8B7C67 x90C020 x2248E2 xC08020 xFF1DBB }
 		}
 		
@@ -733,7 +733,7 @@
 	}
 	s:STATE_BRANDENBURG = {
 		create_state = {
-			country = c:NGF
+			country = c:EGE
 			owned_provinces = { xA65DA6 x83B1A8 x9B9076 xA040A0 x069CFB xF8D457 x61C0A0 x82F9A8 x9E7304 x76EF4E }
 		}
 		
@@ -741,7 +741,7 @@
 	}
 	s:STATE_MECKLENBURG = {
 		create_state = {
-			country = c:NGF
+			country = c:EGE
 			owned_provinces = { xD8F441 xE041A0 xD9A469 xE080A0 x4545BE x12E54F x24CA48 xA04121 xE1A03A x567452}
 		}
 		

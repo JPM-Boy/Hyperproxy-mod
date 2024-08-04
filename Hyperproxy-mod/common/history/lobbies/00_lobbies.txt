@@ -71,7 +71,7 @@
 			add_interest_group = ig:ig_revsoc
 		}	
 	}
-	c:NGF = {
+	c:EGE = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS

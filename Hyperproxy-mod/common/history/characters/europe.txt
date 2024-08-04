@@ -60,7 +60,7 @@
 			ruler = yes
 		}
 	}
-	c:GER = {
+	c:WGE = {
 		create_character = {
 			first_name = "Gustav"
 			last_name = "Heinemann"
@@ -112,7 +112,7 @@
 			ig_leader = yes
 		}
 	}
-	c:NGF = {
+	c:EGE = {
 		create_character = {
 			first_name = "Walter"
 			last_name = "Ulbricht"

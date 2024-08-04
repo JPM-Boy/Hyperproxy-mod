@@ -40,7 +40,7 @@
 		}
 	}
 	s:STATE_WURTTEMBERG = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = south_german
 				size = 6500000
@@ -52,7 +52,7 @@
 		}
 	}
 	s:STATE_BADEN = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = south_german
 				size = 4000000
@@ -64,7 +64,7 @@
 		}
 	}
 	s:STATE_ALSACE_LORRAINE = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = alemannic
 				size = 300000
@@ -80,7 +80,7 @@
 		}
 	}
 	s:STATE_RHINELAND = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 6450000
@@ -92,7 +92,7 @@
 		}
 	}
 	s:STATE_NORTH_RHINE = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 7850000
@@ -100,7 +100,7 @@
 		}
 	}
 	s:STATE_RUHR = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 4500000
@@ -108,7 +108,7 @@
 		}
 	}
 	s:STATE_WESTPHALIA = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 2700000
@@ -116,7 +116,7 @@
 		}
 	}
 	s:STATE_HESSE = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 3150000
@@ -124,7 +124,7 @@
 		}
 	}
 	s:STATE_HANNOVER = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 2750000
@@ -132,7 +132,7 @@
 		}
 	}
 	s:STATE_BRUNSWICK = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 1350000
@@ -140,7 +140,7 @@
 		}
 	}
 	s:STATE_ELBE = {
-		region_state:GER = {
+		region_state:WGE = {
 			create_pop = {
 				culture = north_german
 				size = 4500000
@@ -148,7 +148,7 @@
 		}
 	}
 	s:STATE_SAXONY = {
-		region_state:NGF = {
+		region_state:EGE = {
 			create_pop = {
 				culture = north_german
 				size = 5500000
@@ -160,7 +160,7 @@
 		}
 	}
 	s:STATE_ANHALT = {
-		region_state:NGF = {
+		region_state:EGE = {
 			create_pop = {
 				culture = north_german
 				size = 3400000
@@ -172,7 +172,7 @@
 		}
 	}
 	s:STATE_BRANDENBURG = {
-		region_state:NGF = {
+		region_state:EGE = {
 			create_pop = {
 				culture = north_german
 				size = 2700000
@@ -184,7 +184,7 @@
 		}
 	}
 	s:STATE_MECKLENBURG = {
-		region_state:NGF = {
+		region_state:EGE = {
 			create_pop = {
 				culture = north_german
 				size = 1850000

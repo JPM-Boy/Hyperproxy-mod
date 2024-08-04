@@ -230,7 +230,7 @@ west_nigritic={
 }
 east_nigritic={
 	color= hsv{ 0.98 0.38 0.94 }
-	religion = animist
+	religion = protestant
 	traits = { west_african_culture_group african_heritage }
 	male_common_first_names={
 		Abisi

@@ -1,7 +1,7 @@
 ﻿DIPLOMACY = {
 	c:GBR ?= {
 		set_relations = { country = c:BEL value = 60 }
-		set_relations = { country = c:GER value = 60 }
+		set_relations = { country = c:WGE value = 60 }
 		set_relations = { country = c:LUX value = 60 }
 		set_relations = { country = c:NET value = 60 }
 		set_relations = { country = c:BRI value = 35 }
@@ -11,7 +11,7 @@
 	}
 	c:USA ?= {
 		set_relations = { country = c:BEL value = 60 }
-		set_relations = { country = c:GER value = 60 }
+		set_relations = { country = c:WGE value = 60 }
 		set_relations = { country = c:LUX value = 60 }
 		set_relations = { country = c:NET value = 60 }
 		set_relations = { country = c:BRI value = 70 }

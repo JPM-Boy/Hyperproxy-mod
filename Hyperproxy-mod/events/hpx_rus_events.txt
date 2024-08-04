@@ -1,0 +1,321 @@
+namespace = hpx_RUS_event
+
+hpx_RUS_event.1 = { # EU Creation
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_RUS_event.1.t
+	desc = hpx_RUS_event.1.d
+	flavor = hpx_RUS_event.1.f
+	duration = 3
+	popup = yes
+
+	option = {
+		name = hpx_RUS_event.1.a
+		default_option = yes
+	}
+	option = {
+		name = hpx_RUS_event.1.UKR
+		if = {
+			limit = {NOT = {exists = c:UKR}}
+			s:STATE_KIEV = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+	 			tag = UKR
+	 			origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_KHARKOV.region_state:RUS = {
+				set_state_owner = c:UKR
+			}
+			s:STATE_CHERNIHIV.region_state:RUS = {
+				set_state_owner = c:UKR
+			}
+			s:STATE_VOLHYNIA.region_state:RUS = {
+				set_state_owner = c:UKR
+			}
+			s:STATE_EAST_GALICIA.region_state:RUS = {
+				set_state_owner = c:UKR
+			}
+			s:STATE_CHERSON.region_state:RUS = {
+				set_state_owner = c:UKR
+			}
+			s:STATE_TAURIDA.region_state:RUS = {
+				set_state_owner = c:UKR
+			}
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:UKR
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.BYE
+		if = {
+			limit = {NOT = {exists = c:BYE}}
+			s:STATE_MINSK = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = BYE
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_BREST.region_state:RUS = {
+				set_state_owner = c:BYE
+			}
+			s:STATE_MOGILEV.region_state:RUS = {
+				set_state_owner = c:BYE
+			}
+			s:STATE_VITEBSK.region_state:RUS = {
+				set_state_owner = c:BYE
+			}
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:BYE
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.CAU
+		if = {
+			limit = {NOT = {exists = c:CAU}}
+			s:STATE_GREATER_CAUCASUS = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = CAU
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_ARMENIA.region_state:RUS = {
+				set_state_owner = c:CAU
+			}
+			s:STATE_AZERBAIJAN.region_state:RUS = {
+				set_state_owner = c:CAU
+			}
+
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:CAU
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.UBD
+		if = {
+			limit = {NOT = {exists = c:UBD}}
+			s:STATE_RIGA = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = UBD
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_VILNIUS.region_state:RUS = {
+				set_state_owner = c:UBD
+			}
+			s:STATE_KAUNAS.region_state:RUS = {
+				set_state_owner = c:UBD
+			}
+			s:STATE_COURLAND.region_state:RUS = {
+				set_state_owner = c:UBD
+			}
+			s:STATE_TALINN.region_state:RUS = {
+				set_state_owner = c:UBD
+			}
+			s:STATE_TARTU.region_state:RUS = {
+				set_state_owner = c:UBD
+			}
+			s:STATE_EAST_PRUSSIA.region_state:RUS = {
+				set_state_owner = c:UBD
+			}
+
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:UBD
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.MOL
+		if = {
+			limit = {NOT = {exists = c:MOL}}
+			s:STATE_MOLDAVIA = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = MOL
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_BESSARABIA.region_state:RUS = {
+				set_state_owner = c:MOL
+			}
+			
+			s:STATE_DOBRUDJA.region_state:RUS = {
+				set_state_owner = c:MOL
+			}
+
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:MOL
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.TRC
+		if = {
+			limit = {NOT = {exists = c:TRC}}
+			s:STATE_TURKMENIA = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = TRC
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_MERZ.region_state:RUS = {
+				set_state_owner = c:TRC
+			}
+			s:STATE_KHORASAN.region_state:RUS = {
+				set_state_owner = c:TRC
+			}
+			s:STATE_MAZANDARAN.region_state:RUS = {
+				set_state_owner = c:TRC
+			}
+
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:TRC
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.KZH
+		if = {
+			limit = {NOT = {exists = c:KZH}}
+			s:STATE_URALSK = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = KZH
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_AKTOBE.region_state:RUS = {
+				set_state_owner = c:KZH
+			}
+			s:STATE_AKMOLINSK.region_state:RUS = {
+				set_state_owner = c:KZH
+			}
+			s:STATE_SYRDARYA.region_state:RUS = {
+				set_state_owner = c:KZH
+			}
+			s:STATE_JETISY.region_state:RUS = {
+				set_state_owner = c:KZH
+			}
+			s:STATE_SEMIRECHE.region_state:RUS = {
+				set_state_owner = c:KZH
+			}
+
+
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:KZH
+    			type = dominion
+			}
+			}
+		}
+	}
+	option = {
+		name = hpx_RUS_event.1.CTA
+		if = {
+			limit = {NOT = {exists = c:CTA}}
+			s:STATE_KIRGHIZIA = {
+       			every_scope_state = {
+       				limit = {owner = c:RUS}
+       				save_scope_as = countrycapital
+       			}
+    		}
+
+			create_country = {
+ 				tag = CTA
+ 				origin = c:RUS
+ 				state = scope:countrycapital
+			}
+
+			s:STATE_UZBEKIA.region_state:RUS = {
+				set_state_owner = c:CTA
+			}
+			s:STATE_FERGANA.region_state:RUS = {
+				set_state_owner = c:CTA
+			}
+			s:STATE_TAJIKISTAN.region_state:RUS = {
+				set_state_owner = c:CTA
+			}
+			s:STATE_KHIVA.region_state:RUS = {
+				set_state_owner = c:CTA
+			}
+
+			c:RUS = {
+				create_diplomatic_pact = {
+    			country = c:CTA
+    			type = dominion
+			}
+			}
+		}
+	}
+}

@@ -1,0 +1,120 @@
+﻿# Soviet Unity
+je_hpx_soviet_unity = {
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		c:RUS = root
+	}
+
+	possible = {
+		c:RUS = {
+			has_law = law_type:law_council_republic
+		}
+	}
+	scripted_button = RUS_dissolution_button_key
+	scripted_button = RUS_confederalism_button_key
+
+	weight = 200
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = soviet_unity_80
+				trigger = {
+					var:soviet_unity >= 80
+				}
+			}
+			triggered_desc = {
+				desc = soviet_unity_60
+				trigger = {
+					var:soviet_unity >= 60
+				}
+			}
+			triggered_desc = {
+				desc = soviet_unity_40
+				trigger = {
+					var:soviet_unity >= 40
+				}
+			}
+			triggered_desc = {
+				desc = soviet_unity_20
+				trigger = {
+					var:soviet_unity >= 20
+				}
+			}
+			triggered_desc = {
+				desc = soviet_unity_0
+				trigger = {
+					var:soviet_unity >= 0
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = soviet_unity
+			value = 70
+		}
+		set_variable = {
+			name = soviet_decadence
+			value = -1
+		}
+		set_variable = {
+			name = soviet_unity_autonomy
+			value = 0
+		}
+	}
+
+	fail = {
+		var:soviet_unity <= 0
+	}
+
+	on_fail = {
+		remove_variable = soviet_unity
+	}
+
+	current_value = {
+		value = var:soviet_unity
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+ 			limit = {
+				exists = var:soviet_unity_autonomy
+			}
+			change_variable = {
+				name = soviet_unity
+				add = var:soviet_unity_autonomy
+			}
+			set_variable = {
+				name = soviet_unity_autonomy
+				value = 0
+			}
+ 		}
+		}
+		
+	}
+
+	on_yearly_pulse = {
+		effect = {
+			if = {
+ 			limit = {
+				exists = var:soviet_decadence
+			}
+			change_variable = {
+				name = soviet_unity
+				add = var:soviet_decadence
+			}
+ 		}
+		}
+	}
+
+	transferable = no
+	should_be_pinned_by_default = yes
+
+	scripted_progress_bar = soviet_unity_bar
+}

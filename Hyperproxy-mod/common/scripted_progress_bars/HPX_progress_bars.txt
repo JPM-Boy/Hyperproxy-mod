@@ -58,6 +58,29 @@ soviet_unity_bar = {
  	start_value = 70
  	min_value = 0
  	max_value = 100
+
+ 	monthly_progress = {
+ 	if = {
+ 		limit = {
+			exists = var:soviet_unity_autonomy
+		}
+		add = {
+			desc = "soviet_unity_autonomy_balance"
+			value = var:soviet_unity_autonomy
+		}
+ 	}	
+ 	}
+ 	yearly_progress = {
+ 	if = {
+ 		limit = {
+			exists = var:soviet_decadence
+		}
+ 		add = {
+ 			desc = "soviet_decadence_balance"
+ 			value = var:soviet_decadence
+ 		}
+ 	}
+ 	}
 }
 
 # example_progress_bar5 = {

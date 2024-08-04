@@ -1,6 +1,6 @@
 namespace = hpx_RUS_event
 
-hpx_RUS_event.1 = { # EU Creation
+hpx_RUS_event.1 = { # Give Autonomy
 	type = country_event
 	placement = root
 
@@ -12,6 +12,10 @@ hpx_RUS_event.1 = { # EU Creation
 	flavor = hpx_RUS_event.1.f
 	duration = 3
 	popup = yes
+
+	immediate = {
+	set_variable = { name = soviet_unity_autonomy value = 0 }
+	}
 
 	option = {
 		name = hpx_RUS_event.1.a
@@ -58,6 +62,10 @@ hpx_RUS_event.1 = { # EU Creation
     			type = dominion
 			}
 			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 10
+			}
 		}
 	}
 	option = {
@@ -92,6 +100,10 @@ hpx_RUS_event.1 = { # EU Creation
     			type = dominion
 			}
 			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 5
+			}
 		}
 	}
 	option = {
@@ -123,6 +135,10 @@ hpx_RUS_event.1 = { # EU Creation
     			country = c:CAU
     			type = dominion
 			}
+			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 5
 			}
 		}
 	}
@@ -168,6 +184,10 @@ hpx_RUS_event.1 = { # EU Creation
     			type = dominion
 			}
 			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 10
+			}
 		}
 	}
 	option = {
@@ -200,6 +220,10 @@ hpx_RUS_event.1 = { # EU Creation
     			country = c:MOL
     			type = dominion
 			}
+			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 5
 			}
 		}
 	}
@@ -235,6 +259,10 @@ hpx_RUS_event.1 = { # EU Creation
     			country = c:TRC
     			type = dominion
 			}
+			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 5
 			}
 		}
 	}
@@ -278,6 +306,10 @@ hpx_RUS_event.1 = { # EU Creation
     			type = dominion
 			}
 			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 10
+			}
 		}
 	}
 	option = {
@@ -315,6 +347,10 @@ hpx_RUS_event.1 = { # EU Creation
     			country = c:CTA
     			type = dominion
 			}
+			}
+			change_variable = {
+				name = soviet_unity_autonomy
+				add = 10
 			}
 		}
 	}

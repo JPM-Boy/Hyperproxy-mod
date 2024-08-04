@@ -111,16 +111,11 @@ je_hpx_anglo_french_influence = {
 
 	on_monthly_pulse = {
 		effect = {
-			if = {
-				limit = {
-					is_player = yes
-				}
-				calculate_anglo_french_passive_progress = yes
-				calculate_anglo_french_ig_progress = yes
-				calculate_anglo_french_radical_progress = yes
-				calculate_anglo_french_event_progress = yes
-				calculate_anglo_french_events = yes
-			}
+			calculate_anglo_french_passive_progress = yes
+			calculate_anglo_french_ig_progress = yes
+			calculate_anglo_french_radical_progress = yes
+			calculate_anglo_french_event_progress = yes
+			calculate_anglo_french_events = yes
 		} 
 		random_events = {
 			200 = 0

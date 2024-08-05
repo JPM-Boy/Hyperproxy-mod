@@ -263,6 +263,39 @@ CTA = {
 	
 	tier = kingdom
 	
-	cultures = { uzbek kirgiz }
+	cultures = { uzbek kirgiz tajik}
+	capital = STATE_KIRGHIZIA
+}
+
+TJI = {
+	color = {45 85 45 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { tajik }
+	capital = STATE_TAJIKISTAN
+}
+
+UZB = {
+	color = { 199 199 170 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { uzbek }
+	capital = STATE_FERGANA
+}
+
+KYR = {
+	color = { 161 87 87 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { kirgiz }
 	capital = STATE_KIRGHIZIA
 }

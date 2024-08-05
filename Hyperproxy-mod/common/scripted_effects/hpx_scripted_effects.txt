@@ -179,7 +179,7 @@ calculate_anglo_french_events = {
 	if = {
 		limit = {global_var:anglo_influence_progress <= 50}
 		trigger_event = hpx_GBR_event.8
-	}
+	} 
 	if = {
 		limit = {global_var:french_influence_progress <= 50}
 		trigger_event = hpx_GBR_event.7
@@ -260,6 +260,43 @@ dissolve_soviet = {
 	create_country = {
 		tag = AZB
 		state = s:STATE_AZERBAIJAN.region_state:RUS
+	}
+
+	create_country = {
+		tag = TRC
+		state = s:STATE_TURKMENIA.region_state:RUS
+		state = s:STATE_MERZ.region_state:RUS
+		state = s:STATE_KHORASAN.region_state:RUS
+		state = s:STATE_MAZANDARAN.region_state:RUS
+	}
+
+	create_country = {
+		tag = UZB
+		state = s:STATE_UZBEKIA.region_state:RUS
+		state = s:STATE_KHIVA.region_state:RUS
+		state = s:STATE_TURKMENIA.region_state:RUS
+	}
+
+	create_country = {
+		tag = TJI
+		state = s:STATE_TAJIKISTAN.region_state:RUS
+		state = s:STATE_FERGANA.region_state:RUS
+	}
+
+	create_country = {
+		tag = KYR
+		state = s:STATE_KIRGHIZIA.region_state:RUS
+	}
+
+	create_country = {
+		tag = KZH
+		state = s:STATE_URALSK.region_state:RUS
+		state = s:STATE_AKTOBE.region_state:RUS
+		state = s:STATE_AKMOLINSK.region_state:RUS
+		state = s:STATE_SYRDARYA.region_state:RUS
+		state = s:STATE_SEMIRECHE.region_state:RUS
+		state = s:STATE_JETISY.region_state:RUS
+
 	}
 
 	remove_diplomatic_pact = {

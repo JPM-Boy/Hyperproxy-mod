@@ -207,4 +207,65 @@ dissolve_soviet = {
 		state = s:STATE_VILNIUS.region_state:RUS
 		state = s:STATE_KAUNAS.region_state:RUS
 	}
+
+	create_country = {
+		tag = PRU
+		state = s:STATE_EAST_PRUSSIA.region_state:RUS
+	}
+
+	create_country = {
+		tag = LAT
+		state = s:STATE_RIGA.region_state:RUS
+		state = s:STATE_COURLAND.region_state:RUS
+	}
+	create_country = {
+		tag = EST
+		state = s:STATE_TALINN.region_state:RUS
+		state = s:STATE_TARTU.region_state:RUS
+	}
+	create_country = {
+		tag = BYE
+		state = s:STATE_MINSK.region_state:RUS
+		state = s:STATE_BREST.region_state:RUS
+		state = s:STATE_MOGILEV.region_state:RUS
+		state = s:STATE_VITEBSK.region_state:RUS
+	}
+	create_country = {
+		tag = MOL
+		state = s:STATE_MOLDAVIA.region_state:RUS
+		state = s:STATE_DOBRUDJA.region_state:RUS
+		state = s:STATE_BESSARABIA.region_state:RUS
+	}
+	create_country = {
+		tag = UKR
+		state = s:STATE_KIEV.region_state:RUS
+		state = s:STATE_VOLHYNIA.region_state:RUS
+		state = s:STATE_EAST_GALICIA.region_state:RUS
+		state = s:STATE_CHERSON.region_state:RUS
+		state = s:STATE_KHARKOV.region_state:RUS
+		state = s:STATE_CHERNIHIV.region_state:RUS
+		state = s:STATE_TAURIDA.region_state:RUS
+	}
+
+	create_country = {
+		tag = GEO
+		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
+	}
+
+	create_country = {
+		tag = ARM
+		state = s:STATE_ARMENIA.region_state:RUS
+	}
+
+	create_country = {
+		tag = AZB
+		state = s:STATE_AZERBAIJAN.region_state:RUS
+	}
+
+	remove_diplomatic_pact = {
+ 		country = c:FIN
+		type = puppet
+	}
+
+	activate_law = law_type:law_presidential_republic
 }

@@ -25,10 +25,9 @@ dynamic_map_color_gbr = {
    color = rgb{255 66 100}
 	
 	possible = {
-		exists = c:SWE # you /must/ check that a tag exists before doing anything else
+		exists = c:GBR # you /must/ check that a tag exists before doing anything else
 		this = c:GBR
 
-        exists = ig:ig_armed_forces
         c:GBR = {
 				NOT = {
 					has_state_in_state_region = STATE_ILE_DE_FRANCE			
@@ -44,12 +43,24 @@ dynamic_map_color_england = {
 		exists = c:GBR # you /must/ check that a tag exists before doing anything else
 		this = c:GBR
 
-        exists = ig:ig_armed_forces
         c:GBR = {
 			NOT = {
 				has_state_in_state_region = STATE_ILE_DE_FRANCE
 				has_state_in_state_region = STATE_HIGHLANDS	
 			}		
+		}	
+	}
+}
+
+dynamic_map_color_soviet = {
+   color = rgb{178 46 48}
+	
+	possible = {
+		exists = c:RUS # you /must/ check that a tag exists before doing anything else
+		this = c:RUS
+
+       c:RUS = {
+			has_law = law_type:law_council_republic	
 		}	
 	}
 }

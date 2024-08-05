@@ -31,3 +31,19 @@
 		}
 	}
 }
+
+RUS = {
+	dynamic_country_name = {
+		name =  dyn_c_soviet_union
+		adjective =  dyn_c_soviet_union_adj
+		
+		priority = 2
+		
+		trigger = {
+			exists = c:RUS
+			c:RUS = {
+				has_law = law_type:law_council_republic
+			}
+		}
+	}
+}

@@ -416,7 +416,7 @@ GRE = {
 }
 
 RUS = {
-	color = {178 46 48}
+	color = {87 142 101}
 
 	country_type = recognized
 
@@ -523,4 +523,51 @@ EST = {
 	
 	cultures = { estonian }
 	capital = STATE_TALINN
+}
+
+PRU = {
+	color = { 0 49 83 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { russian }
+	capital = STATE_EAST_PRUSSIA
+}
+
+ARM = {
+	color = { 128 63 128 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { armenian }
+	capital = STATE_ARMENIA
+	is_named_from_capital = yes
+}
+
+GEO = {
+	color = { 210  45  45 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { georgian }
+	capital = STATE_GREATER_CAUCASUS
+	is_named_from_capital = yes
+}
+
+AZB = {
+	color = { 172 56 32 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { azerbaijani }
+	capital = STATE_AZERBAIJAN
+	is_named_from_capital = yes
 }

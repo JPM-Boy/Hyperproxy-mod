@@ -304,5 +304,10 @@ dissolve_soviet = {
 		type = puppet
 	}
 
+	set_global_variable = {
+		name = soviet_collapse
+		value = 1
+	}
+
 	activate_law = law_type:law_presidential_republic
 }

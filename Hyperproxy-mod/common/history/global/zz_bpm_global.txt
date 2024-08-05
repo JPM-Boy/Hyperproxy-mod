@@ -4,8 +4,7 @@
 	every_country = {
 		bpm_setup_country = yes
 		set_variable = {
-		name = bpm_political_stability 
-		value = bpm_political_stability_baseline_target }
+		name = bpm_political_stability value = bpm_political_stability_baseline_target }
 		bpm_reload_country_ig_membership = yes
 	}
 

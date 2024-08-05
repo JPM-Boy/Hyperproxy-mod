@@ -299,3 +299,13 @@ KYR = {
 	cultures = { kirgiz }
 	capital = STATE_KIRGHIZIA
 }
+
+SIB = { # Siberia
+	color = { 139 138 160 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	cultures = { siberian }
+	capital = STATE_TOMSK
+}

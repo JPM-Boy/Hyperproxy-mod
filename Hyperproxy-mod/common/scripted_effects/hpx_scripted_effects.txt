@@ -299,6 +299,29 @@ dissolve_soviet = {
 
 	}
 
+	create_country = {
+		tag = YAK
+		state = s:STATE_YAKUTSK.region_state:RUS
+		state = s:STATE_KOLYMA.region_state:RUS
+	}
+
+	create_country = {
+		tag = IKK
+		state = s:STATE_IRKUTSK.region_state:RUS
+		state = s:STATE_KRASNOYARSK.region_state:RUS
+	}
+
+	create_country = {
+		tag = RFA
+		state = s:STATE_CHUKOTKA.region_state:RUS
+		state = s:STATE_KAMCHATKA.region_state:RUS
+		state = s:STATE_OKHOTSK.region_state:RUS
+		state = s:STATE_SAKHALIN.region_state:RUS
+		state = s:STATE_AMUR.region_state:RUS
+		state = s:STATE_OUTER_MANCHURIA.region_state:RUS
+
+	}
+	
 	remove_diplomatic_pact = {
  		country = c:FIN
 		type = puppet

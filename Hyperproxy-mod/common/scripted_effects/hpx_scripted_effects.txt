@@ -1,4 +1,4 @@
-calculate_anglo_french_passive_progress = {
+﻿calculate_anglo_french_passive_progress = {
 	set_global_variable = { name = french_influence_passive_var value = 0 }
 	set_global_variable = { name = british_influence_passive_var value = 0 }
 	set_global_variable = { name = anglo_french_balance_passive_var value = 0 }
@@ -197,15 +197,19 @@ setup_space_race_lists = {
 }
 
 dissolve_soviet = {
+	activate_law = law_type:law_presidential_republic
+
 	create_country = {
 		tag = CRI
 		state = s:STATE_CRIMEA.region_state:RUS
+
 	}
 
 	create_country = {
 		tag = LIT
 		state = s:STATE_VILNIUS.region_state:RUS
 		state = s:STATE_KAUNAS.region_state:RUS
+
 	}
 
 	create_country = {
@@ -217,11 +221,13 @@ dissolve_soviet = {
 		tag = LAT
 		state = s:STATE_RIGA.region_state:RUS
 		state = s:STATE_COURLAND.region_state:RUS
+
 	}
 	create_country = {
 		tag = EST
 		state = s:STATE_TALINN.region_state:RUS
 		state = s:STATE_TARTU.region_state:RUS
+
 	}
 	create_country = {
 		tag = BYE
@@ -229,12 +235,14 @@ dissolve_soviet = {
 		state = s:STATE_BREST.region_state:RUS
 		state = s:STATE_MOGILEV.region_state:RUS
 		state = s:STATE_VITEBSK.region_state:RUS
+
 	}
 	create_country = {
 		tag = MOL
 		state = s:STATE_MOLDAVIA.region_state:RUS
 		state = s:STATE_DOBRUDJA.region_state:RUS
 		state = s:STATE_BESSARABIA.region_state:RUS
+
 	}
 	create_country = {
 		tag = UKR
@@ -245,11 +253,13 @@ dissolve_soviet = {
 		state = s:STATE_KHARKOV.region_state:RUS
 		state = s:STATE_CHERNIHIV.region_state:RUS
 		state = s:STATE_TAURIDA.region_state:RUS
+
 	}
 
 	create_country = {
 		tag = GEO
 		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
+
 	}
 
 	create_country = {
@@ -260,6 +270,7 @@ dissolve_soviet = {
 	create_country = {
 		tag = AZB
 		state = s:STATE_AZERBAIJAN.region_state:RUS
+
 	}
 
 	create_country = {
@@ -275,6 +286,7 @@ dissolve_soviet = {
 		state = s:STATE_UZBEKIA.region_state:RUS
 		state = s:STATE_KHIVA.region_state:RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
+
 	}
 
 	create_country = {
@@ -286,10 +298,12 @@ dissolve_soviet = {
 	create_country = {
 		tag = KYR
 		state = s:STATE_KIRGHIZIA.region_state:RUS
+
 	}
 
 	create_country = {
 		tag = KZH
+
 		state = s:STATE_URALSK.region_state:RUS
 		state = s:STATE_AKTOBE.region_state:RUS
 		state = s:STATE_AKMOLINSK.region_state:RUS
@@ -301,6 +315,7 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = YAK
+
 		state = s:STATE_YAKUTSK.region_state:RUS
 		state = s:STATE_KOLYMA.region_state:RUS
 	}
@@ -312,16 +327,26 @@ dissolve_soviet = {
 	}
 
 	create_country = {
-		tag = RFA
+		tag = FRE
 		state = s:STATE_CHUKOTKA.region_state:RUS
 		state = s:STATE_KAMCHATKA.region_state:RUS
 		state = s:STATE_OKHOTSK.region_state:RUS
 		state = s:STATE_SAKHALIN.region_state:RUS
 		state = s:STATE_AMUR.region_state:RUS
-		state = s:STATE_OUTER_MANCHURIA.region_state:RUS
-
+		#state = s:STATE_OUTER_MANCHURIA.region_state:RUS
 	}
-	
+
+	create_country = {
+		tag = SIB
+		state = s:STATE_UPPER_YENISEYSK.region_state:RUS
+		state = s:STATE_SURGUT.region_state:RUS
+		state = s:STATE_OB.region_state:RUS
+	}
+
+	every_country = {
+		bpm_setup_country = yes
+	}
+
 	remove_diplomatic_pact = {
  		country = c:FIN
 		type = puppet
@@ -331,6 +356,4 @@ dissolve_soviet = {
 		name = soviet_collapse
 		value = 1
 	}
-
-	activate_law = law_type:law_presidential_republic
 }

@@ -309,3 +309,39 @@ SIB = { # Siberia
 	cultures = { siberian }
 	capital = STATE_TOMSK
 }
+
+YAK = { # Yakutia
+	color = { 131 176 131 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { yakut }
+
+	capital = STATE_YAKUTSK
+}
+
+IKK = { # Irkutsk
+	color = { 131 176 161 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { siberian }
+
+	capital = STATE_IRKUTSK
+}
+
+FRE = { # Far East
+	color = { 131 176 200 }
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { yakut }
+
+	capital = STATE_YAKUTSK
+}

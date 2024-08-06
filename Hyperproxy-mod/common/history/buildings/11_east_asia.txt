@@ -548,7 +548,7 @@
 		}
 	}
 	s:STATE_OUTER_MANCHURIA={
-		region_state:CHI={
+		region_state:RUS={
 		}
 	}
 	s:STATE_SOUTHERN_MANCHURIA={

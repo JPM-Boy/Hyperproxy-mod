@@ -145,12 +145,12 @@ STATE_WESTERN_NORWAY = {
     farm = "x0E3D86"
     mine = "x608020"
     wood = "x608020"
-    arable_land = 20
+    arable_land = 28
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_sulfur_mining = 20
-        bg_logging = 14
-        bg_fishing = 15
+        bg_sulfur_mining = 21
+        bg_logging = 17
+        bg_fishing = 30
     }
     naval_exit_id = 3027
 }
@@ -166,14 +166,14 @@ STATE_NORTHERN_NORWAY = {
     farm = "x38427D"
     mine = "xB50EB0"
     wood = "x042C26"
-    arable_land = 20
+    arable_land = 22
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 18
-        bg_sulfur_mining = 20
-        bg_logging = 6
-        bg_whaling = 10
-        bg_fishing = 10
+        bg_iron_mining = 22
+        bg_sulfur_mining = 23
+        bg_logging = 13
+        bg_whaling = 12
+        bg_fishing = 25
     }
     naval_exit_id = 3020
 }
@@ -188,12 +188,12 @@ STATE_EASTERN_NORWAY = {
     farm = "x95A154"
     mine = "x49B529"
     wood = "x1255CC"
-    arable_land = 20
+    arable_land = 30
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 18
-        bg_logging = 11
-        bg_fishing = 5
+        bg_iron_mining = 23
+        bg_logging = 17
+        bg_fishing = 8
     }
     naval_exit_id = 3019
 }

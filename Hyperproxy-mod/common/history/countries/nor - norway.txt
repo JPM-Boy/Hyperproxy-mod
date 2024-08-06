@@ -1,10 +1,9 @@
 ﻿COUNTRIES = {
 	c:NOR = {
-		set_next_election_date = 1838.11.8
+		set_next_election_date = 1973.9.9
 		
 		effect_starting_politics_liberal = no
 		effect_starting_technology_tier_2_tech = yes
-		add_technology_researched = the_old_traditions_of_the_sea
 
 		
 		activate_law = law_type:law_monarchy
@@ -39,7 +38,7 @@
 				
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 2
+			level = 3
 		}
 
 		ig:ig_devout = {

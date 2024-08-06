@@ -7,7 +7,7 @@ je_hpx_eu_community = {
 	scripted_button = convince_EU_button_key
 
 	is_shown_when_inactive = {
-		always = yes
+		c:GBR = root
 	}
 
 	possible = {
@@ -62,10 +62,10 @@ je_hpx_anglo_french_influence = {
 
 	possible = {
 		OR = {
-			STATE_ILE_DE_FRANCE = {
+			s:STATE_ILE_DE_FRANCE = {
 				capital = c:GBR
 			}
-			STATE_HOME_COUNTIES = {
+			s:STATE_HOME_COUNTIES = {
 				capital = c:GBR
 			}
 		}

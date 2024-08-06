@@ -571,3 +571,126 @@ AZB = {
 	capital = STATE_AZERBAIJAN
 	is_named_from_capital = yes
 }
+
+IDL = { #Idel-Ural
+	color = {101 141 155}
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_UFA
+}
+
+KMI = {#Komi
+	color = {135 102 255}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_NENETSIA
+}
+
+PRM = {#Perm
+	color = {175 161 126}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_PERM
+}
+
+KRL = { #Karelia
+	color = {175 161 126}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_EAST_KARELIA
+}
+
+STP = { #St Petersburg
+	color = {175 161 126}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_INGRIA
+}
+
+# Circassia
+CIR = {
+	color = { 75 96 55 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { circassian }
+	capital = STATE_KUBAN
+}
+
+# Caucasian Imamate / Chechnya
+CHC = {
+	color = { 35 52 48 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { chechen }
+	capital = STATE_NORTH_CAUCASUS
+}
+
+MRL = { #Mari-El
+	color = {105 173 137}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { mari }
+
+	capital = STATE_URAL
+}
+
+KLM = {
+	color = { 175 220 200 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { kalmyk }
+	capital = STATE_KALMYKIA
+}
+
+AKH = {
+	color = { 238 220 89 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { russian }
+	capital = STATE_KALMYKIA
+}

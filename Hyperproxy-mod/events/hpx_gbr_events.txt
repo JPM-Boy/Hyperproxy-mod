@@ -277,7 +277,7 @@ hpx_GBR_event.7 = {#Dissolution English
 
 	immediate = {
 		if = {
-			limit = {exists = c:FRA}
+			limit = {NOT = {exists = c:FRA}}
 			set_capital = STATE_HOME_COUNTIES
 			remove_primary_culture = french
 			sr:region_france = {
@@ -339,7 +339,7 @@ hpx_GBR_event.8 = {#Dissolution French
 
 	immediate = {
 		if = {
-		limit = {exists = c:SCO}
+		limit = {NOT = {exists = c:SCO}}
 		s:STATE_LOWLANDS = {
        		every_scope_state = {
        			limit = {owner = c:GBR}
@@ -356,6 +356,10 @@ hpx_GBR_event.8 = {#Dissolution French
 		s:STATE_HIGHLANDS.region_state:GBR = {
 			set_state_owner = c:SCO
 		}
+		}
+
+		c:SCO = {
+			bpm_setup_country = yes
 		}
 
 	}

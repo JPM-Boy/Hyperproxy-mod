@@ -61,14 +61,9 @@ je_hpx_anglo_french_influence = {
 	}
 
 	possible = {
-		OR = {
-			s:STATE_ILE_DE_FRANCE = {
-				capital = c:GBR
-			}
-			s:STATE_HOME_COUNTIES = {
-				capital = c:GBR
-			}
-		}
+		has_state_in_state_region = STATE_ILE_DE_FRANCE
+		has_state_in_state_region = STATE_HOME_COUNTIES
+		
 	}
 
 	fail = {

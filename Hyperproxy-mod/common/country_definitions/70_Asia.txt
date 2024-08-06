@@ -301,7 +301,7 @@ KYR = {
 }
 
 SIB = { # Siberia
-	color = { 139 138 160 }
+	color = {100 229 152}
 	
 	country_type = recognized
 
@@ -311,7 +311,7 @@ SIB = { # Siberia
 }
 
 YAK = { # Yakutia
-	color = { 131 176 131 }
+	color = {79 178 255}
 	
 	country_type = recognized
 	
@@ -323,7 +323,7 @@ YAK = { # Yakutia
 }
 
 IKK = { # Irkutsk
-	color = { 131 176 161 }
+	color = {106 146 226}
 	
 	country_type = recognized
 	
@@ -335,13 +335,77 @@ IKK = { # Irkutsk
 }
 
 FRE = { # Far East
-	color = { 131 176 200 }
+	color = {173 60 70}
 	
 	country_type = recognized
 	
 	tier = principality
 
-	cultures = { yakut }
+	cultures = { russian }
 
-	capital = STATE_YAKUTSK
+	capital = STATE_AMUR
+}
+
+BYT =  { # bURYATIA
+	color = {255 223 84}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { buryat }
+
+	capital = STATE_BURYATIA
+}
+
+TVA = { #Tuva
+	color = {120 229 110}
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { tuvan }
+
+	capital = STATE_TUVA
+}
+
+TMK = { #Tomsk
+	color = {163 183 141}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_TOMSK
+}
+
+OMK = { #Omsk
+	color = {216 105 88}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_TOBOLSK
+}
+
+URL = { #URAL
+	color = {105 173 137}
+
+	
+	country_type = recognized
+	
+	tier = principality
+
+	cultures = { russian }
+
+	capital = STATE_URAL
 }

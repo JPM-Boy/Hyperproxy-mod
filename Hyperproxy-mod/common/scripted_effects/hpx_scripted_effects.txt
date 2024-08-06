@@ -343,6 +343,33 @@ dissolve_soviet = {
 		state = s:STATE_OB.region_state:RUS
 	}
 
+	create_country = {
+		tag = BYT
+		state = s:STATE_BURYATIA.region_state:RUS
+		state = s:STATE_TRANS_BAIKAL.region_state:RUS
+	}
+
+	create_country = {
+		tag = TVA
+		state = s:STATE_TUVA.region_state:RUS
+		state = s:STATE_ALTAI.region_state:RUS
+	}
+
+	create_country = {
+		tag = TMK
+		state = s:STATE_TOMSK.region_state:RUS
+	}
+
+	create_country = {
+		tag = OMK
+		state = s:STATE_TOBOLSK.region_state:RUS
+	}
+
+	create_country = {
+		tag = URL
+		state = s:STATE_URAL.region_state:RUS
+	}
+
 	every_country = {
 		bpm_setup_country = yes
 	}

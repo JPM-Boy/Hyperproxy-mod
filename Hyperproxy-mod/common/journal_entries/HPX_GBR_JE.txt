@@ -7,7 +7,7 @@ je_hpx_eu_community = {
 	scripted_button = convince_EU_button_key
 
 	is_shown_when_inactive = {
-		c:GBR = root
+		always = yes
 	}
 
 	possible = {

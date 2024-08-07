@@ -1,7 +1,7 @@
 ﻿l_english:
 je_hpx_soviet_unity: "Stability of the Soviet Union"
 soviet_unity_bar_name: "Soviet Unity"
-soviet_unity_bar_desc: "Soviet Unity: [GetPlayer.MakeScope.Var('soviet_unity').GetValue|1]#!"
+soviet_unity_bar_desc: "Soviet Unity: [GetGlobalVariable('soviet_unity').GetValue|1]#!"
 
 soviet_unity_80: "The Union is Strong"
 soviet_unity_60: "The Union is Stable"

@@ -23,74 +23,85 @@ je_hpx_soviet_unity = {
 			triggered_desc = {
 				desc = soviet_unity_80
 				trigger = {
-					var:soviet_unity >= 80
+					global_var:soviet_unity >= 80
 				}
 			}
 			triggered_desc = {
 				desc = soviet_unity_60
 				trigger = {
-					var:soviet_unity >= 60
+					global_var:soviet_unity >= 60
 				}
 			}
 			triggered_desc = {
 				desc = soviet_unity_40
 				trigger = {
-					var:soviet_unity >= 40
+					global_var:soviet_unity >= 40
 				}
 			}
 			triggered_desc = {
 				desc = soviet_unity_20
 				trigger = {
-					var:soviet_unity >= 20
+					global_var:soviet_unity >= 20
 				}
 			}
 			triggered_desc = {
 				desc = soviet_unity_0
 				trigger = {
-					var:soviet_unity >= 0
+					global_var:soviet_unity >= 0
 				}
 			}
 		}
 	}
 
 	immediate = {
-		set_variable = {
+		set_global_variable = {
 			name = soviet_unity
 			value = 70
 		}
-		set_variable = {
+		set_global_variable = {
 			name = soviet_decadence
 			value = -1
 		}
-		set_variable = {
+		set_global_variable = {
 			name = soviet_unity_autonomy
+			value = 0
+		}
+		set_global_variable = {
+			name = soviet_collapse
 			value = 0
 		}
 	}
 
 	fail = {
-		var:soviet_unity <= 0
+		OR = {
+			global_var:soviet_unity <= 0
+			global_var:soviet_collapse > 0
+		}
 	}
 
 	on_fail = {
-		remove_variable = soviet_unity
+		remove_global_variable = soviet_unity
+		if = {
+			limit = {global_var:soviet_collapse = 0}
+			dissolve_soviet_hard = yes
+		}
 	}
 
 	current_value = {
-		value = var:soviet_unity
+		value = global_var:soviet_unity
 	}
 
 	on_monthly_pulse = {
 		effect = {
 			if = {
  			limit = {
-				exists = var:soviet_unity_autonomy
+				exists = global_var:soviet_unity_autonomy
 			}
-			change_variable = {
+			change_global_variable = {
 				name = soviet_unity
-				add = var:soviet_unity_autonomy
+				add = global_var:soviet_unity_autonomy
 			}
-			set_variable = {
+			set_global_variable = {
 				name = soviet_unity_autonomy
 				value = 0
 			}
@@ -103,11 +114,11 @@ je_hpx_soviet_unity = {
 		effect = {
 			if = {
  			limit = {
-				exists = var:soviet_decadence
+				exists = global_var:soviet_decadence
 			}
-			change_variable = {
+			change_global_variable = {
 				name = soviet_unity
-				add = var:soviet_decadence
+				add = global_var:soviet_decadence
 			}
  		}
 		}

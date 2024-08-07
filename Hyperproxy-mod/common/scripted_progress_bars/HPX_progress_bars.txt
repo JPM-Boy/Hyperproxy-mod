@@ -62,22 +62,22 @@ soviet_unity_bar = {
  	monthly_progress = {
  	if = {
  		limit = {
-			exists = var:soviet_unity_autonomy
+			exists = global_var:soviet_unity_autonomy
 		}
 		add = {
 			desc = "soviet_unity_autonomy_balance"
-			value = var:soviet_unity_autonomy
+			value = global_var:soviet_unity_autonomy
 		}
  	}	
  	}
  	yearly_progress = {
  	if = {
  		limit = {
-			exists = var:soviet_decadence
+			exists = global_var:soviet_decadence
 		}
  		add = {
  			desc = "soviet_decadence_balance"
- 			value = var:soviet_decadence
+ 			value = global_var:soviet_decadence
  		}
  	}
  	}

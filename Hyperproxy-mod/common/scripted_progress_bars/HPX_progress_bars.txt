@@ -55,7 +55,7 @@ soviet_unity_bar = {
 
  	default_bad = yes
 
- 	start_value = 70
+ 	start_value = 50
  	min_value = 0
  	max_value = 100
 
@@ -80,7 +80,49 @@ soviet_unity_bar = {
  			value = global_var:soviet_decadence
  		}
  	}
+ 	if = {
+ 		limit = {
+			exists = global_var:communist_nations_modifier
+		}
+ 		add = {
+ 			desc = "communist_balance"
+ 			value = global_var:communist_nations_modifier
+ 		}
  	}
+ 	}
+}
+
+italy_progress_bar = {
+	name = "italy_progress_bar_name"
+ 	desc = "italy_progress_bar_desc"
+
+ 	default = yes
+
+ 	start_value = 50
+ 	min_value = 0
+ 	max_value = 100
+}
+
+north_italy_progress_bar = {
+	name = "north_italy_progress_bar_name"
+ 	desc = "north_italy_progress_bar_desc"
+
+ 	default_bad = yes
+
+ 	start_value = 50
+ 	min_value = 0
+ 	max_value = 100
+}
+
+savoy_progress_bar = {
+	name = "savoy_progress_bar_name"
+ 	desc = "savoy_progress_bar_desc"
+
+ 	default_green = yes
+
+ 	start_value = 50
+ 	min_value = 0
+ 	max_value = 100
 }
 
 # example_progress_bar5 = {

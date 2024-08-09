@@ -6,6 +6,9 @@ je_hpx_soviet_unity = {
 
 	is_shown_when_inactive = {
 		c:RUS = root
+		c:RUS = {
+			has_law = law_type:law_council_republic
+		}
 	}
 
 	possible = {
@@ -56,11 +59,11 @@ je_hpx_soviet_unity = {
 	immediate = {
 		set_global_variable = {
 			name = soviet_unity
-			value = 70
+			value = 50
 		}
 		set_global_variable = {
 			name = soviet_decadence
-			value = -1
+			value = -2.5
 		}
 		set_global_variable = {
 			name = soviet_unity_autonomy
@@ -69,6 +72,10 @@ je_hpx_soviet_unity = {
 		set_global_variable = {
 			name = soviet_collapse
 			value = 0
+		}
+		set_global_variable = {
+			name = communist_nations_modifier
+			value = hpx_communist_nations
 		}
 	}
 
@@ -113,14 +120,22 @@ je_hpx_soviet_unity = {
 	on_yearly_pulse = {
 		effect = {
 			if = {
- 			limit = {
-				exists = global_var:soviet_decadence
-			}
+ 				limit = {
+					exists = global_var:soviet_decadence
+				}
+				change_global_variable = {
+					name = soviet_unity
+					add = global_var:soviet_decadence
+				}
+ 			}
 			change_global_variable = {
 				name = soviet_unity
-				add = global_var:soviet_decadence
+				add = communist_nations_modifier
 			}
- 		}
+			change_global_variable = {
+				name = communist_nations_modifier
+				value = hpx_communist_nations
+			}
 		}
 	}
 

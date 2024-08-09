@@ -1,0 +1,7 @@
+﻿hpx_communist_nations = {
+	value = 0
+	every_country = {
+		limit = {has_law = law_type:law_council_republic}
+		add = 0.1
+	}
+}

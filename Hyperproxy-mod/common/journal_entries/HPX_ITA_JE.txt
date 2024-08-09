@@ -1,0 +1,77 @@
+﻿# Italy Recognition
+
+je_hpx_italy = {
+	icon = "gfx/interface/icons/timed_modifier_icons/ITA.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:north_italian
+				country_has_primary_culture = cu:south_italian
+			}
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	scripted_progress_bar = italy_progress_bar
+	scripted_progress_bar = north_italy_progress_bar
+	scripted_progress_bar = savoy_progress_bar
+
+	weight = 200
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = ITA_rome
+				trigger = {
+					c:ITA = {
+						owns_entire_state_region = STATE_LAZIO
+					}
+				}
+			}
+			triggered_desc = {
+				desc = VEN_rome
+				trigger = {
+					c:VEN = {
+						owns_entire_state_region = STATE_LAZIO
+					}
+				}
+			}
+			triggered_desc = {
+				desc = SAR_rome
+				trigger = {
+					c:SAR = {
+						owns_entire_state_region = STATE_LAZIO
+					}
+				}
+			}
+			triggered_desc = {
+				desc = no_rome
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_global_variable = {
+   			name = italy_leader
+   			value = c:ITA
+		}
+		c:ITA = {
+			save_scope_as = italy_nation_scope
+		}
+		c:VEN = {
+			save_scope_as = north_italy_nation_scope
+		}
+		c:ITA = {
+			save_scope_as = savoy_nation_scope
+		}
+	}
+}

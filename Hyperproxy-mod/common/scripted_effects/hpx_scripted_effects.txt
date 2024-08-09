@@ -191,17 +191,38 @@ setup_space_race_lists = {
 
 	add_to_global_variable_list = {name = unmanned_moon target = c:GBR}
 	add_to_global_variable_list = {name = unmanned_moon target = c:USA}
-	add_to_global_variable_list = {name = unmanned_moon target = c:RUS}
+	add_to_global_variable_list = {name = unmanned_moon target = RUS}
 	add_to_global_variable_list = {name = manned_moon target = c:USA}
 
 }
 
 dissolve_soviet = {
+if = {
+	limit = {
+			NOT = {
+			exists = c:CRI
+			exists = c:LIT
+			exists = c:PRU
+			exists = c:LAT
+			exists = c:EST
+			exists = c:BYE
+			exists = c:MOL
+			exists = c:UKR
+			exists = c:GEO
+			exists = c:ARM
+			exists = c:AZB
+			exists = c:TRC
+			exists = c:UZB
+			exists = c:TJI
+			exists = c:KYR
+			exists = c:KZH
+			}
+		}
 	activate_law = law_type:law_presidential_republic
 
 	create_country = {
 		tag = CRI
- 		origin = c:RUS
+ 		origin = RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_CRIMEA.region_state:RUS
 
@@ -209,7 +230,7 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = LIT
-		origin = c:RUS
+		origin = RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_VILNIUS.region_state:RUS
 		state = s:STATE_KAUNAS.region_state:RUS
@@ -218,28 +239,28 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = PRU
-		origin = c:RUS
+		origin = RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_EAST_PRUSSIA.region_state:RUS
 	}
 
 	create_country = {
 		tag = LAT
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_RIGA.region_state:RUS
 		state = s:STATE_COURLAND.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 	create_country = {
 		tag = EST
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_TALINN.region_state:RUS
 		state = s:STATE_TARTU.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 	create_country = {
 		tag = BYE
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_MINSK.region_state:RUS
 		state = s:STATE_BREST.region_state:RUS
 		state = s:STATE_MOGILEV.region_state:RUS
@@ -248,7 +269,7 @@ dissolve_soviet = {
 	}
 	create_country = {
 		tag = MOL
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_MOLDAVIA.region_state:RUS
 		state = s:STATE_DOBRUDJA.region_state:RUS
 		state = s:STATE_BESSARABIA.region_state:RUS
@@ -256,7 +277,7 @@ dissolve_soviet = {
 	}
 	create_country = {
 		tag = UKR
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_KIEV.region_state:RUS
 		state = s:STATE_VOLHYNIA.region_state:RUS
 		state = s:STATE_EAST_GALICIA.region_state:RUS
@@ -269,27 +290,27 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = GEO
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 
 	create_country = {
 		tag = ARM
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_ARMENIA.region_state:RUS
 	}
  		on_created = { bpm_setup_country = yes }
 	create_country = {
 		tag = AZB
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_AZERBAIJAN.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 
 	create_country = {
 		tag = TRC
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
 		state = s:STATE_MERZ.region_state:RUS
 		state = s:STATE_KHORASAN.region_state:RUS
@@ -298,7 +319,7 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = UZB
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_UZBEKIA.region_state:RUS
 		state = s:STATE_KHIVA.region_state:RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
@@ -307,7 +328,7 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = TJI
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_TAJIKISTAN.region_state:RUS
 		state = s:STATE_FERGANA.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -315,14 +336,14 @@ dissolve_soviet = {
 
 	create_country = {
 		tag = KYR
-		origin = c:RUS
+		origin = RUS
 		state = s:STATE_KIRGHIZIA.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 
 	create_country = {
 		tag = KZH
-		origin = c:RUS
+		origin = RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_URALSK.region_state:RUS
 		state = s:STATE_AKTOBE.region_state:RUS
@@ -344,329 +365,369 @@ dissolve_soviet = {
 		add = 1
 	}
 }
+}
 
 dissolve_soviet_hard = {
-activate_law = law_type:law_presidential_republic
+	if = {
+		limit = {
+			NOT = {
+			exists = c:CRI
+			exists = c:LIT
+			exists = c:PRU
+			exists = c:LAT
+			exists = c:EST
+			exists = c:BYE
+			exists = c:MOL
+			exists = c:UKR
+			exists = c:GEO
+			exists = c:ARM
+			exists = c:AZB
+			exists = c:TRC
+			exists = c:UZB
+			exists = c:TJI
+			exists = c:KYR
+			exists = c:KZH
+			exists = c:YAK
+			exists = c:IKK
+			exists = c:FRE
+			exists = c:SIB
+			exists = c:BYT
+			exists = c:TVA
+			exists = c:TMK
+			exists = c:OMK
+			exists = c:URL
+			exists = c:IDL
+			exists = c:KMI
+			exists = c:PRM
+			exists = c:KRL
+			exists = c:CHC
+			exists = c:KLM
+			exists = c:MRL
+			exists = c:AKH
+			}
+		}
+		activate_law = law_type:law_presidential_republic
+		create_country = {
+			tag = CRI
+	 		origin = RUS
+	 		on_created = { bpm_setup_country = yes }
+			state = s:STATE_CRIMEA.region_state:RUS
 
-	create_country = {
-		tag = CRI
- 		origin = c:RUS
- 		on_created = { bpm_setup_country = yes }
-		state = s:STATE_CRIMEA.region_state:RUS
+		}
 
-	}
+		create_country = {
+			tag = LIT
+			origin = RUS
+	 		on_created = { bpm_setup_country = yes }
+			state = s:STATE_VILNIUS.region_state:RUS
+			state = s:STATE_KAUNAS.region_state:RUS
 
-	create_country = {
-		tag = LIT
-		origin = c:RUS
- 		on_created = { bpm_setup_country = yes }
-		state = s:STATE_VILNIUS.region_state:RUS
-		state = s:STATE_KAUNAS.region_state:RUS
+		}
 
-	}
+		create_country = {
+			tag = PRU
+			origin = RUS
+	 		on_created = { bpm_setup_country = yes }
+			state = s:STATE_EAST_PRUSSIA.region_state:RUS
+		}
 
-	create_country = {
-		tag = PRU
-		origin = c:RUS
- 		on_created = { bpm_setup_country = yes }
-		state = s:STATE_EAST_PRUSSIA.region_state:RUS
-	}
+		create_country = {
+			tag = LAT
+			origin = RUS
+			state = s:STATE_RIGA.region_state:RUS
+			state = s:STATE_COURLAND.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
+		create_country = {
+			tag = EST
+			origin = RUS
+			state = s:STATE_TALINN.region_state:RUS
+			state = s:STATE_TARTU.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
+		create_country = {
+			tag = BYE
+			origin = RUS
+			state = s:STATE_MINSK.region_state:RUS
+			state = s:STATE_BREST.region_state:RUS
+			state = s:STATE_MOGILEV.region_state:RUS
+			state = s:STATE_VITEBSK.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
+		create_country = {
+			tag = MOL
+			origin = RUS
+			state = s:STATE_MOLDAVIA.region_state:RUS
+			state = s:STATE_DOBRUDJA.region_state:RUS
+			state = s:STATE_BESSARABIA.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
+		create_country = {
+			tag = UKR
+			origin = RUS
+			state = s:STATE_KIEV.region_state:RUS
+			state = s:STATE_VOLHYNIA.region_state:RUS
+			state = s:STATE_EAST_GALICIA.region_state:RUS
+			state = s:STATE_CHERSON.region_state:RUS
+			state = s:STATE_KHARKOV.region_state:RUS
+			state = s:STATE_CHERNIHIV.region_state:RUS
+			state = s:STATE_TAURIDA.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = LAT
-		origin = c:RUS
-		state = s:STATE_RIGA.region_state:RUS
-		state = s:STATE_COURLAND.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
-	create_country = {
-		tag = EST
-		origin = c:RUS
-		state = s:STATE_TALINN.region_state:RUS
-		state = s:STATE_TARTU.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
-	create_country = {
-		tag = BYE
-		origin = c:RUS
-		state = s:STATE_MINSK.region_state:RUS
-		state = s:STATE_BREST.region_state:RUS
-		state = s:STATE_MOGILEV.region_state:RUS
-		state = s:STATE_VITEBSK.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
-	create_country = {
-		tag = MOL
-		origin = c:RUS
-		state = s:STATE_MOLDAVIA.region_state:RUS
-		state = s:STATE_DOBRUDJA.region_state:RUS
-		state = s:STATE_BESSARABIA.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
-	create_country = {
-		tag = UKR
-		origin = c:RUS
-		state = s:STATE_KIEV.region_state:RUS
-		state = s:STATE_VOLHYNIA.region_state:RUS
-		state = s:STATE_EAST_GALICIA.region_state:RUS
-		state = s:STATE_CHERSON.region_state:RUS
-		state = s:STATE_KHARKOV.region_state:RUS
-		state = s:STATE_CHERNIHIV.region_state:RUS
-		state = s:STATE_TAURIDA.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = GEO
+			origin = RUS
+			state = s:STATE_GREATER_CAUCASUS.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = GEO
-		origin = c:RUS
-		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = ARM
+			origin = RUS
+			state = s:STATE_ARMENIA.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
+	 		
+		create_country = {
+			tag = AZB
+			origin = RUS
+			state = s:STATE_AZERBAIJAN.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = ARM
-		origin = c:RUS
-		state = s:STATE_ARMENIA.region_state:RUS
-	}
- 		on_created = { bpm_setup_country = yes }
-	create_country = {
-		tag = AZB
-		origin = c:RUS
-		state = s:STATE_AZERBAIJAN.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = TRC
+			origin = RUS
+			state = s:STATE_TURKMENIA.region_state:RUS
+			state = s:STATE_MERZ.region_state:RUS
+			state = s:STATE_KHORASAN.region_state:RUS
+			state = s:STATE_MAZANDARAN.region_state:RUS
+		}
 
-	create_country = {
-		tag = TRC
-		origin = c:RUS
-		state = s:STATE_TURKMENIA.region_state:RUS
-		state = s:STATE_MERZ.region_state:RUS
-		state = s:STATE_KHORASAN.region_state:RUS
-		state = s:STATE_MAZANDARAN.region_state:RUS
-	}
+		create_country = {
+			tag = UZB
+			origin = RUS
+			state = s:STATE_UZBEKIA.region_state:RUS
+			state = s:STATE_KHIVA.region_state:RUS
+			state = s:STATE_TURKMENIA.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = UZB
-		origin = c:RUS
-		state = s:STATE_UZBEKIA.region_state:RUS
-		state = s:STATE_KHIVA.region_state:RUS
-		state = s:STATE_TURKMENIA.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = TJI
+			origin = RUS
+			state = s:STATE_TAJIKISTAN.region_state:RUS
+			state = s:STATE_FERGANA.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = TJI
-		origin = c:RUS
-		state = s:STATE_TAJIKISTAN.region_state:RUS
-		state = s:STATE_FERGANA.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = KYR
+			origin = RUS
+			state = s:STATE_KIRGHIZIA.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = KYR
-		origin = c:RUS
-		state = s:STATE_KIRGHIZIA.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = KZH
+			origin = RUS
+	 		on_created = { bpm_setup_country = yes }
+			state = s:STATE_URALSK.region_state:RUS
+			state = s:STATE_AKTOBE.region_state:RUS
+			state = s:STATE_AKMOLINSK.region_state:RUS
+			state = s:STATE_SYRDARYA.region_state:RUS
+			state = s:STATE_SEMIRECHE.region_state:RUS
+			state = s:STATE_JETISY.region_state:RUS
 
-	create_country = {
-		tag = KZH
-		origin = c:RUS
- 		on_created = { bpm_setup_country = yes }
-		state = s:STATE_URALSK.region_state:RUS
-		state = s:STATE_AKTOBE.region_state:RUS
-		state = s:STATE_AKMOLINSK.region_state:RUS
-		state = s:STATE_SYRDARYA.region_state:RUS
-		state = s:STATE_SEMIRECHE.region_state:RUS
-		state = s:STATE_JETISY.region_state:RUS
+		}
+		#-------------------------------------------------
+		create_country = {
+			tag = YAK
+			origin = RUS
+	 		on_created = { bpm_setup_country = yes }
+			state = s:STATE_YAKUTSK.region_state:RUS
+			state = s:STATE_KOLYMA.region_state:RUS
+		}
 
-	}
-	#-------------------------------------------------
-	create_country = {
-		tag = YAK
-		origin = c:RUS
- 		on_created = { bpm_setup_country = yes }
-		state = s:STATE_YAKUTSK.region_state:RUS
-		state = s:STATE_KOLYMA.region_state:RUS
-	}
+		create_country = {
+			tag = IKK
+			origin = RUS
+			state = s:STATE_IRKUTSK.region_state:RUS
+			state = s:STATE_KRASNOYARSK.region_state:RUS
+	 		on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = IKK
-		origin = c:RUS
-		state = s:STATE_IRKUTSK.region_state:RUS
-		state = s:STATE_KRASNOYARSK.region_state:RUS
- 		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = FRE
+			origin = RUS
+			state = s:STATE_CHUKOTKA.region_state:RUS
+			state = s:STATE_KAMCHATKA.region_state:RUS
+			state = s:STATE_OKHOTSK.region_state:RUS
+			state = s:STATE_SAKHALIN.region_state:RUS
+			state = s:STATE_AMUR.region_state:RUS
+			#state = s:STATE_OUTER_MANCHURIA.region_state:RUS
+			 		on_created = { bpm_setup_country = yes }
 
-	create_country = {
-		tag = FRE
-		origin = c:RUS
-		state = s:STATE_CHUKOTKA.region_state:RUS
-		state = s:STATE_KAMCHATKA.region_state:RUS
-		state = s:STATE_OKHOTSK.region_state:RUS
-		state = s:STATE_SAKHALIN.region_state:RUS
-		state = s:STATE_AMUR.region_state:RUS
-		#state = s:STATE_OUTER_MANCHURIA.region_state:RUS
-		 		on_created = { bpm_setup_country = yes }
+		}
 
-	}
+		create_country = {
+			tag = SIB
+			origin = RUS
+			state = s:STATE_UPPER_YENISEYSK.region_state:RUS
+			state = s:STATE_SURGUT.region_state:RUS
+			state = s:STATE_OB.region_state:RUS
+			 		on_created = { bpm_setup_country = yes }
 
-	create_country = {
-		tag = SIB
-		origin = c:RUS
-		state = s:STATE_UPPER_YENISEYSK.region_state:RUS
-		state = s:STATE_SURGUT.region_state:RUS
-		state = s:STATE_OB.region_state:RUS
-		 		on_created = { bpm_setup_country = yes }
+		}
 
-	}
+		create_country = {
+			tag = BYT
+			origin = RUS
+			state = s:STATE_BURYATIA.region_state:RUS
+			state = s:STATE_TRANS_BAIKAL.region_state:RUS
+			on_created = { bpm_setup_country = yes }
 
-	create_country = {
-		tag = BYT
-		origin = c:RUS
-		state = s:STATE_BURYATIA.region_state:RUS
-		state = s:STATE_TRANS_BAIKAL.region_state:RUS
-		on_created = { bpm_setup_country = yes }
+		}
 
-	}
+		create_country = {
+			tag = TVA
+			origin = RUS
+			state = s:STATE_TUVA.region_state:RUS
+			state = s:STATE_ALTAI.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = TVA
-		origin = c:RUS
-		state = s:STATE_TUVA.region_state:RUS
-		state = s:STATE_ALTAI.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = TMK
+			origin = RUS
+			state = s:STATE_TOMSK.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = TMK
-		origin = c:RUS
-		state = s:STATE_TOMSK.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = OMK
+			origin = RUS
+			state = s:STATE_TOBOLSK.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = OMK
-		origin = c:RUS
-		state = s:STATE_TOBOLSK.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = URL
+			origin = RUS
+			state = s:STATE_URAL.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = URL
-		origin = c:RUS
-		state = s:STATE_URAL.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = IDL
+			origin = RUS
+			state = s:STATE_UFA.region_state:RUS
+			state = s:STATE_CHELYABINSK.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = IDL
-		origin = c:RUS
-		state = s:STATE_UFA.region_state:RUS
-		state = s:STATE_CHELYABINSK.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = KMI
+			origin = RUS
+			state = s:STATE_NENETSIA.region_state:RUS
+			state = s:STATE_GALICH.region_state:RUS
+			on_created = { bpm_setup_country = yes }
 
-	create_country = {
-		tag = KMI
-		origin = c:RUS
-		state = s:STATE_NENETSIA.region_state:RUS
-		state = s:STATE_GALICH.region_state:RUS
-		on_created = { bpm_setup_country = yes }
+		}
 
-	}
+		create_country = {
+			tag = PRM
+			origin = RUS
+			state = s:STATE_PERM.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = PRM
-		origin = c:RUS
-		state = s:STATE_PERM.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = KRL
+			origin = RUS
+			state = s:STATE_KOLA.region_state:RUS
+			state = s:STATE_EAST_KARELIA.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = KRL
-		origin = c:RUS
-		state = s:STATE_KOLA.region_state:RUS
-		state = s:STATE_EAST_KARELIA.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = CHC
+			origin = RUS
+			state = s:STATE_NORTH_CAUCASUS.region_state:RUS
+			state = s:STATE_STAVROPOL.region_state:RUS
+			state = s:STATE_DAGESTAN.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = CHC
-		origin = c:RUS
-		state = s:STATE_NORTH_CAUCASUS.region_state:RUS
-		state = s:STATE_STAVROPOL.region_state:RUS
-		state = s:STATE_DAGESTAN.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = CIR
+			origin = RUS
+			state = s:STATE_KUBAN.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = CIR
-		origin = c:RUS
-		state = s:STATE_KUBAN.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = MRL
+			origin = RUS
+			state = s:STATE_VYATKA.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = MRL
-		origin = c:RUS
-		state = s:STATE_VYATKA.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = KLM
+			origin = RUS
+			state = s:STATE_KALMYKIA.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = KLM
-		origin = c:RUS
-		state = s:STATE_KALMYKIA.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		create_country = {
+			tag = AKH
+			origin = RUS
+			state = s:STATE_ASTRAKHAN.region_state:RUS
+			on_created = { bpm_setup_country = yes }
+		}
 
-	create_country = {
-		tag = AKH
-		origin = c:RUS
-		state = s:STATE_ASTRAKHAN.region_state:RUS
-		on_created = { bpm_setup_country = yes }
-	}
+		remove_diplomatic_pact = {
+	 		country = c:FIN
+			type = puppet
+		}
+		remove_diplomatic_pact = {
+	 		country = c:UKR
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:CAU
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:BYE
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:UBD
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:MOL
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:TRC
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:KZH
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:CTA
+			type = dominion
+		}
 
-	remove_diplomatic_pact = {
- 		country = c:FIN
-		type = puppet
-	}
-	remove_diplomatic_pact = {
- 		country = c:UKR
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:CAU
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:BYE
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:UBD
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:MOL
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:TRC
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:KZH
-		type = dominion
-	}
-	remove_diplomatic_pact = {
- 		country = c:CTA
-		type = dominion
-	}
-
-	change_global_variable = {
-		name = global_var:soviet_collapse
-		add = 2
+		change_global_variable = {
+			name = global_var:soviet_collapse
+			add = 2
+		}	
 	}
 }

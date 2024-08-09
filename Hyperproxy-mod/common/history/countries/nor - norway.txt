@@ -34,7 +34,7 @@
 		
 
 		
-		set_tax_level = low	
+
 				
 		set_institution_investment_level = {
 			institution = institution_schools

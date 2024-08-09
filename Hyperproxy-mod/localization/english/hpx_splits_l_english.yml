@@ -26,8 +26,4 @@ hpx_ig.5.t:0 "Movement of Progress"
 hpx_ig.5.d:0 "In an era where social awareness and economic innovation are more interconnected than ever, a new ideology championing social justice and sustainable development has emerged. Progressivism, emphasizing equality, environmental responsibility, and social reforms, contrasts starkly with both unregulated capitalism and restrictive communist regimes. Its proponents, the @ig_prog! #gold Progressives#!, are rallying support from grassroots movements and advocacy groups to everyday citizens. This movement is poised to redefine our nation's social and economic policies and political discourse."
 hpx_ig.5.f:0 "Progressivism is the belief that through reasoned discourse and proactive policy-making, we can advance the well-being of all citizens, ensuring equal opportunities, social justice, and a fair distribution of wealth. Progressives strive to address systemic issues and work towards a more inclusive and equitable society." \n\n-Theodore Roosevelt"
  hpx_ig.5.a: "We should keep up with the times"
-
- je_hpx_italy: "Italian Question"
- ITA_rome: "[SCOPE.sCountry('italy_nation_scope').GetName] controls Rome"
- VEN_rome: "[SCOPE.sCountry('north_italy_nation_scope').GetName] controls Rome"
- SAR_rome: "[SCOPE.sCountry('savoy_nation_scope').GetName] controls Rome"
+ 

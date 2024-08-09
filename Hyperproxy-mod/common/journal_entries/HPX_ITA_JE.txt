@@ -6,7 +6,7 @@ je_hpx_italy = {
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-		any_country = {
+		root = {
 			OR = {
 				country_has_primary_culture = cu:north_italian
 				country_has_primary_culture = cu:south_italian
@@ -17,6 +17,8 @@ je_hpx_italy = {
 	possible = {
 		always = yes
 	}
+
+	should_be_pinned_by_default = yes
 
 	scripted_progress_bar = italy_progress_bar
 	scripted_progress_bar = north_italy_progress_bar
@@ -70,7 +72,7 @@ je_hpx_italy = {
 		c:VEN = {
 			save_scope_as = north_italy_nation_scope
 		}
-		c:ITA = {
+		c:SAR = {
 			save_scope_as = savoy_nation_scope
 		}
 	}

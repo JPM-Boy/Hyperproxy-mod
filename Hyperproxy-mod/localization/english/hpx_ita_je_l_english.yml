@@ -1,0 +1,10 @@
+﻿l_english:
+je_hpx_italy: "Italian Question"
+ITA_rome: "[SCOPE.sCountry('italy_nation_scope').GetName] controls Rome"
+VEN_rome: "[SCOPE.sCountry('north_italy_nation_scope').GetName] controls Rome"
+SAR_rome: "[SCOPE.sCountry('savoy_nation_scope').GetName] controls Rome"
+no_rome: "Rome is not in control of any Italian Nation."
+je_hpx_italy_reason: "In the aftermath of World War II, Italy found itself fractured, its fate divided among the victors.\n\n What was once a unified nation is now splintered into three distinct entities:\n\n #yellow The Kingdom of [SCOPE.sCountry('savoy_nation_scope').GetName],\n The Republic of [SCOPE.sCountry('italy_nation_scope').GetName],\n The People's Republic of [SCOPE.sCountry('north_italy_nation_scope').GetName],#!\n each laying claim to the mantle of the true Italy.\n\nAs the scars of occupation and division deepen, the struggle for legitimacy intensifies, with Rome—the heart of Italian heritage—remaining under Republican control. But the question remains: who will reunite the Italian people under one banner? The eyes of the world are upon you, as you must prove that your Italy is the rightful heir to the nation's legacy, a unified state, and the one true Italy."
+italy_progress_bar_desc: "[SCOPE.sCountry('italy_nation_scope').GetName]"
+north_italy_progress_bar_desc: "[SCOPE.sCountry('north_italy_nation_scope').GetName]"
+savoy_progress_bar_desc: "[SCOPE.sCountry('savoy_nation_scope').GetName]"

@@ -68,6 +68,15 @@ soviet_unity_bar = {
 			desc = "soviet_unity_autonomy_balance"
 			value = global_var:soviet_unity_autonomy
 		}
+ 	}
+ 	if = {
+ 		limit = {
+			exists = global_var:soviet_radical_var
+		}
+		add = {
+			desc = "soviet_unity_radical_balance"
+			value = global_var:soviet_radical_var
+		}
  	}	
  	}
  	yearly_progress = {

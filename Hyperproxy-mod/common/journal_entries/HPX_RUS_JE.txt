@@ -77,6 +77,7 @@ je_hpx_soviet_unity = {
 			name = communist_nations_modifier
 			value = hpx_communist_nations
 		}
+		calculate_russian_radical_progress = yes
 	}
 
 	fail = {
@@ -101,18 +102,19 @@ je_hpx_soviet_unity = {
 	on_monthly_pulse = {
 		effect = {
 			if = {
- 			limit = {
-				exists = global_var:soviet_unity_autonomy
-			}
-			change_global_variable = {
-				name = soviet_unity
-				add = global_var:soviet_unity_autonomy
-			}
-			set_global_variable = {
-				name = soviet_unity_autonomy
-				value = 0
-			}
- 		}
+ 				limit = {
+					exists = global_var:soviet_unity_autonomy
+				}
+				change_global_variable = {
+					name = soviet_unity
+					add = global_var:soviet_unity_autonomy
+				}
+				set_global_variable = {
+					name = soviet_unity_autonomy
+					value = 0
+				}
+ 			}
+ 		calculate_russian_radical_progress = yes
 		}
 		
 	}
@@ -141,6 +143,7 @@ je_hpx_soviet_unity = {
 
 	transferable = no
 	should_be_pinned_by_default = yes
-
+	can_deactivate = yes
+	
 	scripted_progress_bar = soviet_unity_bar
 }

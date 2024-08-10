@@ -21,6 +21,10 @@ hpx_GBR_event.1 = { # French Liberals vs Capitalists
 	option = {
 		name = hpx_GBR_event.1.a
 		default_option = yes
+
+		ai_chance = {
+            base = 30
+        }
 		
 		ig:ig_liberal = {
 			add_modifier = {
@@ -46,6 +50,9 @@ hpx_GBR_event.1 = { # French Liberals vs Capitalists
 	}
 	option = {
 		name = hpx_GBR_event.1.b
+		ai_chance = {
+            base = 70
+        }
 	
 		ig:ig_liberal = {
 			add_modifier = {
@@ -86,6 +93,9 @@ hpx_GBR_event.2 = { # French Communists vs Hippies
 
 	option = {
 		name = hpx_GBR_event.2.a
+		ai_chance = {
+            base = 30
+        }
 
 		ig:ig_revsoc = {
 			add_modifier = {
@@ -108,6 +118,9 @@ hpx_GBR_event.2 = { # French Communists vs Hippies
 
 	option = {
 		name = hpx_GBR_event.2.b
+		ai_chance = {
+            base = 70
+        }
 
 		ig:ig_ecologist = {
 			add_modifier = {
@@ -147,6 +160,9 @@ hpx_GBR_event.3 = { # Mail Issues
 		custom_tooltip = {
         	text = ten_french_influence
         }
+        ai_chance = {
+            base = 40
+        }
 	}
 
 	option = {
@@ -159,6 +175,9 @@ hpx_GBR_event.3 = { # Mail Issues
 		set_global_variable = { name = anglo_french_balance_event_var value = 10 }
 		custom_tooltip = {
         	text = ten_english_influence
+        }
+        ai_chance = {
+            base = 60
         }
 	}
 
@@ -192,6 +211,9 @@ hpx_GBR_event.4 = { # Media Bias
 					months = 3
 				}
 			}
+			ai_chance = {
+            base = 50
+        	}
 		}
 
 		option = {
@@ -209,6 +231,9 @@ hpx_GBR_event.4 = { # Media Bias
 					months = 3
 				}
 			}
+			ai_chance = {
+            base = 50
+        	}
 		}
 	}
 
@@ -237,6 +262,9 @@ hpx_GBR_event.5 = { # Divided Parliament
 				months = 3
 			}
 		}
+		ai_chance = {
+            base = 75
+        }
 	}
 	option = {
 		name = hpx_GBR_event.5.b
@@ -251,6 +279,9 @@ hpx_GBR_event.5 = { # Divided Parliament
 				months = 3
 			}
 		}
+		ai_chance = {
+            base = 25
+        }
 	}
 }
 
@@ -315,7 +346,6 @@ hpx_GBR_event.7 = {#Dissolution English
 
 	option = {
 		name = hpx_GBR_event.7.a
-		default_option = yes
 		play_as = c:FRA
 	}
 	option = {
@@ -365,7 +395,6 @@ hpx_GBR_event.8 = {#Dissolution French
 	}
 	option = {
 		name = hpx_GBR_event.8.a
-		default_option = yes
 		play_as = c:SCO
 	}
 	option = {

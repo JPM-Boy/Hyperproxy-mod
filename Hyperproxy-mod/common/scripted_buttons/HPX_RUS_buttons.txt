@@ -21,8 +21,8 @@
 	ai_chance = {
 		base = 0
 		modifier = {
-			trigger = { bureaucracy > 500 }
-			add = 100
+			trigger = { global_var:soviet_unity < 5 }
+			add = 50
 		}
 	}
 }
@@ -44,6 +44,14 @@ RUS_confederalism_button_key = {
 			id = hpx_RUS_event.1
 			days = 0
 			popup = yes
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = { global_var:soviet_unity < 30 }
+			add = 25
 		}
 	}
 }

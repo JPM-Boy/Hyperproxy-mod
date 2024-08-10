@@ -132,7 +132,7 @@ je_hpx_soviet_unity = {
  			}
 			change_global_variable = {
 				name = soviet_unity
-				add = communist_nations_modifier
+				add = global_var:communist_nations_modifier
 			}
 			change_global_variable = {
 				name = communist_nations_modifier

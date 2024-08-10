@@ -1,4 +1,4 @@
-﻿convince_EU_button_key = {
+convince_EU_button_key = {
 	name = "convince_EU_button"
 	desc = "convince_EU_button_desc"
 
@@ -54,88 +54,6 @@
 		modifier = {
 			trigger = { bureaucracy > 500 }
 			add = 100
-		}
-	}
-}
-
-change_capital_english_button_key = {
-	name = "change_capital_english_button"
-	desc = "change_capital_english_button_desc"
-
-	visible = {
-		always = yes
-	}
-
-	possible = {
-		global_var:anglo_influence_progress >= 150
-		is_at_war = no
-	}
-
-	effect = {
-		set_capital = STATE_HOME_COUNTIES
-	}
-}
-
-change_capital_french_button_key = {
-	name = "change_capital_french_button"
-	desc = "change_capital_french_button_desc"
-
-	visible = {
-		always = yes
-	}
-
-	possible = {
-		global_var:french_influence_progress >= 150
-		is_at_war = no
-	}
-
-	effect = {
-		set_capital = STATE_ILE_DE_FRANCE
-	}
-}
-
-english_boost_button_key = {
-	name = "english_boost_button"
-	desc = "english_boost_button_desc"
-
-	visible = {
-		always = yes
-	}
-
-	possible = {
-		global_var:anglo_influence_progress <= 75
-	}
-
-	effect = {
-		every_interest_group = {
-			limit = {has_variable = english_var}
-			add_modifier = {
-				name = big_ig_support
-				months = 7
-			}
-		}
-	}
-}
-
-french_boost_button_key = {
-	name = "french_boost_button"
-	desc = "french_boost_button_desc"
-
-	visible = {
-		always = yes
-	}
-
-	possible = {
-		global_var:french_influence_progress <= 75
-	}
-
-	effect = {
-		every_interest_group = {
-			limit = {has_variable = french_var}
-			add_modifier = {
-				name = big_ig_support
-				months = 7
-			}
 		}
 	}
 }

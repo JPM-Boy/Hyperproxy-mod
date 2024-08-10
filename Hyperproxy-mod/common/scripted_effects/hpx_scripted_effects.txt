@@ -198,26 +198,6 @@ setup_space_race_lists = {
 
 dissolve_soviet = {
 if = {
-	limit = {
-			NOT = {
-			exists = c:CRI
-			exists = c:LIT
-			exists = c:PRU
-			exists = c:LAT
-			exists = c:EST
-			exists = c:BYE
-			exists = c:MOL
-			exists = c:UKR
-			exists = c:GEO
-			exists = c:ARM
-			exists = c:AZB
-			exists = c:TRC
-			exists = c:UZB
-			exists = c:TJI
-			exists = c:KYR
-			exists = c:KZH
-			}
-		}
 	activate_law = law_type:law_presidential_republic
 
 	create_country = {
@@ -356,9 +336,41 @@ if = {
 
 
 	remove_diplomatic_pact = {
- 		country = c:FIN
-		type = puppet
-	}
+	 		country = c:FIN
+			type = puppet
+		}
+		remove_diplomatic_pact = {
+	 		country = c:UKR
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:CAU
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:BYE
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:UBD
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:MOL
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:TRC
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:KZH
+			type = dominion
+		}
+		remove_diplomatic_pact = {
+	 		country = c:CTA
+			type = dominion
+		}
 
 	change_global_variable = {
 		name = global_var:soviet_collapse
@@ -369,43 +381,6 @@ if = {
 
 dissolve_soviet_hard = {
 	if = {
-		limit = {
-			NOT = {
-			exists = c:CRI
-			exists = c:LIT
-			exists = c:PRU
-			exists = c:LAT
-			exists = c:EST
-			exists = c:BYE
-			exists = c:MOL
-			exists = c:UKR
-			exists = c:GEO
-			exists = c:ARM
-			exists = c:AZB
-			exists = c:TRC
-			exists = c:UZB
-			exists = c:TJI
-			exists = c:KYR
-			exists = c:KZH
-			exists = c:YAK
-			exists = c:IKK
-			exists = c:FRE
-			exists = c:SIB
-			exists = c:BYT
-			exists = c:TVA
-			exists = c:TMK
-			exists = c:OMK
-			exists = c:URL
-			exists = c:IDL
-			exists = c:KMI
-			exists = c:PRM
-			exists = c:KRL
-			exists = c:CHC
-			exists = c:KLM
-			exists = c:MRL
-			exists = c:AKH
-			}
-		}
 		activate_law = law_type:law_presidential_republic
 		create_country = {
 			tag = CRI

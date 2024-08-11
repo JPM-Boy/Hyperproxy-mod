@@ -12,15 +12,13 @@ advance_territories_button_key = {
 				any_state_region = {
 					limit = {root = owner}
 					any_neighbouring_state = {
-					NOR = {
-						contains_capital_of = c:ITA
-						contains_capital_of = c:SAR
-						contains_capital_of = c:VEN
+						NOR = {
+							contains_capital_of = c:ITA
+							contains_capital_of = c:SAR
+							contains_capital_of = c:VEN
+						}
 					}
 				}
-				}
-				
-				
 			}
 			
 		}

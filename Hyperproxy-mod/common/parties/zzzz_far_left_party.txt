@@ -279,7 +279,6 @@
 		default = "/gfx/interface/icons/political_parties/communists.dds"
 	}
 	unlocking_technologies = {
-		socialism
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
@@ -287,7 +286,7 @@
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = communist_party } }
+		NOT = { bpm_is_party_banned = { PARTY = far_left_party } }
 		owner = {
 			any_interest_group = {
 				bpm_ig_is_proletarian = yes
@@ -309,6 +308,14 @@
 			}
 			bpm_ig_is_upper_institutional = no
 			NOT = { leader = { has_ideology = ideology:ideology_moderate } }
+		}
+		OR = {
+			is_interest_group_type = ig_fascist
+			is_interest_group_type = ig_leftpop
+			is_interest_group_type = ig_anarchists
+			is_interest_group_type = ig_refsoc
+			is_interest_group_type = ig_revsoc
+			bpm_ig_is_institutional = yes
 		}
 	}
 	join_weight = {

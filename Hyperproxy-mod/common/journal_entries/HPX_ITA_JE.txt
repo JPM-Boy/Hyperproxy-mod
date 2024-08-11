@@ -14,6 +14,8 @@ je_hpx_italy = {
 		}
 	}
 
+	scripted_button = advance_territories_button_key
+	
 	possible = {
 		always = yes
 	}
@@ -68,12 +70,24 @@ je_hpx_italy = {
 		}
 		c:ITA = {
 			save_scope_as = italy_nation_scope
+			set_variable = {
+				name = italian_recognition
+				value = 60
+			}
 		}
 		c:VEN = {
 			save_scope_as = north_italy_nation_scope
+			set_variable = {
+				name = italian_recognition
+				value = 35
+			}
 		}
 		c:SAR = {
 			save_scope_as = savoy_nation_scope
+			set_variable = {
+				name = italian_recognition
+				value = 5
+			}
 		}
 	}
 }

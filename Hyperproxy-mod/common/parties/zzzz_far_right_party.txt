@@ -143,7 +143,6 @@ far_right_party = {
 		default = "/gfx/interface/icons/political_parties/reactionary.dds"
 	}
 	unlocking_technologies = {
-		egalitarianism
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
@@ -151,13 +150,23 @@ far_right_party = {
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = reactionary_party } }
+		NOT = { bpm_is_party_banned = { PARTY = far_right_party } }
 		OR = {
 			bpm_ig_is_right_wing = yes
 			leader = { # fascists and conservatives will work with reactionaries
 			bpm_leader_is_right_wing = yes
 			}
-		}	
+		}
+		OR = {
+			is_interest_group_type = ig_reactionary
+			is_interest_group_type = ig_fascist
+			is_interest_group_type = ig_neolib
+			is_interest_group_type = ig_libertarian
+			is_interest_group_type = ig_rightpop
+			is_interest_group_type = ig_anarchist
+			bpm_ig_is_institutional = yes
+		}
+
 	}
 	join_weight = {
 		value = {

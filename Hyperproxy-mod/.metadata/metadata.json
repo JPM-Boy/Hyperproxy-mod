@@ -24,7 +24,8 @@
       "common/history/population",
       "common/dynamic_country_names",
       "common/dynamic_country_map_colors",
-      "events"
+      "events",
+      "common/country_formation"
     ]
   }
 }

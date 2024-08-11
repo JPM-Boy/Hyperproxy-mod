@@ -1,0 +1,75 @@
+advance_territories_button_key = {
+	name = "advance_territories"
+	desc = "advance_territories_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		sr:region_italy = {
+			every_state = {
+				any_state_region = {
+					limit = {root = owner}
+					any_neighbouring_state = {
+					NOR = {
+						contains_capital_of = c:ITA
+						contains_capital_of = c:SAR
+						contains_capital_of = c:VEN
+					}
+				}
+				}
+				
+				
+			}
+			
+		}
+		sr:region_italy = {
+			any_neighbouring_state = {
+				OR = {
+					has_state_in_state_region = c:ITA
+					has_state_in_state_region = c:VEN
+					has_state_in_state_region = c:SAR
+				}
+			}
+		}
+		var:italian_recognition >= 80
+	}
+
+	effect = {
+		random_country = {
+			limit = {
+				bpm_country_is_in_europe = yes
+				NOT = {has_law = law_type:law_council_republic}
+				NOT = {has_modifier = european_community}
+				NOT = {this = c:GBR}
+				relations:root >= relations_threshold:cordial
+			}
+			add_modifier = {
+				name = european_community
+				months = -1
+			}
+		}
+		change_global_variable = {
+			name = EC_MEMBERS
+			add = 1
+		}
+		add_modifier = {
+			name = european_community_expansion
+			years = 1
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 1
+		}
+		
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = { bureaucracy > 500 }
+			add = 100
+		}
+	}
+}

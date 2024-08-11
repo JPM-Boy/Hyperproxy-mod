@@ -17,7 +17,6 @@ centre_right_party = {
 		default = "/gfx/interface/icons/political_parties/liberal.dds"
 	}
 	unlocking_technologies = {
-		conglomerates
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {

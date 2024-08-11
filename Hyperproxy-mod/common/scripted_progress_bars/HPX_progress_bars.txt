@@ -107,7 +107,7 @@ italy_progress_bar = {
 
  	default = yes
 
- 	start_value = 50
+ 	start_value = 60
  	min_value = 0
  	max_value = 100
 }
@@ -118,7 +118,7 @@ north_italy_progress_bar = {
 
  	default_bad = yes
 
- 	start_value = 50
+ 	start_value = 35
  	min_value = 0
  	max_value = 100
 }
@@ -129,7 +129,7 @@ savoy_progress_bar = {
 
  	default_green = yes
 
- 	start_value = 50
+ 	start_value = 5
  	min_value = 0
  	max_value = 100
 }

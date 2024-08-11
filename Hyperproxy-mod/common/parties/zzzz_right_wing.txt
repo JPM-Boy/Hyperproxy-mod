@@ -17,7 +17,6 @@ rightwing_party = {
 		default = "/gfx/interface/icons/political_parties/conservatism.dds"
 	}
 	unlocking_technologies = {
-		conglomerates
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
@@ -46,13 +45,13 @@ rightwing_party = {
 		}
 
 		OR = {
-
 			is_interest_group_type = ig_reactionary
 			is_interest_group_type = ig_cons
 			is_interest_group_type = ig_neolib
 			is_interest_group_type = ig_liberal
 			is_interest_group_type = ig_libertarian
 			is_interest_group_type = ig_rightpop
+			is_interest_group_type = ig_ecologist
 			bpm_ig_is_institutional = yes
 		}
 		

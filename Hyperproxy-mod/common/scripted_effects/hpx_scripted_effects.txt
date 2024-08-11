@@ -191,7 +191,7 @@ setup_space_race_lists = {
 
 	add_to_global_variable_list = {name = unmanned_moon target = c:GBR}
 	add_to_global_variable_list = {name = unmanned_moon target = c:USA}
-	add_to_global_variable_list = {name = unmanned_moon target = RUS}
+	add_to_global_variable_list = {name = unmanned_moon target = c:RUS}
 	add_to_global_variable_list = {name = manned_moon target = c:USA}
 
 }

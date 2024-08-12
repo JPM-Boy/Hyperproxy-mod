@@ -1,0 +1,31 @@
+﻿namespace = hpx_ITA_event
+
+hpx_ITA_event.1 = { # EU Creation
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_ITA_event.1.t
+	desc = hpx_ITA_event.1.d
+	flavor = hpx_ITA_event.1.f
+	duration = 3
+
+	option = {
+		name = hpx_ITA_event.1.a
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				OR = {
+					c:VEN ?= this
+					c:ITA ?= this
+					c:SAR ?= this
+				}
+			}
+			save_scope_as = italian_event
+		}
+	}
+}

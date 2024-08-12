@@ -23,7 +23,7 @@ bpm_setup_country_sta_ideologies = {
 			limit = {
 				OR = {
 					bpm_ig_is_left_wing = yes
-					is_interest_group_type = ig_liberals
+					is_interest_group_type = ig_liberal
 					is_interest_group_type = ig_intelligentsia
 				}
 				OR = {
@@ -50,7 +50,7 @@ bpm_setup_country_rel_ideologies = {
 					bpm_ig_is_liberal = yes
 					is_interest_group_type = ig_petty_bourgeoisie
 				}
-				NOT = { is_interest_group_type = ig_agrarian_populists }
+				NOT = { is_interest_group_type = ig_ecologist }
 				bpm_ig_enabled = yes
 			}
 			bpm_remove_all_rel_ideologies = yes
@@ -77,7 +77,7 @@ bpm_setup_country_gov_ideologies = {
 			remove_ideology = ideology_paternalistic
 			add_ideology = ideology_republican
 		}
-		ig:ig_agrarian_populists = {
+		ig:ig_ecologist = {
 			bpm_remove_all_gov_ideologies = yes
 			add_ideology = ideology_gov_liberal_republican
 		}
@@ -106,7 +106,7 @@ bpm_setup_country_gov_ideologies = {
 			remove_ideology = ideology_paternalistic
 			add_ideology = ideology_republican_paternalistic
 		}
-		ig:ig_agrarian_populists ?= {
+		ig:ig_ecologist ?= {
 			bpm_remove_all_gov_ideologies = yes
 			add_ideology = ideology_gov_liberal_republican
 		}
@@ -136,8 +136,8 @@ bpm_setup_country_dop_ideologies = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_landowners
-					is_interest_group_type = ig_reactionaries
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_reactionary
+					is_interest_group_type = ig_cons
 				}
 				OR = {
 					has_ideology = ideology:ideology_dop_autocrat
@@ -154,7 +154,7 @@ bpm_setup_country_dop_ideologies = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_landowners
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
 				}
 			}
 			bpm_remove_all_dop_ideologies = yes
@@ -172,7 +172,7 @@ bpm_setup_country_dop_ideologies = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_landowners
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
 				}			
 			}
 			bpm_remove_all_dop_ideologies = yes
@@ -191,11 +191,6 @@ bpm_setup_country_eco_ideologies = {
 	if = {
 		limit = { NOT = { has_law = law_type:law_slavery_banned }}
 		bpm_make_igs_pro_slavery = yes
-	}
-
-	if = {
-		limit = { has_law = law_type:law_serfdom }
-		bpm_make_igs_pro_serfdom = yes
 	}
 	else_if = {
 		limit = { 

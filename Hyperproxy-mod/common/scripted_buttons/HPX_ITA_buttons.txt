@@ -7,31 +7,7 @@ advance_territories_button_key = {
 	}
 
 	possible = {
-		sr:region_italy = {
-			every_state = {
-				any_state_region = {
-					limit = {root = owner}
-					any_neighbouring_state = {
-						NOR = {
-							contains_capital_of = c:ITA
-							contains_capital_of = c:SAR
-							contains_capital_of = c:VEN
-						}
-					}
-				}
-			}
-			
-		}
-		sr:region_italy = {
-			any_neighbouring_state = {
-				OR = {
-					has_state_in_state_region = c:ITA
-					has_state_in_state_region = c:VEN
-					has_state_in_state_region = c:SAR
-				}
-			}
-		}
-		var:italian_recognition >= 80
+		always = yes
 	}
 
 	effect = {

@@ -10,17 +10,6 @@
 	}
 }
 
-ITA = {
-	use_culture_states = yes
-
-	required_states_fraction = 0.7
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		always = yes
-	}
-}
 
 SCA = {
 	use_culture_states = yes

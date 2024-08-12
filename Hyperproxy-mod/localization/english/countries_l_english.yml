@@ -102,6 +102,8 @@ ARM: "Armenia"
 ARM_ADJ: "Armenian"
 AZB: "Azerbaijan"
 AZB_ADJ: "Azerbaijani"
+SIC: "Naples"
+SIC_ADJ: "Neapolitan"
 # Middle East
 SYR: "Syria"
 SYR_ADJ: "Syrian"

@@ -694,3 +694,14 @@ AKH = {
 	cultures = { russian }
 	capital = STATE_KALMYKIA
 }
+
+SIC = {
+	color = {51 82 155}
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { south_italian }
+	capital = STATE_CAMPANIA
+}

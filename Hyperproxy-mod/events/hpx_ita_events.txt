@@ -1,6 +1,6 @@
 ﻿namespace = hpx_ITA_event
 
-hpx_ITA_event.1 = { # EU Creation
+hpx_ITA_event.1 = { # Occupation of Rome
 	type = country_event
 	placement = root
 
@@ -14,18 +14,25 @@ hpx_ITA_event.1 = { # EU Creation
 
 	option = {
 		name = hpx_ITA_event.1.a
+		default_option = yes
+
+		if = {
+			limit = {
+				NOT = {ROOT = c:ITA}
+			}
+			c:ITA ?= {
+				change_tag = SIC
+			}
+
+			ROOT = {
+				change_tag = ITA
+			}
+		}
 	}
 
 	immediate = {
-		random_country = {
-			limit = {
-				OR = {
-					c:VEN ?= this
-					c:ITA ?= this
-					c:SAR ?= this
-				}
-			}
-			save_scope_as = italian_event
-		}
+		owner = STATE_LAZIO
+		save_scope_as = italian_event
+		
 	}
 }

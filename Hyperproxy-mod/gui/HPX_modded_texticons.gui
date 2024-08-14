@@ -2,7 +2,8 @@
   icon = ig_prog
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/radicals_30.dds"
+    texture = "gfx/interface/icons/ig_icons/progressives.dds"
+    size = {30 30}
     fontsize = 26
   }
 }

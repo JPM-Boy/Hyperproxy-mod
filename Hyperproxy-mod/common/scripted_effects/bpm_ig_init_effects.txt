@@ -1,7 +1,7 @@
 ﻿bpm_initialize_ecologist = {
 	if = {
 		limit = { 
-			ig:ig_ecologist = { 
+			ig:ig_ecologist ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -37,7 +37,7 @@
 bpm_initialize_trade_unions = {
 	if = {
 		limit = { 
-			ig:ig_trade_unions = { 
+			ig:ig_trade_unions ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -70,7 +70,7 @@ bpm_initialize_trade_unions = {
 bpm_initialize_prog = {
 	if = {
 		limit = { 
-			ig:ig_prog = { 
+			ig:ig_prog ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -111,8 +111,8 @@ bpm_initialize_populism = {
 	if = {
 		limit = {
 			OR = {
-				ig:ig_leftpop = { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_rightpop = { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_leftpop ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_rightpop ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 			
 		}
@@ -179,7 +179,7 @@ bpm_initialize_populism = {
 bpm_initialize_neolib = {
 	if = {
 		limit = { 
-			ig:ig_neolib = { 
+			ig:ig_neolib ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -218,8 +218,8 @@ bpm_initialize_libs = {
 	if = {
 		limit = {
 			OR = {
-				ig:ig_liberal = { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_libertarian = { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_libertarian ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 		}
 		ig:ig_liberal = {
@@ -244,7 +244,7 @@ bpm_initialize_libs = {
 			}
 			bpm_reorder_ideologies = yes
 		}
-		ig:ig_libertarian = {
+		ig:ig_libertarian ?= {
 			remove_ideology = ideology_nonexistent
 			add_ideology = ideology_gov_radical_republican
 			add_ideology = ideology_dop_radical_democrat
@@ -273,7 +273,7 @@ bpm_initialize_libs = {
 bpm_initialize_reactionaries = {
 	if = {
 		limit = { 
-			ig:ig_reactionary = { 
+			ig:ig_reactionary ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -306,7 +306,7 @@ bpm_initialize_reactionaries = {
 bpm_initialize_cons = {
 	if = {
 		limit = { 
-			ig:ig_cons = { 
+			ig:ig_cons ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -335,7 +335,7 @@ bpm_initialize_cons = {
 bpm_initialize_anarchist = {
 	if = {
 		limit = { 
-			ig:ig_anarchist = { 
+			ig:ig_anarchist ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -371,7 +371,7 @@ bpm_initialize_anarchist = {
 bpm_initialize_fascist = {
 	if = {
 		limit = { 
-			ig:ig_fascist = { 
+			ig:ig_fascist ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
@@ -405,8 +405,8 @@ bpm_initialize_reform_revolution = {
 	if = {
 		limit = {
 			OR = {
-				ig:ig_revsoc = { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_refsoc = { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_revsoc ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_refsoc ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 		}
 		ig:ig_refsoc = {
@@ -466,7 +466,7 @@ bpm_initialize_reform_revolution = {
 bpm_initialize_socdem = {
 	if = {
 		limit = { 
-			ig:ig_socdem = { 
+			ig:ig_socdem ?= { 
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}

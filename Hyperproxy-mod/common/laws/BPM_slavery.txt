@@ -40,7 +40,7 @@ law_slavery_banned = {
 		ig:ig_landowners = {
 			remove_modifier = bpm_landowner_wary
 		}
-		ig:ig_reactionaries = {
+		ig:ig_reactionary = {
 			remove_modifier = bpm_landowner_wary
 		}
 	}

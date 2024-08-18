@@ -102,7 +102,7 @@ goods_output_aluminium_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_cargo_ship_add = {
+goods_input_cargo_ship_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -116,7 +116,7 @@ goods_output_cargo_ship_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_appliances_add = {
+goods_input_appliances_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -130,7 +130,7 @@ goods_output_appliances_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_warships_add = {
+goods_input_warships_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -144,7 +144,7 @@ goods_output_warships_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_chips_add = {
+goods_input_chips_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -158,7 +158,7 @@ goods_output_chips_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_computers_add = {
+goods_input_computers_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -172,7 +172,7 @@ goods_output_computers_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_missiles_add = {
+goods_input_missiles_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -186,7 +186,7 @@ goods_output_missiles_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_robotics_add = {
+goods_input_robotics_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -200,7 +200,7 @@ goods_output_robotics_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_laser_weapon_add = {
+goods_input_laser_weapon_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -214,7 +214,7 @@ goods_output_laser_weapon_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_luxury_cars_add = {
+goods_input_luxury_cars_add = {
 	decimals=1
 	color=bad
 	game_data={
@@ -228,7 +228,7 @@ goods_output_luxury_cars_add = {
 		ai_value=0
 	}
 }
-﻿goods_input_luxury_tech_add = {
+goods_input_luxury_tech_add = {
 	decimals=1
 	color=bad
 	game_data={

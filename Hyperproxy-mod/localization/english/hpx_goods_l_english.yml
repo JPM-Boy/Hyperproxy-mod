@@ -105,3 +105,64 @@ modifier_goods_output_aluminium_add_desc: "The amount of @aluminium! Aluminium p
 
 modifier_goods_input_aluminium_add: "@aluminium! Aluminium input per level"
 modifier_goods_input_aluminium_add_desc: "The amount of @aluminium! Aluminium consumed by buildings"
+
+modifier_goods_output_appliances_add: "@appliances! Appliances output per level"
+modifier_goods_output_appliances_add_desc: "The amount of @appliances! Appliances produced by buildings"
+
+modifier_goods_input_appliances_add: "@appliances! Appliances input per level"
+modifier_goods_input_appliances_add_desc: "The amount of @appliances! Appliances consumed by buildings"
+
+modifier_goods_output_cargo_ship_add: "@cargo_ship! Cargo Ship output per level"
+modifier_goods_output_cargo_ship_add_desc: "The amount of @cargo_ship! Cargo Ship produced by buildings"
+
+modifier_goods_input_cargo_ship_add: "@cargo_ship! Cargo Ship input per level"
+modifier_goods_input_cargo_ship_add_desc: "The amount of @cargo_ship! Cargo Ship consumed by buildings"
+
+modifier_goods_output_warships_add: "@warships! Warships output per level"
+modifier_goods_output_warships_add_desc: "The amount of @warships! Warships produced by buildings"
+
+modifier_goods_input_warships_add: "@warships! Warships input per level"
+modifier_goods_input_warships_add_desc: "The amount of @warships! Warships consumed by buildings"
+
+modifier_goods_output_chips_add: "@chips! Chips output per level"
+modifier_goods_output_chips_add_desc: "The amount of @chips! Chips produced by buildings"
+
+modifier_goods_input_chips_add: "@chips! Chips input per level"
+modifier_goods_input_chips_add_desc: "The amount of @chips! Chips consumed by buildings"
+
+modifier_goods_output_computers_add: "@computers! Computers output per level"
+modifier_goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
+
+modifier_goods_input_computers_add: "@computers! Computers input per level"
+modifier_goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
+
+modifier_goods_output_missiles_add: "@missiles! Missiles output per level"
+modifier_goods_output_missiles_add_desc: "The amount of @missiles! Missiles produced by buildings"
+
+modifier_goods_input_missiles_add: "@missiles! Missiles input per level"
+modifier_goods_input_missiles_add_desc: "The amount of @missiles! Missiles consumed by buildings"
+
+modifier_goods_output_robotics_add: "@robotics! Robotics output per level"
+modifier_goods_output_robotics_add_desc: "The amount of @robotics! Robotics produced by buildings"
+
+modifier_goods_input_robotics_add: "@robotics! Robotics input per level"
+modifier_goods_input_robotics_add_desc: "The amount of @robotics! Robotics consumed by buildings"
+
+modifier_goods_output_laser_weapons_add: "@laser_weapons! Laser Weapons output per level"
+modifier_goods_output_laser_weapons_add_desc: "The amount of @laser_weapons! Laser Weapons produced by buildings"
+
+modifier_goods_input_laser_weapons_add: "@laser_weapons! Laser Weapons input per level"
+modifier_goods_input_laser_weapons_add_desc: "The amount of @laser_weapons! Laser Weapons consumed by buildings"
+
+modifier_goods_output_luxury_cars_add: "@luxury_cars! Luxury Cars output per level"
+modifier_goods_output_luxury_cars_add_desc: "The amount of @luxury_cars! Luxury Cars produced by buildings"
+
+modifier_goods_input_luxury_cars_add: "@luxury_cars! Luxury Cars input per level"
+modifier_goods_input_luxury_cars_add_desc: "The amount of @luxury_cars! Luxury Cars consumed by buildings"
+
+modifier_goods_output_luxury_tech_add: "@luxury_tech! Luxury Tech output per level"
+modifier_goods_output_luxury_tech_add_desc: "The amount of @luxury_tech! Luxury Tech produced by buildings"
+
+modifier_goods_input_luxury_tech_add: "@luxury_tech! Luxury Tech input per level"
+modifier_goods_input_luxury_tech_add_desc: "The amount of @luxury_tech! Luxury Tech consumed by buildings"
+

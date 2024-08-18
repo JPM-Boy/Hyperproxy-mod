@@ -8,7 +8,7 @@
 	convoy_cost_multiplier = 1
 }
 luxury_tech = {
-	texture = "gfx/interface/icons/goods_icons/luxury_tech.dds"
+	texture = "gfx/interface/icons/goods_icons/luxury-tech.dds"
 	cost = 200
 	category = luxury
 		
@@ -17,7 +17,7 @@ luxury_tech = {
 	convoy_cost_multiplier = 2
 }
 luxury_cars = {
-	texture = "gfx/interface/icons/goods_icons/luxury_cars.dds"
+	texture = "gfx/interface/icons/goods_icons/luxury-cars.dds"
 	cost = 175
 	category = luxury
 		
@@ -44,7 +44,7 @@ computers = {
 	convoy_cost_multiplier = 1
 }
 laser_weapons = {
-	texture = "gfx/interface/icons/goods_icons/laser_weapons.dds"
+	texture = "gfx/interface/icons/goods_icons/laser-weapons.dds"
 	cost = 175
 	category = military
 		
@@ -80,7 +80,7 @@ plastic = {
 	convoy_cost_multiplier = 0.75
 }
 cargo_ship = {
-	texture = "gfx/interface/icons/goods_icons/cargo_ship.dds"
+	texture = "gfx/interface/icons/goods_icons/cargo-ship.dds"
 	cost = 60
 	category = industrial
 		
@@ -89,7 +89,7 @@ cargo_ship = {
 	convoy_cost_multiplier = 0.1
 }
 luxury_services = {
-	texture = "gfx/interface/icons/goods_icons/luxury_services.dds"
+	texture = "gfx/interface/icons/goods_icons/luxury-services.dds"
 	cost = 60
 	category = luxury
 		
@@ -106,7 +106,7 @@ diesel = {
 	convoy_cost_multiplier = 1
 }
 rare_elements = {
-	texture = "gfx/interface/icons/goods_icons/rare_elements.dds"
+	texture = "gfx/interface/icons/goods_icons/rare-elements.dds"
 	cost = 60
 	category = industrial
 		
@@ -133,7 +133,7 @@ gas = {
 	convoy_cost_multiplier = 0.5
 }
 aluminium = {
-	texture = "gfx/interface/icons/goods_icons/---.dds"
+	texture = "gfx/interface/icons/goods_icons/aluminium.dds"
 	cost = 30
 	category = industrial
 		
@@ -149,4 +149,13 @@ copper = {
 	prestige_factor = 4
 	
 	convoy_cost_multiplier = 0.75
+}
+appliances = {
+	texture = "gfx/interface/icons/goods_icons/appliances.dds"
+	cost = 40
+	category = staple
+		
+	prestige_factor = 5
+	
+	convoy_cost_multiplier = 1
 }

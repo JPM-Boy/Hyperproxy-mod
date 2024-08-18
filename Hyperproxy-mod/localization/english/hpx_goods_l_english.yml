@@ -4,12 +4,12 @@
   tanks: "Tanks"
   artillery: "Artillery"
   aeroplanes: "Aeroplanes"
-  laser_arms: "Laser Weaponry"
+  laser_weapons: "Laser Weaponry"
   missiles: "Missiles"
   plastic: "Plastic"
   rare_elements: "Rare Elements"
   silicon: "Silicon"
-  war_robots: "War Robots"
+  robotics: "Robots"
   warships: "Warships"
 
   silk: "Silk"
@@ -42,7 +42,7 @@
     
   luxury_clothes: "Luxury Clothes"
   luxury_furniture: "Luxury Furniture"
-  luxury_automobiles: "Luxury Automobiles"
+  luxury_cars: "Luxury Automobiles"
   luxury_services: "Luxury Services"
   luxury_tech: "Luxury Technology"
   tobacco: "Tobacco"
@@ -79,5 +79,5 @@
   popneed_luxury_items: "Luxury Items"
   popneed_art: "Art"
 
-big_ig_support: "Increased Support"
+
   

@@ -44,14 +44,14 @@
 			limit = { strata = middle }
 			add = {
 				desc = "MIDDLE_CLASS"
-				value = 50
+				value = 500
 			}
 		}
 		else_if = {
 			limit = { strata = poor }
 			add = {
 				desc = "LOWER_CLASS"
-				value = 20
+				value = 200
 			}
 		}
 
@@ -72,7 +72,7 @@
 				limit = { strata = rich }
 				add = {
 					desc = "RURAL_UPPER_CLASS"
-					value = 200
+					value = 1000
 				}
 			}
 		}
@@ -86,21 +86,21 @@
 				limit = { strata = rich }
 				add = {
 					desc = "PATCON_CAPITALISTS"
-					value = 50
+					value = 500
 				}
 			}
 			else_if = {
 				limit = { strata = middle }
 				add = {
 					desc = "PATCON_MIDDLE_CLASS"
-					value = 50
+					value = 500
 				}
 			}
 			else_if = {
 				limit = { strata = poor }
 				add = {
 					desc = "PATCON_LOWER_CLASS"
-					value = 50
+					value = 500
 				}
 			}
 		}

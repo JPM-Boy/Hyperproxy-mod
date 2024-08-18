@@ -34,4 +34,3 @@ french_media_encouraged = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     state_assimilation_mult = -0.15
 }
-

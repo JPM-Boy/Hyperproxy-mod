@@ -1,0 +1,107 @@
+﻿goods_input_copper_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_copper_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_silicon_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_silicon_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_rare_elements_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_rare_elements_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_gas_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_gas_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_plastic_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_plastic_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_diesel_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_diesel_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_aluminium_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_aluminium_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+
+

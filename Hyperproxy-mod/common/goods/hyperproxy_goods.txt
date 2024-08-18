@@ -88,14 +88,6 @@ cargo_ship = {
 	
 	convoy_cost_multiplier = 0.1
 }
-luxury_services = {
-	texture = "gfx/interface/icons/goods_icons/luxury-services.dds"
-	cost = 60
-	category = luxury
-		
-	prestige_factor = 10
-	local = yes
-}
 diesel = {
 	texture = "gfx/interface/icons/goods_icons/diesel.dds"
 	cost = 50

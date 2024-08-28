@@ -459,6 +459,11 @@ STATE_CATALONIA = {
         bg_lead_mining = 24
         bg_logging = 6
         bg_fishing = 12
+        bg_copper_mining = 24
+        bg_aluminium_mining = 24
+        bg_silicon_mining = 24
+        bg_rare_elements_mining = 24
+        bg_gas_extraction = 24
     }
     naval_exit_id = 3032
 }

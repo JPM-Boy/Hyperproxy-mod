@@ -1,6 +1,6 @@
 ﻿robotics = {
 	texture = "gfx/interface/icons/goods_icons/robotics.dds"
-	cost = 150
+	cost = 750
 	category = industrial
 		
 	prestige_factor = 20
@@ -9,7 +9,7 @@
 }
 luxury_tech = {
 	texture = "gfx/interface/icons/goods_icons/luxury-tech.dds"
-	cost = 200
+	cost = 1000
 	category = luxury
 		
 	prestige_factor = 20
@@ -18,7 +18,7 @@ luxury_tech = {
 }
 luxury_cars = {
 	texture = "gfx/interface/icons/goods_icons/luxury-cars.dds"
-	cost = 175
+	cost = 875
 	category = luxury
 		
 	prestige_factor = 20
@@ -27,7 +27,7 @@ luxury_cars = {
 }
 missiles = {
 	texture = "gfx/interface/icons/goods_icons/missiles.dds"
-	cost = 150
+	cost = 750
 	category = military
 		
 	prestige_factor = 10
@@ -36,7 +36,7 @@ missiles = {
 }
 computers = {
 	texture = "gfx/interface/icons/goods_icons/computers.dds"
-	cost = 120
+	cost = 600
 	category = staple
 		
 	prestige_factor = 15
@@ -45,7 +45,7 @@ computers = {
 }
 laser_weapons = {
 	texture = "gfx/interface/icons/goods_icons/laser-weapons.dds"
-	cost = 175
+	cost = 875
 	category = military
 		
 	prestige_factor = 20
@@ -54,7 +54,7 @@ laser_weapons = {
 }
 chips = {
 	texture = "gfx/interface/icons/goods_icons/chips.dds"
-	cost = 80
+	cost = 400
 	category = industrial
 		
 	prestige_factor = 10
@@ -63,7 +63,7 @@ chips = {
 }
 warships = {
 	texture = "gfx/interface/icons/goods_icons/warships.dds"
-	cost = 80
+	cost = 400
 	category = military
 		
 	prestige_factor = 10
@@ -72,7 +72,7 @@ warships = {
 }
 plastic = {
 	texture = "gfx/interface/icons/goods_icons/plastic.dds"
-	cost = 70
+	cost = 350
 	category = industrial
 		
 	prestige_factor = 5
@@ -81,7 +81,7 @@ plastic = {
 }
 cargo_ship = {
 	texture = "gfx/interface/icons/goods_icons/cargo-ship.dds"
-	cost = 60
+	cost = 300
 	category = industrial
 		
 	prestige_factor = 5
@@ -90,7 +90,7 @@ cargo_ship = {
 }
 diesel = {
 	texture = "gfx/interface/icons/goods_icons/diesel.dds"
-	cost = 50
+	cost = 250
 	category = industrial
 		
 	prestige_factor = 8
@@ -99,7 +99,7 @@ diesel = {
 }
 rare_elements = {
 	texture = "gfx/interface/icons/goods_icons/rare-elements.dds"
-	cost = 60
+	cost = 300
 	category = industrial
 		
 	prestige_factor = 6
@@ -108,7 +108,7 @@ rare_elements = {
 }
 silicon = {
 	texture = "gfx/interface/icons/goods_icons/silicon.dds"
-	cost = 50
+	cost = 250
 	category = industrial
 		
 	prestige_factor = 4
@@ -117,7 +117,7 @@ silicon = {
 }
 gas = {
 	texture = "gfx/interface/icons/goods_icons/gas.dds"
-	cost = 40
+	cost = 200
 	category = industrial
 		
 	prestige_factor = 10
@@ -126,7 +126,7 @@ gas = {
 }
 aluminium = {
 	texture = "gfx/interface/icons/goods_icons/aluminium.dds"
-	cost = 30
+	cost = 150
 	category = industrial
 		
 	prestige_factor = 4
@@ -135,7 +135,7 @@ aluminium = {
 }
 copper = {
 	texture = "gfx/interface/icons/goods_icons/copper.dds"
-	cost = 20
+	cost = 100
 	category = industrial
 		
 	prestige_factor = 4
@@ -144,7 +144,7 @@ copper = {
 }
 appliances = {
 	texture = "gfx/interface/icons/goods_icons/appliances.dds"
-	cost = 40
+	cost = 200
 	category = staple
 		
 	prestige_factor = 5

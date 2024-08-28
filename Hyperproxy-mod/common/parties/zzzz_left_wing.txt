@@ -51,6 +51,8 @@ leftwing_party = {
 			is_interest_group_type = ig_ecologist
 			is_interest_group_type = ig_refsoc
 			is_interest_group_type = ig_revsoc
+			is_interest_group_type = ig_trade_unions
+
 			bpm_ig_is_institutional = yes
 		}
 

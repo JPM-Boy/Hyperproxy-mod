@@ -1,0 +1,18 @@
+﻿pm_gas_1 = {								        
+	production_methods = {
+		pm_gas_1_1
+		pm_gas_1_2
+	}
+	is_hidden_when_unavailable = no										# Whether PMs in this group should be visible at all if they cannot currently be switched to
+	ai_selection = most_productive										# Affects how the AI chooses between PMs. Current options: most_profitable, most_productive. Default most_profitable
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"	# Different types of PM Groups should have different icons for when the Building panel has mixed configuration
+}
+
+pm_gas_2 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_road_carts
+		pm_rail_transport_building_oil_rig
+		pm_tanker_cars
+	}
+}

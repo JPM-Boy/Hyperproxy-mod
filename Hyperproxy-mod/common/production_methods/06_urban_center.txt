@@ -7,9 +7,9 @@
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3500
-			building_employment_clerks_add = 900
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 17500
+			building_employment_clerks_add = 4500
+			building_employment_shopkeepers_add = 2000
 		}
 	}
 }
@@ -27,9 +27,9 @@ pm_market_squares = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3000
-			building_employment_clerks_add = 1400
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 1500
+			building_employment_clerks_add = 7000
+			building_employment_shopkeepers_add = 2000
 		}
 	}
 }
@@ -48,9 +48,9 @@ pm_covered_markets = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2500
-			building_employment_clerks_add = 1900
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 12500
+			building_employment_clerks_add = 9500
+			building_employment_shopkeepers_add = 2000
 		}
 	}
 }
@@ -70,9 +70,9 @@ pm_arcades = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000
-			building_employment_clerks_add = 3000
-			building_employment_shopkeepers_add = 1000
+			building_employment_laborers_add = 5000
+			building_employment_clerks_add = 15000
+			building_employment_shopkeepers_add = 5000
 		}
 	}
 
@@ -100,7 +100,7 @@ pm_gas_streetlights = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 250
+			building_employment_laborers_add = 1250
 		}
 	}
 
@@ -127,8 +127,8 @@ pm_electric_streetlights = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 200
-			building_employment_engineers_add = 50
+			building_employment_laborers_add = 1000
+			building_employment_engineers_add = 250
 		}
 	}
 
@@ -171,9 +171,9 @@ pm_public_trams = {
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 100
-			building_employment_machinists_add = 200
-			building_employment_laborers_add = -500
+			building_employment_engineers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_laborers_add = -2500
 		}
 	}
 }
@@ -198,9 +198,9 @@ pm_public_motor_carriages = {
 		}
 
 		level_scaled = {
-			building_employment_engineers_add = 200
-			building_employment_machinists_add = 400
-			building_employment_laborers_add = -1000
+			building_employment_engineers_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_laborers_add = -5000
 		}
 	}
 }
@@ -214,7 +214,7 @@ pm_state_urban_clergy = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clergymen_add = 200
+			building_employment_clergymen_add = 1000
 		}
 	}
 }
@@ -229,8 +229,8 @@ pm_free_urban_clergy = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clerks_add = 100
-			building_employment_clergymen_add = 150
+			building_employment_clerks_add = 500
+			building_employment_clergymen_add = 750
 		}
 	}
 }
@@ -243,8 +243,8 @@ pm_no_urban_clergy = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clerks_add = 150
-			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 750
+			building_employment_bureaucrats_add = 250
 		}
 	}
 }
@@ -347,9 +347,9 @@ pm_traditional_patronage = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 1000
-			building_employment_clerks_add = 3000
-			building_employment_laborers_add = 1000
+			building_employment_academics_add = 5000
+			building_employment_clerks_add = 15000
+			building_employment_laborers_add = 5000
 		}
 	}
 }
@@ -368,9 +368,9 @@ pm_bourgeoisie_patronage = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 1500
-			building_employment_clerks_add = 2500
-			building_employment_laborers_add = 1000
+			building_employment_academics_add = 7500
+			building_employment_clerks_add = 12500
+			building_employment_laborers_add = 5000
 		}
 	}
 }
@@ -384,9 +384,9 @@ pm_independent_artists = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 2000
-			building_employment_clerks_add = 2000
-			building_employment_laborers_add = 1000		
+			building_employment_academics_add = 10000
+			building_employment_clerks_add = 10000
+			building_employment_laborers_add = 5000		
 		}
 	}
 }
@@ -407,9 +407,9 @@ pm_hydroelectric_plant = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2500
-			building_employment_machinists_add = 1800
-			building_employment_engineers_add = 1200
+			building_employment_laborers_add = 12500
+			building_employment_machinists_add = 9000
+			building_employment_engineers_add = 6000
 		}
 	}
 }
@@ -435,9 +435,9 @@ pm_coal-fired_plant = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1400
+			building_employment_laborers_add = 10000
+			building_employment_machinists_add = 7500
+			building_employment_engineers_add = 7000
 		}
 	}
 }
@@ -463,9 +463,9 @@ pm_oil-fired_plant = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2000
-			building_employment_machinists_add = 1500
-			building_employment_engineers_add = 1400
+			building_employment_laborers_add = 10000
+			building_employment_machinists_add = 7500
+			building_employment_engineers_add = 7000
 		}
 	}
 }

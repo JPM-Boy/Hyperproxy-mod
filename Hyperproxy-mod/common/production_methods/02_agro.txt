@@ -7,8 +7,8 @@
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 1000
+			building_employment_laborers_add = 20000
+			building_employment_farmers_add = 5000
 		}
 	}
 }
@@ -31,8 +31,8 @@ pm_soil_enriching_farming = {
 
 		level_scaled = {
 			# earnings														
-			building_employment_laborers_add = 3500
-			building_employment_farmers_add = 1500
+			building_employment_laborers_add = 17750
+			building_employment_farmers_add = 7500
 		}
 	}
 }
@@ -55,8 +55,8 @@ pm_fertilization = {
 
 		level_scaled = {
 			# earnings														
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 2000
+			building_employment_laborers_add = 15000
+			building_employment_farmers_add = 10000
 		}
 	}
 }
@@ -77,8 +77,8 @@ pm_chemical_fertilizer = {
 
 		level_scaled = {
 			# earnings														
-			building_employment_laborers_add = 2500
-			building_employment_farmers_add = 2500
+			building_employment_laborers_add = 12500
+			building_employment_farmers_add = 12500
 		}
 	}
 }			
@@ -124,7 +124,7 @@ pm_tools = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000
+			building_employment_laborers_add = -5000
 		}
 	}
 }
@@ -149,7 +149,7 @@ pm_steam_threshers = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
+			building_employment_laborers_add = -7500
 		}
 	}
 }
@@ -174,7 +174,7 @@ pm_tractors = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -10000
 		}
 	}
 }
@@ -199,7 +199,7 @@ pm_compression_ignition_tractors = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2500
+			building_employment_laborers_add = -12500
 		}
 	}
 }
@@ -225,8 +225,8 @@ pm_simple_farming_building_rice_farm = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 8000
-			building_employment_farmers_add = 2000
+			building_employment_laborers_add = 40000
+			building_employment_farmers_add = 10000
 		}
 	}
 }
@@ -249,8 +249,8 @@ pm_soil_enriching_farming_building_rice_farm = {
 
 		level_scaled = {
 			# earnings												
-			building_employment_laborers_add = 7000
-			building_employment_farmers_add = 3000
+			building_employment_laborers_add = 35000
+			building_employment_farmers_add = 15000
 		}
 	}
 }
@@ -273,8 +273,8 @@ pm_fertilization_building_rice_farm = {
 
 		level_scaled = {
 			# earnings																									
-			building_employment_laborers_add = 6000
-			building_employment_farmers_add = 4000
+			building_employment_laborers_add = 30000
+			building_employment_farmers_add = 20000
 		}
 	}
 }
@@ -295,8 +295,8 @@ pm_chemical_fertilizer_building_rice_farm = {
 
 		level_scaled = {
 			# earnings														
-			building_employment_laborers_add = 5000
-			building_employment_farmers_add = 5000
+			building_employment_laborers_add = 25000
+			building_employment_farmers_add = 25000
 		}
 	}
 }
@@ -323,7 +323,7 @@ pm_tools_building_rice_farm = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000
+			building_employment_laborers_add = -10000
 		}
 	}
 }
@@ -348,7 +348,7 @@ pm_steam_threshers_building_rice_farm = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -15000
 		}
 	}
 }
@@ -421,8 +421,8 @@ pm_open_air_stockyards = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 1000
+			building_employment_laborers_add = 20000
+			building_employment_farmers_add = 5000
 		}
 	}
 }		
@@ -436,9 +436,9 @@ pm_butchering_tools = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3500
-			building_employment_farmers_add = 1250
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 17750
+			building_employment_farmers_add = 6250
+			building_employment_machinists_add = 2500
 		}
 	}							
 }
@@ -462,9 +462,9 @@ pm_slaughterhouses = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1500
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 15000
+			building_employment_farmers_add = 7500
+			building_employment_machinists_add = 2500
 		}
 	}
 }
@@ -489,9 +489,9 @@ pm_mechanized_slaughtering = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2250
-			building_employment_farmers_add = 1750
-			building_employment_machinists_add = 1000
+			building_employment_laborers_add = 11250
+			building_employment_farmers_add = 8750
+			building_employment_machinists_add = 5000
 		}
 	}
 }
@@ -511,7 +511,7 @@ pm_barbed_wire_fences = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -800
+			building_employment_laborers_add = -4000
 		}
 	}
 }		
@@ -528,7 +528,7 @@ pm_electric_fencing = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1400
+			building_employment_laborers_add = -7000
 		}
 	}
 
@@ -552,7 +552,7 @@ pm_refrigerated_storage_building_livestock_ranch = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -800
+			building_employment_laborers_add = -4000
 		}
 	}
 
@@ -573,7 +573,7 @@ pm_refrigerated_rail_cars_building_livestock_ranch = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1400
+			building_employment_laborers_add = -7000
 		}
 	}
 

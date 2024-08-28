@@ -10,7 +10,7 @@
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 5000
+			building_employment_peasants_add = 25000
 		}
 	}
 }
@@ -75,8 +75,8 @@ pm_homesteading_building_subsistence = {
 		}
 		
 		level_scaled = {
-			building_employment_peasants_add = -100
-			building_employment_farmers_add = 100
+			building_employment_peasants_add = -500
+			building_employment_farmers_add = 500
 		}		
 	}
 }
@@ -110,7 +110,7 @@ default_building_subsistence_orchards = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 5000
+			building_employment_peasants_add = 25000
 		}
 	}
 }
@@ -174,7 +174,7 @@ default_building_subsistence_pastures = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 5000
+			building_employment_peasants_add = 25000
 		}
 	}
 }
@@ -237,7 +237,7 @@ default_building_subsistence_fishing_villages = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 5000
+			building_employment_peasants_add = 25000
 		}
 	}
 }
@@ -300,7 +300,7 @@ default_building_subsistence_rice_paddies = {
 		}
 
 		level_scaled = {
-			building_employment_peasants_add = 10000
+			building_employment_peasants_add = 50000
 		}
 	}
 }

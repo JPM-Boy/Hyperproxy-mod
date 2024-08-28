@@ -1,0 +1,18 @@
+﻿pm_diesel_1 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_diesel_1_1
+		pm_diesel_1_2
+		pm_diesel_1_3
+	}
+}
+
+pm_diesel_2 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_diesel_2_1
+		pm_diesel_2_2
+		pm_diesel_2_3
+		pm_diesel_2_4
+	}
+}

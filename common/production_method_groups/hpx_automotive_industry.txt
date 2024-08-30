@@ -1,0 +1,38 @@
+﻿#Main PM's Automobile Models
+pmg_automobiles_1 = {
+	production_methods = {
+		pm_automobiles_1_1 #Postwar Cars
+		pm_automobiles_1_2 #Compact Cars
+		pm_automobiles_1_3 #Modern Cars
+		pm_automobiles_1_4 #Advanced Cars
+	}
+	is_hidden_when_unavailable = no	
+	ai_selection = most_productive
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}
+# Luxury Cars Production
+pmg_automobiles_2 = {
+	production_methods = {
+		pm_automobiles_2_1 #No Luxury Cars
+		pm_automobiles_2_2 #Sports Cars
+		pm_automobiles_2_3 #Supercars
+		pm_automobiles_2_4 #Hypercars
+	}
+	is_hidden_when_unavailable = no	
+	ai_selection = most_productive
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}
+# Automotive Upgrades
+pmg_automobiles_3 = {
+	production_methods = {
+		pm_automobiles_3_1 #No Options
+		pm_automobiles_3_2 #Electronic Assistance
+		pm_automobiles_3_3 #Computer Display
+		pm_automobiles_3_4 #Automated Driving
+	}
+	is_hidden_when_unavailable = no	
+	ai_selection = most_productive
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}
+
+

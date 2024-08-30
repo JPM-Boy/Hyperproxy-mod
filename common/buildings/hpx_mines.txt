@@ -1,6 +1,6 @@
 building_copper_mine = {
 	building_group = bg_copper_mining
-	texture = "gfx/interface/icons/building_icons/coal_mine.dds"
+	texture = "gfx/interface/icons/building_icons/copper_industry.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -22,7 +22,7 @@ building_copper_mine = {
 
 building_aluminium_mine = {
 	building_group = bg_aluminium_mining
-	texture = "gfx/interface/icons/building_icons/coal_mine.dds"
+	texture = "gfx/interface/icons/building_icons/aluminium_industry.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -44,7 +44,7 @@ building_aluminium_mine = {
 
 building_silicon_mine = {
 	building_group = bg_silicon_mining
-	texture = "gfx/interface/icons/building_icons/coal_mine.dds"
+	texture = "gfx/interface/icons/building_icons/silicon_industry.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -66,7 +66,7 @@ building_silicon_mine = {
 
 building_rare_elements_mine = {
 	building_group = bg_rare_elements_mining
-	texture = "gfx/interface/icons/building_icons/coal_mine.dds"
+	texture = "gfx/interface/icons/building_icons/rare_elements_industry.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
@@ -88,7 +88,7 @@ building_rare_elements_mine = {
 
 building_gas_pump = {
 	building_group = bg_gas_extraction
-	texture = "gfx/interface/icons/building_icons/oil_rig.dds"
+	texture = "gfx/interface/icons/building_icons/gas_industry.dds"
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium

@@ -1,6 +1,6 @@
 ﻿building_chips_factory = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	texture = "gfx/interface/icons/building_icons/chips_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -29,7 +29,7 @@
 
 building_plastic_industry = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/motor_industry.dds"
+	texture = "gfx/interface/icons/building_icons/plastic_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -56,7 +56,7 @@ building_plastic_industry = {
 
 building_diesel_industry = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/motor_industry.dds"
+	texture = "gfx/interface/icons/building_icons/diesel_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	
@@ -83,7 +83,7 @@ building_diesel_industry = {
 
 building_computers_factory = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	texture = "gfx/interface/icons/building_icons/computer_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 

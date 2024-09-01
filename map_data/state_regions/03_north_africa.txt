@@ -13,6 +13,7 @@
     capped_resources = {
         bg_sulfur_mining = 20
         bg_logging = 2
+        bg_rare_elements_mining = 24
         bg_fishing = 6
     }
     naval_exit_id = 3034
@@ -102,6 +103,7 @@ STATE_SINAI = {
     capped_resources = {
         bg_fishing = 3
         bg_iron_mining = 24
+        bg_copper_mining = 24
         bg_lead_mining = 24
     }
     naval_exit_id = 3047
@@ -218,6 +220,7 @@ STATE_MARRAKECH = {
     capped_resources = {
         bg_iron_mining = 30
         bg_fishing = 8
+        bg_silicon_mining = 24
     }
     naval_exit_id = 3089
 }
@@ -275,6 +278,7 @@ STATE_INNER_MOROCCO = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 30
+        bg_rare_elements_mining = 24
         bg_lead_mining = 30
         bg_fishing = 4
         bg_gold_mining = 3
@@ -487,6 +491,7 @@ STATE_WEST_SAHARA = {
     capped_resources = {
         bg_sulfur_mining = 36
         bg_fishing = 11
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3089
 }

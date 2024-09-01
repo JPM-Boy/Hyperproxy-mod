@@ -136,6 +136,8 @@ STATE_UUSIMAA = {
         bg_lead_mining = 5
         bg_logging = 36
         bg_fishing = 8
+        bg_copper_mining = 24
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3000
 }
@@ -254,6 +256,7 @@ STATE_KOLA = {
         bg_iron_mining = 85
         bg_sulfur_mining = 10
         bg_logging = 25
+        bg_rare_elements_mining = 24
         bg_fishing = 10
     }
     naval_exit_id = 3039

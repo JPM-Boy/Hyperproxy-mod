@@ -450,6 +450,7 @@ STATE_LINDI = {
         bg_coal_mining = 44
         bg_iron_mining = 33
         bg_logging = 5
+        bg_rare_elements_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -495,6 +496,7 @@ STATE_TANGANYIKA = {
     capped_resources = {
         bg_coal_mining = 72
         bg_iron_mining = 48
+        bg_rare_elements_mining = 24
         bg_logging = 23
     }
     resource = {
@@ -540,6 +542,7 @@ STATE_RIFT_VALLEY = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_coal_mining = 48
+        bg_rare_elements_mining = 24
         bg_logging = 7
     }
     resource = {
@@ -627,6 +630,7 @@ STATE_KAZEMBE = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_coal_mining = 48
+        bg_rare_elements_mining = 24
         bg_logging = 14
     }
     resource = {
@@ -761,6 +765,7 @@ STATE_MOCAMBIQUE = {
     capped_resources = {
         bg_logging = 23
         bg_fishing = 8
+        bg_rare_elements_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -1004,7 +1009,9 @@ STATE_SOUTH_ANGOLA = {
     capped_resources = {
         bg_logging = 5
         bg_fishing = 7
+        bg_copper_mining = 24
         bg_whaling = 4
+        bg_rare_elements_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -1049,6 +1056,7 @@ STATE_KATANGA = {
     capped_resources = {
         bg_iron_mining = 27
         bg_logging = 18
+        bg_silicon_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -1097,6 +1105,7 @@ STATE_ZAMBIA = {
     capped_resources = {
         bg_coal_mining = 36
         bg_lead_mining = 33
+        bg_silicon_mining = 24
         bg_logging = 17
     }
     resource = {
@@ -1120,6 +1129,7 @@ STATE_ZAMBEZIA = {
     capped_resources = {
         bg_iron_mining = 33
         bg_fishing = 6
+        bg_rare_elements_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -1165,6 +1175,7 @@ STATE_NAMAQUALAND = {
         bg_coal_mining = 32
         bg_logging = 4
         bg_fishing = 7
+        bg_copper_mining = 24
     }
     naval_exit_id = 3105
 }
@@ -1184,6 +1195,7 @@ STATE_HEREROLAND = {
     capped_resources = {
         bg_coal_mining = 40
         bg_logging = 2
+        bg_rare_elements_mining = 24
         bg_fishing = 6
     }
     naval_exit_id = 3105
@@ -1246,6 +1258,8 @@ STATE_TRANSVAAL = {
         bg_coal_mining = 104
         bg_iron_mining = 60
         bg_logging = 5
+        bg_silicon_mining = 24
+        bg_rare_elements_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -1287,6 +1301,7 @@ STATE_CAPE_COLONY = {
     capped_resources = {
         bg_logging = 8
         bg_fishing = 10
+        bg_rare_elements_mining = 24
         bg_whaling = 4
     }
     naval_exit_id = 3105
@@ -1328,6 +1343,7 @@ STATE_BOTSWANA = {
     capped_resources = {
         bg_coal_mining = 48
         bg_logging = 5
+        bg_copper_mining = 24
     }
 }
 

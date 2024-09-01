@@ -60,6 +60,7 @@ STATE_HONDURAS = {
     capped_resources = {
         bg_logging = 15
         bg_fishing = 8
+        bg_copper_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -83,6 +84,7 @@ STATE_NICARAGUA = {
     capped_resources = {
         bg_logging = 14
         bg_fishing = 5
+        bg_copper_mining = 24
     }
     resource = {
         type = "bg_rubber"

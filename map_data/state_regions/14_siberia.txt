@@ -42,6 +42,7 @@ STATE_TOMSK = {
         bg_coal_mining = 85
         bg_iron_mining = 27
         bg_logging = 26
+        bg_silicon_mining = 24
     }
 }
 
@@ -80,6 +81,7 @@ STATE_TOBOLSK = {
         bg_coal_mining = 44
         bg_iron_mining = 10
         bg_logging = 30
+        bg_silicon_mining = 24
     }
     resource = {
         type = "bg_oil_extraction"
@@ -257,6 +259,7 @@ STATE_TRANS_BAIKAL = {
         bg_iron_mining = 33
         bg_lead_mining = 28
         bg_sulfur_mining = 44
+        bg_silicon_mining = 24
         bg_logging = 24
     }
     resource = {
@@ -281,6 +284,7 @@ STATE_IRKUTSK = {
         bg_coal_mining = 50
         bg_iron_mining = 36
         bg_logging = 30
+        bg_silicon_mining = 24
     }
     resource = {
         type = "bg_oil_extraction"

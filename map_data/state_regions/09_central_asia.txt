@@ -216,6 +216,7 @@ STATE_KIRGHIZIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" }
     capped_resources = {
         bg_coal_mining = 32
+        bg_rare_elements_mining = 24
         bg_logging = 6
     }
 }
@@ -428,6 +429,7 @@ STATE_NGARI = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 11
+        bg_copper_mining = 24
     }
 }
 
@@ -445,6 +447,7 @@ STATE_HIMALAYAS = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_logging = 9
+        bg_copper_mining = 24
     }
 }
 

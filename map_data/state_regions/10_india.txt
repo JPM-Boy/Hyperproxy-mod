@@ -313,6 +313,7 @@ STATE_CIRCARS = {
         bg_coal_mining = 40
         bg_iron_mining = 21
         bg_logging = 11
+        bg_rare_elements_mining = 24
         bg_fishing = 18
     }
     naval_exit_id = 3050
@@ -354,6 +355,7 @@ STATE_TRAVANCORE = {
     capped_resources = {
         bg_logging = 11
         bg_fishing = 10
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3049
 }
@@ -374,6 +376,7 @@ STATE_MADRAS = {
         bg_iron_mining = 36
         bg_logging = 20
         bg_fishing = 18
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3049
 }
@@ -408,6 +411,7 @@ STATE_BOMBAY = {
     capped_resources = {
         bg_logging = 17
         bg_fishing = 12
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3048
 }

@@ -1,16 +1,14 @@
 ﻿pm_plastic_1_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_oil_add = 30
-			
 			goods_output_plastic_add = 60
 		}
 
@@ -25,17 +23,15 @@
 
 pm_plastic_1_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_gas_add = 30
-			
 			goods_output_plastic_add = 40
 		}
 
@@ -50,18 +46,16 @@ pm_plastic_1_2 = {
 
 pm_plastic_1_3 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_gas_add = 30
 			goods_input_oil_add = 30
-			
 			goods_output_plastic_add = 100
 		}
 
@@ -76,17 +70,16 @@ pm_plastic_1_3 = {
 
 pm_plastic_2_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_GREEN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
 		}
 	}
-	
+
 	unlocking_technologies = {
 		watertube_boiler
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -103,17 +96,16 @@ pm_plastic_2_1 = {
 
 pm_plastic_2_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_GREEN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -135,11 +127,11 @@ pm_plastic_2_3 = {
 			state_pollution_generation_add = 15
 		}
 	}
-	
+
 	unlocking_technologies = {
 		conveyors
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -153,6 +145,5 @@ pm_plastic_2_3 = {
 			building_employment_machinists_add = -2500
 		}
 	}
-
 	required_input_goods = electricity
 }

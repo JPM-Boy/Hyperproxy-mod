@@ -1,18 +1,16 @@
 ﻿pm_computers_1_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_plastic_add = 10
 			goods_input_chips_add = 30
-			
 			# output goods
 			goods_output_computers_add = 40
 		}
@@ -34,17 +32,16 @@ pm_computers_1_2 = {
 			state_pollution_generation_add = 15
 		}
 	}
-	
+
 	unlocking_technologies = {
 		bessemer_process
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_plastic_add = 15
 			goods_input_chips_add = 30
-			
 			# output goods
 			goods_output_computers_add = 60
 		}
@@ -61,23 +58,21 @@ pm_computers_1_2 = {
 
 pm_computers_1_3 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 20
 		}
 	}
-	
+
 	unlocking_technologies = {
 		open_hearth_process
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_plastic_add = 20
 			goods_input_chips_add = 30
-			
 			# output goods
 			goods_output_computers_add = 90
 		}
@@ -94,24 +89,22 @@ pm_computers_1_3 = {
 
 pm_computers_1_4 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_4_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 25
 		}
 	}
-	
+
 	unlocking_technologies = {
 		electric_arc_process
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_plastic_add = 25
-			goods_input_chips_add = 30 
+			goods_input_chips_add = 30
 			goods_input_electricity_add = 30
-			
 			# output goods
 			goods_output_computers_add = 115
 		}
@@ -124,23 +117,21 @@ pm_computers_1_4 = {
 			building_employment_engineers_add = 5000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_computers_2_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_GREEN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
 		}
 	}
-	
+
 	unlocking_technologies = {
 		watertube_boiler
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -156,17 +147,16 @@ pm_computers_2_1 = {
 
 pm_computers_2_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_GREEN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods

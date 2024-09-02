@@ -40,6 +40,7 @@ STATE_GUAYANA = {
     capped_resources = {
         bg_logging = 20
         bg_silicon_mining = 24
+        bg_aluminium_mining = 24
         bg_fishing = 6
     }
     resource = {
@@ -101,6 +102,7 @@ STATE_MIRANDA = {
     capped_resources = {
         bg_logging = 7
         bg_fishing = 5
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -129,6 +131,7 @@ STATE_BOLIVAR = {
         bg_iron_mining = 30
         bg_logging = 25
         bg_fishing = 3
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -824,6 +827,7 @@ STATE_PARA = {
     capped_resources = {
         bg_logging = 9
         bg_fishing = 3
+        bg_aluminium_mining = 24
         bg_iron_mining = 78
     }
     resource = {
@@ -994,6 +998,7 @@ STATE_PARANA = {
     capped_resources = {
         bg_coal_mining = 20
         bg_logging = 30
+        bg_aluminium_mining = 24
         bg_fishing = 3
         bg_rare_elements_mining = 24
         bg_whaling = 2
@@ -1037,6 +1042,7 @@ STATE_SAO_PAULO = {
     capped_resources = {
         bg_logging = 22
         bg_fishing = 5
+        bg_aluminium_mining = 24
         bg_rare_elements_mining = 24
     }
     resource = {
@@ -1065,6 +1071,7 @@ STATE_MINAS_GERAIS = {
         bg_iron_mining = 45
         bg_lead_mining = 30
         bg_logging = 24
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_gold_fields"

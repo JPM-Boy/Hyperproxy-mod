@@ -109,6 +109,7 @@ STATE_COSTA_RICA = {
         bg_coal_mining = 24
         bg_logging = 8
         bg_fishing = 3
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -155,10 +156,8 @@ STATE_HAITI = {
     capped_resources = {
         bg_logging = 7
         bg_fishing = 6
-    }
-    resource = {
-        type = "bg_rubber"
-        undiscovered_amount = 12
+        bg_aluminium_mining = 24
+        bg_rubber = 12
     }
     naval_exit_id = 3061
 }
@@ -281,6 +280,7 @@ STATE_CUBA = {
         bg_coal_mining = 16
         bg_iron_mining = 18
         bg_logging = 15
+        bg_aluminium_mining = 24
         bg_fishing = 10
     }
     resource = {

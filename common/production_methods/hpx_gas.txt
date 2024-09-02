@@ -1,18 +1,16 @@
 ﻿pm_gas_1_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_engines_add = 5
 			goods_input_coal_add = 10
-			
 			# output goods
 			goods_output_gas_add = 60
 		}
@@ -28,22 +26,20 @@
 
 pm_gas_1_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
 		}
 	}
-	
+
 	unlocking_technologies = {
 		combustion_engine
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_engines_add = 10
-			
 			# output goods
 			goods_output_gas_add = 100
 		}

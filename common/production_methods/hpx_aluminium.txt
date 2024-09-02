@@ -1,11 +1,9 @@
 ﻿pm_aluminium_mine_1_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 5
-			
 			# output goods
 			goods_output_aluminium_add = 80
 		}
@@ -19,11 +17,10 @@
 
 pm_aluminium_mine_1_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
-
 	unlocking_technologies = {
 		atmospheric_engine
 	}
-	
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -34,7 +31,6 @@ pm_aluminium_mine_1_2 = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 10
-			
 			# output goods
 			goods_output_aluminium_add = 100
 		}
@@ -50,7 +46,6 @@ pm_aluminium_mine_1_2 = {
 
 pm_aluminium_mine_1_3 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
-
 	unlocking_technologies = {
 		watertube_boiler
 	}
@@ -60,12 +55,11 @@ pm_aluminium_mine_1_3 = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 15
-			
 			# output goods
 			goods_output_aluminium_add = 125
 		}
@@ -81,11 +75,10 @@ pm_aluminium_mine_1_3 = {
 
 pm_aluminium_mine_1_4 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_4_TAN.dds"
-
 	unlocking_technologies = {
 		compression_ignition
 	}
-	
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
@@ -97,7 +90,6 @@ pm_aluminium_mine_1_4 = {
 			# input goods
 			goods_input_tools_add = 15
 			goods_input_oil_add = 5
-			
 			# output goods
 			goods_output_aluminium_add = 150
 		}
@@ -117,11 +109,10 @@ pm_aluminium_mine_2_1 = {
 
 pm_aluminium_mine_2_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
-
 	unlocking_technologies = {
-	 	nitroglycerin
+		nitroglycerin
 	}
-	
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -132,7 +123,6 @@ pm_aluminium_mine_2_2 = {
 		workforce_scaled = {
 			# input goods
 			goods_input_explosives_add = 5
-			
 			# output goods
 			goods_output_aluminium_add = 15
 		}
@@ -151,11 +141,10 @@ pm_aluminium_mine_2_2 = {
 
 pm_aluminium_mine_2_3 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
-
 	unlocking_technologies = {
 		dynamite
 	}
-	
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -165,7 +154,6 @@ pm_aluminium_mine_2_3 = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_explosives_add = 10
-			
 			# output goods
 			goods_output_aluminium_add = 25
 		}
@@ -182,7 +170,6 @@ pm_aluminium_mine_3_1 = {
 
 pm_aluminium_mine_3_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_GREEN.dds"
-		
 	unlocking_technologies = {
 		steam_donkey
 	}
@@ -196,13 +183,13 @@ pm_aluminium_mine_3_2 = {
 			state_pollution_generation_add = 5
 		}
 	}
-		
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-				goods_input_engines_add = 1
-				goods_output_aluminium_add = -3
-			}
+			goods_input_engines_add = 1
+			goods_output_aluminium_add = -3
+		}
 
 		level_scaled = {
 			building_employment_laborers_add = -5000

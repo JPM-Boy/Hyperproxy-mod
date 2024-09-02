@@ -1,0 +1,40 @@
+﻿# German Unification
+
+je_hpx_germany = {
+	icon = "gfx/interface/icons/timed_modifier_icons/GER.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		OR = {
+			c:WGE = root
+			c:EGE = root
+		}
+	}
+	
+	possible = {
+		always = yes
+	}
+
+	should_be_pinned_by_default = yes
+
+	weight = 200
+
+	status_desc = {
+		desc = germany_is_divided
+	}
+
+	complete = {
+		OR = {
+			NOT = {exists = c:WGE}
+			NOT = {exists = c:EGE}
+		}
+	}
+
+	on_complete = {
+		root = {
+			change_tag = GER
+			set_capital = STATE_BRANDENBURG
+		}
+	}
+}

@@ -1,6 +1,5 @@
 ﻿pm_simple_forestry = {
 	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_wood_add = 30
@@ -18,13 +17,12 @@ pm_saw_mills = {
 	texture = "gfx/interface/icons/production_method_icons/saw_mills.dds"
 	unlocking_technologies = {
 		steelworking
-	}				
+	}
 
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_tools_add = 5
-			
 			# output goods
 			goods_output_wood_add = 60
 		}
@@ -36,7 +34,7 @@ pm_saw_mills = {
 			building_employment_machinists_add = 2500
 		}
 	}
-}	
+}
 
 pm_electric_saw_mills = {
 	texture = "gfx/interface/icons/production_method_icons/electric_saw_mills.dds"
@@ -49,7 +47,6 @@ pm_electric_saw_mills = {
 			# input goods
 			goods_input_tools_add = 10
 			goods_input_electricity_add = 5
-			
 			# output goods
 			goods_output_wood_add = 100 #+800
 		}
@@ -62,7 +59,6 @@ pm_electric_saw_mills = {
 			building_employment_engineers_add = 2500
 		}
 	}
-
 	required_input_goods = electricity
 }
 
@@ -83,7 +79,6 @@ pm_hardwood = {
 
 pm_increased_hardwood = {
 	texture = "gfx/interface/icons/production_method_icons/increased_hardwood.dds"
-
 	unlocking_production_methods = {
 		pm_saw_mills
 		pm_electric_saw_mills
@@ -104,7 +99,6 @@ pm_no_equipment = {
 
 pm_steam_donkey_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/steam_donkey.dds"
-	
 	unlocking_technologies = {
 		steam_donkey
 	}
@@ -112,7 +106,7 @@ pm_steam_donkey_building_logging_camp = {
 	disallowing_laws = {
 		law_industry_banned
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -132,9 +126,11 @@ pm_chainsaws = {
 	unlocking_technologies = {
 		combustion_engine
 	}
+
 	disallowing_laws = {
 		law_industry_banned
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -153,7 +149,6 @@ pm_chainsaws = {
 
 pm_rail_transport_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
@@ -163,6 +158,7 @@ pm_rail_transport_building_logging_camp = {
 	unlocking_technologies = {
 		railways
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_transportation_add = 5
@@ -176,7 +172,6 @@ pm_rail_transport_building_logging_camp = {
 
 pm_log_carts = {
 	texture = "gfx/interface/icons/production_method_icons/log_carts.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
@@ -186,6 +181,7 @@ pm_log_carts = {
 	unlocking_technologies = {
 		electric_railway
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_transportation_add = 8
@@ -199,7 +195,6 @@ pm_log_carts = {
 
 default_building_rubber_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_rubber_add = 30
@@ -214,17 +209,16 @@ default_building_rubber_plantation = {
 
 automatic_irrigation_building_rubber_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
 		}
 	}
-		
+
 	unlocking_technologies = {
 		pumpjacks
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_engines_add = 5
@@ -241,7 +235,6 @@ automatic_irrigation_building_rubber_plantation = {
 
 pm_simple_fishing = {
 	texture = "gfx/interface/icons/production_method_icons/simple_fishing.dds"
-	
 	building_modifiers = {
 		workforce_scaled = {
 			# output
@@ -258,12 +251,10 @@ pm_simple_fishing = {
 
 pm_fishing_trawlers = {
 	texture = "gfx/interface/icons/production_method_icons/trawlers.dds"
-	
 	building_modifiers = {
 		workforce_scaled = {
 			# input
 			goods_input_clippers_add = 5
-			
 			# output
 			goods_output_fish_add = 50
 		}
@@ -279,22 +270,21 @@ pm_fishing_trawlers = {
 
 pm_steam_trawlers = {
 	texture = "gfx/interface/icons/production_method_icons/steam_trawlers.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	unlocking_technologies = {
 		gantry_cranes
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input
 			goods_input_steamers_add = 5
 			goods_input_coal_add = 15
-			
 			# output
 			goods_output_fish_add = 100
 		}
@@ -311,7 +301,6 @@ pm_steam_trawlers = {
 
 pm_refrigerated_storage_building_fishing_wharf = {
 	texture = "gfx/interface/icons/production_method_icons/refrigerated_storage.dds"
-	
 	unlocking_technologies = {
 		pasteurization
 	}
@@ -327,19 +316,17 @@ pm_refrigerated_storage_building_fishing_wharf = {
 			building_employment_laborers_add = -5000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_refrigerated_rail_cars_building_fishing_wharf = {
 	texture = "gfx/interface/icons/production_method_icons/refrigerated_rail_cars.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
 		}
 	}
-	
+
 	unlocking_technologies = {
 		electric_railway
 	}
@@ -356,17 +343,15 @@ pm_refrigerated_rail_cars_building_fishing_wharf = {
 			building_employment_laborers_add = -10000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_flash_freezing_building_fishing_wharf = {
 	texture = "gfx/interface/icons/production_method_icons/flash_refrigerated.dds"
-	
 	unlocking_technologies = {
 		flash_freezing
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input
@@ -379,17 +364,14 @@ pm_flash_freezing_building_fishing_wharf = {
 			building_employment_laborers_add = -15000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_simple_whaling = {
 	texture = "gfx/interface/icons/production_method_icons/simple_whaling.dds"
-	
 	building_modifiers = {
 		workforce_scaled = {
 			# input 
-			
 			# output
 			goods_output_meat_add = 5
 			goods_output_oil_add = 10
@@ -405,12 +387,10 @@ pm_simple_whaling = {
 
 pm_wooden_whaling_ships = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_whaling_ships.dds"
-	
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_clippers_add = 5 
-			
+			goods_input_clippers_add = 5
 			# output
 			goods_output_meat_add = 10
 			goods_output_oil_add = 20
@@ -427,22 +407,21 @@ pm_wooden_whaling_ships = {
 
 pm_steam_whaling_ships = {
 	texture = "gfx/interface/icons/production_method_icons/steam_whaling_ships.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	unlocking_technologies = {
 		gantry_cranes
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input
 			goods_input_steamers_add = 5
 			goods_input_coal_add = 20
-			
 			goods_output_meat_add = 20
 			goods_output_oil_add = 40
 		}
@@ -459,7 +438,6 @@ pm_steam_whaling_ships = {
 
 pm_refrigerated_storage_building_whaling_station = {
 	texture = "gfx/interface/icons/production_method_icons/refrigerated_storage.dds"
-	
 	unlocking_technologies = {
 		pasteurization
 	}
@@ -475,19 +453,17 @@ pm_refrigerated_storage_building_whaling_station = {
 			building_employment_laborers_add = -5000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_refrigerated_rail_cars_building_whaling_station = {
 	texture = "gfx/interface/icons/production_method_icons/refrigerated_rail_cars.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
 		}
 	}
-	
+
 	unlocking_technologies = {
 		electric_railway
 	}
@@ -504,17 +480,15 @@ pm_refrigerated_rail_cars_building_whaling_station = {
 			building_employment_laborers_add = -10000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_flash_freezing_building_whaling_station = {
 	texture = "gfx/interface/icons/production_method_icons/flash_refrigerated.dds"
-	
 	unlocking_technologies = {
 		flash_freezing
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input
@@ -527,25 +501,22 @@ pm_flash_freezing_building_whaling_station = {
 			building_employment_laborers_add = -15000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_steam_derricks = {
 	texture = "gfx/interface/icons/production_method_icons/simple_oil_extraction.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_engines_add = 5
 			goods_input_coal_add = 10
-			
 			# output goods
 			goods_output_oil_add = 60
 		}
@@ -561,22 +532,20 @@ pm_steam_derricks = {
 
 pm_combustion_derricks = {
 	texture = "gfx/interface/icons/production_method_icons/combustion_derricks.dds"
-	
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 15
 		}
 	}
-	
+
 	unlocking_technologies = {
 		combustion_engine
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
 			goods_input_engines_add = 10
-			
 			# output goods
 			goods_output_oil_add = 100
 		}
@@ -592,7 +561,6 @@ pm_combustion_derricks = {
 
 pm_rail_transport_building_oil_rig = {
 	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 5
@@ -602,7 +570,7 @@ pm_rail_transport_building_oil_rig = {
 	unlocking_technologies = {
 		railways
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_transportation_add = 5
@@ -616,7 +584,6 @@ pm_rail_transport_building_oil_rig = {
 
 pm_tanker_cars = {
 	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -626,7 +593,7 @@ pm_tanker_cars = {
 	unlocking_technologies = {
 		steel_railway_cars
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_transportation_add = 10

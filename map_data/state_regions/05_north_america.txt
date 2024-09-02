@@ -149,6 +149,7 @@ STATE_OREGON = {
         bg_logging = 20
         bg_copper_mining = 24
         bg_fishing = 5
+        bg_aluminium_mining = 24
     }
     naval_exit_id = 3154
 }

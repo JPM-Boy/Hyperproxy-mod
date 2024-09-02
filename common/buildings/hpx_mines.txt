@@ -1,4 +1,4 @@
-building_copper_mine = {
+﻿building_copper_mine = {
 	building_group = bg_copper_mining
 	texture = "gfx/interface/icons/building_icons/copper_industry.dds"
 	city_type = mine
@@ -16,7 +16,6 @@ building_copper_mine = {
 		pmg_automation_copper_mining
 	}
 	ownership_type = self
-
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
@@ -38,7 +37,6 @@ building_aluminium_mine = {
 		pmg_automation_aluminium_mining
 	}
 	ownership_type = self
-
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
@@ -60,7 +58,6 @@ building_silicon_mine = {
 		pmg_automation_silicon_mining
 	}
 	ownership_type = self
-
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
@@ -82,7 +79,6 @@ building_rare_elements_mine = {
 		pmg_automation_rare_elements_mining
 	}
 	ownership_type = self
-
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
 }
 
@@ -92,16 +88,14 @@ building_gas_pump = {
 	city_type = mine
 	levels_per_mesh = 5
 	required_construction = construction_cost_medium
-
 	unlocking_technologies = {
 		pumpjacks
 	}
-	
+
 	production_method_groups = {
 		pm_gas_1
 		pm_gas_2
 	}
 	ownership_type = self
-
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_oil.dds"
 }

@@ -979,7 +979,7 @@ NPops = {
 	DEFAULT_POP_TYPE = "laborers"				# Used by: create_pop effects; migration; injured military leaving their outposts; slaves default employment role; etc.
 	SLAVE_POP_TYPE = "slaves"					# This is the type of pop that debtors will become
 
-	POP_SIZE_PACKAGE = 25000					# "Normal" pop size used as a divisor on population when determining e.g. Needs to buy, wages to pay, etc
+	POP_SIZE_PACKAGE = 10000					# "Normal" pop size used as a divisor on population when determining e.g. Needs to buy, wages to pay, etc
 
 	WEALTH_PROGRESS_WANTED_BUFFER = 1.02		# A pop wants at least as much income as this x the next level buy package costs to increase its wealth
 	WEALTH_PROGRESS_ACCEPTABLE_DEFICIT = 0.98	# A pop won't change wealth level if they can still afford this much of their current buy package costs

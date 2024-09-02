@@ -1,7 +1,6 @@
 ﻿# Early Automobiles
 pm_automobiles_1_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -14,7 +13,6 @@ pm_automobiles_1_1 = {
 			goods_input_engines_add = 10
 			goods_input_steel_add = 5
 			goods_input_rubber_add = 5
-			
 			# output goods
 			goods_output_automobiles_add = 50
 		}
@@ -24,14 +22,12 @@ pm_automobiles_1_1 = {
 			building_employment_laborers_add = 18000
 			building_employment_machinists_add = 5000
 			building_employment_engineers_add = 1000
-			
 		}
 	}
 }
 # Compact Cars
 pm_automobiles_1_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -44,9 +40,8 @@ pm_automobiles_1_2 = {
 			goods_input_engines_add = 15
 			goods_input_aluminium_add = 8
 			goods_input_rubber_add = 5
-			
 			# output goods
-			goods_output_automobiles_add = 80
+			goods_output_automobiles_add = 100
 		}
 
 		level_scaled = {
@@ -54,7 +49,6 @@ pm_automobiles_1_2 = {
 			building_employment_laborers_add = 15000
 			building_employment_machinists_add = 7000
 			building_employment_engineers_add = 1500
-			
 		}
 	}
 
@@ -65,7 +59,6 @@ pm_automobiles_1_2 = {
 # Modern Cars
 pm_automobiles_1_3 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -78,9 +71,8 @@ pm_automobiles_1_3 = {
 			goods_input_engines_add = 20
 			goods_input_aluminium_add = 12
 			goods_input_rubber_add = 5
-			
 			# output goods
-			goods_output_automobiles_add = 120
+			goods_output_automobiles_add = 115
 		}
 
 		level_scaled = {
@@ -88,7 +80,6 @@ pm_automobiles_1_3 = {
 			building_employment_laborers_add = 12000
 			building_employment_machinists_add = 1000
 			building_employment_engineers_add = 2000
-			
 		}
 	}
 
@@ -99,7 +90,6 @@ pm_automobiles_1_3 = {
 # Advanced Cars
 pm_automobiles_1_4 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -112,7 +102,6 @@ pm_automobiles_1_4 = {
 			goods_input_engines_add = 25
 			goods_input_aluminium_add = 15
 			goods_input_rubber_add = 5
-			
 			# output goods
 			goods_output_automobiles_add = 180
 		}
@@ -122,7 +111,6 @@ pm_automobiles_1_4 = {
 			building_employment_laborers_add = 10000
 			building_employment_machinists_add = 12000
 			building_employment_engineers_add = 2500
-			
 		}
 	}
 
@@ -130,7 +118,6 @@ pm_automobiles_1_4 = {
 		compression_ignition
 	}
 }
-
 ##### Luxury Cars ######
 #No Luxury Car Production
 pm_automobiles_2_1 = {
@@ -144,7 +131,6 @@ pm_automobiles_2_2 = {
 			# input goods
 			goods_input_engines_add = 10
 			goods_input_rubber_add = 5
-			
 			# output goods
 			goods_output_automobiles_add = -25
 			goods_output_luxury_cars_add = 25
@@ -163,7 +149,6 @@ pm_automobiles_2_3 = {
 			# input goods
 			goods_input_engines_add = 20
 			goods_input_rubber_add = 10
-			
 			# output goods
 			goods_output_automobiles_add = -50
 			goods_output_luxury_cars_add = 50
@@ -182,7 +167,6 @@ pm_automobiles_2_4 = {
 			# input goods
 			goods_input_engines_add = 30
 			goods_input_rubber_add = 15
-			
 			# output goods
 			goods_output_automobiles_add = -75
 			goods_output_luxury_cars_add = 75
@@ -202,12 +186,11 @@ pm_automobiles_3_2 = {
 			# input goods
 			goods_input_chips_add = 5
 			goods_input_copper_add = 10
-			
 			# output goods
 			goods_output_automobiles_add = 20
-
 		}
 	}
+
 	unlocking_technologies = {
 		electrical_generation
 	}
@@ -219,10 +202,8 @@ pm_automobiles_3_3 = {
 		workforce_scaled = {
 			# input goods
 			goods_input_computers_add = 5
-			
 			# output goods
 			goods_output_automobiles_add = 30
-
 		}
 	}
 
@@ -238,10 +219,8 @@ pm_automobiles_3_4 = {
 			# input goods
 			goods_input_computers_add = 5
 			goods_input_chips_add = 10
-			
 			# output goods
 			goods_output_automobiles_add = 60
-
 		}
 	}
 

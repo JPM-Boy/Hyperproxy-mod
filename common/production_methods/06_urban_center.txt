@@ -1,6 +1,5 @@
 ﻿pm_market_stalls = {
 	texture = "gfx/interface/icons/production_method_icons/market_stalls.dds"
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_services_add = 15
@@ -16,8 +15,9 @@
 
 pm_market_squares = {
 	texture = "gfx/interface/icons/production_method_icons/market_squares.dds"
-
-	unlocking_technologies = { urban_planning }
+	unlocking_technologies = {
+		urban_planning
+	}
 
 	building_modifiers = {
 		workforce_scaled = {
@@ -75,21 +75,17 @@ pm_arcades = {
 			building_employment_shopkeepers_add = 5000
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_no_street_lighting = {
 	texture = "gfx/interface/icons/production_method_icons/no_street_lighting.dds"
-
-	city_lights_color_index = 0	# Needs to match city_graphics_data.settings color array
+	city_lights_color_index = 0 # Needs to match city_graphics_data.settings color array
 }
 
 pm_gas_streetlights = {
 	texture = "gfx/interface/icons/production_method_icons/gas_streetlights.dds"
-
-	city_lights_color_index = 1	# Needs to match city_graphics_data.settings color array
-
+	city_lights_color_index = 1 # Needs to match city_graphics_data.settings color array
 	unlocking_technologies = {
 	}
 
@@ -113,9 +109,7 @@ pm_gas_streetlights = {
 
 pm_electric_streetlights = {
 	texture = "gfx/interface/icons/production_method_icons/electric_streetlights.dds"
-
-	city_lights_color_index = 2	# Needs to match city_graphics_data.settings color array
-
+	city_lights_color_index = 2 # Needs to match city_graphics_data.settings color array
 	unlocking_technologies = {
 		electrical_generation
 	}
@@ -137,13 +131,11 @@ pm_electric_streetlights = {
 			state_infrastructure_add = 2
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_no_public_transport = {
 	texture = "gfx/interface/icons/production_method_icons/no_public_transport.dds"
-	
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_transportation_add = 5
@@ -153,7 +145,6 @@ pm_no_public_transport = {
 
 pm_public_trams = {
 	texture = "gfx/interface/icons/production_method_icons/public_trams.dds"
-
 	unlocking_technologies = {
 		railways
 	}
@@ -180,7 +171,6 @@ pm_public_trams = {
 
 pm_public_motor_carriages = {
 	texture = "gfx/interface/icons/production_method_icons/public_motor_carriages.dds"
-
 	unlocking_technologies = {
 		combustion_engine
 	}
@@ -207,7 +197,6 @@ pm_public_motor_carriages = {
 
 pm_state_urban_clergy = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
-
 	unlocking_laws = {
 		law_state_religion
 	}
@@ -221,7 +210,6 @@ pm_state_urban_clergy = {
 
 pm_free_urban_clergy = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
-
 	disallowing_laws = {
 		law_state_religion
 		law_state_atheism
@@ -251,9 +239,9 @@ pm_no_urban_clergy = {
 
 pm_traditional_art = {
 	texture = "gfx/interface/icons/production_method_icons/traditional_art.dds"
-
 	building_modifiers = {
-		workforce_scaled = { # 500 profit
+		workforce_scaled = {
+ # 500 profit
 			goods_input_paper_add = 10 # 300
 			goods_output_fine_art_add = 4 # 800
 		}
@@ -262,14 +250,13 @@ pm_traditional_art = {
 
 pm_realist_art = {
 	texture = "gfx/interface/icons/production_method_icons/realist_art.dds"
-
 	unlocking_technologies = {
 		realism
 	}
 
 	building_modifiers = {
-
-		workforce_scaled = { # 550 profit
+		workforce_scaled = {
+ # 550 profit
 			goods_input_paper_add = 15 # 450
 			goods_output_fine_art_add = 5 # 1000
 		}
@@ -278,17 +265,15 @@ pm_realist_art = {
 
 pm_photographic_art = {
 	texture = "gfx/interface/icons/production_method_icons/photographic_art.dds"
-
 	unlocking_technologies = {
 		camera
 	}
 
 	building_modifiers = {
-
-		workforce_scaled = { # 630 profit
+		workforce_scaled = {
+ # 630 profit
 			goods_input_paper_add = 15 # 450
 			goods_input_tools_add = 8 # 320
-
 			goods_output_fine_art_add = 7 # 1400
 		}
 	}
@@ -296,34 +281,29 @@ pm_photographic_art = {
 
 pm_film_art = {
 	texture = "gfx/interface/icons/production_method_icons/film_art.dds"
-
 	unlocking_technologies = {
 		film
 	}
 
 	building_modifiers = {
-
-		workforce_scaled = { # 690 profit
+		workforce_scaled = {
+ # 690 profit
 			goods_input_tools_add = 10 # 400
 			goods_input_paper_add = 15 # 450
 			goods_input_electricity_add = 2 # 60
-
 			goods_output_fine_art_add = 8 # 1600
 		}
 	}
-
 	required_input_goods = electricity
 }
 
 pm_principle_freedom_of_movement_3 = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
-
 	is_hidden_when_unavailable = yes
-	
 	unlocking_principles = {
-		principle_freedom_of_movement_3 
+		principle_freedom_of_movement_3
 	}
-	
+
 	state_modifiers = {
 		unscaled = {
 			state_migration_pull_mult = 0.2
@@ -333,13 +313,11 @@ pm_principle_freedom_of_movement_3 = {
 
 pm_freedom_of_movement_no_effect = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
-
 	replacement_if_valid = pm_principle_freedom_of_movement_3
 }
 
 pm_traditional_patronage = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_aristocrats.dds"
-
 	disallowing_laws = {
 		law_command_economy
 		law_cooperative_ownership
@@ -356,7 +334,6 @@ pm_traditional_patronage = {
 
 pm_bourgeoisie_patronage = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
-
 	unlocking_technologies = {
 		realism
 	}
@@ -377,7 +354,6 @@ pm_bourgeoisie_patronage = {
 
 pm_independent_artists = {
 	texture = "gfx/interface/icons/production_method_icons/independent_artists.dds"
-
 	unlocking_technologies = {
 		realism
 	}
@@ -386,20 +362,19 @@ pm_independent_artists = {
 		level_scaled = {
 			building_employment_academics_add = 10000
 			building_employment_clerks_add = 10000
-			building_employment_laborers_add = 5000		
+			building_employment_laborers_add = 5000
 		}
 	}
 }
 
 pm_hydroelectric_plant = {
 	texture = "gfx/interface/icons/production_method_icons/hydroelectric_plant.dds"
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
 		}
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_engines_add = 10
@@ -416,7 +391,6 @@ pm_hydroelectric_plant = {
 
 pm_coal-fired_plant = {
 	texture = "gfx/interface/icons/production_method_icons/coal_fired_plant.dds"
-
 	unlocking_technologies = {
 		steam_turbine
 	}
@@ -444,7 +418,6 @@ pm_coal-fired_plant = {
 
 pm_oil-fired_plant = {
 	texture = "gfx/interface/icons/production_method_icons/oil_fired_plant.dds"
-
 	unlocking_technologies = {
 		oil_turbine
 	}

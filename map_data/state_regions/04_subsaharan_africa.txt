@@ -13,6 +13,7 @@
     capped_resources = {
         bg_logging = 14
         bg_fishing = 5
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -41,6 +42,7 @@ STATE_WINDWARD_COAST = {
         bg_iron_mining = 24
         bg_logging = 15
         bg_fishing = 6
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -112,6 +114,7 @@ STATE_SIERRA_LEONE = {
         bg_iron_mining = 36
         bg_logging = 11
         bg_fishing = 6
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -356,6 +359,7 @@ STATE_GUINEA = {
         bg_logging = 13
         bg_fishing = 7
         bg_whaling = 2
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -674,6 +678,7 @@ STATE_SOUTH_MADAGASCAR = {
     capped_resources = {
         bg_coal_mining = 80
         bg_logging = 23
+        bg_aluminium_mining = 24
         bg_whaling = 4
         bg_fishing = 8
     }
@@ -698,6 +703,7 @@ STATE_NORTH_MADAGASCAR = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_logging = 20
+        bg_aluminium_mining = 24
         bg_whaling = 6
         bg_fishing = 10
     }
@@ -867,6 +873,7 @@ STATE_CONGO = {
         bg_coal_mining = 48
         bg_logging = 25
         bg_fishing = 4
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -940,6 +947,7 @@ STATE_BAS_CONGO = {
         bg_iron_mining = 36
         bg_logging = 23
         bg_fishing = 7
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"

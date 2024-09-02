@@ -242,6 +242,7 @@ STATE_BANAT = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 9
+        bg_aluminium_mining = 24
     }
 }
 

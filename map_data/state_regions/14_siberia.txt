@@ -17,6 +17,7 @@
         bg_lead_mining = 81
         bg_gold_mining = 2
         bg_logging = 27
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -80,6 +81,7 @@ STATE_TOBOLSK = {
     capped_resources = {
         bg_coal_mining = 44
         bg_iron_mining = 10
+        bg_aluminium_mining = 24
         bg_logging = 30
         bg_silicon_mining = 24
     }

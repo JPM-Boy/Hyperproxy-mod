@@ -56,6 +56,7 @@ STATE_SARDINIA = {
         bg_lead_mining = 21
         bg_sulfur_mining = 20
         bg_copper_mining = 24
+        bg_aluminium_mining = 24
         bg_logging = 11
         bg_fishing = 10
     }
@@ -735,6 +736,7 @@ STATE_ALBANIA = {
     capped_resources = {
         bg_iron_mining = 24
         bg_logging = 6
+        bg_aluminium_mining = 24
         bg_fishing = 8
         bg_oil_extraction = 5
     }
@@ -924,6 +926,7 @@ STATE_NORTHERN_SERBIA = {
     capped_resources = {
         bg_iron_mining = 24
         bg_logging = 13
+        bg_aluminium_mining = 24
         bg_copper_mining = 24
     }
 }
@@ -942,6 +945,7 @@ STATE_SOUTHERN_SERBIA = {
         bg_coal_mining = 40
         bg_lead_mining = 36
         bg_logging = 14
+        bg_aluminium_mining = 24
         bg_copper_mining = 24
     }
 }
@@ -1046,6 +1050,7 @@ STATE_SKOPIA = {
     capped_resources = {
         bg_iron_mining = 36
         bg_logging = 16
+        bg_aluminium_mining = 24
     }
 }
 
@@ -1063,6 +1068,7 @@ STATE_MACEDONIA = {
     capped_resources = {
         bg_logging = 9
         bg_fishing = 3
+        bg_aluminium_mining = 24
     }
     naval_exit_id = 3034
 }

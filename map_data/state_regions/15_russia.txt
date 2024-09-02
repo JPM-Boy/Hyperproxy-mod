@@ -276,6 +276,7 @@ STATE_INGRIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 25
+        bg_aluminium_mining = 24
         bg_fishing = 10
     }
     naval_exit_id = 3000
@@ -417,6 +418,7 @@ STATE_ARKHANGELSK = {
         bg_gold_mining = 2
         bg_logging = 14
         bg_fishing = 10
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -618,6 +620,7 @@ STATE_PERM = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 80
+        bg_aluminium_mining = 24
         bg_iron_mining = 75
         bg_logging = 35
     }

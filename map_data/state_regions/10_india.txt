@@ -12,6 +12,7 @@
     capped_resources = {
         bg_coal_mining = 80
         bg_logging = 14
+        bg_aluminium_mining = 24
     }
 }
 
@@ -102,6 +103,7 @@ STATE_GUJARAT = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_logging = 8
+        bg_aluminium_mining = 24
         bg_fishing = 16
     }
     resource = {
@@ -291,6 +293,7 @@ STATE_ORISSA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_iron_mining = 30
+        bg_aluminium_mining = 24
         bg_lead_mining = 45
         bg_fishing = 7
     }
@@ -315,6 +318,7 @@ STATE_CIRCARS = {
         bg_logging = 11
         bg_rare_elements_mining = 24
         bg_fishing = 18
+        bg_aluminium_mining = 24
     }
     naval_exit_id = 3050
 }
@@ -411,6 +415,7 @@ STATE_BOMBAY = {
     capped_resources = {
         bg_logging = 17
         bg_fishing = 12
+        bg_aluminium_mining = 24
         bg_rare_elements_mining = 24
     }
     naval_exit_id = 3048

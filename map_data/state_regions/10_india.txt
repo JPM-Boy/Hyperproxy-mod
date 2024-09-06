@@ -161,6 +161,7 @@ STATE_PUNJAB = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_silk_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 11
+        bg_gas_extraction = 28
     }
 }
 
@@ -217,6 +218,7 @@ STATE_SINDH = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_sugar_plantations" }
     capped_resources = {
         bg_sulfur_mining = 40
+        bg_gas_extraction = 28
         bg_fishing = 6
     }
     naval_exit_id = 3048

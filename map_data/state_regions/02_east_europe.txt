@@ -29,6 +29,7 @@ STATE_SILESIA = {
         bg_coal_mining = 120
         bg_iron_mining = 60
         bg_lead_mining = 54
+        bg_gas_extraction = 28
         bg_sulfur_mining = 40
         bg_logging = 14
     }
@@ -84,6 +85,7 @@ STATE_WEST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 40
+        bg_gas_extraction = 28
         bg_logging = 8
         bg_fishing = 10
     }
@@ -103,6 +105,7 @@ STATE_EAST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 17
+        bg_gas_extraction = 28
         bg_fishing = 10
     }
     naval_exit_id = 3000
@@ -348,6 +351,7 @@ STATE_WALLACHIA = {
         bg_iron_mining = 21
         bg_sulfur_mining = 15
         bg_logging = 8
+        bg_gas_extraction = 28
         bg_oil_extraction = 60
     }
 }

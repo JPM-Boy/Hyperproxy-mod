@@ -16,6 +16,7 @@
         bg_iron_mining = 96
         bg_lead_mining = 81
         bg_gold_mining = 2
+        bg_gas_extraction = 28
         bg_logging = 27
         bg_aluminium_mining = 24
     }
@@ -41,6 +42,7 @@ STATE_TOMSK = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 85
+        bg_gas_extraction = 28
         bg_iron_mining = 27
         bg_logging = 26
         bg_silicon_mining = 24
@@ -83,6 +85,7 @@ STATE_TOBOLSK = {
         bg_iron_mining = 10
         bg_aluminium_mining = 24
         bg_logging = 30
+        bg_gas_extraction = 28
         bg_silicon_mining = 24
     }
     resource = {
@@ -127,6 +130,7 @@ STATE_OB = {
     capped_resources = {
         bg_coal_mining = 20
         bg_logging = 22
+        bg_gas_extraction = 28
     }
     resource = {
         type = "bg_oil_extraction"

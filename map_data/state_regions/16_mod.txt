@@ -29,6 +29,7 @@ STATE_SORBIA = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_iron_mining = 24
+        bg_gas_extraction = 28
         bg_lead_mining = 24
         bg_logging = 8
     }

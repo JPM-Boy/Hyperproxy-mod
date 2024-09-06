@@ -419,6 +419,7 @@ STATE_NAVARRA = {
         bg_fishing = 6
         bg_silicon_mining = 24
         bg_oil_extraction = 10
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3029
 }
@@ -796,6 +797,7 @@ STATE_BULGARIA = {
         bg_logging = 14
         bg_copper_mining = 24
         bg_fishing = 2
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3036
 }

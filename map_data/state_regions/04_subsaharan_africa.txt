@@ -1225,6 +1225,7 @@ STATE_ZULULAND = {
         bg_coal_mining = 72
         bg_logging = 11
         bg_fishing = 5
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3106
 }
@@ -1243,6 +1244,7 @@ STATE_VRYSTAAT = {
         bg_coal_mining = 60
         bg_iron_mining = 30
         bg_logging = 7
+        bg_gas_extraction = 28
     }
     resource = {
         type = "bg_gold_fields"
@@ -1290,6 +1292,7 @@ STATE_EASTERN_CAPE = {
     capped_resources = {
         bg_coal_mining = 56
         bg_logging = 9
+        bg_gas_extraction = 28
         bg_fishing = 8
     }
     naval_exit_id = 3106

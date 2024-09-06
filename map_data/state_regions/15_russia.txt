@@ -12,6 +12,7 @@
     capped_resources = {
         bg_logging = 9
         bg_fishing = 8
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3000
 }
@@ -29,6 +30,7 @@ STATE_TARTU = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 7
+        bg_gas_extraction = 28
         bg_fishing = 7
     }
     naval_exit_id = 3000
@@ -48,6 +50,7 @@ STATE_RIGA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 11
+        bg_gas_extraction = 28
         bg_fishing = 10
     }
     naval_exit_id = 3000
@@ -66,6 +69,7 @@ STATE_COURLAND = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 7
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3000
 }
@@ -83,6 +87,7 @@ STATE_KAUNAS = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 8
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3000
 }
@@ -98,6 +103,7 @@ STATE_VILNIUS = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 7
+        bg_gas_extraction = 28
     }
 }
 

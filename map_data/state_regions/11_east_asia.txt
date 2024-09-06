@@ -11,6 +11,7 @@
     capped_resources = {
         bg_iron_mining = 24
         bg_lead_mining = 36
+        bg_gas_extraction = 28
         bg_sulfur_mining = 80
     }
     resource = {
@@ -30,6 +31,9 @@ STATE_TIANSHAN = {
     wood = "x8A8795"
     arable_land = 40
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" }
+    capped_resources = {
+        bg_gas_extraction = 28
+    }
 }
 
 STATE_SICHUAN = {
@@ -106,6 +110,7 @@ STATE_SHAOZHOU = {
         bg_logging = 11
         bg_silicon_mining = 24
         bg_fishing = 10
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3056
 }
@@ -263,6 +268,7 @@ STATE_SOUTHERN_MANCHURIA = {
         bg_iron_mining = 75
         bg_lead_mining = 45
         bg_logging = 25
+        bg_gas_extraction = 28
         bg_fishing = 8
     }
 }
@@ -281,6 +287,7 @@ STATE_NORTHERN_MANCHURIA = {
     capped_resources = {
         bg_coal_mining = 40
         bg_iron_mining = 36
+        bg_gas_extraction = 28
         bg_logging = 34
     }
 }
@@ -420,6 +427,7 @@ STATE_GUANGDONG = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_logging = 8
+        bg_gas_extraction = 28
         bg_fishing = 14
         bg_silicon_mining = 24
     }
@@ -441,6 +449,7 @@ STATE_FUJIAN = {
         bg_logging = 16
         bg_fishing = 10
         bg_rare_elements_mining = 24
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3056
 }
@@ -458,6 +467,7 @@ STATE_ZHEJIANG = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_logging = 20
+        bg_gas_extraction = 28
         bg_fishing = 11
     }
     naval_exit_id = 3058
@@ -494,6 +504,7 @@ STATE_NANJING = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_logging = 5
+        bg_gas_extraction = 28
     }
 }
 
@@ -555,6 +566,7 @@ STATE_JIANGXI = {
         bg_coal_mining = 52
         bg_silicon_mining = 24
         bg_logging = 15
+        bg_gas_extraction = 28
     }
 }
 
@@ -701,6 +713,7 @@ STATE_SUZHOU = {
     capped_resources = {
         bg_logging = 5
         bg_fishing = 5
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3058
 }
@@ -922,6 +935,7 @@ STATE_NAKHON_RATCHASIMA = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_logging = 25
+        bg_gas_extraction = 28
     }
     resource = {
         type = "bg_rubber"

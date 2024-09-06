@@ -69,6 +69,9 @@ STATE_EGYPTIAN_DESERT = {
     wood = "xBD5993"
     arable_land = 5
     arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_gas_extraction = 28
+    }
 }
 
 STATE_MATRUH = {
@@ -180,6 +183,7 @@ STATE_DARFUR = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_oil_extraction = 10
+        bg_gas_extraction = 28
     }
 }
 
@@ -383,6 +387,7 @@ STATE_TRIPOLI = {
     capped_resources = {
         bg_fishing = 5
         bg_oil_extraction = 30
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3033
 }
@@ -418,6 +423,7 @@ STATE_LIBYAN_DESERT = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_oil_extraction = 30
+        bg_gas_extraction = 28
     }
 }
 
@@ -435,6 +441,7 @@ STATE_SAHARA = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 16
+        bg_gas_extraction = 28
         bg_oil_extraction = 5
     }
 }
@@ -454,6 +461,7 @@ STATE_EAST_SAHARA = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_oil_extraction = 5
+        bg_gas_extraction = 28
     }
 }
 
@@ -474,6 +482,7 @@ STATE_WEST_SAHARA = {
         bg_sulfur_mining = 36
         bg_fishing = 11
         bg_rare_elements_mining = 24
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3089
 }
@@ -599,6 +608,7 @@ STATE_CHAD = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_oil_extraction = 10
+        bg_gas_extraction = 28
     }
 }
 

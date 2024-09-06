@@ -30,11 +30,9 @@ STATE_LOUISIANA = {
         bg_coal_mining = 24
         bg_sulfur_mining = 32
         bg_logging = 13
+        bg_gas_extraction = 28
         bg_fishing = 12
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        bg_oil_extraction = 10
     }
     naval_exit_id = 3060
 }
@@ -54,6 +52,7 @@ STATE_NEW_YORK = {
     capped_resources = {
         bg_iron_mining = 45
         bg_logging = 20
+        bg_gas_extraction = 28
         bg_whaling = 5
         bg_silicon_mining = 24
         bg_fishing = 6
@@ -100,6 +99,7 @@ STATE_ALASKA = {
         bg_coal_mining = 32
         bg_logging = 11
         bg_rare_elements_mining = 24
+        bg_gas_extraction = 28
         bg_whaling = 8
         bg_copper_mining = 24
         bg_fishing = 10
@@ -233,6 +233,7 @@ STATE_MONTANA = {
     capped_resources = {
         bg_coal_mining = 80
         bg_iron_mining = 33
+        bg_gas_extraction = 28
         bg_logging = 17
     }
     resource = {
@@ -443,6 +444,7 @@ STATE_WISCONSIN = {
         bg_iron_mining = 24
         bg_sulfur_mining = 32
         bg_logging = 23
+        bg_gas_extraction = 28
     }
 }
 
@@ -478,6 +480,7 @@ STATE_MICHIGAN = {
         bg_iron_mining = 60
         bg_sulfur_mining = 32
         bg_logging = 20
+        bg_gas_extraction = 28
     }
 }
 
@@ -494,6 +497,7 @@ STATE_OHIO = {
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 60
+        bg_gas_extraction = 28        
         bg_lead_mining = 36
         bg_logging = 14
     }
@@ -699,6 +703,7 @@ STATE_PENNSYLVANIA = {
         bg_coal_mining = 120
         bg_iron_mining = 57
         bg_logging = 23
+        bg_gas_extraction = 28
     }
     resource = {
         type = "bg_oil_extraction"
@@ -955,6 +960,7 @@ STATE_ONTARIO = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_sulfur_mining = 48
+        bg_gas_extraction = 28
         bg_logging = 23
         bg_rare_elements_mining = 24
     }
@@ -1045,6 +1051,7 @@ STATE_ALBERTA = {
         bg_coal_mining = 48
         bg_sulfur_mining = 32
         bg_logging = 23
+        bg_gas_extraction = 28
     }
     resource = {
         type = "bg_oil_extraction"
@@ -1211,6 +1218,7 @@ STATE_TEXAS = {
         bg_coal_mining = 28
         bg_sulfur_mining = 36
         bg_logging = 7
+        bg_gas_extraction = 28
         bg_fishing = 6
     }
     resource = {

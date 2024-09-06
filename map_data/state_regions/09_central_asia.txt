@@ -338,6 +338,7 @@ STATE_QUETTA = {
         bg_iron_mining = 4
         bg_lead_mining = 8
         bg_logging = 2
+        bg_gas_extraction = 28
     }
 }
 
@@ -393,6 +394,7 @@ STATE_BALUCHISTAN = {
         bg_iron_mining = 20
         bg_lead_mining = 10
         bg_logging = 1
+        bg_gas_extraction = 28
         bg_fishing = 5
     }
     naval_exit_id = 3048

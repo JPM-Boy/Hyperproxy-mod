@@ -158,6 +158,11 @@ pm_automobiles_2_3 = {
 	unlocking_technologies = {
 		compression_ignition
 	}
+	unlocking_production_methods = {
+		pm_automobiles_1_4
+		pm_automobiles_1_3
+		pm_automobiles_1_2
+	}
 }
 #Hypercars
 pm_automobiles_2_4 = {
@@ -171,6 +176,13 @@ pm_automobiles_2_4 = {
 			goods_output_automobiles_add = -75
 			goods_output_luxury_cars_add = 75
 		}
+	}
+	unlocking_technologies = {
+		compression_ignition
+	}
+	unlocking_production_methods = {
+		pm_automobiles_1_4
+		pm_automobiles_1_3
 	}
 }
 ##### Driving Assistance ######
@@ -194,6 +206,11 @@ pm_automobiles_3_2 = {
 	unlocking_technologies = {
 		electrical_generation
 	}
+	unlocking_production_methods = {
+		pm_automobiles_1_4
+		pm_automobiles_1_3
+		pm_automobiles_1_2
+	}
 }
 #Computer Display
 pm_automobiles_3_3 = {
@@ -209,6 +226,10 @@ pm_automobiles_3_3 = {
 
 	unlocking_technologies = {
 		radio
+	}
+	unlocking_production_methods = {
+		pm_automobiles_1_4
+		pm_automobiles_1_3
 	}
 }
 #Automated Driving
@@ -226,5 +247,8 @@ pm_automobiles_3_4 = {
 
 	unlocking_technologies = {
 		compression_ignition
+	}
+	unlocking_production_methods = {
+		pm_automobiles_1_4
 	}
 }

@@ -1,5 +1,5 @@
 ﻿building_chips_factory = {
-	building_group = bg_heavy_industry
+	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/chips_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
@@ -21,12 +21,12 @@
 		}
 	}
 	ownership_type = self
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 building_automotive_factory = {
-	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/car_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -47,12 +47,12 @@ building_automotive_factory = {
 		}
 	}
 	ownership_type = self
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 building_appliance_factory = {
-	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/appliances_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -72,12 +72,12 @@ building_appliance_factory = {
 		}
 	}
 	ownership_type = self
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 building_robotics_factory = {
-	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/robotics_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -96,12 +96,12 @@ building_robotics_factory = {
 		}
 	}
 	ownership_type = self
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 building_advanced_fabrication_factory = {
-	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/laser_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -120,7 +120,7 @@ building_advanced_fabrication_factory = {
 		}
 	}
 	ownership_type = self
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 building_plastic_industry = {
@@ -174,7 +174,7 @@ building_diesel_industry = {
 }
 
 building_computers_factory = {
-	building_group = bg_heavy_industry
+	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/computer_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
@@ -195,5 +195,5 @@ building_computers_factory = {
 		}
 	}
 	ownership_type = self
-	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }

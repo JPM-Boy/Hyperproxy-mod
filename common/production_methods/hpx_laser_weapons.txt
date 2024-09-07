@@ -15,7 +15,7 @@ pm_laser_weapons_1_1 = {
 			goods_input_aluminium_add = 5
 			goods_input_robotics_add = 5
 			# output goods
-			goods_output_laser_weapon_add = 25
+			goods_output_laser_weapons_add = 25
 		}
 
 		level_scaled = {
@@ -46,7 +46,7 @@ pm_laser_weapons_1_2 = {
 			goods_input_aluminium_add = 10
 			goods_input_robotics_add = 10
 			# output goods
-			goods_output_laser_weapon_add = 40
+			goods_output_laser_weapons_add = 40
 		}
 
 		level_scaled = {
@@ -78,7 +78,7 @@ pm_laser_weapons_1_3 = {
 			goods_input_robotics_add = 15
 			goods_input_small_arms_add = 30
 			# output goods
-			goods_output_laser_weapon_add = 65
+			goods_output_laser_weapons_add = 65
 		}
 
 		level_scaled = {

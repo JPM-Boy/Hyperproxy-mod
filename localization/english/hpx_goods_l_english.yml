@@ -166,3 +166,16 @@ modifier_goods_output_luxury_tech_add_desc: "The amount of @luxury_tech! Luxury 
 modifier_goods_input_luxury_tech_add: "@luxury_tech! Luxury Tech input per level"
 modifier_goods_input_luxury_tech_add_desc: "The amount of @luxury_tech! Luxury Tech consumed by buildings"
 
+building_copper_mine: "Copper Mines"
+building_aluminium_mine: "Aluminium Mines"
+building_silicon_mine: "Silicon Mines"
+building_rare_elements_mine: "Rare Elements Mines"
+building_gas_pump: "Gas Pumps"
+
+building_chips_factory: "Chips Factory"
+building_automotive_factory: "Automotive Plants"
+building_robotics_factory: "Robotics Plants"
+building_advanced_fabrication_factory: "Advanced Fabrication Factory"
+building_plastic_industry: "Plastic Refinery"
+building_diesel_industry: "Diesel Refinery"
+building_computers_factory: "Computer Industry"

@@ -26,15 +26,36 @@ je_hpx_germany = {
 
 	complete = {
 		OR = {
-			NOT = {exists = c:WGE}
-			NOT = {exists = c:EGE}
+			OR = {
+				NOT = {exists = c:WGE custom_tooltip = Western_Germany_Doesnt_Exist}
+				
+				NOT = {exists = c:EGE custom_tooltip = Eastern_Germany_Doesnt_Exist}
+
+			}
+			AND = {
+			 c:WGE = {has_law = law_type:law_council_republic}
+			 c:EGE = {has_law = law_type:law_council_republic}
+			}
+			AND = {
+			 c:WGE = {NOT = {has_law = law_type:law_council_republic}}
+			 c:EGE = {NOT = {has_law = law_type:law_council_republic}}
+			}
 		}
+		
 	}
 
 	on_complete = {
-		root = {
+		if = {
+			limit = { root ?= c:WGE}
 			change_tag = GER
 			set_capital = STATE_BRANDENBURG
+			annex ?= c:EGE
+		}
+		else_if = {
+			limit = { root ?= c:EGE}
+			change_tag = GER
+			set_capital = STATE_BRANDENBURG
+			annex ?= c:WGE
 		}
 	}
 }

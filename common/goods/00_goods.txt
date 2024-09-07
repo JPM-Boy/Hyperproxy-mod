@@ -54,26 +54,6 @@ aeroplanes = {
 	convoy_cost_multiplier = 2.0
 }
 
-manowars = {
-	texture = "gfx/interface/icons/goods_icons/man_o_wars.dds"
-	cost = 350
-	category = military
-	
-	prestige_factor = 5
-	traded_quantity = 2.5
-	convoy_cost_multiplier = 0.5
-}
-
-ironclads = {
-	texture = "gfx/interface/icons/goods_icons/ironclads.dds"
-	cost = 400
-	category = military
-	
-	prestige_factor = 10
-	traded_quantity = 2.5
-	convoy_cost_multiplier = 0.5
-}
-
 ##########
 # STAPLE #
 ##########
@@ -218,28 +198,6 @@ electricity = {
 ##############
 # INDUSTRIAL #
 ##############
-
-clippers = {
-	texture = "gfx/interface/icons/goods_icons/clippers.dds"
-	cost = 300
-	category = industrial
-	
-	obsession_chance = 0.5
-	prestige_factor = 5
-	traded_quantity = 3.5
-	convoy_cost_multiplier = 0.25
-}
-
-steamers = {
-	texture = "gfx/interface/icons/goods_icons/steamers.dds"
-	cost = 350
-	category = industrial
-	
-	obsession_chance = 0.5
-	prestige_factor = 5
-	traded_quantity = 3.5
-	convoy_cost_multiplier = 0.25
-}
 
 silk = {
 	texture = "gfx/interface/icons/goods_icons/silk.dds"

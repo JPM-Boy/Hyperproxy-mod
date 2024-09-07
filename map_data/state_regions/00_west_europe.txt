@@ -158,6 +158,7 @@ STATE_WESTERN_NORWAY = {
         bg_sulfur_mining = 21
         bg_logging = 17
         bg_fishing = 30
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3027
 }

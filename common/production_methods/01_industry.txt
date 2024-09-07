@@ -1810,10 +1810,10 @@ pm_basic_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 40
-			goods_input_fabric_add = 20
+			goods_input_steel_add = 40
+			goods_input_engines_add = 20
 			# output goods
-			goods_output_clippers_add = 35
+			goods_output_cargo_ship_add = 65
 		}
 
 		level_scaled = {
@@ -1835,12 +1835,11 @@ pm_complex_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 40
-			goods_input_hardwood_add = 20
-			goods_input_fabric_add = 20
-			goods_input_engines_add = 5
+			goods_input_steel_add = 50
+			goods_input_aluminium_add = 25
+			goods_input_engines_add = 30
 			# output goods
-			goods_output_clippers_add = 70
+			goods_output_cargo_ship_add = 110
 		}
 
 		level_scaled = {
@@ -1868,11 +1867,12 @@ pm_metal_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 30
-			goods_input_coal_add = 10
-			goods_input_engines_add = 10
+			goods_input_steel_add = 50
+			goods_input_aluminium_add = 25
+			goods_input_engines_add = 30
+			goods_input_diesel_add = 20
 			# output goods
-			goods_output_steamers_add = 65
+			goods_output_cargo_ship_add = 160
 		}
 
 		level_scaled = {
@@ -1900,11 +1900,12 @@ pm_arc_welding_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 30
-			goods_input_electricity_add = 30
-			goods_input_engines_add = 10
+			goods_input_steel_add = 60
+			goods_input_aluminium_add = 45
+			goods_input_engines_add = 50
+			goods_input_diesel_add = 50
 			# output goods
-			goods_output_steamers_add = 80
+			goods_output_cargo_ship_add = 250
 		}
 
 		level_scaled = {
@@ -1927,11 +1928,11 @@ pm_military_shipbuilding_wooden = {
 	building_modifiers = {
 		workforce_scaled = {
 			#input goods
-			goods_input_hardwood_add = 20
-			goods_input_fabric_add = 20
-			goods_input_iron_add = 10
+			goods_input_steel_add = 40
+			goods_input_engines_add = 20
+			goods_input_chips_add = 10
 			# output goods
-			goods_output_manowars_add = 35
+			goods_output_warships_add = 70
 		}
 
 		level_scaled = {
@@ -1953,12 +1954,11 @@ pm_military_shipbuilding_wooden_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			#input goods
-			goods_input_hardwood_add = 30
-			goods_input_fabric_add = 10
-			goods_input_engines_add = 5
-			goods_input_iron_add = 10
+			goods_input_steel_add = 50
+			goods_input_engines_add = 20
+			goods_input_computers_add = 10
 			# output goods
-			goods_output_manowars_add = 45
+			goods_output_warships_add = 90
 		}
 
 		level_scaled = {
@@ -1980,11 +1980,11 @@ pm_military_shipbuilding_steam = {
 	building_modifiers = {
 		workforce_scaled = {
 			#input goods
-			goods_input_steel_add = 40
-			goods_input_coal_add = 20
-			goods_input_engines_add = 10
+			goods_input_steel_add = 60
+			goods_input_engines_add = 25
+			goods_input_computers_add = 20
 			# output goods
-			goods_output_ironclads_add = 55
+			goods_output_warships_add = 150
 		}
 
 		level_scaled = {
@@ -2006,11 +2006,11 @@ pm_military_shipbuilding_steam_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			#input
-			goods_input_steel_add = 50
-			goods_input_electricity_add = 35
-			goods_input_engines_add = 15
+			goods_input_steel_add = 60
+			goods_input_engines_add = 25
+			goods_input_computers_add = 50
 			# output goods
-			goods_output_ironclads_add = 70
+			goods_output_warships_add = 200
 		}
 
 		level_scaled = {

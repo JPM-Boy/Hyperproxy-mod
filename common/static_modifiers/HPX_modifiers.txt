@@ -1,10 +1,13 @@
 ﻿huge_ig_support = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     interest_group_pop_attraction_mult = 1
 }
 large_ig_support = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     interest_group_pop_attraction_mult = 0.75
 }
 big_ig_support = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     interest_group_pop_attraction_mult = 0.5
 }
 european_community = {
@@ -33,4 +36,15 @@ british_media_encouraged = {
 french_media_encouraged = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     state_assimilation_mult = -0.15
+}
+great_assimilation_policy = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    state_assimilation_mult = 10
+    state_radicals_from_discrimination_mult = 5
+}
+assimilation_policy = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    state_assimilation_mult = 5
+    state_radicals_from_discrimination_mult = 2.5
+    
 }

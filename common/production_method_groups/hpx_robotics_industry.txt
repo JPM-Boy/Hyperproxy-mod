@@ -1,0 +1,11 @@
+﻿pmg_robotics_1 = {
+	production_methods = {
+		pm_robotics_1_1 #Industrial Arm Robot
+		pm_robotics_1_2 #Programable Industrial Robot
+		pm_robotics_1_3 #Multi Purpose Industrial Robot
+		pm_robotics_1_4 #Humanoid Robotic Unit
+	}
+	is_hidden_when_unavailable = no	
+	ai_selection = most_productive
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"
+}

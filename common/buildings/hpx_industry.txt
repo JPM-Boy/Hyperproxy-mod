@@ -125,7 +125,7 @@ building_advanced_fabrication_factory = {
 
 building_aerospace_factory = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/laser_industry.dds"
+	texture = "gfx/interface/icons/building_icons/missile_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {

@@ -1,14 +1,10 @@
 ﻿great_assimilation_campaign = {
 	  is_shown = {
-	  	  NOT = { has_modifier = great_assimilation_policy }
-	  	  NOT = { has_modifier = assimilation_policy}
+	  	  always = yes
 	  }
      possible = {
-     	OR = {
-        	infamy > 35
-        	root = c:EGE
-        	root = c:CHI
-     	}
+        NOT = { has_modifier = great_assimilation_policy }
+          NOT = { has_modifier = assimilation_policy}
      }
 
      when_taken = {
@@ -17,10 +13,15 @@
         	is_decaying = yes
         	months = 24
         }
+        change_infamy = 25
      }
 
     ai_chance = {
-        base = 20
+        base = 0
+        modifier = {
+            trigger = {infamy <= 25}
+            add = 20
+        }
         modifier = {
             trigger = { root = c:EGE }
             add = 50
@@ -34,11 +35,12 @@
 
 assimilation_campaign = {
 	  is_shown = {
-	  	NOT = { has_modifier = great_assimilation_policy }
-	  	NOT = { has_modifier = assimilation_policy}
+        always = yes
+	  	
 	  }
      possible = {
-        infamy > 15
+        NOT = { has_modifier = great_assimilation_policy }
+        NOT = { has_modifier = assimilation_policy}
      }
 
      when_taken = {
@@ -47,9 +49,14 @@ assimilation_campaign = {
         	is_decaying = yes
         	months = 48
         }
+        change_infamy = 15
      }
 
     ai_chance = {
-        base = 20
+        base = 0
+        modifier = {
+            trigger = {infamy <= 15}
+            add = 30
+        }
     }
 }

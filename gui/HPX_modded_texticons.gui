@@ -2,7 +2,8 @@
   icon = ig_prog
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/radicals_30.dds"
+    texture = "gfx/interface/icons/ig_icons/progressives.dds"
+    size = {30 30}
     fontsize = 26
   }
 }
@@ -126,5 +127,177 @@ texticon = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/minority_30.dds"
     fontsize = 26
+  }
+}
+##################################
+########## GOODS #################
+##################################
+texticon = {
+  icon = aluminium
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/aluminium.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = appliances
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/appliances.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = cargo_ship
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/cargo-ship.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = chips
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/chips.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = computers
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/computers.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = copper
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/copper.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = diesel
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/diesel.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = gas
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/gas.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = laser_weapons
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/laser-weapons.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = luxury_cars
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/luxury-cars.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = luxury_tech
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/luxury-tech.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = missiles
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/missiles.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = plastic
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/plastic.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = rare_elements
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/rare-elements.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = robotics
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/robotics.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = silicon
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/silicon.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+
+texticon = {
+  icon = warships
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/goods_icons/warships.dds"
+    fontsize = 26
+    size = {30 30}
   }
 }

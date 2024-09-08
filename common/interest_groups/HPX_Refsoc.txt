@@ -66,7 +66,7 @@
 			add = {
 				desc = "POP_EDUCATED_PROLETARIAT"
 				value = literacy_rate
-				multiply = 200
+				multiply = 500
 			}
 		}
 		else_if = {
@@ -74,7 +74,7 @@
 			add = {
 				desc = "POP_EDUCATED_FARMERS"
 				value = literacy_rate
-				multiply = 200
+				multiply = 400
 			}
 		}
 		else_if = {
@@ -86,7 +86,7 @@
 			}
 			add = {
 				desc = "POP_LEADERS"
-				value = 80
+				value = 150
 			}
 		}
 
@@ -100,13 +100,13 @@
 			}
 			add = {
 				desc = "URBAN_POP"
-				value = 30
+				value = 500
 			}
 			if = {
 				limit = { is_employed = no }
 				add = {
 					desc = "URBAN_UNEMPLOYED"
-					value = 100
+					value = 300
 				}
 			}
 		}	
@@ -132,7 +132,7 @@
 				limit = { 
 					pop_is_discriminated = yes
 				}
-				value = 50
+				value = 150
 			}
 		}	
 		
@@ -159,7 +159,7 @@
 				desc = "INTERNATIONAL_EXCHANGE"	
 				value = 1.0
 				if = {
-					limit = { owner = { has_technology_researched = international_exchange_standards } }
+					limit = { owner = { has_technology_researched = democracy } }
 					value = 1.3
 				}		
 			}
@@ -167,7 +167,7 @@
 				desc = "POLITICAL_AGITATION"	
 				value = 1.0
 				if = {
-					limit = { owner = { has_technology_researched = political_agitation } }
+					limit = { owner = { has_technology_researched = democracy } }
 					value = 1.3
 				}		
 			}
@@ -230,7 +230,7 @@
 			limit = { owner = {has_law = law_type:law_council_republic}}
 			multiply = {
 				desc = "COUNCIL_REPUBLIC"
-				value = 5
+				value = 2.5
 			}
 		}
 	}

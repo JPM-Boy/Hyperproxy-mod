@@ -1,0 +1,19 @@
+﻿pm_computers_1 = {								        
+	production_methods = {
+		pm_computers_1_1
+		pm_computers_1_2
+		pm_computers_1_3
+		pm_computers_1_4
+	}
+	is_hidden_when_unavailable = no										# Whether PMs in this group should be visible at all if they cannot currently be switched to
+	ai_selection = most_productive										# Affects how the AI chooses between PMs. Current options: most_profitable, most_productive. Default most_profitable
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"	# Different types of PM Groups should have different icons for when the Building panel has mixed configuration
+}
+
+pm_computers_2 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_computers_2_1
+		pm_computers_2_2
+	}
+}

@@ -29,6 +29,7 @@ STATE_SILESIA = {
         bg_coal_mining = 120
         bg_iron_mining = 60
         bg_lead_mining = 54
+        bg_gas_extraction = 28
         bg_sulfur_mining = 40
         bg_logging = 14
     }
@@ -84,6 +85,7 @@ STATE_WEST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_sulfur_mining = 40
+        bg_gas_extraction = 28
         bg_logging = 8
         bg_fishing = 10
     }
@@ -103,6 +105,7 @@ STATE_EAST_PRUSSIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 17
+        bg_gas_extraction = 28
         bg_fishing = 10
     }
     naval_exit_id = 3000
@@ -139,10 +142,7 @@ STATE_WEST_GALICIA = {
         bg_coal_mining = 140
         bg_iron_mining = 33
         bg_logging = 17
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        bg_oil_extraction = 30
     }
 }
 
@@ -159,10 +159,7 @@ STATE_EAST_GALICIA = {
     capped_resources = {
         bg_coal_mining = 92
         bg_logging = 9
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 60
+        bg_oil_extraction = 60
     }
 }
 
@@ -197,6 +194,7 @@ STATE_BEKES = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 11
+        bg_copper_mining = 24
     }
 }
 
@@ -230,10 +228,7 @@ STATE_DELVIDEK = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 4
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 10
+        bg_oil_extraction = 10
     }
 }
 
@@ -250,6 +245,7 @@ STATE_BANAT = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 9
+        bg_aluminium_mining = 24
     }
 }
 
@@ -335,10 +331,7 @@ STATE_MOLDAVIA = {
     capped_resources = {
         bg_iron_mining = 30
         bg_logging = 14
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        bg_oil_extraction = 30
     }
 }
 
@@ -358,10 +351,8 @@ STATE_WALLACHIA = {
         bg_iron_mining = 21
         bg_sulfur_mining = 15
         bg_logging = 8
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 60
+        bg_gas_extraction = 28
+        bg_oil_extraction = 60
     }
 }
 

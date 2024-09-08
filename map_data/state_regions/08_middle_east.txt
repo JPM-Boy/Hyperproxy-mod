@@ -122,6 +122,7 @@ STATE_HAIL = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_fishing = 2
+        bg_aluminium_mining = 24
     }
     naval_exit_id = 3046
 }
@@ -155,6 +156,7 @@ STATE_TRANSJORDAN = {
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 2
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3047
 }
@@ -244,9 +246,9 @@ STATE_BAGHDAD = {
     wood = "x0CA064"
     arable_land = 40
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_tobacco_plantations" }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 40
+    capped_resources = {
+        bg_aluminium_mining = 36
+        bg_oil_extraction = 40
     }
 }
 
@@ -298,6 +300,7 @@ STATE_BASRA = {
     capped_resources = {
         bg_sulfur_mining = 32
         bg_fishing = 6
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_oil_extraction"
@@ -407,6 +410,7 @@ STATE_KHORASAN = {
     capped_resources = {
         bg_logging = 4
         bg_iron_mining = 22
+        bg_aluminium_mining = 32
         bg_coal_mining = 12
     }
     resource = {
@@ -643,6 +647,8 @@ STATE_KONYA = {
     capped_resources = {
         bg_logging = 4
         bg_fishing = 6
+        bg_copper_mining = 24
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3034
 }
@@ -679,6 +685,7 @@ STATE_DIYARBAKIR = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
         bg_coal_mining = 32
+        bg_gas_extraction = 28
     }
 }
 
@@ -697,6 +704,7 @@ STATE_ADANA = {
     capped_resources = {
         bg_coal_mining = 44
         bg_logging = 4
+        bg_aluminium_mining = 32
         bg_fishing = 12
     }
     naval_exit_id = 3034
@@ -736,6 +744,7 @@ STATE_ERZURUM = {
         bg_iron_mining = 30
         bg_lead_mining = 36
         bg_logging = 9
+        bg_copper_mining = 24
     }
 }
 
@@ -751,6 +760,7 @@ STATE_ANKARA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 9
+        bg_copper_mining = 24
     }
 }
 

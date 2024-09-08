@@ -1,0 +1,18 @@
+﻿pm_plastic_1 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_plastic_1_1
+		pm_plastic_1_2
+		pm_plastic_1_3
+	}
+}
+
+pm_plastic_2 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_plastic_2_1
+		pm_plastic_2_2
+		pm_plastic_2_3
+		pm_plastic_2_4
+	}
+}

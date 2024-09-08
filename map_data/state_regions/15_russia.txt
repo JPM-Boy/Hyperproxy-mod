@@ -12,6 +12,7 @@
     capped_resources = {
         bg_logging = 9
         bg_fishing = 8
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3000
 }
@@ -29,6 +30,7 @@ STATE_TARTU = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 7
+        bg_gas_extraction = 28
         bg_fishing = 7
     }
     naval_exit_id = 3000
@@ -48,6 +50,7 @@ STATE_RIGA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 11
+        bg_gas_extraction = 28
         bg_fishing = 10
     }
     naval_exit_id = 3000
@@ -66,6 +69,7 @@ STATE_COURLAND = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 7
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3000
 }
@@ -83,6 +87,7 @@ STATE_KAUNAS = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 8
+        bg_gas_extraction = 28
     }
     naval_exit_id = 3000
 }
@@ -98,6 +103,7 @@ STATE_VILNIUS = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 7
+        bg_gas_extraction = 28
     }
 }
 
@@ -136,6 +142,8 @@ STATE_UUSIMAA = {
         bg_lead_mining = 5
         bg_logging = 36
         bg_fishing = 8
+        bg_copper_mining = 24
+        bg_rare_elements_mining = 24
     }
     naval_exit_id = 3000
 }
@@ -254,6 +262,7 @@ STATE_KOLA = {
         bg_iron_mining = 85
         bg_sulfur_mining = 10
         bg_logging = 25
+        bg_rare_elements_mining = 24
         bg_fishing = 10
     }
     naval_exit_id = 3039
@@ -273,6 +282,7 @@ STATE_INGRIA = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_logging = 25
+        bg_aluminium_mining = 24
         bg_fishing = 10
     }
     naval_exit_id = 3000
@@ -414,6 +424,7 @@ STATE_ARKHANGELSK = {
         bg_gold_mining = 2
         bg_logging = 14
         bg_fishing = 10
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -615,6 +626,7 @@ STATE_PERM = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
         bg_coal_mining = 80
+        bg_aluminium_mining = 24
         bg_iron_mining = 75
         bg_logging = 35
     }

@@ -56,6 +56,7 @@ law_party_anti_reactionary = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_communist_dictatorship
 	}
 
 	on_activate = {
@@ -107,6 +108,7 @@ law_party_reactionary_only = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_communist_dictatorship
 	}
 
 	can_enact = {
@@ -165,6 +167,7 @@ law_party_anti_socialist = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_communist_dictatorship
 	}
 
 	can_enact = {
@@ -223,6 +226,7 @@ law_party_socialist_only = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_communist_dictatorship
 	}
 
 	can_enact = {
@@ -327,6 +331,7 @@ law_party_liberal_only = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_communist_dictatorship
 	}
 
 	on_activate = {
@@ -380,6 +385,7 @@ law_party_single = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
+		law_communist_dictatorship
 	}
 
 	on_activate = {

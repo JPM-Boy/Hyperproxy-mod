@@ -621,6 +621,19 @@
 				activate_production_methods={  "pm_unrefrigerated" "pm_fishing_trawlers" }
 			}
 			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOR"
+						levels=9
+						region="STATE_EASTERN_NORWAY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_tools"  "pm_potatoes" }
+			}
+			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
@@ -762,6 +775,19 @@
 				reserves=1
 				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
 			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NOR"
+						levels=9
+						region="STATE_EASTERN_NORWAY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_tools"  "pm_potatoes" }
+			}
 		}
 	}
 	s:STATE_EASTERN_NORWAY={
@@ -841,7 +867,7 @@
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=3
+						levels=8
 						region="STATE_EASTERN_NORWAY"
 					}
 				}

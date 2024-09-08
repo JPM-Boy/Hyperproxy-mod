@@ -4,12 +4,12 @@
   tanks: "Tanks"
   artillery: "Artillery"
   aeroplanes: "Aeroplanes"
-  laser_arms: "Laser Weaponry"
+  laser_weapons: "Laser Weaponry"
   missiles: "Missiles"
   plastic: "Plastic"
   rare_elements: "Rare Elements"
   silicon: "Silicon"
-  war_robots: "War Robots"
+  robotics: "Robotics"
   warships: "Warships"
 
   silk: "Silk"
@@ -42,7 +42,7 @@
     
   luxury_clothes: "Luxury Clothes"
   luxury_furniture: "Luxury Furniture"
-  luxury_automobiles: "Luxury Automobiles"
+  luxury_cars: "Luxury Automobiles"
   luxury_services: "Luxury Services"
   luxury_tech: "Luxury Technology"
   tobacco: "Tobacco"
@@ -63,21 +63,121 @@
   furniture: "Furniture"
   services: "Services"
   appliances: "Appliances"
-    
-  popneed_simple_clothing: "Simple Clothing"
-  popneed_basic_food: "Basic Food"
-  popneed_heating: "Heating"
-  popneed_household_items: "Household Items"
-  popneed_crude_items: "Crude Items"
-  popneed_standard_clothing: "Standard Clothing"
-  popneed_services: "Services"
-  popneed_intoxicants: "Intoxicants"
-  popneed_luxury_drinks: "Luxury Drinks"
-  popneed_free_movement: "Free Movement"
-  popneed_communication: "Communication"
-  popneed_luxury_food: "Luxury Food"
-  popneed_luxury_items: "Luxury Items"
-  popneed_art: "Art"
 
-big_ig_support: "Increased Support"
-  
+modifier_goods_output_copper_add: "@copper! Copper output per level"
+modifier_goods_output_copper_add_desc: "The amount of @copper! Copper produced by buildings"
+
+modifier_goods_input_copper_add: "@copper! Copper input per level"
+modifier_goods_input_copper_add_desc: "The amount of @copper! Copper consumed by buildings"
+
+modifier_goods_output_rare_elements_add: "@rare_elements! Rare Elements output per level"
+modifier_goods_output_rare_elements_add_desc: "The amount of @rare_elements! Rare Elements produced by buildings"
+
+modifier_goods_input_rare_elements_add: "@rare_elements! rare_elements input per level"
+modifier_goods_input_rare_elements_add_desc: "The amount of @rare_elements! Rare Elements consumed by buildings"
+
+modifier_goods_output_silicon_add: "@silicon! Silicon output per level"
+modifier_goods_output_silicon_add_desc: "The amount of @silicon! Silicon produced by buildings"
+
+modifier_goods_input_silicon_add: "@silicon! Silicon input per level"
+modifier_goods_input_silicon_add_desc: "The amount of @silicon! Silicon consumed by buildings"
+
+modifier_goods_output_gas_add: "@gas! Gas output per level"
+modifier_goods_output_gas_add_desc: "The amount of @gas! Gas produced by buildings"
+
+modifier_goods_input_gas_add: "@gas! Gas input per level"
+modifier_goods_input_gas_add_desc: "The amount of @gas! Gas consumed by buildings"
+
+modifier_goods_output_plastic_add: "@plastic! Plastic output per level"
+modifier_goods_output_plastic_add_desc: "The amount of @plastic! Plastic produced by buildings"
+
+modifier_goods_input_plastic_add: "@plastic! Plastic input per level"
+modifier_goods_input_plastic_add_desc: "The amount of @plastic! Plastic consumed by buildings"
+
+modifier_goods_output_diesel_add: "@diesel! Diesel output per level"
+modifier_goods_output_diesel_add_desc: "The amount of @diesel! Diesel produced by buildings"
+
+modifier_goods_input_diesel_add: "@diesel! Diesel input per level"
+modifier_goods_input_diesel_add_desc: "The amount of @diesel! Diesel consumed by buildings"
+
+modifier_goods_output_aluminium_add: "@aluminium! Aluminium output per level"
+modifier_goods_output_aluminium_add_desc: "The amount of @aluminium! Aluminium produced by buildings"
+
+modifier_goods_input_aluminium_add: "@aluminium! Aluminium input per level"
+modifier_goods_input_aluminium_add_desc: "The amount of @aluminium! Aluminium consumed by buildings"
+
+modifier_goods_output_appliances_add: "@appliances! Appliances output per level"
+modifier_goods_output_appliances_add_desc: "The amount of @appliances! Appliances produced by buildings"
+
+modifier_goods_input_appliances_add: "@appliances! Appliances input per level"
+modifier_goods_input_appliances_add_desc: "The amount of @appliances! Appliances consumed by buildings"
+
+modifier_goods_output_cargo_ship_add: "@cargo_ship! Cargo Ship output per level"
+modifier_goods_output_cargo_ship_add_desc: "The amount of @cargo_ship! Cargo Ship produced by buildings"
+
+modifier_goods_input_cargo_ship_add: "@cargo_ship! Cargo Ship input per level"
+modifier_goods_input_cargo_ship_add_desc: "The amount of @cargo_ship! Cargo Ship consumed by buildings"
+
+modifier_goods_output_warships_add: "@warships! Warships output per level"
+modifier_goods_output_warships_add_desc: "The amount of @warships! Warships produced by buildings"
+
+modifier_goods_input_warships_add: "@warships! Warships input per level"
+modifier_goods_input_warships_add_desc: "The amount of @warships! Warships consumed by buildings"
+
+modifier_goods_output_chips_add: "@chips! Chips output per level"
+modifier_goods_output_chips_add_desc: "The amount of @chips! Chips produced by buildings"
+
+modifier_goods_input_chips_add: "@chips! Chips input per level"
+modifier_goods_input_chips_add_desc: "The amount of @chips! Chips consumed by buildings"
+
+modifier_goods_output_computers_add: "@computers! Computers output per level"
+modifier_goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
+
+modifier_goods_input_computers_add: "@computers! Computers input per level"
+modifier_goods_input_computers_add_desc: "The amount of @computers! Computers consumed by buildings"
+
+modifier_goods_output_missiles_add: "@missiles! Missiles output per level"
+modifier_goods_output_missiles_add_desc: "The amount of @missiles! Missiles produced by buildings"
+
+modifier_goods_input_missiles_add: "@missiles! Missiles input per level"
+modifier_goods_input_missiles_add_desc: "The amount of @missiles! Missiles consumed by buildings"
+
+modifier_goods_output_robotics_add: "@robotics! Robotics output per level"
+modifier_goods_output_robotics_add_desc: "The amount of @robotics! Robotics produced by buildings"
+
+modifier_goods_input_robotics_add: "@robotics! Robotics input per level"
+modifier_goods_input_robotics_add_desc: "The amount of @robotics! Robotics consumed by buildings"
+
+modifier_goods_output_laser_weapons_add: "@laser_weapons! Laser Weapons output per level"
+modifier_goods_output_laser_weapons_add_desc: "The amount of @laser_weapons! Laser Weapons produced by buildings"
+
+modifier_goods_input_laser_weapons_add: "@laser_weapons! Laser Weapons input per level"
+modifier_goods_input_laser_weapons_add_desc: "The amount of @laser_weapons! Laser Weapons consumed by buildings"
+
+modifier_goods_output_luxury_cars_add: "@luxury_cars! Luxury Cars output per level"
+modifier_goods_output_luxury_cars_add_desc: "The amount of @luxury_cars! Luxury Cars produced by buildings"
+
+modifier_goods_input_luxury_cars_add: "@luxury_cars! Luxury Cars input per level"
+modifier_goods_input_luxury_cars_add_desc: "The amount of @luxury_cars! Luxury Cars consumed by buildings"
+
+modifier_goods_output_luxury_tech_add: "@luxury_tech! Luxury Tech output per level"
+modifier_goods_output_luxury_tech_add_desc: "The amount of @luxury_tech! Luxury Tech produced by buildings"
+
+modifier_goods_input_luxury_tech_add: "@luxury_tech! Luxury Tech input per level"
+modifier_goods_input_luxury_tech_add_desc: "The amount of @luxury_tech! Luxury Tech consumed by buildings"
+
+building_copper_mine: "Copper Mines"
+building_aluminium_mine: "Aluminium Mines"
+building_silicon_mine: "Silicon Mines"
+building_rare_elements_mine: "Rare Elements Mines"
+building_gas_pump: "Gas Pumps"
+
+building_chips_factory: "Chips Factory"
+building_automotive_factory: "Automotive Plants"
+building_robotics_factory: "Robotics Plants"
+building_advanced_fabrication_factory: "Advanced Fabrication Factory"
+building_plastic_industry: "Plastic Refinery"
+building_diesel_industry: "Diesel Refinery"
+building_computers_factory: "Computer Industry"
+building_appliance_factory: "Appliances Factory"
+building_aerospace_factory: "Aerospace Factory"

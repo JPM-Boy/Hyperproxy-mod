@@ -95,7 +95,7 @@ NPolitics = {
 	
 	STATE_BUREAUCRACY_BASE_COST = 10		# The base cost per incorporated state
 	STATE_BUREAUCRACY_POP_BASE_COST = 3		# The base BUR multiplier per population multiple
-	STATE_BUREAUCRACY_POP_MULTIPLE = 100000	# Number of people BUR cost is based on
+	STATE_BUREAUCRACY_POP_MULTIPLE = 75000	# Number of people BUR cost is based on
 	MINIMUM_INVESTMENT_COST = 10			# The absolute minimum cost in BUR per investment level
 
 	POWERFUL_IG_THRESHOLD = 0.20		# Interest groups with more Clout than this are considered to be influential
@@ -979,7 +979,7 @@ NPops = {
 	DEFAULT_POP_TYPE = "laborers"				# Used by: create_pop effects; migration; injured military leaving their outposts; slaves default employment role; etc.
 	SLAVE_POP_TYPE = "slaves"					# This is the type of pop that debtors will become
 
-	POP_SIZE_PACKAGE = 30000					# "Normal" pop size used as a divisor on population when determining e.g. Needs to buy, wages to pay, etc
+	POP_SIZE_PACKAGE = 10000					# "Normal" pop size used as a divisor on population when determining e.g. Needs to buy, wages to pay, etc
 
 	WEALTH_PROGRESS_WANTED_BUFFER = 1.02		# A pop wants at least as much income as this x the next level buy package costs to increase its wealth
 	WEALTH_PROGRESS_ACCEPTABLE_DEFICIT = 0.98	# A pop won't change wealth level if they can still afford this much of their current buy package costs
@@ -1121,12 +1121,12 @@ NPops = {
 	MAX_BASE_COLONIAL_GROWTH = 0.1						# Country base colonial growth from population cannot be higher than this
 	MAX_COLONIAL_GROWTH = 0.02							# Colonies can grow by this much at most per day
 
-	INDIVIDUALS_PER_POP_INFRASTRUCTURE = 100000			# Multiply state_infrastructure_from_population_add by this to determine infra from population
+	INDIVIDUALS_PER_POP_INFRASTRUCTURE = 200000			# Multiply state_infrastructure_from_population_add by this to determine infra from population
 
 	QUALIFICATIONS_UPDATE_FACTOR = 0.0003				# Calculated potential values are multiplied by this value and the workforce size of the pop before being added to the existing potentials
 	QUALIFICATIONS_NUM_MONTHS_AT_START = 60				# How many months of qualifications should be seeded to pops at start of game?
 
-	INDIVIDUALS_TAXED_PER_TAX_CAPACITY = 10000			# How many pops can be taxed efficiently for each tax capacity
+	INDIVIDUALS_TAXED_PER_TAX_CAPACITY = 25000			# How many pops can be taxed efficiently for each tax capacity
 
 	EXPECTED_SOL_FROM_LITERACY_SUBSISTENCE_MULT = 0.25	# Expected SoL from literacy is multiplied by this for Pops working in subsistence buildings
 

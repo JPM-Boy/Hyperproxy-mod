@@ -13,7 +13,9 @@
         bg_coal_mining = 32
         bg_lead_mining = 24
         bg_logging = 17
+        bg_rare_elements_mining = 24
         bg_fishing = 10
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -40,6 +42,7 @@ STATE_NORTH_BORNEO = {
         bg_sulfur_mining = 36
         bg_logging = 20
         bg_fishing = 8
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -69,8 +72,10 @@ STATE_WEST_BORNEO = {
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
         bg_lead_mining = 30
+        bg_aluminium_mining = 24
         bg_logging = 17
         bg_fishing = 7
+        bg_silicon_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -101,6 +106,7 @@ STATE_EAST_BORNEO = {
     capped_resources = {
         bg_coal_mining = 28
         bg_logging = 20
+        bg_silicon_mining = 24
         bg_fishing = 9
     }
     resource = {
@@ -212,7 +218,9 @@ STATE_NORTH_SUMATRA = {
         bg_coal_mining = 40
         bg_sulfur_mining = 48
         bg_logging = 29
+        bg_silicon_mining = 24
         bg_fishing = 13
+        bg_copper_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -237,6 +245,8 @@ STATE_SOUTH_SUMATRA = {
         bg_sulfur_mining = 48
         bg_logging = 29
         bg_fishing = 13
+        bg_silicon_mining = 24
+        bg_copper_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -370,6 +380,7 @@ STATE_EASTERN_NEW_GUINEA = {
         bg_logging = 16
         bg_fishing = 10
         bg_whaling = 2
+        bg_copper_mining = 24
     }
     resource = {
         type = "bg_rubber"
@@ -447,6 +458,7 @@ STATE_LUZON = {
         bg_iron_mining = 24
         bg_logging = 20
         bg_fishing = 12
+        bg_aluminium_mining = 24
     }
     resource = {
         type = "bg_rubber"

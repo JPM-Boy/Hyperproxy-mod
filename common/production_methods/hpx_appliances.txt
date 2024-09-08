@@ -1,0 +1,178 @@
+﻿#Post War Appliances
+pm_appliances_1_1 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_aluminium_add = 10
+			goods_input_copper_add = 8
+			goods_input_iron_add = 5
+			# output goods
+			goods_output_appliances_add = 40
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 18000
+			building_employment_machinists_add = 5000
+			building_employment_engineers_add = 500
+			building_employment_shopkeepers_add = 1500
+		}
+	}
+}
+#Electronic Appliances
+pm_appliances_1_2 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		fractional_distillation
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_aluminium_add = 10
+			goods_input_copper_add = 15
+			goods_input_silicon_add = 15
+			# output goods
+			goods_output_appliances_add = 65
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 15000
+			building_employment_machinists_add = 8000
+			building_employment_engineers_add = 1000
+			building_employment_shopkeepers_add = 1000
+		}
+	}
+}
+#Small Appliances
+pm_appliances_1_3 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		shift_work
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plastic_add = 10
+			goods_input_copper_add = 15
+			goods_input_silicon_add = 15
+			# output goods
+			goods_output_appliances_add = 85
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 12000
+			building_employment_machinists_add = 10000
+			building_employment_engineers_add = 2000
+			building_employment_shopkeepers_add = 1000
+		}
+	}
+}
+#Smart Appliances
+pm_appliances_1_4 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_4_TAN.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		telephone
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plastic_add = 10
+			goods_input_silicon_add = 15
+			goods_input_chips_add = 5
+			# output goods
+			goods_output_appliances_add = 100
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 10000
+			building_employment_machinists_add = 12000
+			building_employment_engineers_add = 2500
+			building_employment_shopkeepers_add = 500
+		}
+	}
+}
+##### Luxury Tech #####
+# Smart Home Devices
+pm_appliances_2_1 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	#No Smart Stuff
+}
+pm_appliances_2_2 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
+	unlocking_technologies = {
+		telephone
+	}
+	unlocking_production_methods = {
+		pm_appliances_1_3
+		pm_appliances_1_4 
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_aluminium_add = 10
+			goods_input_chips_add = 10
+			goods_input_computers_add = 8
+			# output goods
+			goods_output_appliances_add = -25
+			goods_output_luxury_tech_add = 15
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+			building_employment_academics_add = 500
+			building_employment_engineers_add = 500
+		}
+	}
+}
+# AI Home Assistants
+pm_appliances_2_3 = {
+	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
+	unlocking_technologies = {
+		radio
+	}
+	unlocking_production_methods = {
+		pm_appliances_1_3
+		pm_appliances_1_4 
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plastic_add = 10
+			goods_input_chips_add = 15
+			goods_input_computers_add = 15
+			# output goods
+			goods_output_appliances_add = -40
+			goods_output_luxury_tech_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1800
+			building_employment_academics_add = 800
+			building_employment_engineers_add = 1000
+		}
+	}
+}

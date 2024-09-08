@@ -15,7 +15,9 @@
         bg_iron_mining = 36
         bg_logging = 7
         bg_whaling = 4
+        bg_rare_elements_mining = 24
         bg_fishing = 8
+        bg_copper_mining = 24
     }
     resource = {
         type = "bg_gold_fields"
@@ -44,6 +46,7 @@ STATE_VICTORIA = {
         bg_sulfur_mining = 24
         bg_logging = 11
         bg_whaling = 3
+        bg_rare_elements_mining = 24
         bg_fishing = 8
     }
     resource = {
@@ -100,6 +103,8 @@ STATE_QUEENSLAND = {
         bg_logging = 5
         bg_whaling = 3
         bg_fishing = 12
+        bg_copper_mining = 24
+        bg_aluminium_mining = 24
     }
     naval_exit_id = 3124
 }
@@ -142,6 +147,7 @@ STATE_WESTERN_AUSTRALIA = {
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
         bg_coal_mining = 40
+        bg_rare_elements_mining = 24
         bg_iron_mining = 30
         bg_logging = 4
         bg_whaling = 3
@@ -170,7 +176,9 @@ STATE_NORTHERN_TERRITORY = {
     arable_resources = { "bg_livestock_ranches" "bg_cotton_plantations" }
     capped_resources = {
         bg_logging = 5
+        bg_rare_elements_mining = 24
         bg_whaling = 2
+        bg_aluminium_mining = 24
         bg_fishing = 6
     }
     naval_exit_id = 3126

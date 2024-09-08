@@ -1,0 +1,101 @@
+﻿building_copper_mine = {
+	building_group = bg_copper_mining
+	texture = "gfx/interface/icons/building_icons/copper_industry.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		shaft_mining
+	}
+
+	production_method_groups = {
+		pm_group_copper_mining_1
+		pm_group_copper_mining_2
+		pm_group_copper_mining_3
+		pmg_automation_copper_mining
+	}
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+}
+
+building_aluminium_mine = {
+	building_group = bg_aluminium_mining
+	texture = "gfx/interface/icons/building_icons/aluminium_industry.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		shaft_mining
+	}
+
+	production_method_groups = {
+		pm_group_aluminium_mining_1
+		pm_group_aluminium_mining_2
+		pm_group_aluminium_mining_3
+		pmg_automation_aluminium_mining
+	}
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+}
+
+building_silicon_mine = {
+	building_group = bg_silicon_mining
+	texture = "gfx/interface/icons/building_icons/silicon_industry.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		shaft_mining
+	}
+
+	production_method_groups = {
+		pm_group_silicon_mining_1
+		pm_group_silicon_mining_2
+		pm_group_silicon_mining_3
+		pmg_automation_silicon_mining
+	}
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+}
+
+building_rare_elements_mine = {
+	building_group = bg_rare_elements_mining
+	texture = "gfx/interface/icons/building_icons/rare_elements_industry.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		shaft_mining
+	}
+
+	production_method_groups = {
+		pm_group_rare_elements_mining_1
+		pm_group_rare_elements_mining_2
+		pm_group_rare_elements_mining_3
+		pmg_automation_rare_elements_mining
+	}
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+}
+
+building_gas_pump = {
+	building_group = bg_gas_extraction
+	texture = "gfx/interface/icons/building_icons/gas_industry.dds"
+	city_type = mine
+	levels_per_mesh = 5
+	required_construction = construction_cost_medium
+	unlocking_technologies = {
+		pumpjacks
+	}
+
+	production_method_groups = {
+		pm_gas_1
+		pm_gas_2
+	}
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_oil.dds"
+}

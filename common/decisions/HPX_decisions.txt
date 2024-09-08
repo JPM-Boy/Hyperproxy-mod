@@ -1,0 +1,62 @@
+﻿great_assimilation_campaign = {
+	  is_shown = {
+	  	  always = yes
+	  }
+     possible = {
+        NOT = { has_modifier = great_assimilation_policy }
+          NOT = { has_modifier = assimilation_policy}
+     }
+
+     when_taken = {
+        add_modifier = {
+        	name = great_assimilation_policy
+        	is_decaying = yes
+        	months = 24
+        }
+        change_infamy = 25
+     }
+
+    ai_chance = {
+        base = 0
+        modifier = {
+            trigger = {infamy <= 25}
+            add = 20
+        }
+        modifier = {
+            trigger = { root = c:EGE }
+            add = 50
+        }
+        modifier = {
+            trigger = { root = c:CHI }
+            add = 50
+        }
+    }
+}
+
+assimilation_campaign = {
+	  is_shown = {
+        always = yes
+	  	
+	  }
+     possible = {
+        NOT = { has_modifier = great_assimilation_policy }
+        NOT = { has_modifier = assimilation_policy}
+     }
+
+     when_taken = {
+        add_modifier = {
+        	name = assimilation_policy
+        	is_decaying = yes
+        	months = 48
+        }
+        change_infamy = 15
+     }
+
+    ai_chance = {
+        base = 0
+        modifier = {
+            trigger = {infamy <= 15}
+            add = 30
+        }
+    }
+}

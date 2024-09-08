@@ -1,0 +1,41 @@
+﻿pm_group_silicon_mining_1 = {								        
+	production_methods = {
+		pm_silicon_mine_1_1
+		pm_silicon_mine_1_2
+		pm_silicon_mine_1_3
+		pm_silicon_mine_1_4
+	}
+	is_hidden_when_unavailable = no										# Whether PMs in this group should be visible at all if they cannot currently be switched to
+	ai_selection = most_productive										# Affects how the AI chooses between PMs. Current options: most_profitable, most_productive. Default most_profitable
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"	# Different types of PM Groups should have different icons for when the Building panel has mixed configuration
+}
+
+pm_group_silicon_mining_2 = {								        
+	production_methods = {
+		pm_silicon_mine_2_1
+		pm_silicon_mine_2_2
+		pm_silicon_mine_2_3
+		pm_silicon_mine_2_4
+	}
+	is_hidden_when_unavailable = no										# Whether PMs in this group should be visible at all if they cannot currently be switched to
+	ai_selection = most_productive										# Affects how the AI chooses between PMs. Current options: most_profitable, most_productive. Default most_profitable
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"	# Different types of PM Groups should have different icons for when the Building panel has mixed configuration
+}
+
+pm_group_silicon_mining_3 = {								        
+	production_methods = {
+		pm_silicon_mine_3_1
+		pm_silicon_mine_3_2
+	}
+	is_hidden_when_unavailable = no										# Whether PMs in this group should be visible at all if they cannot currently be switched to
+	ai_selection = most_productive										# Affects how the AI chooses between PMs. Current options: most_profitable, most_productive. Default most_profitable
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"	# Different types of PM Groups should have different icons for when the Building panel has mixed configuration
+}
+
+pmg_automation_silicon_mining = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_road_carts
+		pm_rail_transport_mine
+	}
+}

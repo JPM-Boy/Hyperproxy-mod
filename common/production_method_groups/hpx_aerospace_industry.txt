@@ -1,0 +1,12 @@
+﻿pmg_aerospace_1 = {								        
+	production_methods = {
+		pm_aerospace_1_1 #Propeller Engines
+		pm_aerospace_1_2 #Turbofan Jets
+		pm_aerospace_1_3 #Afterburner Jets
+		pm_aerospace_1_4 #Supersonic Jets
+		pm_aerospace_1_5 #Delta Jets
+	}
+	is_hidden_when_unavailable = no										# Whether PMs in this group should be visible at all if they cannot currently be switched to
+	ai_selection = most_productive										# Affects how the AI chooses between PMs. Current options: most_profitable, most_productive. Default most_profitable
+	texture = "gfx\interface\icons\generic_icons\mixed_icon_base.dds"	# Different types of PM Groups should have different icons for when the Building panel has mixed configuration
+}

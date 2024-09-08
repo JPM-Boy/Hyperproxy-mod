@@ -1,8 +1,8 @@
 ﻿pmg_laser_weapons_1 = {
 	production_methods = {
 		pm_laser_weapons_1_1 #Strategic Laser Weapons
-		pm_laser_weapons_1_2 #Portable Laser Weapons
-		pm_laser_weapons_1_3 #Handheld Laser Weapons
+		pm_laser_weapons_1_2 #Tactical Laser Weapons
+		pm_laser_weapons_1_3 #Portable Laser Weapons
 	}
 	is_hidden_when_unavailable = no	
 	ai_selection = most_productive

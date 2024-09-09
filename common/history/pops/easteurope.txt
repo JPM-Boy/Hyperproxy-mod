@@ -185,18 +185,6 @@
 			}
 		}
 	}
-	s:STATE_ORSHA = {
-		region_state:RUS = {
-			create_pop = {
-				culture = byelorussian
-				size = 2850000
-			}
-			create_pop = {
-				culture = russian
-				size = 850000
-			}
-		}
-	}
 	s:STATE_EAST_GALICIA = {
 		region_state:RUS = {
 			create_pop = {
@@ -262,18 +250,6 @@
 			create_pop = {
 				culture = ukrainian
 				size = 3100000
-			}
-		}
-	}
-	s:STATE_LUHANSK = {
-		region_state:RUS = {
-			create_pop = {
-				culture = ukrainian
-				size = 4500000
-			}
-			create_pop = {
-				culture = russian
-				size = 2000000
 			}
 		}
 	}

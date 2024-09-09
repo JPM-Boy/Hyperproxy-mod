@@ -1,5 +1,5 @@
 ﻿je_hpx_usa_great_shift = {
-	icon = "gfx/interface/icons/timed_modifier_icons/GER.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
 
 	group = je_group_internal_affairs
 

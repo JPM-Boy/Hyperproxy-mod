@@ -26,7 +26,8 @@
       "common/dynamic_country_map_colors",
       "events",
       "common/country_formation",
-      "common/decisions"
+      "common/decisions",
+      "common/history/military_formations"
     ]
   }
 }

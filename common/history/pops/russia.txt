@@ -103,22 +103,6 @@
 			}
 		}
 	}
-	s:STATE_BRYANSK = {
-		region_state:RUS = {
-			create_pop = {
-				culture = russian
-				size = 2300000
-			}
-			create_pop = {
-				culture = ukrainian
-				size = 400000
-			}
-			create_pop = {
-				culture = byelorussian
-				size = 150000
-			}
-		}
-	}
 	s:STATE_KURSK = {
 		region_state:RUS = {
 			create_pop = {

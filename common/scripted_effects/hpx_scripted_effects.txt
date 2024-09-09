@@ -148,7 +148,9 @@ calculate_anglo_french_radical_progress = {
 calculate_anglo_french_event_progress = {
 	set_global_variable = { name = anglo_french_balance_event_var }
 
-	change_global_variable = { name = anglo_french_balance_ig_var value = 0}
+	change_global_variable = {
+	name = anglo_french_balance_ig_var 
+	value = 0}
 }
 
 update_anglo_french_progressbar_tooltips = {
@@ -593,7 +595,8 @@ dissolve_soviet_hard = {
 			state = s:STATE_URAL.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
-
+		if = {
+			limit = {NOT = {exists = c:IDL}}
 		create_country = {
 			tag = IDL
 			origin = RUS
@@ -601,23 +604,29 @@ dissolve_soviet_hard = {
 			state = s:STATE_CHELYABINSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
-
+		}
+		if = {
+			limit = {NOT = {exists = c:KMI}}
 		create_country = {
 			tag = KMI
 			origin = RUS
 			state = s:STATE_NENETSIA.region_state:RUS
 			state = s:STATE_GALICH.region_state:RUS
 			on_created = { bpm_setup_country = yes }
-
+			}
 		}
-
+		if = {
+			limit = {NOT = {exists = c:PRM}}
 		create_country = {
 			tag = PRM
 			origin = RUS
 			state = s:STATE_PERM.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
+		}
 
+		if = {
+			limit = {NOT = {exists = c:KRL}}
 		create_country = {
 			tag = KRL
 			origin = RUS
@@ -625,42 +634,56 @@ dissolve_soviet_hard = {
 			state = s:STATE_EAST_KARELIA.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
-
-		create_country = {
-			tag = CHC
-			origin = RUS
-			state = s:STATE_NORTH_CAUCASUS.region_state:RUS
-			state = s:STATE_STAVROPOL.region_state:RUS
-			state = s:STATE_DAGESTAN.region_state:RUS
-			on_created = { bpm_setup_country = yes }
 		}
 
-		create_country = {
-			tag = CIR
-			origin = RUS
-			state = s:STATE_KUBAN.region_state:RUS
-			on_created = { bpm_setup_country = yes }
-		}
 
-		create_country = {
-			tag = MRL
-			origin = RUS
-			state = s:STATE_VYATKA.region_state:RUS
-			on_created = { bpm_setup_country = yes }
-		}
 
-		create_country = {
-			tag = KLM
-			origin = RUS
-			state = s:STATE_KALMYKIA.region_state:RUS
-			on_created = { bpm_setup_country = yes }
+		if = {
+			limit = {NOT = {exists = c:CHC}}
+			create_country = {
+				tag = CHC
+				origin = RUS
+				state = s:STATE_NORTH_CAUCASUS.region_state:RUS
+				state = s:STATE_STAVROPOL.region_state:RUS
+				state = s:STATE_DAGESTAN.region_state:RUS
+				on_created = { bpm_setup_country = yes }
+			}
 		}
-
-		create_country = {
-			tag = AKH
-			origin = RUS
-			state = s:STATE_ASTRAKHAN.region_state:RUS
-			on_created = { bpm_setup_country = yes }
+		if = {
+			limit = {NOT = {exists = c:CIR}}
+			create_country = {
+				tag = CIR
+				origin = RUS
+				state = s:STATE_KUBAN.region_state:RUS
+				on_created = { bpm_setup_country = yes }
+			}
+		}
+		if = {
+			limit = {NOT = {exists = c:MRL}}
+			create_country = {
+				tag = MRL
+				origin = RUS
+				state = s:STATE_VYATKA.region_state:RUS
+				on_created = { bpm_setup_country = yes }
+			}
+		}
+		if = {
+			limit = {NOT = {exists = c:KLM}}
+			create_country = {
+				tag = KLM
+				origin = RUS
+				state = s:STATE_KALMYKIA.region_state:RUS
+				on_created = { bpm_setup_country = yes }
+			}
+		}
+		if = {
+			limit = {NOT = {exists = c:AKH}}
+			create_country = {
+				tag = AKH
+				origin = RUS
+				state = s:STATE_ASTRAKHAN.region_state:RUS
+				on_created = { bpm_setup_country = yes }
+			}
 		}
 
 		remove_diplomatic_pact = {

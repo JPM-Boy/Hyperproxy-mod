@@ -23,11 +23,11 @@
             add = 20
         }
         modifier = {
-            trigger = { root = c:EGE }
+            trigger = { c:EGE ?= root  }
             add = 50
         }
         modifier = {
-            trigger = { root = c:CHI }
+            trigger = { c:CHI ?= root }
             add = 50
         }
     }

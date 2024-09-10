@@ -3642,12 +3642,6 @@ on_election_campaign_start = {
 on_election_campaign_end = {
 	effect = {
 		debug_log = "Election Campaign Ended"
-		if = {
-			limit = {
-				c:BRZ ?= this
-			}
-			set_variable = { name = brz_election_done months = 3 }
-		}
 	}
 }
 

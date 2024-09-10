@@ -148,7 +148,7 @@ calculate_anglo_french_radical_progress = {
 calculate_anglo_french_event_progress = {
 	set_global_variable = { name = anglo_french_balance_event_var }
 
-	change_global_variable = {
+	set_global_variable = {
 	name = anglo_french_balance_ig_var 
 	value = 0}
 }
@@ -203,6 +203,12 @@ if = {
 	activate_law = law_type:law_presidential_republic
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:CRI}
+					exists = s:STATE_CRIMEA.region_state:RUS
+				}
+			}
 		tag = CRI
  		origin = RUS
  		on_created = { bpm_setup_country = yes }
@@ -211,6 +217,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:LIT}
+					exists = s:STATE_VILNIUS.region_state:RUS
+				}
+			}
 		tag = LIT
 		origin = RUS
  		on_created = { bpm_setup_country = yes }
@@ -220,6 +232,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:PRU}
+					exists = s:STATE_EAST_PRUSSIA.region_state:RUS
+				}
+			}
 		tag = PRU
 		origin = RUS
  		on_created = { bpm_setup_country = yes }
@@ -227,6 +245,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:LAT}
+					exists = s:STATE_RIGA.region_state:RUS
+				}
+			}
 		tag = LAT
 		origin = RUS
 		state = s:STATE_RIGA.region_state:RUS
@@ -234,6 +258,12 @@ if = {
  		on_created = { bpm_setup_country = yes }
 	}
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:EST}
+					exists = s:STATE_TALINN.region_state:RUS
+				}
+			}
 		tag = EST
 		origin = RUS
 		state = s:STATE_TALINN.region_state:RUS
@@ -241,6 +271,12 @@ if = {
  		on_created = { bpm_setup_country = yes }
 	}
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:BYE}
+					exists = s:STATE_MINSK.region_state:RUS
+				}
+			}
 		tag = BYE
 		origin = RUS
 		state = s:STATE_MINSK.region_state:RUS
@@ -250,6 +286,12 @@ if = {
  		on_created = { bpm_setup_country = yes }
 	}
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:MOL}
+					exists = s:STATE_MOLDAVIA.region_state:RUS
+				}
+			}
 		tag = MOL
 		origin = RUS
 		state = s:STATE_MOLDAVIA.region_state:RUS
@@ -258,6 +300,12 @@ if = {
  		on_created = { bpm_setup_country = yes }
 	}
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:UKR}
+					exists = s:STATE_KIEV.region_state:RUS
+				}
+			}
 		tag = UKR
 		origin = RUS
 		state = s:STATE_KIEV.region_state:RUS
@@ -271,6 +319,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:GEO}
+					exists = s:STATE_GREATER_CAUCASUS.region_state:RUS
+				}
+			}
 		tag = GEO
 		origin = RUS
 		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
@@ -278,12 +332,24 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:ARM}
+					exists = s:STATE_ARMENIA.region_state:RUS
+				}
+			}
 		tag = ARM
 		origin = RUS
 		state = s:STATE_ARMENIA.region_state:RUS
 	}
  		on_created = { bpm_setup_country = yes }
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:AZB}
+					exists = s:STATE_AZERBAIJAN.region_state:RUS
+				}
+			}
 		tag = AZB
 		origin = RUS
 		state = s:STATE_AZERBAIJAN.region_state:RUS
@@ -291,6 +357,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:TRC}
+					exists = s:STATE_TURKMENIA.region_state:RUS
+				}
+			}
 		tag = TRC
 		origin = RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
@@ -300,6 +372,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:UZB}
+					exists = s:STATE_UZBEKIA.region_state:RUS
+				}
+			}
 		tag = UZB
 		origin = RUS
 		state = s:STATE_UZBEKIA.region_state:RUS
@@ -309,6 +387,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:TJI}
+					exists = s:STATE_TAJIKISTAN.region_state:RUS
+				}
+			}
 		tag = TJI
 		origin = RUS
 		state = s:STATE_TAJIKISTAN.region_state:RUS
@@ -317,6 +401,12 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:KYR}
+					exists = s:STATE_KIRGHIZIA.region_state:RUS
+				}
+			}
 		tag = KYR
 		origin = RUS
 		state = s:STATE_KIRGHIZIA.region_state:RUS
@@ -324,15 +414,21 @@ if = {
 	}
 
 	create_country = {
+		limit = {
+				AND = {
+					NOT = {exists = c:KZH}
+					exists = s:STATE_URALSK.region_state:RUS
+				}
+			}
 		tag = KZH
 		origin = RUS
- 		on_created = { bpm_setup_country = yes }
 		state = s:STATE_URALSK.region_state:RUS
 		state = s:STATE_AKTOBE.region_state:RUS
 		state = s:STATE_AKMOLINSK.region_state:RUS
 		state = s:STATE_SYRDARYA.region_state:RUS
 		state = s:STATE_SEMIRECHE.region_state:RUS
 		state = s:STATE_JETISY.region_state:RUS
+		on_created = { bpm_setup_country = yes }
 
 	}
 
@@ -385,6 +481,12 @@ dissolve_soviet_hard = {
 	if = {
 		activate_law = law_type:law_presidential_republic
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:CRI}
+					exists = s:STATE_CRIMEA.region_state:RUS
+				}
+			}
 			tag = CRI
 	 		origin = RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -393,6 +495,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:LIT}
+					exists = s:STATE_VILNIUS.region_state:RUS
+				}
+			}
 			tag = LIT
 			origin = RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -402,6 +510,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:PRU}
+					exists = s:STATE_EAST_PRUSSIA.region_state:RUS
+				}
+			}
 			tag = PRU
 			origin = RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -409,6 +523,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:LAT}
+					exists = s:STATE_RIGA.region_state:RUS
+				}
+			}
 			tag = LAT
 			origin = RUS
 			state = s:STATE_RIGA.region_state:RUS
@@ -416,6 +536,12 @@ dissolve_soviet_hard = {
 	 		on_created = { bpm_setup_country = yes }
 		}
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:EST}
+					exists = s:STATE_TALINN.region_state:RUS
+				}
+			}
 			tag = EST
 			origin = RUS
 			state = s:STATE_TALINN.region_state:RUS
@@ -423,6 +549,12 @@ dissolve_soviet_hard = {
 	 		on_created = { bpm_setup_country = yes }
 		}
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:BYE}
+					exists = s:STATE_MINSK.region_state:RUS
+				}
+			}
 			tag = BYE
 			origin = RUS
 			state = s:STATE_MINSK.region_state:RUS
@@ -432,6 +564,12 @@ dissolve_soviet_hard = {
 	 		on_created = { bpm_setup_country = yes }
 		}
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:MOL}
+					exists = s:STATE_MOLDAVIA.region_state:RUS
+				}
+			}
 			tag = MOL
 			origin = RUS
 			state = s:STATE_MOLDAVIA.region_state:RUS
@@ -440,6 +578,12 @@ dissolve_soviet_hard = {
 	 		on_created = { bpm_setup_country = yes }
 		}
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:UKR}
+					exists = s:STATE_KIEV.region_state:RUS
+				}
+			}
 			tag = UKR
 			origin = RUS
 			state = s:STATE_KIEV.region_state:RUS
@@ -453,6 +597,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:GEO}
+					exists = s:STATE_GREATER_CAUCASUS.region_state:RUS
+				}
+			}
 			tag = GEO
 			origin = RUS
 			state = s:STATE_GREATER_CAUCASUS.region_state:RUS
@@ -460,6 +610,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:ARM}
+					exists = s:STATE_ARMENIA.region_state:RUS
+				}
+			}
 			tag = ARM
 			origin = RUS
 			state = s:STATE_ARMENIA.region_state:RUS
@@ -467,6 +623,12 @@ dissolve_soviet_hard = {
 		}
 	 		
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:AZB}
+					exists = s:STATE_AZERBAIJAN.region_state:RUS
+				}
+			}
 			tag = AZB
 			origin = RUS
 			state = s:STATE_AZERBAIJAN.region_state:RUS
@@ -474,6 +636,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:TRC}
+					exists = s:STATE_TURKMENIA.region_state:RUS
+				}
+			}
 			tag = TRC
 			origin = RUS
 			state = s:STATE_TURKMENIA.region_state:RUS
@@ -483,6 +651,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:UZB}
+					exists = s:STATE_UZBEKIA.region_state:RUS
+				}
+			}
 			tag = UZB
 			origin = RUS
 			state = s:STATE_UZBEKIA.region_state:RUS
@@ -492,6 +666,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:TJI}
+					exists = s:STATE_TAJIKISTAN.region_state:RUS
+				}
+			}
 			tag = TJI
 			origin = RUS
 			state = s:STATE_TAJIKISTAN.region_state:RUS
@@ -500,6 +680,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:KYR}
+					exists = s:STATE_KIRGHIZIA.region_state:RUS
+				}
+			}
 			tag = KYR
 			origin = RUS
 			state = s:STATE_KIRGHIZIA.region_state:RUS
@@ -507,6 +693,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:KZH}
+					exists = s:STATE_URALSK.region_state:RUS
+				}
+			}
 			tag = KZH
 			origin = RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -520,6 +712,12 @@ dissolve_soviet_hard = {
 		}
 		#-------------------------------------------------
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:YAK}
+					exists = s:STATE_YAKUTSK.region_state:RUS
+				}
+			}
 			tag = YAK
 			origin = RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -528,6 +726,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:IKK}
+					exists = s:STATE_IRKUTSK.region_state:RUS
+				}
+			}
 			tag = IKK
 			origin = RUS
 			state = s:STATE_IRKUTSK.region_state:RUS
@@ -536,6 +740,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:FRE}
+					exists = s:STATE_CHUKOTKA.region_state:RUS
+				}
+			}
 			tag = FRE
 			origin = RUS
 			state = s:STATE_CHUKOTKA.region_state:RUS
@@ -549,6 +759,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:SIB}
+					exists = s:STATE_UPPER_YENISEYSK.region_state:RUS
+				}
+			}
 			tag = SIB
 			origin = RUS
 			state = s:STATE_UPPER_YENISEYSK.region_state:RUS
@@ -559,6 +775,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:BYT}
+					exists = s:STATE_BURYATIA.region_state:RUS
+				}
+			}
 			tag = BYT
 			origin = RUS
 			state = s:STATE_BURYATIA.region_state:RUS
@@ -568,6 +790,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:TVA}
+					exists = s:STATE_TUVA.region_state:RUS
+				}
+			}
 			tag = TVA
 			origin = RUS
 			state = s:STATE_TUVA.region_state:RUS
@@ -576,6 +804,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:TMK}
+					exists = s:STATE_TOMSK.region_state:RUS
+				}
+			}
 			tag = TMK
 			origin = RUS
 			state = s:STATE_TOMSK.region_state:RUS
@@ -583,6 +817,12 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:OMK}
+					exists = s:STATE_TOBOLSK.region_state:RUS
+				}
+			}
 			tag = OMK
 			origin = RUS
 			state = s:STATE_TOBOLSK.region_state:RUS
@@ -590,13 +830,24 @@ dissolve_soviet_hard = {
 		}
 
 		create_country = {
+			limit = {
+				AND = {
+					NOT = {exists = c:URL}
+					exists = s:STATE_URAL.region_state:RUS
+				}
+			}
 			tag = URL
 			origin = RUS
 			state = s:STATE_URAL.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
 		if = {
-			limit = {NOT = {exists = c:IDL}}
+			limit = {
+				AND = {
+					NOT = {exists = c:IDL}
+					exists = s:STATE_UFA.region_state:RUS
+				}
+			}
 		create_country = {
 			tag = IDL
 			origin = RUS
@@ -606,7 +857,12 @@ dissolve_soviet_hard = {
 		}
 		}
 		if = {
-			limit = {NOT = {exists = c:KMI}}
+			limit = {
+				AND = {
+					NOT = {exists = c:KMI}
+					exists = s:STATE_NENETSIA.region_state:RUS
+				}
+			}
 		create_country = {
 			tag = KMI
 			origin = RUS
@@ -616,7 +872,12 @@ dissolve_soviet_hard = {
 			}
 		}
 		if = {
-			limit = {NOT = {exists = c:PRM}}
+			limit = {
+				AND = {
+					NOT = {exists = c:PRM}
+					exists = s:STATE_PERM.region_state:RUS
+				}
+			}
 		create_country = {
 			tag = PRM
 			origin = RUS
@@ -626,7 +887,12 @@ dissolve_soviet_hard = {
 		}
 
 		if = {
-			limit = {NOT = {exists = c:KRL}}
+			limit = {
+				AND = {
+					NOT = {exists = c:KRL}
+					exists = s:STATE_KOLA.region_state:RUS
+				}
+			}
 		create_country = {
 			tag = KRL
 			origin = RUS
@@ -639,7 +905,12 @@ dissolve_soviet_hard = {
 
 
 		if = {
-			limit = {NOT = {exists = c:CHC}}
+			limit = {
+				AND = {
+					NOT = {exists = c:CHC}
+					exists = s:STATE_NORTH_CAUCASUS.region_state:RUS
+				}
+			}
 			create_country = {
 				tag = CHC
 				origin = RUS
@@ -650,7 +921,12 @@ dissolve_soviet_hard = {
 			}
 		}
 		if = {
-			limit = {NOT = {exists = c:CIR}}
+			limit = {
+				AND = {
+					NOT = {exists = c:CIR}
+					exists = s:STATE_KUBAN.region_state:RUS
+				}
+			}
 			create_country = {
 				tag = CIR
 				origin = RUS
@@ -659,7 +935,12 @@ dissolve_soviet_hard = {
 			}
 		}
 		if = {
-			limit = {NOT = {exists = c:MRL}}
+			limit = {
+				AND = {
+					NOT = {exists = c:MRL}
+					exists = s:STATE_VYATKA.region_state:RUS
+				}
+			}
 			create_country = {
 				tag = MRL
 				origin = RUS
@@ -668,7 +949,12 @@ dissolve_soviet_hard = {
 			}
 		}
 		if = {
-			limit = {NOT = {exists = c:KLM}}
+			limit = {
+				AND = {
+					NOT = {exists = c:KLM}
+					exists = s:STATE_KALMYKIA.region_state:RUS
+				}
+			}
 			create_country = {
 				tag = KLM
 				origin = RUS
@@ -677,7 +963,12 @@ dissolve_soviet_hard = {
 			}
 		}
 		if = {
-			limit = {NOT = {exists = c:AKH}}
+			limit = {
+				AND = {
+					NOT = {exists = c:AKH}
+					exists = s:STATE_ASTRAKHAN.region_state:RUS
+				}
+			}
 			create_country = {
 				tag = AKH
 				origin = RUS

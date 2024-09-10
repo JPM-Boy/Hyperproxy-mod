@@ -21,8 +21,8 @@
 	ai_chance = {
 		base = 0
 		modifier = {
-			trigger = { global_var:soviet_unity < 5 }
-			add = 50
+			trigger = { global_var:soviet_unity <= 15 }
+			add = 75
 		}
 	}
 }
@@ -50,7 +50,7 @@ RUS_confederalism_button_key = {
 	ai_chance = {
 		base = 0
 		modifier = {
-			trigger = { global_var:soviet_unity < 30 }
+			trigger = { global_var:soviet_unity <= 30 }
 			add = 25
 		}
 	}

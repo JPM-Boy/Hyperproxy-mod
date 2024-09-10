@@ -406,6 +406,7 @@ hpx_RUS_event.2 = { # Give Autonomy
 	}
 
 	immediate = {
+		remove_global_variable = soviet_unity
 		dissolve_soviet = yes
 	}
 }

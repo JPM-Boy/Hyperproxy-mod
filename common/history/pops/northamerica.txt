@@ -121,6 +121,10 @@
 				culture = yankee
 				size = 350000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 9000
+			}
 		}
 	}
 	s:STATE_WASHINGTON = {
@@ -128,6 +132,10 @@
 			create_pop = {
 				culture = yankee
 				size = 3300000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 72000
 			}
 		}
 	}
@@ -137,6 +145,10 @@
 				culture = yankee
 				size = 2750000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 26000
+			}
 		}
 	}
 	s:STATE_IDAHO = {
@@ -144,6 +156,10 @@
 			create_pop = {
 				culture = yankee
 				size = 1000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 2000
 			}
 		}
 	}
@@ -153,6 +169,10 @@
 				culture = hawaiian
 				size = 1000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 7500
+			}
 		}
 	}
 	s:STATE_MONTANA = {
@@ -160,6 +180,10 @@
 			create_pop = {
 				culture = yankee
 				size = 850000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 2000
 			}
 		}
 	}
@@ -169,6 +193,10 @@
 				culture = yankee
 				size = 500000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 2500
+			}
 		}
 	}
 	s:STATE_CALIFORNIA = {
@@ -177,6 +205,10 @@
 				culture = yankee
 				size = 21000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 1400000
+			}
 		}
 	}
 	s:STATE_NEVADA = {
@@ -184,6 +216,10 @@
 			create_pop = {
 				culture = yankee
 				size = 700000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 28000
 			}
 		}
 	}
@@ -201,6 +237,10 @@
 				culture = yankee
 				size = 1600000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 6000
+			}
 		}
 	}
 	s:STATE_ARIZONA = {
@@ -208,6 +248,10 @@
 			create_pop = {
 				culture = yankee
 				size = 2750000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 54000
 			}
 		}
 	}
@@ -217,6 +261,10 @@
 				culture = yankee
 				size = 3000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 67000
+			}
 		}
 	}
 	s:STATE_NEW_MEXICO = {
@@ -224,6 +272,10 @@
 			create_pop = {
 				culture = yankee
 				size = 2800000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 20000
 			}
 		}
 	}
@@ -233,6 +285,10 @@
 				culture = yankee
 				size = 700000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 2500
+			}
 		}
 	}
 	s:STATE_SOUTH_DAKOTA = {
@@ -240,6 +296,10 @@
 			create_pop = {
 				culture = yankee
 				size = 700000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1600
 			}
 		}
 	}
@@ -249,6 +309,10 @@
 				culture = yankee
 				size = 1500000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 40000
+			}
 		}
 	}
 	s:STATE_KANSAS = {
@@ -256,6 +320,10 @@
 			create_pop = {
 				culture = yankee
 				size = 2500000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 110000
 			}
 		}
 	}
@@ -265,6 +333,10 @@
 				culture = dixie
 				size = 2750000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 171000
+			}
 		}
 	}
 	s:STATE_TEXAS = {
@@ -272,6 +344,10 @@
 			create_pop = {
 				culture = dixie
 				size = 11000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1400000
 			}
 		}
 	}
@@ -281,6 +357,10 @@
 				culture = dixie
 				size = 3500000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 1800000
+			}
 		}
 	}
 	s:STATE_MINNESOTA = {
@@ -288,6 +368,10 @@
 			create_pop = {
 				culture = yankee
 				size = 4000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 35000
 			}
 		}
 	}
@@ -297,6 +381,10 @@
 				culture = yankee
 				size = 3000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 35000
+			}
 		}
 	}
 	s:STATE_MISSOURI = {
@@ -304,6 +392,10 @@
 			create_pop = {
 				culture = dixie
 				size = 4800000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 500000
 			}
 		}
 	}
@@ -313,6 +405,10 @@
 				culture = dixie
 				size = 2500000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 352000
+			}
 		}
 	}
 	s:STATE_WISCONSIN = {
@@ -320,6 +416,10 @@
 			create_pop = {
 				culture = yankee
 				size = 5000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 130000
 			}
 		}
 	}
@@ -329,6 +429,10 @@
 				culture = yankee
 				size = 11000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 1500000
+			}
 		}
 	}
 	s:STATE_MICHIGAN = {
@@ -337,13 +441,22 @@
 				culture = yankee
 				size = 8500000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 1000000
+			}
 		}
+
 	}
 	s:STATE_INDIANA = {
 		region_state:USA = {
 			create_pop = {
 				culture = yankee
 				size = 5500000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 360000
 			}
 		}
 	}
@@ -353,6 +466,10 @@
 				culture = yankee
 				size = 11000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 1000000
+			}
 		}
 	}
 	s:STATE_KENTUCKY = {
@@ -360,6 +477,10 @@
 			create_pop = {
 				culture = yankee
 				size = 3500000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 250000
 			}
 		}
 	}
@@ -369,6 +490,10 @@
 				culture = dixie
 				size = 2000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 72000
+			}
 		}
 	}
 	s:STATE_VIRGINIA = {
@@ -376,6 +501,10 @@
 			create_pop = {
 				culture = dixie
 				size = 5000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 890000
 			}
 		}
 	}
@@ -385,6 +514,10 @@
 				culture = yankee
 				size = 750000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 540000
+			}
 		}
 	}
 	s:STATE_MARYLAND = {
@@ -392,6 +525,10 @@
 			create_pop = {
 				culture = yankee
 				size = 4400000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 700000
 			}
 		}
 	}
@@ -401,6 +538,10 @@
 				culture = yankee
 				size = 650000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 80000
+			}
 		}
 	}
 	s:STATE_PENNSYLVANIA = {
@@ -408,6 +549,10 @@
 			create_pop = {
 				culture = yankee
 				size = 12000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1000000
 			}
 		}
 	}
@@ -417,6 +562,10 @@
 				culture = yankee
 				size = 7500000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 722000
+			}
 		}
 	}
 	s:STATE_NEW_YORK = {
@@ -424,6 +573,10 @@
 			create_pop = {
 				culture = yankee
 				size = 18500000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 2502000
 			}
 		}
 	}
@@ -433,6 +586,10 @@
 				culture = yankee
 				size = 3100000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 180000
+			}
 		}
 	}
 	s:STATE_RHODE_ISLAND = {
@@ -440,6 +597,10 @@
 			create_pop = {
 				culture = yankee
 				size = 1000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 26000
 			}
 		}
 	}
@@ -449,6 +610,10 @@
 				culture = yankee
 				size = 6000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 172000
+			}
 		}
 	}
 	s:STATE_VERMONT = {
@@ -456,6 +621,10 @@
 			create_pop = {
 				culture = yankee
 				size = 500000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1700
 			}
 		}
 	}
@@ -465,6 +634,10 @@
 				culture = yankee
 				size = 1000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 2500
+			}
 		}
 	}
 	s:STATE_MAINE = {
@@ -472,6 +645,10 @@
 			create_pop = {
 				culture = yankee
 				size = 1250000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 2800
 			}
 		}
 	}
@@ -481,6 +658,10 @@
 				culture = dixie
 				size = 4000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 672000
+			}
 		}
 	}
 	s:STATE_NORTH_CAROLINA = {
@@ -488,6 +669,10 @@
 			create_pop = {
 				culture = dixie
 				size = 5250000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1272000
 			}
 		}
 	}
@@ -497,6 +682,10 @@
 				culture = dixie
 				size = 2750000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 782000
+			}
 		}
 	}
 	s:STATE_MISSISSIPPI = {
@@ -504,6 +693,10 @@
 			create_pop = {
 				culture = dixie
 				size = 2500000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 872000
 			}
 		}
 	}
@@ -513,6 +706,10 @@
 				culture = dixie
 				size = 4000000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 972000
+			}
 		}
 	}
 	s:STATE_GEORGIA = {
@@ -521,6 +718,10 @@
 				culture = dixie
 				size = 5600000
 			}
+			create_pop = {
+				culture = afro_american
+				size = 1372000
+			}
 		}
 	}
 	s:STATE_FLORIDA = {
@@ -528,6 +729,10 @@
 			create_pop = {
 				culture = dixie
 				size = 8000000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1002000
 			}
 		}
 	}

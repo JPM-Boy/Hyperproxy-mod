@@ -88,11 +88,11 @@ je_hpx_soviet_unity = {
 	}
 
 	on_fail = {
-		remove_global_variable = soviet_unity
 		if = {
 			limit = {global_var:soviet_collapse = 0}
 			dissolve_soviet_hard = yes
 		}
+		remove_global_variable = soviet_unity
 	}
 
 	current_value = {
@@ -134,7 +134,7 @@ je_hpx_soviet_unity = {
 				name = soviet_unity
 				add = global_var:communist_nations_modifier
 			}
-			change_global_variable = {
+			set_global_variable = {
 				name = communist_nations_modifier
 				value = hpx_communist_nations
 			}

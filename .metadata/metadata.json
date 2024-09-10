@@ -28,7 +28,9 @@
       "common/country_formation",
       "common/decisions",
       "common/history/military_formations",
-      "common/history/diplomatic_plays"
+      "common/history/diplomatic_plays",
+      "common/history/global",
+      "common/history/military_deployments"
     ]
   }
 }

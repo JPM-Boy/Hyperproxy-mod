@@ -1,7 +1,7 @@
 {
   "name" : "Hyperproxy-Mod",
   "id" : "",
-  "version" : "0.2.0",
+  "version" : "0.3.2",
   "supported_game_version" : "1.7.*",
   "picture" : "thumbnail.png",
   "short_description" : "",
@@ -30,7 +30,8 @@
       "common/history/military_formations",
       "common/history/diplomatic_plays",
       "common/history/global",
-      "common/history/military_deployments"
+      "common/history/military_deployments",
+      "common/on_actions"
     ]
   }
 }

@@ -81,8 +81,8 @@ ig_socdem_desc:0 "Social democracy, aims to integrate capitalist economies with 
 #Institutional IGs
 ig_urbanite:0 "Urbanites"
 ig_urbanite_only_icon:0 "@ig_urbanite!"
-ig_urbanite_desc:0 "WIP"
+ig_urbanite_desc:0 "Urban Interests represents the bustling and rapidly growing urban centers of the nation, where industrialists, city workers, and entrepreneurs converge. Focused on economic growth, infrastructure development, and modernization, this interest group advocates for policies that support urban expansion, improved living conditions, and efficient public services. They push for investment in transportation, housing, and technological innovation to meet the demands of a growing urban population. As cities become the hubs of economic and cultural power, Urban Interests seeks to influence national policy, ensuring that urban centers remain the driving force of progress and prosperity."
 
 ig_minority:0 "Minority Interests"
 ig_minority_only_icon:0 "@ig_minority!"
-ig_minority_desc:0 "WIP"
+ig_minority_desc:0 "Minority Interests is a coalition representing the diverse ethnic, cultural, and religious minorities across the nation. Advocating for the rights of marginalized communities, they push for policies that ensure equal treatment, protection, and fair representation in government. This interest group seeks to challenge systemic discrimination and promote social inclusion, aiming to build a society where all groups have an opportunity to thrive. As their influence grows, they champion reforms in education, civil rights, and public services, striving to secure a stronger, more unified voice for the underrepresented."

@@ -417,3 +417,54 @@ bpm_setup_basic_igs = {
 	}
 
 }
+# Do not use in bpm_setup_country effect, but directly in on_action due to scope
+bpm_copy_variables_to_new_country = {
+	if = {
+		limit = { has_variable = local_neolib_split_var }
+		scope:target = {
+			set_variable = local_neolib_split_var
+		}
+	}
+	if = {
+		limit = { has_variable = local_prog_split_var }
+		scope:target = {
+			set_variable = local_prog_split_var
+		}
+	}
+	if = {
+		limit = { has_variable = local_socdem_split_var }
+		scope:target = {
+			set_variable = local_socdem_split_var
+		}
+	}
+}
+
+bpm_copy_variable_from_civil_war_origin = {
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_neolib_split_var
+			}
+		}
+		set_variable = local_neolib_split_var
+	}
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_prog_split_var
+			}
+		}
+		set_variable = local_prog_split_var
+	}
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_socdem_split_var
+			}
+		}
+		set_variable = local_socdem_split_var
+	}
+}

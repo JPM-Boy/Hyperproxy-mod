@@ -626,7 +626,7 @@
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=9
+						levels=5
 						region="STATE_EASTERN_NORWAY"
 					}
 				}
@@ -666,7 +666,7 @@
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=4
+						levels=1
 						region="STATE_WESTERN_NORWAY"
 					}
 				}
@@ -781,7 +781,7 @@
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=9
+						levels=4
 						region="STATE_EASTERN_NORWAY"
 					}
 				}
@@ -867,7 +867,7 @@
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=8
+						levels=4
 						region="STATE_EASTERN_NORWAY"
 					}
 				}
@@ -880,7 +880,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:NOR"
-						levels=7
+						levels=4
 						region="STATE_EASTERN_NORWAY"
 					}
 				}
@@ -893,7 +893,7 @@
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=4
+						levels=3
 						region="STATE_EASTERN_NORWAY"
 					}
 				}
@@ -917,7 +917,7 @@
 					building={
 						type="building_financial_district"
 						country="c:NOR"
-						levels=8
+						levels=5
 						region="STATE_EASTERN_NORWAY"
 					}
 				}

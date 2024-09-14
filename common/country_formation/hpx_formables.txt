@@ -1,7 +1,7 @@
 ﻿GER = {
 	use_culture_states = yes
 
-	required_states_fraction = 0.75
+	required_states_fraction = 0.55
 	
 	ai_will_do = { always = yes }
 
@@ -10,6 +10,17 @@
 	}
 }
 
+WSS = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
 
 SCA = {
 	use_culture_states = yes

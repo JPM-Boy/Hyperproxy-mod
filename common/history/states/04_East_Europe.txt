@@ -142,7 +142,6 @@
 			state_type = unincorporated
 		}
 		add_homeland = cu:lithuanian
-		add_homeland = cu:polish
 	}
 	s:STATE_COURLAND = {
 		create_state = {
@@ -284,6 +283,7 @@
 		}
 		
 		add_homeland = cu:sorb
+		add_homeland = cu:north_german
 	}
 	s:STATE_INGRIA = {
 		create_state = {
@@ -502,7 +502,6 @@
 			state_type = unincorporated
 		}
 		
-		add_homeland = cu:polish
 		add_homeland = cu:ukrainian
 	}
 	s:STATE_WEST_SLOVAKIA = {
@@ -655,7 +654,6 @@
 			owned_provinces = { x1FA1E1 x2141A0 x2E6001 x999CEE xC32D8B xE513C0 x085962 xC02121 xFCC7B7 xF962B2 x41E0A0 x635336 }
 		}
 		
-		add_homeland = cu:north_german
 		add_homeland = cu:polish
 	}
 	
@@ -665,7 +663,6 @@
 			owned_provinces = { xBAF66D x178C99 x611F2F x945000 x3E3572 x0180A0 x7CB839 x80A0A0 x7A6061 x6E8875 x41A021 x374AC3 x55FD02 }
 		}
 		
-		add_homeland = cu:north_german
 		add_homeland = cu:polish
 	}
 	s:STATE_EAST_PRUSSIA = {
@@ -681,7 +678,6 @@
 			state_type = unincorporated
 		}
 		
-		add_homeland = cu:north_german
 		add_homeland = cu:polish
 		add_homeland = cu:lithuanian
 	}

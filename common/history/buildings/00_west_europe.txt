@@ -605,7 +605,7 @@
 			}
 		}
 	}
-	s:STATE_WESTERN_NORWAY={
+s:STATE_WESTERN_NORWAY={
 		region_state:NOR={
 			create_building={
 				building="building_fishing_wharf"
@@ -790,7 +790,7 @@
 }
 
 		}
-	}
+	
 	s:STATE_EASTERN_NORWAY={
 		region_state:NOR={
 			create_building={

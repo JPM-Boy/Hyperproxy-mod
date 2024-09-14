@@ -26,7 +26,7 @@
 			member = c:DEN
 			member = c:WGE
 			member = c:NET
-			member = c:BEl
+			member = c:BEL
 			member = c:TUR
 			member = c:ITA
 			member = c:SAR

@@ -38,6 +38,7 @@
 			member = c:BAV
 			member = c:ICL
 			member = c:OCC
+			member = c:LUX
 
 
 

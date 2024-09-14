@@ -613,7 +613,7 @@ s:STATE_WESTERN_NORWAY={
 					building={
 						type="building_fishing_wharf"
 						country="c:NOR"
-						levels=7
+						levels=6
 						region="STATE_WESTERN_NORWAY"
 					}
 				}
@@ -626,7 +626,7 @@ s:STATE_WESTERN_NORWAY={
 					building={
 						type="building_manor_house"
 						country="c:NOR"
-						levels=4
+						levels=3
 						region="STATE_EASTERN_NORWAY"
 					}
 				}
@@ -639,7 +639,7 @@ s:STATE_WESTERN_NORWAY={
 					building={
 						type="building_financial_district"
 						country="c:NOR"
-						levels=3
+						levels=1
 						region="STATE_WESTERN_NORWAY"
 					}
 				}
@@ -652,7 +652,7 @@ s:STATE_WESTERN_NORWAY={
 					building={
 						type="building_tooling_workshops"
 						country="c:NOR"
-						levels=3
+						levels=2
 						region="STATE_WESTERN_NORWAY"
 					}
 				}

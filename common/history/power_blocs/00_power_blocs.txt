@@ -33,6 +33,10 @@
 			member = c:SPA
 			member = c:BRI
 			member = c:POR
+			member = c:LIE
+			member = c:CAT
+			member = c:BAV
+			member = c:ICL
 
 
 
@@ -62,6 +66,7 @@
 			member = c:GRE
 			member = c:ALB
 			member = c:MGL
+			member = c:COR
 
 
 		}

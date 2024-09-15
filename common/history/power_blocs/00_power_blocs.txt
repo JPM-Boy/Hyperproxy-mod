@@ -15,7 +15,7 @@
 	}
 	c:GBR = {
 		create_power_bloc = {
-			name = EUROPEAN_DEFENCE_ORAGNISATION
+			name = EUROPEAN_DEFENCE_ORGANISATION
 			map_color = { 151 99 255 }
 
 			founding_date = 1968.4.18

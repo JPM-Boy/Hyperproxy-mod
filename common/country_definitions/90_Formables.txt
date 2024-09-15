@@ -21,7 +21,7 @@ SCA = {
 }
 
 NORV = {
-	color = { 128  0  0 }
+	color = { 209 0 0 }
 
 	country_type = recognized
 

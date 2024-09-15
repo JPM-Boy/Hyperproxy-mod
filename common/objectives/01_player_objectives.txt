@@ -18,7 +18,7 @@ objective_test = {
 
 
 objective_west = {
-	enabled_background = "gfx/interface/icons/event_icons/general_strike.dds"
+	enabled_background = "gfx/interface/icons/objective_icons/west.dds"
 	icon = "gfx/event_pictures/americaya.dds"
 	
 	recommended_tags = { USA GBR WGE JAP}
@@ -35,7 +35,7 @@ objective_west = {
 }
 
 objective_east = {
-	enabled_background = "gfx/interface/icons/event_icons/general_strike.dds"
+	enabled_background = "gfx/interface/icons/objective_icons/east.dds"
 	icon = "gfx/event_pictures/americaya.dds"
 	
 	recommended_tags = { RUS CHI EGE YUG }

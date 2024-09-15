@@ -6,7 +6,7 @@
 
 			founding_date = 1949.4.18
 			identity = identity_military_treaty_organization
-			principle = principle_defensive_cooperation_1
+			principle = principle_defensive_cooperation_3
 
 			# subjects are automatically part of the bloc
 			member = c:CAN
@@ -16,11 +16,11 @@
 	c:GBR = {
 		create_power_bloc = {
 			name = EUROPEAN_DEFENCE_ORAGNISATION
-			map_color = { 252 3 227 }
+			map_color = { 151 99 255 }
 
 			founding_date = 1968.4.18
 			identity = identity_military_treaty_organization
-			principle = principle_defensive_cooperation_1
+			principle = principle_defensive_cooperation_3
 
 			member = c:NOR
 			member = c:DEN

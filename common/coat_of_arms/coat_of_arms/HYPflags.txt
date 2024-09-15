@@ -1,0 +1,17 @@
+NORV = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+
+	colored_emblem = {
+		texture = "ce_cross_norway.dds"
+		texture = "veldet.dds"
+
+	}
+	
+	textured_emblem = {
+texture = "veldet.dds"
+instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+}
+
+}

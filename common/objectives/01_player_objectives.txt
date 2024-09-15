@@ -1,5 +1,5 @@
 objective_test = {
-	enabled_background = "gfx/interface/icons/event_icons/general_strike.dds"
+	enabled_background = "gfx/interface/icons/objective_icons/coldwar.dds"
 	icon = "gfx/event_pictures/americaya.dds"
 	
 	recommended_tags = { NOR WAL }

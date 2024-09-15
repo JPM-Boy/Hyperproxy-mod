@@ -46,3 +46,23 @@ SCA = {
 		}
 	}
 }
+NORV = {
+
+	possible = {
+
+            state_region =s:STATE_WESTERN_NORWAY
+            state_region =s:STATE_EASTERN_NORWAY
+            state_region =s:STATE_NORTHERN_NORWAY
+            state_region =s:STATE_ICELAND
+            state_region =s:STATE_GREENLAND
+
+    }
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+		   }
+	}
+
+

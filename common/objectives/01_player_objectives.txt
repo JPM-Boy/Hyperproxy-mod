@@ -1,1 +1,54 @@
+objective_test = {
+	enabled_background = "gfx/interface/icons/event_icons/general_strike.dds"
+	icon = "gfx/event_pictures/americaya.dds"
+	
+	recommended_tags = { NOR WAL }
+	
+	objective_subgoals = {
+
+	}
+	
+	final_subgoal = 
+	
+	on_start = {
+		
+	}
+}
+
+
+
+objective_west = {
+	enabled_background = "gfx/interface/icons/event_icons/general_strike.dds"
+	icon = "gfx/event_pictures/americaya.dds"
+	
+	recommended_tags = { USA GBR WGE JAP}
+	
+	objective_subgoals = {
+
+	}
+	
+	final_subgoal = 
+	
+	on_start = {
+		
+	}
+}
+
+objective_east = {
+	enabled_background = "gfx/interface/icons/event_icons/general_strike.dds"
+	icon = "gfx/event_pictures/americaya.dds"
+	
+	recommended_tags = { RUS CHI EGE YUG }
+	
+	objective_subgoals = {
+
+	}
+	
+	final_subgoal = 
+	
+	on_start = {
+		
+	}
+}
+
 ﻿

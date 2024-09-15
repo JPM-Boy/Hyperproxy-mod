@@ -8,7 +8,16 @@
 	cultures = { north_german south_german }
 	capital = STATE_BRANDENBURG
 }
+﻿NORV = {
+	color = { 5 247 235 }
+	
+	country_type = recognized
 
+	tier = empire
+	
+	cultures = { norwegian }
+	capital = EASTERN_NORWAY
+}
 SCA = {
 	color = { 62  122  189 }
 

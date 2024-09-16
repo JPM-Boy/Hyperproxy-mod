@@ -1,16 +1,4 @@
-﻿GER = {
-	use_culture_states = yes
-
-	required_states_fraction = 0.55
-	
-	ai_will_do = { always = yes }
-
-	possible = {
-		always = yes	
-	}
-}
-
-WSS = {
+GER = {
 	use_culture_states = yes
 
 	required_states_fraction = 0.75
@@ -19,6 +7,26 @@ WSS = {
 
 	possible = {
 		always = yes	
+	}
+}
+
+NORV = {
+	states = {
+		STATE_EASTERN_NORWAY
+		STATE_WESTERN_NORWAY
+		STATE_NORTHERN_NORWAY
+		STATE_ICELAND
+		STATE_GREENLAND
+	}
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+	
+		possible = {
+		always = yes
+		country_has_primary_culture = cu:norwegian
+		
 	}
 }
 
@@ -46,23 +54,3 @@ SCA = {
 		}
 	}
 }
-NORV = {
-
-	possible = {
-
-            state_region =s:STATE_WESTERN_NORWAY
-            state_region =s:STATE_EASTERN_NORWAY
-            state_region =s:STATE_NORTHERN_NORWAY
-            state_region =s:STATE_ICELAND
-            state_region =s:STATE_GREENLAND
-
-    }
-	
-	ai_will_do = { always = yes }
-
-	possible = {
-		always = yes	
-		   }
-	}
-
-

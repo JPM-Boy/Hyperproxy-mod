@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
   #Europe
 ALB: "Albania"
 ALB_ADJ: "Albanian"
@@ -455,14 +455,6 @@ KLM: "Kalmykia"
 KLM_ADJ: "Kalmykian"
 AKH: "Astrakhan"
 AKH_ADJ: "Astrakhani"
-
-# FORMABLES
-SCA: "Scandinavia"
-SCA_ADJ: "Scandinavian"
-WSS: "West Slavic State"
-WSS_ADJ: "West Slavic"
-
-
 
   # Dynamic countries
  dyn_c_gbr: "Great Britain"

@@ -30,7 +30,8 @@
       "common/history/diplomatic_plays",
       "common/history/global",
       "common/history/military_deployments",
-      "common/on_actions"
+      "common/on_actions",
+      "common/strategic_regions"
     ]
   }
 }

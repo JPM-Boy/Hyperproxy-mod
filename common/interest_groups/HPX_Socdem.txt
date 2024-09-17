@@ -18,10 +18,6 @@ ig_socdem = {
 			set_ig_trait = ig_trait:ig_trait_urban_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_urban_well_oiled_machine
 			set_ig_trait = ig_trait:ig_trait_urban_election_interference
-			
-			add_modifier = {
-    		name = huge_ig_support
-			}
 		}
 	}
 	on_disable = {}

@@ -1,0 +1,8 @@
+﻿usa_overton_progress = {
+	je:je_hpx_usa_overton_window = {
+		set_bar_progress = {
+			value = owner.var:usa_overton
+			name = usa_overton_bar
+		}
+	}
+}

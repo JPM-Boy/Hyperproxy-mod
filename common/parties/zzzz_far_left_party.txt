@@ -293,36 +293,10 @@
 				is_marginal = no
 			}
 		}
-		OR = {
-			AND = {
-				bpm_ig_is_right_wing = no
-				bpm_ig_is_market_liberal = no
-				leader = { bpm_leader_is_right_wing = no }
-			}
-			leader = { bpm_leader_is_radical_socialist = yes }
-		}
-		trigger_if = {
-			limit = {
-				bpm_ig_is_institutional = yes
-				NOT = { is_interest_group_type = ig_trade_unions }
-			}
-			bpm_ig_is_upper_institutional = no
-			NOT = { leader = { has_ideology = ideology:ideology_moderate } }
-		}
-		OR = {
-			is_interest_group_type = ig_fascist
-			is_interest_group_type = ig_leftpop
-			is_interest_group_type = ig_anarchists
-			is_interest_group_type = ig_refsoc
-			is_interest_group_type = ig_revsoc
-			is_interest_group_type = ig_trade_unions
-			
-			bpm_ig_is_institutional = yes
-		}
 	}
 	join_weight = {
 		value = {
-			value = -2
+			value = 0
 			desc = "base_value"
 		}
 		if = {

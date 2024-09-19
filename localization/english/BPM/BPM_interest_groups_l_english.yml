@@ -174,8 +174,8 @@
  ig_war_democrats_desc:0 "$ig_national_liberals_desc$"
 
 # Conservatives
- ig_conservatives:0 "Conservatives"
- ig_conservatives_only_icon:0 "@ig_conservatives!"
+ ig_cons:0 "Conservatives"
+ ig_conservatives_only_icon:0 "@ig_cons!"
  ig_conservatives_desc:0 "Conservatives refer to the broad set of people who want to preserve the status quo, while situationally advancing or rolling back reforms in response to social crises. Since this is not a unified ideology, conservatives can be rife with internal conflicts, for instance, between those who support libertarianism vs. social paternalism, particularism vs. nationalism, or secularism vs. religious moralism."
 
  ig_conservative_reformers:0 "Conservative Reformers"
@@ -314,7 +314,7 @@
 # MODIFIERS
  ig_variant_agrarian_populists:0 "[GetInterestGroupVariant('ig_agrarian_populists',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_anarchists:0 "[GetInterestGroupVariant('ig_anarchists',GetPlayer).GetNameWithCountryVariant]"
- ig_variant_conservatives:0 "[GetInterestGroupVariant('ig_conservatives',GetPlayer).GetNameWithCountryVariant]"
+ ig_variant_conservatives:0 "[GetInterestGroupVariant('ig_cons',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_fascists:0 "[GetInterestGroupVariant('ig_fascists',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_liberals:0 "[GetInterestGroupVariant('ig_liberals',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_market_liberals:0 "[GetInterestGroupVariant('ig_market_liberals',GetPlayer).GetNameWithCountryVariant]"

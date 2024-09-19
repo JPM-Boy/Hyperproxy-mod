@@ -17,8 +17,8 @@ bpm_rename_refsoc_ig = {}
 
 bpm_rename_revsoc_ig = {
 	if = {
-		limit = { ig:ig_revsoc = { has_variable = french_var }}
-		ig:ig_revsoc ?= { set_interest_group_name = ig_french_revsoc }
+		limit = { ig:ig_orthodox_communist = { has_variable = french_var }}
+		ig:ig_orthodox_communist ?= { set_interest_group_name = ig_french_revsoc }
 	}
 }
 

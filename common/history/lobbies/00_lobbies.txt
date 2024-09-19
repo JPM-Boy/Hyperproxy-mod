@@ -3,104 +3,104 @@
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:POL = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:CZH = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:HUN = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:BUL = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:GRE = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:WAL = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:VEL = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:VEN = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:EGE = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:ALB = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:COR = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 	c:SRB = {
 		create_political_lobby = {  
 			type = lobby_pro_country  
 			target = c:RUS
-			add_interest_group = ig:ig_refsoc
-			add_interest_group = ig:ig_revsoc
+			add_interest_group = ig:ig_reformist_communist
+			add_interest_group = ig:ig_orthodox_communist
 		}	
 	}
 }	

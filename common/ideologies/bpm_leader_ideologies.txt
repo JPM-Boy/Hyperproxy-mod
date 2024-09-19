@@ -5407,7 +5407,7 @@ ideology_corporatist_leader = {
 				owner = { has_variable = local_patcon_split_var }
 				OR = {
 					is_interest_group_type = ig_national_liberals
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 					is_interest_group_type = ig_devout
 				}
 			}
@@ -5765,7 +5765,7 @@ ideology_orleanist = {
 			OR = {
 				bpm_ig_is_urban_institutional = yes
 				bpm_ig_is_state_institutional = yes
-				is_interest_group_type = ig_conservatives
+				is_interest_group_type = ig_cons
 				is_interest_group_type = ig_liberals
 				is_interest_group_type = ig_market_liberals
 			}
@@ -5813,7 +5813,7 @@ ideology_orleanist = {
 						is_interest_group_type = ig_petty_bourgeoisie
 						is_interest_group_type = ig_intelligentsia
 						is_interest_group_type = ig_industrialists
-						is_interest_group_type = ig_conservatives
+						is_interest_group_type = ig_cons
 					}
 				}
 				owner = {

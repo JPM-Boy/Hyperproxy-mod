@@ -1,4 +1,4 @@
-﻿ig_revsoc = {
+﻿ig_orthodox_communist = {
 	color = hsv{ 0 0.9 0.8 }
 	texture = "gfx/interface/icons/ig_icons/revolutionists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
@@ -13,7 +13,7 @@
 	}
 	
 	on_enable = {
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			# set_ig_trait = ig_trait:ig_trait_left_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition

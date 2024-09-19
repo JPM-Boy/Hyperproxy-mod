@@ -136,7 +136,7 @@
  bpm_je_split_natlibs_progress_from_liberals_empowered_desc: "@ig_liberals! Liberal, @ig_radicals! Radical Liberals, or @ig_market_liberals! Market Liberals in Government or Bolstered"
  bpm_je_split_natlibs_progress_from_libcons_suppressed_desc: "suppressed #bold Liberal#! and #bold Conservative#! [Concept('concept_interest_group', 'Interest Groups')]"
  bpm_je_split_natlibs_progress_from_libcons_marginal_desc: "marginalized #bold Liberal#! and #bold Conservative#! [Concept('concept_interest_group', 'Interest Groups')]"
- bpm_je_split_natlibs_progress_from_radicals_desc: "[concept_radical] poor strata pops. #blue @information! This will only accumulate if @ig_liberals! Liberals and @ig_conservatives! Conservatives are non-marginalized and not suppressed.#!"
+ bpm_je_split_natlibs_progress_from_radicals_desc: "[concept_radical] poor strata pops. #blue @information! This will only accumulate if @ig_liberals! Liberals and @ig_cons! Conservatives are non-marginalized and not suppressed.#!"
  bpm_je_split_natlibs_progress_from_ruler_desc: "[concept_ruler] from the [Concept('concept_interest_group', 'Interest Groups')]"
 
 # MARLIB SPLIT
@@ -170,7 +170,7 @@
  bpm_je_split_patcons_progress_from_poverty_desc: "Pops living below Minimum Expected Standard of Living"
  bpm_je_split_patcons_progress_from_loyalists_desc: "Loyalists in incorporated states"
  bpm_je_split_patcons_progress_from_radicals_desc: "Radicals in incorporated states"
- bpm_je_split_patcons_progress_from_conservative_status_desc: "@ig_conservatives! #bold Conservative#! are suppressed"
+ bpm_je_split_patcons_progress_from_conservative_status_desc: "@ig_cons! #bold Conservative#! are suppressed"
  bpm_je_split_patcons_progress_from_left_wing_power_desc: "significant Left-wing [Concept('concept_interest_group', 'Interest Group')]"
  bpm_je_split_patcons_progress_from_left_wing_government_desc: "Radical Left-wing [Concept('concept_interest_group', 'Interest Groups')] in government"
  bpm_je_split_patcons_progress_from_communist_victory_coping_desc: "enacted Council Republic law"
@@ -312,8 +312,8 @@
 
  bpm_je_all_zapadniks:0 "@ig_liberals! @ig_radicals! @ig_socialists! #bold Zapadniks#!"
  bpm_je_all_zapadnik:0 "@ig_liberals! @ig_radicals! @ig_socialists! #bold Zapadnik#!"
- bpm_je_all_slavophiles:0 "@ig_conservatives! @ig_reactionaries! #bold Slavophiles#!"
- bpm_je_all_slavophile:0 "@ig_conservatives! @ig_reactionaries! #bold Slavophile#!"
+ bpm_je_all_slavophiles:0 "@ig_cons! @ig_reactionaries! #bold Slavophiles#!"
+ bpm_je_all_slavophile:0 "@ig_cons! @ig_reactionaries! #bold Slavophile#!"
 
  bpm_journal_zapadniks_and_slavophiles_stagnant:0 "The progress of this Journal Entry is stuck at #bold 50#! while its change rate is at #bold 0#!"
 

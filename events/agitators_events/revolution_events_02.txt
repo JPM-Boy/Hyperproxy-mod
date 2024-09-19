@@ -1517,7 +1517,7 @@ revolution_pulse_events.12 = {
 				has_ideology = ideology:ideology_vanguardist
 			}
 		}
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			is_insurrectionary = no
 		}
 		revolution_progress_low = yes
@@ -1540,7 +1540,7 @@ revolution_pulse_events.12 = {
 			}
 			save_scope_as = communist_agitator_scope
 		}
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			save_scope_as = trade_union_ig
 			leader = {
 				save_scope_as = trade_union_leader
@@ -1562,7 +1562,7 @@ revolution_pulse_events.12 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig_revsoc
+			interest_group = ig_orthodox_communist
 			ideology = ideology_social_democrat
 			on_created = {
 				add_modifier = {
@@ -5130,7 +5130,7 @@ revolution_pulse_events.38 = {
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			is_insurrectionary = yes
 		}
 		NOR = {
@@ -5159,7 +5159,7 @@ revolution_pulse_events.38 = {
 	
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			save_scope_as = trade_unions_ig
 			leader = {
 				save_scope_as = trade_unions_ig_leader
@@ -5226,7 +5226,7 @@ revolution_pulse_events.38 = {
 			text = agitator_spawn_tt
 			create_character = {
 				is_agitator = yes
-				interest_group = ig_revsoc
+				interest_group = ig_orthodox_communist
 				traits = {
 					bandit
 					popular_commander

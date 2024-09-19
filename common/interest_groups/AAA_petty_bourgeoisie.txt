@@ -1,13 +1,12 @@
-﻿# Petty Bourgeoisie => Urbanites
-ig_urbanite = {
-	color = hsv{ 0 0 0.5 }
+﻿ig_petty_bourgeoisie = {
+	color = hsv{ 0.59 0.12 0.6 }
 	texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
 	index = 5
 
 	ideologies = {
 		ideology_dop_state_power
-		ideology_sta_powerful_state
+		ideology_sta_institutional_state
 		# Vanilla
 		ideology_meritocratic
 		ideology_patriotic
@@ -18,7 +17,7 @@ ig_urbanite = {
 	}	
 	
 	on_enable = {
-		ig:ig_urbanite = {
+		ig:ig_petty_bourgeoisie = {
 			set_ig_trait = ig_trait:ig_trait_urban_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_urban_well_oiled_machine
 			set_ig_trait = ig_trait:ig_trait_urban_election_interference
@@ -28,8 +27,13 @@ ig_urbanite = {
 	on_character_ig_membership = {}
 	
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				NOT = {
+					is_country_type = decentralized
+				}
+			}
 		}
 	}	
 	
@@ -84,11 +88,7 @@ ig_urbanite = {
 			if = {
 				limit = {
 					pop_has_primary_culture = no
-					NOR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations
-					}
+					bpm_pop_employment_is_rural = no
 				}
 				value = 100
 			}

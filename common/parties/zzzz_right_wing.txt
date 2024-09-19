@@ -25,15 +25,11 @@ rightwing_party = {
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
 		NOT = { bpm_is_party_banned = { PARTY = rightwing_party } }
-		
-		OR = {
-			owner = {
+		owner = {
 			country_has_voting_franchise = yes
 			}
-			NOR = { 
-			bpm_ig_is_radical_left = yes
-			}
-			NOR = { 
+		OR = {
+			NOT = { 
 			bpm_ig_is_radical_left = yes
 			}
 			Leader = {
@@ -42,17 +38,6 @@ rightwing_party = {
 					bpm_leader_is_radical_liberal = yes
 				}
 			}
-		}
-
-		OR = {
-			is_interest_group_type = ig_reactionary
-			is_interest_group_type = ig_cons
-			is_interest_group_type = ig_neolib
-			is_interest_group_type = ig_liberal
-			is_interest_group_type = ig_libertarian
-			is_interest_group_type = ig_rightpop
-			is_interest_group_type = ig_ecologist
-			bpm_ig_is_institutional = yes
 		}
 		
 	}
@@ -156,7 +141,7 @@ rightwing_party = {
 		}
 		# if = { # conservatives love conservativism
 		# 	limit = {
-		# 		is_interest_group_type = ig_conservatives
+		# 		is_interest_group_type = ig_cons
 		# 	}
 		#	add = {
 		#		value = 10
@@ -529,7 +514,7 @@ rightwing_party = {
 		}
 		if = {
 			limit = {
-				is_interest_group_type = ig_libertarian
+				is_interest_group_type = ig_classical_liberal
 				owner = {
 					any_interest_group = {
 						has_ideology = ideology:ideology_wel_paternalistic_welfare

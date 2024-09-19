@@ -9,9 +9,8 @@
 		ig:ig_ecologist = {
 			set_variable = english_var
 		}
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			set_variable = french_var
 		}
-		activate_law = law_type:law_presidential_republic
 	}
 }

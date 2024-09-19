@@ -44,17 +44,6 @@ leftwing_party = {
 			leader = { bpm_leader_is_radical_socialist = yes }
 			bpm_leader_is_progressive_liberal = yes
 		}
-		OR = {
-			is_interest_group_type = ig_leftpop
-			is_interest_group_type = ig_socdem
-			is_interest_group_type = ig_prog
-			is_interest_group_type = ig_ecologist
-			is_interest_group_type = ig_refsoc
-			is_interest_group_type = ig_revsoc
-			is_interest_group_type = ig_trade_unions
-
-			bpm_ig_is_institutional = yes
-		}
 
 		trigger_if = {
 			limit = {
@@ -66,7 +55,7 @@ leftwing_party = {
 	}
 	join_weight = {
 		value = {
-			value = 15
+			value = 0
 			desc = "base_value"
 		}
 		if = {

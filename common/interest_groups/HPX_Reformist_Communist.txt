@@ -1,4 +1,4 @@
-﻿ig_refsoc = {
+﻿ig_reformist_communist = {
 	color = hsv{ 0.94 0.9 0.8 }
 	texture = "gfx/interface/icons/ig_icons/reformists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
@@ -13,7 +13,7 @@
 	}
 	
 	on_enable = {
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			# set_ig_trait = ig_trait:ig_trait_left_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
@@ -66,7 +66,7 @@
 			add = {
 				desc = "POP_EDUCATED_PROLETARIAT"
 				value = literacy_rate
-				multiply = 500
+				multiply = 50
 			}
 		}
 		else_if = {
@@ -74,7 +74,7 @@
 			add = {
 				desc = "POP_EDUCATED_FARMERS"
 				value = literacy_rate
-				multiply = 400
+				multiply = 40
 			}
 		}
 		else_if = {
@@ -86,7 +86,7 @@
 			}
 			add = {
 				desc = "POP_LEADERS"
-				value = 150
+				value = 15
 			}
 		}
 
@@ -100,13 +100,13 @@
 			}
 			add = {
 				desc = "URBAN_POP"
-				value = 500
+				value = 50
 			}
 			if = {
 				limit = { is_employed = no }
 				add = {
 					desc = "URBAN_UNEMPLOYED"
-					value = 300
+					value = 30
 				}
 			}
 		}	
@@ -122,7 +122,7 @@
 					}
 					owner = { has_variable = bpm_ig_laborers_angry_var }
 				}
-				value = 100
+				value = 10
 			}
 		}
 
@@ -132,7 +132,7 @@
 				limit = { 
 					pop_is_discriminated = yes
 				}
-				value = 150
+				value = 15
 			}
 		}	
 		

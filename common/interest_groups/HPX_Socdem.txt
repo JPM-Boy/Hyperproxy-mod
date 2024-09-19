@@ -10,7 +10,7 @@ ig_socdem = {
 	}
 	
 	enable = {
-		has_variable = local_socdem_split_var
+		always = yes
 	}
 	
 	on_enable = {

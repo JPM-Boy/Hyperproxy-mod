@@ -134,6 +134,21 @@ savoy_progress_bar = {
  	max_value = 100
 }
 
+usa_overton_bar = {
+	name = "USA_OVERTON_BAR"
+	desc = "USA_OVERTON_BAR_LEFT"
+	second_desc = "USA_OVERTON_BAR_RIGHT"
+
+	start_value = 250
+	min_value = 0
+	max_value = 500
+
+	double_sided_gold = yes
+
+	weekly_progress = {
+	}
+}
+
 # example_progress_bar5 = {
 # 	name = "PROGRESS_BAR_NAME1"
 # 	desc = "PROGRESS_BAR_TEXT3" #This will be printed on the left side of the progress bar

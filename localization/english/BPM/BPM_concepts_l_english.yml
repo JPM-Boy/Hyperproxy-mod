@@ -155,15 +155,15 @@
 
  tooltip_bpm_ig_is_mainstream_conservative:0 "Is a [Concept('concept_bpm_ig_is_mainstream_conservative', '$concept_bpm_ig_is_mainstream_conservative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_mainstream_conservative:0 "Mainstream Conservative"
- concept_bpm_ig_is_mainstream_conservative_desc:0 "The @ig_conservatives! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')]. They represent the most common form of moderate right-wing ideology."
+ concept_bpm_ig_is_mainstream_conservative_desc:0 "The @ig_cons! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')]. They represent the most common form of moderate right-wing ideology."
 
  tooltip_bpm_ig_is_liberal_conservative:0 "Is a [Concept('concept_bpm_ig_is_liberal_conservative', '$concept_bpm_ig_is_liberal_conservative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_liberal_conservative:0 "Liberal Conservative"
- concept_bpm_ig_is_liberal_conservative_desc:0 "The @ig_conservatives! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] after they become Paternal, along with the @ig_national_liberals! #bold National Liberals#! and @ig_market_liberals! #bold Market Liberals#! [Concept('concept_interest_group', 'Interest Group')]. They believe that a blend of both moderate liberalism and moderate conservativism secures the best outcomes for their nation."
+ concept_bpm_ig_is_liberal_conservative_desc:0 "The @ig_cons! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] after they become Paternal, along with the @ig_national_liberals! #bold National Liberals#! and @ig_market_liberals! #bold Market Liberals#! [Concept('concept_interest_group', 'Interest Group')]. They believe that a blend of both moderate liberalism and moderate conservativism secures the best outcomes for their nation."
  
 tooltip_bpm_ig_is_non_paternal_conserative:0 "Is a [Concept('concept_bpm_ig_is_non_paternal_conserative', '$concept_bpm_ig_is_non_paternal_conserative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_non_paternal_conserative:0 "Non-Paternal Conservative"
- concept_bpm_ig_is_non_paternal_conserative_desc:0 "The @ig_conservatives! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] that don't hold paternalist ideals."
+ concept_bpm_ig_is_non_paternal_conserative_desc:0 "The @ig_cons! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] that don't hold paternalist ideals."
 
  tooltip_bpm_ig_is_moderate_conservative:0 "Is a [Concept('concept_bpm_ig_is_moderate_conservative', '$concept_bpm_ig_is_moderate_conservative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_moderate_conservative:0 "Moderate Conservative"

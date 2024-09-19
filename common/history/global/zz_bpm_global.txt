@@ -24,13 +24,13 @@
 
 	every_country = {
 		limit = { has_law = law_type:law_council_republic}
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			add_modifier = {
     		name = huge_ig_support
 			}
 		}
 
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			add_modifier = {
     		name = huge_ig_support
 			}

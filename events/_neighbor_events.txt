@@ -240,19 +240,19 @@ neighbor_events.3 = {
 	duration = 6
 
 	trigger = {
-		has_ruling_interest_group = ig_refsoc
+		has_ruling_interest_group = ig_reformist_communist
 		any_neighbouring_state = {
 			owner = {
-				has_ruling_interest_group = ig_refsoc
+				has_ruling_interest_group = ig_reformist_communist
 			}
 		}
 	}
 
 	immediate = {
 		save_neighbor_with_state = {
-			CRITERIA = "has_ruling_interest_group = ig_refsoc"
+			CRITERIA = "has_ruling_interest_group = ig_reformist_communist"
 		}
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			save_scope_as = trade_unions_ig
 		}
 	}
@@ -279,7 +279,7 @@ neighbor_events.3 = {
 	option = {
 		name = neighbor_events.3.b
 		default_option = yes
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			add_modifier = {
 				name = rejected_proletarian_internationalism
 				months = normal_modifier_time
@@ -312,7 +312,7 @@ neighbor_events.4 = {
 		any_neighbouring_state = {
 			owner = {
 				relations:root >= relations_threshold:cordial
-				NOT = { has_ruling_interest_group = ig_refsoc }
+				NOT = { has_ruling_interest_group = ig_reformist_communist }
 			}
 		}
 	}
@@ -320,7 +320,7 @@ neighbor_events.4 = {
 	immediate = {
 		save_neighbor_with_state = {
 			CRITERIA =	"relations:root >= relations_threshold:cordial
-			NOT = { has_ruling_interest_group = ig_refsoc }"
+			NOT = { has_ruling_interest_group = ig_reformist_communist }"
 		}
 		ig:ig_industrialists = {
 			save_scope_as = industrialists_ig
@@ -561,7 +561,7 @@ neighbor_events.7 = {
 				average_sol > root.average_sol
 			}
 		}
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			is_marginal = no
 		}
 	}
@@ -575,7 +575,7 @@ neighbor_events.7 = {
 
 	option = {
 		name = neighbor_events.7.a
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			add_modifier = {
 				name = criticized_economic_injustice
 				months = short_modifier_time

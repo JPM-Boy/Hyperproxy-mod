@@ -368,7 +368,7 @@ bpm_setup_basic_igs = {
 		limit = {
 			OR = {
 				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_libertarian ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 			has_technology_researched = democracy
 		}
@@ -391,8 +391,8 @@ bpm_setup_basic_igs = {
 	if = {
 		limit = {
 			OR = {
-				ig:ig_revsoc?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_refsoc?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_orthodox_communist?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_reformist_communist?= { has_ideology = ideology:ideology_nonexistent }
 			}
 			has_technology_researched = democracy
 		}
@@ -415,6 +415,21 @@ bpm_setup_basic_igs = {
 		}
 		bpm_initialize_trade_unions = yes
 	}
+	if = {
+		limit = {
+			ig:ig_socdem ?= { has_ideology = ideology:ideology_nonexistent}
+			has_technology_researched = democracy
+		}
+		bpm_initialize_socdem = yes
+	}
+	if = {
+		limit = {
+			ig:ig_new_leftism ?= { has_ideology = ideology:ideology_nonexistent}
+			has_technology_researched = democracy
+		}
+		bpm_initialize_new_leftism = yes
+	}
+	
 
 }
 # Do not use in bpm_setup_country effect, but directly in on_action due to scope
@@ -438,7 +453,7 @@ bpm_copy_variables_to_new_country = {
 		}
 	}
 	if = {
-		limit = { has_variable = local_socdem_split_var }
+		limit = { has_variable = local_libertarian_split_var }
 		scope:target = {
 			set_variable = local_libertarian_split_var
 		}

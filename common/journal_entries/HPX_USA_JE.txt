@@ -1,15 +1,254 @@
-﻿je_hpx_usa_great_shift = {
+﻿je_hpx_usa_overton_window = {
 	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
 
 	group = je_group_internal_affairs
-
+	should_be_pinned_by_default = yes
 	is_shown_when_inactive = {
-		OR = {
-			c:USA = root
-		}
+		c:USA = root
 	}
 	
 	possible = {
 		always = yes
+	}
+
+	immediate =  {
+		c:USA = {
+			set_variable = {
+				name = overton_window
+				value = 0
+			}
+			set_variable = {
+				name = usa_overton
+				value = 250
+			}
+		}
+		usa_overton_progress = yes
+	}
+
+	scripted_progress_bar = usa_overton_bar
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = far_left_usa
+				trigger = {
+					var:overton_window = -2
+				}
+			}
+			triggered_desc = {
+				desc = left_wing_usa
+				trigger = {
+					var:overton_window = -1
+				}
+			}
+			triggered_desc = {
+				desc = center_usa
+				trigger = {
+					var:overton_window = 0
+				}
+			}
+			triggered_desc = {
+				desc = right_wing_usa
+				trigger = {
+					var:overton_window = 1
+				}
+			}
+			triggered_desc = {
+				desc = far_right_usa
+				trigger = {
+					var:overton_window = 2
+				}
+			}
+		}
+	}
+	on_weekly_pulse = {
+		effect = {
+			usa_overton_progress = yes
+			if = {
+				limit = {var:usa_overton >= 0 && var:usa_overton <= 100}
+				set_variable = {
+					name = overton_window
+					value = 2
+				}
+			}
+			if = {
+				limit = {var:usa_overton > 100 && var:usa_overton <= 200}
+				set_variable = {
+					name = overton_window
+					value = 1
+				}
+			}
+			if = {
+				limit = {var:usa_overton > 200 && var:usa_overton <= 300}
+				set_variable = {
+					name = overton_window
+					value = 0
+				}
+			}
+			if = {
+				limit = {var:usa_overton > 300 && var:usa_overton <= 400}
+				set_variable = {
+					name = overton_window
+					value = -1
+				}
+			}
+			if = {
+				limit = {var:usa_overton > 400 && var:usa_overton <= 500}
+				set_variable = {
+					name = overton_window
+					value = -2
+				}
+			}
+
+
+
+
+			if = {
+				limit = {var:overton_window = -2}
+				add_journal_entry = {type = je_hpx_usa_red_dawn}
+				add_journal_entry = {type = je_hpx_usa_unholy_alliance}
+			}
+			if = {
+				limit = {var:overton_window = -1}
+				add_journal_entry = {type = je_hpx_usa_unholy_alliance}
+				add_journal_entry = {type = je_hpx_usa_great_shift}
+				add_journal_entry = {type = je_hpx_usa_crusades}
+			}
+			if = {
+				limit = {var:overton_window = 0}
+				add_journal_entry = {type = je_hpx_usa_great_shift}
+				add_journal_entry = {type = je_hpx_usa_crusades}
+			}
+			if = {
+				limit = {var:overton_window > 0}
+				add_journal_entry = {type = je_hpx_usa_new_america}
+				add_journal_entry = {type = je_hpx_usa_crusades}
+			}
+		}
+	}
+}
+
+je_hpx_usa_great_shift = {
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	is_shown_when_inactive = {
+		OR = {
+			c:USA = root
+		}
+		has_variable = overton_window
+	}
+	
+	possible = {}
+
+	invalid = {
+		NOT = {
+			OR = {
+				var:overton_window = 0
+				var:overton_window = -1
+			}
+		}
+	}
+}
+
+je_hpx_usa_red_dawn = {
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	is_shown_when_inactive = {
+		c:USA = root
+		has_variable = overton_window
+	}
+	
+	possible = {}
+
+	invalid = {
+		OR = {
+			var:overton_window > -2
+		}
+	}
+}
+
+je_hpx_usa_crusades = {
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	is_shown_when_inactive = {
+		OR = {
+			c:USA = root
+		}
+		has_variable = overton_window
+	}
+	
+	possible = {}
+
+	immediate = {
+		set_variable = {
+			name = communist_number
+			value = hpx_communist_nations_number
+		}
+	}
+
+	invalid = {
+		OR = {
+			var:overton_window <= -2
+		}
+	}
+	status_desc = {
+		desc = USA_CRUSADE_TEXT
+	}
+
+	scripted_button = USA_intervention_button_key
+
+	on_weekly_pulse = {
+		set_variable = {
+			name = communist_number
+			value = hpx_communist_nations_number
+		}
+	}
+}
+
+je_hpx_usa_unholy_alliance = {
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	is_shown_when_inactive = {
+		OR = {
+			c:USA = root
+		}
+		has_variable = overton_window
+	}
+	
+	possible = {}
+
+	invalid = {
+		OR = {
+			var:overton_window >= 0
+		}
+	}
+}
+
+je_hpx_usa_new_america = {
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	is_shown_when_inactive = {
+		OR = {
+			c:USA = root
+		}
+		has_variable = overton_window
+	}
+	
+	possible = {}
+
+	invalid = {
+		OR = {
+			var:overton_window <= 0
+		}
 	}
 }

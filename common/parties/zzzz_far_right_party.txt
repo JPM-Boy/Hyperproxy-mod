@@ -157,20 +157,11 @@ far_right_party = {
 			bpm_leader_is_right_wing = yes
 			}
 		}
-		OR = {
-			is_interest_group_type = ig_reactionary
-			is_interest_group_type = ig_fascist
-			is_interest_group_type = ig_neolib
-			is_interest_group_type = ig_libertarian
-			is_interest_group_type = ig_rightpop
-			is_interest_group_type = ig_anarchist
-			bpm_ig_is_institutional = yes
-		}
 
 	}
 	join_weight = {
 		value = {
-			value = -2
+			value = 0
 			desc = "base_value"
 		}
 		if = {

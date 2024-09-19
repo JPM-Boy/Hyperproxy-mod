@@ -72,6 +72,25 @@ start_mon_militar = {
 	activate_law = law_type:law_unitary
 }
 
+start_monarchy = {
+	activate_law = law_type:law_monarchy
+	activate_law = law_type:law_state_religion
+	activate_law = law_type:law_census_voting
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_elected_bureaucrats
+	activate_law = law_type:law_private_schools
+	activate_law = law_type:law_no_workers_rights
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_mercantilism	
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_migration_controls
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_homesteading
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_purchased_officers
+}
+
 start_communist = {
 	activate_law = law_type:law_council_republic
 	activate_law = law_type:law_communist_dictatorship

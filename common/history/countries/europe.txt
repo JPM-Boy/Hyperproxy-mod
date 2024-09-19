@@ -24,3 +24,8 @@
 	c:ALB = {start_communist = yes}
 	c:VEN = {start_communist = yes}
 	c:COR = {start_communist = yes}
+	c:BEL = {start_monarchy = yes}
+	c:NET = {start_monarchy = yes}
+	c:SAR = {start_monarchy = yes}
+	c:CAT = {start_monarchy = yes}
+}

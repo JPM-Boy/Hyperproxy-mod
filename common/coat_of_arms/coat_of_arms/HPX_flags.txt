@@ -1,0 +1,45 @@
+NORV = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+
+	colored_emblem = {
+		texture = "ce_cross_norway.dds"
+		texture = "veldet.dds"
+
+	}
+	
+	textured_emblem = {
+		texture = "veldet.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
+}
+
+WGE = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "yellow"
+	}
+}
+
+EGE = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "red"
+		color2 = "yellow"
+	}
+}
+
+LIE = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "yellow"
+}

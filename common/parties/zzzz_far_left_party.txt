@@ -1,5 +1,5 @@
 ﻿far_left_party = {
-	color = hsv{ 0 0.9 0.8 }
+	color = hsv{ 0 1 0.4 }
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -301,42 +301,31 @@
 		}
 		if = {
 			limit = {
+				is_interest_group_type = ig_classical_liberal
+			}
+			add = {	
+				value = -30
+				desc = "hpx_hating_left"
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_socdem
+			}
+			add = {	
+				value = -10
+				desc = "hpx_hating_far_left"
+			}
+		}
+		if = {
+			limit = {
 				var:bpm_current_party ?= {
-					is_party_type = communist_party
+					is_party_type = far_left_party
 					has_party_member = prev
 				}
 			}
 			add = {
 				value = bpm_party_loyalty_values
-			}
-		}
-		if = { # hard to get if reformists and revs still united
-			limit = {
-				owner = {
-					NOR = {
-						has_global_variable = global_socialists_disunited_var
-						has_variable = local_socialists_disunited_var
-					}
-				}
-			}
-			add = {
-				value = -30
-				desc = "bpm_still_united"
-			}
-		}
-		if = { # reformists unlikely to join revolutionists after split
-			limit = {
-				bpm_ig_is_reformist_socialist = yes
-				owner = {
-					OR = {
-						has_global_variable = global_socialists_disunited_var
-						has_variable = local_socialists_disunited_var
-					}
-				}
-			}
-			add = {
-				value = -5
-				desc = "bpm_disunited_socialists"
 			}
 		}
 		if = { # anarchists and agrarians like socialism
@@ -469,11 +458,8 @@
 		}
 		if = { # anarchist
 			limit = {
-				has_global_variable = first_intl_disunited_var
-				OR = {
-					bpm_ig_is_anarchist = yes
-					leader = { bpm_leader_is_anarchist = yes }
-				}
+				bpm_ig_is_anarchist = yes
+				leader = { bpm_leader_is_anarchist = yes }
 			}
 			add = {
 				value = -30
@@ -687,14 +673,14 @@
 		}
 		if = { # nobody will join if the revsocs don't join
 			limit = {
-				NOT = { is_interest_group_type = ig_revolutionist_socialists }
+				NOT = { is_interest_group_type = ig_orthodox_communist }
 				OR = {
-					NOT = { exists = owner.py:communist_party }
+					NOT = { exists = owner.py:far_left_party }
 					AND = {
-						exists = owner.py:communist_party
+						exists = owner.py:far_left_party
 						owner = {
-							ig:ig_revolutionist_socialists = {
-								NOT = { is_member_of_party = owner.py:communist_party }
+							ig:ig_orthodox_communist = {
+								NOT = { is_member_of_party = owner.py:far_left_party }
 							}
 						}
 					}

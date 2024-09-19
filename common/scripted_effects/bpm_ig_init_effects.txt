@@ -410,7 +410,7 @@ bpm_initialize_new_leftism = {
 		}
 		ig:ig_new_leftism = {
 			remove_ideology = ideology_nonexistent
-			add_ideology = ideology_gov_moderate_proletarian
+			add_ideology = ideology_gov_radical_proletarian
 			add_ideology = ideology_dop_radical_democrat
 			add_ideology = ideology_sta_progressive_state
 			add_ideology = ideology_cit_internationalist

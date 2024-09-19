@@ -167,7 +167,7 @@ far_right_party = {
 		if = {
 			limit = {
 				var:bpm_current_party ?= {
-					is_party_type = reactionary_party
+					is_party_type = far_right_party
 					has_party_member = prev
 				}
 			}
@@ -187,7 +187,7 @@ far_right_party = {
 		if = {
 			limit = {
 				is_powerful = yes
-				is_interest_group_type = ig_reactionaries
+				is_interest_group_type = ig_reactionary
 			}
 			add = {
 				value = 10
@@ -204,7 +204,7 @@ far_right_party = {
 				}
 			}
 			add = {
-				value = 5
+				value = 10
 				desc = "bpm_from_reactionary_leader"
 			}
 		}
@@ -229,14 +229,14 @@ far_right_party = {
 		if = { # weak trads will fall in line behind strong reactionaries in party
 			limit = {
 				is_powerful = no
-				NOT = { is_interest_group_type = ig_reactionaries }
+				NOT = { is_interest_group_type = ig_reactionary }
 				bpm_ig_is_right_wing = yes
 				owner = {
 					any_interest_group = {
 						is_powerful = yes
 						OR = {
 							leader = { has_ideology = ideology:ideology_traditionalist }
-							is_interest_group_type = ig_reactionaries
+							is_interest_group_type = ig_reactionary
 						}
 						has_party = yes
 						party = { is_party_type = reactionary_party }
@@ -310,10 +310,10 @@ far_right_party = {
 				owner = {
 					THIS = c:GBR
 				}
-				is_interest_group_type = ig_reactionaries
+				is_interest_group_type = ig_reactionary
 			}
 			add = {
-				value = -10
+				value = -30
 				desc = "bpm_from_british_party_system"
 			}
 		}
@@ -325,7 +325,7 @@ far_right_party = {
 					}
 				}
 				OR = {
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
 					leader = { has_ideology = ideology:ideology_legitimist }
 				}
 			}
@@ -412,14 +412,14 @@ far_right_party = {
 
 		if = { # nobody will join if the reactionaries don't join
 			limit = {
-				NOT = { is_interest_group_type = ig_reactionaries }
+				NOT = { is_interest_group_type = ig_reactionary }
 				OR = {
-					NOT = { exists = owner.py:reactionary_party }
+					NOT = { exists = owner.py:far_right_party }
 					AND = {
-						exists = owner.py:reactionary_party
+						exists = owner.py:far_right_party
 						owner = {
-							ig:ig_reactionaries = {
-								NOT = { is_member_of_party = owner.py:reactionary_party }
+							ig:ig_reactionary = {
+								NOT = { is_member_of_party = owner.py:far_right_party }
 							}
 						}
 					}

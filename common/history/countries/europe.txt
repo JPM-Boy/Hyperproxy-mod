@@ -28,4 +28,10 @@
 	c:NET = {start_monarchy = yes}
 	c:SAR = {start_monarchy = yes}
 	c:CAT = {start_monarchy = yes}
+	c:GBR = {
+		set_variable = {
+    		name = un_headquarters_holder
+    		value = 0
+    	}
+	}
 }

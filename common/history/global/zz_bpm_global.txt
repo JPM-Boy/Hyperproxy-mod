@@ -42,4 +42,36 @@
     		id = hpx_misc.1
 		}
 	}
+
+	every_country = {
+		set_variable = {
+			name = un_member
+			value = 0
+		}
+	}
+
+	every_country = {
+		limit = {
+			has_variable = un_headquarters_holder
+		}
+		add_to_global_variable_list = {
+			name = un_headquarters_holder
+			target = THIS
+		}
+	}
+	random_country = {
+		set_global_variable = {
+			name = var_un_memberlist
+			value = 0
+		}
+	}
+	every_country = {
+		limit = {
+			has_variable = un_member
+		}
+		change_global_variable = {
+			name = var_un_memberlist
+			add = 1
+		}
+	}
 }

@@ -23,6 +23,7 @@ on_monthly_pulse = {
 				target = THIS
 			}
 		}
+		UN_Member = yes
 	}
 }
 
@@ -39,23 +40,6 @@ on_monthly_pulse_country = {
 	}
 	effect = {
 		trigger_event = { id = unable_to_enact.1 }
-
-		if = {
-			limit = {
-				NOT = {
-					has_variable = cant_touch_this_achievement_possible
-				}
-				any_country = {
-					NOT = {
-					   THIS = ROOT
-					}
-					ROOT = {
-						"gdp_ownership_ratio(prev)" > 0.10
-					}	
-			    }
-			}
-			set_variable = cant_touch_this_achievement_possible
-		}
 	}
 	on_actions = { # delay ensures events won't fire simultaneously
 		coup_monthly_events
@@ -64,6 +48,7 @@ on_monthly_pulse_country = {
 		#delay = { days = 7 }
 		fund_lobbies_monthly_events
 	}
+
 }
 
 on_yearly_pulse_country = {
@@ -147,99 +132,6 @@ on_yearly_pulse_country = {
 				NOT = { has_global_variable = emperor_norton_spawn }	
 			}
 			trigger_event = { id = historical_agitators.9 }
-		}
-
-		# Achievement: For Twelve Years You Have Been Asking
-		if = {
-			limit = {
-				any_scope_building = {
-					NOR = {
-						is_building_group = bg_government
-						is_building_group = bg_construction
-						is_building_group = bg_military
-						is_building_group = bg_urban_facilities
-						is_building_group = bg_canals
-					}
-					level > 0
-					private_ownership_fraction = 1
-				}
-				NOT = {
-					has_variable = achievement_for_twelve_years_you_have_been_asking_timed
-					has_variable = achievement_for_twelve_years_you_have_been_asking
-				}
-			}
-			set_variable = {
-				name = achievement_for_twelve_years_you_have_been_asking_timed
-				years = 12
-			}
-			set_variable = {
-				name = achievement_for_twelve_years_you_have_been_asking
-			}
-		}
-		else_if = {
-			limit = {
-				any_scope_building = {
-					NOR = {
-						is_building_group = bg_government
-						is_building_group = bg_construction
-						is_building_group = bg_military
-						is_building_group = bg_urban_facilities
-						is_building_group = bg_canals
-					}
-					level > 0
-					private_ownership_fraction < 1
-				}
-				OR = {
-					has_variable = achievement_for_twelve_years_you_have_been_asking_timed
-					has_variable = achievement_for_twelve_years_you_have_been_asking
-				}
-			}
-			# RESET THE CLOCK
-
-			remove_variable = achievement_for_twelve_years_you_have_been_asking
-			remove_variable = achievement_for_twelve_years_you_have_been_asking_timed
-		}
-
-		# Achievement: Can't Touch This
-		if = {
-			limit = {
-				any_scope_building = {
-					level > 0
-					private_ownership_fraction = 0
-				}
-				NOT = {
-					has_variable = achievement_cant_touch_this_timed
-					has_variable = achievement_cant_touch_this
-				}
-			}
-			set_variable = {
-				name = achievement_cant_touch_this_timed
-				years = 12
-			}
-			set_variable = {
-				name = achievement_cant_touch_this
-			}
-		}
-		else_if = {
-			limit = {
-				any_scope_building = {
-					level > 0
-					private_ownership_fraction > 0
-					NOR = {
-						is_building_group = bg_subsistence_ranching
-						is_building_group = bg_subsistence_agriculture
-						is_building_group = bg_gold_fields
-					}
-				}
-				OR = {
-					has_variable = achievement_cant_touch_this_timed
-					has_variable = achievement_cant_touch_this
-				}
-			}
-			# RESET THE CLOCK
-
-			remove_variable = achievement_cant_touch_this
-			remove_variable = achievement_cant_touch_this_timed
 		}
 	}
 	on_actions = { # delay ensures events won't fire simultaneously
@@ -865,22 +757,6 @@ on_diplomatic_action_subject_increase_own_autonomy = {
 
 # Root = Diplomatic Action
 on_diplomats_expelled = {
-	effect = {
-		if = {
-			limit = {
-				scope:initiator = {
-					has_variable = we_are_not_amused_ach_possible
-				}
-				scope:target = {
-					c:FRA ?= this
-					"relations(scope:initiator)" >= -10 #Why? Because the on_action fires after the opinion malus from expel diplomats occurs.
-				}
-			}
-			scope:initiator = {
-				set_variable = achievement_we_are_not_amused
-			}
-		}
-	}
 }
 
 # Root = Diplomatic Pact
@@ -1333,20 +1209,6 @@ on_diplo_play_start_third_party = {
 
 # Root = Diplomatic Play
 on_diplo_play_back_down = {
-	effect = {
-		post_notification = diplo_play_back_down_notification
-		if = {
-			limit = {
-				scope:notification_target = {
-					is_player = yes
-				}
-				scope:actor = {
-					is_player = no
-				}
-			}
-			set_global_variable = achievement_mightier_than_the_sword
-		}
-	}
 }
 
 # Root = Diplomatic Play
@@ -1396,9 +1258,6 @@ on_diplo_play_subject_released_overlord = {
 # country = Country switched to
 # previous = Country switched from
 on_diplo_play_switch_sides = {
-	effect = {
-		set_global_variable = achievement_revo_needed
-	}
 }
 
 # Root = Diplomatic Play
@@ -1839,30 +1698,6 @@ on_law_checkpoint_stall = {
 # will work as expected, even though the enactment is _just_ about to end
 on_law_enactment_pass = {
 	effect = {
-		if = {
-			limit = {
-				is_player = yes
-				NOT = { has_variable = achievement_vox_populi_var }
-				any_political_movement = {
-					desired_law = ROOT.currently_enacting_law.type
-					any_supporting_character = {
-						has_role = agitator
-					}
-				}
-			}
-			set_variable = achievement_vox_populi_var
-		}
-		if = {
-			limit = {
-				is_player = yes
-				NOT = {
-					has_variable = achievement_amish_paradise_var
-				}
-				is_enacting_law = law_type:law_industry_banned
-				year < 1846
-			}
-			set_variable = achievement_amish_paradise_var
-		}
 		if = {
 			limit = {
 				has_journal_entry = je_pedro_republic
@@ -2451,24 +2286,6 @@ on_civil_war_won = {
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = achievement_revo_needed
-			}
-			set_global_variable = achievement_revolutionary
-		}
-		if = {
-			limit = {
-				has_journal_entry = je_meiji_restoration
-				has_variable = anti_shogunate_civil_war
-				has_variable = shogunate_var
-			}
-			change_variable = {
-				name = shogunate_var
-				add = 120
-			}
-			remove_variable = anti_shogunate_civil_war
-		}
-		if = {
-			limit = {
 				has_variable = anti_monarchist_revolution
 			}
 			if = {
@@ -2979,72 +2796,6 @@ on_wargoal_enforced = {
 				}
 				set_immune_to_revolutions = no
 			}
-		}
-        if = {
-        	limit = {
-        		owner = {
-	        		c:PNI ?= this
-	        		has_variable = ragamuffin_nation_var
-	        		NOT = { has_variable = won_ragamuffin_war_var }
-					owns_entire_state_region = STATE_RIO_GRANDE_DO_SUL
-					owns_entire_state_region = STATE_SANTA_CATARINA
-				}
-        	}
-        	owner = {
-        		set_variable = won_ragamuffin_war_var
-        		trigger_event = { id = brazilian_minors.1 days = 0 popup = yes }
-        	}
-        }
-        if = {
-        	limit = {
-        		owner = {
-        			game_date < 1850.1.1 # Just in case.
-        			NOT = {
-        				has_variable = cabanagem_defeat_var
-        				exists = c:PRA
-        			}
-	        		c:BRZ ?= this
-					owns_entire_state_region = STATE_PARA
-					any_scope_state = { state_region = s:STATE_AMAZONAS }
-				}
-        	}
-        	owner = {
-        		set_variable = cabanagem_defeat_var
-        		trigger_event = { id = brazilian_minors.2 days = 0 popup = yes }
-        	}
-        }
-        if = {
-        	limit = {
-        		owner = {
-        			game_date < 1850.1.1 # Just in case.
-        			NOT = {
-        				has_variable = ragamuffin_defeat_var
-        				exists = c:PNI
-        			}
-	        		c:BRZ ?= this
-					owns_entire_state_region = STATE_RIO_GRANDE_DO_SUL
-				}
-        	}
-        	owner = {
-        		set_variable = ragamuffin_defeat_var
-        		trigger_event = { id = brazilian_minors.3 days = 0 popup = yes }
-        	}
-        }
-        if = {
-        	limit = {
-        		owner = {
-	        		c:PER ?= this
-					NOT = {
-						any_scope_state = {
-							state_region = s:STATE_HERAT
-						}
-					}
-					has_modifier = modifier_herat_inspiration
-				}
-        	}
-        	owner = {
-        		remove_modifier = modifier_herat_inspiration
-        	}
         }
 	}
 }
@@ -3292,20 +3043,6 @@ on_political_movement_disbanded = {
 
 # Root = Colony state
 on_colony_created = {
-	effect = {
-		owner = {
-			if = {
-				limit = {
-					has_journal_entry = je_tutorial_colonize_state
-				}
-				root = {
-					set_variable = {
-						name = tut_colony_target
-					}
-				}
-			}
-		}
-	}
 }
 
 # Root = Strategic Region
@@ -3501,25 +3238,6 @@ on_repudiate_obligation = {
 
 # Root = Character
 on_character_recruitment = {
-	effect = {
-		owner = {
-			if = {
-				limit = {
-					has_journal_entry = je_tutorial_recruit_promote_commander
-				}
-				je:je_tutorial_recruit_promote_commander = {
-					set_variable = {
-						name = tut_commander_target
-						value = root
-					}
-					set_variable = {
-						name = tut_commander_target_initial_rank
-						value = root.commander_rank
-					}
-				}
-			}
-		}
-	}
 }
 
 # This on-action is triggered in cases where there is no overriding on_impose effect on a law type. In case an on_impose effect exists on the law type, this will NOT be executed.
@@ -3549,14 +3267,6 @@ on_impose_law = {
 # This on-action is triggered every time a Power Bloc's Power Struggle starts.
 # Root = Country that started the Power Struggle (other interesting scopes, such as Power Bloc leader, can be inferred from root)
 on_power_bloc_struggle_started = {
-	effect = {
-		if = {
-			limit = {
-				is_player = yes
-			}
-			set_variable = achievement_im_the_captain_now_challanger_var
-		}
-	}
 }
 
 # This on-action is triggered every time a Power Bloc's Power Struggle concludes (after the changes in leadership have been made).
@@ -3564,40 +3274,6 @@ on_power_bloc_struggle_started = {
 # scope:successful_contender = country that won the Power Struggle
 # scope:failed_contender = country that lost the Power Struggle
 on_power_bloc_struggle_ended = {
-	effect = {
-		if = { 
-			limit = { 
-				scope:successful_contender ?= {
-					has_variable = achievement_im_the_captain_now_challanger_var
-					is_player = yes
-					NOT = { has_variable = achievement_im_the_captain_now }
-				}
-			}
-			scope:successful_contender = {
-				set_variable = achievement_im_the_captain_now
-			}
-		}
-		if = {
-			limit = {
-				scope:successful_contender ?= {
-					has_variable = achievement_im_the_captain_now_challanger_var
-				}
-			}
-			scope:successful_contender = {
-				remove_variable = achievement_im_the_captain_now_challanger_var
-			}
-		}
-		if = {
-			limit = {
-				scope:failed_contender ?= {
-					has_variable = achievement_im_the_captain_now_challanger_var
-				}
-			}
-			scope:failed_contender = {
-				remove_variable = achievement_im_the_captain_now_challanger_var
-			}
-		}
-	}
 }
 
 # Root = invaded country

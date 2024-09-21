@@ -20,6 +20,7 @@
 
 @maplist_position = 580
 @spacerace_position = 620
+@organizations_position = 660
 
 
 @spacing_widget_2_position = 560
@@ -140,6 +141,12 @@ types information_panel_bar_types {
 					texture = "gfx/interface/main_hud/sidebar_skin_bg_4.dds"
 					size = { 50 40 }
 					position = {0 640}
+					using = hud_shiny_effect
+				}
+			icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_4.dds"
+					size = { 50 40 }
+					position = {0 680}
 					using = hud_shiny_effect
 				}
 		}
@@ -761,7 +768,7 @@ types information_panel_bar_types {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 					position = { -100 @spacerace_position }
 					blockoverride "onclick" {
-						onclick = "[GetScriptedGui('toggle_my_window').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						onclick = "[GetScriptedGui('toggle_space_race').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 					}
 				}
 
@@ -788,13 +795,50 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[MapListPanelManager.IsVisible]"
 						}
-						onclick = "[GetScriptedGui('toggle_my_window').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						onclick = "[GetScriptedGui('toggle_space_race').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
 					}
 				}
 
 				sidebar_tooltip_area_small = {
 					position = { 0 @spacerace_position }
 					tooltip = "Space Race"
+				}
+				### ORGANIZATIONS
+				sidebar_label_button_small = {
+					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+					position = { -100 @organizations_position }
+					blockoverride "onclick" {
+						onclick = "[GetScriptedGui('toggle_organization').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+					}
+				}
+
+				sidebar_label_text_small = {
+					position = { -100 @organizations_position }
+					text = "Organizations"
+				}
+
+				widget = {
+					position = { 0 @organizations_position }
+					using = clickthrough_blocker
+					using = sidebar_button_size_small
+					using = selected_sidepanel_animation_small
+					blockoverride "selected_visibility" {
+						visible = "[MapListPanelManager.IsVisible]"
+					}
+					sidepanel_button_small = {
+						blockoverride "icon" {
+							texture = "gfx/interface/main_hud/pol_btn.dds"
+						}
+						blockoverride "button_selected" {
+							visible = "[MapListPanelManager.IsVisible]"
+						}
+						onclick = "[GetScriptedGui('toggle_organization').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+					}
+				}
+
+				sidebar_tooltip_area_small = {
+					position = { 0 @organizations_position }
+					tooltip = "Organizations"
 				}
 			}
 		}

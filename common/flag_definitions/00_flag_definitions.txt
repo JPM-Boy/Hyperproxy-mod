@@ -2853,6 +2853,13 @@ ECU = { # Ecuador
 		}
 	}
 }
+EGE = { # Eastern Germany
+	flag_definition = {
+		coa = GER_ddr
+		subject_canton = GER_ddr
+		priority = 1000
+	}
+}
 
 EGY = { # Egypt
 	flag_definition = {
@@ -3317,6 +3324,13 @@ GBR = { # Great Britain / United Kingdom
 		priority = 22
 		trigger = { 
 			coa_def_absolute_monarchy_flag_trigger = yes
+			coa_def_controls_part_of_france = yes
+		}
+	}
+	flag_definition = {
+		coa = GBR_union_france
+		priority = 50
+		trigger = {
 			coa_def_controls_part_of_france = yes
 		}
 	}
@@ -8183,6 +8197,14 @@ SPA = { # Spain
 	}		
 }
 
+SRB = {
+	flag_definition = {
+		coa = SRB
+		subject_canton = SRB
+		priority = 1000
+	}
+}
+
 SRK = { # Surakarta
 	flag_definition = {
 		coa = SRK
@@ -8969,6 +8991,13 @@ URU = { # Uruguay
 			coa_def_american_ensign_trigger = yes
 		}
 	}	
+}
+
+VEL = {
+	flag_definition = {
+		coa = VEL
+		priority = 1000
+	}
 }
 
 VEN = { # Venice

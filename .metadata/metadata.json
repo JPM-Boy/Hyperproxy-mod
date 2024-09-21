@@ -31,7 +31,10 @@
       "common/history/global",
       "common/history/military_deployments",
       "common/on_actions",
-      "common/strategic_regions"
+      "common/strategic_regions",
+      "common/objectives",
+      "common/objective_subgoals",
+      "common/achievements"
     ]
   }
 }

@@ -1,13 +1,13 @@
-﻿toggle_my_window = {
+﻿toggle_space_race = {
     effect = {
         if = {
             limit = {
-                has_variable = show_my_window
+                has_variable = space_race
             }
-            remove_variable = show_my_window
+            remove_variable = space_race
         }
         else = {
-            set_variable = show_my_window
+            set_variable = space_race
         }
     }
 }

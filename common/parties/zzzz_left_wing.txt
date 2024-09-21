@@ -7,6 +7,27 @@ leftwing_party = {
 	name = {
 		first_valid = {
 			triggered_desc = {
+				desc = party_socialist_SPA
+				trigger = {
+					exists = c:SPA
+					THIS = c:SPA
+				}
+			}
+			triggered_desc = {
+				desc = party_socialist_RUS
+				trigger = {
+					exists = c:RUS
+					THIS = c:RUS
+				}
+			}
+			triggered_desc = {
+				desc = party_socialist_CAT
+				trigger = {
+					exists = c:CAT
+					THIS = c:CAT
+				}
+			}
+			triggered_desc = {
 				desc = party_socialist
 				trigger = {
 					always = yes
@@ -431,29 +452,16 @@ leftwing_party = {
 		}
 		if = { # IG will only join social democrats if a properly proletarian IG is in it
 			limit = {
-				NOR = {
-					is_interest_group_type = ig_new_leftism
-					is_interest_group_type = ig_reformist_communist
-					}
+				NOT = { is_interest_group_type = ig_new_leftism }
 				OR = {
 					NOT = { exists = owner.py:leftwing_party }
 					AND = {
 						exists = owner.py:leftwing_party
-						OR = {
-							owner = {
-								ig:ig_new_leftism = {
-									NOT = { is_member_of_party = owner.py:leftwing_party }
-								}
+						owner = {
+							ig:ig_new_leftism = {
+								NOT = { is_member_of_party = owner.py:leftwing_party }
 							}
-							owner = {
-								ig:ig_reformist_communist = {
-									NOT = { is_member_of_party = owner.py:leftwing_party }
-								}
-							}
-
 						}
-						
-
 					}
 				}
 			}

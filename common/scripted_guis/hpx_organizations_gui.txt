@@ -1,0 +1,13 @@
+﻿toggle_organization = {
+    effect = {
+        if = {
+            limit = {
+                has_variable = organization
+            }
+            remove_variable = organization
+        }
+        else = {
+            set_variable = organization
+        }
+    }
+}

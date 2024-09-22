@@ -43,10 +43,10 @@
 		}
 	}
 
+	######## UNITED NATIONS ########
 	every_country = {
 		set_variable = {
 			name = un_member
-			value = 0
 		}
 	}
 
@@ -59,18 +59,80 @@
 			target = THIS
 		}
 	}
+
 	random_country = {
 		set_global_variable = {
 			name = var_un_memberlist
 			value = 0
 		}
 	}
+
 	every_country = {
 		limit = {
 			has_variable = un_member
 		}
 		change_global_variable = {
 			name = var_un_memberlist
+			add = 1
+		}
+	}
+	######## EUROPEAN UNION ########
+
+	every_country = {
+		limit = {
+			has_variable = eu_headquarters_holder
+		}
+		add_to_global_variable_list = {
+			name = eu_headquarters_holder
+			target = THIS
+		}
+	}
+
+	random_country = {
+		set_global_variable = {
+			name = var_eu_memberlist
+			value = 0
+		}
+	}
+	
+	every_country = {
+		limit = {
+			has_variable = eu_member
+		}
+		change_global_variable = {
+			name = var_eu_memberlist
+			add = 1
+		}
+	}
+	######## IMF ########
+	every_country = {
+		set_variable = {
+			name = imf_member
+		}
+	}
+	every_country = {
+		limit = {
+			has_variable = imf_headquarters_holder
+		}
+		add_to_global_variable_list = {
+			name = imf_headquarters_holder
+			target = THIS
+		}
+	}
+
+	random_country = {
+		set_global_variable = {
+			name = var_imf_memberlist
+			value = 0
+		}
+	}
+	
+	every_country = {
+		limit = {
+			has_variable = imf_member
+		}
+		change_global_variable = {
+			name = var_imf_memberlist
 			add = 1
 		}
 	}

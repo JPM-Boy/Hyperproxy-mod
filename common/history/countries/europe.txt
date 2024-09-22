@@ -28,10 +28,53 @@
 	c:NET = {start_monarchy = yes}
 	c:SAR = {start_monarchy = yes}
 	c:CAT = {start_monarchy = yes}
+
 	c:GBR = {
 		set_variable = {
     		name = un_headquarters_holder
     		value = 0
+    	}
+    	set_variable = {
+    		name = eu_headquarters_holder
+    		value = 0
+    	}
+    	set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:BRI = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:BEL = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:NET = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:WGE = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:SAR = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:BAV = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
+	c:OCC = {
+		set_variable = {
+    		name = eu_member
     	}
 	}
 }

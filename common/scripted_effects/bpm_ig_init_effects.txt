@@ -195,6 +195,7 @@ bpm_initialize_neolib = {
 			add_ideology = ideology_mil_patriotic
 			add_ideology = ideology_fem_moderate_patriarchal
 			add_ideology = ideology_ban_liberal_anticommunist
+			add_ideology = ideology_mon_floating_exchange
 
 			# Vanilla
 			add_ideology = ideology_populist
@@ -229,6 +230,7 @@ bpm_initialize_libs = {
 			add_ideology = ideology_gov_liberal_republican
 			add_ideology = ideology_dop_radical_democrat
 			add_ideology = ideology_eco_laissez_faire
+			add_ideology = ideology_mon_floating_exchange
 			
 			# Vanilla
 			add_ideology = ideology_liberal
@@ -246,6 +248,7 @@ bpm_initialize_libs = {
 		}
 		ig:ig_classical_liberal ?= {
 			remove_ideology = ideology_nonexistent
+			add_ideology = ideology_mon_floating_exchange
 			add_ideology = ideology_gov_radical_republican
 			add_ideology = ideology_dop_radical_democrat
 			add_ideology = ideology_sta_minimal_state
@@ -419,6 +422,7 @@ bpm_initialize_new_leftism = {
 			add_ideology = ideology_wel_paternalistic_welfare
 			add_ideology = ideology_fem_benevolent_sexism
 			add_ideology = ideology_ban_conservative_supremacist
+			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla
 			add_ideology = ideology_reactionary
 			add_ideology = ideology_patriotic
@@ -455,6 +459,7 @@ bpm_initialize_reform_revolution = {
 			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_gender_egalitarian
 			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla ideologies
 			add_ideology = ideology_proletarian
 			add_ideology = ideology_egalitarian
@@ -481,6 +486,7 @@ bpm_initialize_reform_revolution = {
 			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_gender_egalitarian
 			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla ideologies
 			add_ideology = ideology_proletarian
 			add_ideology = ideology_egalitarian
@@ -516,6 +522,7 @@ bpm_initialize_socdem = {
 			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_gender_egalitarian
 			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_managed_float
 			# Vanilla ideologies
 			add_ideology = ideology_proletarian
 			add_ideology = ideology_egalitarian

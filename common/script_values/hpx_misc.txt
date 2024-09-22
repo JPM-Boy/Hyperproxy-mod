@@ -1,0 +1,20 @@
+﻿hpx_half_gdp = {
+	value = {
+	add = scope:half_gdp.gdp
+	divide = 2
+	}
+}
+
+hpx_third_gdp = {
+	value = {
+	add = scope:third_gdp.gdp
+	divide = 3
+	}
+}
+
+hpx_quarter_gdp = {
+	value = {
+	add = scope:quarter_gdp.gdp
+	divide = 4
+	}
+}

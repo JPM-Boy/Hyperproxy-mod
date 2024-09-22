@@ -1,0 +1,29 @@
+﻿# Monetary category
+
+ideology_mon_floating_exchange = {
+	icon = "gfx/interface/icons/ideology_icons/mon_ideology/floating_exchange.dds"
+	priority = 1000
+    lawgroup_monetary_policies = {
+		law_fixed_exchange_rate = disapprove
+		law_managed_float = neutral
+		law_floating_exchange_rate = approve
+	}
+}
+ideology_mon_managed_float = {
+	icon = "gfx/interface/icons/ideology_icons/mon_ideology/managed_float.dds"
+	priority = 1000
+    lawgroup_monetary_policies = {
+		law_fixed_exchange_rate = neutral
+		law_managed_float = approve
+		law_floating_exchange_rate = neutral
+	}
+}
+ideology_mon_fixed_exchange = {
+	icon = "gfx/interface/icons/ideology_icons/mon_ideology/fixed_exchange.dds"
+	priority = 1000
+    lawgroup_monetary_policies = {
+		law_fixed_exchange_rate = approve
+		law_managed_float = neutral
+		law_floating_exchange_rate = disapprove
+	}
+}

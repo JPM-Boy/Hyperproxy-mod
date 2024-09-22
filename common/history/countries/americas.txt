@@ -21,3 +21,9 @@
 	c:VNZ = {start_presidential = yes}
 	c:ECU = {start_presidential = yes}
 	c:BRZ = {start_presidential = yes}
+	c:USA = {
+		set_variable = {
+    		name = imf_headquarters_holder
+    		value = 0
+    	}
+	}

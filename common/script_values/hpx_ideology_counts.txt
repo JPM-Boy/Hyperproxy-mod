@@ -10,9 +10,3 @@ hpx_communist_nations_number = {
 	value = hpx_communist_nations
 	multiply = 10
 }
-
-global_population_sv = {
-	every_country = {
-		add = total_population
-	}
-}

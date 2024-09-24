@@ -20,6 +20,17 @@ SCA = {
 	capital = STATE_SVEALAND
 }
 
+WSL = {
+	color = { 190  122  189 }
+
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { sorb czech polish }
+	capital = STATE_GREATER_POLAND
+}
+
 NORV = {
 	color = { 209 0 0 }
 

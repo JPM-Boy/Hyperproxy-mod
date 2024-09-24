@@ -476,3 +476,11 @@ WARSAW_PACT: "Warsaw Pact"
 BOER_UNION: "Boer Union"
 ARAB_UNION: "Arab Union"
 EUROPEAN_DEFENCE_ORGANISATION: "European Defence Organization"
+
+# FORMABLES
+SCA: "Scandinavia"
+SCA_ADJ: "Scandinavian"
+NORV: "Norwegian Empire"
+NORV_ADJ: "Norwegian"
+WSL: "West Slavic State"
+WSL_ADJ: "West Slavic"

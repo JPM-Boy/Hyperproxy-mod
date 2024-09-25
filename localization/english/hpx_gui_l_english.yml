@@ -1,0 +1,10 @@
+﻿l_english:
+  ENTER: "Enter"
+  IMF: "International Monetary Fund"
+  IMF_DESC: "The International Monetary Fund (IMF) is a global organization where member countries can seek financial assistance during times of economic crisis or contribute to support the stability of the global economy. In this menu, you can request funds to help your nation recover from financial difficulties, or contribute to the IMF’s pool, strengthening your international influence and promoting global financial stability. Manage your country’s relationship with the IMF wisely, as both borrowing and lending can have long-term impacts on your economy."
+  IMF_CONTRIBUTION: "IMF Contribution"
+  IMF_DEBT: "IMF Debt"
+  CONTRIBUTE_1: "Contribute 100k Dollars"
+  CONTRIBUTE_10: "Contribute 1M Dollars"
+  ASK_1: "Loan 100k Dollars"
+  ASK_10: "Loan 1M Dollars"

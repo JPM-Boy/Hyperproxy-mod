@@ -41,3 +41,35 @@ NORV = {
 	cultures = { norwegian }
 	capital = EASTERN_NORWAY
 }
+
+VOLK = {
+	color = {143 89 51}
+	country_type = recognized
+	tier = empire
+	cultures = {boer}
+	capital = STATE_TRANSVAAL
+}
+
+EAFR = {
+	color = {30 200 140}
+	country_type = recognized
+	tier = empire
+	cultures = {lacustrine_bantu swahili}
+	capital = STATE_KENYA
+}
+
+CAFR = {
+	color = {30 200 80}
+	country_type = recognized
+	tier = empire
+	cultures = {equatorial_bantu hausa}
+	capital = STATE_SOUTH_CAMEROON
+}
+
+SAHR = {
+	color = {123 134 216}
+	country_type = recognized
+	tier = empire
+	cultures = {tuareg bidan}
+	capital = STATE_TIMBUKTU
+}

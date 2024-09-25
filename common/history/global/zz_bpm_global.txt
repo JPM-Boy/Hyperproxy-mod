@@ -135,5 +135,17 @@
 			name = var_imf_memberlist
 			add = 1
 		}
+		add_to_global_variable_list = {
+        	name = imf_contribution_list
+			target = THIS
+        }
+		set_variable = {
+			name = imf_contribution
+			value = 0
+		}
+		set_variable = {
+			name = imf_debt
+			value = 0
+		}
 	}
 }

@@ -15,6 +15,25 @@
 	bpm_cache_country_igs_radical_opposition_effect = yes
 	bpm_cache_country_variables_monthly_effect = yes
 	bpm_cache_country_variables_half_yearly_effect = yes
+	hpx_setup_country_variables = yes
+}
+
+hpx_setup_country_variables = {
+	set_variable = {
+		name = imf_member
+	}
+	set_variable = {
+		name = imf_debt
+		value = 0
+	}
+	set_variable = {
+		name = imf_contribution
+		value = 0
+	}
+	change_global_variable = {
+		name = var_imf_memberlist
+		add = 1
+	}
 }
 
 bpm_reload_country_ig_membership = {

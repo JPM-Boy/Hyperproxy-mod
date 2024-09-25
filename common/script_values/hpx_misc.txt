@@ -18,3 +18,19 @@ hpx_quarter_gdp = {
 	divide = 4
 	}
 }
+
+hpx_imf_contribution_total = {
+	value = {
+		every_country = {
+			add = var:imf_contribution
+		}
+	}
+}
+
+hpx_imf_debt_total = {
+	value = {
+		every_country = {
+			add = var:imf_debt
+		}
+	}
+}

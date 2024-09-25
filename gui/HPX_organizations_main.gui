@@ -1,4 +1,4 @@
-﻿@panel_width_minus_10 = 530         # used to be 450
+@panel_width_minus_10 = 530         # used to be 450
 @panel_width = 540                  # used to be 460
 @panel_width_half = 270             # used to be 230
 @panel_width_plus_10 = 550          # used to be 470
@@ -12,7 +12,7 @@ window = {
     layer = layer_ingame_menu
     name = "organization_panel"
     size = { 613 100% }
-    visible = "[GetPlayer.MakeScope.Var('organization').IsSet]"
+    visible = "[GetPlayer.MakeScope.Var('organization_panel').IsSet]"
     default_block_window = {
 
         #HEADER CLOSE
@@ -229,7 +229,6 @@ window = {
                             using = frame_small_mask
                             modify_texture = {
                                 texture = "gfx/interface/masks/fade_horizontal_center.dds"
-                                spriteType = Corneredstretched
                                 spriteborder = { 100 200 }
                                 blend_mode = alphamultiply
                             }
@@ -339,6 +338,19 @@ window = {
                                     }
                                 }
                             }
+                            widget = {
+                                size = { 250 20 }
+                                divider_clean = {
+                                    parentanchor = center
+                                }
+                            }
+                            button = {
+                                using = default_button_primary_action
+                                margin_top = 10
+                                size = { 100% 40 }
+                                onclick = "[GetScriptedGui('toggle_imf').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).End )]"
+                                text = ENTER
+                            }
                         }
                         ######## Background
                         background = {
@@ -348,7 +360,6 @@ window = {
                             using = frame_small_mask
                             modify_texture = {
                                 texture = "gfx/interface/masks/fade_horizontal_center.dds"
-                                spriteType = Corneredstretched
                                 spriteborder = { 100 200 }
                                 blend_mode = alphamultiply
                             }
@@ -467,7 +478,6 @@ window = {
                             using = frame_small_mask
                             modify_texture = {
                                 texture = "gfx/interface/masks/fade_horizontal_center.dds"
-                                spriteType = Corneredstretched
                                 spriteborder = { 100 200 }
                                 blend_mode = alphamultiply
                             }

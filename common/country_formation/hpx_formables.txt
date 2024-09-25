@@ -10,10 +10,35 @@ GER = {
 	}
 }
 
+VOLK = {
+	states = {
+		STATE_TRANSVAAL
+		STATE_BOTSWANA
+		STATE_ZULULAND
+		STATE_ZAMBEZI
+		STATE_LOURENCO_MARQUES
+		STATE_ZAMBEZIA
+		STATE_MOCAMBIQUE
+		STATE_VRYSTAAT
+		STATE_EASTERN_CAPE
+		STATE_CAPE_COLONY
+		STATE_NORTHERN_CAPE
+		STATE_NAMAQUALAND
+	}
+
+	required_states_fraction = 0.60
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
 WSL = {
 	use_culture_states = yes
 
-	required_states_fraction = 0.75
+	required_states_fraction = 0.55
 	
 	ai_will_do = { always = yes }
 
@@ -64,5 +89,63 @@ SCA = {
 				country_has_primary_culture = cu:icelandic
 			}
 		}
+	}
+}
+
+EAFR {
+	states = {
+		STATE_KENYA
+		STATE_RIFT_VALLEY
+		STATE_ZANZIBAR
+		STATE_LINDI
+		STATE_TANGANYIKA
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
+CAFR {
+	states = {
+		STATE_HAUSALAND
+		STATE_EAST_HAUSALAND
+		STATE_NIGERIA
+		STATE_YORUBA_STATES
+		STATE_BENIN
+		STATE_NIGER_DELTA
+		STATE_NORTH_CAMEROON
+		STATE_SOUTH_CAMEROON
+		STATE_UBANGI_SHARI
+	}
+
+	required_states_fraction = 0.60
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
+SAHR {
+	states = {
+		STATE_TIMBUKTU
+		STATE_INNER_MAURITANIA
+		STATE_MAURITANIA
+		STATE_NIGER
+		STATE_CHAD
+	}
+
+	required_states_fraction = 0.60
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
 	}
 }

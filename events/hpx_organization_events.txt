@@ -15,7 +15,7 @@ hpx_organization.imf.1 = { # IMF
 		scaled_debt >= 0.75
 		has_variable = imf_member
 	}
-	duration = 0
+	duration = 7
 
 	immediate = {
 		ROOT = {
@@ -35,8 +35,20 @@ hpx_organization.imf.1 = { # IMF
 		set_variable = {
 			name = requested_imf_aid
 		}
+		set_variable = {
+			name = local_third_debt
+			value = hpx_third_gdp
+		}
+		change_variable = {
+			name = local_third_debt
+			divide = 1000000
+		}
 		add_treasury = hpx_third_gdp
-
+		change_variable = {
+			name = imf_debt
+			add = var:local_third_debt
+		}
+		remove_variable = local_third_debt
 	}
 	option = {
 		name = hpx_organization.imf.1.b

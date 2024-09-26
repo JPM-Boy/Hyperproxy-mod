@@ -10,6 +10,41 @@ GER = {
 	}
 }
 
+ROM = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.51
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
+GOCC = {
+	states = {
+		STATE_ARAGON
+		STATE_CATALONIA
+		STATE_VALENCIA
+		STATE_BALEARES
+		STATE_LANGUEDOC
+		STATE_AQUITAINE
+		STATE_GUYENNE
+		STATE_PROVENCE
+		STATE_AUVERGNE_LIMOUSIN
+		STATE_RHONE
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
 VOLK = {
 	states = {
 		STATE_TRANSVAAL
@@ -26,7 +61,7 @@ VOLK = {
 		STATE_NAMAQUALAND
 	}
 
-	required_states_fraction = 0.60
+	required_states_fraction = 0.51
 	
 	ai_will_do = { always = yes }
 
@@ -142,6 +177,52 @@ SAHR {
 	}
 
 	required_states_fraction = 0.60
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
+MSRQ {
+	states = {
+		STATE_UPPER_EGYPT
+		STATE_MIDDLE_EGYPT
+		STATE_EGYPTIAN_DESERT
+		STATE_LOWER_EGYPT
+		STATE_LIBYA
+		STATE_TRIPOLI
+		STATE_MATRUH
+		STATE_LIBYAN_DESERT
+		STATE_DONGOLA
+		STATE_SINAI
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
+ASIA = {
+	states = {
+		STATE_NORTH_BENGAL
+		STATE_SOUTH_BENGAL
+		STATE_ASSAM
+		STATE_KACHIN
+		STATE_PEGU
+		STATE_BURMA
+		STATE_SHAN_STATES
+		STATE_YUNNAN
+		STATE_TONKIN
+		STATE_LAOS
+	}
+
+	required_states_fraction = 0.55
 	
 	ai_will_do = { always = yes }
 

@@ -45,6 +45,9 @@ great_assimilation_policy = {
 assimilation_policy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
     state_assimilation_mult = 5
-    state_radicals_from_discrimination_mult = 2.5
-    
+    state_radicals_from_discrimination_mult = 2.5 
+}
+imf_loan = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_prestige_mult = -0.35
 }

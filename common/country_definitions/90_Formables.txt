@@ -73,3 +73,31 @@ SAHR = {
 	cultures = {tuareg bidan}
 	capital = STATE_TIMBUKTU
 }
+ROM = {
+	color = {123 134 0}
+	country_type = recognized
+	tier = empire
+	cultures = {romanian}
+	capital = STATE_WALLACHIA
+}
+GOCC = {
+	color = {178 229 112}
+	country_type = recognized
+	tier = empire
+	cultures = {catalan occitan}
+	capital = STATE_CATALONIA
+}
+MSRQ = {
+	color = {155 123 66}
+	country_type = recognized
+	tier = empire
+	cultures = {misri maghrebi}
+	capital = STATE_LOWER_EGYPT
+}
+ASIA = {
+	color = {226 83 86}
+	country_type = recognized
+	tier = empire
+	cultures = {bengali burmese assamese vietnamese laotian}
+	capital = STATE_BURMA
+}

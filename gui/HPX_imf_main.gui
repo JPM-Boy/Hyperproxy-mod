@@ -154,7 +154,7 @@ window = {
                             raw_text = "[Scope.GetCountry.GetNameNoFlag]"
                         }
                         blockoverride "rightside1_info" {
-                            raw_text = "$[Scope.GetVariable('imf_contribution').GetValue|D]M #!#!"
+                            raw_text = "$[Scope.GetVariable('imf_contribution').GetValue|D]M"
                         }
                         blockoverride "rightside2_info" {
                             raw_text = ""

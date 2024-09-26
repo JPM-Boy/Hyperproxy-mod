@@ -346,7 +346,6 @@ window = {
                             }
                             button = {
                                 using = default_button_primary_action
-                                margin_top = 10
                                 size = { 100% 40 }
                                 onclick = "[GetScriptedGui('toggle_imf').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).End )]"
                                 text = ENTER

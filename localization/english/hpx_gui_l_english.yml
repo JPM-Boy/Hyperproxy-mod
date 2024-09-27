@@ -8,3 +8,5 @@
   CONTRIBUTE_10: "Contribute 1M Dollars"
   ASK_1: "Loan 100k Dollars"
   ASK_10: "Loan 1M Dollars"
+  ASK_1_TOOLTIP: "[Country.GetModifier('imf_loan_small')]"
+  ASK_10_TOOLTIP: "[Country.GetModifier('imf_loan')]"

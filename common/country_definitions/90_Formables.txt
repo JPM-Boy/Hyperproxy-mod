@@ -54,7 +54,7 @@ EAFR = {
 	color = {30 200 140}
 	country_type = recognized
 	tier = empire
-	cultures = {lacustrine_bantu swahili}
+	cultures = {lacustrine_bantu swahili kikuyu}
 	capital = STATE_KENYA
 }
 
@@ -100,4 +100,12 @@ ASIA = {
 	tier = empire
 	cultures = {bengali burmese assamese vietnamese laotian}
 	capital = STATE_BURMA
+}
+
+IBE = {
+	color = {226 83 86}
+	country_type = recognized
+	tier = empire
+	cultures = {spanish portuguese galician andalusian}
+	capital = STATE_TOLEDO
 }

@@ -22,6 +22,18 @@ ROM = {
 	}
 }
 
+IBE = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.66
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		always = yes	
+	}
+}
+
 GOCC = {
 	states = {
 		STATE_ARAGON

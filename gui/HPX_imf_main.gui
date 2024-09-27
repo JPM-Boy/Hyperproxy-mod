@@ -65,12 +65,14 @@ window = {
                     size = { 250 40 }
                     text = "CONTRIBUTE_10"
                     onclick = "[GetScriptedGui('contribute_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                    tooltip = "CONTRIBUTE_10"
                 }
                 button = {
                     using = default_button_primary_action
                     size = { 250 40 }
                     text = "CONTRIBUTE_1"
                     onclick = "[GetScriptedGui('contribute_100K_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                    tooltip = "CONTRIBUTE_1"
                 }
                 }
                 flowcontainer = {
@@ -84,12 +86,14 @@ window = {
                     size = { 250 40 }
                     text = "ASK_10"
                     onclick = "[GetScriptedGui('ask_funds_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                    tooltip = "ASK_10_TOOLTIP"
                 }
                 button = {
                     using = default_button_primary_action
                     size = { 250 40 }
                     text = "ASK_1"
                     onclick = "[GetScriptedGui('ask_funds_100K_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                    tooltip = "ASK_1_TOOLTIP"
                 }
                 }
                 divider_decorative = {}

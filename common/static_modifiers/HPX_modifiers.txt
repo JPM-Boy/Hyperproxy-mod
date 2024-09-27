@@ -49,5 +49,11 @@ assimilation_policy = {
 }
 imf_loan = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-    country_prestige_mult = -0.35
+    country_minting_mult = -0.05
+    country_prestige_mult = -0.05
+}
+imf_loan_small = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_minting_mult = -0.02
+    country_prestige_mult = -0.02
 }

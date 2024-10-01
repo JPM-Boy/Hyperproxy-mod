@@ -1,12 +1,125 @@
-﻿je_hpx_usa_bretton_woods = {
+﻿je_hpx_usa_the_great_shift = {
 	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
 		c:USA = root
+		NOT = {has_variable = great_shift_completed}
 	}
 
 	possible = {
 		c:USA = root
+	}
+
+	immediate = {
+		set_variable = {
+			name = enacted_laws
+			value = 0 
+		}
+	}
+
+	should_be_pinned_by_default = yes
+
+	on_complete = {
+		add_modifier = {
+			name = the_great_shift
+			years = 20
+		}
+	}
+
+	complete = {
+		scope:journal_entry = { is_goal_complete = yes }
+	}
+
+	progressbar = yes
+
+	current_value = {
+		value = var:enacted_laws
+	}
+
+	goal_add_value = {
+		value = var:enacted_laws
+		add = 5
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			set_variable = {
+				name = enacted_laws
+				value = 0
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_multicultural
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_federated
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_womens_suffrage
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_worker_protections
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_parliamentary_republic
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_all_labor_unions_allowed
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_public_schools
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_public_health_insurance
+				}
+				change_variable = {
+					name = enacted_laws
+					add = 1
+				}
+			}
+		}
 	}
 }

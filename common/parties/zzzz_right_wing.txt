@@ -6,6 +6,13 @@ rightwing_party = {
 	name = {
 		first_valid = {
 			triggered_desc = {
+				desc = party_usa_republicans
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+				}
+			}
+			triggered_desc = {
 				desc = party_conservative
 				trigger = {
 					always = yes

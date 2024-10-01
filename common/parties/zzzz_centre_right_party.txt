@@ -6,6 +6,13 @@ centre_right_party = {
 	name = {
 		first_valid = {
 			triggered_desc = {
+				desc = party_usa_democrats
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+				}
+			}
+			triggered_desc = {
 				desc = party_liberal
 				trigger = {
 					always = yes

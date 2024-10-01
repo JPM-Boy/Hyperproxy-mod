@@ -1,20 +1,4 @@
 ﻿l_english:
-je_hpx_usa_overton_window: "Ideology of the United States"
-
-far_left_usa: "#b #r Far-Left - Socialist#!#!"
-left_wing_usa: "#b #gold Left-Wing - Liberal#!#!"
-center_usa: "#b #green Centrist#!#!"
-right_wing_usa: "#b #light_green Right-Wing - Conservative#!#!"
-far_right_usa: "#b #blue Far-Right - Reactionary#!#!"
-je_hpx_usa_overton_window_reason: "As the Cold War progresses, the population of the United States of America is undergoing a transformation into the new political currents.\n\nIn this Journal Entry, you can see the current main ideology of the #yellow American Populace.#!\n\nIf the Ideology is $far_left_usa$, you gain access to:\n #red    • Red Dawn in America\n    • An Unholy Alliance#!\nIf the Ideology is $left_wing_usa$, you gain access to:\n #O    • An Unholy Alliance\n    • Crusades against Communism\n    • The Great Shift#!\nIf the Ideology is $center_usa$, you gain access to: #green \n     • The Great Shift\n     • Crusades against Communism#!\nIf the Ideology is $right_wing_usa$, you gain access to: #light_green \n     • Crusades against Communism\n     • A New America#!\nIf the Ideology is $far_right_usa$, you gain access to: #blue \n     • Crusades against Communism\n     • A New America#!"
-
-USA_OVERTON_BAR: "Ideological Influence"
-USA_OVERTON_BAR_LEFT: "Socialist Power"
-USA_OVERTON_BAR_RIGHT: "Conservative Power"
-
-USA_CRUSADE_TEXT: "Remaining Socialist Countries:#b #r  [ROOT.Var('communist_number').GetValue]"
-je_hpx_usa_crusades: "Crusades against Communism"
-je_hpx_usa_crusades_reason: "As the United States prevents Socialism from appearing, the new diplomatic doctrine is the #yellow Crusades against Communism.#!\n\nIn this JE you will be able to launch Interventions against Communist countries."
-USA_intervention_button: "Start an Intervention"
-
-hpx_USA_event.1.t: "[SCOPE.sCountry('commie_country').GetName]"
+je_hpx_usa_the_great_shift: "The Great Shift"
+je_hpx_usa_the_great_shift_reason: "The #O Great Shift#! (1972-2000) was a transformative era in the United States, where #O civil rights#!, #O worker protections#!, and #O social democracy#! flourished. The #O Democratic Party#! split, with the original Democrats continuing as the #O Democratic Party#!, while the '#O New Democrats#!' evolved into the #O Liberty Party#!, creating a #O three-party system#! that fundamentally reshaped American politics.\n\nUnder the leadership of #O Fred Harris#!, the U.S. prioritized #O economic equality#!, introducing major reforms in wealth redistribution, education, and public welfare. Simultaneously, #O Sonia Johnson#! propelled the #O feminist movement#! to new heights, leading to the ratification of the #O Equal Rights Amendment (ERA)#!. The nation also adopted a #O non-interventionist foreign policy#!, focusing on peace and diplomacy.\n\nBy 2000, the #O Great Shift#! had left a lasting legacy, cementing progressive ideals at the core of a newly diversified political landscape and a more equitable society.\n\nList of #blue Progressive Laws#!:\n- [GetLawType('law_federated').GetName]\n- [GetLawType('law_worker_protections').GetName]\n- [GetLawType('law_womens_suffrage').GetName]\n- [GetLawType('law_public_schools').GetName]\n- [GetLawType('law_parliamentary_republic').GetName]\n- [GetLawType('law_multicultural').GetName]\n- [GetLawType('law_public_health_insurance').GetName]\n- [GetLawType('law_all_labor_unions_allowed').GetName]"
+je_hpx_usa_the_great_shift_goal: "At least five #blue Progressive Laws#! have passed."

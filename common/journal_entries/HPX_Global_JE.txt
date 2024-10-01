@@ -1,0 +1,31 @@
+﻿# World Tension
+
+je_hpx_world_tension = {
+	icon = "gfx\interface\icons\topbar/influence_icon.dds"
+	group = je_hpx_world_tension
+
+	is_shown_when_inactive = {
+		always = yes
+	}
+	
+	possible = {
+		always = yes
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = rightwing_extremism
+			value = 50
+		}
+		set_global_variable = {
+			name = leftwing_extremism
+			value = 50
+		}
+	}
+
+	scripted_progress_bar = leftwing_extremism
+	scripted_progress_bar = rightwing_extremism
+	should_be_pinned_by_default = yes
+
+	weight = 1000
+}

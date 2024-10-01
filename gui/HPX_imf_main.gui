@@ -32,190 +32,218 @@ window = {
 
         blockoverride "scrollarea_content"
         {
-            flowcontainer = {
-                using = default_content_fade
-                using = default_list_position
-                direction = vertical
-            
-                textbox = {
-                    autoresize = yes
-                    text = IMF_DESC
-
-                    multiline = yes
-                    using = default_list_position
-                    default_format = "#bjtwhite"
-                    max_width = 550
-
-                    align = nobaseline
-    
-                    margin = { 15 15 }
-
-                    background = {
-                        using = entry_bg
-                    }
+            scrollbox = {
+                scrollbar_vertical = {
+                    using = scrollbar_vertical
                 }
-                divider_decorative = {}
-                flowcontainer = {
-                using = default_content_fade
-                using = default_list_position
-                direction = horizontal
-                margin_top = 10
-                button = {
-                    using = default_button_primary_action
-                    size = { 250 40 }
-                    text = "CONTRIBUTE_10"
-                    onclick = "[GetScriptedGui('contribute_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-                    tooltip = "CONTRIBUTE_10"
-                }
-                button = {
-                    using = default_button_primary_action
-                    size = { 250 40 }
-                    text = "CONTRIBUTE_1"
-                    onclick = "[GetScriptedGui('contribute_100K_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-                    tooltip = "CONTRIBUTE_1"
-                }
-                }
-                flowcontainer = {
-                using = default_content_fade
-                using = default_list_position
-                direction = horizontal
-                margin_top = 10
-                margin_bottom = 10
-                button = {
-                    using = default_button_primary_action
-                    size = { 250 40 }
-                    text = "ASK_10"
-                    onclick = "[GetScriptedGui('ask_funds_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-                    tooltip = "ASK_10_TOOLTIP"
-                }
-                button = {
-                    using = default_button_primary_action
-                    size = { 250 40 }
-                    text = "ASK_1"
-                    onclick = "[GetScriptedGui('ask_funds_100K_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-                    tooltip = "ASK_1_TOOLTIP"
-                }
-                }
-                divider_decorative = {}
 
-                flowcontainer = {
-                using = default_content_fade
-                using = default_list_position
-                direction = horizontal
-                    textbox = {
-                        autoresize = no
-                        text = "Total Funds: $[GetPlayer.MakeScope.ScriptValue('hpx_imf_contribution_total')]M"
+                name = "imf_scroll_area" 
+                layoutpolicy_vertical = expanding
+                position {-50 0}
+                size = { 590 1100 }
+                blockoverride "scrollbox_content" {
+                    flowcontainer = {
+                                using = default_content_fade
+                                using = default_list_position
+                                direction = vertical
+                                
+                                textbox = {
+                                    autoresize = yes
+                                    text = IMF_DESC
 
-                        multiline = yes
-                        default_format = "#bjtwhite"
-                        size = { 267 60 }
+                                    multiline = yes
+                                    using = default_list_position
+                                    default_format = "#bjtwhite"
+                                    max_width = 580
 
-                        align = center|nobaseline
-    
-                        margin = { 15 15 }
+                                    align = center
+                            
+                                    margin = { 15 15 }
 
-                        background = {
-                            using = entry_bg
-                        }
-                    }
-                    textbox = {
-                        autoresize = no
-                        text = "Total Debt: $[GetPlayer.MakeScope.ScriptValue('hpx_imf_debt_total')]M"
+                                    background = {
+                                        using = entry_bg
+                                    }
+                                }
+                                divider_decorative = {}
+                                flowcontainer = {
+                                using = default_content_fade
+                                using = default_list_position
+                                direction = horizontal
+                                margin_top = 10
+                                    button = {
+                                        using = default_button_primary_action
+                                        size = { 250 40 }
+                                        text = "CONTRIBUTE_10"
+                                        onclick = "[GetScriptedGui('contribute_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                        tooltip = "CONTRIBUTE_10"
+                                    }
+                                    button = {
+                                        using = default_button_primary_action
+                                        size = { 250 40 }
+                                        text = "CONTRIBUTE_1"
+                                        onclick = "[GetScriptedGui('contribute_100K_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                        tooltip = "CONTRIBUTE_1"
+                                    }
+                                }
+                                flowcontainer = {
+                                using = default_content_fade
+                                using = default_list_position
+                                direction = horizontal
+                                margin_top = 10
+                                margin_bottom = 10
+                                button = {
+                                    using = default_button_primary_action
+                                    size = { 250 40 }
+                                    text = "ASK_10"
+                                    onclick = "[GetScriptedGui('ask_funds_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                    tooltip = "ASK_10_TOOLTIP"
+                                }
+                                button = {
+                                    using = default_button_primary_action
+                                    size = { 250 40 }
+                                    text = "ASK_1"
+                                    onclick = "[GetScriptedGui('ask_funds_100K_imf').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                    tooltip = "ASK_1_TOOLTIP"
+                                }
+                                }
+                                divider_decorative = {}
+                                flowcontainer = {
+                                    using = default_content_fade
+                                    using = default_list_position
+                                    direction = vertical
+                                    margin_top = 10
+                                    margin_bottom = 10
+                                    button = {
+                                        using = default_button_primary_action
+                                        size = { 300 40 }
+                                        text = "DEVELOPMENT_LOAN"
+                                        onclick = "[GetScriptedGui('ask_development_loan').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                        tooltip = "DEVELOPMENT_LOAN_TOOLTIP"
+                                    }
+                                }
+                                divider_decorative = {}
+                                flowcontainer = {
+                                using = default_content_fade
+                                using = default_list_position
+                                margin_top = 10
+                                direction = horizontal
+                                    textbox = {
+                                        autoresize = no
+                                        text = "Total Funds: $[GetPlayer.MakeScope.ScriptValue('hpx_imf_contribution_total')]M"
 
-                        multiline = yes
-                        default_format = "#bjtwhite"
-                        size = { 267 60 }
+                                        multiline = yes
+                                        default_format = "#bjtwhite"
+                                        size = { 267 60 }
 
-                        align = center|nobaseline
-    
-                        margin = { 15 15 }
+                                        align = center|nobaseline
+                            
+                                        margin = { 15 15 }
 
-                        background = {
-                            using = entry_bg
-                        }
-                    }
-                }
-                divider_decorative = {}
-                flowcontainer = {
-                    using = default_content_fade
-                    using = default_list_position
-                    direction = horizontal
-                    chart = {
-                        blockoverride "datamodel" {
-                            datamodel = "[GetGlobalList('imf_contribution_list_ordered')]"
-                        }
-                        blockoverride "heading" {
-                            text = "IMF_CONTRIBUTION"
-                        }
-                        blockoverride "pieslice" {
-                            value = "[Scope.GetVariable('imf_contribution').GetValue]"
-                        }
-                        blockoverride "color" {
-                            color = "[Scope.GetCountry.GetMapColor]"
-                        }
+                                        background = {
+                                            using = entry_bg
+                                        }
+                                    }
+                                    textbox = {
+                                        autoresize = no
+                                        text = "Total Debt: $[GetPlayer.MakeScope.ScriptValue('hpx_imf_debt_total')]M"
 
-                        blockoverride "leftside_info" {
-                            raw_text = "[Scope.GetCountry.GetNameNoFlag]"
-                        }
-                        blockoverride "rightside1_info" {
-                            raw_text = "$[Scope.GetVariable('imf_contribution').GetValue|D]M"
-                        }
-                        blockoverride "rightside2_info" {
-                            raw_text = ""
-                        }
-                        blockoverride "pie_item_goto_button" {
-                            button = {
-                                using = clean_button
-                                size = { 100% 100% }
-                            }
-                        }
-                        blockoverride "maxverticalslots" {
-                            maxverticalslots = 10
-                        }
-                        blockoverride "tooltip" {
-                            datacontext = "[GetGlobalList('imf_contribution_list_ordered')]"
-                            tooltip = "[Scope.GetCountry.GetName], $[Scope.GetVariable('imf_contribution').GetValue]M"
-                        }
-                    }
-                    chart = {
-                        blockoverride "datamodel" {
-                            datamodel = "[GetGlobalList('imf_debtors_list_ordered')]"
-                        }
-                        blockoverride "heading" {
-                            text = "IMF_DEBT"
-                        }
-                        blockoverride "pieslice" {
-                            value = "[Scope.GetVariable('imf_debt').GetValue]"
-                        }
-                        blockoverride "color" {
-                            color = "[Scope.GetCountry.GetMapColor]"
-                        }
+                                        multiline = yes
+                                        default_format = "#bjtwhite"
+                                        size = { 267 60 }
 
-                        blockoverride "leftside_info" {
-                            raw_text = "[Scope.GetCountry.GetNameNoFlag]"
-                        }
-                        blockoverride "rightside1_info" {
-                            raw_text = "$[Scope.GetVariable('imf_debt').GetValue|D]M #!#!"
-                        }
-                        blockoverride "rightside2_info" {
-                            raw_text = ""
-                        }
-                        blockoverride "pie_item_goto_button" {
-                            button = {
-                                using = clean_button
-                                size = { 100% 100% }
-                            }
-                        }
-                        blockoverride "maxverticalslots" {
-                            maxverticalslots = 10
-                        }
-                        blockoverride "tooltip" {
-                            datacontext = "[GetGlobalList('imf_debtors_list_ordered')]"
-                            tooltip = "[Scope.GetCountry.GetName], $[Scope.GetVariable('imf_debt').GetValue]M "
-                        }
+                                        align = center|nobaseline
+                            
+                                        margin = { 15 15 }
+
+                                        background = {
+                                            using = entry_bg
+                                        }
+                                    }
+                                }
+                                divider_decorative = {}
+                                flowcontainer = {
+                                    using = default_content_fade
+                                    using = default_list_position
+                                    direction = horizontal
+                                    chart = {
+                                        blockoverride "datamodel" {
+                                            datamodel = "[GetGlobalList('imf_contribution_list_ordered')]"
+                                        }
+                                        blockoverride "heading" {
+                                            text = "IMF_CONTRIBUTION"
+                                        }
+                                        blockoverride "pieslice" {
+                                            value = "[Scope.GetVariable('imf_contribution').GetValue]"
+                                        }
+                                        blockoverride "color" {
+                                            color = "[Scope.GetCountry.GetMapColor]"
+                                        }
+
+                                        blockoverride "leftside_info" {
+                                            raw_text = "[Scope.GetCountry.GetNameNoFlag]"
+                                        }
+                                        blockoverride "rightside1_info" {
+                                            raw_text = "$[Scope.GetVariable('imf_contribution').GetValue|D]M"
+                                        }
+                                        blockoverride "rightside2_info" {
+                                            raw_text = ""
+                                        }
+                                        blockoverride "pie_item_goto_button" {
+                                            button = {
+                                                using = clean_button
+                                                size = { 100% 100% }
+                                            }
+                                        }
+                                        blockoverride "maxverticalslots" {
+                                            maxverticalslots = 10
+                                        }
+                                        blockoverride "tooltip" {
+                                            datacontext = "[GetGlobalList('imf_contribution_list_ordered')]"
+                                            tooltip = "[Scope.GetCountry.GetName], $[Scope.GetVariable('imf_contribution').GetValue]M"
+                                        }
+                                    }
+                                    chart = {
+                                        blockoverride "datamodel" {
+                                            datamodel = "[GetGlobalList('imf_debtors_list_ordered')]"
+                                        }
+                                        blockoverride "heading" {
+                                            text = "IMF_DEBT"
+                                        }
+                                        blockoverride "pieslice" {
+                                            value = "[Scope.GetVariable('imf_debt').GetValue]"
+                                        }
+                                        blockoverride "color" {
+                                            color = "[Scope.GetCountry.GetMapColor]"
+                                        }
+
+                                        blockoverride "leftside_info" {
+                                            raw_text = "[Scope.GetCountry.GetNameNoFlag]"
+                                        }
+                                        blockoverride "rightside1_info" {
+                                            raw_text = "$[Scope.GetVariable('imf_debt').GetValue|D]M #!#!"
+                                        }
+                                        blockoverride "rightside2_info" {
+                                            raw_text = ""
+                                        }
+                                        blockoverride "pie_item_goto_button" {
+                                            button = {
+                                                using = clean_button
+                                                size = { 100% 100% }
+                                            }
+                                        }
+                                        blockoverride "maxverticalslots" {
+                                            maxverticalslots = 10
+                                        }
+                                        blockoverride "tooltip" {
+                                            datacontext = "[GetGlobalList('imf_debtors_list_ordered')]"
+                                            tooltip = "[Scope.GetCountry.GetName], $[Scope.GetVariable('imf_debt').GetValue]M "
+                                        }
+                                    }
+                                }
                     }
                 }
             }
+            
         }
     }
 }

@@ -146,7 +146,7 @@ bpm_socialist_utils.5 = {
 			}
 			change_variable = {
 				name = bpm_je_socialist_electoralism
-				add = 15 # A bit of initial optimism
+				add = 50 # A bit of initial optimism
 			}
 		}
 	}

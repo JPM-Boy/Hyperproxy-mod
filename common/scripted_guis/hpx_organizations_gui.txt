@@ -206,5 +206,21 @@ ask_funds_100K_imf = {
     ai_chance = {base = 33}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
     ai_frequency = 3          # Named value determining how frequently the AI will evaluate this SGUI (in months)
     is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
-
+}
+ask_development_loan = {
+    scope = country
+    effect = {
+        if = {
+            limit = {
+                infamy <= 10
+                NOT = {has_modifier = imf_development_loan}
+            }
+            add_modifier = {name = imf_development_loan years = 3}
+            is_shown = { always = yes }
+            ai_is_valid = { always = yes }   # Whether this SGUI is available to the AI or not (default false)
+            ai_chance = {base = 15}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
+            ai_frequency = 12          # Named value determining how frequently the AI will evaluate this SGUI (in months)
+            is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
+        }
+    }
 }

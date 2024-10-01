@@ -170,7 +170,7 @@ CAFR {
 		STATE_UBANGI_SHARI
 	}
 
-	required_states_fraction = 0.60
+	required_states_fraction = 0.75
 	
 	ai_will_do = { always = yes }
 

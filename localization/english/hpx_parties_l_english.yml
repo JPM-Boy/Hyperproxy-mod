@@ -4,3 +4,8 @@
   party_socialist_SPA: "PSOE"
   party_socialist_RUS: "Bolshevik Party (Right)"
   party_socialist_CAT: "PSUC"
+
+  # CENTER-LEFT
+  party_socdem_usa: "Democratic Party (Left)"
+  # CENTER-RIGHT
+  party_usa_democrats: "Democratic Party"

@@ -323,6 +323,38 @@
 			}
 		}
 	}
+	s:STATE_URMIA = {
+		region_state:PER = {
+			create_pop = {
+				culture = kurdish
+				size = 600000
+			}
+		}
+	}
+	s:STATE_SEMNAN = {
+		region_state:PER = {
+			create_pop = {
+				culture = persian
+				size = 150000
+			}
+		}
+	}
+	s:STATE_KERMAN = {
+		region_state:PER = {
+			create_pop = {
+				culture = persian
+				size = 150000
+			}
+		}
+	}
+	s:STATE_PERSIAN_KURDISTAN = {
+		region_state:PER = {
+			create_pop = {
+				culture = kurdish
+				size = 600000
+			}
+		}
+	}
 	s:STATE_TABRIZ = {
 		region_state:PER = {
 			create_pop = {

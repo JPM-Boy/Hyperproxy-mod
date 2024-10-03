@@ -140,5 +140,10 @@ law_worker_protections = {
 			}
 			add = 750
 		}
+
+		if = {
+			limit = { has_journal_entry = je_hpx_usa_the_great_shift}
+			add = 1000
+		}
 	}
 }

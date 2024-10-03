@@ -8,47 +8,47 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ILE_DE_FRANCE
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_PICARDY
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_NORMANDY
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CHAMPAGNE
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MAINE_ANJOU
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ORLEANS
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BURGUNDY
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LORRAINE
-				count = 5
+				count = 12
 			}
 		}
 		create_military_formation = {
@@ -59,47 +59,47 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HOME_COUNTIES
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_EAST_ANGLIA
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LANCASHIRE
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_YORKSHIRE
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOWLANDS
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HIGHLANDS
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WALES
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MIDLANDS
-				count = 5
+				count = 12
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WEST_COUNTRY
-				count = 5
+				count = 12
 			}
 		}
 	}
@@ -112,32 +112,68 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MOSCOW
-				count = 15
+				count = 25
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_KIEV
-				count = 10
+				count = 20
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_NOVGOROD
-				count = 10
+				count = 15
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MINSK
-				count = 10
+				count = 15
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_RIGA
-				count = 10
+				count = 15
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ROSTOV
-				count = 10
+				count = 15
+			}
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+			name = "Russian Army II"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ORYOL
+				count = 25
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ELIZAVETPOL
+				count = 20
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_STAVROPOL
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YAROSLAVL
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_PSKOV
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_RYAZAN
+				count = 15
 			}
 		}
 	}

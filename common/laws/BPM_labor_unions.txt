@@ -57,6 +57,11 @@ law_all_labor_unions_allowed = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
+
+		if = {
+			limit = { has_journal_entry = je_hpx_usa_the_great_shift}
+			add = 1000
+		}
 	}
 	possible_political_movements = {
 			law_socialist_labor_unions

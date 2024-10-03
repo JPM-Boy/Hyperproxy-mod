@@ -220,6 +220,19 @@ window = {
                                     }
                                 }
                             }
+                            widget = {
+                                size = { 250 20 }
+                                divider_clean = {
+                                    parentanchor = center
+                                }
+                            }
+                            #button = {
+                            #    using = default_button_primary_action
+                            #    size = { 100% 40 }
+                            #    onclick = "[GetScriptedGui('toggle_un').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).End )]"
+                            #    text = ENTER
+                            #}
+
                         }
                         ######## Background
                         background = {

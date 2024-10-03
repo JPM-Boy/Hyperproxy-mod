@@ -48,6 +48,10 @@
 		set_variable = {
 			name = un_member
 		}
+		add_to_global_variable_list = {
+			name = un_memberlist
+			target = THIS
+		}
 	}
 
 	every_country = {

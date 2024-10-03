@@ -332,7 +332,7 @@
 		}
 	}
 	s:STATE_SEMNAN = {
-		region_state:PER = {
+		region_state:RUS = {
 			create_pop = {
 				culture = persian
 				size = 150000

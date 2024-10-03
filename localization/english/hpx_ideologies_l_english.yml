@@ -2,7 +2,9 @@
 ideology_mon_floating_exchange: "Floating Monetary Policy"
 ideology_mon_fixed_exchange: "Fixed Monetary Policy"
 ideology_mon_managed_float: "Managed Monetary Policy"
+ideology_mon_placeholder: "No Monetary Stance"
 
 ideology_mon_floating_exchange_desc: "Currency value is determined by market forces, providing flexibility but risking volatility in trade and economic stability."
 ideology_mon_fixed_exchange_desc: "The government pegs its currency to a stable foreign currency, ensuring trade stability but limiting flexibility in handling economic crises."
 ideology_mon_managed_float_desc: "The currency floats in the market, with occasional government intervention to stabilize it during economic shocks."
+ideology_mon_placeholder_desc: ""

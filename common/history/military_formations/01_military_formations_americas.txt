@@ -1,143 +1,125 @@
 ﻿MILITARY_FORMATIONS = {
-	c:GBR = {
+	c:USA = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_france
-			name = "French Army"
+			hq_region = sr:region_pacific_coast
+			name = "Pacific Army"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ILE_DE_FRANCE
+				state_region = s:STATE_CALIFORNIA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_PICARDY
+				state_region = s:STATE_OREGON
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NORMANDY
+				state_region = s:STATE_WASHINGTON
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				state_region = s:STATE_BAJA_CALIFORNIA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CHAMPAGNE
+				state_region = s:STATE_UTAH
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MAINE_ANJOU
+				state_region = s:STATE_NEVADA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ORLEANS
+				state_region = s:STATE_ARIZONA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BURGUNDY
+				state_region = s:STATE_MONTANA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LORRAINE
+				state_region = s:STATE_IDAHO
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WYOMING
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NEW_MEXICO
 				count = 5
 			}
 		}
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_england
-			name = "British Army"
+			hq_region = sr:region_dixie
+			name = "Southern Army"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HOME_COUNTIES
+				state_region = s:STATE_LOUISIANA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_EAST_ANGLIA
+				state_region = s:STATE_FLORIDA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LANCASHIRE
+				state_region = s:STATE_TEXAS
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_YORKSHIRE
+				state_region = s:STATE_GEORGIA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LOWLANDS
+				state_region = s:STATE_SOUTH_CAROLINA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HIGHLANDS
+				state_region = s:STATE_NORTH_CAROLINA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WALES
+				state_region = s:STATE_ALABAMA
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MIDLANDS
+				state_region = s:STATE_ARKANSAS
 				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WEST_COUNTRY
+				state_region = s:STATE_TENNESSEE
 				count = 5
 			}
-		}
-	}
-	c:RUS = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_russia
-			name = "Russian Army"
-
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOSCOW
-				count = 15
+				state_region = s:STATE_OKLAHOMA
+				count = 5
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KIEV
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NOVGOROD
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MINSK
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_RIGA
-				count = 10
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ROSTOV
-				count = 10
+				state_region = s:STATE_KENTUCKY
+				count = 5
 			}
 		}
 	}

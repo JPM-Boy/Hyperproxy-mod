@@ -12,3 +12,9 @@
   ASK_10_TOOLTIP: "By asking for this type of loan you get: \n[GetStaticModifier('imf_loan').GetDesc]\nMultiplied by your total debt to the IMF."
   DEVELOPMENT_LOAN: "Ask for a Development Loan"
   DEVELOPMENT_LOAN_TOOLTIP: "By asking for this type of loan you get: \n[GetStaticModifier('imf_development_loan').GetDesc]"
+
+  UN: "United Nations"
+  UN_DESC: "The #O United Nations#! (UN) is an international organization established in 1945 to promote #O peace#!, #O security#!, and global cooperation. It serves as a platform for countries to address #O conflicts#!, #O human rights#!, #O development#!, and #O environmental#! issues, aiming to maintain global stability and uphold international law."
+  ABSTENTION: "Abstention"
+  START_VOTE: "Start a Vote"
+  NO_RESOLUTION: "No Resolution being voted"

@@ -322,6 +322,7 @@ bpm_initialize_cons = {
 			add_ideology = ideology_rel_secularist
 			add_ideology = ideology_mil_patriotic
 			add_ideology = ideology_ban_conservative_supremacist
+			add_ideology = ideology_mon_managed_float
 
 			every_scope_character = {
 				limit = {

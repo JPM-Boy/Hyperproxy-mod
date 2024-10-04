@@ -27,12 +27,9 @@
 			member = c:WGE
 			member = c:NET
 			member = c:BEL
-			member = c:TUR
 			member = c:ITA
-			member = c:SAR
 			member = c:SPA
 			member = c:BRI
-			member = c:POR
 			member = c:LIE
 			member = c:CAT
 			member = c:BAV
@@ -81,9 +78,8 @@
 
 			founding_date = 1958.2.1
 
-			identity = identity_trade_league
-			principle = principle_external_trade_1
-
+			identity = identity_ideological_union
+			principle = principle_creative_legislature_1
 			member = c:ARA
 			member = c:TRI
 			member = c:IRQ

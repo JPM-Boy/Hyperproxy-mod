@@ -1,8 +1,8 @@
-objective_test = {
-	enabled_background = "gfx/interface/icons/objective_icons/coldwar.dds"
-	icon = "gfx/event_pictures/americaya.dds"
+objective_west = {
+	enabled_background = "gfx/interface/icons/objective_icons/west.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
 	
-	recommended_tags = { NOR WAL }
+	recommended_tags = { USA JAP TPG MEX}
 	
 	objective_subgoals = {
 
@@ -13,13 +13,11 @@ objective_test = {
 	}
 }
 
-
-
-objective_west = {
-	enabled_background = "gfx/interface/icons/objective_icons/west.dds"
-	icon = "gfx/event_pictures/americaya.dds"
+objective_euro = {
+	enabled_background = "gfx/interface/icons/objective_icons/euro.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/EU.dds"
 	
-	recommended_tags = { USA GBR WGE JAP}
+	recommended_tags = { GBR ITA WGE CAT}
 	
 	objective_subgoals = {
 
@@ -32,9 +30,9 @@ objective_west = {
 
 objective_east = {
 	enabled_background = "gfx/interface/icons/objective_icons/east.dds"
-	icon = "gfx/event_pictures/americaya.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
 	
-	recommended_tags = { RUS CHI EGE YUG }
+	recommended_tags = { RUS CHI EGE PTG }
 	
 	objective_subgoals = {
 

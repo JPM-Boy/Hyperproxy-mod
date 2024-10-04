@@ -30,6 +30,7 @@ hpx_organization.imf.1 = { # IMF
 			AND = {
 				has_variable = imf_member
 				NOT = {has_variable = requested_imf_aid}
+				hpx_imf_contribution_total > hpx_imf_debt_total
 			}
 		}
 		set_variable = {

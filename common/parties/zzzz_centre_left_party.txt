@@ -3,7 +3,7 @@
 # Available for Trade Unions pre-Socialism
 
 centre_left_party = {
-	color = hsv{ 0.98 0.9 0.8 }
+	color = hsv{ 0.98 0.7 0.8 }
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -308,7 +308,6 @@ centre_left_party = {
 		always = yes
 	}
 	available_for_interest_group = {
-		owner = { has_technology_researched = labor_movement }
 		bpm_ig_enabled = yes
 		NOT = { bpm_is_party_banned = { PARTY = centre_left_party } }
 		owner = {
@@ -334,59 +333,39 @@ centre_left_party = {
 			bpm_ig_is_upper_institutional = no
 			NOT = { leader = { has_ideology = ideology:ideology_moderate } }
 		}
-		OR = {
-			is_interest_group_type = ig_leftpop
-			is_interest_group_type = ig_socdem
-			is_interest_group_type = ig_prog
-			is_interest_group_type = ig_ecologist
-			is_interest_group_type = ig_refsoc
-			is_interest_group_type = ig_liberal
-			is_interest_group_type = ig_trade_unions
-
-			bpm_ig_is_institutional = yes
-		}
 	}
 	join_weight = {
 		value = {
-			value = -2
+			value = 0
 			desc = "base_value"
 		}
 		if = {
 			limit = {
+				is_interest_group_type = ig_classical_liberal
+			}
+			add = {	
+				value = -30
+				desc = "hpx_hating_left"
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_ecologist
+			}
+			add = {	
+				value = 10
+				desc = "hpx_green_party"
+			}
+		}
+		if = {
+			limit = {
 				var:bpm_current_party ?= {
-					is_party_type = social_democrat_party
+					is_party_type = centre_left_party
 					has_party_member = prev
 				}
 			}
 			add = {
 				value = bpm_party_loyalty_values
-			}
-		}
-		if = { # no socialist party before the first international
-			limit = {
-				NOT = { has_global_variable = first_intl_chain_complete_var }
-			}
-			add = {
-				value = -25
-				desc = "bpm_before_first_intl"
-			}
-		}
-		if = { # revsocs won't cooperate if disunited
-			limit = {
-				owner = {
-					OR = {
-						has_global_variable = global_socialists_disunited_var
-						has_variable = local_socialists_disunited_var
-					}
-				}
-				OR = {
-					bpm_ig_is_revolutionary_socialist = yes
-					leader = { bpm_leader_is_communist = yes }
-				}
-			}
-			add = {
-				value = -25 
-				desc = "bpm_disunited_socialists"
 			}
 		}
 		if = { # socialists like socialism
@@ -452,26 +431,8 @@ centre_left_party = {
 				desc = "bpm_from_illegal_trade_unions"
 			}
 		}
-		if = { # powerful social democrats love social democracy
-			limit = {
-				is_powerful = yes
-				OR = {
-					leader = { bpm_leader_is_party_socialist = yes }
-					bpm_ig_is_party_socialist = yes
-				}
-			}
-			add = {	
-				value = 10
-				desc = "bpm_from_powerful_party_socialist"
-			}
-		}
 		if = { # anarchist
 			limit = {
-				OR = {
-					has_global_variable = first_intl_disunited_var
-					has_global_variable = global_socialists_disunited_var
-					has_variable = local_socialists_disunited_var
-				}
 				OR = {
 					bpm_ig_is_anarchist = yes
 					leader = { bpm_leader_is_anarchist = yes }
@@ -739,20 +700,14 @@ centre_left_party = {
 		}
 		if = { # IG will only join social democrats if a properly proletarian IG is in it
 			limit = {
-				bpm_ig_is_proletarian_socialist = no
-				bpm_ig_is_socialist_trade_unions = no
-				# leader = { bpm_leader_is_proletarian_socialist = no }
-				owner = {
-					OR = {
-						NOT = { exists = py:social_democrat_party }
-						py:social_democrat_party = {
-							NOT = {
-								any_member = {
-									OR = {
-										bpm_ig_is_proletarian_socialist = yes
-										bpm_ig_is_socialist_trade_unions = yes
-									}
-								}
+				NOT = { is_interest_group_type = ig_socdem }
+				OR = {
+					NOT = { exists = owner.py:centre_left_party }
+					AND = {
+						exists = owner.py:centre_left_party
+						owner = {
+							ig:ig_socdem = {
+								NOT = { is_member_of_party = owner.py:centre_left_party }
 							}
 						}
 					}

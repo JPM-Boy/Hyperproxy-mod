@@ -150,8 +150,18 @@ bpm_remove_all_ban_ideologies = {
 	}
 }
 
+bpm_remove_all_mon_ideologies = {
+	hidden_effect = {
+		remove_ideology = ideology_mon_placeholder
+		remove_ideology = ideology_mon_floating_exchange
+		remove_ideology = ideology_mon_managed_float
+		remove_ideology = ideology_mon_fixed_exchange
+	}
+}
+
 bpm_remove_all_placeholder_ideologies = {
 	hidden_effect = {
+		remove_ideology = ideology_mon_placeholder
 		remove_ideology = ideology_eco_placeholder
 		remove_ideology = ideology_gov_placeholder
 		remove_ideology = ideology_dop_placeholder
@@ -167,6 +177,7 @@ bpm_remove_all_placeholder_ideologies = {
 
 bpm_remove_all_ideologies = {
 	hidden_effect = {
+		bpm_remove_all_mon_ideologies = yes
 		bpm_remove_all_eco_ideologies = yes
 		bpm_remove_all_gov_ideologies = yes
 		bpm_remove_all_dop_ideologies = yes
@@ -315,6 +326,7 @@ bpm_re_add_sta_ideology = {
 		add_ideology = ideology_sta_placeholder
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_minimal_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_decentralized_state }
+		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_institutional_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_powerful_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_progressive_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_security_state }
@@ -340,9 +352,19 @@ bpm_re_add_ban_ideology = {
 	}
 }
 
+bpm_re_add_mon_ideology = {
+	hidden_effect = {
+		add_ideology = ideology_mon_placeholder
+		bpm_re_add_ideology = { TYPE = mon IDEOLOGY = ideology_mon_floating_exchange }
+		bpm_re_add_ideology = { TYPE = mon IDEOLOGY = ideology_mon_managed_float }
+		bpm_re_add_ideology = { TYPE = mon IDEOLOGY = ideology_mon_fixed_exchange }
+	}
+}
+
 bpm_reorder_ideologies = {
 	hidden_effect = {
 		bpm_remove_all_placeholder_ideologies = yes
+		bpm_re_add_mon_ideology = yes
 		bpm_re_add_gov_ideology = yes
 		bpm_re_add_dop_ideology = yes
 		bpm_re_add_sta_ideology = yes

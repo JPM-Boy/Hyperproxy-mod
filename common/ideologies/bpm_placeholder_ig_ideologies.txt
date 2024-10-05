@@ -37,3 +37,6 @@ ideology_sta_placeholder = {
 ideology_wel_placeholder = {
 	icon = "gfx/interface/icons/ideology_icons/wel_ideology/placeholder.dds"
 }
+ideology_mon_placeholder = {
+	icon = "gfx/interface/icons/ideology_icons/ban_ideology/placeholder.dds"
+}

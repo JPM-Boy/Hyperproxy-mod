@@ -17,10 +17,6 @@ law_ethnostate = {
 	cultural_acceptance_rule = {
 		is_primary_culture_of = scope:country
 	}
-
-	unlocking_technologies = {
-		nationalism
-	}
 	
 	modifier = {
 		country_authority_add = 200
@@ -229,10 +225,6 @@ law_multicultural = {
 
 	unlocking_laws = {
 		law_slavery_banned
-	}
-	
-	unlocking_technologies = {
-		human_rights
 	}
 	
 	on_enact = {

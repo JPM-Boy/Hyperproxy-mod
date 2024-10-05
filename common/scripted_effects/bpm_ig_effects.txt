@@ -20,7 +20,7 @@
 bpm_make_igs_pro_serfdom = {
 	every_interest_group = {
 		limit = {
-			NOT = { is_interest_group_type = ig_conservatives }
+			NOT = { is_interest_group_type = ig_cons }
 			OR = {
 				bpm_ig_is_traditionalist = yes
 				is_interest_group_type = ig_landowners
@@ -35,7 +35,7 @@ bpm_make_igs_pro_serfdom = {
 		add_ideology = ideology_eco_serf_economy
 		bpm_reorder_ideologies = yes
 	}
-	ig:ig_conservatives = {
+	ig:ig_cons = {
 		bpm_remove_all_eco_ideologies = yes
 		add_ideology = ideology_eco_conservative_agrarian
 		bpm_reorder_ideologies = yes
@@ -80,14 +80,6 @@ bpm_make_igs_modern_agrarian = {
 		}
 		remove_ideology = ideology_eco_traditional_agrarian
 		add_ideology = ideology_eco_conservative_agrarian
-		bpm_reorder_ideologies = yes
-	}
-	every_interest_group = {
-		limit = {
-			has_ideology = ideology:ideology_mil_aristocratic_militarist
-		}
-		remove_ideology = ideology_mil_aristocratic_militarist
-		add_ideology = ideology_mil_plutocratic_militarist
 		bpm_reorder_ideologies = yes
 	}
 }

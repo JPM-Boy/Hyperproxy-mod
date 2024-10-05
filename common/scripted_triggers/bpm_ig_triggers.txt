@@ -1,4 +1,4 @@
-﻿# PROLETARIAN IGS
+# PROLETARIAN IGS
 
 bpm_ig_is_revolutionary_socialist = {
 	custom_tooltip = {
@@ -52,7 +52,7 @@ bpm_ig_is_party_socialist = {
 	custom_tooltip = {
 		text = "tooltip_bpm_ig_is_party_socialist"
 		OR = {
-			is_interest_group_type = ig_refsoc
+			is_interest_group_type = ig_reformist_communist
 			bpm_ig_is_revolutionary_socialist = yes
 			bpm_ig_is_reformist_socialist = yes
 		}
@@ -243,7 +243,7 @@ bpm_ig_is_liberal = {
 			bpm_ig_is_radical_liberal = yes
 			bpm_ig_is_moderate_liberal = yes
 			is_interest_group_type = ig_neolib
-			is_interest_group_type = ig_libertarian
+			is_interest_group_type = ig_classical_liberal
 		}
 	}
 }
@@ -324,7 +324,7 @@ bpm_ig_is_liberal_conservative = {
 		text = "tooltip_bpm_ig_is_liberal_conservative"
 		OR = {
 			is_interest_group_type = ig_neolib
-			is_interest_group_type = ig_libertarian
+			is_interest_group_type = ig_classical_liberal
 			AND = {
 				is_interest_group_type = ig_cons
 				has_ideology = ideology:ideology_wel_paternalistic_welfare
@@ -494,7 +494,7 @@ bpm_ig_is_institutional = {
 			is_interest_group_type = ig_industrialists
 			is_interest_group_type = ig_intelligentsia
 			is_interest_group_type = ig_landowners
-			is_interest_group_type = ig_urbanite
+			is_interest_group_type = ig_petty_bourgeoisie
 			is_interest_group_type = ig_rural_folk
 			is_interest_group_type = ig_minority
 		}
@@ -507,7 +507,7 @@ bpm_ig_is_urban_institutional = {
 		OR = {
 			is_interest_group_type = ig_industrialists
 			is_interest_group_type = ig_intelligentsia
-			is_interest_group_type = ig_urbanite
+			is_interest_group_type = ig_petty_bourgeoisie
 			is_interest_group_type = ig_minority
 		}
 	}
@@ -529,7 +529,7 @@ bpm_ig_is_state_institutional = {
 		text = "tooltip_bpm_ig_is_state_institutional"
 		OR = {
 			is_interest_group_type = ig_armed_forces
-			is_interest_group_type = ig_urbanite
+			is_interest_group_type = ig_petty_bourgeoisie
 			AND = {
 				is_interest_group_type = ig_devout
 				owner = { has_law = law_type:law_theocracy }
@@ -559,7 +559,7 @@ bpm_ig_is_middle_institutional = {
 			is_interest_group_type = ig_armed_forces
 			is_interest_group_type = ig_devout
 			is_interest_group_type = ig_intelligentsia
-			is_interest_group_type = ig_urbanite
+			is_interest_group_type = ig_petty_bourgeoisie
 		}
 	}
 }

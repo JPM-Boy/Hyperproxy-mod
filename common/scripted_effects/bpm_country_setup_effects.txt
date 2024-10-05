@@ -15,6 +15,25 @@
 	bpm_cache_country_igs_radical_opposition_effect = yes
 	bpm_cache_country_variables_monthly_effect = yes
 	bpm_cache_country_variables_half_yearly_effect = yes
+	hpx_setup_country_variables = yes
+}
+
+hpx_setup_country_variables = {
+	set_variable = {
+		name = imf_member
+	}
+	set_variable = {
+		name = imf_debt
+		value = 0
+	}
+	set_variable = {
+		name = imf_contribution
+		value = 0
+	}
+	change_global_variable = {
+		name = var_imf_memberlist
+		add = 1
+	}
 }
 
 bpm_reload_country_ig_membership = {
@@ -368,7 +387,7 @@ bpm_setup_basic_igs = {
 		limit = {
 			OR = {
 				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_libertarian ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 			has_technology_researched = democracy
 		}
@@ -391,8 +410,8 @@ bpm_setup_basic_igs = {
 	if = {
 		limit = {
 			OR = {
-				ig:ig_revsoc?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_refsoc?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_orthodox_communist?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_reformist_communist?= { has_ideology = ideology:ideology_nonexistent }
 			}
 			has_technology_researched = democracy
 		}
@@ -415,5 +434,87 @@ bpm_setup_basic_igs = {
 		}
 		bpm_initialize_trade_unions = yes
 	}
+	if = {
+		limit = {
+			ig:ig_socdem ?= { has_ideology = ideology:ideology_nonexistent}
+			has_technology_researched = democracy
+		}
+		bpm_initialize_socdem = yes
+	}
+	if = {
+		limit = {
+			ig:ig_new_leftism ?= { has_ideology = ideology:ideology_nonexistent}
+			has_technology_researched = democracy
+		}
+		bpm_initialize_new_leftism = yes
+	}
+	
 
+}
+# Do not use in bpm_setup_country effect, but directly in on_action due to scope
+bpm_copy_variables_to_new_country = {
+	if = {
+		limit = { has_variable = local_neolib_split_var }
+		scope:target = {
+			set_variable = local_neolib_split_var
+		}
+	}
+	if = {
+		limit = { has_variable = local_prog_split_var }
+		scope:target = {
+			set_variable = local_prog_split_var
+		}
+	}
+	if = {
+		limit = { has_variable = local_socdem_split_var }
+		scope:target = {
+			set_variable = local_socdem_split_var
+		}
+	}
+	if = {
+		limit = { has_variable = local_libertarian_split_var }
+		scope:target = {
+			set_variable = local_libertarian_split_var
+		}
+	}
+
+}
+
+bpm_copy_variable_from_civil_war_origin = {
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_neolib_split_var
+			}
+		}
+		set_variable = local_neolib_split_var
+	}
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_prog_split_var
+			}
+		}
+		set_variable = local_prog_split_var
+	}
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_socdem_split_var
+			}
+		}
+		set_variable = local_socdem_split_var
+	}
+	if = {
+		limit = {
+			exists = civil_war_origin_country
+			civil_war_origin_country = {
+				has_variable = local_libertarian_split_var
+			}
+		}
+		set_variable = local_libertarian_split_var
+	}
 }

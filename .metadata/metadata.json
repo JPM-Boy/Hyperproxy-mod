@@ -1,7 +1,7 @@
 {
   "name" : "Hyperproxy-Mod",
   "id" : "",
-  "version" : "0.2.0",
+  "version" : "0.3.2",
   "supported_game_version" : "1.7.*",
   "picture" : "thumbnail.png",
   "short_description" : "",
@@ -20,7 +20,6 @@
       "common/history/states",
       "common/journal_entries",
       "common/parties",
-      "common/laws",
       "common/history/population",
       "common/dynamic_country_names",
       "common/dynamic_country_map_colors",
@@ -28,7 +27,14 @@
       "common/country_formation",
       "common/decisions",
       "common/history/military_formations",
-      "common/history/diplomatic_plays"
+      "common/history/diplomatic_plays",
+      "common/history/global",
+      "common/history/military_deployments",
+      "common/on_actions",
+      "common/strategic_regions",
+      "common/objectives",
+      "common/objective_subgoals",
+      "common/achievements"
     ]
   }
 }

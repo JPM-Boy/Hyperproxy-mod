@@ -1,0 +1,75 @@
+namespace = hpx_organization
+hpx_organization.imf.1 = { # IMF
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/unspecific_politicians_arguing.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	title = hpx_organization.imf.1.t
+	desc = hpx_organization.imf.1.d
+	flavor = hpx_organization.imf.1.f
+	trigger = {
+		has_law = law_type:law_fixed_exchange_rate
+		scaled_debt >= 0.75
+		has_variable = imf_member
+	}
+	duration = 7
+
+	immediate = {
+		ROOT = {
+			save_scope_as = third_gdp
+		}
+	}
+	option = {
+		name = hpx_organization.imf.1.a
+		default_option = yes
+		show_as_unavailable = {always = yes}
+		trigger = {
+			AND = {
+				has_variable = imf_member
+				NOT = {has_variable = requested_imf_aid}
+				hpx_imf_contribution_total > hpx_imf_debt_total
+			}
+		}
+		set_variable = {
+			name = requested_imf_aid
+		}
+		set_variable = {
+			name = local_third_debt
+			value = hpx_third_gdp
+		}
+		change_variable = {
+			name = local_third_debt
+			divide = 1000000
+		}
+		add_treasury = hpx_third_gdp
+		change_variable = {
+			name = imf_debt
+			add = var:local_third_debt
+		}
+		remove_variable = local_third_debt
+	}
+	option = {
+		name = hpx_organization.imf.1.b
+	}
+	after = {
+		bpm_refresh_parties = yes
+	}
+}
+hpx_organization.un.1 = { # UN
+	type = country_event
+	placement = root
+	event_image = { video = "gfx/event_pictures/unspecific_politicians_arguing.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	title = hpx_organization.un.1.t
+	desc = hpx_organization.un.1.d
+	flavor = hpx_organization.un.1.f
+
+	option = {
+		name = hpx_organization.un.1.a
+	}
+}

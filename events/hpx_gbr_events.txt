@@ -97,7 +97,7 @@ hpx_GBR_event.2 = { # French Communists vs Hippies
             base = 30
         }
 
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			add_modifier = {
 				name = french_hippie_communism
 				months = 3

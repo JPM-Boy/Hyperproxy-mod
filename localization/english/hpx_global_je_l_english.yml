@@ -1,0 +1,5 @@
+﻿l_english:
+LEFTWING_EXTREMISM: "Left-Wing Extremism"
+RIGHTWING_EXTREMISM: "Right-Wing Extremism"
+LEFTWING_EXTREMISM_DESC: "Left-Wing Extremism: [GetGlobalVariable('leftwing_extremism').GetValue|1]#!"
+RIGHTWING_EXTREMISM_DESC: "Right-Wing Extremism: [GetGlobalVariable('rightwing_extremism').GetValue|1]#!"

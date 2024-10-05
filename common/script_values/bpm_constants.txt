@@ -1,5 +1,5 @@
 ﻿bpm_law_sways_per_phase_value = {
-	value = 30
+	value = 60
 }
 
 bpm_law_sway_assert_authority_effect_value = {

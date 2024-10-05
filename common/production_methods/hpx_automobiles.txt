@@ -27,7 +27,7 @@ pm_automobiles_1_1 = {
 }
 # Compact Cars
 pm_automobiles_1_2 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -58,7 +58,7 @@ pm_automobiles_1_2 = {
 }
 # Modern Cars
 pm_automobiles_1_3 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -89,7 +89,7 @@ pm_automobiles_1_3 = {
 }
 # Advanced Cars
 pm_automobiles_1_4 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_4_TAN.dds"
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 10
@@ -125,7 +125,7 @@ pm_automobiles_2_1 = {
 }
 #Sports Cars
 pm_automobiles_2_2 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -143,7 +143,7 @@ pm_automobiles_2_2 = {
 }
 #Supercars
 pm_automobiles_2_3 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -166,7 +166,7 @@ pm_automobiles_2_3 = {
 }
 #Hypercars
 pm_automobiles_2_4 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_4_TAN.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -192,7 +192,7 @@ pm_automobiles_3_1 = {
 }
 #Electronic Driving Assistance
 pm_automobiles_3_2 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -214,7 +214,7 @@ pm_automobiles_3_2 = {
 }
 #Computer Display
 pm_automobiles_3_3 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_3_TAN.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -234,7 +234,7 @@ pm_automobiles_3_3 = {
 }
 #Automated Driving
 pm_automobiles_3_4 = {
-	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
+	texture = "gfx/interface/icons/production_method_icons/PM_4_TAN.dds"
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods

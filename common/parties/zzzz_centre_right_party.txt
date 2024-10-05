@@ -6,6 +6,13 @@ centre_right_party = {
 	name = {
 		first_valid = {
 			triggered_desc = {
+				desc = party_usa_democrats
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+				}
+			}
+			triggered_desc = {
 				desc = party_liberal
 				trigger = {
 					always = yes
@@ -45,15 +52,6 @@ centre_right_party = {
 		}
 		NOT = { # unreformed conservatives should not join the liberals
 			bpm_ig_is_non_paternal_conservative = yes 
-		}
-		OR = {
-			is_interest_group_type = ig_ecologist
-			is_interest_group_type = ig_rightpop
-			is_interest_group_type = ig_prog
-			is_interest_group_type = ig_liberal
-			is_interest_group_type = ig_neolib
-			is_interest_group_type = ig_cons
-			bpm_ig_is_institutional = yes
 		}
 	}
 	join_weight = {
@@ -499,7 +497,7 @@ centre_right_party = {
 			limit = {
 				OR = {
 					AND = {
-						is_interest_group_type = ig_libertarian
+						is_interest_group_type = ig_classical_liberal
 						NOT = { leader = { bpm_leader_is_progressive_liberal = yes } }
 					}
 					AND = {
@@ -521,7 +519,7 @@ centre_right_party = {
 		}
 		if = {
 			limit = {
-				is_interest_group_type = ig_libertarian
+				is_interest_group_type = ig_classical_liberal
 				owner = {
 					any_interest_group = {
 						has_ideology = ideology:ideology_wel_paternalistic_welfare

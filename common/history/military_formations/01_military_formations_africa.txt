@@ -1,0 +1,25 @@
+﻿MILITARY_FORMATIONS = {
+	c:EGY = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_nile_basin
+			name = "Egyptian Army"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOWER_EGYPT
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MIDDLE_EGYPT
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_UPPER_EGYPT
+				count = 12
+			}
+		}
+	}
+}

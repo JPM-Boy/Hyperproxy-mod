@@ -9,7 +9,7 @@
 	}
 	
 	enable = {
-		game_date > 2000.1.1
+		always = yes
 	}
 	
 	on_enable = {

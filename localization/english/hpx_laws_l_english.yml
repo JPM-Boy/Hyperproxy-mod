@@ -6,3 +6,12 @@ law_national_curriculum: "National Curriculum"
 law_decentralized_curriculum: "Decentralized Curriculum"
 law_international_curriculum: "International Curriculum"
 lawgroup_edu_centralization: "Education Curriculum"
+
+lawgroup_monetary_policies: "Monetary Policies"
+law_fixed_exchange_rate: "Fixed Exchange Rate"
+law_managed_float: "Managed Float"
+law_floating_exchange_rate: "Floating Exchange Rate"
+
+law_fixed_exchange_rate_desc: "The government pegs its currency to a stable foreign currency, ensuring trade stability but limiting flexibility in handling economic crises."
+law_managed_float_desc: "The currency floats in the market, with occasional government intervention to stabilize it during economic shocks."
+law_floating_exchange_rate_desc: "Currency value is determined by market forces, providing flexibility but risking volatility in trade and economic stability."

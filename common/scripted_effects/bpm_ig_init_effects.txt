@@ -195,6 +195,7 @@ bpm_initialize_neolib = {
 			add_ideology = ideology_mil_patriotic
 			add_ideology = ideology_fem_moderate_patriarchal
 			add_ideology = ideology_ban_liberal_anticommunist
+			add_ideology = ideology_mon_floating_exchange
 
 			# Vanilla
 			add_ideology = ideology_populist
@@ -219,7 +220,7 @@ bpm_initialize_libs = {
 		limit = {
 			OR = {
 				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_libertarian ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 		}
 		ig:ig_liberal = {
@@ -229,6 +230,7 @@ bpm_initialize_libs = {
 			add_ideology = ideology_gov_liberal_republican
 			add_ideology = ideology_dop_radical_democrat
 			add_ideology = ideology_eco_laissez_faire
+			add_ideology = ideology_mon_floating_exchange
 			
 			# Vanilla
 			add_ideology = ideology_liberal
@@ -244,8 +246,9 @@ bpm_initialize_libs = {
 			}
 			bpm_reorder_ideologies = yes
 		}
-		ig:ig_libertarian ?= {
+		ig:ig_classical_liberal ?= {
 			remove_ideology = ideology_nonexistent
+			add_ideology = ideology_mon_floating_exchange
 			add_ideology = ideology_gov_radical_republican
 			add_ideology = ideology_dop_radical_democrat
 			add_ideology = ideology_sta_minimal_state
@@ -319,6 +322,7 @@ bpm_initialize_cons = {
 			add_ideology = ideology_rel_secularist
 			add_ideology = ideology_mil_patriotic
 			add_ideology = ideology_ban_conservative_supremacist
+			add_ideology = ideology_mon_managed_float
 
 			every_scope_character = {
 				limit = {
@@ -401,15 +405,50 @@ bpm_initialize_fascist = {
 	}
 }
 
+bpm_initialize_new_leftism = {
+	if = {
+		limit = { 
+			ig:ig_new_leftism ?= { 
+				has_ideology = ideology:ideology_nonexistent
+			}
+		}
+		ig:ig_new_leftism = {
+			remove_ideology = ideology_nonexistent
+			add_ideology = ideology_gov_radical_proletarian
+			add_ideology = ideology_dop_radical_democrat
+			add_ideology = ideology_sta_progressive_state
+			add_ideology = ideology_cit_internationalist
+			add_ideology = ideology_mil_antimilitarist
+			add_ideology = ideology_eco_proletarian_economy
+			add_ideology = ideology_wel_paternalistic_welfare
+			add_ideology = ideology_fem_benevolent_sexism
+			add_ideology = ideology_ban_conservative_supremacist
+			add_ideology = ideology_mon_fixed_exchange
+			# Vanilla
+			add_ideology = ideology_reactionary
+			add_ideology = ideology_patriotic
+
+			every_scope_character = {
+				limit = {
+					has_ideology = ideology:ideology_placeholder_leader
+				}
+				set_ideology = ideology:ideology_center_leader
+			}
+			bpm_reorder_ideologies = yes
+		}
+		bpm_rename_igs = yes
+	}
+}
+
 bpm_initialize_reform_revolution = {
 	if = {
 		limit = {
 			OR = {
-				ig:ig_revsoc ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_refsoc ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_orthodox_communist ?= { has_ideology = ideology:ideology_nonexistent }
+				ig:ig_reformist_communist ?= { has_ideology = ideology:ideology_nonexistent }
 			}
 		}
-		ig:ig_refsoc = {
+		ig:ig_reformist_communist = {
 			remove_ideology = ideology_nonexistent
 			add_ideology = ideology_gov_moderate_proletarian
 			add_ideology = ideology_dop_radical_democrat
@@ -421,6 +460,7 @@ bpm_initialize_reform_revolution = {
 			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_gender_egalitarian
 			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla ideologies
 			add_ideology = ideology_proletarian
 			add_ideology = ideology_egalitarian
@@ -435,7 +475,7 @@ bpm_initialize_reform_revolution = {
 			bpm_reorder_ideologies = yes
 		}
 
-		ig:ig_revsoc = {
+		ig:ig_orthodox_communist = {
 			remove_ideology = ideology_nonexistent
 			add_ideology = ideology_gov_radical_proletarian
 			add_ideology = ideology_dop_radical_democrat
@@ -447,6 +487,7 @@ bpm_initialize_reform_revolution = {
 			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_gender_egalitarian
 			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla ideologies
 			add_ideology = ideology_proletarian
 			add_ideology = ideology_egalitarian
@@ -482,6 +523,7 @@ bpm_initialize_socdem = {
 			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_gender_egalitarian
 			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_managed_float
 			# Vanilla ideologies
 			add_ideology = ideology_proletarian
 			add_ideology = ideology_egalitarian

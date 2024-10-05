@@ -1512,7 +1512,7 @@
 						type="building_glassworks"
 						country="c:BHT"
 						levels=3
-						region="STATE_BHTERABAD"
+						region="STATE_HYDERABAD"
 					}
 				}
 				reserves=1
@@ -1536,7 +1536,7 @@
 						type="building_manor_house"
 						country="c:BHT"
 						levels=2
-						region="STATE_BHTERABAD"
+						region="STATE_HYDERABAD"
 					}
 				}
 				reserves=1
@@ -1549,7 +1549,7 @@
 						type="building_manor_house"
 						country="c:BHT"
 						levels=3
-						region="STATE_BHTERABAD"
+						region="STATE_HYDERABAD"
 					}
 				}
 				reserves=1

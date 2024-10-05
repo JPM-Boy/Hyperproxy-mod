@@ -748,7 +748,7 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			desc = "BPM_VALUE_FROM_CONSERVATIVE_LEADER_AND_AGITATORS"
 			every_scope_character = {
 				limit = {
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 					OR = {
 						has_role = politician
 						has_role = agitator
@@ -1503,11 +1503,11 @@ bpm_je_split_natlibs_progress_from_conflicts = {
 bpm_je_split_natlibs_progress_from_libcons_empowered = {
 	value = 0
 	if = {
-		limit = { ig:ig_conservatives = { OR = { is_being_bolstered = yes is_in_government = yes} } }
+		limit = { ig:ig_cons = { OR = { is_being_bolstered = yes is_in_government = yes} } }
 		add = 0.1
 	}
 	if = {
-		limit = { ig:ig_conservatives = { OR = { is_being_bolstered = yes is_in_government = yes} } }
+		limit = { ig:ig_cons = { OR = { is_being_bolstered = yes is_in_government = yes} } }
 		add = 0.1
 	}
 }
@@ -1518,7 +1518,7 @@ bpm_je_split_natlibs_progress_from_libcons_suppressed = {
 		add = -0.2
 	} 
 	if = {
-		limit = { ig:ig_conservatives = { is_being_suppressed = yes } }
+		limit = { ig:ig_cons = { is_being_suppressed = yes } }
 		add = -0.2
 	} 
 }
@@ -1529,7 +1529,7 @@ bpm_je_split_natlibs_progress_from_libcons_marginal = {
 		add = -0.1
 	} 
 	if = {
-		limit = { ig:ig_conservatives = { is_marginal = yes } }
+		limit = { ig:ig_cons = { is_marginal = yes } }
 		add = -0.1
 	} 
 }
@@ -1730,7 +1730,7 @@ bpm_je_split_patcons_progress_from_radicals = {
 bpm_je_split_patcons_progress_from_conservative_status = {
 	value = 0
 	if = {
-		limit = { ig:ig_conservatives = { is_being_suppressed = yes } }
+		limit = { ig:ig_cons = { is_being_suppressed = yes } }
 		add = 0.2
 	}
 }
@@ -1748,7 +1748,7 @@ bpm_je_split_patcons_progress_from_left_wing_government = {
 	value = 0
 	if = {
 		limit = { 
-			ig:ig_conservatives = { is_in_government = no }
+			ig:ig_cons = { is_in_government = no }
 			any_interest_group = {
 				bpm_ig_is_radical_left = yes
 				is_in_government = yes
@@ -1825,7 +1825,7 @@ bpm_je_split_fascists_progress_from_rightists_empowered = {
 		add = 0.2
 	}
 	if = {
-		limit = { ig:ig_conservatives = { OR = { is_being_bolstered = yes is_in_government = yes } } }
+		limit = { ig:ig_cons = { OR = { is_being_bolstered = yes is_in_government = yes } } }
 		add = 0.2
 	}
 	if = {
@@ -1844,7 +1844,7 @@ bpm_je_split_fascists_progress_from_rightists_suppressed = {
 		add = -0.2
 	}
 	if = {
-		limit = { ig:ig_conservatives = { is_being_suppressed = yes } }
+		limit = { ig:ig_cons = { is_being_suppressed = yes } }
 		add = -0.2
 	}
 	if = {
@@ -1863,7 +1863,7 @@ bpm_je_split_fascists_progress_from_rightists_marginal = {
 		add = -0.1
 	}
 	if = {
-		limit = { ig:ig_conservatives = { is_marginal = yes } }
+		limit = { ig:ig_cons = { is_marginal = yes } }
 		add = -0.1
 	}
 	if = {

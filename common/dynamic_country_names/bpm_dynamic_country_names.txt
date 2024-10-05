@@ -103,7 +103,7 @@
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
 						bpm_ig_is_left_wing = yes
-						is_interest_group_type = ig_refsoc
+						is_interest_group_type = ig_reformist_communist
 						leader = { bpm_leader_is_left_wing = yes }
 					}
 				}

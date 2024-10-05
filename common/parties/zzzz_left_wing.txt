@@ -3,11 +3,32 @@
 # Available for Trade Unions pre-Socialism
 
 leftwing_party = {
-	color = hsv{ 0.98 0.9 0.8 }
+	color = hsv{ 0.98 0.9 1 }
 	name = {
 		first_valid = {
 			triggered_desc = {
-				desc = party_social_democrats
+				desc = party_socialist_SPA
+				trigger = {
+					exists = c:SPA
+					THIS = c:SPA
+				}
+			}
+			triggered_desc = {
+				desc = party_socialist_RUS
+				trigger = {
+					exists = c:RUS
+					THIS = c:RUS
+				}
+			}
+			triggered_desc = {
+				desc = party_socialist_CAT
+				trigger = {
+					exists = c:CAT
+					THIS = c:CAT
+				}
+			}
+			triggered_desc = {
+				desc = party_socialist
 				trigger = {
 					always = yes
 				}
@@ -16,7 +37,7 @@ leftwing_party = {
 	}
 	
 	icon = {
-		default = "/gfx/interface/icons/political_parties/social_democrats.dds"
+		default = "/gfx/interface/icons/political_parties/socialist.dds"
 	}
 	unlocking_technologies = {
 	}
@@ -44,17 +65,6 @@ leftwing_party = {
 			leader = { bpm_leader_is_radical_socialist = yes }
 			bpm_leader_is_progressive_liberal = yes
 		}
-		OR = {
-			is_interest_group_type = ig_leftpop
-			is_interest_group_type = ig_socdem
-			is_interest_group_type = ig_prog
-			is_interest_group_type = ig_ecologist
-			is_interest_group_type = ig_refsoc
-			is_interest_group_type = ig_revsoc
-			is_interest_group_type = ig_trade_unions
-
-			bpm_ig_is_institutional = yes
-		}
 
 		trigger_if = {
 			limit = {
@@ -66,8 +76,26 @@ leftwing_party = {
 	}
 	join_weight = {
 		value = {
-			value = 15
+			value = 0
 			desc = "base_value"
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_ecologist
+			}
+			add = {	
+				value = 10
+				desc = "hpx_green_party"
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_classical_liberal
+			}
+			add = {	
+				value = -30
+				desc = "hpx_hating_left"
+			}
 		}
 		if = {
 			limit = {
@@ -424,20 +452,14 @@ leftwing_party = {
 		}
 		if = { # IG will only join social democrats if a properly proletarian IG is in it
 			limit = {
-				bpm_ig_is_proletarian_socialist = no
-				bpm_ig_is_socialist_trade_unions = no
-				# leader = { bpm_leader_is_proletarian_socialist = no }
-				owner = {
-					OR = {
-						NOT = { exists = py:leftwing_party }
-						py:leftwing_party = {
-							NOT = {
-								any_member = {
-									OR = {
-										bpm_ig_is_proletarian_socialist = yes
-										bpm_ig_is_socialist_trade_unions = yes
-									}
-								}
+				NOT = { is_interest_group_type = ig_new_leftism }
+				OR = {
+					NOT = { exists = owner.py:leftwing_party }
+					AND = {
+						exists = owner.py:leftwing_party
+						owner = {
+							ig:ig_new_leftism = {
+								NOT = { is_member_of_party = owner.py:leftwing_party }
 							}
 						}
 					}

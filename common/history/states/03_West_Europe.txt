@@ -599,7 +599,7 @@ STATES = {
 			country = c:EGE
 			owned_provinces = { xA080E0 x12694A x618061 xCF5D8E x34386E xCBA4A5 xE0C0A0 xA51232 x3C9B93 x8A448C xED8F7B}
 		}
-		
+		add_homeland = cu:sorb
 		add_homeland = cu:north_german
 	}
 	s:STATE_RHINELAND = {
@@ -698,6 +698,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:sorb
+		add_homeland = cu:north_german
 	}
 	s:STATE_BRUNSWICK = {	
 		create_state = {
@@ -738,6 +739,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:north_german
+		add_homeland = cu:sorb
 	}
 	s:STATE_MECKLENBURG = {
 		create_state = {
@@ -746,6 +748,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:north_german
+		add_homeland = cu:sorb
 	}
 	s:STATE_MALTA = {
 		create_state = {

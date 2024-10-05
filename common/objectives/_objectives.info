@@ -1,5 +1,5 @@
 objective_key = {
-	texture = "path/to/texture"							# building icon
+	texture = "path/to/texture"							# icon
 	
 	recommended_tags = {}								# which tags will show as recommended for this objective
 	
@@ -7,3 +7,4 @@ objective_key = {
 	
 	on_start = {}										# effect executed on game start with this objective
 }
+

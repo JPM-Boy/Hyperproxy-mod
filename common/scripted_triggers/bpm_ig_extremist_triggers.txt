@@ -17,7 +17,7 @@ bpm_ig_is_radical_opposition_fascist = {
 bpm_ig_is_radical_opposition_non_cr_socialist = {
 	AND = {
 		owner = { NOT = { has_law = law_type:law_council_republic } }
-		is_interest_group_type = ig_revsoc
+		is_interest_group_type = ig_orthodox_communist
 	}
 }
 
@@ -56,7 +56,7 @@ bpm_ig_is_radical_opposition_republican_in_monarchy = {
 	AND = {
 		owner = { has_law = law_type:law_monarchy }
 		bpm_ig_is_republican = yes		
-		NOT = { is_interest_group_type = ig_conservatives }
+		NOT = { is_interest_group_type = ig_cons }
 	}
 }
 
@@ -65,7 +65,7 @@ bpm_ig_is_radical_opposition_democrat_in_undemocratic = {
 		owner = { bpm_country_laws_no_voting = yes }
 		bpm_ig_is_democrat = yes
 		leader = { NOT = { has_ideology = ideology:ideology_despotic_utopian } }
-		NOT = { is_interest_group_type = ig_conservatives }
+		NOT = { is_interest_group_type = ig_cons }
 	}
 }
 
@@ -121,7 +121,7 @@ bpm_ig_is_very_radical_opposition_non_cr_socialist = {
 	AND = {
 		owner = { NOT = { has_law = law_type:law_council_republic } }
 		OR = {
-			is_interest_group_type = ig_revsoc 
+			is_interest_group_type = ig_orthodox_communist 
 		}
 	}
 }

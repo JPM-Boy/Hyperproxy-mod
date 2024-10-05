@@ -27,9 +27,9 @@
 	}
 
 	ai_will_do = {
-		ig:ig_revsoc = { is_marginal = no }
+		ig:ig_orthodox_communist = { is_marginal = no }
 		OR = {
-			ig:ig_revsoc = { is_powerful = yes }
+			ig:ig_orthodox_communist = { is_powerful = yes }
 			radical_fraction = {
 				value > 0.25
 			}

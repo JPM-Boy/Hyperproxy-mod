@@ -4,13 +4,41 @@
 			name = NATO
 			map_color = { 38  84  154 }
 
-			founding_date = 1952.4.18
+			founding_date = 1949.4.18
 			identity = identity_military_treaty_organization
-			principle = principle_defensive_cooperation_1
+			principle = principle_defensive_cooperation_3
 
 			# subjects are automatically part of the bloc
 			member = c:CAN
 			member = c:CSC
+		}
+	}
+	c:GBR = {
+		create_power_bloc = {
+			name = EUROPEAN_DEFENCE_ORGANISATION
+			map_color = { 151 99 255 }
+
+			founding_date = 1968.4.18
+			identity = identity_military_treaty_organization
+			principle = principle_defensive_cooperation_3
+
+			member = c:NOR
+			member = c:DEN
+			member = c:WGE
+			member = c:NET
+			member = c:BEL
+			member = c:ITA
+			member = c:SPA
+			member = c:BRI
+			member = c:LIE
+			member = c:CAT
+			member = c:BAV
+			member = c:ICL
+			member = c:OCC
+			member = c:LUX
+
+
+
 		}
 	}
 	c:RUS ?= {
@@ -37,6 +65,7 @@
 			member = c:GRE
 			member = c:ALB
 			member = c:MGL
+			member = c:COR
 
 
 		}
@@ -49,9 +78,8 @@
 
 			founding_date = 1958.2.1
 
-			identity = identity_trade_league
-			principle = principle_external_trade_1
-
+			identity = identity_ideological_union
+			principle = principle_creative_legislature_1
 			member = c:ARA
 			member = c:TRI
 			member = c:IRQ

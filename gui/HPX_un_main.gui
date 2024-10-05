@@ -1,0 +1,240 @@
+﻿@panel_width_minus_10 = 530         # used to be 450
+@panel_width = 540                  # used to be 460
+@panel_width_half = 270             # used to be 230
+@panel_width_plus_10 = 550          # used to be 470
+@panel_width_plus_14 = 554          # used to be 474
+@panel_width_plus_14_half = 277     # used to be 237
+@panel_width_plus_20 = 560          # used to be 480
+@panel_width_plus_30 = 570          # used to be 490
+@panel_width_plus_70 = 610          # used to be 530
+
+window = {
+    layer = layer_ingame_menu
+    name = "un_window"
+    size = { 613 100% }
+    visible = "[GetPlayer.MakeScope.Var('un_window').IsSet]"
+    default_block_window = {
+        #HEADER CLOSE
+        blockoverride "header_close_button"
+        {
+            onclick = "[GetScriptedGui('toggle_un').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+            shortcut = "close_window"
+        }
+
+
+        #TITLE
+        blockoverride "window_header_name"
+        {
+            text = UN
+        }
+        size = { 100% 100% }
+        position = {0 80}
+
+        blockoverride "scrollarea_content"
+        {
+            scrollbox = {
+                scrollbar_vertical = {
+                    using = scrollbar_vertical
+                }
+
+                name = "UN_scroll_area" 
+                position {0 0}
+                size = { @panel_width_plus_30 3000 }
+                blockoverride "scrollbox_content" {
+                    flowcontainer = {
+                        using = default_content_fade
+                        direction = vertical
+                        spacing = 10
+
+                        ##################################################################################################
+                        textbox = {
+                            autoresize = yes
+                            text = UN_DESC
+
+                            multiline = yes
+                            default_format = "#bjtwhite"
+                            max_width = 540
+
+                            align = center
+                            
+                            margin = { 15 15 }
+
+                            background = {
+                                using = entry_bg
+                            }
+                        }
+                        ##################################################################################################
+                        button = {
+                            using = default_button_primary_action
+                            size = { 100% 40 }
+                            text = "START_VOTE"
+                            onclick = "[GetScriptedGui('start_un_vote').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                        }
+                        ##################################################################################################
+                        textbox = {
+                            text = NO_RESOLUTION
+
+                            default_format = "#bjtwhite"
+
+                            align = center
+                            
+                            size = { 530 50 }
+
+                            background = {
+                                using = entry_bg
+                            }
+                        }
+                        ##################################################################################################
+                        flowcontainer = {
+                            using = default_content_fade
+
+                            using = default_list_position
+                            direction = horizontal
+                            spacing = 33%
+                            max_width = 540
+                            ##################################################################################################
+                            flowcontainer = {
+                                using = default_content_fade
+                                direction = vertical
+                                textbox = {
+                                        autoresize = yes
+                                        text = YES
+                                        using = default_list_position
+                                        default_format = "#bjtwhite"
+                                        align = center
+                                        
+                                        margin = { 33% 15 }
+
+                                        background = {
+                                            using = entry_bg
+                                        }
+                                    }
+                                    dynamicgridbox = {
+                                    parentanchor = hcenter
+                                    datamodel = "[GetGlobalList('un_memberlist_yes')]"
+                                    flipdirection = yes
+                                    block "datamodel_wrap" {
+                                        datamodel_wrap = 6
+                                    }
+                                    
+                                    item = {
+                                        container = {
+                                            minimumsize = { 20 20 }
+
+                                            tiny_flag = {
+                                                visible = "[Scope.AccessCountry]"
+                                                datacontext = "[Scope.AccessCountry]"
+                                                parentanchor = center
+
+                                                blockoverride "flag_tooltip" {
+                                                    tooltipwidget = {
+                                                        FancyTooltip_Country = {}
+                                                    }
+                                                }
+                                            }                           
+                                        }
+                                    }
+                                }
+                            }
+                            ##################################################################################################
+                            flowcontainer = {
+                                using = default_content_fade
+                                direction = vertical
+                                textbox = {
+                                    autoresize = yes
+                                    text = ABSTENTION
+
+                                    multiline = yes
+                                    using = default_list_position
+                                    default_format = "#bjtwhite"
+
+                                    align = center
+                                    
+                                    margin = { 33% 15 }
+
+                                    background = {
+                                        using = entry_bg
+                                    }
+                                }
+                                dynamicgridbox = {
+                                    parentanchor = hcenter
+                                    datamodel = "[GetGlobalList('un_memberlist_abstain')]"
+                                    flipdirection = yes
+                                    block "datamodel_wrap" {
+                                        datamodel_wrap = 6
+                                    }
+                                    
+                                    item = {
+                                        container = {
+                                            minimumsize = { 20 20 }
+
+                                            tiny_flag = {
+                                                visible = "[Scope.AccessCountry]"
+                                                datacontext = "[Scope.AccessCountry]"
+                                                parentanchor = center
+
+                                                blockoverride "flag_tooltip" {
+                                                    tooltipwidget = {
+                                                        FancyTooltip_Country = {}
+                                                    }
+                                                }
+                                            }                           
+                                        }
+                                    }
+                                }
+                            }
+                            ##################################################################################################
+                            flowcontainer = {
+                                using = default_content_fade
+                                direction = vertical
+
+                                textbox = {
+                                    autoresize = yes
+                                    text = NO
+
+                                    multiline = yes
+                                    using = default_list_position
+                                    default_format = "#bjtwhite"
+
+                                    align = center
+                                    
+                                    margin = { 33% 15 }
+
+                                    background = {
+                                        using = entry_bg
+                                    }
+                                }
+                                dynamicgridbox = {
+                                    parentanchor = hcenter
+                                    datamodel = "[GetGlobalList('un_memberlist_no')]"
+                                    flipdirection = yes
+                                    block "datamodel_wrap" {
+                                        datamodel_wrap = 6
+                                    }
+                                    
+                                    item = {
+                                        container = {
+                                            minimumsize = { 20 20 }
+
+                                            tiny_flag = {
+                                                visible = "[Scope.AccessCountry]"
+                                                datacontext = "[Scope.AccessCountry]"
+                                                parentanchor = center
+
+                                                blockoverride "flag_tooltip" {
+                                                    tooltipwidget = {
+                                                        FancyTooltip_Country = {}
+                                                    }
+                                                }
+                                            }                           
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

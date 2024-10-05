@@ -2,96 +2,108 @@
   icon = ig_radicals
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/radicals_30.dds"
+    texture = "gfx/interface/icons/ig_icons/radicals.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_liberals
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/liberals_30.dds"
+    texture = "gfx/interface/icons/ig_icons/liberals.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_socialists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/socialists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/socialists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_revolutionist_socialists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/revolutionists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/revolutionists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_reformist_socialists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/reformists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/reformists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_anarchists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/anarchists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/anarchists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_agrarian_populists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/agrarian_populists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/agrarian_populists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_national_liberals
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/national_liberals_30.dds"
+    texture = "gfx/interface/icons/ig_icons/national_liberals.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_market_liberals
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/market_liberals_30.dds"
+    texture = "gfx/interface/icons/ig_icons/market_liberals.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_conservatives
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/conservatives_30.dds"
+    texture = "gfx/interface/icons/ig_icons/conservatives.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_reactionaries
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/reactionaries_30.dds"
+    texture = "gfx/interface/icons/ig_icons/reactionaries.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 texticon = {
   icon = ig_fascists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/fascists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/fascists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -99,8 +111,9 @@ texticon = {
   icon = armed_forces_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/armed_forces_30.dds"
+    texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -108,8 +121,9 @@ texticon = {
   icon = devout_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/devout_30.dds"
+    texture = "gfx/interface/icons/ig_icons/devout.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -117,8 +131,9 @@ texticon = {
   icon = industrialists_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/industrialists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/industrialists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -126,8 +141,9 @@ texticon = {
   icon = intelligentsia_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/intelligensia_30.dds"
+    texture = "gfx/interface/icons/ig_icons/intelligensia.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -135,8 +151,9 @@ texticon = {
   icon = landowners_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/landowners_30.dds"
+    texture = "gfx/interface/icons/ig_icons/landowners.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -144,8 +161,9 @@ texticon = {
   icon = petty_bourgeoisie_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie_30.dds"
+    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -153,8 +171,9 @@ texticon = {
   icon = rural_folk_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/rural_folk_30.dds"
+    texture = "gfx/interface/icons/ig_icons/rural_folk.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -162,8 +181,9 @@ texticon = {
   icon = trade_unions_bpm
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/trade_unions_30.dds"
+    texture = "gfx/interface/icons/ig_icons/trade_unions.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -171,8 +191,9 @@ texticon = {
   icon = armed_forces
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/armed_forces_30.dds"
+    texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -180,8 +201,9 @@ texticon = {
   icon = devout
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/devout_30.dds"
+    texture = "gfx/interface/icons/ig_icons/devout.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -189,8 +211,9 @@ texticon = {
   icon = industrialists
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/industrialists_30.dds"
+    texture = "gfx/interface/icons/ig_icons/industrialists.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -198,8 +221,9 @@ texticon = {
   icon = intelligentsia
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/intelligensia_30.dds"
+    texture = "gfx/interface/icons/ig_icons/intelligensia.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -207,8 +231,9 @@ texticon = {
   icon = landowners
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/landowners_30.dds"
+    texture = "gfx/interface/icons/ig_icons/landowners.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -216,8 +241,9 @@ texticon = {
   icon = petty_bourgeoisie
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie_30.dds"
+    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -225,8 +251,9 @@ texticon = {
   icon = rural_folk
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/rural_folk_30.dds"
+    texture = "gfx/interface/icons/ig_icons/rural_folk.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 
@@ -234,8 +261,9 @@ texticon = {
   icon = trade_unions
   iconsize = {
     offset = { 0 6 }
-    texture = "gfx/interface/icons/ig_icons/trade_unions_30.dds"
+    texture = "gfx/interface/icons/ig_icons/trade_unions.dds"
     fontsize = 26
+    size = {30 30}
   }
 }
 

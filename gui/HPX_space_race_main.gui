@@ -6,13 +6,13 @@ window = {
     layer = layer_ingame_menu
     name = "space_panel"
     size = { 613 100% }
-    visible = "[GetPlayer.MakeScope.Var('show_my_window').IsSet]"
+    visible = "[GetPlayer.MakeScope.Var('space_race').IsSet]"
     default_block_window_two_lines = {
 
         #HEADER CLOSE
         blockoverride "header_close_button"
         {
-            onclick = "[GetScriptedGui('toggle_my_window').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+            onclick = "[GetScriptedGui('toggle_space_race').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
             shortcut = "close_window"
         }
 

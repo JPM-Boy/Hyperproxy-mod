@@ -254,7 +254,7 @@ pm_fishing_trawlers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_clippers_add = 5
+			goods_input_cargo_ship_add = 5
 			# output
 			goods_output_fish_add = 50
 		}
@@ -283,7 +283,7 @@ pm_steam_trawlers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_steamers_add = 5
+			goods_input_cargo_ship_add = 5
 			goods_input_coal_add = 15
 			# output
 			goods_output_fish_add = 100
@@ -390,7 +390,7 @@ pm_wooden_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			goods_input_clippers_add = 5
+			goods_input_cargo_ship_add = 5
 			# output
 			goods_output_meat_add = 10
 			goods_output_oil_add = 20

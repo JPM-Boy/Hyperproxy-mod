@@ -1,0 +1,9 @@
+﻿lawgroup_monetary_policies = {
+	law_group_category = economy
+	base_enactment_days = 150
+	enactment_approval_mult = 3.0
+	affected_by_regime_change = yes
+	
+	progressive_movement_chance = 1
+	regressive_movement_chance = 0.25
+}

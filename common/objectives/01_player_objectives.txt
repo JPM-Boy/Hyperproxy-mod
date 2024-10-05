@@ -1,1 +1,44 @@
-﻿
+objective_west = {
+	enabled_background = "gfx/interface/icons/objective_icons/west.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+	
+	recommended_tags = { USA JAP TPG MEX}
+	
+	objective_subgoals = {
+
+	}
+	
+	on_start = {
+		
+	}
+}
+
+objective_euro = {
+	enabled_background = "gfx/interface/icons/objective_icons/euro.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/EU.dds"
+	
+	recommended_tags = { GBR ITA WGE CAT}
+	
+	objective_subgoals = {
+
+	}
+	
+	on_start = {
+		
+	}
+}
+
+objective_east = {
+	enabled_background = "gfx/interface/icons/objective_icons/east.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	
+	recommended_tags = { RUS CHI EGE PTG }
+	
+	objective_subgoals = {
+
+	}
+	
+	on_start = {
+		
+	}
+}

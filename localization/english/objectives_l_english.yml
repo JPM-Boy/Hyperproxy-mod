@@ -1,15 +1,30 @@
-﻿l_english:
+l_english:
 
 objective_west: "Western Bloc"
 objective_west_desc: "Here do you have some of the most interesting nations of the Western Bloc."
 objective_west_name_USA: "United States"
+objective_west_desc_USA: "Will the federation remain capatelist or become socialist"
 objective_west_name_GBR: "Anglo-French Union"
+objective_west_desc_GBR: "United trough hardships"
 objective_west_name_WGE: "West Germany"
+objective_west_desc_WGE: "Ohh, a germany in the west"
 objective_west_name_JAP: "Japan"
+objective_west_desc_JAP: "Hirohito, our great leader is gone"
 
 objective_east: "Eastern Bloc"
 objective_east_desc: "Here do you have some of the most interesting nations of the Eastern Bloc."
 objective_east_name_RUS: "Soviet Union"
+objective_east_desc_RUS: "The red scare is from here"
 objective_east_name_CHI: "People's Republic of China"
+objective_east_desc_CHI: "China, but red"
 objective_east_name_EGE: "East Germany"
+objective_east_desc_EGE: "Ohh, a germany in the east"
 objective_east_name_YUG: "Yugoslavia"
+objective_east_desc_YUG: "The glorius nation of united balkans"
+
+objective_test: "Dev Favourites"
+objective_test_desc: "Here is some of the mod devs favourite nations"
+objective_test_name_NOR: "The Kingdom Of Norway"
+objective_test_desc_NOR: "Norway is a fun nation wich isn't too hard to play, but at the same time not to hard. It gives a nice balance between playerfreedom and some challange, that comes from the fact that it's a smal nation. Will you go forwards and bring Norway to a bright future, or will your leadership make Norway take a great leap backwards into the dark ages? Only time will tell."
+objective_test_name_WAL: "Walachia"
+objective_test_desc_WAL: "The country where you have to be a vampire to be alive long enough to understand how to do anything"

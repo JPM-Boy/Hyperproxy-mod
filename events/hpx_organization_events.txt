@@ -14,6 +14,7 @@ hpx_organization.imf.1 = { # IMF
 		has_law = law_type:law_fixed_exchange_rate
 		scaled_debt >= 0.75
 		has_variable = imf_member
+		NOT = {has_variable = loan_asked}
 	}
 	duration = 7
 
@@ -50,9 +51,15 @@ hpx_organization.imf.1 = { # IMF
 			add = var:local_third_debt
 		}
 		remove_variable = local_third_debt
+		set_variable = {
+			name = loan_asked
+		}
 	}
 	option = {
 		name = hpx_organization.imf.1.b
+		set_variable = {
+			name = loan_asked
+		}
 	}
 	after = {
 		bpm_refresh_parties = yes

@@ -456,7 +456,7 @@ KLM_ADJ: "Kalmykian"
 AKH: "Astrakhan"
 AKH_ADJ: "Astrakhani"
 
-  # Dynamic countries
+# Dynamic countries
  dyn_c_gbr: "Great Britain"
  dyn_c_gbr_adj: "British"
  dyn_c_england: "England"
@@ -501,4 +501,4 @@ MSRQ_ADJ: "Masriqi"
 ASIA: "Asian State"
 ASIA_ADJ: "Asian"
 IBE: "Iberia"
-IBE: "Iberian"
+IBE_ADJ: "Iberian"

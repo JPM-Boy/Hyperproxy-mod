@@ -6,6 +6,7 @@
 			building_employment_laborers_add = 500
 			building_employment_clerks_add = 350
 			building_employment_bureaucrats_add = 150
+                        goods_output_transportation_add = 10
 		}
 	}
 
@@ -21,6 +22,7 @@ pm_basic_port = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_cargo_ship_add = 5
+                        goods_output_transportation_add = 20 # 600
 		}
 
 		level_scaled = {
@@ -53,6 +55,7 @@ pm_industrial_port = {
 		workforce_scaled = {
 			goods_input_cargo_ship_add = 5
 			goods_input_coal_add = 5
+                        goods_output_transportation_add = 45
 		}
 
 		level_scaled = {
@@ -86,6 +89,7 @@ pm_modern_port = {
 		workforce_scaled = {
 			goods_input_cargo_ship_add = 5
 			goods_input_oil_add = 5
+                        goods_output_transportation_add = 60
 		}
 
 		level_scaled = {

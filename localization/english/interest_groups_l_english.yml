@@ -6,6 +6,16 @@ ig_cons_desc:0 "Conservatives refer to the broad set of people who want to prese
 
 ig_english_cons: "English Conservatives"
 
+#Security
+ig_security:0 "Security Interests"
+ig_security_only_icon:0 "@ig_security!"
+ig_security_desc:0 "WIP"
+
+#Academia
+ig_academia:0 "Academic Interests"
+ig_academia_only_icon:0 "@ig_academia!"
+ig_academia_desc:0 "WIP"
+
 #Anarchists
 ig_anarchist:0 "Anarchists"
 ig_anarchist_only_icon:0 "@ig_anarchist!"
@@ -44,7 +54,7 @@ ig_french_liberal: "French Republicans"
 #Libertarianism
 ig_classical_liberal:0 "Classical Liberals"
 ig_classical_liberal_only_icon:0 "@ig_classical_liberal!"
-ig_classical_liberal_desc:0 "Libertarianism, emphasizes individual freedom, limited government, and free-market capitalism. It advocates for minimal state intervention in personal and economic matters, prioritizing property rights, voluntary exchange, and personal responsibility. Libertarians seek to maximize personal autonomy and minimize the role of government in all aspects of life, supporting civil liberties, free speech, and privacy. Their focus is on reducing taxes, regulations, and government spending, believing that a free and open market best serves society's interests."
+ig_classical_liberal_desc:0 "WIP"
 
 #Neoliberals
 ig_neolib:0 "Neo-Liberals"

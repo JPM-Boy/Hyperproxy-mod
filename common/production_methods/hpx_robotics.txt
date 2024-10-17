@@ -33,6 +33,7 @@ pm_robotics_1_2 = {
 			state_pollution_generation_add = 10
 		}
 	}
+
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
@@ -64,6 +65,7 @@ pm_robotics_1_3 = {
 			state_pollution_generation_add = 10
 		}
 	}
+
 	unlocking_technologies = {
 		pneumatic_tools
 	}

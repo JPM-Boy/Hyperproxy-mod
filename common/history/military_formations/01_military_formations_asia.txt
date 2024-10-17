@@ -1,0 +1,35 @@
+﻿MILITARY_FORMATIONS = {
+	c:CHI = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Chinese Army"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_XIAN
+				count = 24
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUANGXI
+				count = 24
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BEIJING
+				count = 24
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANDONG
+				count = 24
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_JIANGXI
+				count = 24
+			}
+		}
+	}
+}

@@ -2,7 +2,7 @@
 	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_wood_add = 30
+			goods_output_wood_add = 60
 		}
 
 		level_scaled = {
@@ -24,7 +24,7 @@ pm_saw_mills = {
 			# input goods
 			goods_input_tools_add = 5
 			# output goods
-			goods_output_wood_add = 60
+			goods_output_wood_add = 100
 		}
 
 		level_scaled = {
@@ -48,7 +48,7 @@ pm_electric_saw_mills = {
 			goods_input_tools_add = 10
 			goods_input_electricity_add = 5
 			# output goods
-			goods_output_wood_add = 100 #+800
+			goods_output_wood_add = 150 #+800
 		}
 
 		level_scaled = {

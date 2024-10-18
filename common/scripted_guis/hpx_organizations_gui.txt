@@ -68,6 +68,13 @@ contribute_imf = {
     scope = country
     effect = {
         if = {
+            limit = {NOT = {has_variable = imf_contribution}}
+            set_variable = {
+                name = imf_contribution
+                value = 0
+            }
+        }
+        if = {
             limit = {gold_reserves >= 1000000}
             add_treasury = -1000000
             change_variable = {
@@ -105,6 +112,13 @@ contribute_100K_imf = {
     scope = country
     effect = {
         if = {
+            limit = {NOT = {has_variable = imf_contribution}}
+            set_variable = {
+                name = imf_contribution
+                value = 0
+            }
+        }
+        if = {
             limit = {gold_reserves >= 100000}
             add_treasury = -100000
             change_variable = {
@@ -141,6 +155,13 @@ contribute_100K_imf = {
 ask_funds_imf = {
     scope = country
     effect = {
+        if = {
+            limit = {NOT = {has_variable = imf_debt}}
+            set_variable = {
+                name = imf_debt
+                value = 0
+            }
+        }
         if = {
             limit = {
                 infamy <= 10
@@ -184,6 +205,13 @@ ask_funds_imf = {
 ask_funds_100K_imf = {
     scope = country
     effect = {
+        if = {
+            limit = {NOT = {has_variable = imf_debt}}
+            set_variable = {
+                name = imf_debt
+                value = 0
+            }
+        }
         if = {
             limit = {
                 infamy <= 30

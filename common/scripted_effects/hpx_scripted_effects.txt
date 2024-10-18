@@ -210,7 +210,7 @@ if = {
 				}
 			}
 		tag = CRI
- 		origin = RUS
+ 		origin = c:RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_CRIMEA.region_state:RUS
 
@@ -224,7 +224,7 @@ if = {
 				}
 			}
 		tag = LIT
-		origin = RUS
+		origin = c:RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_VILNIUS.region_state:RUS
 		state = s:STATE_KAUNAS.region_state:RUS
@@ -239,7 +239,7 @@ if = {
 				}
 			}
 		tag = PRU
-		origin = RUS
+		origin = c:RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_EAST_PRUSSIA.region_state:RUS
 	}
@@ -252,7 +252,7 @@ if = {
 				}
 			}
 		tag = LAT
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_RIGA.region_state:RUS
 		state = s:STATE_COURLAND.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -265,7 +265,7 @@ if = {
 				}
 			}
 		tag = EST
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_TALINN.region_state:RUS
 		state = s:STATE_TARTU.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -278,7 +278,7 @@ if = {
 				}
 			}
 		tag = BYE
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_MINSK.region_state:RUS
 		state = s:STATE_BREST.region_state:RUS
 		state = s:STATE_MOGILEV.region_state:RUS
@@ -293,7 +293,7 @@ if = {
 				}
 			}
 		tag = MOL
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_MOLDAVIA.region_state:RUS
 		state = s:STATE_DOBRUDJA.region_state:RUS
 		state = s:STATE_BESSARABIA.region_state:RUS
@@ -307,7 +307,7 @@ if = {
 				}
 			}
 		tag = UKR
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_KIEV.region_state:RUS
 		state = s:STATE_VOLHYNIA.region_state:RUS
 		state = s:STATE_EAST_GALICIA.region_state:RUS
@@ -326,7 +326,7 @@ if = {
 				}
 			}
 		tag = GEO
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
@@ -339,7 +339,7 @@ if = {
 				}
 			}
 		tag = ARM
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_ARMENIA.region_state:RUS
 	}
  		on_created = { bpm_setup_country = yes }
@@ -351,7 +351,7 @@ if = {
 				}
 			}
 		tag = AZB
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_AZERBAIJAN.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
@@ -364,7 +364,7 @@ if = {
 				}
 			}
 		tag = TRC
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
 		state = s:STATE_MERZ.region_state:RUS
 		state = s:STATE_KHORASAN.region_state:RUS
@@ -379,7 +379,7 @@ if = {
 				}
 			}
 		tag = UZB
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_UZBEKIA.region_state:RUS
 		state = s:STATE_KHIVA.region_state:RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
@@ -394,7 +394,7 @@ if = {
 				}
 			}
 		tag = TJI
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_TAJIKISTAN.region_state:RUS
 		state = s:STATE_FERGANA.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -408,7 +408,7 @@ if = {
 				}
 			}
 		tag = KYR
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_KIRGHIZIA.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
@@ -421,7 +421,7 @@ if = {
 				}
 			}
 		tag = KZH
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_URALSK.region_state:RUS
 		state = s:STATE_AKTOBE.region_state:RUS
 		state = s:STATE_AKMOLINSK.region_state:RUS
@@ -488,7 +488,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = CRI
-	 		origin = RUS
+	 		origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_CRIMEA.region_state:RUS
 
@@ -502,7 +502,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = LIT
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_VILNIUS.region_state:RUS
 			state = s:STATE_KAUNAS.region_state:RUS
@@ -517,7 +517,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = PRU
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_EAST_PRUSSIA.region_state:RUS
 		}
@@ -530,7 +530,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = LAT
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_RIGA.region_state:RUS
 			state = s:STATE_COURLAND.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -543,7 +543,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = EST
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TALINN.region_state:RUS
 			state = s:STATE_TARTU.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -556,7 +556,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = BYE
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_MINSK.region_state:RUS
 			state = s:STATE_BREST.region_state:RUS
 			state = s:STATE_MOGILEV.region_state:RUS
@@ -571,7 +571,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = MOL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_MOLDAVIA.region_state:RUS
 			state = s:STATE_DOBRUDJA.region_state:RUS
 			state = s:STATE_BESSARABIA.region_state:RUS
@@ -585,7 +585,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = UKR
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_KIEV.region_state:RUS
 			state = s:STATE_VOLHYNIA.region_state:RUS
 			state = s:STATE_EAST_GALICIA.region_state:RUS
@@ -604,7 +604,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = GEO
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_GREATER_CAUCASUS.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
@@ -617,7 +617,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = ARM
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_ARMENIA.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -630,7 +630,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = AZB
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_AZERBAIJAN.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
@@ -643,7 +643,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TRC
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TURKMENIA.region_state:RUS
 			state = s:STATE_MERZ.region_state:RUS
 			state = s:STATE_KHORASAN.region_state:RUS
@@ -658,7 +658,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = UZB
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_UZBEKIA.region_state:RUS
 			state = s:STATE_KHIVA.region_state:RUS
 			state = s:STATE_TURKMENIA.region_state:RUS
@@ -673,7 +673,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TJI
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TAJIKISTAN.region_state:RUS
 			state = s:STATE_FERGANA.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -687,7 +687,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = KYR
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_KIRGHIZIA.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
@@ -700,7 +700,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = KZH
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_URALSK.region_state:RUS
 			state = s:STATE_AKTOBE.region_state:RUS
@@ -719,7 +719,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = YAK
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_YAKUTSK.region_state:RUS
 			state = s:STATE_KOLYMA.region_state:RUS
@@ -733,7 +733,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = IKK
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_IRKUTSK.region_state:RUS
 			state = s:STATE_KRASNOYARSK.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -747,7 +747,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = FRE
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_CHUKOTKA.region_state:RUS
 			state = s:STATE_KAMCHATKA.region_state:RUS
 			state = s:STATE_OKHOTSK.region_state:RUS
@@ -766,7 +766,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = SIB
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_UPPER_YENISEYSK.region_state:RUS
 			state = s:STATE_SURGUT.region_state:RUS
 			state = s:STATE_OB.region_state:RUS
@@ -782,7 +782,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = BYT
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_BURYATIA.region_state:RUS
 			state = s:STATE_TRANS_BAIKAL.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -797,7 +797,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TVA
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TUVA.region_state:RUS
 			state = s:STATE_ALTAI.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -811,7 +811,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TMK
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TOMSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -824,7 +824,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = OMK
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TOBOLSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -837,7 +837,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = URL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_URAL.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -850,7 +850,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = IDL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_UFA.region_state:RUS
 			state = s:STATE_CHELYABINSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -865,7 +865,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = KMI
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_NENETSIA.region_state:RUS
 			state = s:STATE_GALICH.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -880,7 +880,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = PRM
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_PERM.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -895,7 +895,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = KRL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_KOLA.region_state:RUS
 			state = s:STATE_EAST_KARELIA.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -913,7 +913,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = CHC
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_NORTH_CAUCASUS.region_state:RUS
 				state = s:STATE_STAVROPOL.region_state:RUS
 				state = s:STATE_DAGESTAN.region_state:RUS
@@ -929,7 +929,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = CIR
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_KUBAN.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -943,7 +943,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = MRL
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_VYATKA.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -957,7 +957,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = KLM
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_KALMYKIA.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -971,7 +971,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = AKH
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_ASTRAKHAN.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}

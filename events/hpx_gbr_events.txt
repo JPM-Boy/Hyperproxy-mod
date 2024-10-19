@@ -386,10 +386,11 @@ hpx_GBR_event.8 = {#Dissolution French
 		s:STATE_HIGHLANDS.region_state:GBR = {
 			set_state_owner = c:SCO
 		}
-		}
 
 		c:SCO = {
 			bpm_setup_country = yes
+		}
+		
 		}
 
 	}

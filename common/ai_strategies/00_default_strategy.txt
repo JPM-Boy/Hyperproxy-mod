@@ -1124,6 +1124,19 @@ ai_strategy_default = {
 				}
 				add = 50
 			}
+			if = {
+				limit = {
+					has_journal_entry = je_hpx_italy
+					scope:target_state.state_region = { 
+						OR = {
+							is_homeland = cu:north_italian
+							is_homeland = cu:south_italian
+						}
+					}
+				}
+				add = 50
+			}
+
 
 			if = {
 				limit = {

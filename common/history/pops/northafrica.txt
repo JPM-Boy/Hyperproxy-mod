@@ -14,7 +14,7 @@
 				size = 350000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 1000000
 			}
 		}
@@ -46,7 +46,7 @@
 				size = 400000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 200000
 			}
 		}
@@ -58,7 +58,7 @@
 				size = 1500000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 700000
 			}
 		}
@@ -70,7 +70,7 @@
 				size = 1300000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 800000
 			}
 		}
@@ -82,7 +82,7 @@
 				size = 500000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 700000
 			}
 		}
@@ -90,7 +90,7 @@
 	s:STATE_LIBYAN_DESERT = {
 		region_state:TRI = {
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 100000
 			}
 			create_pop = {
@@ -218,7 +218,7 @@
 				size = 900000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 500000
 			}
 		}
@@ -230,7 +230,7 @@
 				size = 500000
 			}
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 100000
 			}
 		}
@@ -294,7 +294,7 @@
 	s:STATE_CHAD = {
 		region_state:AIR = {
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 250000
 			}
 			create_pop = {
@@ -332,7 +332,7 @@
 	s:STATE_DONGOLA = {
 		region_state:SUD = {
 			create_pop = {
-				culture = bedouin
+				culture = tuareg
 				size = 800000
 			}
 			create_pop = {

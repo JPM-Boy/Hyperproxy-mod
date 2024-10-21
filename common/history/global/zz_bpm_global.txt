@@ -123,6 +123,7 @@
 			target = THIS
 		}
 	}
+	
 
 	random_country = {
 		set_global_variable = {
@@ -152,4 +153,10 @@
 			value = 0
 		}
 	}
+
+	
+	bpm_setup_global_laws_varlists = yes
+	every_country = {
+        bpm_update_exe_ideology = yes
+    }    
 }

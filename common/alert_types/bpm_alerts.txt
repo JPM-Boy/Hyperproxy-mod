@@ -1,0 +1,56 @@
+bpm_idle_legislature = {
+	script_context = player_country
+	texture = "gfx/interface/icons/alert_icons/reform_government.dds"
+
+	valid = {
+		enacting_any_law = no
+	}
+
+	open_panel = politics|laws
+	type = alert
+	color = yellow
+}
+
+bpm_law_will_fail_vote = {
+	script_context = player_country
+	texture = "gfx/interface/icons/alert_icons/bpm_law_warning.dds"
+
+	valid = {
+		AND = {
+			enacting_any_law = yes
+			has_variable = bpm_law_enactment_yea_votes_cached
+			var:bpm_law_enactment_yea_votes_cached < 0.5
+		}
+	}
+
+	open_panel = politics|interest_groups
+	type = alert
+	color = red
+}
+
+bpm_must_appoint_headofgov = {
+	script_context = player_country
+	texture = "gfx/interface/icons/alert_icons/pm.dds"
+
+	valid = {
+		bpm_ruler_is_acting_as_interim_head_of_government = yes
+	}
+
+	open_panel = politics|interest_groups
+	type = alert
+	color = red
+}
+
+
+bpm_must_pick_cabinet = {
+	script_context = player_country
+	texture = "gfx/interface/icons/alert_icons/pm.dds"
+
+	valid = {
+		bpm_has_unfilled_cabinet_positions = yes
+	}
+
+	open_panel = politics|institutions
+	type = alert
+	color = red
+}

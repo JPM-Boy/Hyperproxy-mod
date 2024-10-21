@@ -10,6 +10,7 @@ bpm_misc.2 = { # Delayed initialization of Political Stability
 	}
 
 	immediate = {
+		bpm_rename_igs = yes
 		bpm_update_political_stability = yes
 	}
 }

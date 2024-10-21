@@ -2421,16 +2421,27 @@ ai_strategy_default = {
 	# How likely is the AI to start a diplomatic play against another country if their attitude allows for it
 	# Using this value in other strategies will function additively
 	aggression = {
-		value = 0.5
+		value = 1
 		
-		# More fighting between unrecognized powers
 		if = {
 			limit = {
-				is_country_type = unrecognized
-				scope:target_country = { is_country_type = unrecognized }
+				has_journal_entry = je_hpx_italy
+				scope:target_country = { 
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+			}
+			add = 50
+		}
+
+		# More fighting between african countries
+		if = {
+			limit = {
+				country_is_in_africa = yes
+				scope:target_country = { country_is_in_africa = yes }
 			}
 			
-			add = 0.5
+			add = 80
 		}
 
 		# Higher aggression against subject/overlord if domineering or rebellious

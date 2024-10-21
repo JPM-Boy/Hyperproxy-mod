@@ -188,6 +188,18 @@ has_je_conquest_reason = {
 		}
 
 		AND = {
+			has_journal_entry = je_hpx_italy
+			$TARGET$ = {
+				any_scope_state = {
+					OR = {
+						state_region = { is_homeland = cu:north_italian }
+						state_region = { is_homeland = cu:south_italian }
+					}
+				}
+			}
+		}
+
+		AND = {
 			has_journal_entry = je_alaska
 			$TARGET$ = {
 				any_scope_state = {

@@ -2,9 +2,39 @@ bpm_update_internal_skill_pool = {
     # Internal skill pool
     # Based on the laws and institutions & rigidity of the country
     # As well as the clout of the interest group
-    change_variable = {
-        name = bpm_unskilled_characters
-        add = 4
+    if = {
+        limit = {
+            NOT = {
+                has_variable = bpm_unskilled_characters
+            }
+        }
+        set_variable = {
+            name = bpm_unskilled_characters
+            value = 0
+        }
+        set_variable = {
+            name = bpm_skilled_characters
+            value = 0
+        }
+        set_variable = {
+            name = bpm_expert_characters
+            value = 0
+        }
+    }
+    if = {
+        limit = {
+            var:bpm_unskilled_characters < 2
+        }
+        change_variable = {
+            name = bpm_unskilled_characters
+            add = 4
+        }
+    }
+    else = {
+        change_variable = {
+            name = bpm_unskilled_characters
+            add = 1
+        }
     }
     if = {
         limit = {
@@ -401,6 +431,7 @@ bpm_reset_unsustainable_positions = {
     bpm_reset_unsustainable_positions_subp = { INST = culture }
     bpm_reset_unsustainable_positions_subp = { INST = diplomacy }
     bpm_reset_unsustainable_positions_subp = { INST = economy }
+    bpm_reset_unsustainable_pm = yes
 }
 
 bpm_reset_unsustainable_positions_subp = {
@@ -414,6 +445,22 @@ bpm_reset_unsustainable_positions_subp = {
             }
             var:bpm_minister_of_$INST$ = {
                 bpm_remove_character_from_cabinet = yes
+            }
+        }
+    }
+}
+
+bpm_reset_unsustainable_pm = {
+    if = {
+        limit = {
+            has_variable = bpm_headofgov
+        }
+        if = {
+            limit = {
+                var:bpm_headofgov.interest_group = { var:bpm_ig_mandate_used > var:bpm_ig_mandate }
+            }
+            var:bpm_headofgov = {
+                bpm_unappoint_as_hog = yes
             }
         }
     }
@@ -447,6 +494,7 @@ bpm_reset_mandate_used_counter = {
     bpm_reset_mandate_used_counter_subp = { INST = culture }
     bpm_reset_mandate_used_counter_subp = { INST = diplomacy }
     bpm_reset_mandate_used_counter_subp = { INST = economy }
+    bpm_reset_mandate_used_counter_pm = yes
 }
 
 # -- Cabinet Register Institutions (15) --
@@ -467,6 +515,7 @@ bpm_reset_ig_mandate_used_counter = {
     bpm_reset_ig_mandate_used_counter_subp = { INST = culture }
     bpm_reset_ig_mandate_used_counter_subp = { INST = diplomacy }
     bpm_reset_ig_mandate_used_counter_subp = { INST = economy }
+    bpm_reset_ig_mandate_used_counter_pm = yes
 }
 
 bpm_reset_ig_mandate_used_counter_subp = {
@@ -482,6 +531,19 @@ bpm_reset_ig_mandate_used_counter_subp = {
     }
 }
 
+bpm_reset_ig_mandate_used_counter_pm = {
+    if = {
+        limit = {
+            owner = { has_variable = bpm_headofgov }
+            owner.var:bpm_headofgov.interest_group = THIS
+        }
+        change_variable = {
+            name = bpm_ig_mandate_used
+            add = owner.var:bpm_headofgov.var:bpm_mandate_usage_pos
+        }
+    }
+}
+
 bpm_reset_mandate_used_counter_subp = {
     if = {
         limit = {
@@ -493,6 +555,19 @@ bpm_reset_mandate_used_counter_subp = {
         }
     }
 }
+
+bpm_reset_mandate_used_counter_pm = {
+    if = {
+        limit = {
+            has_variable = bpm_headofgov
+        }
+        change_variable = {
+            name = bpm_government_mandate_used
+            add = var:bpm_headofgov.var:bpm_mandate_usage_pos
+        }
+    }
+}
+## -- 
 
 bpm_update_mandate_used = {
     save_scope_value_as = {

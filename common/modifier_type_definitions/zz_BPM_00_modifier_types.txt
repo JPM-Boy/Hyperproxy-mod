@@ -23,77 +23,87 @@ country_institution_culture_max_investment_add = {
 	color=good
 }
 
+country_institution_diplomacy_max_investment_add = {
+	decimals=0
+	color=good
+}
+
+country_institution_economy_max_investment_add = {
+	decimals=0
+	color=good
+}
+
 ###################
 ### IG STRENGTH ###
 ###################
 
-interest_group_ig_ecologist_pol_str_mult = {
+interest_group_ig_agrarian_populists_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_anarchist_pol_str_mult = {
+interest_group_ig_anarchists_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_cons_pol_str_mult = {
+interest_group_ig_conservatives_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_fascist_pol_str_mult = {
+interest_group_ig_fascists_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_liberal_pol_str_mult = {
+interest_group_ig_liberals_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_libertarian_pol_str_mult = {
+interest_group_ig_market_liberals_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_neolib_pol_str_mult = {
+interest_group_ig_national_liberals_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_prog_pol_str_mult = {
+interest_group_ig_radicals_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_reactionary_pol_str_mult = {
+interest_group_ig_reactionaries_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_refsoc_pol_str_mult = {
+interest_group_ig_reformist_socialists_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_revsoc_pol_str_mult = {
+interest_group_ig_revolutionist_socialists_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_socdem_pol_str_mult = {
+interest_group_ig_socialists_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
@@ -200,7 +210,7 @@ interest_group_ig_socialists_approval_add = {
 	}
 }
 
-interest_group_ig_ecologist_pop_attraction_mult = {
+interest_group_ig_agrarian_populists_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -209,7 +219,7 @@ interest_group_ig_ecologist_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_anarchist_pop_attraction_mult = {
+interest_group_ig_anarchists_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -218,7 +228,7 @@ interest_group_ig_anarchist_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_cons_pop_attraction_mult = {
+interest_group_ig_conservatives_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -227,7 +237,7 @@ interest_group_ig_cons_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_fascist_pop_attraction_mult = {
+interest_group_ig_fascists_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -236,7 +246,7 @@ interest_group_ig_fascist_pop_attraction_mult = {
 	}
 }
                                                          
-interest_group_ig_liberal_pop_attraction_mult = {
+interest_group_ig_liberals_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -245,7 +255,7 @@ interest_group_ig_liberal_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_libertarian_pop_attraction_mult = {
+interest_group_ig_market_liberals_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -254,7 +264,7 @@ interest_group_ig_libertarian_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_neolib_pop_attraction_mult = {
+interest_group_ig_national_liberals_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -263,7 +273,7 @@ interest_group_ig_neolib_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_prog_pop_attraction_mult = {
+interest_group_ig_radicals_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -272,7 +282,7 @@ interest_group_ig_prog_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_reactionary_pop_attraction_mult = {
+interest_group_ig_reactionaries_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -281,7 +291,7 @@ interest_group_ig_reactionary_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_refsoc_pop_attraction_mult = {
+interest_group_ig_reformist_socialists_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -290,7 +300,7 @@ interest_group_ig_refsoc_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_revsoc_pop_attraction_mult = {
+interest_group_ig_revolutionist_socialists_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -299,7 +309,7 @@ interest_group_ig_revsoc_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_socdem_pop_attraction_mult = {
+interest_group_ig_socialists_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -423,4 +433,94 @@ building_employment_clerks_mult = {
 	color = neutral
 	percent = yes
 	decimals = 2
+}
+
+state_peasants_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_farmers_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_bureaucrats_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_laborers_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_machinists_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_soldiers_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_officers_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_engineers_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_clergymen_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_academics_education_access_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
 }

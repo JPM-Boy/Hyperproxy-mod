@@ -16,6 +16,9 @@
 	bpm_cache_country_variables_monthly_effect = yes
 	bpm_cache_country_variables_half_yearly_effect = yes
 	hpx_setup_country_variables = yes
+
+	bpm_setup_foundation_laws = yes
+	bpm_setup_cabinet = yes
 }
 
 hpx_setup_country_variables = {
@@ -294,6 +297,22 @@ bpm_setup_country_mil_cit_ideologies = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_law = law_type:law_armed_neutrality
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					has_ideology = ideology:ideology_mil_patriotic
+					has_ideology = ideology:ideology_mil_patriotic_liberal
+				}
+			}
+			bpm_remove_all_mil_ideologies = yes
+			add_ideology = ideology_mil_defensive_patriot 
+			bpm_reorder_ideologies = yes
+		}
+	}
 }
 
 bpm_setup_country_modifiers = {
@@ -516,5 +535,54 @@ bpm_copy_variable_from_civil_war_origin = {
 			}
 		}
 		set_variable = local_libertarian_split_var
+	}
+}
+
+bpm_setup_cabinet = {
+	set_variable = {
+        name = bpm_cached_antagonism
+        value = 0
+    }
+    set_variable = {
+        name = bpm_cached_antagonism_raw
+        value = 0
+    }
+    set_variable = {
+        name = bpm_cab_synergy
+        value = 1
+    }
+	if = {
+		limit = {
+			OR = {
+				has_technology_researched = currency_standards
+				c:JAP ?= THIS
+			}
+
+			#is_player = yes
+		}
+		trigger_event = {
+            id = bpm_cabinet_event.1
+			days = 1
+        }
+	}
+	else_if = {
+		limit = {
+			has_technology_researched = stock_exchange
+			#is_player = yes
+		}
+		trigger_event = {
+			id = bpm_cabinet_event.1
+			days = 7
+		}
+	}
+	else_if = {
+		limit = {
+			has_technology_researched = romanticism
+			#is_player = yes
+		}
+		trigger_event = {
+			id = bpm_cabinet_event.1
+			days = 30
+		}
 	}
 }

@@ -8,6 +8,12 @@
 		bpm_reload_country_ig_membership = yes
 	}
 
+	bpm_setup_global_laws_varlists = yes
+
+	every_country = {
+		bpm_update_exe_ideology = yes
+	}
+
 	every_country = {
 		trigger_event = { id = bpm_ideology_soft_compat_events.1 }
 		trigger_event = { id = bpm_ideology_soft_compat_events.2 }

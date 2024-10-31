@@ -171,3 +171,14 @@ bpm_clear_upgradeable_country_modifier = {
 	remove_modifier = $MOD$
 	hidden_effect = { remove_variable = bpm_modifier_$MOD$_level }
 }
+
+bpm_start_stupid_war = {
+	$DEFENDER$ ?= {
+		create_diplomatic_play = {  
+			name = war_between_states
+			initiator = $ATTACKER$
+			type = dp_annex_war
+			add_war_goal = { holder = $DEFENDER$, type = contain_threat, country = $ATTACKER$  }  
+		}  
+	}
+}

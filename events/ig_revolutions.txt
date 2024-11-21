@@ -45,6 +45,10 @@ ig_revolutions.1 = {
         }
 	}
 
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
+	}
+
 	immediate = {
 		random_interest_group = {
 			limit = {
@@ -123,6 +127,10 @@ ig_revolutions.2 = {
 			NOT = { has_modifier = ig_unappeased }
 			NOT = { has_modifier = ig_mass_arrests }
 		}
+	}
+
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
 	}
 
 	immediate = {
@@ -230,6 +238,10 @@ ig_revolutions.3 = {
 		}
 	}
 
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
+	}
+
 	immediate = {
 		ig:ig_rural_folk = {
 			save_scope_as = ig_rf_on_the_edge
@@ -332,6 +344,10 @@ ig_revolutions.4 = {
 			NOT = { has_modifier = ig_unappeased }
 			NOT = { has_modifier = ig_mass_arrests }
 		}
+	}
+
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
 	}
 
 	immediate = {
@@ -438,6 +454,10 @@ ig_revolutions.5 = {
 		}
 	}
 
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
+	}
+
 	immediate = {
 		ig:ig_armed_forces = {
 			save_scope_as = ig_af_on_the_edge
@@ -540,6 +560,10 @@ ig_revolutions.6 = {
 			NOT = { has_modifier = ig_unappeased }
 			NOT = { has_modifier = ig_mass_arrests }
 		}
+	}
+
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
 	}
 
 	immediate = {
@@ -646,6 +670,10 @@ ig_revolutions.7 = {
 		}
 	}
 
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
+	}
+
 	immediate = {
 		ig:ig_intelligentsia = {
 			save_scope_as = ig_it_on_the_edge
@@ -736,7 +764,7 @@ ig_revolutions.8 = {
 
 	trigger = {
 		has_insurrectionary_interest_groups = yes
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 			is_revolutionary = no
 			is_in_government = no
 			is_marginal = no
@@ -750,8 +778,12 @@ ig_revolutions.8 = {
 		}
 	}
 
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
+	}
+
 	immediate = {
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 			save_scope_as = ig_pb_on_the_edge
 		}
 	}
@@ -762,7 +794,7 @@ ig_revolutions.8 = {
 		ai_chance = {
 			base = 30
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 	        add_modifier = {
 	            name = ig_concessions_and_appeasement
 	            months = 36
@@ -775,7 +807,7 @@ ig_revolutions.8 = {
 		ai_chance = {
 			base = 15
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 	    	join_revolution = yes
 	        add_modifier = {
 	            name = ig_unappeased
@@ -795,7 +827,7 @@ ig_revolutions.8 = {
 			base = 30
 			modifier = {
 				trigger = {
-					ig:ig_armed_forces = {
+					ig:ig_petty_bourgeoisie = {
 						is_powerful = yes
 					}
 				}
@@ -803,14 +835,14 @@ ig_revolutions.8 = {
 			}
 			modifier = {
 				trigger = {
-					ig:ig_armed_forces = {
+					ig:ig_petty_bourgeoisie = {
 						ig_approval < -3
 					}
 				}
 				add = -10
 			}
 		}
-		ig:ig_armed_forces = {
+		ig:ig_petty_bourgeoisie = {
 	        add_modifier = {
 	            name = ig_mass_arrests
 	            months = 12
@@ -840,7 +872,7 @@ ig_revolutions.9 = {
 
 	trigger = {
 		has_insurrectionary_interest_groups = yes
-		ig:ig_reformist_communist = {
+		ig:ig_trade_unions = {
 			is_revolutionary = no
 			is_in_government = no
 			is_marginal = no
@@ -854,8 +886,12 @@ ig_revolutions.9 = {
 		}
 	}
 
+	cancellation_trigger = {
+		has_insurrectionary_interest_groups = no
+	}
+
 	immediate = {
-		ig:ig_reformist_communist = {
+		ig:ig_trade_unions = {
 			save_scope_as = ig_tu_on_the_edge
 		}
 	}
@@ -866,7 +902,7 @@ ig_revolutions.9 = {
 		ai_chance = {
 			base = 30
 		}
-		ig:ig_reformist_communist = {
+		ig:ig_trade_unions = {
 	        add_modifier = {
 	            name = ig_concessions_and_appeasement
 	            months = 36
@@ -879,7 +915,7 @@ ig_revolutions.9 = {
 		ai_chance = {
 			base = 15
 		}
-		ig:ig_reformist_communist = {
+		ig:ig_trade_unions = {
 	    	join_revolution = yes
 	        add_modifier = {
 	            name = ig_unappeased
@@ -899,7 +935,7 @@ ig_revolutions.9 = {
 			base = 30
 			modifier = {
 				trigger = {
-					ig:ig_reformist_communist = {
+					ig:ig_trade_unions = {
 						is_powerful = yes
 					}
 				}
@@ -907,14 +943,14 @@ ig_revolutions.9 = {
 			}
 			modifier = {
 				trigger = {
-					ig:ig_reformist_communist = {
+					ig:ig_trade_unions = {
 						ig_approval < -3
 					}
 				}
 				add = -10
 			}
 		}
-		ig:ig_reformist_communist = {
+		ig:ig_trade_unions = {
 	        add_modifier = {
 	            name = ig_mass_arrests
 	            months = 12

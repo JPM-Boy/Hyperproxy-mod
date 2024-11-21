@@ -806,7 +806,7 @@ state_atheism.5 = {
 			}
 			add_modifier = { 
 				name = bpm_modifier_atheist_progressivism
-				months = medium_modifier_time
+				months = normal_modifier_time
 			}
 			random_interest_group = { 
 				limit = { 
@@ -1045,7 +1045,7 @@ state_atheism.6 = {
 		scope:religion_seizures_state = {
 			add_loyalists_in_state = {
 				value = small_radicals
-				strata = poor
+				strata = lower
 			}
 		}
 		if = { 

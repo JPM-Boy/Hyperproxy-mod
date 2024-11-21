@@ -1,5 +1,5 @@
 ﻿bpm_law_sways_per_phase_value = {
-	value = 60
+	value = 30
 }
 
 bpm_law_sway_assert_authority_effect_value = {
@@ -51,6 +51,10 @@ bpm_law_sway_construction_racket_effect_value = {
 }
 
 bpm_law_sway_promise_effect_value = {
+	value = 30
+}
+
+bpm_law_sway_cabinet_effect_value = {
 	value = 30
 }
 

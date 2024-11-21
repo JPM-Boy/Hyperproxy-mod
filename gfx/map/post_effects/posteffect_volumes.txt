@@ -23,9 +23,9 @@
 	# exposure = 0.5
 
 	# - Bloom
-	# bloom_width = 1.0
-	# bloom_scale = 1.0
-	# bright_threshold = 1.0
+	# bloom_strength
+	# bloom_steepness
+	# bloom_threshold 
 
 	# - Color
 	# hue_offset = -0.00
@@ -76,8 +76,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 0
+	fog_end = 500
 }
 
 # zoom_volume_01_night
@@ -86,8 +86,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 0
+	fog_end = 500
 }
 
 # zoom_volume_02
@@ -96,8 +96,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 30
+	fog_end = 500
 
 }
 
@@ -107,8 +107,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 30
+	fog_end = 500
 
 }
 
@@ -118,8 +118,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 50
+	fog_end = 700
 }
 
 # zoom_volume_03_night
@@ -128,8 +128,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 50
+	fog_end = 700
 }
 
 # zoom_volume_04
@@ -138,8 +138,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 60
+	fog_end = 1800
 }
 
 # zoom_volume_04_night
@@ -148,8 +148,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 60
+	fog_end = 1800
 }
 
 # zoom_volume_05
@@ -158,8 +158,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 70
+	fog_end = 2400
 }
 
 # zoom_volume_05_night
@@ -168,8 +168,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 70
+	fog_end = 2400
 }
 
 # zoom_volume_06
@@ -178,8 +178,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 80
+	fog_end = 3600
 }
 
 # zoom_volume_06_night
@@ -188,8 +188,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 80
+	fog_end = 3600
 }
 
 # zoom_volume_07
@@ -198,8 +198,8 @@ posteffect_values = {
 	inherit = default
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 150
+	fog_end = 4000
 }
 
 # zoom_volume_07_night
@@ -208,8 +208,8 @@ posteffect_values = {
 	inherit = night
 
 	# Settings
-	fog_begin = 9999
-	fog_end = 9999
+	fog_begin = 150
+	fog_end = 4000
 }
 
 # Step Papermap, >800					# Papermap
@@ -224,6 +224,8 @@ posteffect_values = {
 	levels_max = hsv{ 0.0 0.0 1.0 } 	# Color values adjusment
 	colorbalance = { 1.0 1.0 1.0 }	# Color balance
 
+	fog_begin = 150
+	fog_end = 4000
 	fog_max = 0.0
 }
 

@@ -26,9 +26,7 @@ je_bpm_general_strike_trigger = {
 		OR = {
 			is_at_war = yes
 			any_interest_group = {
-				limit = {
-					bpm_ig_is_labor = yes
-				}
+				bpm_ig_is_labor = yes
 				interest_group_supports_political_movement = yes
 			}
 		}
@@ -74,10 +72,10 @@ je_bpm_general_strike_trigger = {
 
 	can_deactivate = yes
 
-	on_weekly_pulse = {
+	on_monthly_pulse = {
 		effect = {
 			bpm_handle_baseline_target_trend_script_value = {
-				RATE = 5
+				RATE = 20
 				VARIABLE = bpm_je_general_strike_trigger_progress
 			}
 			change_variable = {
@@ -103,6 +101,31 @@ je_bpm_general_strike_trigger = {
 			if = {
 				limit = { bpm_je_general_strike_trigger_progress_baseline_target >= 100 }
 				set_variable = bpm_je_general_strike_trigger_progressing
+			}
+
+			set_variable = {
+				name = bpm_country_proletarian_clout_weighted_exhaustion
+				value = {
+					value = var:bpm_je_general_strike_exhaustion
+					multiply = {
+						value = 0
+						every_interest_group = {
+							limit = { bpm_ig_is_labor = yes }
+							add = ig_clout
+						}
+					}
+					multiply = 2.0
+				}
+			}
+			every_political_movement = {
+				remove_modifier = bpm_movement_exhausted
+				if = {
+					limit = { prev.var:bpm_je_general_strike_exhaustion > 1 }
+					add_modifier = {
+						name = bpm_movement_exhausted
+						multiplier = root.var:bpm_country_proletarian_clout_weighted_exhaustion
+					}
+				}
 			}
 		}
 	}

@@ -40,6 +40,12 @@ bpm_hog_title_country_spec = {
 
 	text = {
 		trigger = {
+			bpm_shogunate_trigger = yes
+		}
+		localization_key = bpm_hog_title_default_shogunate
+	}
+	text = {
+		trigger = {
 			OR = {
 				has_law = law_type:law_council_republic
 			}
@@ -67,6 +73,36 @@ bpm_hog_title_country_spec = {
 			}
 		}
 		localization_key = bpm_hog_title_default_chancellor
+	}
+	text = {
+		trigger = {
+			c:BRZ ?= owner
+			owner = {
+				has_law = law_type:law_monarchy
+			}
+			ruler = {
+				has_trait = trait_child
+			}
+		}
+		localization_key = bpm_hog_title_default_regent
+	}
+	text = {
+		trigger = {
+			OR = {
+				c:TUR ?= owner
+				c:SOK ?= owner
+				AND = {
+					c:PER ?= owner
+					owner = {
+						country_has_voting_franchise = no
+					}
+				}
+			}
+			owner = {
+				has_law = law_type:law_monarchy
+			}
+		}
+		localization_key = bpm_hog_title_default_grand_vizier
 	}
 	text = {
 		trigger = {
@@ -164,6 +200,12 @@ bpm_cabinet_type_name = {
 			c:USA ?= this
 		}
 		localization_key = bpm_cabinet_name_usa
+	}
+	text = {
+		trigger = {
+			bpm_shogunate_trigger = yes
+		}
+		localization_key = bpm_cabinet_name_shogunate
 	}
 	text = {
 		trigger = {

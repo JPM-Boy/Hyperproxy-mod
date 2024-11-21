@@ -14,9 +14,10 @@ bpm_CAB_toggle_char_select = {
             var:bpm_cabinet_char_select.type = {
                 save_scope_as = bpm_reference_institution_type
             }
+            bpm_reload_government_mandate = yes
             every_interest_group = {
                 limit = {
-                    is_in_government = yes
+                    var:bpm_ig_mandate > 0
                 }
                 owner = { add_to_variable_list = {
                     name = bpm_CAB_ig_select_pool
@@ -37,6 +38,79 @@ bpm_CAB_toggle_char_select = {
                 leader = {
                     bpm_cab_character_calculate_hyp_synergy = yes
                 }
+            }
+        }
+	}
+}
+
+bpm_CAB_is_interim = {
+    scope = country
+    is_shown = {
+        bpm_ruler_is_acting_as_interim_head_of_government = yes
+    }
+}
+
+bpm_CAB_toggle_pm_select = {
+	scope = institution
+	is_shown = {
+	}
+	is_valid = {
+        owner = {
+            OR = {
+                has_law = law_type:law_appointed_by_hos
+                has_law = law_type:law_appointed_on_advice
+            }
+        }
+	}
+	effect = {
+        owner = { 
+            remove_variable = bpm_cabinet_char_select
+            set_variable = bpm_cabinet_pm_select
+            clear_variable_list = bpm_CAB_pm_select_pool
+            every_interest_group = {
+                if = {
+                    limit = {
+                        owner = { has_law = law_type:law_appointed_by_hos }
+                        NOT = { this = owner.ruler.interest_group }
+                    }
+                    owner = {
+                        add_to_variable_list = {
+                            name = bpm_CAB_pm_select_pool
+                            target = prev.leader
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        owner = { has_law = law_type:law_appointed_on_advice }
+                        NOT = { this = owner.ruler.interest_group }
+                        is_powerful = yes
+                    }
+                    owner = {
+                        add_to_variable_list = {
+                            name = bpm_CAB_pm_select_pool
+                            target = prev.leader
+                        }
+                    }
+                }
+            }
+            owner.ruler.interest_group = {
+                save_scope_as = bpm_selected_ig
+            }
+            bpm_generate_cabinet_character = yes
+            scope:bpm_selected_character = {
+                set_variable = bpm_pm_candidate_var
+            }
+            add_to_variable_list = {
+                name = bpm_CAB_pm_select_pool
+                target = scope:bpm_selected_character
+            }
+            # bpm_reset_mandate_used = yes
+            # bpm_reload_government_mandate = yes
+
+            every_in_list = {
+                variable = bpm_CAB_pm_select_pool
+                bpm_cabinet_calculate_synergy_hypothetical_head_of_government = yes
             }
         }
 	}
@@ -67,8 +141,35 @@ bpm_newcab_select_ig = {
                 bpm_generate_cabinet_character = yes
             }
         }
-        scope:bpm_selected_character ?= {
-            bpm_add_to_cabinet_interaction_shared_effect = yes
+        if = {
+            limit = {
+                owner = {
+                    has_variable = bpm_cabinet_pm_select
+                }
+            }
+            scope:bpm_selected_character ?= {
+                interest_group = {
+                    bpm_update_mandate_used = { VALUE = bpm_cost_ig_position }
+                }
+                set_variable = {
+                    name = bpm_mandate_usage_pos
+                    value = interest_group.bpm_cost_ig_position
+                }
+                set_variable = {
+                    name = bpm_mandate_usage_neg
+                    value = var:bpm_mandate_usage_pos
+                }
+                change_variable = {
+                    name = bpm_mandate_usage_neg
+                    multiply = -1
+                }
+                bpm_appoint_as_hog = yes
+            }
+        }
+        else = {
+            scope:bpm_selected_character ?= {
+                bpm_add_to_cabinet_interaction_shared_effect = yes
+            }
         }
     }
 }
@@ -110,6 +211,7 @@ bpm_CAB_toggle_char_select_off = {
     }
     effect = {
         remove_variable = bpm_cabinet_char_select
+        remove_variable = bpm_cabinet_pm_select
     }
 }
 

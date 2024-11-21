@@ -57,7 +57,7 @@ bpm_rev_ripples.2 = { # Ripples from major worker's revolution
 						NOT = { has_global_variable = global_socialists_split_var }
 					}
 					is_interest_group_type = ig_cons
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
 				}
 				NOT = { has_modifier = bpm_emboldened_ig }
 			}

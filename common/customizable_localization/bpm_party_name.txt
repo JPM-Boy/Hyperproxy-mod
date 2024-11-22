@@ -5,75 +5,39 @@ bpm_party_name = {
 	
     text = {
         trigger = {
-            is_party_type = agrarian_party
+            is_party_type = far_left_party
         }
-        localization_key = agrarian
+        localization_key = far_left
     }
     text = {
         trigger = {
-            is_party_type = anarchist_party
+            is_party_type = far_right_party
         }
-        localization_key = anarchist
+        localization_key = far_right
     }
     text = {
         trigger = {
-            is_party_type = communist_party
+            is_party_type = leftwing_party
         }
-        localization_key = communist
+        localization_key = leftwing
     }
     text = {
         trigger = {
-            is_party_type = conservative_party
+            is_party_type = rightwing_party
         }
-        localization_key = conservative
+        localization_key = rightwing
     }
     text = {
         trigger = {
-            is_party_type = fascist_party
+            is_party_type = centre_left_party
         }
-        localization_key = fascist
+        localization_key = centre_left
     }
     text = {
         trigger = {
-            is_party_type = free_trade_party
+            is_party_type = centre_right_party
         }
-        localization_key = free_trade
-    }
-    text = {
-        trigger = {
-            is_party_type = liberal_party
-        }
-        localization_key = liberal
-    }
-    text = {
-        trigger = {
-            is_party_type = military_party
-        }
-        localization_key = military
-    }
-    text = {
-        trigger = {
-            is_party_type = radical_party
-        }
-        localization_key = radical
-    }
-    text = {
-        trigger = {
-            is_party_type = reactionary_party
-        }
-        localization_key = reactionary
-    }
-    text = {
-        trigger = {
-            is_party_type = religious_party
-        }
-        localization_key = religious
-    }
-    text = {
-        trigger = {
-            is_party_type = social_democrat_party
-        }
-        localization_key = social_democrat
+        localization_key = centre_right
     }
 	text = {
 		trigger = {

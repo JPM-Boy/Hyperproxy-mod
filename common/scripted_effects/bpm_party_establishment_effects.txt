@@ -1,47 +1,29 @@
 bpm_setup_party_establishment = {
-    bpm_setup_party_establishment_subp = { PARTY = agrarian }
-    bpm_setup_party_establishment_subp = { PARTY = anarchist }
-    bpm_setup_party_establishment_subp = { PARTY = communist }
-    bpm_setup_party_establishment_subp = { PARTY = conservative }
-    bpm_setup_party_establishment_subp = { PARTY = fascist }
-    bpm_setup_party_establishment_subp = { PARTY = free_trade }
-    bpm_setup_party_establishment_subp = { PARTY = liberal }
-    bpm_setup_party_establishment_subp = { PARTY = military }
-    bpm_setup_party_establishment_subp = { PARTY = radical }
-    bpm_setup_party_establishment_subp = { PARTY = reactionary }
-    bpm_setup_party_establishment_subp = { PARTY = religious }
-    bpm_setup_party_establishment_subp = { PARTY = social_democrat }    
+    bpm_setup_party_establishment_subp = { PARTY = centre_left }
+    bpm_setup_party_establishment_subp = { PARTY = centre_right }
+    bpm_setup_party_establishment_subp = { PARTY = far_left }
+    bpm_setup_party_establishment_subp = { PARTY = far_right }
+    bpm_setup_party_establishment_subp = { PARTY = leftwing }
+    bpm_setup_party_establishment_subp = { PARTY = rightwing }  
 }
 
 bpm_trend_party_establishment = {
-    bpm_trend_party_establishment_subp = { PARTY = agrarian }
-    bpm_trend_party_establishment_subp = { PARTY = anarchist }
-    bpm_trend_party_establishment_subp = { PARTY = communist }
-    bpm_trend_party_establishment_subp = { PARTY = conservative }
-    bpm_trend_party_establishment_subp = { PARTY = fascist }
-    bpm_trend_party_establishment_subp = { PARTY = free_trade }
-    bpm_trend_party_establishment_subp = { PARTY = liberal }
-    bpm_trend_party_establishment_subp = { PARTY = military }
-    bpm_trend_party_establishment_subp = { PARTY = radical }
-    bpm_trend_party_establishment_subp = { PARTY = reactionary }
-    bpm_trend_party_establishment_subp = { PARTY = religious }
-    bpm_trend_party_establishment_subp = { PARTY = social_democrat }    
+    bpm_trend_party_establishment_subp = { PARTY = centre_left }
+    bpm_trend_party_establishment_subp = { PARTY = centre_right }
+    bpm_trend_party_establishment_subp = { PARTY = far_left }
+    bpm_trend_party_establishment_subp = { PARTY = far_right }
+    bpm_trend_party_establishment_subp = { PARTY = leftwing }
+    bpm_trend_party_establishment_subp = { PARTY = rightwing }  
 }
 
 bpm_momentum_party_establishment = {
     bpm_trend_party_establishment = yes
-    bpm_momentum_party_establishment_subp = { PARTY = agrarian }
-    bpm_momentum_party_establishment_subp = { PARTY = anarchist }
-    bpm_momentum_party_establishment_subp = { PARTY = communist }
-    bpm_momentum_party_establishment_subp = { PARTY = conservative }
-    bpm_momentum_party_establishment_subp = { PARTY = fascist }
-    bpm_momentum_party_establishment_subp = { PARTY = free_trade }
-    bpm_momentum_party_establishment_subp = { PARTY = liberal }
-    bpm_momentum_party_establishment_subp = { PARTY = military }
-    bpm_momentum_party_establishment_subp = { PARTY = radical }
-    bpm_momentum_party_establishment_subp = { PARTY = reactionary }
-    bpm_momentum_party_establishment_subp = { PARTY = religious }
-    bpm_momentum_party_establishment_subp = { PARTY = social_democrat }
+    bpm_momentum_party_establishment_subp = { PARTY = centre_left }
+    bpm_momentum_party_establishment_subp = { PARTY = centre_right }
+    bpm_momentum_party_establishment_subp = { PARTY = far_left }
+    bpm_momentum_party_establishment_subp = { PARTY = far_right }
+    bpm_momentum_party_establishment_subp = { PARTY = leftwing }
+    bpm_momentum_party_establishment_subp = { PARTY = rightwing }
 }
 
 

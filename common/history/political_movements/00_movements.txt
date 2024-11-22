@@ -1,2 +1,21 @@
 POLITICAL_MOVEMENTS = {
+	every_country = {
+		limit = { NOT = { is_country_type = decentralized } }
+		if = {
+			limit = {
+				has_law = law_type:law_monarchy
+				country_has_voting_franchise = no
+				NOT = { c:FRA ?= this } # No generic royalist movement for France
+			}
+			create_political_movement = { type = movement_royalist }
+		}
+		else_if = {
+			limit = {
+				has_law = law_type:law_monarchy
+				country_has_voting_franchise = yes
+				NOT = { c:FRA ?= this } # No generic royalist movement for France
+			}
+			create_political_movement = { type = movement_bpm_royalist }
+		}
+	}
 }

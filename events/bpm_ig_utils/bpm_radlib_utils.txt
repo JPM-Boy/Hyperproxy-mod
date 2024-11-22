@@ -25,9 +25,9 @@ bpm_radlib_utils.1 = { # Make sure radicals become progressives
 			if = {
 				limit = {
 					has_law = law_type:law_monarchy	
-					ig:ig_prog = { has_ideology = ideology:ideology_gov_radical_republican }	
+					ig:ig_prog ?= { has_ideology = ideology:ideology_gov_radical_republican }	
 				}
-				ig:ig_prog = {
+				ig:ig_prog ?= {
 					bpm_remove_all_gov_ideologies = yes
 					bpm_reorder_ideologies = yes
 				}

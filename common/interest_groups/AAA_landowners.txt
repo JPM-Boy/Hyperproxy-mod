@@ -14,6 +14,16 @@
 		ideology_stratocratic
 		ideology_patriarchal
 	}
+
+	character_ideologies = {
+		ideology_moderate
+		ideology_pacifist
+		ideology_bonapartist
+		ideology_legitimist
+		ideology_land_reformer
+		ideology_protectionist
+		ideology_reformer
+	}
 	
 	enable = {
 		always = yes

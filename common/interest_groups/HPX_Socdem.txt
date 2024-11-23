@@ -10,13 +10,16 @@ ig_socdem = {
 	}
 
 	character_ideologies = {
-		ideology_moderate
-		ideology_pacifist
-		ideology_bonapartist
-		ideology_legitimist
+		ideology_center_leader
+		ideology_republican_leader
+		ideology_radical
 		ideology_land_reformer
-		ideology_protectionist
-		ideology_reformer
+		ideology_humanitarian
+		ideology_social_democrat
+		ideology_socialist_leader
+		ideology_pacifist
+		ideology_agrarian_socialist_leader
+		ideology_atheist
 	}
 	
 	enable = {

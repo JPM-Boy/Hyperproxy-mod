@@ -15,12 +15,11 @@
 
 	character_ideologies = {
 		ideology_moderate
-		ideology_pacifist
-		ideology_bonapartist
-		ideology_legitimist
-		ideology_land_reformer
-		ideology_protectionist
-		ideology_reformer
+		# ideology_orleanist
+		# ideology_bonapartist
+		ideology_jingoist_leader
+		ideology_authoritarian
+		# ideology_corporatist_leader
 	}
 	
 	enable = {

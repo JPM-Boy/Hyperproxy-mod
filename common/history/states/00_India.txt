@@ -2,11 +2,17 @@
 # "It's because of differing methods of editing throughout the production of the game. Quote marks are unnecessary, but harmless if present."
 
 STATES = {
+
+	s:STATE_INDIAN_OCEAN_TERRITORY = {
+		create_state = {
+			country = c:GBR
+			owned_provinces = {"x60E0B0" "xD0E090" "xD690E0"}
+		}
+	}
 	s:STATE_CEYLON = {
 		create_state = {
 			country = c:CEY
 			owned_provinces = { xA0EFCC xA0A0D0 x23CE5A x8D6FA8 xDF2050 xDAB923 x1DA090 xC18817 x8A707A x967CCE x602050 xC23350 x47B038 }
-			state_type = unincorporated
 		}
 		add_homeland = cu:tamil
 		add_homeland = cu:sinhala

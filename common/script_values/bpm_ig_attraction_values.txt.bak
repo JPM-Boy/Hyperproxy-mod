@@ -1,9 +1,5 @@
 ﻿# Use for radical factions that are expected to gain the most boost in popularity from radicalization 
-# i.e Fascists everywhere, Anarchists/Socialists for non-socialist republics, Liberals in liberal republics
-ig_attraction_radical_in_govt = {
-	
-}
-
+# i.e Fascists everywhere, Anarchists/Socialists for non-socialist republics, Liberals in illiberal republics
 ig_attraction_radical = {
 	add = 1
 	if = {
@@ -21,9 +17,17 @@ ig_attraction_radical = {
 			}
 		}
 	}
+	else_if = {
+		limit = { pop_loyalist_fraction > 0 }
+		multiply = { # Reduced to zero by loyalists
+			desc = "BPM_POP_LOYALISTS_OPPOSITION_RADICAL"
+			value = 1
+			subtract = pop_loyalist_fraction
+		}
+	}
 	else = {
 		multiply = { # Up to 3.0x boost due to anger
-			desc = "BPM_POP_EXTREME_RADICALS_OPPOSITION"
+			desc = "BPM_POP_RADICALS_OPPOSITION"
 			value = 1
 			add = {
 				value = pop_radical_fraction
@@ -51,6 +55,15 @@ ig_attraction_very_radical = {
 			}
 		}
 	}
+	else_if = {
+		limit = { pop_loyalist_fraction > 0 }
+		multiply = { # Reduced to zero by loyalists at 50% or more
+			desc = "BPM_POP_LOYALISTS_OPPOSITION_TOO_RADICAL"
+			value = 0.5
+			subtract = pop_loyalist_fraction
+			min = 0
+		}
+	}
 	else = {
 		multiply = { # Up to 4.0x boost due to anger
 			desc = "BPM_POP_EXTREME_RADICALS_OPPOSITION"
@@ -72,10 +85,24 @@ ig_attraction_moderate = {
 				is_in_government = yes
 			}
 		}
-		multiply = { # Multiplied by 2.0x max
+		multiply = { # Multiplied by 4.0x max
 			desc = "BPM_POP_LOYALISTS_GOVT_MODERATE"
 			value = 1
-			add = pop_loyalist_fraction
+			add = {
+				value = pop_loyalist_fraction
+				multiply = 3
+			}
+		}
+	}
+	else_if = {
+		limit = { pop_loyalist_fraction > 0 }
+		multiply = { # Multiplied by 1.5x max
+			desc = "BPM_POP_LOYALISTS_OPPOSITION_MODERATE"
+			value = 1
+			add = {
+				value = pop_loyalist_fraction
+				divide = 2
+			}
 		}
 	}
 	else = {
@@ -146,8 +173,9 @@ ig_attraction_to_ruler_ideology_from_stability = {
 		if = {
 			limit = {
 				owner = {
-					ruler.interest_group = scope:interest_group
-					has_variable = bpm_political_stability
+					has_variable = bpm_ruler_char
+					exists = var:bpm_ruler_char
+					var:bpm_ruler_char.interest_group = scope:interest_group					has_variable = bpm_political_stability
 					var:bpm_political_stability > 50
 					bpm_country_laws_no_voting = yes
 				}
@@ -227,7 +255,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 	# 	desc = "POP_LOWER_STRATA_VERY_POOR"
 	# 	if = {
 	# 		limit = {
-	# 			strata = poor
+	# 			strata = lower
 	# 			standard_of_living <= 10
 	# 			literacy_rate >= 0.5
 	# 		}
@@ -238,7 +266,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 	# 	desc = "POP_LOWER_STRATA_POOR"
 	# 	if = {
 	# 		limit = {
-	# 			strata = poor
+	# 			strata = lower
 	# 			standard_of_living <= 15
 	# 			literacy_rate >= 0.5
 	# 		}
@@ -495,8 +523,14 @@ bpm_ig_agitator_popularity = {
 bpm_ig_ruler_popularity = {
 	desc = "BPM_POP_FROM_RULER_POPULARITY"
 	if = {
-		limit = { owner = { ruler.interest_group = scope:interest_group } }
-		owner.ruler = {
+		limit = { 
+			owner = { 
+				has_variable = bpm_ruler_char
+				exists = var:bpm_ruler_char
+				var:bpm_ruler_char.interest_group = scope:interest_group
+			 }
+		}
+		owner.var:bpm_ruler_char = {
 			value = popularity
 			multiply = 0.005
 			add = 1

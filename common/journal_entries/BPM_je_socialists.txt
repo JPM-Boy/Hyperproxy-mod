@@ -140,13 +140,13 @@ je_bpm_propaganda_of_the_deed = {
 		}
 		# radical_fraction = {
 		#	value >= 0.1
-		#	strata = poor 
+		#	strata = lower 
 		# }
 		bpm_performance_significant_country = yes
 		
 		# has_technology_researched = anarchism
 		#OR = {
-		#	ig:ig_anarchists = {
+		#	ig:ig_anarchists ?= {
 		#		is_marginal = no
 		#	}
 		#	any_scope_character = {
@@ -156,7 +156,7 @@ je_bpm_propaganda_of_the_deed = {
 		#}
 		trigger_if = {
 			limit = {
-				bpm_country_is_latin_american = true
+				bpm_country_is_latin_american = yes
 			}
 			has_technology_researched = anarchism
 		}
@@ -210,7 +210,7 @@ je_bpm_propaganda_of_the_deed = {
 				if = {
 					limit = {
 						OR = {
-							ig:ig_anarchists = {
+							ig:ig_anarchists ?= {
 								is_powerful = yes
 							}
 							any_scope_character = {
@@ -678,13 +678,13 @@ je_bpm_syndicalism = {
 						set_interest_group_name = ig_syndicalists
 					}
 				}
-				# ig:ig_socialists = {
+				# ig:ig_socialists ?= {
 				# 	if = {
 				# 		limit = { bpm_ig_enabled = yes }
 				# 		leader = { set_ideology = ideology:ideology_syndicalist }
 				# 	}
 				# }
-				# ig:ig_revolutionist_socialists = {
+				# ig:ig_revolutionist_socialists ?= {
 				# 	if = {
 				# 		limit = { bpm_ig_enabled = yes }
 				# 		leader = { set_ideology = ideology:ideology_syndicalist }

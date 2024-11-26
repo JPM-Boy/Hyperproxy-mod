@@ -174,6 +174,26 @@ ideology_traditionalist = {
 			bpm_ig_is_liberal = yes
 			bpm_ig_is_proletarian = yes
 		}
+		NOR = {
+			has_ideology = ideology:ideology_rel_radical_secularist
+			has_ideology = ideology:ideology_rel_secularist
+			has_ideology = ideology:ideology_rel_atheist
+		}
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+			}			
+			NOR = {
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_landowners
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_intelligentsia
+			}
+		}
 	}
 	
 	interest_group_leader_weight = {
@@ -202,7 +222,7 @@ ideology_traditionalist = {
 	}
 
 	non_interest_group_leader_trigger = {
-		if = {
+		trigger_if = {
 			limit = {
 				NOT = {
 					owner = {
@@ -1662,11 +1682,9 @@ ideology_jingoist_leader = {
 		# less likely if left-wing
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						bpm_ig_is_left_wing = yes
-						bpm_ig_is_lower_institutional = yes
-					}
+				OR = {
+					bpm_ig_is_left_wing = yes
+					bpm_ig_is_lower_institutional = yes
 				}
 			}
 			add = -100
@@ -1782,9 +1800,7 @@ ideology_royalist = {
 				owner = {
 					has_law = law_type:law_monarchy
 				}
-				interest_group = {
-					ig_approval > 5
-				}
+				ig_approval > 5
 			}
 			add = 50
 		}
@@ -1794,20 +1810,16 @@ ideology_royalist = {
 				owner = {
 					has_law = law_type:law_monarchy
 				}
-				interest_group = {
-					ig_approval < 0
-				}
+				ig_approval < 0
 			}
 			add = -50
 		}
 		# less likely if liberal
 		if = {
 			limit = {
-				interest_group = {
-					OR = {
-						bpm_ig_is_liberal = yes
-						bpm_ig_is_proletarian = yes
-					}
+				OR = {
+					bpm_ig_is_liberal = yes
+					bpm_ig_is_proletarian = yes
 				}
 			}
 			add = -75
@@ -3354,7 +3366,7 @@ ideology_anarchist = {
 	}
 	
 	interest_group_leader_weight = {
-		value = -10
+		value = -40
 		if = {
 			limit = {
 				is_interest_group_type = ig_anarchists
@@ -3898,7 +3910,7 @@ ideology_ethno_nationalist = {
 	}
 	
 	interest_group_leader_weight = {
-		value = 100
+		value = 25
 		# More likely with unowned claims
 		if = {
 			limit = {
@@ -4052,6 +4064,26 @@ ideology_theocrat = {
 				bpm_ig_is_urban_institutional = no
 			}
 		}
+		NOR = {
+			has_ideology = ideology:ideology_rel_radical_secularist
+			has_ideology = ideology:ideology_rel_secularist
+			has_ideology = ideology:ideology_rel_atheist
+		}
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+			}			
+			NOR = {
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_landowners
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_intelligentsia
+			}
+		}
 	}
 	
 	interest_group_leader_weight = {
@@ -4103,7 +4135,7 @@ ideology_theocrat = {
 	}
 
 	non_interest_group_leader_trigger = {
-		if = {
+		trigger_if = {
 			limit = {
 				NOT = {
 					owner = {
@@ -4193,7 +4225,7 @@ ideology_market_liberal = {
 		bpm_ig_is_labor = no
 		bpm_ig_is_radical_left = no
 		bpm_ig_is_radical_right = no
-		NOT = { has_ideology = ideology_eco_colonialist }
+		NOT = { has_ideology = ideology:ideology_eco_colonialist }
 	}
 
 	interest_group_leader_weight = {
@@ -4584,8 +4616,8 @@ ideology_protectionist = {
 			}
 		}
 		bpm_ig_is_socialist = no
-		NOT = { has_ideology = ideology_eco_autarky }
-		NOT = { has_ideology = ideology_eco_colonialist }
+		NOT = { has_ideology = ideology:ideology_eco_autarky }
+		NOT = { has_ideology = ideology:ideology_eco_colonialist }
 		NOT = { is_interest_group_type = ig_market_liberals }
 	}
 
@@ -5841,7 +5873,7 @@ ideology_liberal_leader = {
 	}
 	
 	interest_group_leader_weight = {
-		value = 100
+		value = 25
 		# less likely if rural
 		if = {
 			limit = {
@@ -5922,7 +5954,7 @@ ideology_liberal_leader = {
 	}
 	
 	non_interest_group_leader_weight = {
-		value = 100
+		value = 25
 	}
 }
 
@@ -7214,10 +7246,21 @@ ideology_traditionalist_minoritarian = {
 		}
 		NOT = { has_ideology = ideology:ideology_rel_radical_moralist }
 		NOT = { has_ideology = ideology:ideology_rel_moralist }
+		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+			}			
+			NOR = {
+				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_armed_forces
+			}
+		}
 	}
 
 	non_interest_group_leader_trigger = {
-		if = {
+		trigger_if = {
 			limit = {
 				NOT = {
 					owner = {

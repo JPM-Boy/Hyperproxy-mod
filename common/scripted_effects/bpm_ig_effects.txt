@@ -37,7 +37,7 @@ bpm_make_igs_pro_serfdom = {
 		add_ideology = ideology_eco_serf_economy
 		bpm_reorder_ideologies = yes
 	}
-	ig:ig_cons = {
+	ig:ig_cons ?= {
 		bpm_remove_all_eco_ideologies = yes
 		add_ideology = ideology_eco_conservative_agrarian
 		bpm_reorder_ideologies = yes
@@ -228,7 +228,7 @@ bpm_ig_make_hindu_moralist = {
 	add_ideology = ideology_gov_radical_monarchist
 	add_ideology = ideology_dop_autocrat
 	add_ideology = ideology_fem_patriarchal
-	add_ideology = ideology_cit_nationalist
+	add_ideology = ideology_cit_traditional_culture
 	bpm_reorder_ideologies = yes
 }
 
@@ -241,7 +241,7 @@ bpm_ig_make_hindu_moralist_british_india = {
 	add_ideology = ideology_gov_radical_monarchist
 	add_ideology = ideology_dop_autocrat
 	add_ideology = ideology_fem_patriarchal
-	add_ideology = ideology_cit_nationalist
+	add_ideology = ideology_cit_traditional_culture
 	add_ideology = ideology_rel_secularist
 	bpm_reorder_ideologies = yes
 }

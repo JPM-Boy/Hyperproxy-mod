@@ -8,7 +8,7 @@ bpm_ig_is_radical_opposition_fascist = {
             owner = {
             	has_law = law_type:law_party_single
             	any_active_party = {
-            		limit = {is_party_type = far_right_party}
+            		is_party_type = far_right_party
             	}
             }
         }
@@ -19,7 +19,7 @@ bpm_ig_is_radical_opposition_fascist = {
 bpm_ig_is_radical_opposition_non_cr_socialist = {
 	AND = {
 		owner = { NOT = { has_law = law_type:law_council_republic } }
-		is_interest_group_type = ig_orthodox_communist
+		bpm_ig_is_socialist = yes
 	}
 }
 
@@ -122,7 +122,7 @@ bpm_ig_is_very_radical_opposition_non_cr_socialist = {
 	AND = {
 		owner = { NOT = { has_law = law_type:law_council_republic } }
 		OR = {
-			is_interest_group_type = ig_orthodox_communist 
+			bpm_ig_is_radical_socialist = yes 
 		}
 	}
 }

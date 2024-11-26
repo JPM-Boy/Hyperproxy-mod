@@ -88,6 +88,9 @@ je_hpx_soviet_unity = {
 	}
 
 	on_fail = {
+		every_country = {
+			trigger_event = { id = hpx_misc.2 }
+		}
 		if = {
 			limit = {global_var:soviet_collapse = 0}
 			dissolve_soviet_hard = yes

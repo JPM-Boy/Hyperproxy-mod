@@ -425,8 +425,8 @@ bpm_initialize_new_leftism = {
 			add_ideology = ideology_ban_conservative_supremacist
 			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla
-			add_ideology = ideology_reactionary
-			add_ideology = ideology_patriotic
+			add_ideology = ideology_egalitarian
+			add_ideology = ideology_socialist
 
 			every_scope_character = {
 				limit = {

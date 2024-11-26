@@ -12,7 +12,7 @@ STATES = {
 	s:STATE_CEYLON = {
 		create_state = {
 			country = c:CEY
-			owned_provinces = { xA0EFCC xA0A0D0 x23CE5A x8D6FA8 xDF2050 xDAB923 x1DA090 xC18817 x8A707A x967CCE x602050 xC23350 x47B038 }
+			owned_provinces = { "x1DA090" "x23CE5A" "x47B038" "x5B5C22" "x602050" "x8A707A" "x8D6FA8" "x95AAA3" "x967CCE" "xA0A0D0" "xA0EFCC" "xC18817" "xC23350" "xDAB923" "xDF2050" }
 		}
 		add_homeland = cu:tamil
 		add_homeland = cu:sinhala

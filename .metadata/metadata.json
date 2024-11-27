@@ -24,6 +24,7 @@
       "common/dynamic_country_names",
       "common/dynamic_country_map_colors",
       "events",
+      "common/laws",
       "common/country_formation",
       "common/decisions",
       "common/history/military_formations",

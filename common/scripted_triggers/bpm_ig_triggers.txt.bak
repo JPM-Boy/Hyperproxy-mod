@@ -191,27 +191,6 @@ bpm_ig_is_pro_serfdom = {
 	}
 }
 
-bpm_ig_is_pro_slavery = {
-	custom_tooltip = {
-		text = "tooltip_bpm_ig_is_pro_serfdom"
-		OR = {
-			has_ideology = ideology:ideology_eco_slave_economy
-			has_ideology = ideology:ideology_eco_debt_serf_economy
-			has_ideology = ideology:ideology_eco_slave_colonialist
-		}
-	}
-}
-
-bpm_ig_is_colonialist = {
-	custom_tooltip = {
-		text = "tooltip_bpm_ig_is_pro_serfdom"
-		OR = {
-			has_ideology = ideology:ideology_eco_colonialist
-			has_ideology = ideology:ideology_eco_slave_colonialist
-		}
-	}
-}
-
 # LIBERAL IGS
 
 bpm_ig_is_democrat = {

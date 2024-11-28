@@ -81,15 +81,5 @@
 			}
 		}
 		multiply = 0.5
-	}		
-
-	# Prevent AI from effectively abolishing the free state of krakow
-	# We should really do this in a systemic way in the future, maybe some kind of special subject interaction that guarantees them against legal meddling?
-	if = {
-		limit = {
-			exists = c:KRA
-			scope:target_country = { this = c:KRA }
-		}
-		multiply = 0.0 
-	}	
+	}
 }

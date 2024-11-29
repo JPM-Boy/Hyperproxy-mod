@@ -22,6 +22,55 @@
 	bpm_trend_party_establishment = yes
 }
 
+bpm_setup_cabinet = {
+	set_variable = {
+        name = bpm_cached_antagonism
+        value = 0
+    }
+    set_variable = {
+        name = bpm_cached_antagonism_raw
+        value = 0
+    }
+    set_variable = {
+        name = bpm_cab_synergy
+        value = 1
+    }
+	if = {
+		limit = {
+			OR = {
+				has_technology_researched = currency_standards
+				c:JAP ?= THIS
+			}
+
+			#is_player = yes
+		}
+		trigger_event = {
+            id = bpm_cabinet_event.1
+			days = 1
+        }
+	}
+	else_if = {
+		limit = {
+			has_technology_researched = stock_exchange
+			#is_player = yes
+		}
+		trigger_event = {
+			id = bpm_cabinet_event.1
+			days = 7
+		}
+	}
+	else_if = {
+		limit = {
+			has_technology_researched = romanticism
+			#is_player = yes
+		}
+		trigger_event = {
+			id = bpm_cabinet_event.1
+			days = 30
+		}
+	}
+}
+
 hpx_setup_country_variables = {
 	set_variable = {
 		name = imf_member
@@ -508,9 +557,6 @@ bpm_update_ai_cheats = {
 				has_journal_entry = je_donghak_movement
 				has_journal_entry = je_sick_man_main
 			}
-			bpm_remove_all_mil_ideologies = yes
-			add_ideology = ideology_mil_defensive_patriot 
-			bpm_reorder_ideologies = yes
 		}
 		remove_modifier = bpm_ai_cheats
 	}
@@ -750,51 +796,3 @@ bpm_copy_variable_from_civil_war_origin = {
 	}
 }
 
-bpm_setup_cabinet = {
-	set_variable = {
-        name = bpm_cached_antagonism
-        value = 0
-    }
-    set_variable = {
-        name = bpm_cached_antagonism_raw
-        value = 0
-    }
-    set_variable = {
-        name = bpm_cab_synergy
-        value = 1
-    }
-	if = {
-		limit = {
-			OR = {
-				has_technology_researched = currency_standards
-				c:JAP ?= THIS
-			}
-
-			#is_player = yes
-		}
-		trigger_event = {
-            id = bpm_cabinet_event.1
-			days = 1
-        }
-	}
-	else_if = {
-		limit = {
-			has_technology_researched = stock_exchange
-			#is_player = yes
-		}
-		trigger_event = {
-			id = bpm_cabinet_event.1
-			days = 7
-		}
-	}
-	else_if = {
-		limit = {
-			has_technology_researched = romanticism
-			#is_player = yes
-		}
-		trigger_event = {
-			id = bpm_cabinet_event.1
-			days = 30
-		}
-	}
-}

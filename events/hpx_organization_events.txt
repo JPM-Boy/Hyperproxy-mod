@@ -11,7 +11,9 @@ hpx_organization.imf.1 = { # IMF
 	desc = hpx_organization.imf.1.d
 	flavor = hpx_organization.imf.1.f
 	trigger = {
-		has_law = law_type:law_fixed_exchange_rate
+		owner = {
+			has_law = law_type:law_fixed_exchange_rate
+		}
 		scaled_debt >= 0.75
 		has_variable = imf_member
 		NOT = {has_variable = requested_debt}

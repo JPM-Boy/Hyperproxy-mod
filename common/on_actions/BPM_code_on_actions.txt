@@ -540,13 +540,6 @@ on_bpm_law_activated = {
 			}
 			owner = { activate_law = law_type:law_mercantilism }
 		}
-		else_if = {
-			limit = {
-				game_date > 1836.1.1
-				this.type = law_type:law_closed_borders
-			}
-			owner = { activate_law = law_type:law_isolationism }
-		}
 
 		if = {
 			limit = {

@@ -221,10 +221,10 @@ NPolitics = {
 	SECESSION_WON_LOYALISTS_INCREASED_PERCENTAGE = 0.5		# This percentage of pops in the secession country of the seceded culture will become more loyal after a secession is victorious
 	SECESSION_START_RADICALS_REDUCED_PERCENTAGE = 1.0		# The number of radicals of pops of the seceded culture in states that seceded will decrease by this amount when a secession war begins
 	SECESSION_LOST_RADICALS_REDUCED_PERCENTAGE = 1.0		# The number of radicals of pops of the seceded culture in states that seceded will decrease by this amount when a secession is crushed
-	REVOLUTION_START_REBEL_ig_prog_REDUCED_PERCENTAGE = 1.0		# The number of radicals of pops will decrease by this amount when a revolution starts (relative to membership in insurrectionist IGs)
+	REVOLUTION_START_REBEL_IG_RADICALS_REDUCED_PERCENTAGE = 1.0		# The number of radicals of pops will decrease by this amount when a revolution starts (relative to membership in insurrectionist IGs)
 	REVOLUTION_ENDED_RADICAL_BASE_REMOVAL_PERCENTAGE = 0.5		# When a revolution ends, this base fraction of radicals is removed from all pops regardless of IG membership to represent 'civil war fatigue'
-	REVOLUTION_LOST_REBEL_ig_prog_REDUCED_PERCENTAGE = 0.25	# The number of radicals of pops will additionally decrease by this amount when a revolution is crushed (relative to membership in defeated IGs)
-	REVOLUTION_WON_LOYAL_ig_prog_REDUCED_PERCENTAGE = 0.5	# The number of radicals of pops will additionally decrease by this amount when a revolution is crushed (relative to membership in victorious IGs)
+	REVOLUTION_LOST_REBEL_IG_RADICALS_REDUCED_PERCENTAGE = 0.25	# The number of radicals of pops will additionally decrease by this amount when a revolution is crushed (relative to membership in defeated IGs)
+	REVOLUTION_WON_LOYAL_IG_RADICALS_REDUCED_PERCENTAGE = 0.5	# The number of radicals of pops will additionally decrease by this amount when a revolution is crushed (relative to membership in victorious IGs)
 	
 	IG_SUPPRESSION_COST = 200						# The amount of AUT it costs to Suppress an IG
 	IG_BOLSTER_COST = 200							# The amount of AUT it costs to Bolster an IG

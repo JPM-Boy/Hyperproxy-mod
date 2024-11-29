@@ -152,7 +152,7 @@ has_je_conquest_reason = {
 						region = sr:region_madras
 						region = sr:region_bengal
 						# himalayas intentionally excluded to make BIC less aggressive against Tibet etc
-						state_region = s:STATE_MANDALAY
+						state_region = s:STATE_BURMA
 						state_region = s:STATE_KACHIN
 						state_region = s:STATE_SHAN_STATES
 						state_region = s:STATE_PEGU						

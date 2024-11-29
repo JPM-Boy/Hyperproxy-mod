@@ -261,8 +261,8 @@ law_syndicalism = {
 			bpm_reorder_ideologies = yes
 		}
 		if = {
-			limit = { exists = ig:ig_anarchists }
-			ig:ig_anarchists ?= {
+			limit = { exists = ig:ig_anarchist }
+			ig:ig_anarchist ?= {
 				bpm_remove_all_dop_ideologies = yes
 				add_ideology = ideology_dop_anarcho_syndicalist
 				bpm_reorder_ideologies = yes

@@ -67,9 +67,9 @@ je_bpm_ban_communists = {
 	possible = {
 		OR = {
 			ig:ig_socialists ?= { is_marginal = no }
-			ig:ig_revolutionist_socialists ?= { is_marginal = no }
-			ig:ig_reformist_socialists ?= { is_marginal = no }
-			ig:ig_anarchists ?= { is_marginal = no }
+			ig:ig_orthodox_communist ?= { is_marginal = no }
+			ig:ig_reformist_communist ?= { is_marginal = no }
+			ig:ig_anarchist ?= { is_marginal = no }
 			ig:ig_trade_unions ?= {
 				is_marginal = no
 				OR = {

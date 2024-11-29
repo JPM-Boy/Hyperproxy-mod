@@ -185,7 +185,7 @@ bpm_decrease_police_sway_gui = {
 			institution_investment_level = { institution = institution_police value > 1 }
 		}
 		OR = {
-			is_interest_group_type = ig_anarchists
+			is_interest_group_type = ig_anarchist
 			AND = {
 				NOT = { owner = { has_law = law_type:law_council_republic } }
 				OR = {
@@ -223,7 +223,7 @@ bpm_decrease_home_affairs_sway_gui = {
 			institution_investment_level = { institution = institution_home_affairs value > 1 }
 		}
 		OR = {
-			is_interest_group_type = ig_anarchists
+			is_interest_group_type = ig_anarchist
 			trigger_if = {
 				limit = { owner = { has_law = law_type:law_council_republic } }
 				bpm_ig_is_labor = no

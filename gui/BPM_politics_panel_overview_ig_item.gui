@@ -1163,7 +1163,7 @@ types politics_panel_types
 						hbox = {
 							layoutpolicy_horizontal = preferred
 							layoutpolicy_vertical = preferred
-							using = ig_radicals_tooltip_with_graph
+							using = ig_prog_tooltip_with_graph
 
 							expand = {}
 
@@ -1249,7 +1249,7 @@ types politics_panel_types
 						name = "bar_2"
 						layoutpolicy_horizontal = expanding
 						size = { 0 14 }
-						using = ig_radicals_tooltip_with_graph
+						using = ig_prog_tooltip_with_graph
 
 						blockoverride "values" {
 							min = 0

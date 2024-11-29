@@ -63,7 +63,7 @@ ig_neolib_desc:0 "Neoliberalism, emphasizes free-market capitalism, deregulation
 
 #Progressists
 ig_prog:0 "Progressists"
-ig_prog_only_icon:0 "@ig_radicals!"
+ig_prog_only_icon:0 "@ig_prog!"
 ig_prog_desc:0 "Progressivism, focuses on addressing social inequalities and promoting social justice through active government intervention. It advocates for policies that expand social welfare, protect workers' rights, and ensure equal opportunities for all. Progressives support progressive taxation, universal healthcare, and strong environmental regulations. They emphasize the importance of inclusive governance, civil rights, and grassroots activism to create a fair and equitable society, striving for systemic reforms to address economic and social disparities."
 
 #Reactionaries

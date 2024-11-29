@@ -803,7 +803,7 @@ bpm_ig_can_have_radical_leader_1848 = {
 		is_interest_group_type = ig_industrialists
 		AND = {
 			owner = { bpm_country_laws_ok_voting = no }
-			is_interest_group_type = ig_liberals
+			is_interest_group_type = ig_liberal
 		}
 	}
 }

@@ -513,7 +513,7 @@ types interest_group_panel_types
 
 								blockoverride "ig_lr_bar_base"
 								{
-									using = ig_radicals_tooltip_with_graph
+									using = ig_prog_tooltip_with_graph
 								}
 
 								blockoverride "ig_lr_bar_icon"

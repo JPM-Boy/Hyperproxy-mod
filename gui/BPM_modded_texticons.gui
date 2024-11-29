@@ -1,5 +1,5 @@
 ﻿texticon = {
-  icon = ig_radicals
+  icon = ig_prog
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/radicals_30.dds"
@@ -7,7 +7,7 @@
   }
 }
 texticon = {
-  icon = ig_liberals
+  icon = ig_liberal
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/liberals_30.dds"
@@ -23,7 +23,7 @@ texticon = {
   }
 }
 texticon = {
-  icon = ig_revolutionist_socialists
+  icon = ig_orthodox_communist
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/revolutionists_30.dds"
@@ -31,7 +31,7 @@ texticon = {
   }
 }
 texticon = {
-  icon = ig_reformist_socialists
+  icon = ig_reformist_communist
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/reformists_30.dds"
@@ -39,7 +39,7 @@ texticon = {
   }
 }
 texticon = {
-  icon = ig_anarchists
+  icon = ig_anarchist
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/anarchists_30.dds"
@@ -71,7 +71,7 @@ texticon = {
   }
 }
 texticon = {
-  icon = ig_conservatives
+  icon = ig_cons
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/conservatives_30.dds"
@@ -79,7 +79,7 @@ texticon = {
   }
 }
 texticon = {
-  icon = ig_reactionaries
+  icon = ig_reactionary
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/reactionaries_30.dds"
@@ -87,7 +87,7 @@ texticon = {
   }
 }
 texticon = {
-  icon = ig_fascists
+  icon = ig_fascist
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/fascists_30.dds"

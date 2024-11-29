@@ -21,7 +21,7 @@
 					is_interest_group_type = ig_petty_bourgeoisie
 					is_interest_group_type = ig_industrialists
 					is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 					is_interest_group_type = ig_national_liberals
 					is_interest_group_type = ig_agrarian_populists
 				}
@@ -86,8 +86,8 @@ sway_to_legitimism = {
 					is_interest_group_type = ig_rural_folk
 					is_interest_group_type = ig_petty_bourgeoisie
 					is_interest_group_type = ig_landowners
-					is_interest_group_type = ig_conservatives
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_cons
+					is_interest_group_type = ig_reactionary
 				}
 			}
 		}
@@ -154,9 +154,9 @@ sway_to_orleanism = {
 					is_interest_group_type = ig_petty_bourgeoisie
 					is_interest_group_type = ig_intelligentsia
 					is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_liberals
+					is_interest_group_type = ig_liberal
 					is_interest_group_type = ig_market_liberals
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 				}
 			}
 		}

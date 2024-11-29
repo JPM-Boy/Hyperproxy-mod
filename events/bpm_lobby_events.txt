@@ -73,7 +73,7 @@ bpm_lobby.1 = { # Fascists Enter Anti-Country Lobby
 		default_option = yes
 		trigger = {
 			NOT = { has_law = law_type:law_ultramilitarism }
-			ig:ig_fascists ?= {
+			ig:ig_fascist ?= {
 				is_in_government = no
 			}
 		}
@@ -97,7 +97,7 @@ bpm_lobby.1 = { # Fascists Enter Anti-Country Lobby
 		trigger = {
 			OR = {
 				has_law = law_type:law_ultramilitarism
-				ig:ig_fascists ?= {
+				ig:ig_fascist ?= {
 					is_in_government = yes
 				}
 			}
@@ -123,7 +123,7 @@ bpm_lobby.1 = { # Fascists Enter Anti-Country Lobby
 		}
 		trigger = {
 			NOT = { has_law = law_type:law_ultramilitarism }
-			ig:ig_fascists ?= {
+			ig:ig_fascist ?= {
 				is_in_government = no
 			}
 		}

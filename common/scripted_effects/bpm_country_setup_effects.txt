@@ -223,7 +223,7 @@ bpm_setup_country_dop_ideologies = {
 					is_interest_group_type = ig_landowners
 					is_interest_group_type = ig_industrialists
 					is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 				}
 			}
 			bpm_remove_all_dop_ideologies = yes
@@ -235,7 +235,7 @@ bpm_setup_country_dop_ideologies = {
 			bpm_country_is_latin_american = yes
 			has_law = law_type:law_appointed_bureaucrats
 		}
-		ig:ig_reactionaries ?= {
+		ig:ig_reactionary ?= {
 			bpm_remove_all_dop_ideologies = yes
 			add_ideology = ideology_dop_meritocratic_autocrat
 		}
@@ -298,7 +298,7 @@ bpm_setup_country_eco_ideologies = {
 		}
 		if = {
 			limit = { has_law = law_type:law_legacy_slavery }
-			ig:ig_reactionaries ?= {
+			ig:ig_reactionary ?= {
 				bpm_remove_all_eco_ideologies = yes
 				add_ideology = ideology_eco_conservative_agrarian
 				remove_modifier = bpm_landowner_wary
@@ -332,8 +332,8 @@ bpm_setup_country_mil_cit_ideologies = {
 		every_interest_group = {
 			limit = {
 				OR = {
-					is_interest_group_type = ig_reactionaries
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_reactionary
+					is_interest_group_type = ig_cons
 					is_interest_group_type = ig_landowners
 				}
 			}
@@ -347,10 +347,10 @@ bpm_setup_country_mil_cit_ideologies = {
 		}
 		if = {
 			limit = {
-				ig:ig_reactionaries ?= { has_ideology = ideology:ideology_mil_aristocratic_militarist }
+				ig:ig_reactionary ?= { has_ideology = ideology:ideology_mil_aristocratic_militarist }
 				NOT = { this = c:FRA }
 			}
-			ig:ig_reactionaries ?= { 
+			ig:ig_reactionary ?= { 
 				bpm_remove_all_mil_ideologies = yes
 				add_ideology = ideology_jingoist
 			}
@@ -444,7 +444,7 @@ bpm_setup_country_mil_cit_ideologies = {
 			limit = {
 				has_journal_entry = je_caudillo
 			}
-			ig:ig_reactionaries ?= {  
+			ig:ig_reactionary ?= {  
 				bpm_remove_all_mil_ideologies = yes
 				add_ideology = ideology_mil_institutional_militarist
 			}
@@ -457,7 +457,7 @@ bpm_setup_country_mil_cit_ideologies = {
 					country_has_primary_culture = cu:mexican
 				}
 			}
-			ig:ig_radicals ?= { 
+			ig:ig_prog ?= { 
 				bpm_remove_all_mil_ideologies = yes
 				add_ideology = ideology_mil_antimilitarist
 			}
@@ -472,7 +472,7 @@ bpm_setup_country_wel_ideologies = {
 		limit = { bpm_country_is_in_new_world = yes }
 		if = {
 			limit = { country_has_state_religion = rel:catholic }
-			ig:ig_reactionaries ?= { 
+			ig:ig_reactionary ?= { 
 				if = {
 					limit = { has_ideology = ideology:ideology_wel_no_welfare }
 				}

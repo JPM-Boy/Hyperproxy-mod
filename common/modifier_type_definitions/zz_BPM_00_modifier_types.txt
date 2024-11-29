@@ -43,13 +43,13 @@ interest_group_ig_agrarian_populists_pol_str_mult = {
 	decimals = 0
 }
 
-interest_group_ig_anarchists_pol_str_mult = {
+interest_group_ig_anarchist_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_conservatives_pol_str_mult = {
+interest_group_ig_cons_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
@@ -79,25 +79,25 @@ interest_group_ig_national_liberals_pol_str_mult = {
 	decimals = 0
 }
 
-interest_group_ig_radicals_pol_str_mult = {
+interest_group_ig_prog_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_reactionaries_pol_str_mult = {
+interest_group_ig_reactionary_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_reformist_socialists_pol_str_mult = {
+interest_group_ig_reformist_communist_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_revolutionist_socialists_pol_str_mult = {
+interest_group_ig_orthodox_communist_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
@@ -122,7 +122,7 @@ interest_group_ig_agrarian_populists_approval_add = {
 	}
 }
 
-interest_group_ig_anarchists_approval_add = {
+interest_group_ig_anarchist_approval_add = {
 	decimals=1
 	color=good
 	game_data={
@@ -130,7 +130,7 @@ interest_group_ig_anarchists_approval_add = {
 	}
 }
 
-interest_group_ig_conservatives_approval_add = {
+interest_group_ig_cons_approval_add = {
 	decimals=1
 	color=good
 	game_data={
@@ -170,7 +170,7 @@ interest_group_ig_national_liberals_approval_add = {
 	}
 }
 
-interest_group_ig_radicals_approval_add = {
+interest_group_ig_prog_approval_add = {
 	decimals=1
 	color=good
 	game_data={
@@ -178,7 +178,7 @@ interest_group_ig_radicals_approval_add = {
 	}
 }
 
-interest_group_ig_reactionaries_approval_add = {
+interest_group_ig_reactionary_approval_add = {
 	decimals=1
 	color=good
 	game_data={
@@ -186,7 +186,7 @@ interest_group_ig_reactionaries_approval_add = {
 	}
 }
 
-interest_group_ig_reformist_socialists_approval_add = {
+interest_group_ig_reformist_communist_approval_add = {
 	decimals=1
 	color=good
 	game_data={
@@ -194,7 +194,7 @@ interest_group_ig_reformist_socialists_approval_add = {
 	}
 }
 
-interest_group_ig_revolutionist_socialists_approval_add = {
+interest_group_ig_orthodox_communist_approval_add = {
 	decimals=1
 	color=good
 	game_data={
@@ -219,7 +219,7 @@ interest_group_ig_agrarian_populists_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_anarchists_pop_attraction_mult = {
+interest_group_ig_anarchist_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -228,7 +228,7 @@ interest_group_ig_anarchists_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_conservatives_pop_attraction_mult = {
+interest_group_ig_cons_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -273,7 +273,7 @@ interest_group_ig_national_liberals_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_radicals_pop_attraction_mult = {
+interest_group_ig_prog_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -282,7 +282,7 @@ interest_group_ig_radicals_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_reactionaries_pop_attraction_mult = {
+interest_group_ig_reactionary_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -291,7 +291,7 @@ interest_group_ig_reactionaries_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_reformist_socialists_pop_attraction_mult = {
+interest_group_ig_reformist_communist_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes
@@ -300,7 +300,7 @@ interest_group_ig_reformist_socialists_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_revolutionist_socialists_pop_attraction_mult = {
+interest_group_ig_orthodox_communist_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes

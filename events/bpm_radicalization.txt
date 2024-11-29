@@ -13,7 +13,7 @@
 # 	immediate = {
 # 		add_radicals = {
 # 			value = 2
-# 			interest_group = ig:ig_revolutionist_socialists
+# 			interest_group = ig:ig_orthodox_communist
 # 		}
 # 	}
 # }

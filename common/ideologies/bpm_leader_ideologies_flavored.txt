@@ -75,7 +75,7 @@
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_radicals
+				is_interest_group_type = ig_prog
 			}
 		}
 		scope:interest_group = {
@@ -159,7 +159,7 @@
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_radicals
+				is_interest_group_type = ig_prog
 			}
 		}
 		scope:interest_group = {

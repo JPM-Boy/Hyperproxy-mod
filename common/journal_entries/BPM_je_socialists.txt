@@ -146,12 +146,12 @@ je_bpm_propaganda_of_the_deed = {
 		
 		# has_technology_researched = anarchism
 		#OR = {
-		#	ig:ig_anarchists ?= {
+		#	ig:ig_anarchist ?= {
 		#		is_marginal = no
 		#	}
 		#	any_scope_character = {
 		#		has_role = agitator
-		#		is_interest_group_type = ig_anarchists
+		#		is_interest_group_type = ig_anarchist
 		#	}
 		#}
 		trigger_if = {
@@ -210,12 +210,12 @@ je_bpm_propaganda_of_the_deed = {
 				if = {
 					limit = {
 						OR = {
-							ig:ig_anarchists ?= {
+							ig:ig_anarchist ?= {
 								is_powerful = yes
 							}
 							any_scope_character = {
 								has_role = agitator
-								is_interest_group_type = ig_anarchists
+								is_interest_group_type = ig_anarchist
 							}
 						}
 					}
@@ -630,7 +630,7 @@ je_bpm_syndicalism = {
 			if = {
 				limit = { var:bpm_je_syndicalism > 33.1 }
 				set_variable = bpm_je_syndicalism_reached_stage_2
-				ig:ig_anarchists ?= {
+				ig:ig_anarchist ?= {
 					if = {
 						limit = { bpm_ig_enabled = yes }
 						leader = { set_ideology = ideology:ideology_anarchist_syndicalist }
@@ -650,7 +650,7 @@ je_bpm_syndicalism = {
 			}
 			if = {
 				limit = { var:bpm_je_syndicalism > 66.1 }
-				ig:ig_anarchists ?= {
+				ig:ig_anarchist ?= {
 					if = {
 						limit = {
 							bpm_ig_enabled = yes
@@ -684,7 +684,7 @@ je_bpm_syndicalism = {
 				# 		leader = { set_ideology = ideology:ideology_syndicalist }
 				# 	}
 				# }
-				# ig:ig_revolutionist_socialists ?= {
+				# ig:ig_orthodox_communist ?= {
 				# 	if = {
 				# 		limit = { bpm_ig_enabled = yes }
 				# 		leader = { set_ideology = ideology:ideology_syndicalist }

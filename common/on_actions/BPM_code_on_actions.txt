@@ -433,7 +433,7 @@ bpm_on_actions_colonial_check = {
 						is_interest_group_type = ig_landowners
 						is_interest_group_type = ig_industrialists
 						is_interest_group_type = ig_armed_forces
-						is_interest_group_type = ig_conservatives
+						is_interest_group_type = ig_cons
 					}
 				}
 				remove_ideology = ideology_dop_metropole_loyalist
@@ -552,7 +552,7 @@ on_bpm_law_activated = {
 			limit = {
 				owner = { has_journal_entry = je_bpm_modernizers }
 				if = {
-					ig:ig_conservatives ?= {
+					ig:ig_cons ?= {
 						law_stance = {
 							value >= approve
 							law = prev.type
@@ -566,13 +566,13 @@ on_bpm_law_activated = {
 				if = {
 					limit = {
 						OR = {
-							ig:ig_liberals ?= {
+							ig:ig_liberal ?= {
 								law_stance = {
 									value >= approve
 									law = prev.type
 								}
 							}
-							ig:ig_radicals ?= {
+							ig:ig_prog ?= {
 								law_stance = {
 									value >= approve
 									law = prev.type

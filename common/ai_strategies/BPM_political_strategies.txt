@@ -64,8 +64,8 @@
 	}		
 	
 	pro_interest_groups = {
-		ig_conservatives
-		ig_reactionaries
+		ig_cons
+		ig_reactionary
 		ig_national_liberals
 		ig_devout
 		ig_landowners
@@ -74,12 +74,12 @@
 	}
 
 	anti_interest_groups = {
-		ig_radicals
+		ig_prog
 		ig_trade_unions
 		ig_socialists
-		ig_revolutionist_socialists
-		ig_reformist_socialists
-		ig_anarchists
+		ig_orthodox_communist
+		ig_reformist_communist
+		ig_anarchist
 		ig_agrarian_populists
 	}
 
@@ -225,20 +225,20 @@ ai_strategy_reactionary_agenda = {
 	type = political
 	
 	pro_interest_groups = {
-		ig_reactionaries
+		ig_reactionary
 		ig_devout
 		ig_landowners
 		ig_armed_forces
 	}
 	
 	anti_interest_groups = {
-		ig_liberals
-		ig_radicals
+		ig_liberal
+		ig_prog
 		ig_trade_unions
 		ig_socialists
-		ig_revolutionist_socialists
-		ig_reformist_socialists
-		ig_anarchists
+		ig_orthodox_communist
+		ig_reformist_communist
+		ig_anarchist
 		ig_agrarian_populists
 	}
 
@@ -419,16 +419,16 @@ ai_strategy_progressive_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_liberals
+		ig_liberal
 		ig_market_liberals
-		ig_radicals
+		ig_prog
 		ig_trade_unions
 		ig_agrarian_populists
 	}
 
 	anti_interest_groups = {
-		ig_reactionaries
-		ig_fascists
+		ig_reactionary
+		ig_fascist
 		ig_landowners
 		ig_armed_forces
 		ig_petty_bourgeoisie
@@ -606,23 +606,23 @@ ai_strategy_progressive_conservative_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_conservatives
+		ig_cons
 		ig_national_liberals
 		ig_devout
 		ig_market_liberals
-		ig_liberals
+		ig_liberal
 	}
 
 	anti_interest_groups = {
-		ig_reactionaries
-		ig_fascists
-		ig_radicals
+		ig_reactionary
+		ig_fascist
+		ig_prog
 		ig_trade_unions
 		ig_socialists
 		ig_agrarian_populists
-		ig_reformist_socialists
-		ig_revolutionist_socialists	
-		ig_anarchists
+		ig_reformist_communist
+		ig_orthodox_communist	
+		ig_anarchist
 	}
 
 	pro_movements = {
@@ -774,16 +774,16 @@ ai_strategy_egalitarian_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_radicals
+		ig_prog
 		ig_trade_unions
 		ig_agrarian_populists
-		ig_reformist_socialists
+		ig_reformist_communist
 	}
 	
 	anti_interest_groups = {
-		ig_reactionaries
-		ig_conservatives
-		ig_fascists
+		ig_reactionary
+		ig_cons
+		ig_fascist
 		ig_landowners
 		ig_armed_forces
 		ig_petty_bourgeoisie
@@ -970,10 +970,10 @@ ai_strategy_nationalist_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_conservatives
-		ig_liberals
+		ig_cons
+		ig_liberal
 		ig_national_liberals
-		ig_fascists
+		ig_fascist
 		ig_armed_forces
 		ig_petty_bourgeoisie
 	}
@@ -983,9 +983,9 @@ ai_strategy_nationalist_agenda = {
 		ig_trade_unions
 		ig_agrarian_populists
 		ig_socialists
-		ig_revolutionist_socialists
-		ig_reformist_socialists
-		ig_anarchists
+		ig_orthodox_communist
+		ig_reformist_communist
+		ig_anarchist
 	}
 
 	pro_movements = {
@@ -1169,23 +1169,23 @@ ai_strategy_maintain_mandate_of_heaven = {
 	pro_interest_groups = {
 		ig_landowners
 		ig_armed_forces
-		ig_reactionaries
+		ig_reactionary
 	}
 	
 	anti_interest_groups ={
-		ig_liberals
-		ig_radicals
+		ig_liberal
+		ig_prog
 		ig_industrialists
 		ig_trade_unions
 		ig_intelligentsia
-		ig_liberals
+		ig_liberal
 		ig_market_liberals
-		ig_radicals
+		ig_prog
 		ig_agrarian_populists
 		ig_socialists
-		ig_revolutionist_socialists
-		ig_reformist_socialists
-		ig_anarchists
+		ig_orthodox_communist
+		ig_reformist_communist
+		ig_anarchist
 	}
 
 	pro_movements = {

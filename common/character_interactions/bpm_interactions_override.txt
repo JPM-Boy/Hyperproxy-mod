@@ -572,16 +572,16 @@ invite_exile = {
 			scope:actor ?= { exists = ig:ig_socialists }
 		}
 		trigger_else_if = {
-			limit = { is_interest_group_type = ig_anarchists }
-			scope:actor ?= { exists = ig:ig_anarchists }
+			limit = { is_interest_group_type = ig_anarchist }
+			scope:actor ?= { exists = ig:ig_anarchist }
 		}
 		trigger_else_if = {
-			limit = { is_interest_group_type = ig_reformist_socialists }
-			scope:actor ?= { exists = ig:ig_reformist_socialists }
+			limit = { is_interest_group_type = ig_reformist_communist }
+			scope:actor ?= { exists = ig:ig_reformist_communist }
 		}
 		trigger_else_if = {
-			limit = { is_interest_group_type = ig_revolutionist_socialists }
-			scope:actor ?= { exists = ig:ig_revolutionist_socialists }
+			limit = { is_interest_group_type = ig_orthodox_communist }
+			scope:actor ?= { exists = ig:ig_orthodox_communist }
 		}
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_market_liberals }
@@ -592,8 +592,8 @@ invite_exile = {
 			scope:actor ?= { exists = ig:ig_national_liberals }
 		}
 		trigger_else_if = {
-			limit = { is_interest_group_type = ig_fascists }
-			scope:actor ?= { exists = ig:ig_fascists }
+			limit = { is_interest_group_type = ig_fascist }
+			scope:actor ?= { exists = ig:ig_fascist }
 		}
 
 		# cannot invite culturally discriminated exiles

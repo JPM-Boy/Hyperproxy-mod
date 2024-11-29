@@ -2920,7 +2920,7 @@ ideology_communist = {
 			bpm_ig_is_lower_institutional = yes
 			bpm_ig_is_labor = yes
 		}
-		NOT = { is_interest_group_type = ig_reformist_socialists }
+		NOT = { is_interest_group_type = ig_reformist_communist }
 		OR = {
 			bpm_ig_is_socialist = yes
 			AND = {
@@ -3036,7 +3036,7 @@ ideology_communist = {
     			bpm_ig_is_lower_institutional = yes
     			bpm_ig_is_labor = yes
     		}
-    		NOT = { is_interest_group_type = ig_reformist_socialists }
+    		NOT = { is_interest_group_type = ig_reformist_communist }
     		OR = {
     			bpm_ig_is_socialist = yes
     			AND = {
@@ -3199,7 +3199,7 @@ ideology_vanguardist = {
 		# More likely when SoL is low outside of council republic
 		if = {
 			limit = {
-				is_interest_group_type = ig_revolutionist_socialists
+				is_interest_group_type = ig_orthodox_communist
 				owner = {
 					NOT = { has_law = law_type:law_council_republic }
 					average_sol <= 10
@@ -3210,7 +3210,7 @@ ideology_vanguardist = {
 		# More likely in an autocracy
 		if = {
 			limit = {
-				is_interest_group_type = ig_revolutionist_socialists
+				is_interest_group_type = ig_orthodox_communist
 				owner = {
 					OR = {
 						has_law = law_type:law_autocracy
@@ -3808,7 +3808,7 @@ ideology_anarchist = {
 		value = -40
 		if = {
 			limit = {
-				is_interest_group_type = ig_anarchists
+				is_interest_group_type = ig_anarchist
 			}
 			add = 200
 		}
@@ -4055,7 +4055,7 @@ ideology_anarchist_syndicalist = {
 		value = -10
 		if = {
 			limit = {
-				is_interest_group_type = ig_anarchists
+				is_interest_group_type = ig_anarchist
 			}
 			add = 200
 		}
@@ -4599,7 +4599,7 @@ ideology_theocrat = {
 				ig_approval <= -5
 				OR = {
 					is_interest_group_type = ig_devout
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
 				}
 				owner = {
 					bpm_country_is_republic = yes
@@ -5227,7 +5227,7 @@ ideology_protectionist = {
 			limit = {
 				OR = {
 					bpm_ig_is_urban_institutional = yes
-					is_interest_group_type = ig_liberals
+					is_interest_group_type = ig_liberal
 				}
 				owner = {
 					bpm_country_laws_have_traditional_economics = yes
@@ -6161,8 +6161,8 @@ ideology_land_reformer = {
 
 		bpm_ig_is_upper_institutional = no
 		bpm_ig_is_socialist = no
-		NOT = { is_interest_group_type = ig_reactionaries }
-		NOT = { is_interest_group_type = ig_reactionaries }
+		NOT = { is_interest_group_type = ig_reactionary }
+		NOT = { is_interest_group_type = ig_reactionary }
 	}
 	
 	interest_group_leader_weight = {
@@ -6271,7 +6271,7 @@ ideology_land_reformer = {
     
     		bpm_ig_is_upper_institutional = no
     		bpm_ig_is_socialist = no
-    		NOT = { is_interest_group_type = ig_reactionaries }
+    		NOT = { is_interest_group_type = ig_reactionary }
     	}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -6751,7 +6751,7 @@ ideology_corporatist_leader = {
 				owner = { has_variable = local_patcon_split_var }
 				OR = {
 					is_interest_group_type = ig_national_liberals
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 					is_interest_group_type = ig_devout
 				}
 			}
@@ -6906,7 +6906,7 @@ ideology_humanitarian_royalist = {
 		if = {
 			limit = {
 				OR = {
-					is_interest_group_type = ig_liberals
+					is_interest_group_type = ig_liberal
 					bpm_ig_is_liberal_conservative = yes
 				}
 			}
@@ -7149,8 +7149,8 @@ ideology_orleanist = {
 		OR = {
 			bpm_ig_is_urban_institutional = yes
 			bpm_ig_is_state_institutional = yes
-			is_interest_group_type = ig_conservatives
-			is_interest_group_type = ig_liberals
+			is_interest_group_type = ig_cons
+			is_interest_group_type = ig_liberal
 			is_interest_group_type = ig_market_liberals
 		}
 		bpm_ig_is_radical_liberal = no
@@ -7193,7 +7193,7 @@ ideology_orleanist = {
 					is_interest_group_type = ig_petty_bourgeoisie
 					is_interest_group_type = ig_intelligentsia
 					is_interest_group_type = ig_industrialists
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 					}
 				owner = {
 					OR = {
@@ -7267,8 +7267,8 @@ ideology_orleanist = {
     		OR = {
     			bpm_ig_is_urban_institutional = yes
     			bpm_ig_is_state_institutional = yes
-    			is_interest_group_type = ig_conservatives
-    			is_interest_group_type = ig_liberals
+    			is_interest_group_type = ig_cons
+    			is_interest_group_type = ig_liberal
     			is_interest_group_type = ig_market_liberals
     		}
     		bpm_ig_is_radical_liberal = no
@@ -7361,7 +7361,7 @@ ideology_legitimist = {
 		}
 		OR = {
 			bpm_ig_is_rural_institutional = yes
-			is_interest_group_type = ig_reactionaries
+			is_interest_group_type = ig_reactionary
 		}
 		AND = {
 			bpm_ig_is_radical_liberal = no
@@ -7409,7 +7409,7 @@ ideology_legitimist = {
 		# very likely for reactionaries
 		if = {
 			limit = {
-				is_interest_group_type = ig_reactionaries
+				is_interest_group_type = ig_reactionary
 			}
 			add = 300
 		}
@@ -7449,7 +7449,7 @@ ideology_legitimist = {
     		}
     		OR = {
     			bpm_ig_is_rural_institutional = yes
-    			is_interest_group_type = ig_reactionaries
+    			is_interest_group_type = ig_reactionary
     		}
     		AND = {
     			bpm_ig_is_radical_liberal = no
@@ -8167,7 +8167,7 @@ ideology_traditionalist_minoritarian = {
 			NOR = {
 				is_interest_group_type = ig_industrialists
 				is_interest_group_type = ig_armed_forces
-				is_interest_group_type = ig_reactionaries
+				is_interest_group_type = ig_reactionary
 			}
 		}
 		trigger_if = {
@@ -8200,7 +8200,7 @@ ideology_traditionalist_minoritarian = {
     			NOR = {
     				is_interest_group_type = ig_industrialists
     				is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
     			}
     		}
     	}
@@ -8474,14 +8474,14 @@ ideology_sovereignist_leader = { # For colonised peoples
 	interest_group_leader_trigger = {
 		bpm_ig_enabled = yes
 		bpm_ig_is_upper_institutional = no
-		NOT = { is_interest_group_type = ig_reactionaries }
+		NOT = { is_interest_group_type = ig_reactionary }
 	}
 
 	non_interest_group_leader_trigger = {
         interest_group = {
     		bpm_ig_enabled = yes
     		bpm_ig_is_upper_institutional = no
-    		NOT = { is_interest_group_type = ig_reactionaries }
+    		NOT = { is_interest_group_type = ig_reactionary }
     	}
 		owner = {
 			cultural_acceptance_base = { target = prev.culture value <= acceptance_status_4 }
@@ -8574,7 +8574,7 @@ ideology_despotic_utopian = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_radicals
+				is_interest_group_type = ig_prog
 			}
 		}
 		scope:interest_group = {
@@ -8659,7 +8659,7 @@ ideology_despotic_utopian = {
     				is_interest_group_type = ig_trade_unions
     				is_interest_group_type = ig_petty_bourgeoisie
     				is_interest_group_type = ig_intelligentsia
-    				is_interest_group_type = ig_radicals
+    				is_interest_group_type = ig_prog
     			}
     		}
     		scope:interest_group = {
@@ -8702,7 +8702,7 @@ ideology_despotic_utopian = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_radicals
+				is_interest_group_type = ig_prog
 			}
 		}
 		scope:interest_group = {

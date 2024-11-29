@@ -485,7 +485,7 @@
 				ig:ig_landowners ?= {
 					bpm_is_strongest_ig_in_government = yes
 				}
-				ig:ig_reactionaries ?= {
+				ig:ig_reactionary ?= {
 					is_marginal = yes
 				}
 			}
@@ -507,7 +507,7 @@
 				ig:ig_armed_forces ?= {
 					bpm_is_strongest_ig_in_government = yes
 				}
-				ig:ig_reactionaries ?= {
+				ig:ig_reactionary ?= {
 					is_marginal = yes
 				}
 			}

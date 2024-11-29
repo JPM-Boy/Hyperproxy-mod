@@ -49,12 +49,12 @@ bpm_all_suffrage_institution_workaround = {
 			limit = {
 				var:bpm_minister_of_suffrage.interest_group = {
 					OR = {
-						is_interest_group_type = ig_anarchists
+						is_interest_group_type = ig_anarchist
 						is_interest_group_type = ig_socialists
-						is_interest_group_type = ig_revolutionist_socialists
+						is_interest_group_type = ig_orthodox_communist
 						is_interest_group_type = ig_agrarian_populists
-						is_interest_group_type = ig_reformist_socialists
-						is_interest_group_type = ig_radicals
+						is_interest_group_type = ig_reformist_communist
+						is_interest_group_type = ig_prog
 					}
 				}
 			}
@@ -81,7 +81,7 @@ bpm_all_suffrage_institution_workaround = {
 			limit = {
 				var:bpm_minister_of_suffrage.interest_group = {
 					OR = {
-						is_interest_group_type = ig_anarchists
+						is_interest_group_type = ig_anarchist
 					} 
 				} 
 			} 
@@ -96,7 +96,7 @@ bpm_all_suffrage_institution_workaround = {
 				var:bpm_minister_of_suffrage.interest_group = {
 					OR = {
 						is_interest_group_type = ig_trade_unions
-						is_interest_group_type = ig_revolutionist_socialists
+						is_interest_group_type = ig_orthodox_communist
 						is_interest_group_type = ig_socialists
 					}
 				} 

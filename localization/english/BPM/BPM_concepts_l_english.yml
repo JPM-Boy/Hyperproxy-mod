@@ -49,7 +49,7 @@
 
  tooltip_bpm_ig_is_reformist_socialist:0 "Is a [Concept('concept_bpm_ig_is_reformist_socialist', '$concept_bpm_ig_is_reformist_socialist$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_reformist_socialist:0 "Reformist Socialist"
- concept_bpm_ig_is_reformist_socialist_desc:0 "The @ig_reformist_socialists! #bold Reformist Socialists#! [Concept('concept_interest_group', 'Interest Group')] or an [Concept('concept_interest_group', 'Interest Group')] with the [GetIdeology('ideology_gov_moderate_proletarian').GetName] [Concept('concept_ideology', 'Ideology')]. They hold a belief in the possibility of reaching socialism through reforms, rather than revolution."
+ concept_bpm_ig_is_reformist_socialist_desc:0 "The @ig_reformist_communist! #bold Reformist Socialists#! [Concept('concept_interest_group', 'Interest Group')] or an [Concept('concept_interest_group', 'Interest Group')] with the [GetIdeology('ideology_gov_moderate_proletarian').GetName] [Concept('concept_ideology', 'Ideology')]. They hold a belief in the possibility of reaching socialism through reforms, rather than revolution."
 
  tooltip_bpm_ig_is_syndicalist:0 "Is a [Concept('concept_bpm_ig_is_syndicalist', '$concept_bpm_ig_is_syndicalist$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_syndicalist:0 "Syndicalist"
@@ -109,11 +109,11 @@
 
  tooltip_bpm_ig_is_radical_liberal:0 "Is a [Concept('concept_bpm_ig_is_radical_liberal', '$concept_bpm_ig_is_radical_liberal$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_radical_liberal:0 "Radical Liberal"
- concept_bpm_ig_is_radical_liberal_desc:0 "The @ig_radicals! #bold Radicals#! [Concept('concept_interest_group', 'Interest Group')] or an [Concept('concept_interest_group', 'Interest Group')] with the [GetIdeology('ideology_dop_radical_democrat').GetName] [Concept('concept_ideology', 'Ideology')] that is #bold not#! a [Concept('concept_bpm_ig_is_actually_desiring_socialism', '$concept_bpm_ig_is_actually_desiring_socialism$')] [Concept('concept_interest_group', 'Interest Group')]. They believe that people have inherent rights government must respect, and fight to fulfill the egalitarian and individualist dream of liberalism."
+ concept_bpm_ig_is_radical_liberal_desc:0 "The @ig_prog! #bold Radicals#! [Concept('concept_interest_group', 'Interest Group')] or an [Concept('concept_interest_group', 'Interest Group')] with the [GetIdeology('ideology_dop_radical_democrat').GetName] [Concept('concept_ideology', 'Ideology')] that is #bold not#! a [Concept('concept_bpm_ig_is_actually_desiring_socialism', '$concept_bpm_ig_is_actually_desiring_socialism$')] [Concept('concept_interest_group', 'Interest Group')]. They believe that people have inherent rights government must respect, and fight to fulfill the egalitarian and individualist dream of liberalism."
 
  tooltip_bpm_ig_is_moderate_liberal:0 "Is a [Concept('concept_bpm_ig_is_moderate_liberal', '$concept_bpm_ig_is_moderate_liberal$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_moderate_liberal:0 "Moderate Liberal"
- concept_bpm_ig_is_moderate_liberal_desc:0 "The @ig_liberals! #bold Liberals#! [Concept('concept_interest_group', 'Interest Group')] or an [Concept('concept_interest_group', 'Interest Group')] with the [GetIdeology('ideology_dop_moderate_democrat').GetName] [Concept('concept_ideology', 'Ideology')]. They believe in promoting democracy, but that a moderate pace is needed to prevent revolutionary chaos."
+ concept_bpm_ig_is_moderate_liberal_desc:0 "The @ig_liberal! #bold Liberals#! [Concept('concept_interest_group', 'Interest Group')] or an [Concept('concept_interest_group', 'Interest Group')] with the [GetIdeology('ideology_dop_moderate_democrat').GetName] [Concept('concept_ideology', 'Ideology')]. They believe in promoting democracy, but that a moderate pace is needed to prevent revolutionary chaos."
 
  tooltip_bpm_ig_is_non_religious:0 "Is a [Concept('concept_bpm_ig_is_non_religious', '$concept_bpm_ig_is_non_religious$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_non_religious:0 "Secularist"
@@ -155,15 +155,15 @@
 
  tooltip_bpm_ig_is_mainstream_conservative:0 "Is a [Concept('concept_bpm_ig_is_mainstream_conservative', '$concept_bpm_ig_is_mainstream_conservative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_mainstream_conservative:0 "Mainstream Conservative"
- concept_bpm_ig_is_mainstream_conservative_desc:0 "The @ig_conservatives! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')]. They represent the most common form of moderate right-wing ideology."
+ concept_bpm_ig_is_mainstream_conservative_desc:0 "The @ig_cons! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')]. They represent the most common form of moderate right-wing ideology."
 
  tooltip_bpm_ig_is_liberal_conservative:0 "Is a [Concept('concept_bpm_ig_is_liberal_conservative', '$concept_bpm_ig_is_liberal_conservative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_liberal_conservative:0 "Liberal Conservative"
- concept_bpm_ig_is_liberal_conservative_desc:0 "The @ig_conservatives! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] after they become Paternal, along with the @ig_national_liberals! #bold National Liberals#! and @ig_market_liberals! #bold Market Liberals#! [Concept('concept_interest_group', 'Interest Group')]. They believe that a blend of both moderate liberalism and moderate conservativism secures the best outcomes for their nation."
+ concept_bpm_ig_is_liberal_conservative_desc:0 "The @ig_cons! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] after they become Paternal, along with the @ig_national_liberals! #bold National Liberals#! and @ig_market_liberals! #bold Market Liberals#! [Concept('concept_interest_group', 'Interest Group')]. They believe that a blend of both moderate liberalism and moderate conservativism secures the best outcomes for their nation."
  
 tooltip_bpm_ig_is_non_paternal_conserative:0 "Is a [Concept('concept_bpm_ig_is_non_paternal_conserative', '$concept_bpm_ig_is_non_paternal_conserative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_non_paternal_conserative:0 "Non-Paternal Conservative"
- concept_bpm_ig_is_non_paternal_conserative_desc:0 "The @ig_conservatives! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] that don't hold paternalist ideals."
+ concept_bpm_ig_is_non_paternal_conserative_desc:0 "The @ig_cons! #bold Conservatives#! [Concept('concept_interest_group', 'Interest Group')] that don't hold paternalist ideals."
 
  tooltip_bpm_ig_is_moderate_conservative:0 "Is a [Concept('concept_bpm_ig_is_moderate_conservative', '$concept_bpm_ig_is_moderate_conservative$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_moderate_conservative:0 "Moderate Conservative"
@@ -201,13 +201,13 @@ tooltip_bpm_ig_is_non_paternal_conserative:0 "Is a [Concept('concept_bpm_ig_is_n
 
  tooltip_bpm_ig_is_traditionalist:0 "Is a [Concept('concept_bpm_ig_is_traditionalist', '$concept_bpm_ig_is_traditionalist$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_traditionalist:0 "Traditionalist"
- concept_bpm_ig_is_traditionalist_desc:0 "Either the @ig_reactionaries! #bold Reactionaries#! [Concept('concept_interest_group', 'Interest Group')], an [Concept('concept_interest_group', 'Interest Group')] that has either the [GetIdeology('ideology_dop_autocrat').GetName], the [GetIdeology('ideology_dop_traditional_power').GetName], or the [GetIdeology('ideology_dop_oligarch').GetName] [Concept('concept_ideology', 'Ideology')] or a [Concept('concept_bpm_ig_is_theocratic', '$concept_bpm_ig_is_theocratic$')] [Concept('concept_interest_group', 'Interest Group')]. They believe that the world is better off following the traditions and laws they've perceived it to always have, and that any new ideas are dangerous to the soul of society."
+ concept_bpm_ig_is_traditionalist_desc:0 "Either the @ig_reactionary! #bold Reactionaries#! [Concept('concept_interest_group', 'Interest Group')], an [Concept('concept_interest_group', 'Interest Group')] that has either the [GetIdeology('ideology_dop_autocrat').GetName], the [GetIdeology('ideology_dop_traditional_power').GetName], or the [GetIdeology('ideology_dop_oligarch').GetName] [Concept('concept_ideology', 'Ideology')] or a [Concept('concept_bpm_ig_is_theocratic', '$concept_bpm_ig_is_theocratic$')] [Concept('concept_interest_group', 'Interest Group')]. They believe that the world is better off following the traditions and laws they've perceived it to always have, and that any new ideas are dangerous to the soul of society."
 
 # FASCIST IGS
 
  tooltip_bpm_ig_is_fascist:0 "Is a [Concept('concept_bpm_ig_is_fascist', '$concept_bpm_ig_is_fascist$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_fascist:0 "Fascist"
- concept_bpm_ig_is_fascist_desc:0 "The @ig_fascists! #bold Fascists#! [Concept('concept_interest_group', 'Interest Group')]. They believe that the only way the nation can be saved from destruction is through the total submission to the state, led by a totaliterian leader that promotes militarism and ultranationalism."
+ concept_bpm_ig_is_fascist_desc:0 "The @ig_fascist! #bold Fascists#! [Concept('concept_interest_group', 'Interest Group')]. They believe that the only way the nation can be saved from destruction is through the total submission to the state, led by a totaliterian leader that promotes militarism and ultranationalism."
 
  tooltip_bpm_ig_is_radical_right:0 "Is a [Concept('concept_bpm_ig_is_radical_right', '$concept_bpm_ig_is_radical_right$')] [Concept('concept_interest_group', 'Interest Group')]"
  concept_bpm_ig_is_radical_right:0 "Radical Right"

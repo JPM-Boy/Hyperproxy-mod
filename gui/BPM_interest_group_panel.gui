@@ -404,7 +404,7 @@
 #
 #						number_of_pops = {
 #							blockoverride "tooltip" {
-#								using = ig_radicals_tooltip_with_graph
+#								using = ig_prog_tooltip_with_graph
 #							}
 #							blockoverride "texture" {
 #								texture = "gfx/interface/icons/generic_icons/population_radical.dds"

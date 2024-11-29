@@ -258,7 +258,7 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 		every_scope_character = {
 			limit = {
 				has_role = agitator
-				is_interest_group_type = ig_anarchists
+				is_interest_group_type = ig_anarchist
 			}
 			add = popularity
 			multiply = 0.1
@@ -301,7 +301,7 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 		desc = "BPM_VALUE_POWERFUL_ANARCHISTS"
 		if = {
 			limit = {
-				ig:ig_anarchists ?= {
+				ig:ig_anarchist ?= {
 					is_powerful = yes
 				}
 			}
@@ -314,7 +314,7 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 	# 	desc = "BPM_VALUE_BOLSTERED_ANARCHISTS"
 	# 	if = {
 	# 		limit = {
-	# 			ig:ig_anarchists ?= {
+	# 			ig:ig_anarchist ?= {
 	# 				is_being_bolstered = yes
 	# 			}
 	# 		}
@@ -328,7 +328,7 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 		every_scope_character = {
 			limit = {
 				has_role = agitator
-				is_interest_group_type = ig_anarchists
+				is_interest_group_type = ig_anarchist
 			}
 			add = popularity
 			multiply = 0.4
@@ -575,10 +575,10 @@ bpm_je_syndicalism_rate = {
 		}
 	}
 	if = {
-		limit = { exists = ig:ig_revolutionist_socialists }
+		limit = { exists = ig:ig_orthodox_communist }
 		add = {
 			desc = "BPM_VALUE_FROM_REVSOCS_POPULARITY"
-			value = ig:ig_revolutionist_socialists.interest_group_population_percentage
+			value = ig:ig_orthodox_communist.interest_group_population_percentage
 			multiply = -15
 		}
 	}
@@ -733,7 +733,7 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			desc = "BPM_VALUE_FROM_REACTIONARY_LEADER_AND_AGITATORS"
 			every_scope_character = {
 				limit = {
-					is_interest_group_type = ig_reactionaries
+					is_interest_group_type = ig_reactionary
 					OR = {
 						has_role = politician
 						has_role = agitator
@@ -748,7 +748,7 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			desc = "BPM_VALUE_FROM_CONSERVATIVE_LEADER_AND_AGITATORS"
 			every_scope_character = {
 				limit = {
-					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_cons
 					OR = {
 						has_role = politician
 						has_role = agitator
@@ -765,7 +765,7 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			desc = "BPM_VALUE_FROM_LIBERAL_LEADER_AND_AGITATORS"
 			every_scope_character = {
 				limit = {
-					is_interest_group_type = ig_liberals
+					is_interest_group_type = ig_liberal
 					OR = {
 						has_role = politician
 						has_role = agitator
@@ -780,7 +780,7 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			desc = "BPM_VALUE_FROM_RADICAL_LEADER_AND_AGITATORS"
 			every_scope_character = {
 				limit = {
-					is_interest_group_type = ig_radicals
+					is_interest_group_type = ig_prog
 					OR = {
 						has_role = politician
 						has_role = agitator
@@ -1231,7 +1231,7 @@ bpm_je_general_strike_power = {
 
 		# Rev/RefSocs in government (in non-CRs)
 		if = {
-			limit = { ig:ig_revolutionist_socialists ?= { is_in_government = yes } }
+			limit = { ig:ig_orthodox_communist ?= { is_in_government = yes } }
 			subtract = {
 				desc = "BPM_VALUE_REVOLUTIONIST_SOCIALISTS_IN_GOVERNMENT"
 				value = 20
@@ -1245,7 +1245,7 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { ig:ig_reformist_socialists ?= { is_in_government = yes } }
+			limit = { ig:ig_reformist_communist ?= { is_in_government = yes } }
 			subtract = {
 				desc = "BPM_VALUE_REFORMIST_SOCIALISTS_IN_GOVERNMENT"
 				value = 10
@@ -1506,16 +1506,16 @@ bpm_je_split_natlibs_progress_from_liberals_empowered = {
 		limit = {
 			OR = {
 				AND = {
-					exists = ig:ig_liberals
-					ig:ig_liberals ?= { OR = { is_in_government = yes} }
+					exists = ig:ig_liberal
+					ig:ig_liberal ?= { OR = { is_in_government = yes} }
 				}
 				AND = {
 					exists = ig:ig_market_liberals
 					ig:ig_market_liberals ?= { OR = { is_in_government = yes} }
 				}
 				AND = {
-					exists = ig:ig_radicals
-					ig:ig_radicals ?= { OR = { is_in_government = yes} }
+					exists = ig:ig_prog
+					ig:ig_prog ?= { OR = { is_in_government = yes} }
 				}
 			}
 		}
@@ -1525,22 +1525,22 @@ bpm_je_split_natlibs_progress_from_liberals_empowered = {
 bpm_je_split_natlibs_progress_from_libcons_suppressed = {
 	value = 0
 	# if = {
-	# 	limit = { ig:ig_liberals ?= { is_being_suppressed = yes } }
+	# 	limit = { ig:ig_liberal ?= { is_being_suppressed = yes } }
 	# 	add = -0.2
 	# } 
 	# if = {
-	# 	limit = { ig:ig_conservatives ?= { is_being_suppressed = yes } }
+	# 	limit = { ig:ig_cons ?= { is_being_suppressed = yes } }
 	# 	add = -0.2
 	# } 
 }
 bpm_je_split_natlibs_progress_from_libcons_marginal = {
 	value = 0
 	if = {
-		limit = { ig:ig_liberals ?= { is_marginal = yes } }
+		limit = { ig:ig_liberal ?= { is_marginal = yes } }
 		add = -0.1
 	} 
 	if = {
-		limit = { ig:ig_conservatives ?= { is_marginal = yes } }
+		limit = { ig:ig_cons ?= { is_marginal = yes } }
 		add = -0.1
 	} 
 }
@@ -1738,7 +1738,7 @@ bpm_je_split_patcons_progress_from_radicals = {
 bpm_je_split_patcons_progress_from_conservative_status = {
 	value = 0
 	# if = {
-	# 	limit = { ig:ig_conservatives ?= { is_being_suppressed = yes } }
+	# 	limit = { ig:ig_cons ?= { is_being_suppressed = yes } }
 	# 	add = 0.2
 	# }
 }
@@ -1756,7 +1756,7 @@ bpm_je_split_patcons_progress_from_left_wing_government = {
 	value = 0
 	if = {
 		limit = { 
-			ig:ig_conservatives ?= { is_in_government = no }
+			ig:ig_cons ?= { is_in_government = no }
 			any_interest_group = {
 				bpm_ig_is_radical_left = yes
 				is_in_government = yes
@@ -1853,11 +1853,11 @@ bpm_je_split_fascists_progress_from_conflicts = {
 bpm_je_split_fascists_progress_from_rightists_empowered = {
 	value = 0
 	if = {
-		limit = { ig:ig_reactionaries ?= { OR = { is_in_government = yes } } }
+		limit = { ig:ig_reactionary ?= { OR = { is_in_government = yes } } }
 		add = 0.2
 	}
 	if = {
-		limit = { ig:ig_conservatives ?= { OR = { is_in_government = yes } } }
+		limit = { ig:ig_cons ?= { OR = { is_in_government = yes } } }
 		add = 0.2
 	}
 	if = {
@@ -1872,11 +1872,11 @@ bpm_je_split_fascists_progress_from_rightists_empowered = {
 bpm_je_split_fascists_progress_from_rightists_suppressed = {
 	value = 0
 	# if = {
-	# 	limit = { ig:ig_reactionaries ?= { is_being_suppressed = yes } }
+	# 	limit = { ig:ig_reactionary ?= { is_being_suppressed = yes } }
 	# 	add = -0.2
 	# }
 	# if = {
-	# 	limit = { ig:ig_conservatives ?= { is_being_suppressed = yes } }
+	# 	limit = { ig:ig_cons ?= { is_being_suppressed = yes } }
 	# 	add = -0.2
 	# }
 	# if = {
@@ -1891,11 +1891,11 @@ bpm_je_split_fascists_progress_from_rightists_suppressed = {
 bpm_je_split_fascists_progress_from_rightists_marginal = {
 	value = 0
 	if = {
-		limit = { ig:ig_reactionaries ?= { is_marginal = yes } }
+		limit = { ig:ig_reactionary ?= { is_marginal = yes } }
 		add = -0.1
 	}
 	if = {
-		limit = { ig:ig_conservatives ?= { is_marginal = yes } }
+		limit = { ig:ig_cons ?= { is_marginal = yes } }
 		add = -0.1
 	}
 	if = {
@@ -2016,7 +2016,7 @@ bpm_je_modernizers_ideology_rate_modernizers = {
 		desc = "BPM_VALUE_FROM_LIBERAL_LEADER_AND_AGITATORS"
 		every_scope_character = {
 			limit = {
-				is_interest_group_type = ig_liberals
+				is_interest_group_type = ig_liberal
 				OR = {
 					has_role = politician
 					has_role = agitator
@@ -2030,7 +2030,7 @@ bpm_je_modernizers_ideology_rate_modernizers = {
 		desc = "BPM_VALUE_FROM_RADICAL_LEADER_AND_AGITATORS"
 		every_scope_character = {
 			limit = {
-				is_interest_group_type = ig_radicals
+				is_interest_group_type = ig_prog
 				OR = {
 					has_role = politician
 					has_role = agitator
@@ -2062,8 +2062,8 @@ bpm_je_modernizers_ideology_rate_modernizers = {
 				is_political_lobby_type = lobby_pro_country
 				any_lobby_member = {
 					OR = {
-						is_interest_group_type = ig_liberals
-						is_interest_group_type = ig_radicals
+						is_interest_group_type = ig_liberal
+						is_interest_group_type = ig_prog
 						is_interest_group_type = ig_socialists
 					}
 				}
@@ -2132,7 +2132,7 @@ bpm_je_modernizers_ideology_rate_conservatives = {
 		desc = "BPM_VALUE_FROM_REACTIONARY_LEADER_AND_AGITATORS"
 		every_scope_character = {
 			limit = {
-				is_interest_group_type = ig_reactionaries
+				is_interest_group_type = ig_reactionary
 				OR = {
 					has_role = politician
 					has_role = agitator
@@ -2146,7 +2146,7 @@ bpm_je_modernizers_ideology_rate_conservatives = {
 		desc = "BPM_VALUE_FROM_CONSERVATIVE_LEADER_AND_AGITATORS"
 		every_scope_character = {
 			limit = {
-				is_interest_group_type = ig_conservatives
+				is_interest_group_type = ig_cons
 				OR = {
 					has_role = politician
 					has_role = agitator

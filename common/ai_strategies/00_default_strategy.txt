@@ -3778,7 +3778,7 @@ ai_strategy_default = {
 				country_rank >= rank_value:major_power
 			}
 		}
-		clippers = {
+		cargo_ships = {
 			stance = wants_high_supply
 			trigger = {
 				has_technology_researched = navigation
@@ -3790,7 +3790,7 @@ ai_strategy_default = {
 				country_rank >= rank_value:major_power
 			}
 		}
-		manowars = {
+		warships = {
 			stance = wants_high_supply
 			trigger = {
 				has_technology_researched = admiralty
@@ -3801,25 +3801,7 @@ ai_strategy_default = {
 				has_port = yes
 				country_rank >= rank_value:major_power
 			}
-		}	
-		steamers = {
-			stance = wants_high_supply
-			trigger = {
-				has_technology_researched = ironclad_tech
-				has_technology_researched = gantry_cranes
-				has_port = yes
-				country_rank >= rank_value:major_power
-			}
-		}			
-		ironclads = {
-			stance = wants_high_supply
-			trigger = {
-				has_technology_researched = ironclad_tech
-				has_technology_researched = gantry_cranes
-				has_port = yes
-				country_rank >= rank_value:major_power				
-			}
-		}	
+		}
 		paper = {
 			stance = wants_high_supply
 			trigger = {

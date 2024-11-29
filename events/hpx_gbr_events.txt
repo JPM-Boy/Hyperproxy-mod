@@ -180,9 +180,7 @@ hpx_GBR_event.3 = { # Mail Issues
             base = 60
         }
 	}
-
-
-	}
+}
 
 hpx_GBR_event.4 = { # Media Bias
 	type = country_event

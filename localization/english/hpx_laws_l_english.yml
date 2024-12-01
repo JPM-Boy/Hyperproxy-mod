@@ -41,3 +41,13 @@ law_corporatocracy: "Corporatocracy"
 law_wealth_taxation: "Wealth Taxation"
 law_income_taxation: "Income Taxation"
 law_expropiation: "Mass Expropiations"
+
+law_mixed_schools: "Mixed Schools"
+law_online_schools: "Online Schools"
+law_personalized_education: "Personalized Education"
+
+law_community_land_trust: "Community Land Trusts"
+law_sustainable_land_use: "Sustainable Land Use"
+law_customary_land_tenure: "Customary Land Tenure"
+
+law_mixed_health_insurance: "Mixed Health Insurance"

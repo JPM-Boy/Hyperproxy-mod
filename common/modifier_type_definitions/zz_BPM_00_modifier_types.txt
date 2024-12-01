@@ -55,6 +55,12 @@ interest_group_ig_cons_pol_str_mult = {
 	decimals = 0
 }
 
+interest_group_ig_minority_pol_str_mult = {
+	color = neutral
+	percent = yes
+	decimals = 0
+}
+
 interest_group_ig_fascists_pol_str_mult = {
 	color = neutral
 	percent = yes

@@ -19,9 +19,11 @@ start_parliamentary = {
 	activate_law = law_type:law_purchased_officers
 	activate_law = law_type:law_answers_to_legislature
 	activate_law = law_type:law_separated_powers
+	activate_law = law_type:law_flexible_foreign_policy
 }
 
 start_presidential = {
+	activate_law = law_type:law_flexible_foreign_policy
 	activate_law = law_type:law_republic
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_majoritarian_voting
@@ -43,6 +45,8 @@ start_presidential = {
 }
 
 start_militar = {
+	activate_law = law_type:law_jingoism
+
 	activate_law = law_type:law_republic
 	activate_law = law_type:law_state_religion
 	activate_law = law_type:law_military_junta
@@ -60,6 +64,8 @@ start_militar = {
 }
 
 start_mon_militar = {
+	activate_law = law_type:law_jingoism
+
 	activate_law = law_type:law_monarchy
 	activate_law = law_type:law_state_religion
 	activate_law = law_type:law_military_junta
@@ -79,6 +85,8 @@ start_mon_militar = {
 }
 
 start_monarchy = {
+	activate_law = law_type:law_flexible_foreign_policy
+
 	activate_law = law_type:law_monarchy
 	activate_law = law_type:law_state_religion
 	activate_law = law_type:law_hybrid_voting
@@ -98,6 +106,8 @@ start_monarchy = {
 }
 
 start_communist = {
+	activate_law = law_type:law_flexible_foreign_policy
+
 	activate_law = law_type:law_council_republic
 	activate_law = law_type:law_hybrid_voting
 	activate_law = law_type:law_racial_segregation

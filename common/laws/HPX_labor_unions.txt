@@ -68,7 +68,7 @@ law_illegal_labor_unions = {
 	progressiveness = -50
 
 	unlocking_technologies = {
-		law_enforcement
+		democracy
 	}
 	
 	disallowing_laws = {
@@ -102,7 +102,6 @@ law_illegal_labor_unions = {
 			add = 750
 		}
 	}
-
 }
 
 law_state_controlled_labor_unions = {
@@ -113,7 +112,7 @@ law_state_controlled_labor_unions = {
 	progressiveness = -25
 
 	unlocking_technologies = {
-		corporatism
+		democracy
 	}
 	
 	modifier = {
@@ -175,7 +174,7 @@ law_limited_labor_unions = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		law_enforcement
+		democracy
 	}
 
 	modifier = {
@@ -225,7 +224,6 @@ law_limited_labor_unions = {
 			add = 750
 		}
 	}
-	
 }
 
 law_syndicalism = {
@@ -236,7 +234,7 @@ law_syndicalism = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		anarchism
+		democracy
 	}
 
 	unlocking_laws = {
@@ -286,7 +284,6 @@ law_syndicalism = {
 			add = 750
 		}
 	}
-
 }
 
 law_socialist_labor_unions = {
@@ -297,7 +294,7 @@ law_socialist_labor_unions = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		corporatism
+		democracy
 	}
 
 	unlocking_laws = {

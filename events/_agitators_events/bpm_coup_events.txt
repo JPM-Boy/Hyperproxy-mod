@@ -58,8 +58,8 @@ coup.1 = {
 			}
 			AND = {
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
+					has_law = law_type:law_republic
 				}
 				any_interest_group = {
 					is_powerful = yes
@@ -68,11 +68,11 @@ coup.1 = {
 					NOT = { is_interest_group_type = ig_anarchist }
 					OR = {
 						law_stance = {
-							law = law_type:law_parliamentary_republic
+							law = law_type:law_republic
 							value < neutral
 						}
 						law_stance = {
-							law = law_type:law_presidential_republic
+							law = law_type:law_republic
 							value < neutral
 						}
 					}
@@ -174,7 +174,7 @@ coup.1 = {
 				limit = {
 					scope:coup_ig = {
 						law_stance = {
-							law = law_type:law_presidential_republic
+							law = law_type:law_republic
 							value >= approve
 						}
 					}
@@ -182,7 +182,7 @@ coup.1 = {
 				set_variable = { name = coup_for_law value = 2 }
 				random_law = {
 					limit = {
-						type = law_type:law_presidential_republic
+						type = law_type:law_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -225,7 +225,7 @@ coup.1 = {
 				set_variable = { name = coup_for_law value = 4 }
 				random_law = {
 					limit = {
-						type = law_type:law_parliamentary_republic
+						type = law_type:law_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -236,8 +236,8 @@ coup.1 = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
+					has_law = law_type:law_republic
 				}
 				any_interest_group = {
 					is_powerful = yes
@@ -245,11 +245,11 @@ coup.1 = {
 					NOT = { is_interest_group_type = ig_anarchist }
 					OR = {
 						law_stance = {
-							law = law_type:law_parliamentary_republic
+							law = law_type:law_republic
 							value < neutral
 						}
 						law_stance = {
-							law = law_type:law_presidential_republic
+							law = law_type:law_republic
 							value < neutral
 						}
 					}
@@ -263,11 +263,11 @@ coup.1 = {
 					NOT = { is_interest_group_type = ig_anarchist }
 					OR = {
 						law_stance = {
-							law = law_type:law_parliamentary_republic
+							law = law_type:law_republic
 							value < neutral
 						}
 						law_stance = {
-							law = law_type:law_presidential_republic
+							law = law_type:law_republic
 							value < neutral
 						}
 					}
@@ -375,7 +375,7 @@ coup.1 = {
 				limit = {
 					scope:coup_ig = {
 						law_stance = {
-							law = law_type:law_presidential_republic
+							law = law_type:law_republic
 							value >= approve
 						}
 					}
@@ -383,7 +383,7 @@ coup.1 = {
 				set_variable = { name = coup_for_law value = 2 }
 				random_law = {
 					limit = {
-						type = law_type:law_presidential_republic
+						type = law_type:law_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -392,7 +392,7 @@ coup.1 = {
 				set_variable = { name = coup_for_law value = 4 }
 				random_law = {
 					limit = {
-						type = law_type:law_parliamentary_republic
+						type = law_type:law_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -610,8 +610,8 @@ coup.2 = {
 					NOT = {
 						scope:coup_desired_law = {
 							OR = {
-								type = law_type:law_presidential_republic
-								type = law_type:law_parliamentary_republic
+								type = law_type:law_republic
+								type = law_type:law_republic
 								type = law_type:law_theocracy
 								type = law_type:law_council_republic
 							}
@@ -639,8 +639,8 @@ coup.2 = {
 				trigger = {
 					scope:coup_desired_law = {
 						OR = {
-							type = law_type:law_parliamentary_republic
-							type = law_type:law_presidential_republic
+							type = law_type:law_republic
+							type = law_type:law_republic
 						}
 					}
 				}
@@ -840,8 +840,8 @@ coup.2 = {
 			NOT = {
 				scope:coup_desired_law = {
 					OR = {
-						type = law_type:law_presidential_republic
-						type = law_type:law_parliamentary_republic
+						type = law_type:law_republic
+						type = law_type:law_republic
 						type = law_type:law_theocracy
 						type = law_type:law_council_republic
 					}
@@ -918,8 +918,8 @@ coup.2 = {
 			NOT = {
 				scope:coup_desired_law = {
 					OR = {
-						type = law_type:law_presidential_republic
-						type = law_type:law_parliamentary_republic
+						type = law_type:law_republic
+						type = law_type:law_republic
 						type = law_type:law_theocracy
 						type = law_type:law_council_republic
 					}
@@ -1087,8 +1087,8 @@ coup.2 = {
 		trigger = {
 			scope:coup_desired_law = {
 				OR = {
-					type = law_type:law_presidential_republic
-					type = law_type:law_parliamentary_republic
+					type = law_type:law_republic
+					type = law_type:law_republic
 				}
 			}
 		}

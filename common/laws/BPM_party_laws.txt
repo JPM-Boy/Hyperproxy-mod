@@ -51,8 +51,8 @@ law_party_anti_reactionary = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
-		law_presidential_republic
-		law_parliamentary_republic
+		law_republic
+		law_republic
 		law_council_republic
 	}
 
@@ -100,8 +100,8 @@ law_party_reactionary_only = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
-		law_presidential_republic
-		law_parliamentary_republic
+		law_republic
+		law_republic
 		law_council_republic
 	}
 
@@ -156,8 +156,8 @@ law_party_anti_socialist = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
-		law_presidential_republic
-		law_parliamentary_republic
+		law_republic
+		law_republic
 		law_council_republic
 	}
 
@@ -212,8 +212,8 @@ law_party_socialist_only = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
-		law_presidential_republic
-		law_parliamentary_republic
+		law_republic
+		law_republic
 		law_council_republic
 	}
 
@@ -309,8 +309,8 @@ law_party_liberal_only = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
-		law_presidential_republic
-		law_parliamentary_republic
+		law_republic
+		law_republic
 		law_council_republic
 	}
 
@@ -359,8 +359,8 @@ law_party_single = {
 		law_landed_voting
 		law_wealth_voting
 		law_universal_suffrage
-		law_presidential_republic
-		law_parliamentary_republic
+		law_republic
+		law_republic
 		law_council_republic
 	}
 

@@ -1437,7 +1437,6 @@ BRZ = { # Brazil
 		priority = 20
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_presidential_republic
 				has_law = law_type:law_landed_voting
 				OR = {
 					has_law = law_type:law_tenant_farmers
@@ -3575,8 +3574,7 @@ GER = { # Germany
 					}
 				}
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
 				}
 			}
 		}
@@ -9663,8 +9661,7 @@ HRE = {
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_republic
 				}
 				has_law = law_type:law_technocracy
 			}

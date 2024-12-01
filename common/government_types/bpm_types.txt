@@ -13,7 +13,7 @@ gov_supreme_parliament = {
 	
 	possible = {
 		OR = {
-			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_republic
 			has_law = law_type:law_council_republic
 		}
 		has_law = law_type:law_supreme_legislature
@@ -106,7 +106,6 @@ gov_semi_presidential_democracy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_separated_powers
 		has_law = law_type:law_appointed_on_advice
 		NOR = { 
@@ -116,7 +115,6 @@ gov_semi_presidential_democracy = {
 			has_law = law_type:law_military_junta
 			AND = {
 				country_has_primary_culture = cu:brazilian
-				has_law = law_type:law_presidential_republic
 				has_law = law_type:law_landed_voting
 				OR = {
 					has_law = law_type:law_tenant_farmers
@@ -143,7 +141,7 @@ gov_parliamentary_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_advisory_body 
 		country_has_voting_franchise = no # => Most likely law_autocracy
 	}
@@ -166,7 +164,7 @@ gov_parliamentary_elected_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_advisory_body 
 		country_has_voting_franchise = yes
 	}
@@ -188,7 +186,7 @@ gov_parliamentary_oligarchy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_oligarchy
 	}
 

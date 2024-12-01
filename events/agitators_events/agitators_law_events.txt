@@ -2002,8 +2002,8 @@ agitators_law_events.21 = {
 		agitator_supports_enaction = yes
 		has_law = law_type:law_monarchy
 		OR = {
-			is_enacting_law = law_type:law_presidential_republic
-			is_enacting_law = law_type:law_parliamentary_republic
+			is_enacting_law = law_type:law_republic
+			is_enacting_law = law_type:law_republic
 		}
 	}
 	
@@ -2092,8 +2092,8 @@ agitators_law_events.22 = {
 		agitator_supports_enaction = yes
 		has_law = law_type:law_monarchy
 		OR = {
-			is_enacting_law = law_type:law_presidential_republic
-			is_enacting_law = law_type:law_parliamentary_republic
+			is_enacting_law = law_type:law_republic
+			is_enacting_law = law_type:law_republic
 		}
 	}
 	
@@ -2205,8 +2205,8 @@ agitators_law_events.23 = {
 		agitator_supports_enaction = yes
 		has_law = law_type:law_monarchy
 		OR = {
-			is_enacting_law = law_type:law_presidential_republic
-			is_enacting_law = law_type:law_parliamentary_republic
+			is_enacting_law = law_type:law_republic
+			is_enacting_law = law_type:law_republic
 		}
 		any_interest_group = {
 			OR = {
@@ -2322,8 +2322,8 @@ agitators_law_events.24 = {
 		agitator_supports_enaction = yes
 		has_law = law_type:law_monarchy
 		OR = {
-			is_enacting_law = law_type:law_presidential_republic
-			is_enacting_law = law_type:law_parliamentary_republic
+			is_enacting_law = law_type:law_republic
+			is_enacting_law = law_type:law_republic
 		}
 		any_scope_general = {
 			OR = {

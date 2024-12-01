@@ -200,7 +200,7 @@ setup_space_race_lists = {
 
 dissolve_soviet = {
 if = {
-	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_republic
 
 	create_country = {
 		limit = {
@@ -479,7 +479,7 @@ if = {
 
 dissolve_soviet_hard = {
 	if = {
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		create_country = {
 			limit = {
 				AND = {

@@ -196,7 +196,7 @@ law_repeatable_culture_promote_absolutist_values = {
 	}
 
 	unlocking_technologies = {
-		bureaucracy
+		democracy
 	}
 
 	can_enact = {
@@ -208,7 +208,7 @@ law_repeatable_culture_promote_absolutist_values = {
 
 	disallowing_laws = {
 		law_presidental_republic
-		law_parliamentary_republic
+		law_republic
 		law_council_republic
 	}
 	
@@ -286,7 +286,7 @@ law_repeatable_culture_promote_patriotic_values = {
 	}
 
 	unlocking_technologies = {
-		nationalism
+		democracy
 	}
 
 	can_enact = {
@@ -350,7 +350,7 @@ law_repeatable_culture_promote_socialist_values = {
 	}
 
 	unlocking_technologies = {
-		socialism
+		democracy
 	}
 
 	can_enact = {
@@ -406,7 +406,7 @@ law_repeatable_culture_promote_ultranationalist_values = {
 	}
 
 	unlocking_technologies = {
-		political_agitation
+		democracy
 	}
 
 	can_enact = {

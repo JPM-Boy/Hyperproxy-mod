@@ -55,10 +55,10 @@ paris_commune.1 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_parliamentary_republic
+							has_law = law_type:law_republic
 						}
 					}
-					activate_law = law_type:law_parliamentary_republic
+					activate_law = law_type:law_republic
 				}
 				if = {
 					limit = {

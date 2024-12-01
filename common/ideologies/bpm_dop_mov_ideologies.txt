@@ -18,8 +18,8 @@ ideology_dop_positivist = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove
-		law_presidential_republic = strongly_approve
-		law_parliamentary_republic = approve
+		law_republic = strongly_approve
+		law_republic = approve
 		law_council_republic = strongly_disapprove
 	}
 

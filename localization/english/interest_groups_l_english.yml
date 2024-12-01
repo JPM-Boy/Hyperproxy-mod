@@ -26,6 +26,11 @@ ig_ecologist:0 "Ecologists"
 ig_ecologist_only_icon:0 "@ig_ecologist!"
 ig_ecologist_desc:0 "Ecologists refer to the many movements which main objective is the preservation of the Earth and its Ecosystems. They usually mix with Liberals and other type of Progressist ideologies."
 
+
+ig_variant_ecologist:0 "[GetInterestGroupVariant('ig_ecologist',GetPlayer).GetNameWithCountryVariant]"
+interest_group_ig_ecologist_pol_str_mult:1 "$ig_variant_ecologist$ Political Strength"
+
+
 ig_soc_ecologist: "Eco-Socialists"
 ig_english_ecologist: "English Hippies"
 

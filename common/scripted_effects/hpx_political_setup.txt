@@ -1,7 +1,7 @@
 ﻿# Very high liberalism, e.g. USA
 
 start_parliamentary = {
-	activate_law = law_type:law_parliamentary_republic
+	activate_law = law_type:law_republic
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_pluralist_voting
 	activate_law = law_type:law_per_capita_based_taxation
@@ -9,7 +9,7 @@ start_parliamentary = {
 	activate_law = law_type:law_private_schools
 	activate_law = law_type:law_no_workers_rights
 	activate_law = law_type:law_interventionism
-	activate_law = law_type:law_mercantilism	
+	activate_law = law_type:law_protectionism	
 	activate_law = law_type:law_racial_segregation
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_no_migration_controls
@@ -22,7 +22,7 @@ start_parliamentary = {
 }
 
 start_presidential = {
-	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_republic
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_majoritarian_voting
 	activate_law = law_type:law_per_capita_based_taxation
@@ -30,7 +30,7 @@ start_presidential = {
 	activate_law = law_type:law_private_schools
 	activate_law = law_type:law_no_workers_rights
 	activate_law = law_type:law_interventionism
-	activate_law = law_type:law_mercantilism	
+	activate_law = law_type:law_protectionism	
 	activate_law = law_type:law_racial_segregation
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_no_migration_controls
@@ -43,11 +43,11 @@ start_presidential = {
 }
 
 start_militar = {
-	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_republic
 	activate_law = law_type:law_state_religion
 	activate_law = law_type:law_military_junta
 	activate_law = law_type:law_national_supremacy
-	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism	
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_closed_borders
 	activate_law = law_type:law_censorship
@@ -74,6 +74,8 @@ start_mon_militar = {
 	activate_law = law_type:law_no_workers_rights
 	activate_law = law_type:law_militarized_police
 	activate_law = law_type:law_unitary
+	activate_law = law_type:law_protectionism	
+
 }
 
 start_monarchy = {
@@ -85,7 +87,7 @@ start_monarchy = {
 	activate_law = law_type:law_private_schools
 	activate_law = law_type:law_no_workers_rights
 	activate_law = law_type:law_interventionism
-	activate_law = law_type:law_mercantilism	
+	activate_law = law_type:law_protectionism	
 	activate_law = law_type:law_racial_segregation
 	activate_law = law_type:law_professional_army
 	activate_law = law_type:law_no_migration_controls

@@ -30,12 +30,6 @@ law_appointed_by_hos = {
 	}
 
 	on_activate = {
-		if = {
-			limit = {
-				has_law = law_type:law_parliamentary_republic
-			}
-			activate_law = law_type:law_presidential_republic
-		}
 		hidden_effect = {
 			var:bpm_headofgov ?= {
 				bpm_unappoint_as_hog = yes
@@ -98,12 +92,6 @@ law_appointed_on_advice = {
 	}
 
 	on_activate = {
-		if = {
-			limit = {
-				has_law = law_type:law_parliamentary_republic
-			}
-			activate_law = law_type:law_presidential_republic
-		}
 		hidden_effect = {
 			var:bpm_headofgov ?= {
 				bpm_unappoint_as_hog = yes
@@ -161,12 +149,6 @@ law_answers_to_legislature = {
 	}
 
 	on_activate = {
-		if = {
-			limit = {
-				has_law = law_type:law_presidential_republic
-			}
-			activate_law = law_type:law_parliamentary_republic
-		}
 		#if = {
 		#	limit = {
 		#		has_law = law_type:law_advisory_body
@@ -236,12 +218,6 @@ law_no_separate_hog = {
 	}
 
 	on_activate = {
-		if = {
-			limit = {
-				has_law = law_type:law_parliamentary_republic
-			}
-			activate_law = law_type:law_presidential_republic
-		}
 		hidden_effect = {
 			var:bpm_headofgov ?= {
 				bpm_unappoint_as_hog = yes

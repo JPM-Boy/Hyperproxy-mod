@@ -61,19 +61,19 @@ interest_group_ig_fascists_pol_str_mult = {
 	decimals = 0
 }
 
-interest_group_ig_liberals_pol_str_mult = {
+interest_group_ig_liberal_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_market_liberals_pol_str_mult = {
+interest_group_ig_ecologist_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
 }
 
-interest_group_ig_national_liberals_pol_str_mult = {
+interest_group_ig_classical_liberal_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0

@@ -1,14 +1,14 @@
 bpm_setup_foundation_laws = {
     if = {
         limit = {
-            has_law = law_type:law_parliamentary_republic
+            has_law = law_type:law_republic
         }
         activate_law = law_type:law_answers_to_legislature
         activate_law = law_type:law_separated_powers
     }
     else_if = {
         limit = {
-            has_law = law_type:law_presidential_republic
+            has_law = law_type:law_republic
         }
         activate_law = law_type:law_no_separate_hog
         if = {
@@ -65,16 +65,16 @@ bpm_setup_foundation_laws = {
 bpm_republic_switcharoo = {
     if = {
         limit = {
-            has_law = law_type:law_presidential_republic
+            has_law = law_type:law_republic
             has_law = law_type:law_answers_to_legislature
         }
-        activate_law = law_type:law_parliamentary_republic
+        activate_law = law_type:law_republic
     }
     if = {
         limit = {
-            has_law = law_type:law_parliamentary_republic
+            has_law = law_type:law_republic
             NOT = { has_law = law_type:law_answers_to_legislature }
         }
-        activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_republic
     }
 }

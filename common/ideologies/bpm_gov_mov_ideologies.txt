@@ -6,8 +6,8 @@ ideology_gov_absolutist_royalist = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = neutral
-		law_presidential_republic = strongly_disapprove
-		law_parliamentary_republic = strongly_disapprove
+		law_republic = strongly_disapprove
+		law_republic = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
 
@@ -35,8 +35,8 @@ ideology_gov_constitutional_royalist = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = neutral
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_disapprove
 	}
 
@@ -118,8 +118,8 @@ ideology_gov_anarchist = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_approve
 	}
 
@@ -175,8 +175,8 @@ ideology_gov_radical_liberal = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove
-		law_presidential_republic = strongly_approve
-		law_parliamentary_republic = strongly_approve
+		law_republic = strongly_approve
+		law_republic = strongly_approve
 		law_council_republic = strongly_disapprove
 	}
 

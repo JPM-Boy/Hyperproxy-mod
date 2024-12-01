@@ -68,7 +68,7 @@ law_repeatable_military_military_reform = {
 	}
 
 	unlocking_technologies = {
-		general_staff
+		democracy
 	}
 
 	can_enact = {
@@ -122,7 +122,7 @@ law_repeatable_military_parades_and_drills = {
 	}
 
 	unlocking_technologies = {
-		military_drill
+		democracy
 	}
 
 	can_enact = {
@@ -188,7 +188,7 @@ law_repeatable_military_improve_soldier_conditions = {
 	}
 
 	unlocking_technologies = {
-		human_rights
+		democracy
 	}
 
 	can_enact = {
@@ -254,7 +254,7 @@ law_repeatable_military_army_defunding = {
 	}
 
 	unlocking_technologies = {
-		human_rights
+		democracy
 	}
 
 	can_enact = {
@@ -311,7 +311,7 @@ law_repeatable_military_war_propaganda = {
 	}
 
 	unlocking_technologies = {
-		general_staff
+		democracy
 	}
 
 	can_enact = {

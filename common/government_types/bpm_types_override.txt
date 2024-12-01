@@ -66,7 +66,6 @@ gov_francocracia = {
 	female_heir = "RULER_TITLE_SECRETARY"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -93,7 +92,6 @@ gov_francocracia_presidential = {
 	female_ruler = "RULER_TITLE_PERPETUAL_DICTATOR"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -302,7 +300,6 @@ gov_brazil_oligarchic_republic_presidential = {
 	
 	possible = {
 		country_has_primary_culture = cu:brazilian
-		has_law = law_type:law_presidential_republic
 		OR = {
 			has_law = law_type:law_oligarchy
 			has_law = law_type:law_landed_voting
@@ -325,7 +322,6 @@ gov_french_2nd_republic_presidential_dictator = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
 		country_has_primary_culture = cu:french
 		OR = {
 			has_law = law_type:law_autocracy
@@ -352,7 +348,7 @@ gov_french_3rd_republic_presidential_dictator = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		country_has_primary_culture = cu:french
 		OR = {
 			has_law = law_type:law_autocracy
@@ -379,7 +375,7 @@ gov_french_4th_republic_presidential_dictator = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		country_has_primary_culture = cu:french
 		OR = {
 			has_law = law_type:law_autocracy
@@ -406,7 +402,7 @@ gov_banana_republic = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -440,7 +436,7 @@ gov_bhutanese_dual_system_temporal = {
 	possible = {
 		exists = c:BHU 
 		c:BHU = ROOT
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_state_religion
 		OR = {
 			has_law = law_type:law_autocracy
@@ -471,7 +467,7 @@ gov_indian_territory_life_term = {
 		exists = c:USA
 		is_subject_of = c:USA
 
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -501,7 +497,7 @@ gov_indian_territory_elected_term = {
 		exists = c:USA
 		is_subject_of = c:USA
 
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		NOR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -535,7 +531,7 @@ gov_free_city = {
 		any_scope_state = {
 			count <= 1
 		}
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		NOR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -560,8 +556,8 @@ gov_fascist_state = {
 	
 	possible = {
 		OR = {
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_republic
+			has_law = law_type:law_republic
 		}
 		OR = {
 			has_law = law_type:law_autocracy
@@ -588,7 +584,7 @@ gov_presidential_single_party_state = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_party_single
 	}
 
@@ -607,7 +603,7 @@ gov_military_dictatorship = {
 	female_ruler = "RULER_TITLE_GENERAL"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_autocracy 
 		OR = {
 			ruler = {
@@ -636,7 +632,7 @@ gov_presidential_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_autocracy 
 	}
 
@@ -656,8 +652,8 @@ gov_junta = {
 	
 	possible = {
 		OR = {
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_republic
+			has_law = law_type:law_republic
 		}
 		has_law = law_type:law_military_junta
 	}
@@ -677,7 +673,7 @@ gov_presidential_oligarchy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_oligarchy
 		NOT = {
 			coa_fascist_trigger = yes
@@ -700,7 +696,7 @@ gov_presidential_democracy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		NOR = { 
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -709,7 +705,7 @@ gov_presidential_democracy = {
 			has_law = law_type:law_appointed_on_advice
 			AND = {
 				country_has_primary_culture = cu:brazilian
-				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_republic
 				has_law = law_type:law_landed_voting
 				OR = {
 					has_law = law_type:law_tenant_farmers
@@ -734,7 +730,7 @@ gov_french_2nd_republic_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		country_has_primary_culture = cu:french
 		OR = {
 			has_law = law_type:law_autocracy
@@ -761,7 +757,7 @@ gov_french_3rd_republic_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		country_has_primary_culture = cu:french
 		OR = {
 			has_law = law_type:law_autocracy
@@ -788,7 +784,7 @@ gov_french_4th_republic_parliamentary_dictator = {
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		country_has_primary_culture = cu:french
 		OR = {
 			has_law = law_type:law_autocracy
@@ -816,7 +812,7 @@ gov_parliamentary_single_party_state = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_party_single
 	}
 
@@ -839,7 +835,7 @@ gov_circassian_federation = {
 	
 	possible = {
 		is_country_type = unrecognized
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -866,7 +862,7 @@ gov_parliamentary_democracy = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_republic
 		NOT = { has_law = law_type:law_supreme_legislature }
 		NOR = {
 			has_law = law_type:law_autocracy
@@ -1137,7 +1133,7 @@ gov_dominion_india_presidential = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		NOR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
@@ -1174,7 +1170,7 @@ gov_colonial_administration = {
 	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		NOT = { has_law = law_type:law_colonial_admin }
 		OR = {
 			is_subject_type = subject_type_colony
@@ -1236,7 +1232,7 @@ gov_crown_colony_india = {
 	female_ruler = "RULER_TITLE_VICEROY"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_colonial_admin
 		exists = c:GBR
 		is_subject_of = c:GBR
@@ -1264,7 +1260,7 @@ gov_crown_colony = {
 	female_ruler = "RULER_TITLE_GOVERNOR"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		NOT = { has_law = law_type:law_colonial_admin }
 		exists = c:GBR
 		is_subject_of = c:GBR

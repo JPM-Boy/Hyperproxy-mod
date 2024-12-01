@@ -7,7 +7,6 @@ gov_colonial_governor = {
 	
 	possible = {
 		has_law = law_type:law_colonial_admin
-		has_law = law_type:law_presidential_republic
 		NOT = { 
 			OR = {
 				c:QUE = ROOT
@@ -34,7 +33,6 @@ gov_crown_col = {
 	
 	possible = {
 		has_law = law_type:law_colonial_admin
-		has_law = law_type:law_presidential_republic
 		OR = {
 			c:QUE ?= ROOT
 			c:ONT ?= ROOT
@@ -58,7 +56,6 @@ gov_united_crown_col = {
 	
 	possible = {
 		has_law = law_type:law_colonial_admin
-		has_law = law_type:law_presidential_republic
 		this = c:CAN
 	}
 
@@ -79,7 +76,6 @@ gov_colonial_board = {
 	
 	possible = {
 		has_law = law_type:law_colonial_admin
-		has_law = law_type:law_presidential_republic
 	}
 
 	on_government_type_change = {

@@ -186,7 +186,7 @@ law_repeatable_politics_military_purge = {
 	}
 
 	unlocking_technologies = {
-		identification_documents
+		democracy
 	}
 
 	can_enact = {
@@ -272,7 +272,7 @@ law_repeatable_politics_bureaucratic_purge = {
 	}
 
 	unlocking_technologies = {
-		identification_documents
+		democracy
 	}
 
 	can_enact = {
@@ -349,7 +349,7 @@ law_repeatable_politics_popular_concessions = {
 	}
 
 	unlocking_technologies = {
-		human_rights
+		democracy
 	}
 
 	can_enact = {
@@ -432,7 +432,7 @@ law_repeatable_politics_anti_corruption_drive = {
 	}
 
 	unlocking_technologies = {
-		corporatism
+		democracy
 	}
 
 	can_enact = {
@@ -512,7 +512,7 @@ law_repeatable_politics_great_terror = {
 	}
 
 	unlocking_technologies = {
-		identification_documents
+		democracy
 	}
 
 	can_enact = {

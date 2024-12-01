@@ -14,11 +14,11 @@ bpm_setup_foundations_varlist = {
     }
     add_to_global_variable_list = {
         name = bpm_laws_foundation_category
-        target = law_type:law_presidential_republic
+        target = law_type:law_republic
     }
     add_to_global_variable_list = {
         name = bpm_laws_foundation_category
-        target = law_type:law_parliamentary_republic
+        target = law_type:law_corporatocracy
     }
     add_to_global_variable_list = {
         name = bpm_laws_foundation_category

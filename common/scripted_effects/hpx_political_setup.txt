@@ -20,6 +20,7 @@ start_parliamentary = {
 	activate_law = law_type:law_answers_to_legislature
 	activate_law = law_type:law_separated_powers
 	activate_law = law_type:law_flexible_foreign_policy
+	activate_law = law_type:law_federated
 }
 
 start_presidential = {
@@ -41,6 +42,7 @@ start_presidential = {
 	activate_law = law_type:law_purchased_officers
 	activate_law = law_type:law_answers_to_legislature
 	activate_law = law_type:law_separated_powers
+	activate_law = law_type:law_unitary
 
 }
 
@@ -103,6 +105,7 @@ start_monarchy = {
 	activate_law = law_type:law_homesteading
 	activate_law = law_type:law_censorship
 	activate_law = law_type:law_purchased_officers
+	activate_law = law_type:law_unitary
 }
 
 start_communist = {
@@ -128,5 +131,6 @@ start_communist = {
 	activate_law = law_type:law_censorship
 	activate_law = law_type:law_women_in_the_workplace
 	activate_law = law_type:law_migration_controls
+	activate_law = law_type:law_confederated
 	
 }

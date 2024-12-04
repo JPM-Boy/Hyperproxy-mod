@@ -10,6 +10,9 @@ hpx_organization.imf.1 = { # IMF
 	title = hpx_organization.imf.1.t
 	desc = hpx_organization.imf.1.d
 	flavor = hpx_organization.imf.1.f
+
+	cooldown = { years = 5 }
+
 	trigger = {
 		owner = {
 			has_law = law_type:law_fixed_exchange_rate

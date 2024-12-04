@@ -1,4 +1,4 @@
-﻿# Ideology Normalization: significant movements (libs, socialists) should have 6-8 and minor movements should have 2-3 (positivist, slavery)
+# Ideology Normalization: significant movements (libs, socialists) should have 6-8 and minor movements should have 2-3 (positivist, slavery)
 # Irbynx: +1 Cookie point (for no reason)
 
 # ================================================== #
@@ -36,14 +36,16 @@ movement_anti_slavery = {
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
 	}
+
+	# Anyone can pressure the anti-slavery movement
 	
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ideology_abolitionist
 			has_ideology = ideology:ideology_humanitarian
 			OR = {
-				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_trade_unions
+				interest_group = { is_interest_group_type = ig_intelligentsia }
+				interest_group = { is_interest_group_type = ig_trade_unions }
 			}
 		}
 	}
@@ -409,6 +411,11 @@ movement_pro_slavery = {
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
 	}
+
+	
+	can_pressure_interest_group = {
+		bpm_ig_is_socialist = no
+	}
 	
 	character_support_trigger = {
 		trigger_if = {
@@ -767,6 +774,11 @@ movement_royalist_absolutist = {
 			has_variable = monarchy_stamped_out_var
 		}
 	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_left_wing = no
+	}
+
 	on_disbanded = {
 		if = {
 			limit = {
@@ -993,6 +1005,10 @@ movement_royalist_absolutist = {
 			max = 0.7 # Starts more powerful but caps out early
 		}
 	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_left_wing = no
+	}
 	
 	revolution = {
 		weight = {
@@ -1065,7 +1081,6 @@ movement_royalist_absolutist = {
 					limit = {
 						OR = {
 							is_enacting_law = law_type:law_republic
-							is_enacting_law = law_type:law_republic
 							is_enacting_law = law_type:law_corporate_state
 							is_enacting_law = law_type:law_theocracy
 							is_enacting_law = law_type:law_council_republic	
@@ -1115,19 +1130,16 @@ movement_royalist_constitutional = {
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
 	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_radical_left = no
+	}
 	
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ideology_royalist
 			has_ideology = ideology:ideology_humanitarian_royalist
 			AND = {
-				OR = {
-					is_interest_group_type = ig_landowners
-					is_interest_group_type = ig_devout
-					is_interest_group_type = ig_petty_bourgeoisie
-					is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_rural_folk
-				}
 				NOT = {
 					law_stance = {
 						law = law_type:law_monarchy
@@ -1283,6 +1295,8 @@ movement_royalist_constitutional = {
 			value = literacy_rate
 			add = 0.10
 		}
+
+		multiply = 0.3
 	}
 	
 	revolution = {
@@ -1366,7 +1380,6 @@ movement_royalist_constitutional = {
 					limit = {
 						OR = {
 							is_enacting_law = law_type:law_republic
-							is_enacting_law = law_type:law_republic
 							is_enacting_law = law_type:law_corporate_state
 							is_enacting_law = law_type:law_theocracy
 							is_enacting_law = law_type:law_council_republic	
@@ -1403,11 +1416,6 @@ movement_socialist = {
 		ideology_vanguardist
 		ideology_humanitarian
 	}
-	
-	creation_trigger = {
-		has_technology_researched = socialism
-		NOT = { has_global_variable = second_intl_chain_complete_var	}
-	}	
 	creation_weight = {
 		value = 100
 	}	
@@ -1416,9 +1424,12 @@ movement_socialist = {
 	}
 	
 	disband_trigger = {
-		has_global_variable = second_intl_chain_complete_var
 	}
 	on_disbanded = {}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_left_wing = yes
+	}
 	
 	character_support_trigger = {
 		OR = {
@@ -1427,7 +1438,7 @@ movement_socialist = {
 			has_ideology = ideology:ideology_social_democrat
 			has_ideology = ideology:ideology_vanguardist
 			AND = {
-				is_interest_group_type = ig_trade_unions
+				interest_group = { is_interest_group_type = ig_trade_unions }
 				has_ideology = ideology:ideology_humanitarian
 			}
 		}
@@ -1732,22 +1743,22 @@ movement_anarchist = {
 		ideology_anarchist
 		ideology_humanitarian
 	}
-	
-	creation_trigger = {
-		has_technology_researched = anarchism
-	}	
 	creation_weight = {
 		value = 100
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
 	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_proletarian = yes
+	}
 	
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ideology_anarchist
 			AND = {
-				is_interest_group_type = ig_trade_unions
+				interest_group = { is_interest_group_type = ig_trade_unions }
 				has_ideology = ideology:ideology_humanitarian
 			}
 		}
@@ -1989,16 +2000,15 @@ movement_communist = {
 		ideology_communist
 		ideology_vanguardist
 	}
-	
-	creation_trigger = {
-		has_technology_researched = socialism
-		has_global_variable = second_intl_chain_complete_var
-	}	
 	creation_weight = {
-		value = 100
+		value = 200
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
+	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_proletarian = yes
 	}
 	
 	character_support_trigger = {
@@ -2006,7 +2016,7 @@ movement_communist = {
 			has_ideology = ideology:ideology_vanguardist
 			has_ideology = ideology:ideology_communist
 			AND = {
-				is_interest_group_type = ig_trade_unions
+				interest_group = { is_interest_group_type = ig_trade_unions }
 				has_ideology = ideology:ideology_humanitarian
 			}
 		}
@@ -2053,23 +2063,13 @@ movement_communist = {
 			value = 10
 			multiply = state.state_urbanization_rate
 		}	
-	
 		if = {
 			limit = {
-				strata = middle
+				is_pop_type = academics
 			}
-			multiply = {
-				value = 0.10
-				desc = "MIDDLE_NO_ICON"
-			}
-			if = {
-				limit = {
-					is_pop_type = academics
-				}
-				add = {
-					value = 3
-					desc = "POP_ACADEMICS"
-				}
+			add = {
+				value = 3
+				desc = "POP_ACADEMICS"
 			}
 		}
 		else_if = {
@@ -2142,7 +2142,7 @@ movement_communist = {
 				desc = "IS_BELOW_EXPECTED_SOL"
 				value = state.average_expected_sol
 				subtract = standard_of_living
-				max = 10
+				max = 20
 			}
 		}
 		else_if = {
@@ -2160,13 +2160,13 @@ movement_communist = {
 		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops
 			desc = "POP_LITERACY"
 			value = literacy_rate
-			add = 0.10
+			add = 0.9
 		}
 
 		multiply = { # Multiplied by 2x max
 			desc = "POP_RADICALS"
 			value = pop_radical_fraction
-			add = 1
+			add = 2
 		}
 	}
 	
@@ -2197,7 +2197,7 @@ movement_communist = {
 				limit = { has_institution = institution_workplace_safety }
 				
 				add = {
-					value = 3
+					value = 5
 					subtract = "institution_investment_level(institution_workplace_safety)"
 					multiply = 0.05
 					desc = "INSTITUTION_FUNDING_LEVEL_workplace_safety"
@@ -2205,22 +2205,13 @@ movement_communist = {
 			}
 			else = {
 				add = {
-					value = 0.1
+					value = 1
 					desc = "NO_INSTITUTION_workplace_safety"
 				}		
-			}		
-			if = {
-				limit = { has_technology_researched = political_agitation }
-				add = { 
-					desc = "HAS_POLITICAL_AGITATION"
-					value = 0.3
-				}
 			}
 		}
 	}
 }
-
-
 
 # Completed: RSKHM (1 cookie point)
 movement_fascist = {
@@ -2232,15 +2223,15 @@ movement_fascist = {
 		ideology_integralist
 		ideology_corporatist_leader
 	}
-	
-	creation_trigger = {
-		has_technology_researched = political_agitation
-	}	
 	creation_weight = {
 		value = 100
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
+	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_right_wing = yes
 	}
 	
 	character_support_trigger = {
@@ -2527,8 +2518,6 @@ movement_fascist = {
 	}	
 }
 
-
-
 # Completed: RSKHM (1 cookie point)
 movement_liberal = {
 	category = movement_category_ideological
@@ -2540,10 +2529,13 @@ movement_liberal = {
 		ideology_republican_leader
 		ideology_radical
 		ideology_humanitarian
-	}
+	} 
 	
+	can_pressure_interest_group = {
+		bpm_ig_is_liberal = yes
+	}
+
 	creation_trigger = {
-		has_technology_researched = democracy
 		NOT = {
 			any_political_movement = {
 				is_political_movement_type = movement_radical
@@ -2551,14 +2543,14 @@ movement_liberal = {
 		}
 	}	
 	creation_weight = {
-		value = 100
+		value = 200
 		if = {
 			limit = {
 				has_law = law_type:law_monarchy
 				country_has_voting_franchise = no
 			}
 			multiply = {
-				value = 0.1
+				value = 0.5
 			}
 		}
 	}	
@@ -2628,7 +2620,7 @@ movement_liberal = {
 			limit = {
 				has_ideology = ideology:ideology_humanitarian
 				NOT = {
-					is_interest_group_type = ig_trade_unions
+					interest_group = { is_interest_group_type = ig_trade_unions }
 				}
 			}
 			multiply = {
@@ -2670,7 +2662,7 @@ movement_liberal = {
 	
 	pop_support_weight = {	
 		add = {
-			value = 3
+			value = 8
 			desc = "POP_BASE_SUPPORT"
 		}
 
@@ -2689,7 +2681,8 @@ movement_liberal = {
 					is_pop_type = capitalists
 				}
 				add = {
-					value = 25
+					# this mfers LOVE liberalism bro
+					value = 150
 					desc = "POP_CAPITALISTS"
 				}
 			}
@@ -2727,7 +2720,7 @@ movement_liberal = {
 					is_pop_type = academics
 				}
 				add = {
-					value = 24
+					value = 48
 					desc = "POP_ACADEMICS"
 				}
 			}
@@ -2736,7 +2729,7 @@ movement_liberal = {
 					is_pop_type = bureaucrats
 				}
 				add = {
-					value = 12
+					value = 24
 					desc = "POP_BUREAUCRATS"
 				}
 			}
@@ -2782,6 +2775,7 @@ movement_liberal = {
 			value = literacy_rate
 			add = 0.10
 		}
+		multiply = 1.25
 	}
 	
 	revolution = {
@@ -2846,9 +2840,7 @@ movement_radical = {
 	}
 	
 	creation_trigger = {
-		has_technology_researched = egalitarianism
 		NOR = {
-			has_law = law_type:law_republic
 			has_law = law_type:law_republic
 			has_law = law_type:law_council_republic
 			has_law = law_type:law_corporate_state
@@ -2876,6 +2868,10 @@ movement_radical = {
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
+	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_radical_right = no
 	}
 	
 	character_support_trigger = {
@@ -3165,8 +3161,6 @@ movement_radical = {
 	}		
 }
 
-
-
 # Completed: RSKHM (1 cookie point)
 movement_reactionary = {
 	category = movement_category_ideological
@@ -3190,6 +3184,10 @@ movement_reactionary = {
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
+	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_socialist = no
 	}
 	
 	character_support_trigger = {
@@ -3239,8 +3237,8 @@ movement_reactionary = {
 					has_ideology = ideology:ideology_authoritarian
 					interest_group ?= {
 						OR = {
-							is_interest_group_type = ig_intelligentsia
-							is_interest_group_type = ig_trade_unions
+							interest_group = { is_interest_group_type = ig_intelligentsia }
+							interest_group = { is_interest_group_type = ig_trade_unions }
 						}
 					}
 				}
@@ -3448,15 +3446,15 @@ movement_feminist = {
 		ideology_feminist
 		ideology_humanitarian
 	}
-	
-	creation_trigger = {
-		has_technology_researched = feminism
-	}	
 	creation_weight = {
 		value = 100
 	}	
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
+	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_traditionalist = no
 	}
 	
 	character_support_trigger = {
@@ -3652,7 +3650,6 @@ movement_modernizer = {
 	}
 	
 	creation_trigger = {
-		has_technology_researched = academia
 		OR = {
 			AND = {
 				OR = {
@@ -3978,7 +3975,6 @@ movement_land_reform = {
 			has_ideology = ideology:ideology_communist
 			has_ideology = ideology:ideology_vanguardist
 			has_ideology = ideology:ideology_abolitionist
-			is_interest_group_type = ig_rural_folk
 		}
 	}
 	character_support_weight = {
@@ -3997,7 +3993,7 @@ movement_land_reform = {
 		if = {
 			limit = {
 				interest_group ?= {
-					is_interest_group_type = ig_rural_folk
+					interest_group = { is_interest_group_type = ig_rural_folk }
 				}
 			}
 			multiply = {
@@ -4186,10 +4182,6 @@ movement_labor = { # Explicitly non-socialist labour movement
 		ideology_reformer
 		ideology_radical
 		ideology_social_democrat
-	}
-	
-	creation_trigger = {
-		has_technology_researched = labor_movement
 	}	
 	creation_weight = {
 		value = 100
@@ -4197,13 +4189,23 @@ movement_labor = { # Explicitly non-socialist labour movement
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
 	}
+
+	# can_pressure_interest_group = {
+	# 	ig_intelligentsia
+	# 	ig_petty_bourgeoisie
+	# 	ig_rural_folk
+	# 	ig_trade_unions
+	# 	ig_radicals
+	# 	ig_liberalsß
+	# 	ig_agrarian_populists
+	# }
 	
 	character_support_trigger = {
 		OR = {
 			has_ideology = ideology:ideology_reformer
 			has_ideology = ideology:ideology_radical
 			has_ideology = ideology:ideology_social_democrat
-			is_interest_group_type = ig_trade_unions
+			interest_group = { is_interest_group_type = ig_trade_unions }
 		}
 	}
 	character_support_weight = {
@@ -4229,7 +4231,7 @@ movement_labor = { # Explicitly non-socialist labour movement
 		}
 		if = { # Labour movement is the natural habitat of non-socialist trade unions characters
 			limit = {
-				is_interest_group_type = ig_trade_unions
+				interest_group = { is_interest_group_type = ig_trade_unions }
 				has_socialist_ideology = no
 			}
 			multiply = {
@@ -4496,6 +4498,10 @@ movement_positivist = {
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
 	}
+
+	can_pressure_interest_group = {
+		bpm_ig_is_right_wing = no
+	}
 	
 	character_support_trigger = {
 		trigger_if = {
@@ -4506,7 +4512,7 @@ movement_positivist = {
 				has_ideology = ideology:ideology_positivist
 				has_ideology = ideology:ideology_atheist
 				has_ideology = ideology:ideology_republican_leader
-				is_interest_group_type = ig_armed_forces
+				interest_group = { is_interest_group_type = ig_armed_forces }
 			}
 		}
 		trigger_else = {
@@ -4516,7 +4522,7 @@ movement_positivist = {
 				has_ideology = ideology:ideology_republican_leader
 				interest_group ?= {
 					OR = {
-						is_interest_group_type = ig_armed_forces
+						interest_group = { is_interest_group_type = ig_armed_forces }
 						has_ideology = ideology:ideology_oligarchic
                         has_ideology = ideology:ideology_dop_technocrat
 					}
@@ -4548,7 +4554,7 @@ movement_positivist = {
 			limit = {
 				interest_group ?= {
 					OR = {
-						is_interest_group_type = ig_armed_forces
+						interest_group = { is_interest_group_type = ig_armed_forces }
 						has_ideology = ideology:ideology_oligarchic
 					}
 					ig_approval < 0
@@ -4792,268 +4798,7 @@ movement_positivist = {
 # Completed: Vilgarth (1 cookie point)
 movement_utilitarian = {
 	category = movement_category_ideological
-	
-	ideology = ideology_wel_utilitarian
-	character_ideologies = {
-		ideology_utilitarian_leader
-	}
-	
 	creation_trigger = {
-		OR = {
-			country_has_primary_culture = cu:british
-			country_has_primary_culture = cu:anglo_canadian
-			country_has_primary_culture = cu:australian
-		}
-	}
-	creation_weight = {
-		value = 100
+		always = no
 	}	
-	on_created = {
-		add_movement_enthusiasm_modifier = yes
-	}
-	
-	character_support_trigger = {
-		OR = {
-			AND = {
-				culture = {
-					has_discrimination_trait = european_heritage
-				}
-				has_reactionary_ideology = no
-				has_conservative_ideology = no
-				has_socialist_ideology = no
-				interest_group ?= {
-					bpm_ig_is_traditionalist = no
-					bpm_ig_is_socialist = no
-				}
-			}
-			has_ideology = ideology:ideology_utilitarian_leader
-		}
-	}
-	character_support_weight = {
-		value = 200
-		if = {
-			limit = {
-				has_ideology = ideology:ideology_utilitarian_leader
-			}
-			multiply = {
-				value = 5
-			}
-		}
-	}
-
-	pop_support_trigger = {
-		OR = {
-			AND = {
-				owner = {
-					is_country_type = colonial
-				}
-				culture = {
-					has_discrimination_trait = european_heritage
-				}
-			}
-			is_pop_type = bureaucrats
-			is_pop_type = capitalists
-			is_pop_type = engineers
-			is_pop_type = clerks
-			is_pop_type = officers
-			is_pop_type = academics
-		}
-		NOR = {
-			is_pop_type = laborers
-			is_pop_type = peasants
-			is_pop_type = slaves
-		}
-	}
-
-	pop_support_factors = {
-		movement_support_colonial_rule
-		movement_support_high_acceptance
-		movement_support_bureaucrats
-		movement_support_academics
-		movement_support_officers
-		movement_support_clerks
-	}
-	
-	pop_support_weight = {
-		value = 1
-		
-		if = {
-			limit = {
-				owner = {
-					is_country_type = colonial
-				}
-				culture = {
-					has_discrimination_trait = european_heritage
-				}
-			}
-			add = {
-				desc = "colonial_rule"
-				value = 15
-				if = {
-					limit = {
-						is_pop_type = bureaucrats
-					}
-					multiply = 1.5
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				is_pop_type = bureaucrats
-			}
-			add = {
-				desc = "POP_BUREAUCRATS"
-				value = 9
-			}
-		}
-		else_if = {
-			limit = {
-				is_pop_type = academics
-			}
-			add = {
-				desc = "POP_ACADEMICS"
-				value = 6
-			}
-		}
-		else_if = {
-			limit = {
-				is_pop_type = capitalists
-			}
-			add = {
-				desc = "POP_CAPITALISTS"
-				value = 3
-			}
-		}
-		else_if = {
-			limit = {
-				is_pop_type = officers
-			}
-			add = {
-				desc = "POP_OFFICERS"
-				value = 3
-			}
-		}
-		else_if = {
-			limit = {
-				is_pop_type = clerks
-			}
-			add = {
-				desc = "POP_CLERKS"
-				value = 3
-			}
-		}
-
-		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops
-			desc = "POP_LITERACY"
-			value = literacy_rate
-			add = 0.10
-		}
-
-		multiply = {
-			desc = "POP_ACCEPTANCE"
-			value = pop_acceptance
-			divide = 75
-		}
-	}
-
-	revolution = {
-		possible = {
-			political_movement_support >= 0.05
-		}	
-	
-		weight = {
-			value = 100
-		}
-	
-		state_weight = {
-			value = 1
-			if = {
-				limit = { 
-					OR = {
-					    any_scope_building = {
-							is_building_group = bg_bureaucracy
-							level >= 10
-					    }		
-					}
-				}
-				multiply = 10
-			}
-			else_if = {
-				limit = { 
-					OR = {
-					    any_scope_building = {
-							is_building_group = bg_bureaucracy
-							level >= 5
-					    }		
-					}
-				}
-				multiply = 5
-			}
-			else = {
-				multiply = 0
-			}
-		}
-	}
-	
-	secession = {
-		possible = {
-			political_movement_support >= 0.05
-			scope:clout <= 0
-		}
-		
-		weight = {
-			value = 1000
-		}		
-		
-		state_weight = {
-			value = 1
-			if = {
-				limit = { 
-					OR = {
-					    any_scope_building = {
-							is_building_group = bg_bureaucracy
-							level >= 10
-					    }		
-					}
-				}
-				multiply = 10
-			}
-			else_if = {
-				limit = { 
-					OR = {
-					    any_scope_building = {
-							is_building_group = bg_bureaucracy
-							level >= 5
-					    }		
-					}
-				}
-				multiply = 5
-			}
-			else = {
-				multiply = 0
-			}
-		}		
-	}	
-	
-	additional_radicalism_factors = {
-		owner = {
-			if = {
-				limit = { has_institution = institution_schools }
-				
-				add = {
-					value = 3
-					subtract = "institution_investment_level(institution_schools)"
-					multiply = 0.05
-					desc = "INSTITUTION_FUNDING_LEVEL_schools"
-				}
-			}
-			else = {
-				add = {
-					value = 0.1
-					desc = "NO_INSTITUTION_schools"
-				}		
-			}				
-		}
-	}
 }

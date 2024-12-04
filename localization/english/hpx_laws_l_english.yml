@@ -51,3 +51,12 @@ law_sustainable_land_use: "Sustainable Land Use"
 law_customary_land_tenure: "Customary Land Tenure"
 
 law_mixed_health_insurance: "Mixed Health Insurance"
+
+lawgroup_work_hours: "Work Hours"
+law_unlimited_hours: "Unlimited Hours"
+law_14_hours: "14 Hours a day"
+law_12_hours: "12 Hours a day"
+law_10_hours: "10 Hours a day"
+law_8_hours: "8 Hours a day"
+law_6_hours: "6 Hours a day"
+law_4_hours: "4 Hours a day"

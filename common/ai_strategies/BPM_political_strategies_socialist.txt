@@ -1,4 +1,4 @@
-﻿ai_strategy_socialist_advance_agenda = {
+ai_strategy_socialist_advance_agenda = {
 	icon = "gfx/interface/icons/ai_strategy_icons/egalitarian_agenda.dds"
 	
 	type = political
@@ -43,7 +43,7 @@
 	
 	pro_interest_groups = {
 		ig_trade_unions
-		ig_socialists
+		ig_reformist_communist
 		ig_orthodox_communist
 		ig_anarchist
 	}
@@ -54,8 +54,8 @@
 		ig_cons
 		ig_fascist
 		ig_landowners
-		ig_market_liberals
-		ig_national_liberals
+		ig_classical_liberal
+		ig_cons
 	}
 
 	pro_movements = {
@@ -194,8 +194,8 @@ ai_strategy_socialist_retreat_agenda = {
 	pro_interest_groups = {
 		ig_prog
 		ig_trade_unions
-		ig_agrarian_populists
-		ig_socialists
+		ig_ecologist
+		ig_reformist_communist
 		ig_reformist_communist
 		ig_orthodox_communist
 		ig_anarchist
@@ -207,8 +207,8 @@ ai_strategy_socialist_retreat_agenda = {
 		ig_cons
 		ig_fascist
 		ig_landowners
-		ig_market_liberals
-		ig_national_liberals
+		ig_classical_liberal
+		ig_cons
 	}
 
 	pro_movements = {

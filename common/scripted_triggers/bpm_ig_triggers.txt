@@ -1,4 +1,4 @@
-# PROLETARIAN IGS
+﻿# PROLETARIAN IGS
 
 bpm_ig_is_revolutionary_socialist = {
 	custom_tooltip = {

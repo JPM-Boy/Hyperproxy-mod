@@ -1,4 +1,4 @@
-﻿# Use for radical factions that are expected to gain the most boost in popularity from radicalization 
+# Use for radical factions that are expected to gain the most boost in popularity from radicalization 
 # i.e Fascists everywhere, Anarchists/Socialists for non-socialist republics, Liberals in illiberal republics
 ig_attraction_radical = {
 	add = 1
@@ -221,7 +221,7 @@ ig_attraction_agrarian_socialism = {
 				multiply = owner.var:bpm_agrarian_socialism_power
 	
 				if = {
-					limit = { scope:interest_group = { is_interest_group_type = ig_agrarian_populists } }
+					limit = { scope:interest_group = { is_interest_group_type = ig_ecologist } }
 					multiply = 4
 				}
 				if = {
@@ -238,7 +238,7 @@ ig_attraction_agrarian_socialism = {
 				multiply = global_var:bpm_agrarian_socialism_power_global
 	
 				if = {
-					limit = { scope:interest_group = { is_interest_group_type = ig_agrarian_populists } }
+					limit = { scope:interest_group = { is_interest_group_type = ig_ecologist } }
 					multiply = 4
 				}
 				if = {

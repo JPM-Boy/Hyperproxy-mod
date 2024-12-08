@@ -1065,5 +1065,4 @@ calculate_russian_radical_progress = {
 			name = soviet_unity
 			add = global_var:soviet_radical_var
 		}
-	}
 }

@@ -241,7 +241,7 @@ bpm_generate_china_monarch = {
                     birth_date = 1922.1.1
                     culture = cu:han
                     religion = rel:confucian
-                    interest_group = ig_national_liberals
+                    interest_group = ig_cons
 			    }
             }
 		}

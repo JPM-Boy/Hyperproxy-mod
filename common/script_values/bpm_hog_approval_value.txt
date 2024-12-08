@@ -1,4 +1,4 @@
-bpm_law_enactment_hog_approval = {
+﻿bpm_law_enactment_hog_approval = {
 	value = 0
 	if = {
 		limit = {

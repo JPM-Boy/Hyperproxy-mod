@@ -1,4 +1,4 @@
-﻿ideology_placeholder_leader = {
+ideology_placeholder_leader = {
 	icon = "gfx/interface/icons/ideology_icons/placeholder.dds"
 	show_in_list = no
 	character_ideology = yes
@@ -421,7 +421,7 @@ ideology_atheist = {
 					}
 				}
 				OR = {
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 					bpm_ig_is_anarchist = yes
 				}
 			}
@@ -552,7 +552,7 @@ ideology_atheist = {
 				}
 				interest_group = {
 					OR = {
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						bpm_ig_is_anarchist = yes
 					}
 				}
@@ -702,7 +702,7 @@ ideology_republican_leader = {
 					}
 				}
 				OR = {
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 					bpm_ig_is_anarchist = yes
 				}
 			}
@@ -833,7 +833,7 @@ ideology_republican_leader = {
 				}
 				interest_group = {
 					OR = {
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						bpm_ig_is_anarchist = yes
 					}
 				}
@@ -2715,7 +2715,7 @@ ideology_social_democrat = {
 				bpm_ig_is_radical_socialist = no
 			}
 		}
-		NOT = { is_interest_group_type = ig_market_liberals }
+		NOT = { is_interest_group_type = ig_classical_liberal }
 		bpm_ig_is_state_institutional = no
 		OR = {
 			bpm_ig_is_labor = yes
@@ -2819,7 +2819,7 @@ ideology_social_democrat = {
     				bpm_ig_is_radical_socialist = no
     			}
     		}
-    		NOT = { is_interest_group_type = ig_market_liberals }
+    		NOT = { is_interest_group_type = ig_classical_liberal }
     		bpm_ig_is_state_institutional = no
     		OR = {
     			bpm_ig_is_labor = yes
@@ -3787,11 +3787,11 @@ ideology_anarchist = {
 		OR = {
 			bpm_ig_is_radical_socialist = yes
 			bpm_ig_is_lower_institutional = yes
-			is_interest_group_type = ig_agrarian_populists
+			is_interest_group_type = ig_ecologist
 		}
 		OR = {
 			bpm_ig_is_labor = yes
-			is_interest_group_type = ig_agrarian_populists
+			is_interest_group_type = ig_ecologist
 			AND = {
 				owner = {
 					any_interest_group = {
@@ -3831,7 +3831,7 @@ ideology_anarchist = {
 					has_law = law_type:law_serfdom
 				}
 				OR = {
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 				}
 			}
 			add = 70
@@ -3891,11 +3891,11 @@ ideology_anarchist = {
     		OR = {
     			bpm_ig_is_radical_socialist = yes
     			bpm_ig_is_lower_institutional = yes
-    			is_interest_group_type = ig_agrarian_populists
+    			is_interest_group_type = ig_ecologist
     		}
     		OR = {
     			bpm_ig_is_labor = yes
-    			is_interest_group_type = ig_agrarian_populists
+    			is_interest_group_type = ig_ecologist
     			AND = {
     				owner = {
     					any_interest_group = {
@@ -4034,11 +4034,11 @@ ideology_anarchist_syndicalist = {
 		OR = {
 			bpm_ig_is_radical_socialist = yes
 			bpm_ig_is_lower_institutional = yes
-			is_interest_group_type = ig_agrarian_populists
+			is_interest_group_type = ig_ecologist
 		}
 		OR = {
 			bpm_ig_is_labor = yes
-			is_interest_group_type = ig_agrarian_populists
+			is_interest_group_type = ig_ecologist
 			AND = {
 				owner = {
 					any_interest_group = {
@@ -4126,11 +4126,11 @@ ideology_anarchist_syndicalist = {
     		OR = {
     			bpm_ig_is_radical_socialist = yes
     			bpm_ig_is_lower_institutional = yes
-    			is_interest_group_type = ig_agrarian_populists
+    			is_interest_group_type = ig_ecologist
     		}
     		OR = {
     			bpm_ig_is_labor = yes
-    			is_interest_group_type = ig_agrarian_populists
+    			is_interest_group_type = ig_ecologist
     			AND = {
     				owner = {
     					any_interest_group = {
@@ -4237,7 +4237,7 @@ ideology_agrarian_socialist_leader = {
 		bpm_ig_enabled = yes
 		owner = { has_technology_researched = socialism }
 		OR = {
-			is_interest_group_type = ig_agrarian_populists
+			is_interest_group_type = ig_ecologist
 			bpm_ig_is_anarchist = yes
 			bpm_ig_is_radical_liberal = yes
 			AND = {
@@ -4255,7 +4255,7 @@ ideology_agrarian_socialist_leader = {
 				owner = {
 					has_law = law_type:law_serfdom
 				}
-				is_interest_group_type = ig_agrarian_populists
+				is_interest_group_type = ig_ecologist
 			}
 			add = 50
 		}
@@ -4267,7 +4267,7 @@ ideology_agrarian_socialist_leader = {
 				}
 				OR = {
 					bpm_ig_is_anarchist = yes
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 				}
 			}
 			add = 75
@@ -4276,7 +4276,7 @@ ideology_agrarian_socialist_leader = {
 		if = {
 			limit = {
 				owner = {
-					ig:ig_agrarian_populists ?= {
+					ig:ig_ecologist ?= {
 						has_ideology = ideology:ideology_agrarian_socialist_leader
 					}
 				}
@@ -4321,7 +4321,7 @@ ideology_agrarian_socialist_leader = {
     		bpm_ig_enabled = yes
     		owner = { has_technology_researched = socialism }
     		OR = {
-    			is_interest_group_type = ig_agrarian_populists
+    			is_interest_group_type = ig_ecologist
     			bpm_ig_is_anarchist = yes
     			bpm_ig_is_radical_liberal = yes
     			AND = {
@@ -4801,7 +4801,7 @@ ideology_market_liberal = {
 		# more likely for market liberals
 		if = {
 			limit = {
-				is_interest_group_type = ig_market_liberals
+				is_interest_group_type = ig_classical_liberal
 			}
 			add = 50
 		}
@@ -5203,7 +5203,7 @@ ideology_protectionist = {
 		bpm_ig_is_socialist = no
 		bpm_ig_is_colonialist = no
 		NOT = { has_ideology = ideology:ideology_eco_autarky }
-		NOT = { is_interest_group_type = ig_market_liberals }
+		NOT = { is_interest_group_type = ig_classical_liberal }
 	}
 
 	interest_group_leader_weight = {
@@ -5307,7 +5307,7 @@ ideology_protectionist = {
     		bpm_ig_is_socialist = no
 			bpm_ig_is_colonialist = no
     		NOT = { has_ideology = ideology:ideology_eco_autarky }
-    		NOT = { is_interest_group_type = ig_market_liberals }
+    		NOT = { is_interest_group_type = ig_classical_liberal }
     	}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -6742,7 +6742,7 @@ ideology_corporatist_leader = {
 		if = {
 			limit = {
 				bpm_ig_is_liberal = yes
-				NOT = { is_interest_group_type = ig_national_liberals }	
+				NOT = { is_interest_group_type = ig_cons }	
 			}
 			add = -50
 		}
@@ -6750,7 +6750,7 @@ ideology_corporatist_leader = {
 			limit = {
 				owner = { has_variable = local_patcon_split_var }
 				OR = {
-					is_interest_group_type = ig_national_liberals
+					is_interest_group_type = ig_cons
 					is_interest_group_type = ig_cons
 					is_interest_group_type = ig_devout
 				}
@@ -7151,7 +7151,7 @@ ideology_orleanist = {
 			bpm_ig_is_state_institutional = yes
 			is_interest_group_type = ig_cons
 			is_interest_group_type = ig_liberal
-			is_interest_group_type = ig_market_liberals
+			is_interest_group_type = ig_classical_liberal
 		}
 		bpm_ig_is_radical_liberal = no
 		bpm_ig_is_socialist = no
@@ -7269,7 +7269,7 @@ ideology_orleanist = {
     			bpm_ig_is_state_institutional = yes
     			is_interest_group_type = ig_cons
     			is_interest_group_type = ig_liberal
-    			is_interest_group_type = ig_market_liberals
+    			is_interest_group_type = ig_classical_liberal
     		}
     		bpm_ig_is_radical_liberal = no
     		bpm_ig_is_socialist = no
@@ -7564,8 +7564,8 @@ ideology_bonapartist = {
 			bpm_ig_is_state_institutional = yes
 			is_interest_group_type = ig_rural_folk
 			is_interest_group_type = ig_industrialists
-			is_interest_group_type = ig_national_liberals
-			is_interest_group_type = ig_market_liberals
+			is_interest_group_type = ig_cons
+			is_interest_group_type = ig_classical_liberal
 		}
 		AND = {
 			bpm_ig_is_radical_liberal = no
@@ -7614,7 +7614,7 @@ ideology_bonapartist = {
 		# more likely for PB and AF
 		if = {
 			limit = {
-				is_interest_group_type = ig_national_liberals
+				is_interest_group_type = ig_cons
 			}
 			add = 300
 		}
@@ -7654,8 +7654,8 @@ ideology_bonapartist = {
     			bpm_ig_is_state_institutional = yes
     			is_interest_group_type = ig_rural_folk
     			is_interest_group_type = ig_industrialists
-    			is_interest_group_type = ig_national_liberals
-    			is_interest_group_type = ig_market_liberals
+    			is_interest_group_type = ig_cons
+    			is_interest_group_type = ig_classical_liberal
     		}
     		AND = {
     			bpm_ig_is_radical_liberal = no
@@ -7761,7 +7761,7 @@ ideology_donghak = {
 		OR = {
 			# bpm_ig_is_state_institutional = yes
 			is_interest_group_type = ig_rural_folk
-			is_interest_group_type = ig_agrarian_populists
+			is_interest_group_type = ig_ecologist
 			is_interest_group_type = ig_intelligentsia
 			is_interest_group_type = ig_devout
 		}
@@ -7788,7 +7788,7 @@ ideology_donghak = {
 				}
 				OR = {
 					is_interest_group_type = ig_rural_folk
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 				}
 			}
 			add = 75
@@ -7797,7 +7797,7 @@ ideology_donghak = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_rural_folk
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 				}
 				ig_approval < 0
 			}
@@ -7839,7 +7839,7 @@ ideology_donghak = {
     		OR = {
     			# bpm_ig_is_state_institutional = yes
     			is_interest_group_type = ig_rural_folk
-    			is_interest_group_type = ig_agrarian_populists
+    			is_interest_group_type = ig_ecologist
     			is_interest_group_type = ig_intelligentsia
     			is_interest_group_type = ig_devout
     		}
@@ -8327,7 +8327,7 @@ ideology_utilitarian_leader = {
 			OR = {
 				is_interest_group_type = ig_industrialists
 				is_interest_group_type = ig_armed_forces
-				is_interest_group_type = ig_market_liberals
+				is_interest_group_type = ig_classical_liberal
 			}
 		}
 	}
@@ -8345,7 +8345,7 @@ ideology_utilitarian_leader = {
 				OR = {
 					is_interest_group_type = ig_industrialists
 					is_interest_group_type = ig_armed_forces
-					is_interest_group_type = ig_market_liberals
+					is_interest_group_type = ig_classical_liberal
 				}
 			}
     	}
@@ -8394,7 +8394,7 @@ ideology_utilitarian_leader = {
 		# more likely for British Raj market liberals
 		if = {
 			limit = {
-				is_interest_group_type = ig_market_liberals
+				is_interest_group_type = ig_classical_liberal
 				owner = {
 					has_variable = british_raj_var
 				}

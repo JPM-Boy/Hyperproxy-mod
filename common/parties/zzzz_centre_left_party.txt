@@ -1,4 +1,4 @@
-﻿# Social democrats extremely attracted to this ideology
+# Social democrats extremely attracted to this ideology
 # Attracts weak leftists and liberals
 # Available for Trade Unions pre-Socialism
 
@@ -471,7 +471,7 @@ centre_left_party = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_trade_unions
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 				}
 				is_powerful = no
 				owner = {

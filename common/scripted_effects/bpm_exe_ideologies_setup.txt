@@ -245,7 +245,7 @@ bpm_set_rest_exe_ideology_idg = {
                 limit = {
                     c:FRA ?= owner
                     owner = { has_variable = bonapartist_restoration_var }
-                    is_interest_group_type = ig_national_liberals 
+                    is_interest_group_type = ig_cons 
                 }
                 bpm_set_exe_ideology_traditional = yes
             }
@@ -301,7 +301,7 @@ bpm_set_rest_exe_ideology_idg = {
         limit = {
             OR = {
                 is_interest_group_type = ig_prog
-                is_interest_group_type = ig_agrarian_populists
+                is_interest_group_type = ig_ecologist
             }
             c:BRZ ?= owner
         }

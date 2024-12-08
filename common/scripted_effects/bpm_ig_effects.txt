@@ -1,4 +1,4 @@
-﻿bpm_make_igs_pro_slavery = {
+bpm_make_igs_pro_slavery = {
 	every_interest_group = {
 		limit = {
 			OR = {
@@ -341,7 +341,7 @@ bpm_ig_update_ig_ban_support = {
 			if = { # brazil estado novo
 				limit = {
 					owner = { this = c:BRZ }
-					is_interest_group_type = ig_national_liberals
+					is_interest_group_type = ig_cons
 					has_variable = brz_estado_novo
 				}
 				bpm_remove_all_ban_ideologies = yes
@@ -351,7 +351,7 @@ bpm_ig_update_ig_ban_support = {
 			else_if = { # brazil integralist estado novo
 				limit = {
 					owner = { this = c:BRZ }
-					is_interest_group_type = ig_national_liberals
+					is_interest_group_type = ig_cons
 					has_variable = brz_integralist_estado_novo
 				}
 				bpm_remove_all_ban_ideologies = yes
@@ -383,7 +383,7 @@ bpm_ig_update_ig_ban_support = {
 						owner = { has_journal_entry = je_bpm_ban_communists }
 						OR = {
 							bpm_ig_is_moderate_conservative = yes
-							is_interest_group_type = ig_national_liberals # Exception for Bonapartists and Bismarck
+							is_interest_group_type = ig_cons # Exception for Bonapartists and Bismarck
 							owner = {
 								any_interest_group = {
 									OR = {

@@ -1,4 +1,4 @@
-﻿bpm_remove_suffrage_workaround_modifiers = {
+bpm_remove_suffrage_workaround_modifiers = {
 	remove_modifier = institution_law_landed_voting_workaround
 	remove_modifier = institution_law_wealth_voting_workaround
 	remove_modifier = institution_law_census_voting_workaround
@@ -50,9 +50,9 @@ bpm_all_suffrage_institution_workaround = {
 				var:bpm_minister_of_suffrage.interest_group = {
 					OR = {
 						is_interest_group_type = ig_anarchist
-						is_interest_group_type = ig_socialists
+						is_interest_group_type = ig_reformist_communists
 						is_interest_group_type = ig_orthodox_communist
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						is_interest_group_type = ig_reformist_communist
 						is_interest_group_type = ig_prog
 					}
@@ -67,7 +67,7 @@ bpm_all_suffrage_institution_workaround = {
 			limit = {
 				var:bpm_minister_of_suffrage.interest_group = {
 					OR = {
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						is_interest_group_type = ig_rural_folk
 					}
 				}
@@ -97,7 +97,7 @@ bpm_all_suffrage_institution_workaround = {
 					OR = {
 						is_interest_group_type = ig_trade_unions
 						is_interest_group_type = ig_orthodox_communist
-						is_interest_group_type = ig_socialists
+						is_interest_group_type = ig_reformist_communists
 					}
 				} 
 			} 

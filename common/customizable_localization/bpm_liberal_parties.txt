@@ -1,4 +1,4 @@
-﻿usa_liberal_party_name = {
+usa_liberal_party_name = {
 	type = country
 	random_valid = no
 
@@ -93,8 +93,8 @@ ger_liberal_party_name = {
 		trigger = {
 			#game_date >= 1860.1.1
 			has_variable = je_german_unification_idea
-			exists = ig:ig_national_liberals
-			ig:ig_national_liberals ?= {
+			exists = ig:ig_cons
+			ig:ig_cons ?= {
 				is_member_of_party = owner.py:liberal_party
 			}
 			has_law = law_type:law_monarchy

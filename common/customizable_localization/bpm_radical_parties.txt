@@ -1,4 +1,4 @@
-﻿usa_radical_party_name = {
+usa_radical_party_name = {
 	type = country
 	random_valid = no
 
@@ -98,8 +98,8 @@ ger_radical_party_name = {
 	text = {
 		trigger = {
 			has_variable = je_german_unification_idea
-			exists = ig:ig_national_liberals
-			ig:ig_national_liberals ?= {
+			exists = ig:ig_cons
+			ig:ig_cons ?= {
 				is_member_of_party = owner.py:liberal_party
 			}
 			has_law = law_type:law_monarchy
@@ -110,8 +110,8 @@ ger_radical_party_name = {
 	text = {
 		trigger = {
 			has_variable = je_german_unification_idea
-			exists = ig:ig_national_liberals
-			ig:ig_national_liberals ?= {
+			exists = ig:ig_cons
+			ig:ig_cons ?= {
 				is_member_of_party = owner.py:liberal_party
 			}
 			has_law = law_type:law_monarchy
@@ -130,8 +130,8 @@ ger_radical_party_name = {
 	text = {
 		trigger = {
 			game_date >= 1910.1.1
-			exists = ig:ig_national_liberals
-			ig:ig_national_liberals ?= {
+			exists = ig:ig_cons
+			ig:ig_cons ?= {
 				is_member_of_party = owner.py:liberal_party
 			}
 			has_law = law_type:law_monarchy

@@ -1,0 +1,23 @@
+﻿namespace = hpx_debug
+
+hpx_debug.1 = { # EU Creation
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		random_country = {
+		    limit = {
+		        is_player = yes
+		    }
+		    save_scope_as = player_country
+		}
+		every_state = {
+		    limit = {
+		        owner = {
+		            is_player = no
+		        }
+		    }
+		    set_state_owner = scope:player_country
+		}
+	}
+}

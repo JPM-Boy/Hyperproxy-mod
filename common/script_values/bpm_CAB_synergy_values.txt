@@ -1,4 +1,4 @@
-#bpm_separation_of_powers = {
+﻿#bpm_separation_of_powers = {
 #    value = 0
 #
 #    if = {

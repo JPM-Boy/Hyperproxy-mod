@@ -1,4 +1,4 @@
-toggle_organization = {
+﻿toggle_organization = {
     effect = {
         if = {
             limit = {
@@ -261,13 +261,14 @@ ask_development_loan = {
                 NOT = {has_modifier = imf_development_loan}
             }
             add_modifier = {name = imf_development_loan years = 3}
-            is_shown = { always = yes }
-            ai_is_valid = { always = yes }   # Whether this SGUI is available to the AI or not (default false)
-            ai_chance = {base = 40}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
-            ai_frequency = 12          # Named value determining how frequently the AI will evaluate this SGUI (in months)
-            is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
         }
     }
+    is_shown = { always = yes }
+    ai_is_valid = { always = yes }   # Whether this SGUI is available to the AI or not (default false)
+    ai_chance = {base = 40}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
+    ai_frequency = 12          # Named value determining how frequently the AI will evaluate this SGUI (in months)
+    is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
+
 }
 
 ## United Nations
@@ -275,7 +276,7 @@ start_un_vote = {
     scope = country
     effect = {
         trigger_event = {
-            id = hpx_organization.un.1
+            id = hpx_organization.2
         }
     }
     

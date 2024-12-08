@@ -1,4 +1,4 @@
-﻿ai_strategy_conservative_agenda = {
+ai_strategy_conservative_agenda = {
 	icon = "gfx/interface/icons/ai_strategy_icons/conservative_agenda.dds"
 	
 	type = political
@@ -66,7 +66,7 @@
 	pro_interest_groups = {
 		ig_cons
 		ig_reactionary
-		ig_national_liberals
+		ig_cons
 		ig_devout
 		ig_landowners
 		ig_armed_forces
@@ -76,11 +76,11 @@
 	anti_interest_groups = {
 		ig_prog
 		ig_trade_unions
-		ig_socialists
+		ig_reformist_communist
 		ig_orthodox_communist
 		ig_reformist_communist
 		ig_anarchist
-		ig_agrarian_populists
+		ig_ecologist
 	}
 
 	pro_movements = {
@@ -235,11 +235,11 @@ ai_strategy_reactionary_agenda = {
 		ig_liberal
 		ig_prog
 		ig_trade_unions
-		ig_socialists
+		ig_reformist_communist
 		ig_orthodox_communist
 		ig_reformist_communist
 		ig_anarchist
-		ig_agrarian_populists
+		ig_ecologist
 	}
 
 	pro_movements = {
@@ -420,10 +420,10 @@ ai_strategy_progressive_agenda = {
 	
 	pro_interest_groups = {
 		ig_liberal
-		ig_market_liberals
+		ig_classical_liberal
 		ig_prog
 		ig_trade_unions
-		ig_agrarian_populists
+		ig_ecologist
 	}
 
 	anti_interest_groups = {
@@ -607,9 +607,9 @@ ai_strategy_progressive_conservative_agenda = {
 	
 	pro_interest_groups = {
 		ig_cons
-		ig_national_liberals
+		ig_cons
 		ig_devout
-		ig_market_liberals
+		ig_classical_liberal
 		ig_liberal
 	}
 
@@ -618,8 +618,8 @@ ai_strategy_progressive_conservative_agenda = {
 		ig_fascist
 		ig_prog
 		ig_trade_unions
-		ig_socialists
-		ig_agrarian_populists
+		ig_reformist_communist
+		ig_ecologist
 		ig_reformist_communist
 		ig_orthodox_communist	
 		ig_anarchist
@@ -776,7 +776,7 @@ ai_strategy_egalitarian_agenda = {
 	pro_interest_groups = {
 		ig_prog
 		ig_trade_unions
-		ig_agrarian_populists
+		ig_ecologist
 		ig_reformist_communist
 	}
 	
@@ -787,7 +787,7 @@ ai_strategy_egalitarian_agenda = {
 		ig_landowners
 		ig_armed_forces
 		ig_petty_bourgeoisie
-		ig_market_liberals
+		ig_classical_liberal
 	}
 
 	pro_movements = {
@@ -972,7 +972,7 @@ ai_strategy_nationalist_agenda = {
 	pro_interest_groups = {
 		ig_cons
 		ig_liberal
-		ig_national_liberals
+		ig_cons
 		ig_fascist
 		ig_armed_forces
 		ig_petty_bourgeoisie
@@ -981,8 +981,8 @@ ai_strategy_nationalist_agenda = {
 	anti_interest_groups = {
 		ig_rural_folk
 		ig_trade_unions
-		ig_agrarian_populists
-		ig_socialists
+		ig_ecologist
+		ig_reformist_communist
 		ig_orthodox_communist
 		ig_reformist_communist
 		ig_anarchist
@@ -1179,10 +1179,10 @@ ai_strategy_maintain_mandate_of_heaven = {
 		ig_trade_unions
 		ig_intelligentsia
 		ig_liberal
-		ig_market_liberals
+		ig_classical_liberal
 		ig_prog
-		ig_agrarian_populists
-		ig_socialists
+		ig_ecologist
+		ig_reformist_communist
 		ig_orthodox_communist
 		ig_reformist_communist
 		ig_anarchist

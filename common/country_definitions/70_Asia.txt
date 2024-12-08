@@ -1,4 +1,4 @@
-﻿BHT = {
+BHT = {
 	color = {174 99 255}
 	
 	country_type = recognized
@@ -27,7 +27,7 @@ BGL = {
 	tier = principality
 	
 	cultures = { bengali bihari }
-	capital = STATE_SOUTH_BENGAL
+	capital = STATE_WEST_BENGAL
 }
 TRC = { # Turkmenistan
 	color = { 165 117 208 }

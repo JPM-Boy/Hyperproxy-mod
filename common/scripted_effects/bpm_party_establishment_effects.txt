@@ -1,4 +1,4 @@
-bpm_setup_party_establishment = {
+﻿bpm_setup_party_establishment = {
     bpm_setup_party_establishment_subp = { PARTY = centre_left }
     bpm_setup_party_establishment_subp = { PARTY = centre_right }
     bpm_setup_party_establishment_subp = { PARTY = far_left }

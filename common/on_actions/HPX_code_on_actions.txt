@@ -7,6 +7,6 @@ on_monthly_pulse_country = {
 
 on_HPX_monthly_pulse_country = {
 	events = {
-		hpx_organization.imf.1
+		hpx_organization.1
 	}
 }

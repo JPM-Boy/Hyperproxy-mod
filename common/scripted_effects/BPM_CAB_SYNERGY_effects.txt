@@ -1,4 +1,4 @@
-# -- Cabinet Register Institutions (6) (Synergy table bis) --
+﻿# -- Cabinet Register Institutions (6) (Synergy table bis) --
 bpm_cab_update_synergy = {
     set_variable = {
         name = bpm_cached_antagonism

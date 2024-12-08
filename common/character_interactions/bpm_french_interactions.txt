@@ -1,4 +1,4 @@
-﻿sway_to_bonapartism = {
+sway_to_bonapartism = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_bonapartist.dds"
 	potential = {
 		owner = scope:actor
@@ -22,8 +22,8 @@
 					is_interest_group_type = ig_industrialists
 					is_interest_group_type = ig_armed_forces
 					is_interest_group_type = ig_cons
-					is_interest_group_type = ig_national_liberals
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_cons
+					is_interest_group_type = ig_ecologist
 				}
 			}
 		}
@@ -155,7 +155,7 @@ sway_to_orleanism = {
 					is_interest_group_type = ig_intelligentsia
 					is_interest_group_type = ig_armed_forces
 					is_interest_group_type = ig_liberal
-					is_interest_group_type = ig_market_liberals
+					is_interest_group_type = ig_classical_liberal
 					is_interest_group_type = ig_cons
 				}
 			}

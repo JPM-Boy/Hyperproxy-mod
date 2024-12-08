@@ -1,4 +1,4 @@
-﻿BUILDINGS={
+BUILDINGS={
 	s:STATE_BIHAR={
 		region_state:BHT={
 			create_building={
@@ -120,7 +120,7 @@
 			}
 		}
 	}
-	s:STATE_NORTH_BENGAL={
+	s:STATE_EAST_BENGAL={
 		region_state:BGL={
 			create_building={
 				building="building_government_administration"
@@ -140,7 +140,7 @@
 						type="building_glassworks"
 						country="c:BGL"
 						levels=5
-						region="STATE_NORTH_BENGAL"
+						region="STATE_EAST_BENGAL"
 					}
 				}
 				reserves=1
@@ -166,7 +166,7 @@
 						type="building_manor_house"
 						country="c:BGL"
 						levels=5
-						region="STATE_NORTH_BENGAL"
+						region="STATE_EAST_BENGAL"
 					}
 					building={
 						type="building_manor_house"
@@ -185,7 +185,7 @@
 						type="building_manor_house"
 						country="c:BGL"
 						levels=1
-						region="STATE_NORTH_BENGAL"
+						region="STATE_EAST_BENGAL"
 					}
 					building={
 						type="building_manor_house"
@@ -204,7 +204,7 @@
 						type="building_manor_house"
 						country="c:BGL"
 						levels=2
-						region="STATE_NORTH_BENGAL"
+						region="STATE_EAST_BENGAL"
 					}
 					building={
 						type="building_manor_house"
@@ -832,7 +832,7 @@
 			}
 		}
 	}
-	s:STATE_SOUTH_BENGAL={
+	s:STATE_WEST_BENGAL={
 		region_state:BGL={
 			create_building={
 				building="building_government_administration"
@@ -863,7 +863,7 @@
 						type="building_textile_mills"
 						country="c:BGL"
 						levels=8
-						region="STATE_SOUTH_BENGAL"
+						region="STATE_WEST_BENGAL"
 					}
 				}
 				reserves=1
@@ -876,7 +876,7 @@
 						type="building_financial_district"
 						country="c:BGL"
 						levels=3
-						region="STATE_SOUTH_BENGAL"
+						region="STATE_WEST_BENGAL"
 					}
 					country={
 						country="c:BGL"
@@ -893,7 +893,7 @@
 						type="building_financial_district"
 						country="c:BGL"
 						levels=3
-						region="STATE_SOUTH_BENGAL"
+						region="STATE_WEST_BENGAL"
 					}
 				}
 				reserves=1
@@ -928,7 +928,7 @@
 						type="building_manor_house"
 						country="c:BGL"
 						levels=2
-						region="STATE_SOUTH_BENGAL"
+						region="STATE_WEST_BENGAL"
 					}
 				}
 				reserves=1
@@ -941,7 +941,7 @@
 						type="building_manor_house"
 						country="c:BGL"
 						levels=6
-						region="STATE_SOUTH_BENGAL"
+						region="STATE_WEST_BENGAL"
 					}
 					building={
 						type="building_manor_house"
@@ -960,7 +960,7 @@
 						type="building_fishing_wharf"
 						country="c:BGL"
 						levels=2
-						region="STATE_SOUTH_BENGAL"
+						region="STATE_WEST_BENGAL"
 					}
 				}
 				reserves=1

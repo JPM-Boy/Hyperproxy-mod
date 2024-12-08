@@ -567,10 +567,10 @@ bpm_je_syndicalism_rate = {
 	}
 
 	if = {
-		limit = { exists = ig:ig_socialists }
+		limit = { exists = ig:ig_reformist_communists }
 		add = {
 			desc = "BPM_VALUE_FROM_SOCS_POPULARITY"
-			value = ig:ig_socialists.interest_group_population_percentage
+			value = ig:ig_reformist_communists.interest_group_population_percentage
 			multiply = -15
 		}
 	}
@@ -795,7 +795,7 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			desc = "BPM_VALUE_FROM_SOCIALIST_LEADER_AND_AGITATORS"
 			every_scope_character = {
 				limit = {
-					is_interest_group_type = ig_socialists
+					is_interest_group_type = ig_reformist_communists
 					OR = {
 						has_role = politician
 						has_role = agitator
@@ -1238,7 +1238,7 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { ig:ig_socialists ?= { is_in_government = yes } }
+			limit = { ig:ig_reformist_communists ?= { is_in_government = yes } }
 			subtract = {
 				desc = "BPM_VALUE_SOCIALISTS_IN_GOVERNMENT"
 				value = 15
@@ -1474,7 +1474,7 @@ bpm_je_split_natlibs_progress_rate = {
 	}
 	if = {
 		limit = {
-			ruler = { interest_group = { is_interest_group_type = ig_national_liberals } }
+			ruler = { interest_group = { is_interest_group_type = ig_cons } }
 		}
 		add = 1000
 	}
@@ -1510,8 +1510,8 @@ bpm_je_split_natlibs_progress_from_liberals_empowered = {
 					ig:ig_liberal ?= { OR = { is_in_government = yes} }
 				}
 				AND = {
-					exists = ig:ig_market_liberals
-					ig:ig_market_liberals ?= { OR = { is_in_government = yes} }
+					exists = ig:ig_classical_liberal
+					ig:ig_classical_liberal ?= { OR = { is_in_government = yes} }
 				}
 				AND = {
 					exists = ig:ig_prog
@@ -2044,7 +2044,7 @@ bpm_je_modernizers_ideology_rate_modernizers = {
 		desc = "BPM_VALUE_FROM_SOCIALIST_LEADER_AND_AGITATORS"
 		every_scope_character = {
 			limit = {
-				is_interest_group_type = ig_socialists
+				is_interest_group_type = ig_reformist_communists
 				OR = {
 					has_role = politician
 					has_role = agitator
@@ -2064,7 +2064,7 @@ bpm_je_modernizers_ideology_rate_modernizers = {
 					OR = {
 						is_interest_group_type = ig_liberal
 						is_interest_group_type = ig_prog
-						is_interest_group_type = ig_socialists
+						is_interest_group_type = ig_reformist_communists
 					}
 				}
 			}

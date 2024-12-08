@@ -122,9 +122,9 @@ bpm_cost_ig_position = {
         limit = {
             owner.institution:institution_colonial_affairs.type = scope:bpm_reference_institution_type
             OR = {
-                is_interest_group_type = ig_agrarian_populists
+                is_interest_group_type = ig_ecologist
                 is_interest_group_type = ig_fascist
-                is_interest_group_type = ig_national_liberals
+                is_interest_group_type = ig_cons
                 is_interest_group_type = ig_reactionary
                 is_interest_group_type = ig_landowners
                 is_interest_group_type = ig_rural_folk
@@ -138,7 +138,7 @@ bpm_cost_ig_position = {
             OR = {
                 is_interest_group_type = ig_reformist_communist
                 is_interest_group_type = ig_orthodox_communist
-                is_interest_group_type = ig_socialists
+                is_interest_group_type = ig_reformist_communists
                 is_interest_group_type = ig_industrialists
                 is_interest_group_type = ig_trade_unions
             }
@@ -151,7 +151,7 @@ bpm_cost_ig_position = {
             OR = {
                 is_interest_group_type = ig_reformist_communist
                 is_interest_group_type = ig_orthodox_communist
-                is_interest_group_type = ig_socialists
+                is_interest_group_type = ig_reformist_communists
                 is_interest_group_type = ig_trade_unions
             }
         }
@@ -185,7 +185,7 @@ bpm_cost_ig_position = {
         limit = {
             owner.institution:institution_health_system.type = scope:bpm_reference_institution_type
             OR = {
-                is_interest_group_type = ig_market_liberals
+                is_interest_group_type = ig_classical_liberal
                 is_interest_group_type = ig_reformist_communist
                 is_interest_group_type = ig_devout
                 is_interest_group_type = ig_trade_unions
@@ -210,7 +210,7 @@ bpm_cost_ig_position = {
         limit = {
             owner.institution:institution_centralization.type = scope:bpm_reference_institution_type
             OR = {
-                is_interest_group_type = ig_agrarian_populists
+                is_interest_group_type = ig_ecologist
                 is_interest_group_type = ig_orthodox_communist
                 is_interest_group_type = ig_petty_bourgeoisie
                 is_interest_group_type = ig_industrialists
@@ -226,7 +226,7 @@ bpm_cost_ig_position = {
             OR = {
                 is_interest_group_type = ig_cons
                 is_interest_group_type = ig_liberal
-                is_interest_group_type = ig_market_liberals
+                is_interest_group_type = ig_classical_liberal
                 is_interest_group_type = ig_prog
             }
         }
@@ -249,7 +249,7 @@ bpm_cost_ig_position = {
             OR = {
                 is_interest_group_type = ig_cons
                 is_interest_group_type = ig_fascist
-                is_interest_group_type = ig_national_liberals
+                is_interest_group_type = ig_cons
                 is_interest_group_type = ig_armed_forces
             }
         }
@@ -260,8 +260,8 @@ bpm_cost_ig_position = {
             owner.institution:institution_economy.type = scope:bpm_reference_institution_type
             OR = {
                 is_interest_group_type = ig_liberal
-                is_interest_group_type = ig_market_liberals
-                is_interest_group_type = ig_national_liberals
+                is_interest_group_type = ig_classical_liberal
+                is_interest_group_type = ig_cons
                 is_interest_group_type = ig_reformist_communist
                 is_interest_group_type = ig_industrialists
                 is_interest_group_type = ig_intelligentsia

@@ -1,4 +1,4 @@
-﻿grant_command_to_ruler = {
+grant_command_to_ruler = {
 	icon = "gfx/interface/character_panel/grant_command.dds"
 	clicksound = "event:/SFX/UI/Military/command_grant"
 
@@ -568,8 +568,8 @@ invite_exile = {
 		# }
 
 		trigger_if = {
-			limit = { is_interest_group_type = ig_socialists }
-			scope:actor ?= { exists = ig:ig_socialists }
+			limit = { is_interest_group_type = ig_reformist_communists }
+			scope:actor ?= { exists = ig:ig_reformist_communists }
 		}
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_anarchist }
@@ -584,12 +584,12 @@ invite_exile = {
 			scope:actor ?= { exists = ig:ig_orthodox_communist }
 		}
 		trigger_else_if = {
-			limit = { is_interest_group_type = ig_market_liberals }
-			scope:actor ?= { exists = ig:ig_market_liberals }
+			limit = { is_interest_group_type = ig_classical_liberal }
+			scope:actor ?= { exists = ig:ig_classical_liberal }
 		}
 		trigger_else_if = {
-			limit = { is_interest_group_type = ig_national_liberals }
-			scope:actor ?= { exists = ig:ig_national_liberals }
+			limit = { is_interest_group_type = ig_cons }
+			scope:actor ?= { exists = ig:ig_cons }
 		}
 		trigger_else_if = {
 			limit = { is_interest_group_type = ig_fascist }

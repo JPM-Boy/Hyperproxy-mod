@@ -1,4 +1,4 @@
-﻿# Socialists are split on bourgeois republican electoralism. They also were split on the same question a century before because some things never change.
+# Socialists are split on bourgeois republican electoralism. They also were split on the same question a century before because some things never change.
 # Socialists will become more electoralist if:
 # * There are powerful socialist IGs in the country 
 # * Any socialist IGs are in government 
@@ -469,7 +469,7 @@ je_bpm_agrarian_socialism = {
 				limit = { var:bpm_je_agrarian_socialism >= 33.1	}
 				set_variable = bpm_je_agrarian_socialism_reached_stage_2
 				every_interest_group = {
-					limit = { is_interest_group_type = ig_agrarian_populists }
+					limit = { is_interest_group_type = ig_ecologist }
 					leader = {
 						set_ideology = ideology:ideology_agrarian_socialist_leader
 					}
@@ -479,7 +479,7 @@ je_bpm_agrarian_socialism = {
 				limit = { var:bpm_je_agrarian_socialism >= 66.1	}
 				every_interest_group = {
 					limit = { 
-						is_interest_group_type = ig_agrarian_populists
+						is_interest_group_type = ig_ecologist
 						NOT = { has_ideology = ideology:ideology_gov_radical_proletarian } 
 					}
 					bpm_remove_all_gov_ideologies = yes
@@ -678,7 +678,7 @@ je_bpm_syndicalism = {
 						set_interest_group_name = ig_syndicalists
 					}
 				}
-				# ig:ig_socialists ?= {
+				# ig:ig_reformist_communists ?= {
 				# 	if = {
 				# 		limit = { bpm_ig_enabled = yes }
 				# 		leader = { set_ideology = ideology:ideology_syndicalist }

@@ -1,4 +1,4 @@
-﻿# --CABGENSCRIPT--
+# --CABGENSCRIPT--
 bpm_reload_institution_modifiers = {
     every_interest_group = {
         remove_modifier = bpm_colonial_affairs_attraction_modifier
@@ -816,7 +816,7 @@ bpm_reload_institution_modifiers_centralization = {
                         is_interest_group_type = ig_prog
                         is_interest_group_type = ig_reformist_communist
                         is_interest_group_type = ig_orthodox_communist
-                        is_interest_group_type = ig_socialists
+                        is_interest_group_type = ig_reformist_communists
                     }
                 }
                 owner.institution:institution_centralization ?= {
@@ -885,15 +885,15 @@ bpm_reload_institution_modifiers_culture = {
             if = {
                 limit = {
                     OR = {
-                        is_interest_group_type = ig_agrarian_populists
+                        is_interest_group_type = ig_ecologist
                         is_interest_group_type = ig_cons
                         is_interest_group_type = ig_liberal
-                        is_interest_group_type = ig_market_liberals
+                        is_interest_group_type = ig_classical_liberal
                         is_interest_group_type = ig_prog
                         is_interest_group_type = ig_reactionary
                         is_interest_group_type = ig_reformist_communist
                         is_interest_group_type = ig_orthodox_communist
-                        is_interest_group_type = ig_socialists
+                        is_interest_group_type = ig_reformist_communists
                     }
                 }
                 owner.institution:institution_culture ?= {

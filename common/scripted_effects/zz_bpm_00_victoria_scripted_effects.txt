@@ -1,4 +1,4 @@
-﻿### Vargas
+### Vargas
 
 calculate_populism_progress = {
 	set_variable = { name = populism_progress_var_next value = 0 }
@@ -34,8 +34,8 @@ calculate_populism_progress = {
 	set_variable = { name = populism_progress_from_pb value = 0 }
 	if = {
 		limit = {
-			exists = ig:ig_national_liberals
-			ig:ig_national_liberals ?= {
+			exists = ig:ig_cons
+			ig:ig_cons ?= {
 				is_marginal = yes
 			}
 		}
@@ -45,8 +45,8 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			exists = ig:ig_national_liberals
-			ig:ig_national_liberals ?= {
+			exists = ig:ig_cons
+			ig:ig_cons ?= {
 				is_powerful = yes
 			}
 		}

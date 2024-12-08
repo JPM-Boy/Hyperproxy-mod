@@ -357,7 +357,7 @@ bpm_cache_country_variables_half_yearly_effect = {
 			owner = {
 				OR = {
 					ig:ig_trade_unions ?= { bpm_ig_is_popular = yes }
-					ig:ig_socialists ?= { is_marginal = no }
+					ig:ig_reformist_communists ?= { is_marginal = no }
 					ig:ig_anarchist ?= { is_marginal = no }
 					ig:ig_orthodox_communist ?= { is_marginal = no }
 					ig:ig_reformist_communist ?= { is_marginal = no }

@@ -467,7 +467,7 @@ popneed_leisure = {
 	}
 	
 	entry = {
-		goods = cargo_ship
+		goods = cargo_ships
 		
 		weight = 1
 		max_supply_share = 0.25

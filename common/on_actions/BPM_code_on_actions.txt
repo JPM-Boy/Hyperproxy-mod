@@ -557,18 +557,10 @@ on_bpm_law_activated = {
 				}
 				if = {
 					limit = {
-						OR = {
-							ig:ig_liberal ?= {
-								law_stance = {
-									value >= approve
-									law = prev.type
-								}
-							}
-							ig:ig_prog ?= {
-								law_stance = {
-									value >= approve
-									law = prev.type
-								}
+						ig:ig_liberal ?= {
+							law_stance = {
+								value >= approve
+								law = prev.type
 							}
 						}
 					}

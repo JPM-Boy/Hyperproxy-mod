@@ -888,6 +888,7 @@ bpm_reload_institution_modifiers_culture = {
                         is_interest_group_type = ig_cons
                         is_interest_group_type = ig_liberal
                         is_interest_group_type = ig_classical_liberal
+                        is_interest_group_type = ig_prog
                         is_interest_group_type = ig_reactionary
                         is_interest_group_type = ig_reformist_communist
                         is_interest_group_type = ig_orthodox_communist

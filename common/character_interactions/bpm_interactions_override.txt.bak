@@ -575,6 +575,10 @@ invite_exile = {
 			scope:actor ?= { exists = ig:ig_anarchist }
 		}
 		trigger_else_if = {
+			limit = { is_interest_group_type = ig_reformist_communist }
+			scope:actor ?= { exists = ig:ig_reformist_communist }
+		}
+		trigger_else_if = {
 			limit = { is_interest_group_type = ig_orthodox_communist }
 			scope:actor ?= { exists = ig:ig_orthodox_communist }
 		}

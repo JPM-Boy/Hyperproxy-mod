@@ -498,7 +498,7 @@ bpm_reset_unsustainable_pm = {
 
 bpm_reset_mandate_used = {
     bpm_reset_mandate_used_counter = yes
-    every_interest_group = {
+    owner.every_interest_group = {
         bpm_reset_ig_mandate_used_counter = yes
     }
 }

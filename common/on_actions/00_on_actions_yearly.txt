@@ -177,11 +177,6 @@ on_yearly_events = {
 
 		30 = cholera.1
 
-		# Slave revolts
-		5 = slave_revolt.1
-		5 = slave_revolt.2
-		5 = slave_revolt.3
-
 		# Discrimination Events
 		20 = discrimination_events.1
 		20 = discrimination_events.2
@@ -200,82 +195,27 @@ on_yearly_events = {
 		20 = pm_events.2
 		20 = pm_events.4
 		20 = pm_events.5
-
-		# French Pretenders
-		10 = french_pretenders.2
-		10 = french_pretenders.3
-		10 = french_pretenders.4
-
-		# Additional 1848
-		10 = 1848.10
-		10 = 1848.11
-		10 = 1848.12
-		
-		# Vampire Panic
-		1 = vampire_panic.1
-
-		20 = algeria_events.2
-
-		50 = acw_events.7
-		50 = acw_events.8
-
-		# Carnaval
-		30 = bp1_misc.1
-
-		# Medium Roast
-		30 = bp1_misc.2
-
-		# To the Highest Standards
-		20 = pedro.14
-
-		# Emu War
-		30 = emu_war.1
 	}
 }
 
 # Russian Monarchy Pulse Events
 russian_monarchy_yearly_events = {
-	random_events = { 
-		chance_of_no_event = 50
-		25 = 0
-		25 = russia_monarchy.2
-		10 = russia_monarchy.6
-		50 = russia_monarchy.7
-		5 = russia_monarchy.8
-	}
 }
 
 # Springtie of Peoples
 springtime_of_peoples_yearly_events = {
-	random_events = {
-		chance_of_no_event = 80
-		1 = peoples_springtime.6
-	}
 }
 
 # Landowners become Oligarchic
 bp1_misc_yearly_events = {	
-	random_events = { 
-		chance_of_no_event = 80
-		1 = bp1_misc.3
-	}
 }
 
 # Man Who Would Be King
 ep1_misc_yearly_events = {	
-	random_events = { 
-		chance_of_no_event = 50
-		1 = gg_afghanistan.7
-	}
 }
 
 # Indochina JE start
 indochina_yearly_events = {
-	random_events = {
-		chance_of_no_event = 50
-		20 = indochina.1 # Indochinese start
-		20 = indochina.2 # Imperialist start
-	}
 }
 
 
@@ -308,34 +248,6 @@ exiles_yearly_events = {
 
 # Historical Agitators
 historical_agitators_yearly_events = {
-	random_events = {
-		chance_of_no_event = 25
-		10 = historical_agitators.1
-		10 = historical_agitators.2
-		10 = historical_agitators.3
-		10 = historical_agitators.4
-		10 = historical_agitators.5
-		10 = historical_agitators.6
-		300 = historical_agitators.8
-		2 = historical_agitators.9
-		10 = historical_agitators.10
-		10 = historical_agitators.11
-		10 = historical_agitators.12
-		10 = historical_agitators.13
-		10 = historical_agitators.14
-		10 = historical_agitators.15
-		10 = historical_agitators.16
-		10 = historical_agitators.17
-		10 = historical_agitators.18
-		10 = historical_agitators.19
-		10 = historical_agitators.20
-		10 = historical_agitators.21
-		10 = historical_agitators.22
-		100 = gg_korea.3
-		100 = sikh_empire.9
-		100 = india_nationalism_events.4
-		100 = india_nationalism_events.5
-	}
 }
 
 # Slavery Abolition
@@ -421,30 +333,10 @@ tunguska_yearly_events = {
 
 # British Dictates 
 british_dictate_yearly_events = {
-	random_events = {
-		chance_of_no_event = 75
-		1 = british_dictates.1
-		1 = british_dictates.2
-		1 = british_dictates.4
-	}
 }
 
 # IP2 misc. yearly events 
 ip2_misc_yearly_events = {
-	random_events = {
-		chance_of_no_event = 50
-		5 = india_events.1
-		1 = india_events.5
-		1 = india_events.6
-		5 = india_events.9
-		1 = india_events.10
-		8 = india_events.12
-		10 = india_events.13
-		5 = india_events.14
-		5 = india_events.15
-		5 = india_events.16
-		10 = india_events.17
-	}
 }
 
 # Famine Yearly Events 

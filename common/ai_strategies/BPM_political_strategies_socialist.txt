@@ -192,7 +192,6 @@ ai_strategy_socialist_retreat_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_prog
 		ig_trade_unions
 		ig_ecologist
 		ig_reformist_communist

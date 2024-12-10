@@ -46,8 +46,8 @@
 		else_if = {
 			limit = {
 				OR = {
-					has_progressive_ideology = yes
-					has_socialist_ideology = yes
+					bpm_ig_is_liberal = yes
+					bpm_ig_is_socialist = yes
 				}
 			}
 			multiply = 0.05
@@ -75,7 +75,7 @@
 
 	pop_support_weight = {
 		add = {
-			value = 5
+			value = 10
 			desc = "POP_BASE_SUPPORT"
 		}
 
@@ -217,36 +217,9 @@
 
 			if = {
 				limit = {
-					is_capital = no
 					is_homeland_of_country_cultures = owner
-					primary_cultures_percent_state >= 0.05
 				}
-				add = 10
-
-				if = {
-					limit = {
-						primary_cultures_percent_state >= 0.75
-					}
-					add = 1000
-				}
-				else_if = {
-					limit = {
-						primary_cultures_percent_state >= 0.5
-					}
-					add = 500
-				}
-				else_if = {
-					limit = {
-						primary_cultures_percent_state >= 0.25
-					}
-					add = 100
-				}
-				else_if = {
-					limit = {
-						primary_cultures_percent_state >= 0.1
-					}
-					add = 50
-				}
+				add = 50
 			}
 		}
 	}
@@ -266,38 +239,11 @@
 
 			if = {
 				limit = {
-					is_capital = no
 					is_homeland_of_country_cultures = owner
-					primary_cultures_percent_state >= 0.05
 				}
-				add = 10
-
-				if = {
-					limit = {
-						primary_cultures_percent_state >= 0.75
-					}
-					add = 1000
-				}
-				else_if = {
-					limit = {
-						primary_cultures_percent_state >= 0.5
-					}
-					add = 500
-				}
-				else_if = {
-					limit = {
-						primary_cultures_percent_state >= 0.25
-					}
-					add = 100
-				}
-				else_if = {
-					limit = {
-						primary_cultures_percent_state >= 0.1
-					}
-					add = 50
-				}
+				add = 50
 			}
-		}
+		}				
 	}
 	
 	additional_radicalism_factors = {
@@ -369,17 +315,8 @@ movement_cultural_minority = {
 
 	disband_trigger = {
 		scope:political_movement ?= {
-			OR = {
-				culture = {
-					is_primary_culture_of = root
-				}
-				root = {
-					NOT = { any_scope_state = { state_region = { is_homeland = scope:political_movement.culture } } }
-					culture_percent_country = {
-						target = scope:political_movement.culture
-						value <= 0.04
-					}
-				}
+			culture = {
+				is_primary_culture_of = root
 			}
 		}
 	}
@@ -391,7 +328,7 @@ movement_cultural_minority = {
 				any_scope_state = { state_region = { is_homeland = root } }
 				culture_percent_country = {
 					target = root
-					value >= 0.05
+					value >= 0.025
 				}
 			}
 		}
@@ -452,7 +389,7 @@ movement_cultural_minority = {
 	
 	pop_support_weight = {
 		add = {
-			value = 10
+			value = 350
 			desc = "POP_BASE_SUPPORT"
 		}	
 		
@@ -540,7 +477,7 @@ movement_cultural_minority = {
 				state = {
 					state_cultural_acceptance = {  
 						target = PREV.culture
-						value < acceptance_status_5
+						value <= acceptance_status_5
 					}	
 				}
 			}
@@ -574,10 +511,6 @@ movement_cultural_minority = {
 			owner ?= {
 				any_scope_state = {
 					state_region = { is_homeland = root.culture }
-					culture_percent_state = {
-						target = root.culture
-						value >= 0.05
-					}					
 				}
 			}
 		}
@@ -593,12 +526,8 @@ movement_cultural_minority = {
 				limit = { 
 					is_capital = no
 					state_region = { is_homeland = scope:political_movement.culture }
-					culture_percent_state = {
-						target = scope:political_movement.culture
-						value >= 0.05
-					}					
 				}
-				add = 10
+				add = 50
 
 				if = {
 					limit = {
@@ -607,7 +536,7 @@ movement_cultural_minority = {
 							value >= 0.75
 						}
 					}
-					add = 1000
+					add = 250
 				}
 				else_if = {
 					limit = {
@@ -616,7 +545,7 @@ movement_cultural_minority = {
 							value >= 0.5
 						}
 					}
-					add = 500
+					add = 150
 				}
 				else_if = {
 					limit = {
@@ -625,7 +554,7 @@ movement_cultural_minority = {
 							value >= 0.25
 						}
 					}
-					add = 100
+					add = 50
 				}
 				else_if = {
 					limit = {
@@ -634,7 +563,7 @@ movement_cultural_minority = {
 							value >= 0.1
 						}
 					}
-					add = 50
+					add = 10
 				}
 			}				
 		}

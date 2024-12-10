@@ -809,7 +809,6 @@ slavery_law_events.7 = {
 		OR = {	
 			NOT = {
 				this = c:USA
-				this = c:FSA
 				has_variable = slavery_recently_abolished
 			}
 			AND = {
@@ -818,7 +817,6 @@ slavery_law_events.7 = {
 						this = c:USA
 						has_global_variable	= american_civil_war
 					}
-					this = c:FSA
 				}
 				has_law = law_type:law_slavery_banned
 				NOT = { has_journal_entry = je_bpm_guilty_land }

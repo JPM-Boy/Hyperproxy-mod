@@ -185,8 +185,6 @@
 			ideology = ideology_moderate
 			ruler = yes
 			ig_leader = yes
-			is_general = yes
-			hq = region_scandinavia
 		}
 	}
 
@@ -263,7 +261,7 @@
 			culture = slovak
 			historical = yes
 			interest_group = ig_reformist_communist
-			ideology = ideology_reformist
+			ideology = ideology_socialist
 			ruler = yes
 			ig_leader = yes
 		}

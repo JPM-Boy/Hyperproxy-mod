@@ -74,7 +74,6 @@ ai_strategy_conservative_agenda = {
 	}
 
 	anti_interest_groups = {
-		ig_prog
 		ig_trade_unions
 		ig_reformist_communist
 		ig_orthodox_communist
@@ -233,7 +232,6 @@ ai_strategy_reactionary_agenda = {
 	
 	anti_interest_groups = {
 		ig_liberal
-		ig_prog
 		ig_trade_unions
 		ig_reformist_communist
 		ig_orthodox_communist
@@ -421,7 +419,6 @@ ai_strategy_progressive_agenda = {
 	pro_interest_groups = {
 		ig_liberal
 		ig_classical_liberal
-		ig_prog
 		ig_trade_unions
 		ig_ecologist
 	}
@@ -616,7 +613,6 @@ ai_strategy_progressive_conservative_agenda = {
 	anti_interest_groups = {
 		ig_reactionary
 		ig_fascist
-		ig_prog
 		ig_trade_unions
 		ig_reformist_communist
 		ig_ecologist
@@ -774,7 +770,6 @@ ai_strategy_egalitarian_agenda = {
 	}	
 	
 	pro_interest_groups = {
-		ig_prog
 		ig_trade_unions
 		ig_ecologist
 		ig_reformist_communist
@@ -1174,13 +1169,11 @@ ai_strategy_maintain_mandate_of_heaven = {
 	
 	anti_interest_groups ={
 		ig_liberal
-		ig_prog
 		ig_industrialists
 		ig_trade_unions
 		ig_intelligentsia
 		ig_liberal
 		ig_classical_liberal
-		ig_prog
 		ig_ecologist
 		ig_reformist_communist
 		ig_orthodox_communist

@@ -1274,6 +1274,35 @@ ai_strategy_default = {
 			
 			multiply = 0.75
 		}				
+
+		if = {
+			limit = { 
+				has_journal_entry = je_sick_man_army
+			}
+			min = 125
+		}	
+		max = {
+			value = 500
+
+			if = {
+				limit = { 
+					has_technology_researched = logistics
+				}
+				multiply = 1.25
+			}
+			if = {
+				limit = { 
+					has_technology_researched = enlistment_offices
+				}
+				multiply = 1.25
+			}
+			if = {
+				limit = { 
+					has_technology_researched = war_propaganda
+				}
+				multiply = 1.25
+			}
+		}
 		min = 1
 	}
 	
@@ -1590,7 +1619,7 @@ ai_strategy_default = {
 				country_rank >= rank_value:major_power
 			}
 		}
-		cargo_ships = {
+		cargo_ship = {
 			stance = wants_high_supply
 			trigger = {
 				has_technology_researched = navigation

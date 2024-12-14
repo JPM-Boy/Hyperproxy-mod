@@ -37,6 +37,9 @@ struggle_communism_desc: "The Radical Faction is leading"
 reformist_communism_desc: "The Reformist Faction is leading"
 vanguardist_communism_desc: "The Vanguardist Faction is leading"
 neutral_communism_desc: "It is unclear who is leading"
+progressist_new_left_desc: "The Movement is developing"
+radical_new_left_desc: "The Movement is radicalizing"
+neutral_new_left_desc: "It is unclear who is leading"
 
 post_soviet.1.t: "Dissolution of the Soviet Union"
 post_soviet.1.f: "The Chairman just made the speech.\n The Soviet Government has collapsed.\n It is the End of Times..."
@@ -73,15 +76,75 @@ post_soviet.6.a: "Follow the #g Nationalist Consensus #!"
 post_soviet.6.b: "Reinstate #r Radical Orthodoxy #!"
 post_soviet.6.c: "Embrace the #blue #b Progressive Vision #!#!"
 
+post_soviet.7.t: "The Vanguardist Path"
+post_soviet.7.d: "Following the collapse of the Soviet Union, the $ig_variant_orthodox_communist$ in [SCOPE.sCountry('country').GetNameNoFlag] faces a critical juncture. While some urge the adoption of modernizing reforms or a nationalistic approach, the Vanguardist faction calls for a return to strict ideological discipline, centralized power, and the unwavering leadership of the party."
+post_soviet.7.f: "True communism must not waver. Only through the disciplined hand of the vanguard can we weather these turbulent times."
+post_soviet.7.a: "Reaffirm #r Vanguardism #!: Strengthen centralized control and party orthodoxy."
+post_soviet.7.b: "Embrace #g National Communism #!: Fuse ideology with national identity to forge unity."
+post_soviet.7.c: "Pursue #blue #b Revisionism #!#!: Reform the system to adapt to modern realities."
+
+post_soviet.8.t: "A National Communism Strategy"
+post_soviet.8.d: "As the Soviet Union's collapse shakes the foundations of global socialism, the $ig_variant_orthodox_communist$ in [SCOPE.sCountry('country').GetNameNoFlag] deliberates their next steps. The Nationalist faction advocates tying the party's future to the cultural and historical roots of the nation, aiming to galvanize the public through national pride while retaining the core tenets of communism."  
+post_soviet.8.f: "We are not the shadow of Moscow; we are a nation with our own revolutionary spirit."  
+post_soviet.8.a: "Adopt #g National Communism #!: Align communism with national identity and traditions."  
+post_soviet.8.b: "Revitalize #r Vanguardism #!: Double down on party discipline and ideological purity."  
+post_soviet.8.c: "Pursue #blue #b Revisionism #!#!: Reform the system to embrace modern and global trends."  
+
+post_soviet.9.t: "The Case for Revisionism"  
+post_soviet.9.d: "The $ig_variant_orthodox_communist$ in [SCOPE.sCountry('country').GetNameNoFlag] confronts the realities of the post-Soviet world. Advocates for Revisionism call for a transformation of socialism into a modern, flexible system that engages with global markets and acknowledges past shortcomings. Meanwhile, Nationalist and Vanguardist voices demand more traditional paths forward."  
+post_soviet.9.f: "Revolutions succeed only when they adapt to their times."  
+post_soviet.9.a: "Pursue #blue #b Revisionism #!#!: Reform the system for a modernized approach to socialism."  
+post_soviet.9.b: "Adopt #g National Communism #!: Tie socialism to the unique identity of the nation."  
+post_soviet.9.c: "Reaffirm #r Vanguardism #!: Maintain centralized power and ideological orthodoxy."  
+
+post_soviet.10.t: "A New Left Convention"  
+post_soviet.10.d: "The #r New Left#! has organized a major convention to decide the movement's direction. Institutionalists propose creating a formal political organization to influence policy, while radicals demand maintaining the decentralized structure to focus on grassroots activism. The future of the movement depends on the outcome of this heated debate."  
+post_soviet.10.f: "A speaker raised the stakes: 'The New Left must choose between shaping the system or tearing it down.'"  
+post_soviet.10.a: "Begin formalizing the movement into a political organization."  
+post_soviet.10.b: "Retain the decentralized approach and focus on activism."  
+
+post_soviet.11.t: "Internal New Left Debate"  
+post_soviet.11.d: "A debate has erupted within the #r New Left#! between its two prominent factions. Institutionalists argue for engaging with existing power structures to bring change from within, while radicals urge revolutionary action to dismantle those same structures. A choice must be made to determine the movement’s path forward."  
+post_soviet.11.f: "One faction leader proclaimed, 'Revolution waits for no one, while another countered, 'The system can be turned to our advantage.'"  
+post_soviet.11.a: "Focus on structured political influence."  
+post_soviet.11.b: "Prioritize revolutionary grassroots mobilization."  
+
+post_soviet.12.t: "A Call for New Left Unity"  
+post_soviet.12.d: "The #r New Left#! has convened its key members to address the growing divide between factions. Institutionalists emphasize the importance of crafting detailed policies and building alliances, while radicals advocate for direct action and rejecting compromise. The decision will define how the movement engages with the broader political landscape."  
+post_soviet.12.f: "Tensions grew as the factions debated: 'Should we reform or revolt?'"  
+post_soviet.12.a: "Embrace structured politics and alliances."  
+post_soviet.12.b: "Pursue bold revolutionary change."  
+
+
 
 add_5_nationalism_tt: "Progress the #g Nationalist Faction#! by 5"
 add_5_radicalism_tt: "Progress the #r Radical Faction#! by 5"
 add_5_progressism_tt: "Support the #blue #b Progressist Faction#!#! by 5"
 add_5_vanguardism_tt: "Progress the #r Vanguardist Faction#! by 5"
 add_5_reformism_tt: "Support the #blue #b Reformist Faction#!#! by 5"
+add_5_nl_progress_tt: "#blue #b Progress#!#! the New Left by 5"
+add_5_nl_radical_tt: "#r Radicalize#! the New Left by 5"
+
+
 
 add_10_nationalism_tt: "Progress the #g Nationalist Faction#! by 10"
 add_10_radicalism_tt: "Progress the #r Radical Faction#! by 10"
 add_10_progressism_tt: "Support the #blue #b Progressist Faction#!#! by 10"
 add_10_vanguardism_tt: "Progress the #r Vanguardist Faction#! by 10"
 add_10_reformism_tt: "Support the #blue #b Reformist Faction#!#! by 10"
+add_10_nl_progress_tt: "#blue #b Progress#!#! the New Left by 10"
+add_10_nl_radical_tt: "#r Radicalize#! the New Left by 10"
+
+new_left_radicalism_bar_name: "New Leftist Radicalism"
+new_left_progress_bar_name: "New Leftist Progress"
+
+new_left_radicalism_bar_desc: "New Leftist Radicalism - #r [GetPlayer.MakeScope.Var('new_left_radicalism').GetValue]#!"
+new_left_progress_bar_desc: "New Leftist Progress - #blue #b [GetPlayer.MakeScope.Var('new_left_progress').GetValue]#!#!"
+
+je_hpx_new_leftism: "Progressivism and Socialism"
+je_hpx_new_leftism_reason: "The $ig_variant_new_leftism$ emerged as a distinct movement in the mid-20th century, rejecting both the rigid structures of traditional communism and the inequalities of unfettered capitalism. Advocating for #blue social justice#!, #green environmentalism#!, and #yellow expanded personal freedoms#!, the New Left sought to create a more inclusive and equitable society, often clashing with both the old guard and conservative powers. \n\nIn this JE you can survey the progress of the institutionalization of the $ig_variant_new_leftism$ in your country and its #r Radicalism#!."
+
+je_hpx_newleftism_tt: "Progress reaches #yellow 100#!"
+je_hpx_newleftism_complete_tt: "If the country is in #yellow Europe#!, is #yellow Chile#! or #yellow Japan#!; $ig_variant_new_leftism$ become #r Neo-Communist#!.\nIf not, instead $ig_variant_new_leftism$ become #O #b Radical Progressives#!#!."
+je_hpx_newleftism_rad_tt: "Radicalism reaches #yellow 100#!"
+je_hpx_newleftism_rad_fail_tt: "$ig_variant_new_leftism$ turns into #r Revolutionary Leftists#!."

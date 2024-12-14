@@ -404,3 +404,116 @@ post_soviet.9 = {
 		refresh_post_soviet_bars = yes
 	}
 }
+
+post_soviet.10 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/new_leftism.dds"
+	title = post_soviet.10.t
+	desc = post_soviet.10.d
+	flavor = post_soviet.10.f
+	duration = 3
+
+	option = {
+		name = post_soviet.10.a
+		custom_tooltip = {
+			text = add_10_nl_progress_tt
+			change_variable = {
+				name = new_left_progress
+				add = 10
+			}
+		}
+		
+		refresh_new_left_bars = yes
+	}
+	option = {
+		name = post_soviet.10.b
+		custom_tooltip = {
+			text = add_10_nl_radical_tt
+			change_variable = {
+				name = new_left_radicalism
+				add = 10
+			}
+		}
+		
+		refresh_new_left_bars = yes
+	}
+}
+
+post_soviet.11 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/new_leftism.dds"
+	title = post_soviet.11.t
+	desc = post_soviet.11.d
+	flavor = post_soviet.11.f
+	duration = 3
+
+	option = {
+		name = post_soviet.11.a
+		custom_tooltip = {
+			text = add_5_nl_progress_tt
+			change_variable = {
+				name = new_left_progress
+				add = 5
+			}
+		}
+		
+		refresh_new_left_bars = yes
+	}
+	option = {
+		name = post_soviet.11.b
+		custom_tooltip = {
+			text = add_5_nl_radical_tt
+			change_variable = {
+				name = new_left_radicalism
+				add = 5
+			}
+		}		
+		refresh_new_left_bars = yes
+	}
+}
+
+post_soviet.12 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/new_leftism.dds"
+	title = post_soviet.12.t
+	desc = post_soviet.12.d
+	flavor = post_soviet.12.f
+	duration = 3
+
+	option = {
+		name = post_soviet.12.a
+		custom_tooltip = {
+			text = add_5_nl_progress_tt
+			change_variable = {
+				name = new_left_progress
+				add = 5
+			}
+		}
+		
+		refresh_new_left_bars = yes
+	}
+	option = {
+		name = post_soviet.12.b
+		custom_tooltip = {
+			text = add_5_nl_radical_tt
+			change_variable = {
+				name = new_left_radicalism
+				add = 5
+			}
+		}
+		
+		refresh_new_left_bars = yes
+	}
+}

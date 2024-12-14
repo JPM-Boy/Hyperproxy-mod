@@ -6,9 +6,6 @@
 		ig:ig_liberal = {
 			set_variable = french_var
 		}
-		ig:ig_ecologist = {
-			set_variable = english_var
-		}
 		ig:ig_orthodox_communist = {
 			set_variable = french_var
 		}

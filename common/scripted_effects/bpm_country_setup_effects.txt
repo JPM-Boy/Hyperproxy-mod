@@ -33,10 +33,6 @@ hpx_setup_country_variables = {
 		name = imf_contribution
 		value = 0
 	}
-	change_global_variable = {
-		name = var_imf_memberlist
-		add = 1
-	}
 }
 
 bpm_reload_country_ig_membership = {

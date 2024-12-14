@@ -1,1 +1,40 @@
-﻿
+﻿#je_hpx_cold_war = {
+#	icon = "gfx/interface/icons/timed_modifier_icons/COLDWAR.dds"
+#
+#	group = je_group_global
+#
+#	should_be_pinned_by_default = yes
+#
+#	weight = 2000
+#	scripted_progress_bar = usa_bar
+#	scripted_progress_bar = soviet_bar
+#	scripted_progress_bar = euro_bar
+#	immediate = {
+#		set_global_variable = {
+#			name = soviet_points
+#			value = 100
+#		}
+#		set_global_variable = {
+#			name = euro_points
+#			value = 100
+#		}
+#		set_global_variable = {
+#			name = usa_points
+#			value = 100
+#		}
+#	}
+#	fail = {
+#		OR = {
+#			c:RUS = {
+#				NOT = {has_law = law_type:law_council_republic}
+#			}
+#			c:USA = {
+#				NOT = {has_law = law_type:law_republic}
+#			}
+#			c:GBR = {
+#				NOT = {has_state_in_state_region = STATE_ILE_DE_FRANCE}
+#				NOT = {has_state_in_state_region = STATE_HOME_COUNTIES}
+#			}
+#		}
+#	}
+#}

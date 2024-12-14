@@ -1,4 +1,43 @@
-﻿french_english_progress_bar = {
+﻿# example_progress_bar5 = {
+# 	name = "PROGRESS_BAR_NAME1"
+# 	desc = "PROGRESS_BAR_TEXT3" #This will be printed on the left side of the progress bar
+#   second_desc = "PROGRESS_BAR_TEXT3" #This will be printed on the right side of the progress bar
+
+# 	start_value = 50
+# 	min_value = 0
+# 	max_value = 100
+    
+#   #Use one of these types of progressbars:
+# 	double_sided_gold = yes
+#   default_green = yes
+# 	default_bad = yes
+# 	default = yes
+# 	double_sided_gold = yes
+# 	double_sided_bad = yes
+
+#   These progress bar weekly/monthly/yearly progress updates executes before the weekly/monthly/yearly JE pulses
+# 	weekly_progress = {
+# 		add = {
+# 			desc = "PROGRESS_BAR_ADD_WEEKLY_DESC2"
+# 			value = 30
+# 		}
+# 	}
+# 	monthly_progress = {
+# 		add = {
+# 			desc = "PROGRESS_BAR_ADD_MONTHLY_DESC1"
+# 			if = {
+# 				limit = {
+# 					influence > 100
+# 				}
+# 				value = 3
+# 			} 
+# 		}
+# 	}
+# 	yearly_progress = {
+# 	}
+# }
+
+french_english_progress_bar = {
  	name = "french_english_progress_bar_name"
  	desc = "french_english_progress_bar_france_desc"
  	second_desc = "french_english_progress_bar_britain_desc"
@@ -101,41 +140,35 @@ soviet_unity_bar = {
  	}
 }
 
-# example_progress_bar5 = {
-# 	name = "PROGRESS_BAR_NAME1"
-# 	desc = "PROGRESS_BAR_TEXT3" #This will be printed on the left side of the progress bar
-#   second_desc = "PROGRESS_BAR_TEXT3" #This will be printed on the right side of the progress bar
+euro_bar = {
+	name = euro_bar_name
+	desc = euro_bar_desc
 
-# 	start_value = 50
-# 	min_value = 0
-# 	max_value = 100
-    
-#   #Use one of these types of progressbars:
-# 	double_sided_gold = yes
-#   default_green = yes
-# 	default_bad = yes
-# 	default = yes
-# 	double_sided_gold = yes
-# 	double_sided_bad = yes
+	start_value = 100
+	min_value = 0
+	max_value = 100
 
-#   These progress bar weekly/monthly/yearly progress updates executes before the weekly/monthly/yearly JE pulses
-# 	weekly_progress = {
-# 		add = {
-# 			desc = "PROGRESS_BAR_ADD_WEEKLY_DESC2"
-# 			value = 30
-# 		}
-# 	}
-# 	monthly_progress = {
-# 		add = {
-# 			desc = "PROGRESS_BAR_ADD_MONTHLY_DESC1"
-# 			if = {
-# 				limit = {
-# 					influence > 100
-# 				}
-# 				value = 3
-# 			} 
-# 		}
-# 	}
-# 	yearly_progress = {
-# 	}
-# }
+	default_green = yes
+}
+
+soviet_bar = {
+	name = soviet_bar_name
+	desc = soviet_bar_desc
+
+	start_value = 100
+	min_value = 0
+	max_value = 100
+
+	default_bad = yes
+}
+
+usa_bar = {
+	name = usa_bar_name
+	desc = usa_bar_desc
+
+	start_value = 100
+	min_value = 0
+	max_value = 100
+
+	default = yes
+}

@@ -1,6 +1,10 @@
 ﻿GLOBAL = {
 	bpm_set_vanilla_ideologies_list = yes
 	setup_space_race_lists = yes
+	set_global_variable = {
+		name = var_imf_memberlist
+		value = 0
+	}
 	every_country = { 
 		bpm_setup_country = yes
 	}
@@ -108,13 +112,6 @@
 		add_to_global_variable_list = {
 			name = imf_headquarters_holder
 			target = THIS
-		}
-	}
-
-	random_country = {
-		set_global_variable = {
-			name = var_imf_memberlist
-			value = 0
 		}
 	}
 	

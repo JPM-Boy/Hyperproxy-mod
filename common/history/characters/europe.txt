@@ -67,7 +67,7 @@
 			culture = north_german
 			historical = yes
 			ig_leader = yes
-			interest_group = ig_reformist_communist
+			interest_group = ig_socdem
 			ideology = ideology_moderate
 			age = 71
 			ruler = yes
@@ -155,7 +155,7 @@
 			last_name = "Tschudi"
 			culture = south_german
 			historical = yes
-			interest_group = ig_reformist_communist
+			interest_group = ig_socdem
 			ideology = ideology_market_liberal
 			ruler = yes
 			ig_leader = yes
@@ -194,7 +194,7 @@
 			last_name = "Borten"
 			culture = norwegian
 			historical = yes
-			interest_group = ig_ecologist
+			interest_group = ig_socdem
 			ideology = ideology_moderate
 			ruler = yes
 			ig_leader = yes

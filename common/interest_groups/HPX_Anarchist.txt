@@ -17,7 +17,7 @@
 	}
 	
 	enable = {
-		always = yes
+		year > 2000
 	}
 	
 	on_enable = {

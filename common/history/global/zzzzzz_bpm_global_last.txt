@@ -1,8 +1,6 @@
 ﻿GLOBAL = {
 	every_country = {
-		limit = {
-			has_technology_researched = centralization
-		}
-		bpm_initialize_cabinet = yes
-    }    
+		add_journal_entry = {type = je_hpx_new_leftism}
+	#	add_journal_entry = {type = je_hpx_cold_war}
+	}
 }

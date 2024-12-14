@@ -55,6 +55,7 @@ ig_liberal_only_icon:0 "@ig_liberal!"
 ig_liberal_desc:0 "Modern liberalism, focuses on individual freedoms, democratic governance, and the rule of law while advocating for economic policies that combine free-market principles with some level of government intervention. It prioritizes civil liberties, human rights, and equality of opportunity, emphasizing the importance of social welfare, education, and healthcare to ensure that all individuals can participate fully in society."
 
 ig_french_liberal: "French Republicans"
+ig_moderate_liberals: "Moderate Liberals"
 
 #Libertarianism
 ig_classical_liberal:0 "Classical Liberals"
@@ -94,6 +95,10 @@ ig_new_leftism:0 "New Leftism"
 ig_new_leftism_only_icon:0 "@ig_new_leftism!"
 ig_new_leftism_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
 ig_variant_new_leftism:0 "[GetInterestGroupVariant('ig_new_leftism',GetPlayer).GetNameWithCountryVariant]"
+
+ig_revolutionary_leftism: "Revolutionary Leftists"
+ig_radical_progressives: "Radical Progressists"
+ig_neo_communists: "Neo Communists"
 
 
 #Socdems

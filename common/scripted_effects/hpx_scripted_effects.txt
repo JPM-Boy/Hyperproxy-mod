@@ -188,18 +188,15 @@ calculate_anglo_french_events = {
 	}
 }
 
-
 setup_space_race_lists = {
-
 	add_to_global_variable_list = {name = unmanned_moon target = c:GBR}
 	add_to_global_variable_list = {name = unmanned_moon target = c:USA}
 	add_to_global_variable_list = {name = unmanned_moon target = c:RUS}
 	add_to_global_variable_list = {name = manned_moon target = c:USA}
-
 }
 
 dissolve_soviet = {
-if = {
+	if = {
 	activate_law = law_type:law_republic
 
 	create_country = {
@@ -481,7 +478,7 @@ if = {
 		name = global_var:soviet_collapse
 		add = 1
 	}
-}
+	}
 }
 
 dissolve_soviet_hard = {
@@ -1080,14 +1077,10 @@ refresh_post_soviet_bars = {
 	        value = owner.var:nationalist_communism
 	        name = communist_nationalism_bar
 	    }
-	}
-	je:je_hpx_out_of_power_communism ?= {
 	    set_bar_progress = {
 	        value = owner.var:struggle_communism
 	        name = communist_struggle_bar
 	    }
-	}
-	je:je_hpx_out_of_power_communism ?= {
 	    set_bar_progress = {
 	        value = owner.var:progressive_communism
 	        name = communist_progressivism_bar
@@ -1098,17 +1091,26 @@ refresh_post_soviet_bars = {
 	        value = owner.var:nationalist_communism
 	        name = communist_nationalism_bar
 	    }
-	}
-	je:je_hpx_in_power_communism ?= {
 	    set_bar_progress = {
 	        value = owner.var:vanguardist_communism
 	        name = communist_vanguardist_bar
 	    }
-	}
-	je:je_hpx_in_power_communism ?= {
 	    set_bar_progress = {
 	        value = owner.var:reformist_communism
 	        name = communist_reformist_bar
+	    }
+	}
+}
+
+refresh_new_left_bars = {
+	je:je_hpx_new_leftism ?= {
+		set_bar_progress = {
+			value = owner.var:new_left_progress
+	        name = new_left_progress_bar
+	    }
+	    set_bar_progress = {
+			value = owner.var:new_left_radicalism
+	        name = new_left_radicalism_bar
 	    }
 	}
 }

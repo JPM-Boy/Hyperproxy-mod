@@ -21,7 +21,7 @@ ig_ecologist = {
 	}
 	
 	enable = {
-		always = yes
+		year > 1990
 	}
 	
 	on_enable = {

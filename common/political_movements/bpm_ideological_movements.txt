@@ -1040,7 +1040,7 @@ movement_royalist_absolutist = {
 		}
 		
 		weight = {
-			value = 1000
+			value = 10
 		}
 
 		state_weight = {
@@ -1934,7 +1934,7 @@ movement_anarchist = {
 		}
 		
 		weight = {
-			value = 100
+			value = 1000
 		}	
 	}
 	
@@ -1964,7 +1964,7 @@ movement_anarchist = {
 		}
 		
 		weight = {
-			value = 1000
+			value = 100
 		}		
 	}	
 	
@@ -2176,7 +2176,7 @@ movement_communist = {
 		}
 		
 		weight = {
-			value = 100
+			value = 1000
 		}	
 	}
 	
@@ -2187,7 +2187,7 @@ movement_communist = {
 		}
 		
 		weight = {
-			value = 1000
+			value = 100
 		}		
 	}	
 	
@@ -2480,7 +2480,7 @@ movement_fascist = {
 		}
 		
 		weight = {
-			value = 100
+			value = 1000
 		}	
 	
 		state_weight = {
@@ -2495,7 +2495,7 @@ movement_fascist = {
 		}
 		
 		weight = {
-			value = 1000
+			value = 100
 		}		
 	}	
 	

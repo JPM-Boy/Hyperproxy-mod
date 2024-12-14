@@ -105,7 +105,7 @@ hpx_GBR_event.2 = { # French Communists vs Hippies
 		}
 		add_radicals = {
 			value = 0.1
-			interest_group = ig:ig_ecologist
+			interest_group = ig:ig_cons
 			culture = british
 		}
 
@@ -122,7 +122,7 @@ hpx_GBR_event.2 = { # French Communists vs Hippies
             base = 70
         }
 
-		ig:ig_ecologist = {
+		ig:ig_cons = {
 			add_modifier = {
 				name = member_influx
 				months = 6

@@ -256,7 +256,7 @@ welfare_laws.2 = {
 		}
 		add_radicals = {
 			value = small_radicals
-			strata = lower
+			strata = poor
 		}
 	}
 
@@ -339,7 +339,7 @@ welfare_laws.2 = {
 		}
 		add_radicals = {
 			value = small_radicals
-			strata = upper
+			strata = rich
 		}
 	}
 }

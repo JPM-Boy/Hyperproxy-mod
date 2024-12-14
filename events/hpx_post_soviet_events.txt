@@ -1,0 +1,406 @@
+﻿namespace = post_soviet
+
+post_soviet.1 = { # Fall of the Soviet Union
+	type = country_event
+	placement = root
+
+	event_image = { texture = "gfx/event_pictures/test.dds" }
+	gui_window = superevent
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.1.t
+	desc = post_soviet.1.d
+	flavor = post_soviet.1.f
+	duration = 3
+
+	immediate = {
+		if = {
+			limit = {has_law = law_type:law_council_republic}
+			add_journal_entry = { type = je_hpx_fall_soviet }
+		}
+	}
+	option = {
+		name = post_soviet.1.a
+		default_option = yes
+	}
+	after = {
+		bpm_refresh_parties = yes
+	}
+}
+
+post_soviet.2 = { #Communists Outed
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.2.t
+	desc = post_soviet.2.d
+	flavor = post_soviet.2.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.2.a
+		default_option = yes
+		add_journal_entry = { type = je_hpx_out_of_power_communism }
+	}
+}
+
+post_soviet.3 = { #Communists not Outed
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.3.t
+	desc = post_soviet.3.d
+	flavor = post_soviet.3.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.3.a
+		default_option = yes
+		add_journal_entry = { type = je_hpx_in_power_communism }
+	}
+}
+
+post_soviet.4 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.4.t
+	desc = post_soviet.4.d
+	flavor = post_soviet.4.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.4.a
+		default_option = yes
+		custom_tooltip = {
+			text = add_5_nationalism_tt
+			change_variable = {
+				name = nationalist_communism
+				add = 5
+			}
+		}
+		
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.4.b
+
+		custom_tooltip = {
+			text = add_5_radicalism_tt
+			change_variable = {
+				name = struggle_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.4.c
+
+		custom_tooltip = {
+			text = add_5_progressism_tt
+			change_variable = {
+				name = progressive_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+}
+
+post_soviet.5 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.5.t
+	desc = post_soviet.5.d
+	flavor = post_soviet.5.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.5.a
+		custom_tooltip = {
+			text = add_10_nationalism_tt
+			change_variable = {
+				name = nationalist_communism
+				add = 10
+			}
+		}
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.5.b
+		default_option = yes
+		custom_tooltip = {
+			text = add_10_radicalism_tt
+			change_variable = {
+				name = struggle_communism
+				add = 10
+			}
+		}
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.5.c
+		custom_tooltip = {
+			text = add_10_progressism_tt
+			change_variable = {
+				name = progressive_communism
+				add = 10
+			}
+		}
+		refresh_post_soviet_bars = yes
+	}
+}
+
+post_soviet.6 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.6.t
+	desc = post_soviet.6.d
+	flavor = post_soviet.6.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.6.a
+		custom_tooltip = {
+			text = add_5_nationalism_tt
+			change_variable = {
+				name = nationalist_communism
+				add = 5
+			}
+		}
+		
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.6.b
+
+		custom_tooltip = {
+			text = add_5_radicalism_tt
+			change_variable = {
+				name = struggle_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.6.c
+		default_option = yes
+		custom_tooltip = {
+			text = add_5_progressism_tt
+			change_variable = {
+				name = progressive_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+}
+
+post_soviet.7 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.7.t
+	desc = post_soviet.7.d
+	flavor = post_soviet.7.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.7.a
+		default_option = yes
+		custom_tooltip = {
+			text = add_5_nationalism_tt
+			change_variable = {
+				name = nationalist_communism
+				add = 5
+			}
+		}
+		
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.7.b
+
+		custom_tooltip = {
+			text = add_5_vanguardism_tt
+			change_variable = {
+				name = vanguardist_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.7.c
+
+		custom_tooltip = {
+			text = add_5_reformism_tt
+			change_variable = {
+				name = reformist_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+}
+
+post_soviet.8 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.8.t
+	desc = post_soviet.8.d
+	flavor = post_soviet.8.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.8.a
+		custom_tooltip = {
+			text = add_10_nationalism_tt
+			change_variable = {
+				name = nationalist_communism
+				add = 10
+			}
+		}
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.8.b
+		default_option = yes
+		custom_tooltip = {
+			text = add_10_vanguardism_tt
+			change_variable = {
+				name = vanguardist_communism
+				add = 10
+			}
+		}
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.8.c
+		custom_tooltip = {
+			text = add_10_reformism_tt
+			change_variable = {
+				name = reformist_communism
+				add = 10
+			}
+		}
+		refresh_post_soviet_bars = yes
+	}
+}
+
+post_soviet.9 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	title = post_soviet.9.t
+	desc = post_soviet.9.d
+	flavor = post_soviet.9.f
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = post_soviet.9.a
+		custom_tooltip = {
+			text = add_5_nationalism_tt
+			change_variable = {
+				name = nationalist_communism
+				add = 5
+			}
+		}
+		
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.9.b
+
+		custom_tooltip = {
+			text = add_5_vanguardism_tt
+			change_variable = {
+				name = vanguardist_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+	option = {
+		name = post_soviet.9.c
+		default_option = yes
+		custom_tooltip = {
+			text = add_5_reformism_tt
+			change_variable = {
+				name = reformist_communism
+				add = 5
+			}
+		}
+
+		refresh_post_soviet_bars = yes
+	}
+}

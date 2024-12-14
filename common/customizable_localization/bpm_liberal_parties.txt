@@ -1,4 +1,4 @@
-usa_liberal_party_name = {
+﻿usa_liberal_party_name = {
 	type = country
 	random_valid = no
 
@@ -10,7 +10,7 @@ usa_liberal_party_name = {
 				}
 				has_global_variable = american_civil_war
 				has_law = law_type:law_slavery_banned
-				ig:ig_liberal ?= {
+				ig:ig_liberals ?= {
 					leader = { has_ideology = ideology:ideology_abolitionist }
 					has_party = yes
 					party = {
@@ -84,56 +84,38 @@ ger_liberal_party_name = {
 
 	text = {
 		trigger = {
-			#game_date < 1860.1.1
-			NOT = { has_variable = je_german_unification_idea }
+			game_date < 1860.1.1
 		}
 		localization_key = party_ger_national_union
 	}
 	text = {
 		trigger = {
-			#game_date >= 1860.1.1
-			has_variable = je_german_unification_idea
-			exists = ig:ig_cons
-			ig:ig_cons ?= {
+			game_date >= 1860.1.1
+			ig:ig_national_liberals = {
 				is_member_of_party = owner.py:liberal_party
 			}
-			has_law = law_type:law_monarchy
 		}
 		localization_key = party_ger_natlib
 	}
 	text = {
 		trigger = {
-			#game_date >= 1860.1.1
-			has_variable = je_german_unification_idea
-			has_law = law_type:law_monarchy
+			game_date >= 1860.1.1
 			game_date < 1885.1.1
 		}
-		localization_key = party_ger_progress
+		localization_key = party_ger_liberals
 	}
 	text = {
 		trigger = {
-			has_variable = je_german_unification_idea
-			has_law = law_type:law_monarchy
 			game_date >= 1885.1.1
-			game_date < 1910.1.1
-		}
-		localization_key = party_ger_free
-	}
-	text = {
-		trigger = {
-			game_date >= 1910.1.1
-			has_law = law_type:law_monarchy
-			has_variable = je_german_unification_idea
-		}
-		localization_key = party_ger_fvp
-	}
-	text = {
-		trigger = {
-			has_variable = je_german_unification_idea
-			#game_date >= 1885.1.1
 			NOT = { has_law = law_type:law_monarchy }
 		}
 		localization_key = party_ger_ddp
+	}
+	text = {
+		trigger = {
+			game_date >= 1885.1.1
+		}
+		localization_key = party_ger_free
 	}
 }
 
@@ -185,24 +167,6 @@ swe_liberal_party_name = {
 			game_date >= 1900.1.1
 		}
 		localization_key = party_peoples_party
-	}
-}
-
-ast_liberal_party_name = {
-	type = country
-	random_valid = no
-
-	text = {
-		trigger = {
-			NOT = { has_technology_researched = joint_stock_companies }
-		}
-		localization_key = party_bpm_free_trade
-	}
-	text = {
-		trigger = {
-			has_technology_researched = joint_stock_companies
-		}
-		localization_key = party_liberal
 	}
 }
 
@@ -361,12 +325,9 @@ fra_liberal_party_name = {
 	
 	text = {
 		trigger = {
-			#OR = { 
-			#	has_law = law_type:law_monarchy 
-			#	has_law = law_type:law_theocracy
-			#}
-			ig:ig_liberal ?= {
-				bpm_ig_is_republican = no
+			OR = { 
+				has_law = law_type:law_monarchy 
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_movement
@@ -374,12 +335,9 @@ fra_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date < 1901.1.1
-			#NOR = { 
-			#	has_law = law_type:law_monarchy 
-			#	has_law = law_type:law_theocracy
-			#}
-			ig:ig_liberal ?= {
-				bpm_ig_is_republican = yes
+			NOR = { 
+				has_law = law_type:law_monarchy 
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_republican
@@ -387,12 +345,9 @@ fra_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date > 1901.1.1
-			#NOR = { 
-			#	has_law = law_type:law_monarchy 
-			#	has_law = law_type:law_theocracy
-			#}
-			ig:ig_liberal ?= {
-				bpm_ig_is_republican = yes
+			NOR = { 
+				has_law = law_type:law_monarchy 
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_democratic_alliance
@@ -590,16 +545,8 @@ kor_liberal_party_name = {
 	text = {
 		trigger = { 
 			has_law = law_type:law_monarchy
-			is_subject_of = c:CHI
 		}
 		localization_key = party_kor_peoples
-	}
-	text = {
-		trigger = { 
-			has_law = law_type:law_monarchy
-			NOT = { is_subject_of = c:CHI }
-		}
-		localization_key = party_liberal
 	}
 	text = {
 		trigger = {

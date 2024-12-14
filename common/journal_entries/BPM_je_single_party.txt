@@ -82,11 +82,11 @@
 			# Law Enforcement must be fully geared up
 			institution_investment_level = {
 				institution = institution_home_affairs
-				value >= 4
+				value >= 2
 			}
 			institution_investment_level = {
 				institution = institution_police
-				value >= 4
+				value >= 2
 			}
 
 			# The government must have one single ruling party

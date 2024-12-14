@@ -59,7 +59,7 @@ dynamic_map_color_soviet = {
 		exists = c:RUS # you /must/ check that a tag exists before doing anything else
 		this = c:RUS
 
-       c:RUS = {
+      c:RUS = {
 			has_law = law_type:law_council_republic	
 		}	
 	}

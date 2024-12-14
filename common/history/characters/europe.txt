@@ -261,7 +261,7 @@
 			culture = slovak
 			historical = yes
 			interest_group = ig_reformist_communist
-			ideology = ideology_socialist
+			ideology = ideology_socialist_leader
 			ruler = yes
 			ig_leader = yes
 		}

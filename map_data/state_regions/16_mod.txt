@@ -1,7 +1,7 @@
 ﻿STATE_NEWFOUNDLAND = {
-    id = 5000
+    id = 313
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0C0CCC" "x7C0D56" "x2D3204" "xD6143F" "x23500D" "xA82803" "x563A89" "xEB2540" "x087678" "x326D52" "xCB412F" "xA148A8" "x8C6B34" "xEE4F4F" "x10A000" "x8D790B" "x0DB516" "x1FA5AC" "x798C8E" "x24AD62" "x8588BF" "x818D9D" "xDE7D17" "x8E933E" "xDE7BE8" "x65B146" "x7FA89F" "x79AB95" "x37D0BC" "x08F4CE" "x74E14D" "x48F357" "xBACEF7" "x68F55E" "xD1D79F" "xF7CF7E" "xC6E552" }
+    provinces = { "x087678" "x08F4CE" "x0C0CCC" "x0DB516" "x10A000" "x1FA5AC" "x23500D" "x24AD62" "x2D3204" "x326D52" "x37D0BC" "x48F357" "x563A89" "x65B146" "x68F55E" "x74E14D" "x798C8E" "x79AB95" "x7C0D56" "x7FA89F" "x818D9D" "x8588BF" "x8C6B34" "x8D790B" "x8E933E" "xA148A8" "xA82803" "xBACEF7" "xC6E552" "xCB412F" "xD1D79F" "xD6143F" "xDE7BE8" "xDE7D17" "xEB2540" "xEE4F4F" "xF7CF7E" }
     traits = { "state_trait_grand_banks_fisheries" }
     city = "xD1D79F"
     port = "xD1D79F"

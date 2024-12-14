@@ -381,7 +381,7 @@ migration_laws.3 = {
 		scope:improverished_state = {
 			add_radicals_in_state = {
 				value = medium_radicals
-				strata = lower
+				strata = poor
 			}
 		}
 		ig:ig_trade_unions = { 

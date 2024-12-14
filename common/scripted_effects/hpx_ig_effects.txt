@@ -1,0 +1,53 @@
+﻿hpx_ig_make_orthodox_revisionist = {
+	bpm_remove_all_ideologies = yes
+	add_ideology = ideology_gov_moderate_proletarian
+	add_ideology = ideology_dop_oligarch
+	add_ideology = ideology_sta_powerful_state
+	add_ideology = ideology_cit_closed_internationalist
+	add_ideology = ideology_rel_radical_secularist
+	add_ideology = ideology_mil_patriotic
+	add_ideology = ideology_eco_proletarian_economy
+	add_ideology = ideology_wel_expanded_public_welfare
+	add_ideology = ideology_fem_benevolent_sexism
+	add_ideology = ideology_ban_opposed
+	add_ideology = ideology_exe_strong_dynamic
+	add_ideology = ideology_mon_fixed_exchange
+	remove_ideology = ideology_nonexistent
+	bpm_reorder_ideologies = yes
+}
+
+hpx_ig_make_orthodox_vanguardist = {
+	bpm_remove_all_ideologies = yes
+	add_ideology = ideology_gov_radical_proletarian
+	add_ideology = ideology_dop_oligarch
+	add_ideology = ideology_sta_powerful_state
+	add_ideology = ideology_cit_closed_internationalist
+	add_ideology = ideology_rel_radical_secularist
+	add_ideology = ideology_mil_patriotic
+	add_ideology = ideology_eco_proletarian_economy
+	add_ideology = ideology_wel_expanded_public_welfare
+	add_ideology = ideology_fem_benevolent_sexism
+	add_ideology = ideology_exe_strong_rigid
+	add_ideology = ideology_ban_opposed
+	add_ideology = ideology_mon_fixed_exchange
+	remove_ideology = ideology_nonexistent
+	bpm_reorder_ideologies = yes
+}
+
+hpx_ig_make_orthodox_natcom = {
+	bpm_remove_all_ideologies = yes
+	add_ideology = ideology_gov_radical_proletarian
+	add_ideology = ideology_dop_autocrat
+	add_ideology = ideology_sta_security_state
+	add_ideology = ideology_cit_ethnonationalist
+	add_ideology = ideology_rel_radical_moralist
+	add_ideology = ideology_mil_ultramilitarist
+	add_ideology = ideology_eco_proletarian_economy
+	add_ideology = ideology_wel_expanded_public_welfare
+	add_ideology = ideology_exe_strong_rigid
+	add_ideology = ideology_fem_moderate_patriarchal
+	add_ideology = ideology_ban_opposed
+	add_ideology = ideology_mon_fixed_exchange
+	remove_ideology = ideology_nonexistent
+	bpm_reorder_ideologies = yes
+}

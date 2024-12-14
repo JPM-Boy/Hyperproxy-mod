@@ -66,7 +66,7 @@ bpm_is_party_banned = {
 	}
 }
 
-bpm_is_centre_right_party_banned = {
+bpm_is_agrarian_party_banned = {
 	AND = {
 		bpm_extra_party_ban = yes
 		OR = {
@@ -76,21 +76,21 @@ bpm_is_centre_right_party_banned = {
 	}
 }
 
-bpm_is_far_left_party_banned = {
+bpm_is_anarchist_party_banned = {
 	OR = {
 		bpm_banned_socialist_parties = yes
 		bpm_banned_antiliberal_parties = yes
 	}
 }
 
-bpm_is_leftwing_party_banned = {
+bpm_is_communist_party_banned = {
 	OR = {
 		bpm_banned_socialist_parties = yes
 		bpm_banned_antiliberal_parties = yes
 	}
 }
 
-bpm_is_rightwing_party_banned = {
+bpm_is_conservative_party_banned = {
 	OR = {
 		AND = {
 			bpm_full_party_ban = yes
@@ -103,14 +103,14 @@ bpm_is_rightwing_party_banned = {
 	}
 }
 
-bpm_is_far_right_party_banned = {
+bpm_is_fascist_party_banned = {
 	OR = {
 		bpm_banned_reactionary_parties = yes
 		bpm_banned_antiliberal_parties = yes
 	}
 }
 
-bpm_is_centre_left_party_banned = {
+bpm_is_liberal_party_banned = {
 	AND = {
 		bpm_extra_party_ban = yes
 		OR = {
@@ -131,5 +131,66 @@ bpm_is_radical_party_banned = {
 			}
 		}
 		bpm_banned_left_liberal_parties = yes
+	}
+}
+
+bpm_is_reactionary_party_banned = {
+	OR = {
+		AND = {
+			bpm_extra_party_ban = yes
+			OR = {
+				bpm_banned_antiliberal_parties = yes
+				bpm_banned_reactionary_parties = yes
+			}
+		}
+	bpm_banned_right_liberal_parties = yes
+	}
+}
+
+bpm_is_religious_party_banned = {
+	OR = {
+		AND = {
+			bpm_full_party_ban = yes
+			OR = {
+				bpm_banned_reactionary_parties = yes
+				bpm_banned_antiliberal_parties = yes
+			}
+		}
+		bpm_banned_right_liberal_parties = yes
+	}
+}
+
+bpm_is_social_democrat_party_banned = {
+	OR = {
+		AND = {
+			OR = {
+				AND = {
+					bpm_extra_party_ban = yes
+					OR = {
+						bpm_banned_socialist_parties = yes
+						bpm_banned_antiliberal_parties = yes
+					}
+				}
+				bpm_banned_left_liberal_parties = yes
+			}
+			owner = {
+				OR = {
+					has_global_variable = global_socialists_disunited_var
+					has_variable = local_socialists_disunited_var
+				}
+			}
+		}
+		AND = {
+			OR = {
+				bpm_banned_socialist_parties = yes
+				bpm_banned_antiliberal_parties = yes
+			}
+			owner = {
+				NOR = {
+					has_global_variable = global_socialists_disunited_var
+					has_variable = local_socialists_disunited_var
+				}
+			}
+		}
 	}
 }

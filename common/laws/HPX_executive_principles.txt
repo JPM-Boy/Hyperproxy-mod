@@ -11,9 +11,6 @@ law_appointed_by_hos = {
 		country_authority_add = 100
 		country_legitimacy_headofstate_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.1
-		country_bpm_hog_inst = yes
-		country_bpm_cabinet_hos_bonus = yes
-		country_bpm_cabinet_institution_bonus = yes
 	}
 
 	can_enact = {
@@ -69,13 +66,8 @@ law_appointed_on_advice = {
 	modifier = {
 		#interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.5
 		#state_tax_capacity_mult = 0.25
-		country_bpm_hog_advice_on_ruler_veto = yes
 		country_legitimacy_govt_total_votes_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.25
-		country_bpm_hog_top_advice = yes
-		country_bpm_cabinet_hos_bonus = yes
-		country_bpm_cabinet_hog_bonus = yes
-		country_bpm_cabinet_clout_bonus = yes
 	}
 
 	can_enact = {
@@ -131,12 +123,9 @@ law_answers_to_legislature = {
 	modifier = {
 		#interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.5
 		#state_tax_capacity_mult = 0.25
-		country_bpm_hog_veto = yes
 		country_authority_add = -100
 		country_legitimacy_govt_total_votes_add = 20
 		country_legitimacy_ideological_incoherence_mult = 0.33
-		country_bpm_hog_top_parlelec = yes
-		country_bpm_cabinet_government_bonus = yes
 	}
 
 	can_enact = {
@@ -199,9 +188,6 @@ law_no_separate_hog = {
 		country_authority_add = 200
 		country_legitimacy_headofstate_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.5
-		country_bpm_hog_hoshogsame = yes
-		country_bpm_cabinet_hos_bonus = yes
-		country_bpm_cabinet_party_bonus = yes
 	}
 
 	can_enact = {

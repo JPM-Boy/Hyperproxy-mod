@@ -239,7 +239,7 @@ children_rights_events.2 = { #families send their children to work anyway becaus
 		}
 		scope:child_labor_state = {
 			add_radicals_in_state = {
-				strata = lower
+				strata = poor
 				value = medium_radicals
 			}
 		}
@@ -403,16 +403,16 @@ children_rights_events.3 = { #adult men injure themselves trying to do children 
 				ig:ig_trade_unions ={ 
 					ig_clout > 0.10
 				}
-				ig:ig_reformist_communist ={ 
+				ig:ig_reformist_socialists ={ 
 					ig_clout > 0.10
 				}
-				ig:ig_orthodox_communist ={ 
+				ig:ig_revolutionist_socialists ={ 
 					ig_clout > 0.10
 				}
-				ig:ig_anarchist ={ 
+				ig:ig_anarchists ={ 
 					ig_clout > 0.10
 				}
-				ig:ig_prog ?= { 
+				ig:ig_radicals = { 
 					ig_clout > 0.10
 					leader ={ 
 						NOT ={ has_ideology = ideology_market_liberal }
@@ -446,7 +446,7 @@ children_rights_events.3 = { #adult men injure themselves trying to do children 
 			}
 		}
 		else ={ 
-			ig:ig_liberal ={ 
+			ig:ig_liberals ={ 
 				add_modifier ={ 
 					name = disfavored_in_government
 					months = normal_modifier_time

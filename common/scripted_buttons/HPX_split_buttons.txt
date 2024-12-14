@@ -1,0 +1,59 @@
+﻿remove_communism_button_key = {
+	name = "remove_communism_button"
+	desc = "remove_communism_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		NOT = {has_modifier = remove_communism_cooldown}
+	}
+	effect = {
+		add_modifier = {
+			name = remove_communism_cooldown
+			months = 1
+		}
+		add_modifier = {
+			name = less_communism
+			months = 3
+		}
+
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = { bpm_country_is_in_europe = yes }
+			add = 1500
+		}
+	}
+}
+
+add_communism_button_key = {
+	name = "add_communism_button"
+	desc = "add_communism_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		NOT = {has_modifier = add_communism_cooldown}
+	}
+
+	effect = {
+		add_modifier = {
+			name = add_communism_cooldown
+			months = 1
+		}
+		add_modifier = {
+			name = more_communism
+			months = 3
+		}
+	}
+
+	ai_chance = {
+		base = 1000
+	}
+}

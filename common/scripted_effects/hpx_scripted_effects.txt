@@ -353,6 +353,7 @@ if = {
 		tag = AZB
 		origin = c:RUS
 		state = s:STATE_AZERBAIJAN.region_state:RUS
+		state = s:STATE_ELIZAVETPOL.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 
@@ -369,6 +370,8 @@ if = {
 		state = s:STATE_MERZ.region_state:RUS
 		state = s:STATE_KHORASAN.region_state:RUS
 		state = s:STATE_MAZANDARAN.region_state:RUS
+		state = s:STATE_SEMNAN.region_state:RUS
+		on_created = { bpm_setup_country = yes }
 	}
 
 	create_country = {
@@ -468,6 +471,10 @@ if = {
 		remove_diplomatic_pact = {
 	 		country = c:CTA
 			type = puppet
+		}
+
+		every_country = {
+			trigger_event = { id = post_soviet.1 }
 		}
 
 	change_global_variable = {
@@ -632,6 +639,7 @@ dissolve_soviet_hard = {
 			tag = AZB
 			origin = c:RUS
 			state = s:STATE_AZERBAIJAN.region_state:RUS
+			state = s:STATE_ELIZAVETPOL.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
 
@@ -753,7 +761,7 @@ dissolve_soviet_hard = {
 			state = s:STATE_OKHOTSK.region_state:RUS
 			state = s:STATE_SAKHALIN.region_state:RUS
 			state = s:STATE_AMUR.region_state:RUS
-			#state = s:STATE_OUTER_MANCHURIA.region_state:RUS
+			state = s:STATE_OUTER_MANCHURIA.region_state:RUS
 			 		on_created = { bpm_setup_country = yes }
 
 		}
@@ -1014,9 +1022,8 @@ dissolve_soviet_hard = {
 			type = puppet
 		}
 
-		change_global_variable = {
-			name = global_var:soviet_collapse
-			add = 2
+		every_country = {
+			trigger_event = { id = post_soviet.1 }
 		}	
 	}
 }
@@ -1065,4 +1072,43 @@ calculate_russian_radical_progress = {
 			name = soviet_unity
 			add = global_var:soviet_radical_var
 		}
+}
+
+refresh_post_soviet_bars = {
+	je:je_hpx_out_of_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:nationalist_communism
+	        name = communist_nationalism_bar
+	    }
+	}
+	je:je_hpx_out_of_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:struggle_communism
+	        name = communist_struggle_bar
+	    }
+	}
+	je:je_hpx_out_of_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:progressive_communism
+	        name = communist_progressivism_bar
+	    }
+	}
+	je:je_hpx_in_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:nationalist_communism
+	        name = communist_nationalism_bar
+	    }
+	}
+	je:je_hpx_in_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:vanguardist_communism
+	        name = communist_vanguardist_bar
+	    }
+	}
+	je:je_hpx_in_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:reformist_communism
+	        name = communist_reformist_bar
+	    }
+	}
 }

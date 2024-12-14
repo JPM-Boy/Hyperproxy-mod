@@ -106,8 +106,6 @@ types TooltipTypes
 						item = {
 							flowcontainer = {
 								spacing = 5
-								datacontext = "[GetScriptedGui('bpm_ideology_visibility_gui')]"
-								visible = "[Or(ScriptedGui.IsShown( GuiScope.AddScope('ideology', Ideology.MakeScope).End ), InDebugMode)]"
 								icon = {						
 									texture = "[Ideology.GetTexture]"
 									size = { 20 20 }

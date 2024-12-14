@@ -24,7 +24,6 @@
 	every_country = {
 		bpm_refresh_parties = yes
 	}
-
 	every_country = {
 		trigger_event = {
     		id = hpx_misc.1

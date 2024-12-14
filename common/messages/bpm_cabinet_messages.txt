@@ -1,6 +1,0 @@
-bpm_pm_nocofidence = {
-	type = country
-	texture = "gfx/interface/icons/notification_icons/bureaucracy.dds"
-
-	notification_type = toast
-}

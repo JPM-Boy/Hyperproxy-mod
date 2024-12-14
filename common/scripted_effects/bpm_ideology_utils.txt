@@ -150,18 +150,6 @@ bpm_remove_all_sta_ideologies = {
 	}
 }
 
-bpm_remove_all_exe_ideologies = {
-	hidden_effect = {
-		remove_ideology = ideology_exe_placeholder
-		remove_ideology = ideology_exe_strong_dynamic
-		remove_ideology = ideology_exe_weak_dynamic
-		remove_ideology = ideology_exe_strong_rigid
-		remove_ideology = ideology_exe_weak_rigid
-		remove_ideology = ideology_exe_traditional
-		remove_ideology = ideology_exe_ceremonial
-	}
-}
-
 bpm_remove_all_ban_ideologies = {
 	hidden_effect = {
 		remove_ideology = ideology_ban_placeholder

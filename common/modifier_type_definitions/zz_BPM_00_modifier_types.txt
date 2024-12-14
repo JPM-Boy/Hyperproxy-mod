@@ -109,7 +109,7 @@ interest_group_ig_orthodox_communist_pol_str_mult = {
 	decimals = 0
 }
 
-interest_group_ig_socialists_pol_str_mult = {
+interest_group_ig_new_leftism_pol_str_mult = {
 	color = neutral
 	percent = yes
 	decimals = 0
@@ -315,7 +315,7 @@ interest_group_ig_orthodox_communist_pop_attraction_mult = {
 	}
 }
 
-interest_group_ig_socialists_pop_attraction_mult = {
+interest_group_ig_new_leftism_pop_attraction_mult = {
 	decimals=0
 	color=neutral
 	percent=yes

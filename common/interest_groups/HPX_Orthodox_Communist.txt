@@ -18,7 +18,7 @@
 	}
 	
 	enable = {
-		always = yes
+		NOT = {has_variable = orthodox_communism_gone}
 	}
 	
 	on_enable = {

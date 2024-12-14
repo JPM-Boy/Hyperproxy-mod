@@ -404,24 +404,6 @@ internal_security_events.3 = {
 			}
 			bpm_ig_is_rural_institutional = no
 		}
-		any_political_movement = { 
-			law_stance = {
-				law = owner.currently_enacting_law.type
-				value < neutral
-			}
-		}
-		any_political_movement = { 
-			law_stance = { 
-				law = owner.currently_enacting_law.type
-				value > neutral
-			}
-		}
-	}
-
-	cancellation_trigger = {
-		NOT = {
-			currently_enacting_law = scope:current_law_scope
-		}
 	}
 
 	immediate = {
@@ -437,7 +419,6 @@ internal_security_events.3 = {
 					law = law_type:law_secret_police
 					value < neutral
 				}
-				bpm_ig_is_rural_institutional = no
 			}
 			save_scope_as = anti_secret_police_ig
 			leader = {
@@ -446,12 +427,12 @@ internal_security_events.3 = {
 		}
 		random_political_movement = {
 			limit = {
-				law_stance = {
-					law = law_type:law_secret_police
-					value > neutral
-				}
+				bpm_is_political_movement_to_enact
 			}
 			save_scope_as = enacting_movement
+		}
+		any_political_movement = {
+			bpm_is_political_movement_to_preserve = yes
 		}
 	}
 
@@ -460,10 +441,7 @@ internal_security_events.3 = {
 		default_option = yes
 		random_political_movement = {
 			limit = {
-				law_stance = {
-					law = owner.currently_enacting_law.type
-					value < neutral
-				}
+				bpm_is_political_movement_to_preserve = yes
 			}
 			add_modifier = {
 				name = privacy_concerns_movement_modifier
@@ -500,20 +478,24 @@ internal_security_events.3 = {
 				multiplier = -1
 			}
 		}
-		random_political_movement = {
+		if = {
 			limit = {
-				law_stance = {
-					law = owner.currently_enacting_law.type
-					value < neutral
+				any_political_movement = {
+					bpm_is_political_movement_to_preserve = yes
 				}
 			}
-			add_modifier = {
-				name = privacy_concerns_movement_bad_modifier
+			random_political_movement = {
+				limit = {
+					bpm_is_political_movement_to_preserve = yes
+				}
+				add_modifier = {
+					name = privacy_concerns_movement_bad_modifier
+				}
 			}
 		}
 		if = {
 			limit = {
-				exists = scope:enacting_movement
+				scope:enacting_movement ?= { desired_law = law_type:law_secret_police }
 			}
 			scope:enacting_movement ?= {
 				add_modifier = {
@@ -565,16 +547,11 @@ internal_security_events.4 = {
 		}
 		any_political_movement = {
 			political_movement_support > 10
-			any_influenced_interest_group = {
+			any_supporting_interest_group = {
 				is_marginal = no
 			}
-			
-			law_stance = {
-				law_stance = {
-					law = law_guaranteed_liberties
-					value > approve
-				}
-			}
+			bpm_is_political_movement_to_enact
+			desired_law = law_type:law_guaranteed_liberties
 		}
 	}
 
@@ -610,7 +587,7 @@ internal_security_events.4 = {
 		capital = {
 			add_radicals_in_state = {
 				value = large_radicals
-				strata = lower
+				strata = poor
 			}
 		}
 	}

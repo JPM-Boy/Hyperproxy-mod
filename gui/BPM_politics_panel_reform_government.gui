@@ -163,11 +163,11 @@
 					widget = {
 						size = { 0 200 }
 					}
-
+					
 					vbox = {
 						layoutstretchfactor_horizontal = 4
 						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
+						layoutpolicy_vertical = preferred
 						margin = { 10 10 }
 						
 						background = {

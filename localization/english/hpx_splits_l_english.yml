@@ -1,29 +1,87 @@
 ﻿l_english:
-# SOCDEM SPLIT
- hpx_ig.1.t:0 "Movement of the Rose"
- hpx_ig.1.d:0 "As Capitalism is evolving into a new world that never has been so globalized, movements against the wild capitalism without limits and the authoritarian communist regimes has developed a new method of thought, the Third Way. Its members, the @ig_socdem! #yellow Social Democrats#!, have started organizing from universities and academia to the average citizen of our nation. This will surely impact the left."
- hpx_ig.1.f:0 "In the best of cases, these two dimensions of Social Democracy were mutually reinforcing — welfare reforms promoting class confidence and organization, class mobilization giving renewed electoral mandates for further reformism, through a dense network of trade-union and party structures. \n\n-Perry Anderson,"The Light of Europe" (1992)"
- hpx_ig.1.a:0 "A new Left-Wing movement?"
+# Fall Soviet
+je_hpx_fall_soviet: "The Fall of the Soviet Union"
+je_hpx_fall_soviet_reason: "With the #R Soviet Union#! dismantled, orthodox communist parties around the world face a critical decision: adapt to the changing political climate, redefine their ideologies, or risk fading into irrelevance."
 
- je_hpx_split_socdems:0 "The Third Way"
- je_hpx_split_socdems_status:0 "Monitor the emergence of Social Democrats."
- je_hpx_split_socdems_reason:0 "The recent economic and social debates within our country are giving rise to a coalition of former socialists and liberals, who strive for an hybrid system between capitalism and communism for our country, called also the Third Way or Social Democracy. They say that it is a perfect balance between economic growth from capitalism and a good quality of life from the far-left."
+remove_communism_button: "Remove Communist Influence"
+add_communism_button: "Maintain Communist Influence"
+more_communism: "Communism Bolstered"
+less_communism: "Communism Discredited"
+add_communism_cooldown: "Bolstered Communist Cooldown"
+remove_communism_cooldown: "Discredited Communist Cooldown"
 
- hpx_ig.3.t:0 "Movement of the Free Market"
- hpx_ig.3.d:0 "In an era where global markets are more interconnected than ever, a new ideology championing economic freedom and minimal government intervention has emerged. Neoliberalism, emphasizing deregulation, privatization, and free-market capitalism, contrasts starkly with wild capitalism and restrictive communist regimes. Its proponents, the @ig_neolib! #blue Neoliberals#!, are rallying support from financial hubs and think tanks to everyday entrepreneurs. This movement is poised to redefine our nation's economic policies and political discourse."
- hpx_ig.3.f:0 ""Neoliberalism is a philosophy that favors small government, minimal regulation, and free-market economics. It holds that human well-being can best be advanced by liberating individual entrepreneurial freedoms and skills within an institutional framework characterized by strong private property rights, free markets, and free trade. The role of the state is to create and preserve an institutional framework appropriate to such practices. The assumption is that the market, with its self-regulating mechanisms, will lead to the best outcomes for society." \n\n-David Harvey (2005)"
- hpx_ig.3.a:0 "Interesting..."
 
- je_hpx_split_neolibs:0 "The Neoliberal Shift"
-je_hpx_split_neolibs_status:0 "Monitor the rise of Neoliberals."
-je_hpx_split_neolibs_reason:0 "Recent economic and social debates within our country are fostering a coalition of former socialists and liberals advocating for a hybrid economic system that blends capitalism and individual freedom, known as Neoliberalism. They argue it achieves a balance between economic growth driven by free markets and the enhancement of individual prosperity."
+je_hpx_out_of_power_communism: "A New Direction"
+je_hpx_out_of_power_communism_reason: "After the fall of the Soviet Union, the $ig_variant_orthodox_communist$ are in a #r State of Crisis #!.\n\nThere are three possible futures for the #yellow Orthodox Communists#!:\n\n#G Nationalist Faction#!: The Orthodox Communists try to appeal to the Nationalist Faction inside the Interest Group. They will turn into #green National Communists#!.\n\n#r Radical Faction#!: The Orthodox Communists try to appeal to the Radical Faction inside the Interest Group. They will turn into #red Militant Communists#!.\n\n#b #blue Progressist Faction#!#!: The Orthodox Communists try to appeal to the Progressist Faction inside the Interest Group. They will #r dissapear#! and join $ig_variant_new_leftism$."
 
- je_hpx_split_prog:0 "New Progressism"
- je_hpx_split_prog_status:0 "Monitor the emergence of Progressists."
- je_hpx_split_prog_reason: "Recent economic and social debates within our country are fostering a coalition of forward-thinking individuals advocating for a hybrid system that blends economic innovation with social justice, known as Progressivism. They argue it achieves a balance between economic growth and equitable quality of life for all citizens."
+je_hpx_in_power_communism: "New Millenium Communism"
+je_hpx_in_power_communism_reason: "After surviving the collapse of the Soviet Union, the $ig_variant_orthodox_communist$ are at an #r Identity Crisis#!, seeking to redefine their ideology to adapt to the new world order.\n\nThere are three possible futures for the #yellow Orthodox Communists#!:\n\n#G Nationalist Faction#!: The Orthodox Communists embrace patriotism and national identity, evolving into #green National Communists#!.\n\n#r Vanguardist Faction#!: The Orthodox Communists re-embrace the Vanguard and join the #red Neo-Stalinist#! movements.\n\n#b #blue Reformist Faction#!#!: The Orthodox Communists adopt modern reformist policies and align with broader revisionist movements, closer to the $ig_variant_reformist_socialists$."  
 
-hpx_ig.5.t:0 "Movement of Progress"
-hpx_ig.5.d:0 "In an era where social awareness and economic innovation are more interconnected than ever, a new ideology championing social justice and sustainable development has emerged. Progressivism, emphasizing equality, environmental responsibility, and social reforms, contrasts starkly with both unregulated capitalism and restrictive communist regimes. Its proponents, the @ig_prog! #gold Progressives#!, are rallying support from grassroots movements and advocacy groups to everyday citizens. This movement is poised to redefine our nation's social and economic policies and political discourse."
-hpx_ig.5.f:0 "Progressivism is the belief that through reasoned discourse and proactive policy-making, we can advance the well-being of all citizens, ensuring equal opportunities, social justice, and a fair distribution of wealth. Progressives strive to address systemic issues and work towards a more inclusive and equitable society." \n\n-Theodore Roosevelt"
- hpx_ig.5.a: "We should keep up with the times"
- 
+
+communist_nationalism_bar_name: "Nationalist Faction"
+communist_progressivism_bar_name: "Progressist Faction"
+communist_struggle_bar_name: "Radical Faction"
+communist_vanguardist_bar_name: "Vanguardist Faction"
+communist_reformist_bar_name: "Reformist Faction"
+communist_nationalism_bar_desc: "Nationalist Faction - #g [GetPlayer.MakeScope.Var('nationalist_communism').GetValue]#!"
+communist_progressivism_bar_desc: "Progressist Faction - #blue #b [GetPlayer.MakeScope.Var('progressive_communism').GetValue]#!"
+communist_struggle_bar_desc: "Radical Faction - #r [GetPlayer.MakeScope.Var('struggle_communism').GetValue]#!"
+communist_vanguardist_bar_desc: "Vanguardist Faction - #r [GetPlayer.MakeScope.Var('vanguardist_communism').GetValue]#!"
+communist_reformist_bar_desc: "Reformist Faction - #blue #b [GetPlayer.MakeScope.Var('reformist_communism').GetValue]#!"
+
+je_hpx_postsoviet_tooltip: "Any of the factions reaches #yellow 100#!"
+
+nationalist_communism_desc: "The Nationalist Faction is leading"
+progressive_communism_desc: "The Progressive Faction is leading"
+struggle_communism_desc: "The Radical Faction is leading"
+reformist_communism_desc: "The Reformist Faction is leading"
+vanguardist_communism_desc: "The Vanguardist Faction is leading"
+neutral_communism_desc: "It is unclear who is leading"
+
+post_soviet.1.t: "Dissolution of the Soviet Union"
+post_soviet.1.f: "The Chairman just made the speech.\n The Soviet Government has collapsed.\n It is the End of Times..."
+post_soviet.1.a: "Goodbye Comrade..."
+
+post_soviet.2.t: "End of Communism in [SCOPE.sCountry('country').GetNameNoFlag]"
+post_soviet.2.d: "After the dissolution of the #R Soviet Union #!, it was a matter of months until our government fell too. What will be the future of the $ig_variant_orthodox_communist$ in our country?"
+post_soviet.2.f: "\"History has never been a morality play about the inevitable victory of freedom and democracy. Instead, the world remains what it always was: an arena of struggle between idealism and power, good governance and corruption, the surge of freedom and the need to curb it in times of crisis and emergency.\"\n\n - Vladislav M. Zubok"
+post_soviet.2.a: "We will closely see how it evolves."
+
+post_soviet.3.t: "An Untouchable Regime"
+post_soviet.3.d: "After the dissolution of the #R Soviet Union #!, it has become apparent that the regime is not falling apart, it is maintaining power. Despite this, how will the #R Communist Movement #! adapt?"
+post_soviet.3.f: "\"The Cold War was all about the post-World War II breakup of a once close relationship between the Globalists and their Soviet partners.\"\n\n - M. S. King"
+post_soviet.3.a: "We will closely see how it evolves."
+
+post_soviet.4.t: "A Communist Meeting?"
+post_soviet.4.d: "The $ig_variant_orthodox_communist$ are having a meeting on [SCOPE.sState('capital').GetCityHubName] to decide the future of the movement. Who will you support?"
+post_soviet.4.f: "\"If you hope for any sort of dialogue and unity with all factions on the vaguely leftist or radical side of politics, you must cease from silly verbal abuse. If you don't want it, then we go on as we are, fractious and impotent.\"\n\n - Edward Abbey"
+post_soviet.4.a: "Support the #g Nationalist Faction#!"
+post_soviet.4.b: "Support the #r Radical Faction#!"
+post_soviet.4.c: "Support the #blue #b Progressist Faction#!#!"
+
+post_soviet.5.t: "The Emergency Congress of Orthodox Communists"  
+post_soviet.5.d: "In the wake of the Soviet Union's collapse, the leadership of the orthodox communists has convened an emergency congress. Delegates are split between factions: the nationalists advocating for the protection of sovereignty, the progressives seeking modernized socialism, and the radicals calling for a return to revolutionary principles. A decision must be made."  
+post_soviet.5.f: "The comrades argued late into the night, knowing their choice could define the future of socialism."  
+post_soviet.5.a: "Back the #g Nationalist Delegates #!"  
+post_soviet.5.b: "Side with the #r Radical Firebrands #!"  
+post_soviet.5.c: "Support the #blue #b Progressive Reformers #!#!"
+
+post_soviet.6.t: "Consulting the Party Base"  
+post_soviet.6.d: "Facing a crossroads, the leadership has turned to the rank-and-file members of their Interest Group for guidance. Surveys and assemblies reveal deeply polarized views: nationalists argue for pragmatic patriotism, progressives highlight the need for inclusion and adaptation, while radicals demand unwavering loyalty to Marxist orthodoxy. The leadership must now weigh these perspectives."  
+post_soviet.6.f: "From the factory floors to the rural communes, party members voiced their hopes and frustrations."  
+post_soviet.6.a: "Follow the #g Nationalist Consensus #!"  
+post_soviet.6.b: "Reinstate #r Radical Orthodoxy #!"
+post_soviet.6.c: "Embrace the #blue #b Progressive Vision #!#!"
+
+
+add_5_nationalism_tt: "Progress the #g Nationalist Faction#! by 5"
+add_5_radicalism_tt: "Progress the #r Radical Faction#! by 5"
+add_5_progressism_tt: "Support the #blue #b Progressist Faction#!#! by 5"
+add_5_vanguardism_tt: "Progress the #r Vanguardist Faction#! by 5"
+add_5_reformism_tt: "Support the #blue #b Reformist Faction#!#! by 5"
+
+add_10_nationalism_tt: "Progress the #g Nationalist Faction#! by 10"
+add_10_radicalism_tt: "Progress the #r Radical Faction#! by 10"
+add_10_progressism_tt: "Support the #blue #b Progressist Faction#!#! by 10"
+add_10_vanguardism_tt: "Progress the #r Vanguardist Faction#! by 10"
+add_10_reformism_tt: "Support the #blue #b Reformist Faction#!#! by 10"

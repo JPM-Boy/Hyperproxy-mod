@@ -23,6 +23,27 @@ ec_cooldown = {
     icon = gfx/interface/icons/timed_modifier_icons/EU.dds
 }
 
+remove_communism_cooldown = {
+    icon = gfx/interface/icons/ig_icons/liberals.dds
+}
+add_communism_cooldown = {
+    icon = gfx/interface/icons/ig_icons/revolutionists.dds
+}
+
+more_communism = {
+    icon = gfx/interface/icons/ig_icons/revolutionists.dds
+    interest_group_ig_orthodox_communist_pop_attraction_mult = 0.75
+    interest_group_ig_reformist_communist_pop_attraction_mult = 0.75
+    interest_group_ig_new_leftism_pop_attraction_mult = 0.75
+}
+
+less_communism = {
+    icon = gfx/interface/icons/ig_icons/liberals.dds
+    interest_group_ig_orthodox_communist_pop_attraction_mult = -0.75
+    interest_group_ig_reformist_communist_pop_attraction_mult = -0.75
+    interest_group_ig_new_leftism_pop_attraction_mult = -0.75
+}
+
 british_mail_blame = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
     state_bureaucracy_population_base_cost_factor_mult = 0.1

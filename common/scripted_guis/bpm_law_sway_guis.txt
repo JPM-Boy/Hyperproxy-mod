@@ -185,7 +185,7 @@ bpm_decrease_police_sway_gui = {
 			institution_investment_level = { institution = institution_police value > 1 }
 		}
 		OR = {
-			is_interest_group_type = ig_anarchist
+			is_interest_group_type = ig_anarchists
 			AND = {
 				NOT = { owner = { has_law = law_type:law_council_republic } }
 				OR = {
@@ -223,7 +223,7 @@ bpm_decrease_home_affairs_sway_gui = {
 			institution_investment_level = { institution = institution_home_affairs value > 1 }
 		}
 		OR = {
-			is_interest_group_type = ig_anarchist
+			is_interest_group_type = ig_anarchists
 			trigger_if = {
 				limit = { owner = { has_law = law_type:law_council_republic } }
 				bpm_ig_is_labor = no
@@ -434,29 +434,6 @@ bpm_promise_sway_gui = {
 		owner = { 
 			bpm_update_law_enactment_variables_modifiers = yes 
 			trigger_event = { id = bpm_provisional_government_events.2 days = 0 popup = yes }
-		}
-	}
-}
-
-bpm_cabinet_sway_gui = {
-	scope = interest_group
-	is_shown = {
-		owner = { has_variable = bpm_has_cabinet}
-		NOT = { owner = { any_interest_group = { has_variable = bpm_cabinet_promised_ig }} } # only one promise at a time
-		NOT = { has_modifier = bpm_law_sway_cabinet_mod } # cannot use same sway twice
-		NOT = { owner = { has_variable = bpm_cannot_promise_a_cabinet }} # cannot promise law after breaking a promise
-		NOT = { owner = { modifier:country_bpm_can_not_promise_cabinet_bool = yes } } # Can not promise law if blocked by modifier (usually from breaking promise)
-		NOT = { modifier:interest_group_bpm_can_not_promise_cabinet_to_bool = yes } # Same as above but for specific IG targeting
-		is_in_government = yes
-	}
-	is_valid = {
-		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
-	}
-	effect = {
-		set_variable = bpm_cabinet_promised_ig
-		owner = { 
-			bpm_update_law_enactment_variables_modifiers = yes 
-			trigger_event = { id = bpm_provisional_government_events.3 days = 0 popup = yes }
 		}
 	}
 }

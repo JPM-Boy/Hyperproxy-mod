@@ -30,7 +30,7 @@
 			}
 			random_law = {
 				limit = {
-					type = law_type:law_republic
+					type = law_type:law_presidential_republic
 				}
 				save_scope_as = coup_desired_law
 			}
@@ -52,7 +52,7 @@
 			}
 			random_law = {
 				limit = {
-					type = law_type:law_republic
+					type = law_type:law_parliamentary_republic
 				}
 				save_scope_as = coup_desired_law
 			}

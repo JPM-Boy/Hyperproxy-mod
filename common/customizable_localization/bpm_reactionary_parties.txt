@@ -53,7 +53,7 @@ fra_reactionary_party_name = {
 	text = {
 		trigger = {
 			#game_date < 1899.1.1
-			ig:ig_reactionary ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
+			ig:ig_reactionaries ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
 		}
 		localization_key = party_fra_legitamist
 	}
@@ -64,7 +64,7 @@ fra_reactionary_party_name = {
 			#		has_law = law_type:law_monarchy
 			#		has_law = law_type:law_theocracy
 			#}
-			ig:ig_reactionary ?= { has_ideology = ideology:ideology_sta_organic_state }
+			ig:ig_reactionaries ?= { has_ideology = ideology:ideology_sta_organic_state }
 		}
 		localization_key = party_fra_action
 	}
@@ -77,14 +77,14 @@ por_reactionary_party_name = {
 	text = {
 		trigger = {
 			#NOT = { has_technology_researched = corporatism }
-			ig:ig_reactionary ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
+			ig:ig_reactionaries ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
 		}
 		localization_key = party_por_miguelista
 	}
 	text = {
 		trigger = {
 			#has_technology_researched = corporatism
-			ig:ig_reactionary ?= { has_ideology = ideology:ideology_sta_organic_state }
+			ig:ig_reactionaries ?= { has_ideology = ideology:ideology_sta_organic_state }
 		}
 		localization_key = party_por_lusitania
 	}
@@ -175,7 +175,7 @@ brz_reactionary_party_name = {
 				has_law = law_type:law_monarchy 
 				has_law = law_type:law_theocracy
 			}
-			ig:ig_reactionary ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
+			ig:ig_reactionaries ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
 		}
 		localization_key = party_brz_restorer
 	}
@@ -185,13 +185,13 @@ brz_reactionary_party_name = {
 				has_law = law_type:law_monarchy 
 				has_law = law_type:law_theocracy
 			}
-			ig:ig_reactionary ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
+			ig:ig_reactionaries ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
 		}
 		localization_key = party_brz_catholic
 	}
 	text = {
 		trigger = {
-			ig:ig_reactionary ?= { has_ideology = ideology:ideology_sta_organic_state }
+			ig:ig_reactionaries ?= { has_ideology = ideology:ideology_sta_organic_state }
 		}
 		localization_key = party_brz_aipb
 	}
@@ -257,13 +257,13 @@ aus_reactionary_party_name = {
 	
 	text = {
 		trigger = {
-			ig:ig_reactionary ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
+			ig:ig_reactionaries ?= { NOT = { has_ideology = ideology:ideology_sta_organic_state } }
 		}
 		localization_key = party_german_people
 	}
 	text = {
 		trigger = {
-			ig:ig_reactionary ?= { has_ideology = ideology:ideology_sta_organic_state }
+			ig:ig_reactionaries ?= { has_ideology = ideology:ideology_sta_organic_state }
 		}
 		localization_key = party_fatherland_front
 	}

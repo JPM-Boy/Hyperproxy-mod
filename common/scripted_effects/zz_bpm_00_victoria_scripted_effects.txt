@@ -1,4 +1,4 @@
-### Vargas
+﻿### Vargas
 
 calculate_populism_progress = {
 	set_variable = { name = populism_progress_var_next value = 0 }
@@ -34,8 +34,7 @@ calculate_populism_progress = {
 	set_variable = { name = populism_progress_from_pb value = 0 }
 	if = {
 		limit = {
-			exists = ig:ig_cons
-			ig:ig_cons ?= {
+			ig:ig_national_liberals = {
 				is_marginal = yes
 			}
 		}
@@ -45,8 +44,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			exists = ig:ig_cons
-			ig:ig_cons ?= {
+			ig:ig_national_liberals = {
 				is_powerful = yes
 			}
 		}
@@ -248,11 +246,10 @@ calculate_caudillo_progress = {
 	if = {
 		limit = {
 			any_interest_group = {
-				#OR = {
-				#	has_ideology = ideology:ideology_mil_institutional_militarist
-				#	has_ideology = ideology:ideology_dop_autocrat
-				#}
-				bpm_ig_is_anti_democratic = yes
+				OR = {
+					has_ideology = ideology:ideology_mil_institutional_militarist
+					has_ideology = ideology:ideology_dop_autocrat
+				}
 				is_powerful = yes
 			}
 		}
@@ -264,11 +261,10 @@ calculate_caudillo_progress = {
 	if = {
 		limit = {
 			any_interest_group = {
-				#OR = {
-				#	has_ideology = ideology:ideology_mil_institutional_militarist
-				#	has_ideology = ideology:ideology_dop_autocrat
-				#}
-				bpm_ig_is_anti_democratic = yes
+				OR = {
+					has_ideology = ideology:ideology_mil_institutional_militarist
+					has_ideology = ideology:ideology_dop_autocrat
+				}
 				is_in_government = yes
 			}
 		}
@@ -294,11 +290,10 @@ calculate_caudillo_progress = {
 	if = {
 		limit = {
 			any_interest_group = {
-				#OR = {
-				#	has_ideology = ideology:ideology_mil_institutional_militarist
-				#	has_ideology = ideology:ideology_dop_autocrat
-				#}
-				bpm_ig_is_anti_democratic = yes
+				OR = {
+					has_ideology = ideology:ideology_mil_institutional_militarist
+					has_ideology = ideology:ideology_dop_autocrat
+				}
 				is_marginal = yes
 			}
 		}
@@ -310,11 +305,10 @@ calculate_caudillo_progress = {
 	if = {
 		limit = {
 			any_interest_group = {
-				#OR = {
-				#	has_ideology = ideology:ideology_mil_institutional_militarist
-				#	has_ideology = ideology:ideology_dop_autocrat
-				#}
-				bpm_ig_is_anti_democratic = yes
+				OR = {
+					has_ideology = ideology:ideology_mil_institutional_militarist
+					has_ideology = ideology:ideology_dop_autocrat
+				}
 				is_in_government = no
 			}
 		}
@@ -402,15 +396,6 @@ calculate_caudillo_progress = {
 			add = -1
 		}
 
-	}
-	if = {
-		limit = {
-			NOT = { has_law = law_type:law_purchased_officers }
-		}
-		change_variable = {
-			name = caudillo_next
-			add = -1
-		}
 	}
 }
 

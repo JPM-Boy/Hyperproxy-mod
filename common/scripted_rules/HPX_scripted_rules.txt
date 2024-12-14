@@ -1,4 +1,0 @@
-﻿# Root = Country
-can_lead_power_bloc = {
-	always = yes
-}

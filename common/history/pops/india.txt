@@ -1,4 +1,18 @@
 ﻿POPS = {
+	s:STATE_EASTERN_HIMALAYAS = {
+		region_state:BHU = {
+			create_pop = {
+				culture = tibetan
+				size = 1250000
+			}
+		}
+		region_state:NAX = {
+			create_pop = {
+				culture = tibetan
+				size = 3000000
+			}
+		}
+	}
 	s:STATE_BALUCHISTAN = {
 		region_state:PAK = {
 			create_pop = {

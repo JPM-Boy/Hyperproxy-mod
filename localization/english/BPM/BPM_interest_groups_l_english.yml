@@ -60,14 +60,8 @@
  ig_orthodox_communist_only_icon:0 "@ig_orthodox_communist!"
  ig_orthodox_communist_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
 
- ig_revolutionist_social_democrats:0 "Left Social Democrats"
- ig_revolutionist_social_democrats_desc:0 "Revolutionist Social Democrats, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
-
- ig_communists:0 "Communists"
- ig_communists_desc:0 "Communists believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the German Spartacists and the Russian Bolsheviks."
-
- ig_narodniks_urban:0 "Narodniks (Urban)"
- ig_narodniks_urban_desc:0 "Narodniks are a term that describes a branch of Russian populist thought that formed as a result of the harsh realities of Russian serfdom, ideologically inspired by the practices of Russain Obschina. The so-called Urban branch of Narodniks, arriving as a result of empowerment of the Obschina, synthesises the global socialist thought that focuses on urban workers with the unique reality of Obschina as a collective self-governing institution, promoting a distinctly more urban interpretation of the primarily agrarian ideology."
+ ig_national_communists:0 "National Communists"
+ ig_militant_communists:0 "Militant Communists"
 
 # Reformist Socialists
  ig_reformist_communist:0 "Reformist Socialists"
@@ -338,7 +332,8 @@
  ig_variant_radicals:0 "[GetInterestGroupVariant('ig_prog',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_reactionaries:0 "[GetInterestGroupVariant('ig_reactionary',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_reformist_socialists:0 "[GetInterestGroupVariant('ig_reformist_communist',GetPlayer).GetNameWithCountryVariant]"
- ig_variant_revolutionist_socialists:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"  ig_variant_socialists:0 "[GetInterestGroupVariant('ig_socialists',GetPlayer).GetNameWithCountryVariant]"
+ ig_variant_revolutionist_socialists:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"
+ ig_variant_new_leftism:0 "[GetInterestGroupVariant('ig_new_leftism',GetPlayer).GetNameWithCountryVariant]"
 
  interest_group_ig_agrarian_populists_pop_attraction_mult:1 "$ig_variant_agrarian_populists$ Pop Attraction"
  interest_group_ig_agrarian_populists_pop_attraction_mult_desc:1 "A bonus or penalty to the how attracted Pops are to the $ig_variant_agrarian_populists$ [concept_interest_group]"
@@ -373,8 +368,8 @@
  interest_group_ig_orthodox_communist_pop_attraction_mult:1 "$ig_variant_revolutionist_socialists$ Pop Attraction"
  interest_group_ig_orthodox_communist_pop_attraction_mult_desc:1 "A bonus or penalty to the how attracted Pops are to the $ig_variant_revoluionist_socialists$ [concept_interest_group]"
 
- interest_group_ig_socialists_pop_attraction_mult:1 "$ig_variant_socialists$ Pop Attraction"
- interest_group_ig_socialists_pop_attraction_mult_desc:1 "A bonus or penalty to the how attracted Pops are to the $ig_variant_socialists$ [concept_interest_group]"
+ interest_group_ig_new_leftism_pop_attraction_mult:1 "$ig_variant_new_leftism$ Pop Attraction"
+ interest_group_ig_new_leftism_pop_attraction_mult_desc:1 "A bonus or penalty to the how attracted Pops are to the $ig_variant_new_leftism$ [concept_interest_group]"
 
  interest_group_ig_agrarian_populists_pol_str_mult:1 "$ig_variant_agrarian_populists$ Political Strength"
  interest_group_ig_agrarian_populists_pol_str_mult_desc:1 "A bonus or penalty to the political strength of the $ig_variant_agrarian_populists$ [concept_interest_group]"
@@ -409,5 +404,5 @@
  interest_group_ig_orthodox_communist_pol_str_mult:1 "$ig_variant_revolutionist_socialists$ Political Strength"
  interest_group_ig_orthodox_communist_pol_str_mult_desc:1 "A bonus or penalty to the political strength of the $ig_variant_revoluionist_socialists$ [concept_interest_group]"
 
- interest_group_ig_socialists_pol_str_mult:1 "$ig_variant_socialists$ Political Strength"
- interest_group_ig_socialists_pol_str_mult_desc:1 "A bonus or penalty to the political strength of the $ig_variant_socialists$ [concept_interest_group]"
+ interest_group_ig_new_leftism_pol_str_mult:1 "$ig_variant_new_leftism$ Political Strength"
+ interest_group_ig_new_leftism_pol_str_mult_desc:1 "A bonus or penalty to the political strength of the $ig_variant_new_leftism$ [concept_interest_group]"

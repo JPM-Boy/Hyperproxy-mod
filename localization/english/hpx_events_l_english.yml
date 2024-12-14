@@ -6,10 +6,6 @@ hpx_misc.1.f: "You have chosen a country without initial lore yet."
 hpx_misc.1.f.RUS: "The Soviet Union recently lost the Moon Race and they are working towards the Mars Race. The Soviet sphere of influence never has been so big. Now that the West is fractured, what is our next plan? We are waiting orders."
 hpx_misc.1.a: "Thank you"
 
-hpx_misc.2.t: "Dissolution of the Soviet Union"
-hpx_misc.2.f: "The Chairman just made the speech.\n The Soviet Government has collapsed.\n It is the End of Times..."
-hpx_misc.2.a: "Goodbye Comrade..."
-
 hpx_organization.1.t: "Should we request Financial Aid?"
 hpx_organization.1.d: "As the nation teeters on the brink of default, our minister urges us to seek aid from the IMF. Should we reach out for support and navigate this crisis together?"
 hpx_organization.1.f: "In times of crisis, nations must either rise together or fall apart. Seeking aid is not a sign of weakness, but a testament to our commitment to recovery."

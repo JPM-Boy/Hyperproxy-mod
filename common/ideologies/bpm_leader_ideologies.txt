@@ -28,13 +28,6 @@ ideology_moderate = {
 					bpm_ig_is_fascist = yes
 				}
 			}
-
-		NOT = {
-			AND = {
-				is_interest_group_type = ig_intelligentsia
-				modifier:interest_group_bpm_intelligentsia_force_leader_non_moderate = yes # Forced to have opinions
-			}
-		}
 	}
 	
 	interest_group_leader_weight = {
@@ -77,13 +70,6 @@ ideology_moderate = {
     					bpm_ig_is_fascist = yes
     				}
     			}
-    
-    		NOT = {
-    			AND = {
-    				is_interest_group_type = ig_intelligentsia
-    				modifier:interest_group_bpm_intelligentsia_force_leader_non_moderate = yes # Forced to have opinions
-    			}
-    		}
     	}
 		NOT = { has_role = agitator }
 	}
@@ -229,7 +215,7 @@ ideology_traditionalist = {
 					}
 				}
 			}
-			leader = { religion = ROOT.religion }
+			leader = { religion = owner.religion }
 		}
 	}
 	

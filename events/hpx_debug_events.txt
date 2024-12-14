@@ -21,3 +21,12 @@ hpx_debug.1 = { # EU Creation
 		}
 	}
 }
+
+hpx_debug.2 = { # EU Creation
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		add_journal_entry = { type = je_hpx_in_power_communism }
+	}
+}

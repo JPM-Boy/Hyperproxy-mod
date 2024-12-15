@@ -1,13 +1,5 @@
 ﻿COUNTRIES = {
 	c:GBR = {
-		ig:ig_cons = {
-			set_variable = english_var
-		}
-		ig:ig_liberal = {
-			set_variable = french_var
-		}
-		ig:ig_orthodox_communist = {
-			set_variable = french_var
-		}
+		add_journal_entry = {type = je_hpx_anglo_french_influence}
 	}
 }

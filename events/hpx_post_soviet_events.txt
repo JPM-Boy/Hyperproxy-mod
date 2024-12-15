@@ -6,6 +6,7 @@ post_soviet.1 = { # Fall of the Soviet Union
 
 	event_image = { texture = "gfx/event_pictures/test.dds" }
 	gui_window = superevent
+	is_popup = yes
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
 	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"

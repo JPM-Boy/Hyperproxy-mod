@@ -1,91 +1,34 @@
 ﻿namespace = hpx_GBR_event
 
-hpx_GBR_event.1 = { # French Liberals vs Capitalists
+hpx_GBR_event.1 = {# Dissolution
 	type = country_event
 	placement = root
 
-	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	event_image = { texture = "gfx/event_pictures/mitterand.dds" }
+	gui_window = superevent
+	is_popup = yes
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/timed_modifier_icons/GBR.dds"
 	title = hpx_GBR_event.1.t
 	desc = hpx_GBR_event.1.d
 	flavor = hpx_GBR_event.1.f
 	duration = 3
 
-	immediate = {
-		ig:ig_liberal = {
-			save_scope_as = liberal_ig_scope
-		}
-	}
-
 	option = {
 		name = hpx_GBR_event.1.a
 		default_option = yes
-
-		ai_chance = {
-            base = 30
-        }
-		
-		ig:ig_liberal = {
-			add_modifier = {
-				name = french_investors_accepted
-				months = 4
-			}
-		}
-
-		add_radicals = {
-			value = 0.1
-			strata = rich
-			culture = british
-		}
-
-		set_global_variable = { 
-			name = anglo_french_balance_event_var
-			value = -10 
-
-		}
-		custom_tooltip = {
-        	text = ten_french_influence
-        }
 	}
-	option = {
-		name = hpx_GBR_event.1.b
-		ai_chance = {
-            base = 70
-        }
-	
-		ig:ig_liberal = {
-			add_modifier = {
-				name = french_investors_rejected
-				months = 4
-			}
-			add_modifier = {
-				name = member_exodus
-				months = 6
-			}
-		}
-		ig:ig_cons = {
-			add_modifier = {
-				name = member_influx
-				months = 6
-			}
-		}
-
-		set_global_variable = { name = anglo_french_balance_event_var value = 10 }
-		custom_tooltip = {
-        	text = ten_english_influence
-        }
-	}
-
 }
 
-hpx_GBR_event.2 = { # French Communists vs Hippies
+hpx_GBR_event.2 = {
 	type = country_event
 	placement = root
 
 	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/timed_modifier_icons/GBR.dds"
 	title = hpx_GBR_event.2.t
 	desc = hpx_GBR_event.2.d
 	flavor = hpx_GBR_event.2.f
@@ -93,56 +36,40 @@ hpx_GBR_event.2 = { # French Communists vs Hippies
 
 	option = {
 		name = hpx_GBR_event.2.a
-		ai_chance = {
-            base = 30
-        }
-
-		ig:ig_orthodox_communist = {
-			add_modifier = {
-				name = french_hippie_communism
-				months = 3
-			}
+		change_variable = {
+			name = anglo_progress
+			add = 10
 		}
-		add_radicals = {
-			value = 0.1
-			interest_group = ig:ig_cons
-			culture = british
+		change_variable = {
+			name = french_progress
+			add = -10
 		}
-
-		set_global_variable = { name = anglo_french_balance_event_var value = -10 }
-		custom_tooltip = {
-        	text = ten_french_influence
-        }
-
+		refresh_anglo_french = yes
+		ai_chance = 50
 	}
-
 	option = {
 		name = hpx_GBR_event.2.b
-		ai_chance = {
-            base = 70
-        }
-
-		ig:ig_cons = {
-			add_modifier = {
-				name = member_influx
-				months = 6
-			}
+		change_variable = {
+			name = french_progress
+			add = 10
 		}
-
-		set_global_variable = { name = anglo_french_balance_event_var value = 10 }
-		custom_tooltip = {
-        	text = ten_english_influence
-        }
+		change_variable = {
+			name = anglo_progress
+			add = -10
+		}
+		refresh_anglo_french = yes
+		ai_chance = 50
 	}
 }
 
-hpx_GBR_event.3 = { # Mail Issues
+hpx_GBR_event.3 = {
 	type = country_event
 	placement = root
 
 	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/timed_modifier_icons/GBR.dds"
 	title = hpx_GBR_event.3.t
 	desc = hpx_GBR_event.3.d
 	flavor = hpx_GBR_event.3.f
@@ -150,256 +77,69 @@ hpx_GBR_event.3 = { # Mail Issues
 
 	option = {
 		name = hpx_GBR_event.3.a
-		c:GBR = {
-			add_modifier = {
-				name = british_mail_blame
-				months = 3
-			}
+		change_variable = {
+			name = anglo_progress
+			add = 10
 		}
-		set_global_variable = { name = anglo_french_balance_event_var value = -10 }
-		custom_tooltip = {
-        	text = ten_french_influence
-        }
-        ai_chance = {
-            base = 40
-        }
+		change_variable = {
+			name = french_progress
+			add = -10
+		}
+		refresh_anglo_french = yes
+		ai_chance = 50
 	}
-
 	option = {
 		name = hpx_GBR_event.3.b
-		add_radicals = {
-			value = 0.1
-			strata = middle
-			culture = french
+		change_variable = {
+			name = french_progress
+			add = 10
 		}
-		set_global_variable = { name = anglo_french_balance_event_var value = 10 }
-		custom_tooltip = {
-        	text = ten_english_influence
-        }
-        ai_chance = {
-            base = 60
-        }
+		change_variable = {
+			name = anglo_progress
+			add = -10
+		}
+		refresh_anglo_french = yes
+		ai_chance = 50
 	}
 }
 
-hpx_GBR_event.4 = { # Media Bias
+hpx_GBR_event.4 = {
 	type = country_event
 	placement = root
 
 	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/timed_modifier_icons/GBR.dds"
 	title = hpx_GBR_event.4.t
 	desc = hpx_GBR_event.4.d
 	flavor = hpx_GBR_event.4.f
 	duration = 3
 
-		option = {
-			name = hpx_GBR_event.4.a
-			c:GBR = {
-				add_modifier = {
-					name = british_media_encouraged
-					months = 3
-				}
-			}
-			every_interest_group = {
-				limit = {has_variable = english_var }
-				add_modifier = {
-					name = british_media
-					months = 3
-				}
-			}
-			ai_chance = {
-            base = 50
-        	}
-		}
-
-		option = {
-			name = hpx_GBR_event.4.b
-			c:GBR = {
-				add_modifier = {
-					name = french_media_encouraged
-					months = 3
-				}
-			}
-			every_interest_group = {
-				limit = {has_variable = french_var }
-				add_modifier = {
-					name = french_media
-					months = 3
-				}
-			}
-			ai_chance = {
-            base = 50
-        	}
-		}
-	}
-
-hpx_GBR_event.5 = { # Divided Parliament
-	type = country_event
-	placement = root
-
-	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
-	title = hpx_GBR_event.5.t
-	desc = hpx_GBR_event.5.d
-	flavor = hpx_GBR_event.5.f
-	duration = 3
-
 	option = {
-		name = hpx_GBR_event.5.a
-		set_global_variable = { name = anglo_french_balance_event_var value = 25 }
-		custom_tooltip = {
-        	text = 25_english_influence
-        }
-        every_interest_group = {
-			limit = {has_variable = english_var }
-			add_modifier = {
-				name = big_ig_support
-				months = 3
-			}
+		name = hpx_GBR_event.4.a
+		change_variable = {
+			name = anglo_progress
+			add = 10
 		}
-		ai_chance = {
-            base = 75
-        }
+		change_variable = {
+			name = french_progress
+			add = -10
+		}
+		refresh_anglo_french = yes
+		ai_chance = 50
 	}
 	option = {
-		name = hpx_GBR_event.5.b
-		set_global_variable = { name = anglo_french_balance_event_var value = -25 }
-		custom_tooltip = {
-        	text = 25_french_influence
-        }
-        every_interest_group = {
-			limit = {has_variable = french_var }
-			add_modifier = {
-				name = big_ig_support
-				months = 3
-			}
+		name = hpx_GBR_event.4.b
+		change_variable = {
+			name = french_progress
+			add = 10
 		}
-		ai_chance = {
-            base = 25
-        }
+		change_variable = {
+			name = anglo_progress
+			add = -10
+		}
+		refresh_anglo_french = yes
+		ai_chance = 50
 	}
 }
-
-hpx_GBR_event.6 = {# Capital moves to Paris
-	type = country_event
-	hidden = yes
-
-	immediate = {
-		set_capital = STATE_ILE_DE_FRANCE
-	}
-}
-
-hpx_GBR_event.7 = {#Dissolution English
-	type = country_event
-	placement = root
-
-	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
-	title = hpx_GBR_event.7.t
-	desc = hpx_GBR_event.7.d
-	flavor = hpx_GBR_event.7.f
-	duration = 3
-
-	immediate = {
-		if = {
-			limit = {NOT = {exists = c:FRA}}
-			set_capital = STATE_HOME_COUNTIES
-			remove_primary_culture = french
-			sr:region_france = {
-       			every_scope_state = {
-       				limit = {owner = c:GBR}
-       				save_scope_as = french_states
-       			}
-    		}
-
-			create_country = {
- 				tag = FRA
- 				origin = c:GBR
- 				state = scope:french_states
-			}
-
-			sr:region_france = {
-				every_scope_state = {
-					limit = {owner = c:GBR}
-					set_state_owner = c:FRA
-				}
-			}
-
-			sr:region_occitania = {
-				every_scope_state = {
-					limit = {owner = c:GBR}
-					set_state_owner = c:FRA
-				}
-			}
-
-			c:FRA = {
-				set_capital = STATE_ILE_DE_FRANCE
-			}
-		}
-	}
-
-	option = {
-		name = hpx_GBR_event.7.a
-		play_as = c:FRA
-	}
-	option = {
-		name = hpx_GBR_event.7.b
-		default_option = yes
-	}
-	
-}
-
-hpx_GBR_event.8 = {#Dissolution French
-	type = country_event
-	placement = root
-
-	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
-	title = hpx_GBR_event.8.t
-	desc = hpx_GBR_event.8.d
-	flavor = hpx_GBR_event.8.f
-	duration = 3
-
-	immediate = {
-		if = {
-		limit = {NOT = {exists = c:SCO}}
-		s:STATE_LOWLANDS = {
-       		every_scope_state = {
-       			limit = {owner = c:GBR}
-       			save_scope_as = scotland
-       		}
-    	}
-
-		create_country = {
- 			tag = SCO
- 			origin = c:GBR
- 			state = scope:scotland
-		}
-
-		s:STATE_HIGHLANDS.region_state:GBR = {
-			set_state_owner = c:SCO
-		}
-
-		c:SCO = {
-			bpm_setup_country = yes
-		}
-		
-		}
-
-	}
-	option = {
-		name = hpx_GBR_event.8.a
-		play_as = c:SCO
-	}
-	option = {
-		name = hpx_GBR_event.8.b
-		default_option = yes
-	}
-}
-
-

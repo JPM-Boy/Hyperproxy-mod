@@ -51,86 +51,67 @@ je_hpx_anglo_french_influence = {
 
 	group = je_group_internal_affairs
 
-	is_shown_when_inactive = {
-		c:GBR = root
-	}
-
-	possible = {
-		has_state_in_state_region = STATE_ILE_DE_FRANCE
-		has_state_in_state_region = STATE_HOME_COUNTIES
-		
-	}
-
-	fail = {
-		NOT = {has_state_in_state_region = STATE_ILE_DE_FRANCE}
-	}
+	timeout = 7300
 
 	immediate = {
-		set_global_variable = { name = anglo_influence_progress value = 100 }
-		set_global_variable = { name = french_influence_progress value = 100 }
-		
-		if = {
-			limit = {
-				is_player = yes
-			}
-			calculate_anglo_french_passive_progress = yes
-			calculate_anglo_french_ig_progress = yes
-			calculate_anglo_french_radical_progress = yes
-			calculate_anglo_french_event_progress = yes
-
-			scope:journal_entry = {
-				set_global_variable = { name = anglo_influence_progress value = "scripted_bar_progress(french_english_progress_bar)" }
-				set_global_variable = { name = french_influence_progress value = 200 }
-				change_global_variable = { name = french_influence_progress subtract = global_var:anglo_influence_progress }
-			}
-		}
-		sr:region_england = {
-			save_scope_as = england_region
-		}
-		sr:region_france = {
-			save_scope_as = france_region
-		}
+		set_variable = { name = anglo_progress value = 100 }
+		set_variable = { name = french_progress value = 100 }
     }
 
 	weight = 150
-	on_weekly_pulse = {
-        effect = {
-			update_anglo_french_progressbar_tooltips = yes
-        }
-    }
+
+	fail = {
+		custom_tooltip = {
+			text = anglofrench_progress_tt
+			OR = {
+				var:anglo_progress >= 200
+				var:french_progress >= 200
+			}
+		}
+	}
 
 	on_monthly_pulse = {
 		effect = {
-			calculate_anglo_french_passive_progress = yes
-			calculate_anglo_french_ig_progress = yes
-			calculate_anglo_french_radical_progress = yes
-			calculate_anglo_french_event_progress = yes
-			calculate_anglo_french_events = yes
-		} 
+			anglo_french_effects = yes
+		}
 		random_events = {
-			200 = 0
-			10 = hpx_GBR_event.1
+			30 = 0
 			10 = hpx_GBR_event.2
 			10 = hpx_GBR_event.3
 			10 = hpx_GBR_event.4
-			10 = hpx_GBR_event.5
 		}
-		
-
 	}
 
+	on_fail = {
+		custom_tooltip = {
+			text = anglofrench_collapse_tt
+			every_country = {
+				trigger_event = hpx_GBR_event.1
+			}
+		}
+		
+		if = {
+			limit = {var:anglo_progress >= 200}
+			hpx_free_france = yes
+		} else_if = {
+			limit = {var:french_progress >= 200}
+			hpx_free_britain = yes
+		}
+		remove_variable = var:anglo_progress
+		remove_variable = var:french_progress
+	}
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
 				desc = anglo_french_influence_french
 				trigger = {
-					global_var:french_influence_progress >= 125
+					var:french_progress >= 125
 				}
 			}
 			triggered_desc = {
 				desc = anglo_french_influence_anglo
 				trigger = {
-					global_var:anglo_influence_progress >= 125
+					var:anglo_progress >= 125
 				}
 			}
 			triggered_desc = {

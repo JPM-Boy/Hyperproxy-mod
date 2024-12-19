@@ -2192,24 +2192,6 @@ movement_communist = {
 	}	
 	
 	additional_radicalism_factors = {
-		owner = {
-			if = {
-				limit = { has_institution = institution_workplace_safety }
-				
-				add = {
-					value = 5
-					subtract = "institution_investment_level(institution_workplace_safety)"
-					multiply = 0.05
-					desc = "INSTITUTION_FUNDING_LEVEL_workplace_safety"
-				}
-			}
-			else = {
-				add = {
-					value = 1
-					desc = "NO_INSTITUTION_workplace_safety"
-				}		
-			}
-		}
 	}
 }
 

@@ -90,6 +90,7 @@ hpx_organization.2 = { # EU
         trigger = {
         	global_var:euro_integration = 0
         }
+
 	}
 	option = {
 		name = hpx_organization.2.b
@@ -182,9 +183,11 @@ hpx_organization.3 = {
 	option = {
 		name = hpx_organization.3.r
 		default_option = yes
+		ai_chance = { base = 0}
 	}
 	option = {
 		name = hpx_organization.3.a
+		ai_chance = { base = 200}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -197,10 +200,17 @@ hpx_organization.3 = {
 					sr:region_iberia = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -210,6 +220,8 @@ hpx_organization.3 = {
 						region = sr:region_iberia
 					}
 					NOT = {has_variable = eu_member}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 				}
 			}
 			trigger_event = {id = hpx_organization.4}
@@ -217,6 +229,7 @@ hpx_organization.3 = {
 	}
 	option = {
 		name = hpx_organization.3.b
+		ai_chance = { base = 200}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -229,10 +242,17 @@ hpx_organization.3 = {
 					sr:region_baltic = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -241,6 +261,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_baltic
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -248,6 +270,7 @@ hpx_organization.3 = {
 		}
 	}
 	option = {
+		ai_chance = { base = 200}
 		name = hpx_organization.3.c
 		show_as_unavailable = {always = yes}
 		trigger = {
@@ -261,10 +284,17 @@ hpx_organization.3 = {
 					sr:region_italy = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -273,6 +303,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_italy
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -280,6 +312,7 @@ hpx_organization.3 = {
 		}
 	}
 	option = {
+		ai_chance = { base = 100}
 		name = hpx_organization.3.d
 		show_as_unavailable = {always = yes}
 		trigger = {
@@ -293,10 +326,17 @@ hpx_organization.3 = {
 					sr:region_north_germany = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -305,6 +345,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_north_germany
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -313,6 +355,7 @@ hpx_organization.3 = {
 	}
 	option = {
 		name = hpx_organization.3.e
+		ai_chance = { base = 100}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -325,10 +368,17 @@ hpx_organization.3 = {
 					sr:region_south_germany = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -337,6 +387,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_south_germany
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -345,6 +397,7 @@ hpx_organization.3 = {
 	}
 	option = {
 		name = hpx_organization.3.f
+		ai_chance = { base = 200}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -356,11 +409,21 @@ hpx_organization.3 = {
 					}
 					sr:region_rhine = {
 						any_scope_country = {
-							NOT = {has_variable = eu_member}
+							AND = {
+								NOT = {has_variable = eu_member}
+								is_active_in_diplomatic_play = no
+								is_at_war = no
+
+							}
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -369,6 +432,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_rhine
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -377,6 +442,7 @@ hpx_organization.3 = {
 	}
 	option = {
 		name = hpx_organization.3.g
+		ai_chance = { base = 150}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -389,10 +455,17 @@ hpx_organization.3 = {
 					sr:region_balkans = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -402,6 +475,8 @@ hpx_organization.3 = {
 						region = sr:region_balkans
 					}
 					NOT = {has_variable = eu_member}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 				}
 			}
 			trigger_event = {id = hpx_organization.4}
@@ -409,6 +484,7 @@ hpx_organization.3 = {
 	}
 	option = {
 		name = hpx_organization.3.h
+		ai_chance = { base = 150}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -421,10 +497,17 @@ hpx_organization.3 = {
 					sr:region_danubia = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -433,6 +516,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_danubia
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -441,6 +526,7 @@ hpx_organization.3 = {
 	}
 	option = {
 		name = hpx_organization.3.i
+		ai_chance = { base = 100}
 		show_as_unavailable = {always = yes}
 		trigger = {
 			any_country = {
@@ -453,10 +539,17 @@ hpx_organization.3 = {
 					sr:region_poland = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -465,6 +558,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_poland
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -472,6 +567,7 @@ hpx_organization.3 = {
 		}
 	}
 	option = {
+		ai_chance = { base = 200}
 		name = hpx_organization.3.j
 		show_as_unavailable = {always = yes}
 		trigger = {
@@ -485,10 +581,17 @@ hpx_organization.3 = {
 					sr:region_north_sea_coast = {
 						any_scope_country = {
 							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
 						}
 					}
 				}
 			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
 		}
 		every_country = {
 			save_scope_as = country_to_invite
@@ -497,6 +600,8 @@ hpx_organization.3 = {
 					capital = {
 						region = sr:region_north_sea_coast
 					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -517,10 +622,20 @@ hpx_organization.4 = {
 	option = {
 		name = hpx_organization.4.a
 		set_variable = { name = eu_member }
+		every_in_global_list = {
+			variable = eu_memberlist
+			save_scope_as = country_this
+			remove_list_global_variable = {
+				name = eu_memberlist
+				target = scope:country_this
+			}
+		}
 		every_country = {
 			limit = {
 				has_variable = eu_member
+				is_in_civil_war = no
 			}
+
 			add_to_global_variable_list = {
 				name = eu_memberlist
 				target = THIS
@@ -545,5 +660,23 @@ hpx_organization.4 = {
 	option = {
 		name = hpx_organization.4.b
 		ai_chance = { base = 80 }
+		every_in_global_list = {
+			variable = eu_memberlist
+			save_scope_as = country_this
+			remove_list_global_variable = {
+				name = eu_memberlist
+				target = scope:country_this
+			}
+		}
+		every_country = {
+			limit = {
+				has_variable = eu_member
+				is_in_civil_war = no
+			}
+			add_to_global_variable_list = {
+				name = eu_memberlist
+				target = THIS
+			}
+		}
 	}
 }

@@ -2859,6 +2859,13 @@ EGE = { # Eastern Germany
 		priority = 1000
 	}
 }
+EURO = { # Europa
+	flag_definition = {
+		coa = EURO
+		subject_canton = EURO
+		priority = 1000
+	}
+}
 
 EGY = { # Egypt
 	flag_definition = {

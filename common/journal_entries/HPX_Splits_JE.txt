@@ -288,7 +288,7 @@ je_hpx_new_leftism = {
 			}
 		}
 	}
-	timeout = 730
+	timeout = 1500
 	weight = 1000
 
 	immediate = {

@@ -16,6 +16,15 @@ NORV = {
 
 }
 
+EURO = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	colored_emblem = {
+		texture = "ce_stars_circle_13.dds"
+		color1 = "yellow"
+	}
+}
+
 WGE = {
 	pattern = "pattern_solid.tga"
 	color1 = "black"

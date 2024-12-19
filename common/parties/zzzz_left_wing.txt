@@ -482,7 +482,7 @@ leftwing_party = {
 					AND = {
 						exists = owner.py:leftwing_party
 						owner = {
-							ig:ig_new_leftism = {
+							ig:ig_new_leftism ?= {
 								NOT = { is_member_of_party = owner.py:leftwing_party }
 							}
 						}

@@ -345,7 +345,7 @@ window = {
                                         textbox = {
                                             using = tooltip_above
                                             datacontext = "[Scope.AccessCountry]"                       
-                                            raw_text = "[GetGlobalVariable('var_imf_memberlist').GetValue] Members"
+                                            raw_text = "[GetDataModelSize(GetGlobalList('imf_contribution_list'))] Members"
                                             using = fontsize_large
                                         }
                                     }
@@ -382,7 +382,7 @@ window = {
                     }
                 }
             }
-            ### Diploamtic
+            ### Diplomatic
             flowcontainer = {
                 visible = "[GetVariableSystem.Exists('org_diplomatic')]"
                 using = default_content_fade
@@ -390,13 +390,14 @@ window = {
                 direction = vertical
                 spacing = 0
                 margin_bottom = 10
+
                 section_header_button = { ## European Union ##
                             parentanchor = center|top
                             blockoverride "layout" {
                                 size = { 500 40 }
                             }
                             blockoverride "left_text" {
-                                raw_text = "European Community"
+                                text = EU
                             }
                             blockoverride "onclick" {
                                 onclick = "[GetVariableSystem.Toggle('eu_panel')]"
@@ -408,7 +409,7 @@ window = {
                                 visible = "[GetVariableSystem.Exists('eu_panel')]"
                             }
                         }
-                flowcontainer = { 
+                flowcontainer = {
                     direction = vertical
                     margin_top = 10
                     margin_bottom = 10
@@ -441,13 +442,13 @@ window = {
                                         spacing = 20
                                         datacontext = "[Scope.AccessCountry]"
                                         textbox = {
-                                            using = tooltip_above           
+                                            using = tooltip_above
                                             raw_text = "#t Headquarters#!"
                                             using = fontsize_large
                                         }
                                         textbox = {
                                             using = tooltip_above
-                                            datacontext = "[Scope.AccessCountry]"                       
+                                            datacontext = "[Scope.AccessCountry]"
                                             raw_text = "[Country.GetCapital.GetCityHubName], [Country.GetNameNoFlag]"
                                             using = fontsize_large
                                         }
@@ -468,20 +469,34 @@ window = {
                                         spacing = 20
                                         datacontext = "[Scope.AccessCountry]"
                                         textbox = {
-                                            using = tooltip_above           
+                                            using = tooltip_above
                                             raw_text = "#T Member Count#!"
                                             using = fontsize_large
                                         }
                                         textbox = {
                                             using = tooltip_above
-                                            datacontext = "[Scope.AccessCountry]"                       
-                                            raw_text = "[GetGlobalVariable('var_eu_memberlist').GetValue] Members"
+                                            datacontext = "[Scope.AccessCountry]"
+                                            raw_text = "[GetDataModelSize(GetGlobalList('eu_memberlist'))] Members"
                                             using = fontsize_large
                                         }
                                     }
                                 }
                             }
+                            widget = {
+                                size = { 250 20 }
+                                divider_clean = {
+                                    parentanchor = center
+                                }
+                            }
+                            button = {
+                                using = default_button_primary_action
+                                size = { 100% 40 }
+                                onclick = "[GetScriptedGui('toggle_eu').Execute( GuiScope.SetRoot(GetPlayer.MakeScope).End )]"
+                                visible = "[GetPlayer.MakeScope.Var('eu_member').IsSet]"
+                                text = ENTER
+                            }
                         }
+
                         ######## Background
                         background = {
                             texture = "gfx/interface/illustrations/government/government_illustration.dds"

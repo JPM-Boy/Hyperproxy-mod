@@ -21,26 +21,3 @@
         }
     }
 }
-EU_Member = {
-    # UN Members
-    if = {
-        limit = {
-            global_var:var_eu_memberlist = {
-                exists = yes
-            }
-        }
-        set_global_variable = {
-            name = var_eu_memberlist
-            value = 0
-        }
-        every_country = {
-            limit = {
-                has_variable = eu_member
-            }
-            change_global_variable = {
-                name = var_eu_memberlist
-                add = 1
-            }
-        }
-    }
-}

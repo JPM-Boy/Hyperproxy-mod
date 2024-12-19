@@ -1,6 +1,7 @@
 ﻿on_yearly_pulse_country = {
 	on_actions = {
 		on_bpm_yearly_pulse_country
+		hpx_space_agency_funds
 	}
 }
 
@@ -18,7 +19,35 @@ on_monthly_pulse_country = {
 		hpx_single_party_reload
 	}
 }
-
+on_monthly_pulse = {
+	on_actions = {
+		hpx_eu_reload
+	}
+}
+hpx_space_agency_funds = {
+	effect = {
+		change_variable = {
+			name = space_agency_total_funds
+			add = var:space_agency_funds
+		}
+		set_variable = {
+			name = space_agency_total_money
+			value = var:space_agency_funds
+		}
+		change_variable = {
+			name = space_agency_total_money
+			multiply = -1000000
+		}
+		owner = {
+			add_treasury = var:space_agency_total_money
+		}
+	}
+}
+hpx_eu_reload = {
+	effect = {
+		eu_voting = yes
+	}
+}
 hpx_single_party_reload = {
 	effect = {
 		bpm_update_single_party_ideology_support = yes

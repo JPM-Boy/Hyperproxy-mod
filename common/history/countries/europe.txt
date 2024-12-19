@@ -77,4 +77,9 @@
     		name = eu_member
     	}
 	}
+	c:LUX = {
+		set_variable = {
+    		name = eu_member
+    	}
+	}
 }

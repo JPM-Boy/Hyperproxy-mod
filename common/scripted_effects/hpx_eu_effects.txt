@@ -1,0 +1,158 @@
+﻿eu_voting = {
+    if = {
+        limit = { NOT = {global_var:eu_treaty_selection = -1}}
+        every_in_global_list = {
+            variable = eu_vote_yes
+            save_scope_as = yes_country
+            remove_list_global_variable = {
+                name = eu_vote_yes
+                target = scope:yes_country
+            }
+        }
+        every_in_global_list = {
+            variable = eu_vote_no
+            save_scope_as = no_country
+            remove_list_global_variable = {
+                name = eu_vote_no
+                target = scope:no_country
+            }
+        }
+        every_in_global_list = {
+            variable = eu_vote_neutral
+            save_scope_as = neutral_country
+            remove_list_global_variable = {
+                name = eu_vote_neutral
+                target = scope:neutral_country
+            }
+        }
+
+        every_in_global_list = {
+            variable = eu_memberlist
+            save_scope_as = target_country
+            c:GBR = {
+                if = {
+                    limit = {
+                        OR = {
+                            scope:target_country ={ relations:prev >= relations_threshold:amicable }
+                            scope:target_country = c:GBR
+                        }
+                    }
+                    add_to_global_variable_list = {
+                        name = eu_vote_yes
+                        target = scope:target_country
+                    }
+                } else_if = {
+                    limit = {
+                        scope:target_country ={ relations:prev < relations_threshold:cordial}
+                    }
+                    add_to_global_variable_list = {
+                        name = eu_vote_no
+                        target = scope:target_country
+                    }
+                } else = {
+                    add_to_global_variable_list = {
+                        name = eu_vote_neutral
+                        target = scope:target_country
+                    }
+                }
+            }
+        }
+    }
+}
+european_unification = {
+    change_tag = EURO
+    every_in_global_list = {
+        variable = eu_memberlist
+        save_scope_as = state_region_owner
+        activate_law = law_type:law_republic
+        c:EURO = {
+            if = {
+                limit = {NOT = {scope:state_region_owner = c:EURO}}
+                create_diplomatic_pact = {
+                    country = scope:state_region_owner
+                    type = puppet
+                }
+            }
+        }
+        remove_variable = eu_member
+        if = {
+            limit = {NOT = {scope:state_region_owner = c:EURO}}
+            remove_list_global_variable = {
+                name = eu_memberlist
+                target = scope:state_region_owner
+            }
+        }
+    }
+    set_global_variable = {
+        name = european_unification
+    }
+}
+check_eu_treaty = {
+    set_global_variable = {
+        name = eu_yes_count
+        value = 0
+    }
+    set_global_variable = {
+        name = eu_member_count
+        value = 0
+    }
+    every_in_global_list = {
+        variable = eu_vote_yes
+        change_global_variable = {
+            name = eu_yes_count
+            add = 1
+        }
+    }
+    every_in_global_list = {
+
+        variable = eu_memberlist
+        change_global_variable = {
+            name = eu_member_count
+            add = 1
+        }
+    }
+    if = {
+        limit = {global_var:eu_yes_count = global_var:eu_member_count}
+        change_global_variable = {
+            name = euro_integration
+            add = 1
+        }
+        set_global_variable = {
+            name = eu_treaty_selection
+            value = -1
+        }
+        every_in_global_list = {
+            variable = eu_vote_neutral
+            remove_list_global_variable = {
+                name = eu_vote_neutral
+                target = THIS
+            }
+        }
+        every_in_global_list = {
+            variable = eu_vote_no
+            remove_list_global_variable = {
+                name = eu_vote_no
+                target = THIS
+            }
+        }
+        every_in_global_list = {
+            variable = eu_vote_yes
+            remove_list_global_variable = {
+                name = eu_vote_yes
+                target = THIS
+            }
+        }
+        every_in_global_list = {
+            variable = eu_memberlist
+            save_scope_as = target_country
+            c:GBR = {
+                change_relations = { country = scope:target_country value = -50 }
+            }
+        }
+    }
+
+    if = {
+        limit = {global_var:euro_integration = 5}
+        european_unification = yes
+    }
+}

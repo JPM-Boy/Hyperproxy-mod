@@ -63,6 +63,22 @@ toggle_un = {
     }
 }
 
+toggle_eu = {
+    effect = {
+        if = {
+            limit = {
+                has_variable = eu_window
+            }
+            remove_variable = eu_window
+            set_variable = organization_panel
+        }
+        else = {
+            set_variable = eu_window
+            remove_variable = organization_panel
+        }
+    }
+}
+
 ## INTERNATIONAL MONETARY FUND
 contribute_imf = {
     scope = country
@@ -271,8 +287,8 @@ ask_development_loan = {
 
 }
 
-## United Nations
-start_un_vote = {
+## European Union Vote
+start_eu_vote = {
     scope = country
     effect = {
         trigger_event = {
@@ -280,6 +296,27 @@ start_un_vote = {
         }
     }
     
+    is_shown = { always = yes }
+    is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
+}
+
+start_eu_expansion = {
+    scope = country
+    effect = {
+        trigger_event = {
+            id = hpx_organization.3
+        }
+    }
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
+}
+
+pass_eu_treaty = {
+    scope = country
+    effect = {
+        check_eu_treaty = yes
+    }
     is_shown = { always = yes }
     is_valid = { always = yes }      # Determines whether the SGUI can be used by a player
 }

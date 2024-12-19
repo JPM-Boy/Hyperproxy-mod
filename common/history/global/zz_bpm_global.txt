@@ -1,10 +1,6 @@
 ﻿GLOBAL = {
 	bpm_set_vanilla_ideologies_list = yes
 	setup_space_race_lists = yes
-	set_global_variable = {
-		name = var_imf_memberlist
-		value = 0
-	}
 	every_country = { 
 		bpm_setup_country = yes
 	}
@@ -32,6 +28,15 @@
 		trigger_event = {
     		id = hpx_misc.1
 		}
+	}
+
+	set_global_variable = {
+		name = euro_integration
+		value = 0
+	}
+	set_global_variable = {
+		name = eu_treaty_selection
+		value = -1
 	}
 
 	######## UNITED NATIONS ########
@@ -82,21 +87,14 @@
 			target = THIS
 		}
 	}
-
-	random_country = {
-		set_global_variable = {
-			name = var_eu_memberlist
-			value = 0
-		}
-	}
 	
 	every_country = {
 		limit = {
 			has_variable = eu_member
 		}
-		change_global_variable = {
-			name = var_eu_memberlist
-			add = 1
+		add_to_global_variable_list = {
+			name = eu_memberlist
+			target = THIS
 		}
 	}
 	######## IMF ########
@@ -118,10 +116,6 @@
 	every_country = {
 		limit = {
 			has_variable = imf_member
-		}
-		change_global_variable = {
-			name = var_imf_memberlist
-			add = 1
 		}
 		add_to_global_variable_list = {
         	name = imf_contribution_list

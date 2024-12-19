@@ -1,52 +1,4 @@
-﻿# European Community
-
-je_hpx_eu_community = {
-	icon = "gfx/interface/icons/timed_modifier_icons/EU.dds"
-
-	group = je_group_internal_affairs
-	scripted_button = convince_EU_button_key
-
-	is_shown_when_inactive = {
-		c:GBR = root
-	}
-
-	possible = {
-		always = yes
-	}
-
-	weight = 200
-
-
-	immediate = {
-		set_global_variable = {
-			name = EC_MEMBERS
-			value = 1
-		}
-	}
-
-	complete = {
-		global_var:EC_MEMBERS >= 8
-	}
-
-	on_complete = {
-		trigger_event = {
-			id = hpx_EU_event.1
-			days = 0
-		}
-	}
-
-	current_value = {
-		value = global_var:EC_MEMBERS
-	}
-
-	goal_add_value = {
-		value = 7
-	}
-	should_be_pinned_by_default = yes
-	progressbar = yes
-}
-
-je_hpx_anglo_french_influence = {
+﻿je_hpx_anglo_french_influence = {
 	icon = "gfx/interface/icons/timed_modifier_icons/GBR.dds"
 
 	group = je_group_internal_affairs
@@ -99,6 +51,9 @@ je_hpx_anglo_french_influence = {
 		}
 		remove_variable = var:anglo_progress
 		remove_variable = var:french_progress
+	}
+	invalid = {
+		exists = c:EURO
 	}
 	status_desc = {
 		first_valid = {

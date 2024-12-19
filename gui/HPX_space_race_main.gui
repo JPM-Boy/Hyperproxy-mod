@@ -7,7 +7,7 @@ window = {
     name = "space_panel"
     size = { 613 100% }
     visible = "[GetPlayer.MakeScope.Var('space_race').IsSet]"
-    default_block_window_two_lines = {
+    default_block_window = {
 
         #HEADER CLOSE
         blockoverride "header_close_button"
@@ -22,27 +22,347 @@ window = {
         {
             text = "Space Race"
         }
-        #SUBTITLE
-        blockoverride "window_header_name_line_two"
-        {
-            text = "To the Moon and beyond!"
-        }
         size = { 100% 100% }
         position = {0 80}
 
+        blockoverride "fixed_top" {
+            tab_buttons = {
+                blockoverride "first_button" {
+                    raw_text = "Space Agency"
+                }
+                blockoverride "first_button_selected"
+                {
+                    raw_text = "Space Agency"
+                }
+                blockoverride "first_button_name" {
+                    name = "Space Agency"
+                }
+                blockoverride "first_button_visibility"
+                {
+                    visible = "[GetVariableSystem.Exists('sr_agency')]"
+                }
+                blockoverride "first_button_visibility_checked"
+                {
+                    visible = "[Not(GetVariableSystem.Exists('sr_agency'))]"
+                }
+                blockoverride "first_button_click"
+                {
+                    onclick = "[GetVariableSystem.Toggle('sr_agency')]"
+                    onclick = "[GetVariableSystem.Clear('sr_missions')]"
+                    onclick = "[GetVariableSystem.Clear('sr_colonies')]"
+                }
+
+
+
+                blockoverride "second_button" {
+                    raw_text = "Missions"
+                }
+                blockoverride "second_button_name" {
+                    name = "Missions"
+                }
+                blockoverride "second_button_visibility"
+                {
+                    visible = "[GetVariableSystem.Exists('sr_missions')]"
+                }
+                blockoverride "second_button_visibility_checked"
+                {
+                    visible = "[Not(GetVariableSystem.Exists('sr_missions'))]"
+                }
+                blockoverride "second_button_selected"
+                {
+                    raw_text = "Missions"
+                }
+                blockoverride "second_button_click"
+                {
+                    onclick = "[GetVariableSystem.Clear('sr_agency')]"
+                    onclick = "[GetVariableSystem.Toggle('sr_missions')]"
+                    onclick = "[GetVariableSystem.Clear('sr_colonies')]"
+                }
+
+
+
+                blockoverride "third_button" {
+                    raw_text = "Colonies"
+                }
+                blockoverride "third_button_name" {
+                    text = "Colonies"
+                }
+                blockoverride "third_button_visibility"
+                {
+                    visible = "[GetVariableSystem.Exists('sr_colonies')]"
+                }
+                blockoverride "third_button_visibility_checked"
+                {
+                    visible = "[Not(GetVariableSystem.Exists('sr_colonies'))]"
+                }
+                blockoverride "third_button_selected"
+                {
+                    raw_text = "Colonies"
+                }
+                blockoverride "third_button_click"
+                {
+                    onclick = "[GetVariableSystem.Clear('sr_agency')]"
+                    onclick = "[GetVariableSystem.Clear('sr_missions')]"
+                    onclick = "[GetVariableSystem.Toggle('sr_colonies')]"
+                }
+            }
+        }
         #CONTENT
-        blockoverride "scrollarea_content" {    
+        blockoverride "scrollarea_content" {
+            # INFORMATION
+            flowcontainer = {
+                direction = vertical
+                visible = "[GetVariableSystem.Exists('sr_agency')]"
+                flowcontainer = {
+                    parentanchor = center|top
+                    direction = horizontal
+                    spacing = 10
+
+                    flowcontainer = {
+                        direction = vertical
+                        spacing = 10
+                        textbox = {
+                            using = fontsize_large
+                            text = FUNDS
+                            using = default_list_position
+                            align = center|nobaseline
+                            multiline = yes
+                            autoresize = yes
+                        }
+                        scrollbox = {
+                            minimumsize = {270 500}
+                            blockoverride "scrollbox_content" {
+                                flowcontainer = {
+                                    spacing = 10
+                                    direction = vertical
+                                    textbox = {
+                                        using = fontsize_large
+                                        text = "Yearly Funds"
+                                        multiline = yes
+                                        autoresize = yes
+                                        using = default_list_position
+                                    }
+                                    flowcontainer = {
+                                        direction = vertical
+                                        
+                                        textbox = {
+                                            using = fontsize_large
+                                            text = "$[GetPlayer.MakeScope.Var('space_agency_funds').GetValue]M"
+                                            fontsize = 30
+                                            multiline = yes
+                                            align = center
+                                            minimumsize = {240 100}
+                                            background = {
+                                                using = entry_bg
+                                            }
+                                        }
+                                        flowcontainer = {
+                                            direction = horizontal
+                                            button_icon_square = {
+                                                size = {120 40}
+                                                text = "+ 1M"
+                                                fontsize = 24
+                                                onclick = "[GetScriptedGui('more_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                            button_icon_square = {
+                                                size = {120 40}
+                                                text = "- 1M"
+                                                fontsize = 24
+                                                onclick = "[GetScriptedGui('less_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                        }
+                                    }
+                                    textbox = {
+                                        autoresize = yes
+                                        text = "• Total Agency Funds: #white #b $[GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue]M"
+                                    }
+                                    divider_decorative = {}
+                                    textbox = {
+                                        using = fontsize_large
+                                        text = "Facilities"
+                                        multiline = yes
+                                        autoresize = yes
+                                        using = default_list_position
+                                    }
+                                    flowcontainer = {
+                                        direction = vertical
+                                        spacing = 5
+                                        flowcontainer = {
+                                            direction = horizontal
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "[GetPlayer.MakeScope.Var('observatories').GetValue] Observatories"
+                                                minimumsize = {160 30}
+                                            }
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "(10M)"
+                                                align = right
+                                                minimumsize = {60 30}
+                                            }
+                                            button_icon_square = {
+                                                size = {30 30}
+                                                text = MORE_FUNDS
+                                                fontsize = 24
+                                                enabled = "[And(GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue,'(CFixedPoint)10'),GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('launch_facilities').GetValue,'(CFixedPoint)1'))]"
+                                                onclick = "[GetScriptedGui('buy_observatories').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                        }
+                                        flowcontainer = {
+                                            direction = horizontal
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "[GetPlayer.MakeScope.Var('research_facilities').GetValue] Research Facilities"
+                                                minimumsize = {160 30}
+                                            }
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "(50M)"
+                                                align = right
+                                                minimumsize = {60 30}
+                                            }
+                                            button_icon_square = {
+                                                size = {30 30}
+                                                text = MORE_FUNDS
+                                                fontsize = 24
+                                                enabled = "[And(GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue,'(CFixedPoint)50'),GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('launch_facilities').GetValue,'(CFixedPoint)1'))]"
+                                                onclick = "[GetScriptedGui('buy_facilities').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                        }
+                                        flowcontainer = {
+                                            direction = horizontal
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "[GetPlayer.MakeScope.Var('satelites').GetValue] Satelites"
+                                                minimumsize = {160 30}
+                                            }
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "(100M)"
+                                                align = right
+                                                minimumsize = {60 30}
+                                            }
+                                            button_icon_square = {
+                                                size = {30 30}
+                                                text = MORE_FUNDS
+                                                fontsize = 24
+                                                enabled = "[And(GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue,'(CFixedPoint)100'),GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('launch_facilities').GetValue,'(CFixedPoint)1'))]"
+                                                onclick = "[GetScriptedGui('buy_satelites').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                        }
+                                        flowcontainer = {
+                                            direction = horizontal
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "[GetPlayer.MakeScope.Var('launch_facilities').GetValue] Launch Facilities"
+                                                minimumsize = {160 30}
+                                            }
+                                            textbox = {
+                                                autoresize = yes
+                                                text = "(250M)"
+                                                align = right
+                                                minimumsize = {60 30}
+                                            }
+                                            button_icon_square = {
+                                                size = {30 30}
+                                                text = MORE_FUNDS
+                                                fontsize = 24
+                                                enabled = "[GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue,'(CFixedPoint)250')]"
+                                                onclick = "[GetScriptedGui('buy_launch').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                        }
+                                    }
+                                    textbox = {
+                                        text = SATELITE_INFO
+                                        multiline = yes
+                                        minimumsize = {240 50}
+                                        align = center
+                                        parentanchor = center|top
+                                        background = {
+                                            using = entry_bg
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    flowcontainer = {
+                        direction = vertical
+                        spacing = 10
+                        textbox = {
+                            using = fontsize_large
+                            text = SPACE_AGENCY_TITLE
+                            using = default_list_position
+                            align = center|nobaseline
+                            multiline = yes
+                            autoresize = yes
+                        }
+                        scrollbox = {
+                            minimumsize = {270 500}
+                            blockoverride "scrollbox_content" {
+                                dynamicgridbox = {
+                                    datamodel_wrap = 4
+                                    flipdirection = yes
+                                    datamodel = "[GetGlobalList('space_agency')]"
+                                    item = {
+                                        flowcontainer = {
+                                            minimumsize = { 60 40 }
+                                            small_flag = {
+                                                visible = "[Scope.AccessCountry]"
+                                                datacontext = "[Scope.AccessCountry]"
+                                                parentanchor = center
+
+                                                blockoverride "flag_tooltip" {
+                                                    tooltipwidget = {
+                                                        FancyTooltipWidgetType = {
+                                                            blockoverride name {
+                                                                text = "[Scope.AccessCountry.GetAdjectiveNoFlag] Space Agency"
+                                                            }
+                                                            blockoverride type {
+                                                                raw_text = "Space Race"
+                                                            }
+                                                            blockoverride text {
+                                                                text = SPACE_RACE_TT
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                textbox = {
+                    margin_top = 20
+                    margin_bottom = 10
+                    using = default_list_position
+                    using = fontsize_large
+                    text = SPACE_INFORMATION
+                    align = center|nobaseline
+                    multiline = yes
+                    autoresize = yes
+                }
+                scrollbox = {
+                    minimumsize = {540 240}
+                    using = default_list_position
+                    blockoverride "scrollbox_content" {
+                    }
+                }
+            }
+            # MISSIONS
             flowcontainer = {
                 direction = vertical
                 using = default_list_position
-
+                visible = "[GetVariableSystem.Exists('sr_missions')]"
                 margin_top = 5
                 spacing = 12
-
                 flowcontainer = {
                     parentanchor = hcenter
-                    direction = horizontal              
-                    
+                    direction = horizontal
+
                     button = {
                         visible = yes
                         text = "Send Mission"
@@ -51,15 +371,21 @@ window = {
                         tooltip = "WIP, will be added soon! First it will be added via decisions, then via this menu!"
                     }
                 }
-                
-                divider_decorative = {}
-                
+            }
+            # COLONIES
+            flowcontainer = {
+                direction = vertical
+                using = default_list_position
+                visible = "[GetVariableSystem.Exists('sr_colonies')]"
+                margin_top = 5
+                spacing = 12
+
                 flowcontainer = {
                     parentanchor = hcenter
                     direction = vertical
                     visible = yes
                     spacing = 6
-                                    
+
                     textbox = {
                         parentanchor = hcenter
                         using = fontsize_large
@@ -70,10 +396,10 @@ window = {
                         multiline = yes
                         autoresize = yes
                     }
-                    
-                    divider_decorative = {}                 
-                }           
-                
+
+                    divider_decorative = {}
+                }
+
                 # Culture countries and flags
                 flowcontainer = {
                     parentanchor = hcenter
@@ -87,7 +413,7 @@ window = {
                         block "datamodel_wrap" {
                             datamodel_wrap = 8
                         }
-                        
+
                         item = {
                             container = {
                                 minimumsize = { 60 40 }
@@ -102,20 +428,20 @@ window = {
                                             FancyTooltip_Country = {}
                                         }
                                     }
-                                }                           
+                                }
                             }
                         }
                     }
                 }
 
                 divider_decorative = {}
-                
+
                 flowcontainer = {
                     parentanchor = hcenter
                     direction = vertical
                     visible = yes
                     spacing = 6
-                                    
+
                     textbox = {
                         parentanchor = hcenter
                         using = fontsize_large
@@ -126,10 +452,10 @@ window = {
                         multiline = yes
                         autoresize = yes
                     }
-                    
-                    divider_decorative = {}                 
-                }           
-                
+
+                    divider_decorative = {}
+                }
+
                 # Culture countries and flags
                 flowcontainer = {
                     parentanchor = hcenter
@@ -143,7 +469,7 @@ window = {
                         block "datamodel_wrap" {
                             datamodel_wrap = 8
                         }
-                        
+
                         item = {
                             container = {
                                 minimumsize = { 60 40 }
@@ -158,20 +484,20 @@ window = {
                                             FancyTooltip_Country = {}
                                         }
                                     }
-                                }                           
+                                }
                             }
                         }
                     }
                 }
 
                 divider_decorative = {}
-                
+
                 flowcontainer = {
                     parentanchor = hcenter
                     direction = vertical
                     visible = yes
                     spacing = 6
-                                    
+
                     textbox = {
                         parentanchor = hcenter
                         using = fontsize_large
@@ -182,10 +508,10 @@ window = {
                         multiline = yes
                         autoresize = yes
                     }
-                    
-                    divider_decorative = {}                 
-                }           
-                
+
+                    divider_decorative = {}
+                }
+
                 # Culture countries and flags
                 flowcontainer = {
                     parentanchor = hcenter
@@ -199,7 +525,7 @@ window = {
                         block "datamodel_wrap" {
                             datamodel_wrap = 8
                         }
-                        
+
                         item = {
                             container = {
                                 minimumsize = { 60 40 }
@@ -214,7 +540,7 @@ window = {
                                             FancyTooltip_Country = {}
                                         }
                                     }
-                                }                           
+                                }
                             }
                         }
                     }
@@ -225,7 +551,7 @@ window = {
                     direction = vertical
                     visible = yes
                     spacing = 6
-                                    
+
                     textbox = {
                         parentanchor = hcenter
                         using = fontsize_large
@@ -236,10 +562,10 @@ window = {
                         multiline = yes
                         autoresize = yes
                     }
-                    
-                    divider_decorative = {}                 
-                }           
-                
+
+                    divider_decorative = {}
+                }
+
                 # Culture countries and flags
                 flowcontainer = {
                     parentanchor = hcenter
@@ -253,7 +579,7 @@ window = {
                         block "datamodel_wrap" {
                             datamodel_wrap = 8
                         }
-                        
+
                         item = {
                             container = {
                                 minimumsize = { 60 40 }
@@ -268,7 +594,7 @@ window = {
                                             FancyTooltip_Country = {}
                                         }
                                     }
-                                }                           
+                                }
                             }
                         }
                     }
@@ -279,7 +605,7 @@ window = {
                     direction = vertical
                     visible = yes
                     spacing = 6
-                                    
+
                     textbox = {
                         parentanchor = hcenter
                         using = fontsize_large
@@ -290,10 +616,10 @@ window = {
                         multiline = yes
                         autoresize = yes
                     }
-                    
-                    divider_decorative = {}                 
-                }           
-                
+
+                    divider_decorative = {}
+                }
+
                 # Culture countries and flags
                 flowcontainer = {
                     parentanchor = hcenter
@@ -307,7 +633,7 @@ window = {
                         block "datamodel_wrap" {
                             datamodel_wrap = 8
                         }
-                        
+
                         item = {
                             container = {
                                 minimumsize = { 60 40 }
@@ -322,12 +648,12 @@ window = {
                                             FancyTooltip_Country = {}
                                         }
                                     }
-                                }                           
+                                }
                             }
                         }
                     }
                 }
-                divider_decorative = {} 
+                divider_decorative = {}
             }
         }
     }

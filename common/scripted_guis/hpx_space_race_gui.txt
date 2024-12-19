@@ -11,3 +11,141 @@
         }
     }
 }
+more_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        change_variable = {
+            name = space_agency_funds
+            add = 1
+        }
+    }
+}
+
+less_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {var:space_agency_funds > 0}
+            change_variable = {
+                name = space_agency_funds
+                add = -1
+            }
+        }
+    }
+}
+
+buy_observatories = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = space_agency_total_funds
+            add = -10
+        }
+        change_variable = {
+            name = observatories
+            add = 1
+        }
+    }
+}
+
+buy_facilities = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = space_agency_total_funds
+            add = -50
+        }
+        change_variable = {
+            name = research_facilities
+            add = 1
+        }
+    }
+}
+
+buy_satelites = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = space_agency_total_funds
+            add = -100
+        }
+        change_variable = {
+            name = satelites
+            add = 1
+        }
+    }
+}
+
+buy_launch = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = observatories}}
+            set_variable = {
+                name = observatories
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = research_facilities}}
+            set_variable = {
+                name = research_facilities
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = satelites}}
+            set_variable = {
+                name = satelites
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = launch_facilities}}
+            set_variable = {
+                name = launch_facilities
+                value = 0
+            }
+        }
+        change_variable = {
+            name = space_agency_total_funds
+            add = -250
+        }
+        change_variable = {
+            name = launch_facilities
+            add = 1
+        }
+        add_to_global_variable_list = {
+            name = space_agency
+            target = this
+        }
+    }
+}

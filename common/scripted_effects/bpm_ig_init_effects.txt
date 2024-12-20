@@ -420,9 +420,9 @@ bpm_initialize_new_leftism = {
 			add_ideology = ideology_cit_internationalist
 			add_ideology = ideology_mil_antimilitarist
 			add_ideology = ideology_eco_proletarian_economy
-			add_ideology = ideology_wel_paternalistic_welfare
+			add_ideology = ideology_wel_expanded_public_welfare
 			add_ideology = ideology_fem_benevolent_sexism
-			add_ideology = ideology_ban_conservative_supremacist
+			add_ideology = ideology_ban_socialist_supremacist
 			add_ideology = ideology_mon_fixed_exchange
 			# Vanilla
 			add_ideology = ideology_egalitarian

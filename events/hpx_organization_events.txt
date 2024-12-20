@@ -56,6 +56,9 @@ hpx_organization.1 = { # IMF
 			add = var:local_third_debt
 		}
 		remove_variable = local_third_debt
+		set_variable = {
+			name = loan_asked
+		}
 	}
 	option = {
 		name = hpx_organization.1.b

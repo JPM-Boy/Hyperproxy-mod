@@ -92,6 +92,7 @@ check_eu_treaty = {
         name = eu_yes_count
         value = 0
     }
+
     set_global_variable = {
         name = eu_member_count
         value = 0
@@ -104,11 +105,17 @@ check_eu_treaty = {
         }
     }
     every_in_global_list = {
-
         variable = eu_memberlist
+        save_scope_as = eu_country
         change_global_variable = {
             name = eu_member_count
             add = 1
+        }
+        c:GBR ?= {
+            set_mutual_secret_goal = {
+                country = scope:eu_country
+                secret_goal = befriend
+            }
         }
     }
     if = {
@@ -155,4 +162,5 @@ check_eu_treaty = {
         limit = {global_var:euro_integration = 5}
         european_unification = yes
     }
+
 }

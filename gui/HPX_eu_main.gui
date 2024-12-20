@@ -411,7 +411,7 @@ window = {
                                     margin_top = 30
                                     parentanchor = hcenter
                                     scrollbox = {
-                                        minimumsize = {60 250}
+                                        minimumsize = {150 250}
                                         blockoverride "scrollbox_content" {
                                             dynamicgridbox = {
                                                 datamodel_wrap = 2

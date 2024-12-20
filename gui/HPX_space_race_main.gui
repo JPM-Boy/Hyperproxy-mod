@@ -357,18 +357,40 @@ window = {
                 direction = vertical
                 using = default_list_position
                 visible = "[GetVariableSystem.Exists('sr_missions')]"
-                margin_top = 5
-                spacing = 12
                 flowcontainer = {
-                    parentanchor = hcenter
-                    direction = horizontal
-
-                    button = {
-                        visible = yes
-                        text = "Send Mission"
-                        using = default_button
-                        size = { 500 75 }
-                        tooltip = "WIP, will be added soon! First it will be added via decisions, then via this menu!"
+                    direction = vertical
+                    section_header_button = { # Earth
+                        blockoverride "layout" {
+                            size = { 520 40 }
+                        }
+                        blockoverride "left_text" {
+                            raw_text = "Earth Missions"
+                        }
+                        blockoverride "onclick" {
+                            onclick = "[GetVariableSystem.Toggle('earth')]"
+                        }
+                        blockoverride "onclick_showless" {
+                            visible = "[Not(GetVariableSystem.Exists('earth'))]"
+                        }
+                        blockoverride "onclick_showmore" {
+                            visible = "[GetVariableSystem.Exists('earth')]"
+                        }
+                    }
+                    flowcontainer = {
+                        direction = vertical
+                        visible = "[GetVariableSystem.Exists('earth')]"
+                        flowcontainer = {
+                            spacing = 10
+                            minimumsize = {520 60}
+                            direction = vertical
+                            button = {
+                                size = {520 60}
+                                using = default_button_primary_big_action
+                                using = default_list_position
+                                using = fontsize_xl
+                                text = "Orbit Earth"
+                            }
+                        }
                     }
                 }
             }

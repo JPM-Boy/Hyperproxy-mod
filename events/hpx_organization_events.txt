@@ -78,6 +78,7 @@ hpx_organization.2 = { # EU
 	flavor = hpx_organization.2.f
 	option = {
 		name = hpx_organization.2.r
+		ai_chance = {base = 0}
 	}
 	option = {
 		name = hpx_organization.2.a
@@ -90,7 +91,13 @@ hpx_organization.2 = { # EU
         trigger = {
         	global_var:euro_integration = 0
         }
-
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				global_var:euro_integration = 0
+			}
+		}
 	}
 	option = {
 		name = hpx_organization.2.b
@@ -103,6 +110,13 @@ hpx_organization.2 = { # EU
         trigger = {
         	global_var:euro_integration = 1
         }
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				global_var:euro_integration = 1
+			}
+		}
 	}
 	option = {
 		name = hpx_organization.2.c
@@ -115,6 +129,13 @@ hpx_organization.2 = { # EU
         trigger = {
         	global_var:euro_integration = 2
         }
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				global_var:euro_integration = 2
+			}
+		}
 	}
 	option = {
 		name = hpx_organization.2.d
@@ -127,6 +148,13 @@ hpx_organization.2 = { # EU
         trigger = {
         	global_var:euro_integration = 3
         }
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				global_var:euro_integration = 3
+			}
+		}
 	}
 	option = {
 		name = hpx_organization.2.e
@@ -139,6 +167,13 @@ hpx_organization.2 = { # EU
         trigger = {
         	global_var:euro_integration = 4
         }
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				global_var:euro_integration = 4
+			}
+		}
 	}
 	option = {
 		name = hpx_organization.2.z
@@ -166,6 +201,9 @@ hpx_organization.2 = { # EU
 				name = eu_vote_yes
 				target = THIS
 			}
+		}
+		ai_chance = {
+			base = 0
 		}
 	}
 }
@@ -202,6 +240,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -222,6 +261,7 @@ hpx_organization.3 = {
 					NOT = {has_variable = eu_member}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 				}
 			}
 			trigger_event = {id = hpx_organization.4}
@@ -244,6 +284,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -263,6 +304,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -286,6 +328,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -305,6 +348,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -328,6 +372,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -347,6 +392,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -370,6 +416,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -389,6 +436,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -413,6 +461,7 @@ hpx_organization.3 = {
 								NOT = {has_variable = eu_member}
 								is_active_in_diplomatic_play = no
 								is_at_war = no
+								is_subject = no
 
 							}
 						}
@@ -434,6 +483,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -457,6 +507,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -476,6 +527,7 @@ hpx_organization.3 = {
 					}
 					NOT = {has_variable = eu_member}
 					is_active_in_diplomatic_play = no
+					is_subject = no
 					is_at_war = no
 				}
 			}
@@ -499,6 +551,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -518,6 +571,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -541,6 +595,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -560,6 +615,7 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}
@@ -583,6 +639,7 @@ hpx_organization.3 = {
 							NOT = {has_variable = eu_member}
 							is_active_in_diplomatic_play = no
 							is_at_war = no
+							is_subject = no
 						}
 					}
 				}
@@ -602,6 +659,95 @@ hpx_organization.3 = {
 					}
 					is_active_in_diplomatic_play = no
 					is_at_war = no
+					is_subject = no
+					NOT = {has_variable = eu_member}
+				}
+			}
+			trigger_event = {id = hpx_organization.4}
+		}
+	}
+	option = {
+		ai_chance = { base = 200}
+		name = hpx_organization.3.k
+		show_as_unavailable = {always = yes}
+		trigger = {
+			any_country = {
+				AND = {
+					sr:region_france = {
+						any_scope_state = {
+							is_capital = yes
+						}
+					}
+					sr:region_france = {
+						any_scope_country = {
+							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
+							is_subject = no
+						}
+					}
+				}
+			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
+		}
+		every_country = {
+			save_scope_as = country_to_invite
+			limit = {
+				AND = {
+					capital = {
+						region = sr:region_france
+					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
+					is_subject = no
+					NOT = {has_variable = eu_member}
+				}
+			}
+			trigger_event = {id = hpx_organization.4}
+		}
+	}
+	option = {
+		ai_chance = { base = 200}
+		name = hpx_organization.3.l
+		show_as_unavailable = {always = yes}
+		trigger = {
+			any_country = {
+				AND = {
+					sr:region_occitania = {
+						any_scope_state = {
+							is_capital = yes
+						}
+					}
+					sr:region_occitania = {
+						any_scope_country = {
+							NOT = {has_variable = eu_member}
+							is_active_in_diplomatic_play = no
+							is_at_war = no
+							is_subject = no
+						}
+					}
+				}
+			}
+			NOT = {has_modifier = ec_cooldown}
+		}
+		add_modifier = {
+			name = ec_cooldown
+			months = 3
+		}
+		every_country = {
+			save_scope_as = country_to_invite
+			limit = {
+				AND = {
+					capital = {
+						region = sr:region_occitania
+					}
+					is_active_in_diplomatic_play = no
+					is_at_war = no
+					is_subject = no
 					NOT = {has_variable = eu_member}
 				}
 			}

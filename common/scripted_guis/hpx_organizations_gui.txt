@@ -298,7 +298,7 @@ start_eu_vote = {
     
     is_shown = { always = yes }
     is_valid = { THIS = c:GBR }      # Determines whether the SGUI can be used by a player
-    ai_is_valid = { always = yes }   # Whether this SGUI is available to the AI or not (default false)
+    ai_is_valid = { THIS = c:GBR }   # Whether this SGUI is available to the AI or not (default false)
     ai_chance = {base = 100}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
     ai_frequency = 1
 }
@@ -318,7 +318,12 @@ start_eu_expansion = {
             THIS = c:GBR
         }
     }      # Determines whether the SGUI can be used by a player
-    ai_is_valid = { always = yes }   # Whether this SGUI is available to the AI or not (default false)
+    ai_is_valid = {
+        AND = {
+            NOT={has_modifier = ec_cooldown}
+            THIS = c:GBR
+        }
+    }   # Whether this SGUI is available to the AI or not (default false)
     ai_chance = {base = 100}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
     ai_frequency = 2          # Named value determining how frequently the AI will evaluate this SGUI (in months)
 }
@@ -330,4 +335,7 @@ pass_eu_treaty = {
     }
     is_shown = { always = yes }
     is_valid = { THIS = c:GBR }      # Determines whether the SGUI can be used by a player
+    ai_is_valid = { THIS = c:GBR }   # Whether this SGUI is available to the AI or not (default false)
+    ai_chance = {base = 100}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
+    ai_frequency = 1          # Named value determining how frequently the AI will evaluate this SGUI (in months)
 }

@@ -22,7 +22,10 @@ hpx_quarter_gdp = {
 hpx_imf_contribution_total = {
 	value = {
 		every_country = {
-			add = var:imf_contribution
+			if = {
+				limit = {has_variable = imf_member}
+				add = var:imf_contribution
+			}
 		}
 	}
 }
@@ -30,7 +33,10 @@ hpx_imf_contribution_total = {
 hpx_imf_debt_total = {
 	value = {
 		every_country = {
-			add = var:imf_debt
+			if = {
+				limit = {has_variable = imf_member}
+				add = var:imf_debt
+			}
 		}
 	}
 }

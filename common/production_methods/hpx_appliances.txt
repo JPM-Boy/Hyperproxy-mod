@@ -33,6 +33,7 @@ pm_appliances_1_2 = {
 			state_pollution_generation_add = 10
 		}
 	}
+
 	unlocking_technologies = {
 		fractional_distillation
 	}
@@ -63,6 +64,7 @@ pm_appliances_1_3 = {
 			state_pollution_generation_add = 10
 		}
 	}
+
 	unlocking_technologies = {
 		shift_work
 	}
@@ -93,6 +95,7 @@ pm_appliances_1_4 = {
 			state_pollution_generation_add = 10
 		}
 	}
+
 	unlocking_technologies = {
 		telephone
 	}
@@ -121,15 +124,18 @@ pm_appliances_2_1 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_1_TAN.dds"
 	#No Smart Stuff
 }
+
 pm_appliances_2_2 = {
 	texture = "gfx/interface/icons/production_method_icons/PM_2_TAN.dds"
 	unlocking_technologies = {
 		telephone
 	}
+
 	unlocking_production_methods = {
 		pm_appliances_1_3
-		pm_appliances_1_4 
+		pm_appliances_1_4
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -154,10 +160,12 @@ pm_appliances_2_3 = {
 	unlocking_technologies = {
 		radio
 	}
+
 	unlocking_production_methods = {
 		pm_appliances_1_3
-		pm_appliances_1_4 
+		pm_appliances_1_4
 	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods

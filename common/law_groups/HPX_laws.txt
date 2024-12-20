@@ -7,3 +7,28 @@
 	progressive_movement_chance = 1
 	regressive_movement_chance = 0.25
 }
+
+lawgroup_work_hours = {
+	law_group_category = human_rights
+	base_enactment_days = 90
+	enactment_approval_mult = 3.0
+	
+	
+	progressive_movement_chance = 1
+	regressive_movement_chance = 0.25
+}
+
+lawgroup_labor_rights = {
+	law_group_category = human_rights
+	affected_by_regime_change = yes
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25	
+}
+
+lawgroup_labor_unions = {
+	law_group_category = economy
+	affected_by_regime_change = yes
+	
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.5
+}

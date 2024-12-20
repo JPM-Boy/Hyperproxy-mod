@@ -1,0 +1,133 @@
+﻿bpm_setup_party_establishment = {
+    bpm_setup_party_establishment_subp = { PARTY = centre_left }
+    bpm_setup_party_establishment_subp = { PARTY = centre_right }
+    bpm_setup_party_establishment_subp = { PARTY = far_left }
+    bpm_setup_party_establishment_subp = { PARTY = far_right }
+    bpm_setup_party_establishment_subp = { PARTY = leftwing }
+    bpm_setup_party_establishment_subp = { PARTY = rightwing }  
+}
+
+bpm_trend_party_establishment = {
+    bpm_trend_party_establishment_subp = { PARTY = centre_left }
+    bpm_trend_party_establishment_subp = { PARTY = centre_right }
+    bpm_trend_party_establishment_subp = { PARTY = far_left }
+    bpm_trend_party_establishment_subp = { PARTY = far_right }
+    bpm_trend_party_establishment_subp = { PARTY = leftwing }
+    bpm_trend_party_establishment_subp = { PARTY = rightwing }  
+}
+
+bpm_momentum_party_establishment = {
+    bpm_trend_party_establishment = yes
+    bpm_momentum_party_establishment_subp = { PARTY = centre_left }
+    bpm_momentum_party_establishment_subp = { PARTY = centre_right }
+    bpm_momentum_party_establishment_subp = { PARTY = far_left }
+    bpm_momentum_party_establishment_subp = { PARTY = far_right }
+    bpm_momentum_party_establishment_subp = { PARTY = leftwing }
+    bpm_momentum_party_establishment_subp = { PARTY = rightwing }
+}
+
+
+## SUBPs
+
+bpm_momentum_party_establishment_subp = {
+    if = {
+        limit = {
+            exists = py:$PARTY$_party
+        }
+        save_scope_value_as = {
+            name = calculated_momentum
+            value = {
+                value = 0.5
+                multiply = {
+                    value = var:bpm_party_establishment_$PARTY$
+                    subtract = 1
+                    multiply = 2
+                }
+                divide = 100
+                multiply = var:bpm_political_stability
+                divide = 100
+            }
+        }
+
+        save_scope_as = country
+        py:$PARTY$_party ?= {
+            add_momentum = {
+                value = {
+                    value = scope:calculated_momentum
+                    if = {
+                        limit = {
+                            scope:country = { has_variable = bpm_last_party_establishment_momentum_$PARTY$ } 
+                        }
+                        subtract = scope:country.var:bpm_last_party_establishment_momentum_$PARTY$
+                    }
+                }
+            }
+        }
+        set_variable = {
+            name = bpm_last_party_establishment_momentum_$PARTY$
+            value = scope:calculated_momentum
+        }
+    }
+
+}
+
+bpm_setup_party_establishment_subp = {
+    set_variable = {
+        name = bpm_party_establishment_$PARTY$ # easier to concat if it's at the end
+        value = 0
+    }
+}
+
+bpm_trend_party_establishment_subp = {
+    if = {
+        limit = {
+            exists = py:$PARTY$_party
+        }
+        set_variable = {
+            name = bpm_party_establishment_cached_trend_$PARTY$
+            value = py:$PARTY$_party.bpm_party_establishment_trend
+        }
+    }
+    else_if = {
+        limit = {
+            has_variable = bpm_party_establishment_$PARTY$
+        }
+        set_variable = {
+            name = bpm_party_establishment_cached_trend_$PARTY$
+            value = -2
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                has_variable = bpm_party_establishment_$PARTY$
+            }
+            exists = py:$PARTY$_party
+        }
+        bpm_setup_party_establishment_subp = { PARTY = $PARTY$ }
+    }
+
+    if = {
+        limit = {
+            has_variable = bpm_party_establishment_cached_trend_$PARTY$
+        }
+        change_variable = {
+            name = bpm_party_establishment_$PARTY$
+            add = var:bpm_party_establishment_cached_trend_$PARTY$
+        }
+        clamp_variable = {
+            name = bpm_party_establishment_$PARTY$
+            max = 100
+            min = 0
+        }
+        # py:$PARTY$_party ?= {
+        #     every_member = {
+        #         set_variable = {
+        #             name = bpm_party_establishment
+        #             value = prev.var:bpm_party_establishment_$PARTY$
+        #         }
+        #     }
+        # }
+    }
+}

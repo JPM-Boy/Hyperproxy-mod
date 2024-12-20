@@ -6,6 +6,16 @@ ig_cons_desc:0 "Conservatives refer to the broad set of people who want to prese
 
 ig_english_cons: "English Conservatives"
 
+#Security
+ig_security:0 "Security Interests"
+ig_security_only_icon:0 "@ig_security!"
+ig_security_desc:0 "WIP"
+
+#Academia
+ig_academia:0 "Academic Interests"
+ig_academia_only_icon:0 "@ig_academia!"
+ig_academia_desc:0 "WIP"
+
 #Anarchists
 ig_anarchist:0 "Anarchists"
 ig_anarchist_only_icon:0 "@ig_anarchist!"
@@ -15,6 +25,11 @@ ig_anarchist_desc:0 "Anarchists refer to the broad groups that believe in the im
 ig_ecologist:0 "Ecologists"
 ig_ecologist_only_icon:0 "@ig_ecologist!"
 ig_ecologist_desc:0 "Ecologists refer to the many movements which main objective is the preservation of the Earth and its Ecosystems. They usually mix with Liberals and other type of Progressist ideologies."
+
+
+ig_variant_ecologist:0 "[GetInterestGroupVariant('ig_ecologist',GetPlayer).GetNameWithCountryVariant]"
+interest_group_ig_ecologist_pol_str_mult:1 "$ig_variant_ecologist$ Political Strength"
+
 
 ig_soc_ecologist: "Eco-Socialists"
 ig_english_ecologist: "English Hippies"
@@ -40,11 +55,12 @@ ig_liberal_only_icon:0 "@ig_liberal!"
 ig_liberal_desc:0 "Modern liberalism, focuses on individual freedoms, democratic governance, and the rule of law while advocating for economic policies that combine free-market principles with some level of government intervention. It prioritizes civil liberties, human rights, and equality of opportunity, emphasizing the importance of social welfare, education, and healthcare to ensure that all individuals can participate fully in society."
 
 ig_french_liberal: "French Republicans"
+ig_moderate_liberals: "Moderate Liberals"
 
 #Libertarianism
 ig_classical_liberal:0 "Classical Liberals"
 ig_classical_liberal_only_icon:0 "@ig_classical_liberal!"
-ig_classical_liberal_desc:0 "Libertarianism, emphasizes individual freedom, limited government, and free-market capitalism. It advocates for minimal state intervention in personal and economic matters, prioritizing property rights, voluntary exchange, and personal responsibility. Libertarians seek to maximize personal autonomy and minimize the role of government in all aspects of life, supporting civil liberties, free speech, and privacy. Their focus is on reducing taxes, regulations, and government spending, believing that a free and open market best serves society's interests."
+ig_classical_liberal_desc:0 "WIP"
 
 #Neoliberals
 ig_neolib:0 "Neo-Liberals"
@@ -53,7 +69,7 @@ ig_neolib_desc:0 "Neoliberalism, emphasizes free-market capitalism, deregulation
 
 #Progressists
 ig_prog:0 "Progressists"
-ig_prog_only_icon:0 "@ig_radicals!"
+ig_prog_only_icon:0 "@ig_prog!"
 ig_prog_desc:0 "Progressivism, focuses on addressing social inequalities and promoting social justice through active government intervention. It advocates for policies that expand social welfare, protect workers' rights, and ensure equal opportunities for all. Progressives support progressive taxation, universal healthcare, and strong environmental regulations. They emphasize the importance of inclusive governance, civil rights, and grassroots activism to create a fair and equitable society, striving for systemic reforms to address economic and social disparities."
 
 #Reactionaries
@@ -70,6 +86,7 @@ ig_reformist_communist_desc:0 "Reformist Socialists vary in their commitment to 
 ig_orthodox_communist:0 "Orthodox Communists"
 ig_orthodox_communist_only_icon:0 "@ig_orthodox_communist!"
 ig_orthodox_communist_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
+ig_variant_orthodox_communist:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"
 
 ig_french_revsoc: "French Communists"
 
@@ -77,6 +94,11 @@ ig_french_revsoc: "French Communists"
 ig_new_leftism:0 "New Leftism"
 ig_new_leftism_only_icon:0 "@ig_new_leftism!"
 ig_new_leftism_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
+ig_variant_new_leftism:0 "[GetInterestGroupVariant('ig_new_leftism',GetPlayer).GetNameWithCountryVariant]"
+
+ig_revolutionary_leftism: "Revolutionary Leftists"
+ig_radical_progressives: "Radical Progressists"
+ig_neo_communists: "Neo Communists"
 
 
 #Socdems
@@ -87,3 +109,6 @@ ig_socdem_desc:0 "Social democracy, aims to integrate capitalist economies with 
 ig_minority:0 "Minority Interests"
 ig_minority_only_icon:0 "@ig_minority!"
 ig_minority_desc:0 "Minority Interests is a coalition representing the diverse ethnic, cultural, and religious minorities across the nation. Advocating for the rights of marginalized communities, they push for policies that ensure equal treatment, protection, and fair representation in government. This interest group seeks to challenge systemic discrimination and promote social inclusion, aiming to build a society where all groups have an opportunity to thrive. As their influence grows, they champion reforms in education, civil rights, and public services, striving to secure a stronger, more unified voice for the underrepresented."
+
+ig_variant_minority:0 "[GetInterestGroupVariant('ig_minority',GetPlayer).GetNameWithCountryVariant]"
+interest_group_ig_minority_pol_str_mult:1 "$ig_variant_minority$ Political Strength"

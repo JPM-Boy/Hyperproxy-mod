@@ -151,6 +151,24 @@ texticon = {
     size = {30 30}
   }
 }
+texticon = {
+  icon = ig_academia
+  iconsize = {
+    offset = {0 6}
+    texture = "gfx/interface/icons/ig_icons/academia.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
+texticon = {
+  icon = ig_security
+  iconsize = {
+    offset = {0 6}
+    texture = "gfx/interface/icons/ig_icons/security.dds"
+    fontsize = 26
+    size = {30 30}
+  }
+}
 ##################################
 ########## GOODS #################
 ##################################

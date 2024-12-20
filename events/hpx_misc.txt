@@ -49,31 +49,3 @@ hpx_misc.1 = { # Lore
 		bpm_refresh_parties = yes
 	}
 }
-
-hpx_misc.2 = { # Lore
-	type = country_event
-	placement = root
-
-	event_image = { texture = "gfx/event_pictures/test.dds" }
-	gui_window = superevent
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	title = hpx_misc.2.t
-	desc = hpx_misc.2.d 
-	flavor = hpx_misc.2.f
-	duration = 0
-
-	immediate = {
-		this = {
-			save_scope_as = nation_scope
-		}
-	}
-	option = {
-		name = hpx_misc.2.a
-		default_option = yes
-	}
-	after = {
-		bpm_refresh_parties = yes
-	}
-}

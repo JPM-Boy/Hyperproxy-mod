@@ -364,7 +364,7 @@ STATES = {
 	s:STATE_BEIRA = {
 		create_state = {
 			country = c:POR
-			owned_provinces = { xD0A000 xA0F6EC xA64B2E x641376 x37ADD8 x0EF845 xD0E0C0 x9238AD xE415AF xF92B7F }
+			owned_provinces = { xD0A000 xA64B2E x641376 x37ADD8 x0EF845 xD0E0C0 x9238AD xE415AF xF92B7F }
 		}
 		
 		add_homeland = cu:portuguese
@@ -372,7 +372,7 @@ STATES = {
 	s:STATE_ESTREMADURA = {
 		create_state = {
 			country = c:SPA
-			owned_provinces = { xD0A080 x50A000 xD02000 x545164 x3020A3 xE24C15}
+			owned_provinces = { xD0A080 x50A000 xD02000 x545164 x3020A3 xE24C15 xA0F6EC}
 		}
 		
 		add_homeland = cu:portuguese
@@ -463,7 +463,7 @@ STATES = {
 	s:STATE_WALLONIA = {
 		create_state = {
 			country = c:LUX
-			owned_provinces = { x5180A0 }
+			owned_provinces = { x5180A0 xD001A0}
 		}
 		create_state = {
 			country = c:BEL
@@ -471,7 +471,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:LIE
-			owned_provinces = { xEF2040 x3A5FB9 xD001A0}
+			owned_provinces = { xEF2040 x3A5FB9}
 		}
 
 		add_homeland = cu:wallonian

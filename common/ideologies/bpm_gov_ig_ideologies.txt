@@ -6,8 +6,8 @@ ideology_gov_liberal_republican = {
 	lawgroup_governance_principles = {
 		law_monarchy = disapprove
 		law_theocracy = disapprove		
-		law_presidential_republic = approve
-		law_parliamentary_republic = approve
+		law_republic = approve
+		law_republic = approve
 		law_council_republic = strongly_disapprove
 	}
 }
@@ -18,8 +18,8 @@ ideology_gov_radical_republican = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove		
-		law_presidential_republic = strongly_approve
-		law_parliamentary_republic = strongly_approve
+		law_republic = strongly_approve
+		law_republic = strongly_approve
 		law_council_republic = disapprove
 	}
 }
@@ -30,8 +30,8 @@ ideology_gov_moderate_proletarian = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove		
-		law_presidential_republic = approve
-		law_parliamentary_republic = approve
+		law_republic = approve
+		law_republic = approve
 		law_council_republic = approve
 	}
 }
@@ -42,8 +42,8 @@ ideology_gov_radical_proletarian = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove		
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_approve
 	}
 }
@@ -54,8 +54,8 @@ ideology_gov_moderate_monarchist = {
 	lawgroup_governance_principles = {
 		law_monarchy = approve
 		law_theocracy = neutral
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_disapprove
 	}
 }
@@ -66,8 +66,8 @@ ideology_gov_radical_monarchist = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = neutral
-		law_presidential_republic = strongly_disapprove
-		law_parliamentary_republic = strongly_disapprove
+		law_republic = strongly_disapprove
+		law_republic = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
 }
@@ -78,8 +78,8 @@ ideology_gov_theocrat = {
 	lawgroup_governance_principles = {
 		law_monarchy = neutral
 		law_theocracy = strongly_approve
-		law_presidential_republic = strongly_disapprove
-		law_parliamentary_republic = strongly_disapprove
+		law_republic = strongly_disapprove
+		law_republic = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
 }

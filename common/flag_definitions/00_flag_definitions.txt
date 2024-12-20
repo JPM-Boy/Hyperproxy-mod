@@ -1437,7 +1437,6 @@ BRZ = { # Brazil
 		priority = 20
 		trigger = {
 			scope:actor ?= {
-				has_law = law_type:law_presidential_republic
 				has_law = law_type:law_landed_voting
 				OR = {
 					has_law = law_type:law_tenant_farmers
@@ -2860,6 +2859,13 @@ EGE = { # Eastern Germany
 		priority = 1000
 	}
 }
+EURO = { # Europa
+	flag_definition = {
+		coa = EURO
+		subject_canton = EURO
+		priority = 1000
+	}
+}
 
 EGY = { # Egypt
 	flag_definition = {
@@ -3575,8 +3581,7 @@ GER = { # Germany
 					}
 				}
 				OR = {
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
 				}
 			}
 		}
@@ -9663,8 +9668,7 @@ HRE = {
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_republic
 				}
 				has_law = law_type:law_technocracy
 			}

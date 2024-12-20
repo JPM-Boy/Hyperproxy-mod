@@ -1,4 +1,4 @@
-﻿# Social democrats extremely attracted to this ideology
+# Social democrats extremely attracted to this ideology
 # Attracts weak leftists and liberals
 # Available for Trade Unions pre-Socialism
 
@@ -341,6 +341,30 @@ centre_left_party = {
 		}
 		if = {
 			limit = {
+				owner = { has_variable = bpm_party_establishment_centre_left }
+				NOR = {
+					bpm_ig_is_radical_opposition = yes
+					bpm_ig_is_very_radical_opposition = yes
+				}
+			}
+			add = {
+				desc = "bpm_from_party_establishment"
+				value = {
+					value = 20
+					if = {
+						limit = {
+							bpm_ig_is_institutional = yes
+						}
+						subtract = 12
+					}
+				}
+				multiply = owner.var:bpm_party_establishment_centre_left
+				multiply = owner.var:bpm_political_stability
+				divide = 10000
+			}
+		}
+		if = {
+			limit = {
 				is_interest_group_type = ig_classical_liberal
 			}
 			add = {	
@@ -447,7 +471,7 @@ centre_left_party = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_trade_unions
-					is_interest_group_type = ig_agrarian_populists
+					is_interest_group_type = ig_ecologist
 				}
 				is_powerful = no
 				owner = {

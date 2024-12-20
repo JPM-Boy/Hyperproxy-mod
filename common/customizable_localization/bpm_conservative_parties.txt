@@ -4,12 +4,30 @@ fra_conservative_party_name = {
 	
 	text = {
 		trigger = {
+			has_law = law_type:law_monarchy 
+			has_variable = bonapartist_restoration_var
+		}
+		localization_key = party_fra_bonapartist
+	}
+	text = {
+		trigger = {
+			game_date < 1860.1.1
 			OR = { 
 				has_law = law_type:law_monarchy 
 				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_resistance
+	}
+	text = {
+		trigger = {
+			game_date > 1860.1.1
+			OR = { 
+				has_law = law_type:law_monarchy 
+				has_law = law_type:law_theocracy
+			}
+		}
+		localization_key = party_fra_national_union
 	}
 	text = {
 		trigger = {
@@ -121,6 +139,33 @@ gbr_conservative_party_name = {
 			game_date < 1912.1.1
 		}
 		localization_key = party_gbr_tories
+	}
+}
+
+ger_conservative_party_name = {
+	type = country
+	random_valid = no
+	
+	text = {
+		trigger = {
+			has_technology_researched = political_agitation
+		}
+		localization_key = party_ger_dvp
+	}
+	text = {
+		trigger = { 
+			NOT = { has_technology_researched = political_agitation }
+			ig:ig_market_liberals = {
+				is_member_of_party = owner.py:conservative_party
+			}
+		}
+		localization_key = party_ger_fkp
+	}
+	text = {
+		trigger = {
+			NOT = { has_technology_researched = political_agitation }
+		}
+		localization_key = party_ger_conservatives
 	}
 }
 
@@ -447,5 +492,23 @@ mex_conservative_party_name = {
 			has_technology_researched = mass_propaganda
 		}
 		localization_key = party_mex_national_action
+	}
+}
+
+cub_conservative_party_name = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			NOT = { has_technology_researched = political_agitation }
+		}
+		localization_key = party_cub_nacional
+	}
+	text = {
+		trigger = {
+			has_technology_researched = political_agitation
+		}
+		localization_key = party_cub_conservador
 	}
 }

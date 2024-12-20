@@ -1,0 +1,535 @@
+﻿# group = this is the law_group a law belongs to
+# icon = graphical icon shown in-game
+# modifier = {} modifier on country for having adopted this law
+
+law_traditionalism = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/traditionalism.dds"
+	
+	progressiveness = -50
+	
+	disallowing_laws = {
+		law_per_capita_based_taxation
+		law_proportional_taxation
+		law_graduated_taxation
+		law_anarchy
+	}
+		
+	on_activate = {
+	}
+	
+	modifier = {
+		state_shopkeepers_investment_pool_efficiency_mult = -0.5
+		state_capitalists_investment_pool_efficiency_mult = -0.5
+		state_farmers_investment_pool_efficiency_mult = -0.5	
+		state_clergymen_investment_pool_efficiency_mult = -0.5	
+		state_aristocrats_investment_pool_efficiency_mult = -0.5	
+		state_bureaucracy_population_base_cost_factor_mult = -0.25
+		country_government_dividends_reinvestment_add = 0.25
+		state_tax_capacity_mult = -0.25
+		country_private_construction_allocation_mult = 0.25
+		building_nationalization_cost_mult = 1.0
+		building_nationalization_investment_return_add = 0.1
+		country_leverage_resistance_mult = 0.25
+
+		state_market_access_price_impact = -0.15
+		country_disable_nationalization_without_compensation_bool = yes
+
+		interest_group_ig_landowners_pol_str_mult = 0.2
+
+		country_rigidity_baseline_add = 10
+
+		country_institution_economy_max_investment_add = -5
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+	}
+	
+	# AI should never switch back to traditionalism
+	ai_will_do = {
+		always = no
+	}	
+}
+
+law_interventionism = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/interventionism.dds"
+	
+	progressiveness = 50
+	
+	disallowing_laws = {
+		law_serfdom
+		law_anarchy
+	}
+	
+	on_activate = {
+	}
+	
+	unlocking_technologies = {
+		manufacturies
+	}
+	
+	modifier = {
+		country_disable_nationalization_without_compensation_bool = yes
+		country_private_construction_allocation_mult = 0.65
+		country_government_dividends_reinvestment_add = 0.75
+		building_nationalization_investment_return_add = 0.5
+		country_institution_economy_max_investment_add = 2
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+		country_private_construction_allocation_mult = -0.05
+		country_government_dividends_reinvestment_add = -0.05
+		state_capitalists_investment_pool_efficiency_mult = 0.03
+		state_shopkeepers_investment_pool_efficiency_mult = 0.03
+		country_government_dividends_efficiency_add = 0.08
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+		
+		if = {
+			limit = { 
+				OR = {
+					has_journal_entry = je_sick_man_bureaucracy
+					has_modifier = shogun_ig_forced_to_open_market
+					has_journal_entry = je_meiji_main
+				}
+				has_law = law_type:law_traditionalism
+			}
+			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
+		}
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = { 
+						law_stance = {
+							law = law_type:law_interventionism
+							value > approve
+						}
+					 }				
+				}	
+			}
+			add = 1000
+		}
+	}
+}
+
+law_gaian_economy = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/unused/placeholder.dds"
+	
+	progressiveness = 0
+	
+	disallowing_laws = {
+	}	
+	
+	unlocking_technologies = {
+		democracy
+	}
+	
+	on_activate = {
+	}
+	
+	modifier = {
+		country_institution_cost_institution_economy_mult = -0.25
+		country_private_construction_allocation_mult = 0.65
+		building_nationalization_investment_return_add = 0.85
+		country_government_dividends_reinvestment_add = 0.5
+		country_government_dividends_efficiency_add = 2.5
+		country_institution_economy_max_investment_add = 3
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+		state_farmers_investment_pool_efficiency_mult = 0.50
+		interest_group_ig_ecologist_pol_str_mult = 0.5
+		state_pollution_reduction_health_mult = -0.20
+	}
+		
+	ai_will_do = {
+		OR = {
+			has_law = law_type:law_traditionalism
+			literacy_rate < 0.4
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+
+		if = {
+			limit = { 
+				has_journal_entry = je_sick_man_bureaucracy
+				has_law = law_type:law_traditionalism
+			}
+			add = 10000 # Top priority for Tanzimat AI is to get out of Traditionalism
+		}	
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = { 
+						law_stance = {
+							law = law_type:law_agrarianism
+							value > approve
+						}
+					}				
+				}	
+			}
+			add = 1000
+		}
+	}
+}
+
+law_laissez_faire = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/laissez_faire.dds"
+	
+	progressiveness = 100
+	
+	disallowing_laws = {
+		law_serfdom
+		law_isolationism
+		law_anarchy
+	}
+	
+	unlocking_technologies = {
+		democracy
+	}
+	
+	on_activate = {
+	}
+	
+	modifier = {
+		country_institution_cost_institution_economy_mult = -0.25
+		country_private_construction_allocation_mult = 0.75
+		country_government_dividends_reinvestment_add = 1
+		country_institution_economy_max_investment_add = 2
+		country_max_companies_add = 1
+		country_disable_nationalization_bool = yes
+		country_force_privatization_bool = yes
+		country_company_pay_to_establish_bool = yes
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+		state_capitalists_investment_pool_efficiency_mult = 0.12
+		state_shopkeepers_investment_pool_efficiency_mult = 0.12
+		state_aristocrats_investment_pool_efficiency_mult = -0.05
+		interest_group_ig_industrialists_pol_str_mult = 0.8
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+
+		if = {
+			limit = { 
+				has_modifier = shogun_ig_forced_to_open_market
+				has_journal_entry = je_meiji_main
+				has_law = law_type:law_traditionalism
+			}
+			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
+		}	
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = { 
+						law_stance = {
+							law = law_type:law_laissez_faire
+							value > approve
+						}
+					 }				
+				}	
+			}
+			add = 1000
+		}
+	}
+}
+
+law_cooperative_ownership = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/cooperative_ownership.dds"
+	
+	progressiveness = 100
+	
+	disallowing_laws = {
+		law_serfdom
+	}
+	
+	unlocking_laws = {
+		law_council_republic
+	}
+	
+	modifier = {
+		country_institution_cost_institution_economy_mult = -0.25
+		country_private_construction_allocation_mult = 0.35
+		country_government_dividends_reinvestment_add = 1.0
+
+		country_institution_economy_max_investment_add = 2
+		
+		country_allow_national_collectivization_bool = yes
+		country_foreign_collectivization_bool = yes
+		country_disable_privatization_bool = yes
+		country_company_pay_to_establish_bool = yes
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+		state_laborers_investment_pool_efficiency_mult = 0.1
+		state_machinists_investment_pool_efficiency_mult = 0.1
+		state_engineers_investment_pool_efficiency_mult = 0.1
+		state_clerks_investment_pool_efficiency_mult = 0.1
+		state_farmers_investment_pool_efficiency_mult = 0.1
+		state_shopkeepers_investment_pool_efficiency_mult = 0.1
+		country_private_construction_allocation_mult = 0.05
+		# country_urban_collectivization_add = 0.2
+		state_pop_pol_str_add = 1
+		
+		building_group_bg_manufacturing_allowed_collectivization_add = 0.2
+		building_group_bg_mining_allowed_collectivization_add = 0.2
+		building_group_bg_extraction_allowed_collectivization_add = 0.2
+		building_group_bg_power_allowed_collectivization_add = 0.2
+		building_group_bg_private_infrastructure_allowed_collectivization_add = 0.2
+		building_group_bg_arts_allowed_collectivization_add = 0.2
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+				scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+		
+		if = {
+			limit = { 
+				has_law = law_type:law_council_republic
+			}
+			add = 250
+		}
+	}
+	
+	ai_impose_chance = {
+		value = 0
+		
+		if = {
+			limit = {
+				has_law = law_type:law_cooperative_ownership			
+			}
+			
+			add = base_impose_law_weight
+			multiply = 10.0
+		}
+	}	
+}
+
+law_command_economy = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/command_economy.dds"
+	
+	progressiveness = 100
+	
+	disallowing_laws = {
+		law_serfdom
+		law_anarchy
+	}
+	
+	unlocking_technologies = {
+		democracy
+	}
+	
+	unlocking_laws = {
+		law_council_republic
+		law_technocracy
+	}	
+	
+	on_activate = {
+		seize_investment_pool = yes
+	}
+	
+	modifier = {
+		country_disable_investment_pool_bool = yes
+		
+		building_nationalization_cost_mult = -0.5
+		building_nationalization_radicals_mult = -0.75
+		country_institution_economy_max_investment_add = 3
+		
+		country_leverage_resistance_mult = 0.25
+
+		country_disable_privatization_bool = yes
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+		country_authority_mult = 0.05
+		country_bureaucrats_pol_str_mult = 0.05
+		country_government_dividends_efficiency_add = 0.2
+		state_pop_pol_str_add = 0.5
+	}
+	
+	ai_will_do = {
+		OR = {
+			has_law = law_type:law_technocracy
+			AND = {
+				has_law = law_type:law_council_republic
+				ruler ?= {
+					has_ideology = ideology:ideology_vanguardist
+					has_ideology = ideology:ideology_communist
+				}			
+			}
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+		
+		if = {
+			limit = { 
+				has_law = law_type:law_council_republic
+			}
+			add = 250
+		}
+		
+		if = {
+			limit = { 
+				has_law = law_type:law_technocracy
+			}
+			add = 100
+		}
+	}
+	
+	ai_impose_chance = {
+		value = 0
+		
+		if = {
+			limit = {
+				has_law = law_type:law_command_economy			
+			}
+			
+			add = base_impose_law_weight
+			multiply = 10.0
+		}
+	}
+}
+
+law_corporative_economy = {
+	group = lawgroup_economic_system
+	
+	icon = "gfx/interface/icons/law_icons/unused/placeholder.dds"
+	
+	progressiveness = 100
+	
+	disallowing_laws = {
+	}
+	
+	unlocking_technologies = {
+		democracy
+	}
+	
+	on_activate = {
+	}
+	
+	modifier = {
+		building_nationalization_cost_mult = 0.15
+		building_nationalization_radicals_mult = -0.5
+		country_institution_cost_institution_economy_mult = -0.25
+		country_private_construction_allocation_mult = 0.80
+		country_government_dividends_efficiency_add = 2
+		country_institution_economy_max_investment_add = 3
+		country_max_companies_add = 10
+		country_company_pay_to_establish_bool = yes
+	}
+
+	institution = institution_economy
+	institution_modifier = {
+		state_capitalists_investment_pool_efficiency_mult = 0.25
+		state_shopkeepers_investment_pool_efficiency_mult = 0.25
+		state_aristocrats_investment_pool_efficiency_mult = -0.10
+		interest_group_ig_industrialists_pol_str_mult = 2
+
+		country_authority_mult = 0.05
+		country_capitalists_pol_str_mult = 0.05
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+
+		if = {
+			limit = { 
+				has_modifier = shogun_ig_forced_to_open_market
+				has_journal_entry = je_meiji_main
+				has_law = law_type:law_traditionalism
+			}
+			add = 10000 # Top priority for Tanzimat/Meiji AI is to get out of Traditionalism
+		}	
+
+		# AI should really try to get out of Traditionalism under the right circumstances
+		if = {
+			limit = {
+				has_law = law_type:law_traditionalism
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				OR = {
+					NOT = { has_strategy = ai_strategy_conservative_agenda }
+					any_political_movement = { 
+						law_stance = {
+							law = law_type:law_laissez_faire
+							value > approve
+						}
+					 }				
+				}	
+			}
+			add = 1000
+		}
+	}
+}

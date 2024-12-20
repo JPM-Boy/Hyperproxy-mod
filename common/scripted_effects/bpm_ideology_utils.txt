@@ -14,7 +14,12 @@
 		remove_ideology = ideology_eco_slave_economy
 		remove_ideology = ideology_eco_modernizer
 		remove_ideology = ideology_eco_conservative_agrarian
+		remove_ideology = ideology_eco_american_system
 		remove_ideology = ideology_eco_trad_isolationist
+		remove_ideology = ideology_eco_antebellum_economy
+		remove_ideology = ideology_eco_colonialist
+		remove_ideology = ideology_eco_debt_serf_economy
+		remove_ideology = ideology_eco_slave_colonialist
 	}
 }
 
@@ -52,6 +57,8 @@ bpm_remove_all_dop_ideologies = {
 		remove_ideology = ideology_dop_syndical_unionist
 		remove_ideology = ideology_dop_state_unionist
 		remove_ideology = ideology_dop_syndicalist
+		reomve_ideology = ideology_dop_metropole_loyalist
+		remove_ideology = ideology_dop_organic_power
 	}
 }
 
@@ -69,9 +76,13 @@ bpm_remove_all_rel_ideologies = {
 bpm_remove_all_mil_ideologies = {
 	hidden_effect = {
 		remove_ideology = ideology_mil_placeholder
+		remove_ideology = ideology_mil_ultramilitarist
 		remove_ideology = ideology_jingoist
 		remove_ideology = ideology_mil_patriotic
+		remove_ideology = ideology_mil_patriotic_liberal
+		remove_ideology = ideology_mil_defensive_patriot
 		remove_ideology = ideology_mil_antimilitarist
+		remove_ideology = ideology_mil_popular_army
 		remove_ideology = ideology_mil_frontier_expansion
 		remove_ideology = ideology_mil_aristocratic_militarist
 		remove_ideology = ideology_mil_plutocratic_militarist
@@ -116,6 +127,7 @@ bpm_remove_all_wel_ideologies = {
 		remove_ideology = ideology_wel_religious_welfare
 		remove_ideology = ideology_wel_no_welfare
 		remove_ideology = ideology_wel_secular_anti_welfare
+		remove_ideology = ideology_wel_distributist_welfare
 	}
 }
 
@@ -130,8 +142,11 @@ bpm_remove_all_sta_ideologies = {
 		remove_ideology = ideology_sta_subjugated_state
 		remove_ideology = ideology_sta_subjugated_security_state
 		remove_ideology = ideology_sta_federated_state
+		remove_ideology = ideology_sta_devolved_state
+		remove_ideology = ideology_sta_effective_state
 		remove_ideology = ideology_sta_weak_state
 		remove_ideology = ideology_sta_institutional_state
+		remove_ideology = ideology_sta_organic_state
 	}
 }
 
@@ -159,6 +174,18 @@ bpm_remove_all_mon_ideologies = {
 	}
 }
 
+bpm_remove_all_exe_ideologies = {
+	hidden_effect = {
+		remove_ideology = ideology_exe_placeholder
+		remove_ideology = ideology_exe_strong_dynamic
+		remove_ideology = ideology_exe_weak_dynamic
+		remove_ideology = ideology_exe_strong_rigid
+		remove_ideology = ideology_exe_weak_rigid
+		remove_ideology = ideology_exe_traditional
+		remove_ideology = ideology_exe_ceremonial
+	}
+}
+
 bpm_remove_all_placeholder_ideologies = {
 	hidden_effect = {
 		remove_ideology = ideology_mon_placeholder
@@ -171,6 +198,7 @@ bpm_remove_all_placeholder_ideologies = {
 		remove_ideology = ideology_cit_placeholder
 		remove_ideology = ideology_wel_placeholder
 		remove_ideology = ideology_sta_placeholder
+		remove_ideology = ideology_exe_placeholder
 		remove_ideology = ideology_ban_placeholder
 	}
 }
@@ -187,6 +215,7 @@ bpm_remove_all_ideologies = {
 		bpm_remove_all_cit_ideologies = yes
 		bpm_remove_all_wel_ideologies = yes
 		bpm_remove_all_sta_ideologies = yes
+		bpm_remove_all_exe_ideologies = yes
 		bpm_remove_all_ban_ideologies = yes
 		bpm_remove_all_placeholder_ideologies = yes
 		add_ideology = ideology_nonexistent
@@ -219,6 +248,11 @@ bpm_re_add_eco_ideology = {
 		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_trad_isolationist }
 		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_modernizer }
 		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_conservative_agrarian }
+		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_antebellum_economy }
+		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_american_system }
+		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_colonialist }
+		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_debt_serf_economy }
+		bpm_re_add_ideology = { TYPE = eco IDEOLOGY = ideology_eco_slave_colonialist }
 	}
 }
 
@@ -256,6 +290,8 @@ bpm_re_add_dop_ideology = {
 		bpm_re_add_ideology = { TYPE = dop IDEOLOGY = ideology_dop_syndical_unionist }
 		bpm_re_add_ideology = { TYPE = dop IDEOLOGY = ideology_dop_syndicalist }
 		bpm_re_add_ideology = { TYPE = dop IDEOLOGY = ideology_dop_state_unionist }
+		bpm_re_add_ideology = { TYPE = dop IDEOLOGY = ideology_dop_metropole_loyalist }
+		bpm_re_add_ideology = { TYPE = dop IDEOLOGY = ideology_dop_organic_power }
 	}
 }
 
@@ -267,19 +303,26 @@ bpm_re_add_rel_ideology = {
 		bpm_re_add_ideology = { TYPE = rel IDEOLOGY = ideology_rel_secularist }
 		bpm_re_add_ideology = { TYPE = rel IDEOLOGY = ideology_rel_moralist }
 		bpm_re_add_ideology = { TYPE = rel IDEOLOGY = ideology_rel_radical_moralist }
+		bpm_re_add_ideology = { TYPE = rel IDEOLOGY = ideology_rel_pragmatic_moralist }
 	}
 }
 
 bpm_re_add_mil_ideology = {
 	hidden_effect = {
 		add_ideology = ideology_mil_placeholder
+		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_ultramilitarist }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_jingoist }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_patriotic }
+		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_patriotic_liberal }
+		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_defensive_patriot }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_antimilitarist }
+		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_popular_army }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_frontier_expansion }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_aristocratic_militarist }
+		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_plutocratic_militarist }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_mass_army }
 		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_emergency }
+		bpm_re_add_ideology = { TYPE = mil IDEOLOGY = ideology_mil_institutional_militarist }
 	}
 }
 
@@ -318,6 +361,8 @@ bpm_re_add_wel_ideology = {
 		bpm_re_add_ideology = { TYPE = wel IDEOLOGY = ideology_wel_religious_welfare }
 		bpm_re_add_ideology = { TYPE = wel IDEOLOGY = ideology_wel_no_welfare }
 		bpm_re_add_ideology = { TYPE = wel IDEOLOGY = ideology_wel_secular_anti_welfare }
+		bpm_re_add_ideology = { TYPE = wel IDEOLOGY = ideology_wel_distributist_welfare }
+		bpm_re_add_ideology = { TYPE = wel IDEOLOGY = ideology_wel_social_market_welfare }
 	}
 }
 
@@ -326,14 +371,29 @@ bpm_re_add_sta_ideology = {
 		add_ideology = ideology_sta_placeholder
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_minimal_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_decentralized_state }
-		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_institutional_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_powerful_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_progressive_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_security_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_subjugated_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_subjugated_security_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_federated_state }
+		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_devolved_state }
+		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_effective_state }
 		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_weak_state }
+		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_institutional_state }
+		bpm_re_add_ideology = { TYPE = sta IDEOLOGY = ideology_sta_organic_state }
+	}
+}
+
+bpm_re_add_exe_ideology = {
+	hidden_effect = {
+		add_ideology = ideology_exe_placeholder
+		bpm_re_add_ideology = { TYPE = exe IDEOLOGY = ideology_exe_strong_dynamic }
+		bpm_re_add_ideology = { TYPE = exe IDEOLOGY = ideology_exe_weak_dynamic }
+		bpm_re_add_ideology = { TYPE = exe IDEOLOGY = ideology_exe_strong_rigid }
+		bpm_re_add_ideology = { TYPE = exe IDEOLOGY = ideology_exe_weak_rigid }
+		bpm_re_add_ideology = { TYPE = exe IDEOLOGY = ideology_exe_traditional }
+		bpm_re_add_ideology = { TYPE = exe IDEOLOGY = ideology_exe_ceremonial }
 	}
 }
 
@@ -361,6 +421,7 @@ bpm_re_add_mon_ideology = {
 	}
 }
 
+
 bpm_reorder_ideologies = {
 	hidden_effect = {
 		bpm_remove_all_placeholder_ideologies = yes
@@ -368,6 +429,7 @@ bpm_reorder_ideologies = {
 		bpm_re_add_gov_ideology = yes
 		bpm_re_add_dop_ideology = yes
 		bpm_re_add_sta_ideology = yes
+		bpm_re_add_exe_ideology = yes
 		bpm_re_add_eco_ideology = yes
 		bpm_re_add_wel_ideology = yes
 		bpm_re_add_cit_ideology = yes

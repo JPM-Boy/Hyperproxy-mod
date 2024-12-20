@@ -33,7 +33,7 @@ bpm_cache_country_variables_monthly_effect = {
 	if = {
 		limit = {
 			owner = { NOT = { has_law = law_type:law_council_republic } }
-			ig:ig_fascist ?= { is_powerful = yes }
+			ig:ig_fascists ?= { is_powerful = yes }
 		}
 		set_variable = bpm_country_has_powerful_fascists_var
 	}
@@ -346,9 +346,10 @@ bpm_cache_country_variables_half_yearly_effect = {
 			owner = {
 				OR = {
 					ig:ig_trade_unions ?= { bpm_ig_is_popular = yes }
-					ig:ig_anarchist ?= { is_marginal = no }
-					ig:ig_orthodox_communist ?= { is_marginal = no }
-					ig:ig_reformist_communist ?= { is_marginal = no }
+					ig:ig_socialists ?= { is_marginal = no }
+					ig:ig_anarchists ?= { is_marginal = no }
+					ig:ig_revolutionist_socialists ?= { is_marginal = no }
+					ig:ig_reformist_socialists ?= { is_marginal = no }
 				}
 			}
 		}

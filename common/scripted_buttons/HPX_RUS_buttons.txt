@@ -22,7 +22,7 @@
 		base = 0
 		modifier = {
 			trigger = { global_var:soviet_unity <= 15 }
-			add = 75
+			add = 10
 		}
 	}
 }

@@ -1,4 +1,18 @@
 ﻿POPS = {
+	s:STATE_EASTERN_HIMALAYAS = {
+		region_state:BHU = {
+			create_pop = {
+				culture = tibetan
+				size = 1250000
+			}
+		}
+		region_state:NAX = {
+			create_pop = {
+				culture = tibetan
+				size = 3000000
+			}
+		}
+	}
 	s:STATE_BALUCHISTAN = {
 		region_state:PAK = {
 			create_pop = {
@@ -38,6 +52,8 @@
 				size = 15000000
 			}
 		}
+	}
+	s:STATE_HILL_PUNJAB = {
 		region_state:BHT = {
 			create_pop = {
 				culture = panjabi
@@ -83,7 +99,15 @@
 		region_state:BHT = {
 			create_pop = {
 				culture = avadhi
-				size = 55000000
+				size = 22500000
+			}
+		}
+	}
+	s:STATE_AGRA = {
+		region_state:BHT = {
+			create_pop = {
+				culture = avadhi
+				size = 22500000
 			}
 		}
 	}
@@ -111,7 +135,23 @@
 			}
 		}
 	}
-	s:STATE_CENTRAL_INDIA = {
+	s:STATE_MALWA = {
+		region_state:BHT = {
+			create_pop = {
+				culture = avadhi
+				size = 20000000
+			}
+		}
+	}
+	s:STATE_CENTRAL_PROVINCES = {
+		region_state:BHT = {
+			create_pop = {
+				culture = avadhi
+				size = 20000000
+			}
+		}
+	}
+	s:STATE_BUNDELKHAND = {
 		region_state:BHT = {
 			create_pop = {
 				culture = avadhi
@@ -151,11 +191,19 @@
 			}
 		}
 	}
+	s:STATE_KURNOOL = {
+		region_state:BHT = {
+			create_pop = {
+				culture = kannada
+				size = 18000000
+			}
+		}
+	}
 	s:STATE_MYSORE = {
 		region_state:BHT = {
 			create_pop = {
 				culture = kannada
-				size = 37500000
+				size = 18000000
 			}
 		}
 	}
@@ -203,31 +251,19 @@
 			}
 		}
 	}
-	s:STATE_NORTH_BENGAL = {
-		region_state:BGL = {
-			create_pop = {
-				culture = bengali
-				size = 40000000
-			}
-		}
+	s:STATE_WEST_BENGAL = {
 		region_state:NAX = {
 			create_pop = {
 				culture = bengali
-				size = 20000000
+				size = 40000000
 			}
 		}
 	}
-	s:STATE_SOUTH_BENGAL = {
+	s:STATE_EAST_BENGAL = {
 		region_state:BGL = {
 			create_pop = {
 				culture = bengali
-				size = 40000000
-			}
-		}
-		region_state:NAX = {
-			create_pop = {
-				culture = bengali
-				size = 20000000
+				size = 60000000
 			}
 		}
 	}

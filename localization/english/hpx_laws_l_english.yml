@@ -15,3 +15,48 @@ law_floating_exchange_rate: "Floating Exchange Rate"
 law_fixed_exchange_rate_desc: "The government pegs its currency to a stable foreign currency, ensuring trade stability but limiting flexibility in handling economic crises."
 law_managed_float_desc: "The currency floats in the market, with occasional government intervention to stabilize it during economic shocks."
 law_floating_exchange_rate_desc: "Currency value is determined by market forces, providing flexibility but risking volatility in trade and economic stability."
+
+law_shareholder_voting: "Shareholder Voting"
+law_hybrid_voting: "Hybrid Voting"
+law_majoritarian_voting: "Majoritarian Voting"
+law_pluralist_voting: "Pluralist Voting"
+law_referendum_voting: "Referendum Voting"
+
+law_religious_supremacy: "Religious Supremacy"
+law_religious_institution: "Religious Institutions"
+
+law_corporative_economy: "Corporate Economy"
+law_gaian_economy: "Gaian Economy"
+
+law_export_promotion: "Exports Promotion"
+law_import_substitution: "Imports Substitution"
+
+law_civil_military: "Civil Military"
+law_irregular_military: "Irregular Military"
+law_private_army: "Private Army"
+
+law_republic: "Republic"
+law_corporatocracy: "Corporatocracy"
+
+law_wealth_taxation: "Wealth Taxation"
+law_income_taxation: "Income Taxation"
+law_expropiation: "Mass Expropiations"
+
+law_mixed_schools: "Mixed Schools"
+law_online_schools: "Online Schools"
+law_personalized_education: "Personalized Education"
+
+law_community_land_trust: "Community Land Trusts"
+law_sustainable_land_use: "Sustainable Land Use"
+law_customary_land_tenure: "Customary Land Tenure"
+
+law_mixed_health_insurance: "Mixed Health Insurance"
+
+lawgroup_work_hours: "Work Hours"
+law_unlimited_hours: "Unlimited Hours"
+law_14_hours: "14 Hours a day"
+law_12_hours: "12 Hours a day"
+law_10_hours: "10 Hours a day"
+law_8_hours: "8 Hours a day"
+law_6_hours: "6 Hours a day"
+law_4_hours: "4 Hours a day"

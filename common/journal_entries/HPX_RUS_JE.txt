@@ -83,16 +83,23 @@ je_hpx_soviet_unity = {
 	fail = {
 		OR = {
 			global_var:soviet_unity <= 0
-			global_var:soviet_collapse > 0
 		}
 	}
 
 	on_fail = {
-		if = {
-			limit = {global_var:soviet_collapse = 0}
+		custom_tooltip = {
+		text = soviet_collapse_tt
+		}
+		hidden_effect = {
 			dissolve_soviet_hard = yes
 		}
+		
+		
 		remove_global_variable = soviet_unity
+	}
+
+	complete = {
+		global_var:soviet_unity >= 100
 	}
 
 	current_value = {

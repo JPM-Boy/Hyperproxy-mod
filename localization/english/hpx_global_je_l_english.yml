@@ -1,5 +1,10 @@
 ﻿l_english:
-LEFTWING_EXTREMISM: "Left-Wing Extremism"
-RIGHTWING_EXTREMISM: "Right-Wing Extremism"
-LEFTWING_EXTREMISM_DESC: "Left-Wing Extremism: [GetGlobalVariable('leftwing_extremism').GetValue|1]#!"
-RIGHTWING_EXTREMISM_DESC: "Right-Wing Extremism: [GetGlobalVariable('rightwing_extremism').GetValue|1]#!"
+usa_bar_name: "American Power"
+soviet_bar_name: "Soviet Power"
+euro_bar_name: "European Power"
+
+usa_bar_desc: "American Power - #b #blue [GetGlobalVariable('usa_points').GetValue]#!#!"
+soviet_bar_desc: "Soviet Power - #r [GetGlobalVariable('soviet_points').GetValue]"
+euro_bar_desc: "European Power - #g [GetGlobalVariable('euro_points').GetValue]"
+
+je_hpx_cold_war: "The Cold War"

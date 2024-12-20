@@ -10,10 +10,11 @@ je_hpx_germany = {
 			c:WGE ?= root
 			c:EGE ?= root
 		}
+		NOT = {exists = c:WSL}
 	}
 	
 	possible = {
-		always = yes
+		NOT = {exists = c:WSL}
 	}
 
 	should_be_pinned_by_default = yes

@@ -116,7 +116,7 @@ council_republic_law_events.2 = { #Factory Owner Murdered
 				limit ={ 
 					AND ={ 
 						is_in_government = yes
-						bpm_ig_is_labor = yes
+						is_interest_group_type = ig_trade_unions
 					}
 				}
 				add_modifier ={ 

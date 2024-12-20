@@ -863,7 +863,7 @@ pm_crude_tools = {
 			# input goods
 			goods_input_wood_add = 30
 			# output goods
-			goods_output_tools_add = 30
+			goods_output_tools_add = 50
 		}
 
 		level_scaled = {
@@ -885,7 +885,7 @@ pm_pig_iron = {
 			goods_input_wood_add = 30
 			goods_input_iron_add = 20
 			# output goods
-			goods_output_tools_add = 60
+			goods_output_tools_add = 90
 		}
 
 		level_scaled = {
@@ -908,7 +908,7 @@ pm_steel = {
 			goods_input_wood_add = 30
 			goods_input_steel_add = 20
 			# output goods
-			goods_output_tools_add = 80
+			goods_output_tools_add = 100
 		}
 
 		level_scaled = {
@@ -932,7 +932,7 @@ pm_rubber_grips = {
 			goods_input_rubber_add = 10
 			goods_input_steel_add = 30
 			# output goods
-			goods_output_tools_add = 110
+			goods_output_tools_add = 120
 		}
 
 		level_scaled = {
@@ -1034,7 +1034,7 @@ pm_pulp_pressing = {
 			# input goods
 			goods_input_wood_add = 30
 			# output goods
-			goods_output_paper_add = 40
+			goods_output_paper_add = 80
 		}
 
 		level_scaled = {
@@ -1062,7 +1062,7 @@ pm_sulfite_pulping = {
 			goods_input_wood_add = 30
 			goods_input_sulfur_add = 10
 			# output goods
-			goods_output_paper_add = 70
+			goods_output_paper_add = 120
 		}
 
 		level_scaled = {
@@ -1092,7 +1092,7 @@ pm_bleached_paper = {
 			goods_input_sulfur_add = 10
 			goods_input_dye_add = 10
 			# output goods
-			goods_output_paper_add = 100
+			goods_output_paper_add = 160
 		}
 
 		level_scaled = {

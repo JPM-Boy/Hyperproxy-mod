@@ -1,0 +1,49 @@
+bpm_party_name = {
+    type = party
+
+    random_valid = no
+	
+    text = {
+        trigger = {
+            is_party_type = far_left_party
+        }
+        localization_key = far_left
+    }
+    text = {
+        trigger = {
+            is_party_type = far_right_party
+        }
+        localization_key = far_right
+    }
+    text = {
+        trigger = {
+            is_party_type = leftwing_party
+        }
+        localization_key = leftwing
+    }
+    text = {
+        trigger = {
+            is_party_type = rightwing_party
+        }
+        localization_key = rightwing
+    }
+    text = {
+        trigger = {
+            is_party_type = centre_left_party
+        }
+        localization_key = centre_left
+    }
+    text = {
+        trigger = {
+            is_party_type = centre_right_party
+        }
+        localization_key = centre_right
+    }
+	text = {
+		trigger = {
+			always = no
+		}
+        fallback = yes
+		localization_key = default
+	}
+}

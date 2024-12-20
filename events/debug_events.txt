@@ -32,7 +32,7 @@ debug.4 = {
 	hidden = yes
 	orphan = yes
 	immediate = {
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_autocracy
 	}
 }
@@ -41,7 +41,7 @@ debug.5 = {
 	hidden = yes
 	orphan = yes
 	immediate = {
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
 	}
 }
@@ -50,7 +50,7 @@ debug.6 = {
 	hidden = yes
 	orphan = yes
 	immediate = {
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_universal_suffrage
 	}
 }
@@ -68,7 +68,7 @@ debug.8 = {
 	hidden = yes
 	orphan = yes
 	immediate = {
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_anarchy
 	}
 }

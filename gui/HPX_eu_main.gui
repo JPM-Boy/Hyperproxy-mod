@@ -1,0 +1,457 @@
+﻿@panel_width_minus_10 = 530         # used to be 450
+@panel_width = 540                  # used to be 460
+@panel_width_half = 270             # used to be 230
+@panel_width_plus_10 = 550          # used to be 470
+@panel_width_plus_14 = 554          # used to be 474
+@panel_width_plus_14_half = 277     # used to be 237
+@panel_width_plus_20 = 560          # used to be 480
+@panel_width_plus_30 = 570          # used to be 490
+@panel_width_plus_70 = 610          # used to be 530
+
+window = {
+    layer = layer_ingame_menu
+    name = "eu_window"
+    size = { 613 100% }
+    visible = "[GetPlayer.MakeScope.Var('eu_window').IsSet]"
+    default_block_window = {
+        #HEADER CLOSE
+        blockoverride "header_close_button"
+        {
+            onclick = "[GetScriptedGui('toggle_eu').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+            shortcut = "close_window"
+        }
+
+
+        #TITLE
+        blockoverride "window_header_name"
+        {
+            text = EU
+        }
+        size = { 613 100% }
+        position = {0 80}
+
+        blockoverride "scrollarea_content"
+        {
+            #EUROPEAN COMMUNITIES
+            flowcontainer = {
+                visible = "[And(Not(GetVariableSystem.Exists('europa_panel')), Not(GetVariableSystem.Exists('edo_panel')))]"
+                scrollbox = {
+                   scrollbar_vertical = {
+                       using = scrollbar_vertical
+                   }
+
+                   name = "eu_scroll_area" 
+                   layoutpolicy_vertical = expanding
+                   position {0 0}
+                   size = { 560 900 }
+                    flowcontainer = {
+                        direction = horizontal
+                        parentanchor = center|top
+                        flowcontainer = {
+                            using = default_content_fade
+                            direction = vertical
+                            textbox = {
+                                autoresize = yes
+                                text = EU_DESC
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 400
+
+                                align = center
+
+                                margin = { 5 5 }
+                            }
+                            divider_decorative = {}
+                            textbox = {
+                                autoresize = yes
+                                text = ORGANIZATIONS
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 400
+                                fontsize = 30
+
+                                align = center
+                            }
+                            #BUTTONS
+                            button = {
+                                using = default_button_primary_action
+                                using = default_list_position
+                                size = { 400 40 }
+                                text = "EUROPA"
+                                tooltip = "EUROPA"
+                                onclick = "[GetVariableSystem.Toggle('europa_panel')]"
+                            }
+                            button = {
+                                using = default_button_primary_action
+                                using = default_list_position
+                                size = { 400 40 }
+                                text = "EDO"
+                                tooltip = "EDO"
+                                enabled = no
+                            }
+                            divider_decorative = {}
+                            container = {
+                                parentanchor = top|center
+                                icon = {
+                                    texture = "gfx/interface/icons/objective_icons/euro2.dds"
+                                    size = { 400 256 }
+                                }
+                            }
+                            divider_decorative = {}
+                            button = {
+                                using = default_button_primary_action
+                                using = default_list_position
+                                size = { 400 40 }
+                                text = "INVITE_EU"
+                                tooltip = "INVITE_EU"
+                                onclick = "[GetScriptedGui('start_eu_expansion').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                enabled = "[GetScriptedGui('start_eu_expansion').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                            }
+                        }
+                        flowcontainer = {
+                            flowcontainer = {
+                                parentanchor = top|left
+                                direction = vertical
+                                using = default_content_fade
+                                flowcontainer = {
+                                    direction = vertical
+                                    background = {
+                                        using = entry_bg
+                                    }
+                                    margin = {10 10}
+                                    scrollbox = {
+                                        minimumsize = {60 750}
+                                        blockoverride "scrollbox_content" {
+                                            dynamicgridbox = {
+                                                datamodel_wrap = 1
+                                                flipdirection = yes
+                                                ignoreinvisible = yes
+                                                datamodel = "[GetGlobalList('eu_memberlist')]"
+                                                item = {
+                                                    flowcontainer = {
+                                                        visible = "[Scope.AccessCountry.Exists)]"
+                                                        flowcontainer = {
+                                                            minimumsize = { 60 40 }
+                                                            small_flag = {
+                                                                datacontext = "[Scope.AccessCountry]"
+
+                                                                parentanchor = center
+                                                                blockoverride "flag_tooltip" {
+                                                                    tooltipwidget = {
+                                                                        FancyTooltip_Country = {}
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+
+
+                } 
+            }
+            #EUROPEAN UNION
+            flowcontainer = {
+                visible = "[GetVariableSystem.Exists('europa_panel')]"
+                scrollbox = {
+                    scrollbar_vertical = {
+                        using = scrollbar_vertical
+                    }
+                    name = "europa_panel_scroll" 
+                    layoutpolicy_vertical = expanding
+                    position {0 0}
+                    size = { 580 900 }
+                    flowcontainer = {
+                        using = default_content_fade
+                        using = default_list_position
+                        direction = vertical
+                        spacing = 10
+                        margin_top = 10
+                        button = {
+                            using = default_button_primary_action
+                            parentanchor = top|center
+                            size = { 320 40 }
+                            text = "RETURN_EU"
+                            tooltip = "RETURN_EU"
+                            onclick = "[GetVariableSystem.Toggle('europa_panel')]"
+                        }
+                        textbox = {
+                                autoresize = yes
+                                text = EUROPA
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 550
+                                fontsize = 30d
+                                align = center
+                        }
+                        textbox = {
+                            background = {
+                                using = entry_bg
+                            }
+                            autoresize = yes
+                            text = EUROPA_DESC
+                            multiline = yes
+                            using = default_list_position
+                            default_format = "#bjtwhite"
+                            max_width = 550
+
+                            align = center
+                           
+                            margin = { 5 5 }
+                        }
+                        
+                        textbox = {
+                            background = {
+                                using = entry_bg
+                            }
+                            autoresize = yes
+                            text = EU_DESC_VOTING
+                            multiline = yes
+                            using = default_list_position
+                            default_format = "#bjtwhite"
+                            max_width = 550
+
+                            align = center
+                           
+                            margin = { 5 5 }
+                        }
+                        button = {
+                            using = default_button_primary_action
+                            parentanchor = top|center
+                            size = {320 40}
+                            text = "PROPOSE_EU_TREATY"
+                            tooltip = "PROPOSE_EU_TREATY"
+                            onclick = "[GetScriptedGui('start_eu_vote').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                            enabled = "[GetScriptedGui('start_eu_vote').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                        }
+                        container = {
+                            using = default_list_position
+                            textbox = {
+                                using = default_list_position
+                                raw_text = "Voting:"
+                                align = center
+                            } 
+                        }
+                        
+                        container = {
+                            using = default_list_position
+                            textbox = {
+                                background = {
+                                    using = entry_bg
+                                }
+                                visible = "[EqualTo_CFixedPoint(GetGlobalVariable('eu_treaty_selection').GetValue, '(CFixedPoint)0')]"
+                                margin = {10 10}
+                                autoresize = yes
+                                raw_text = "#O European Federation"
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 550
+                                align = center
+                            }
+                            textbox = {
+                                background = {
+                                    using = entry_bg
+                                }
+                                visible = "[EqualTo_CFixedPoint(GetGlobalVariable('eu_treaty_selection').GetValue, '(CFixedPoint)1')]"
+                                margin = {10 10}
+                                autoresize = yes
+                                raw_text = "#O European Executive Council"
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 550
+                                align = center
+                            }
+                            textbox = {
+                                background = {
+                                    using = entry_bg
+                                }
+                                visible = "[EqualTo_CFixedPoint(GetGlobalVariable('eu_treaty_selection').GetValue, '(CFixedPoint)2')]"
+                                margin = {10 10}
+                                autoresize = yes
+                                raw_text = "#O European Monetary Union"
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 550
+                                align = center
+                            }
+                            textbox = {
+                                background = {
+                                    using = entry_bg
+                                }
+                                visible = "[EqualTo_CFixedPoint(GetGlobalVariable('eu_treaty_selection').GetValue, '(CFixedPoint)3')]"
+                                margin = {10 10}
+                                autoresize = yes
+                                raw_text = "#O European Charter of Rights and Freedoms"
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 550
+                                align = center
+                            }
+                            textbox = {
+                                background = {
+                                    using = entry_bg
+                                }
+                                visible = "[EqualTo_CFixedPoint(GetGlobalVariable('eu_treaty_selection').GetValue, '(CFixedPoint)4')]"
+                                margin = {10 10}
+                                autoresize = yes
+                                raw_text = "#O European Parliament"
+                                multiline = yes
+                                using = default_list_position
+                                default_format = "#bjtwhite"
+                                max_width = 550
+                                align = center
+                            }
+                        }
+                        
+                        flowcontainer = {
+                            parentanchor = top
+                            flowcontainer = { #Supporters
+                                direction = vertical
+                                textbox = {
+                                        margin_top = 30
+                                        parentanchor = hcenter
+                                        align = center|nobaseline
+                                        raw_text = "Supporters"
+                                    }
+                                flowcontainer = {
+                                    margin_top = 30
+                                    parentanchor = hcenter
+                                    scrollbox = {
+                                        minimumsize = {150 250}
+                                        blockoverride "scrollbox_content" {
+                                            dynamicgridbox = {
+                                                datamodel_wrap = 2
+                                                flipdirection = yes
+                                                datamodel = "[GetGlobalList('eu_vote_yes')]"
+                                                item = {
+                                                    flowcontainer = {
+                                                        minimumsize = { 60 40 }
+                                                        small_flag = {
+                                                            visible = "[Scope.AccessCountry]"
+                                                            datacontext = "[Scope.AccessCountry]"
+                                                            parentanchor = center
+
+                                                            blockoverride "flag_tooltip" {
+                                                                tooltipwidget = {
+                                                                   FancyTooltip_Country = {}
+                                                                }
+                                                            }
+                                                        }                          
+                                                    } 
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            flowcontainer = { #Middle
+                                direction = vertical
+                                textbox = {
+                                        margin_top = 30
+                                        parentanchor = hcenter
+                                        align = center|nobaseline
+                                        raw_text = "Neutral"
+                                    }
+                                flowcontainer = {
+                                    margin_top = 30
+                                    parentanchor = hcenter
+                                    scrollbox = {
+                                        minimumsize = {250 250}
+                                        blockoverride "scrollbox_content" {
+                                            dynamicgridbox = {
+                                                datamodel_wrap = 3
+                                                flipdirection = yes
+                                                datamodel = "[GetGlobalList('eu_vote_neutral')]"
+                                                item = {
+                                                    flowcontainer = {
+                                                        minimumsize = { 60 40 }
+                                                        small_flag = {
+                                                            visible = "[Scope.AccessCountry]"
+                                                            datacontext = "[Scope.AccessCountry]"
+                                                            parentanchor = center
+
+                                                            blockoverride "flag_tooltip" {
+                                                                tooltipwidget = {
+                                                                   FancyTooltip_Country = {}
+                                                                }
+                                                            }
+                                                        }                          
+                                                    } 
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            flowcontainer = { #Opponents
+                                flowcontainer = {
+                                    direction = vertical
+                                    textbox = {
+                                        margin_top = 30
+                                        parentanchor = hcenter
+                                        align = center|nobaseline
+                                        raw_text = "Opponents"
+                                    }
+                                    flowcontainer = {
+                                    margin_top = 30
+                                    parentanchor = hcenter
+                                    scrollbox = {
+                                        minimumsize = {150 250}
+                                        blockoverride "scrollbox_content" {
+                                            dynamicgridbox = {
+                                                datamodel_wrap = 2
+                                                flipdirection = yes
+                                                datamodel = "[GetGlobalList('eu_vote_no')]"
+                                                item = {
+                                                    flowcontainer = {
+                                                        minimumsize = { 60 40 }
+                                                        small_flag = {
+                                                            visible = "[Scope.AccessCountry]"
+                                                            datacontext = "[Scope.AccessCountry]"
+                                                            parentanchor = center
+
+                                                            blockoverride "flag_tooltip" {
+                                                                tooltipwidget = {
+                                                                   FancyTooltip_Country = {}
+                                                                }
+                                                            }
+                                                        }                          
+                                                    } 
+                                                }
+                                            }
+                                        }
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                        button = {
+                            using = default_button_primary_action
+                            using = default_list_position
+                            size = {320 40}
+                            text = "PASS_TREATY"
+                            tooltip = "PASS_TREATY"
+                            onclick = "[GetScriptedGui('pass_eu_treaty').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                            enabled = "[GetScriptedGui('pass_eu_treaty').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

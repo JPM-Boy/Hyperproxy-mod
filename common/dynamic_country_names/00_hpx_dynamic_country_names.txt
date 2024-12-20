@@ -14,22 +14,6 @@
 			}
 		}
 	}
-	dynamic_country_name = {
-		name =  dyn_c_england
-		adjective =  dyn_c_england_adj
-		
-		priority = 2
-		
-		trigger = {
-			exists = c:GBR
-			c:GBR = {
-				NOT = {
-					has_state_in_state_region = STATE_ILE_DE_FRANCE
-					has_state_in_state_region = STATE_HIGHLANDS	
-				}		
-			}
-		}
-	}
 }
 
 RUS = {

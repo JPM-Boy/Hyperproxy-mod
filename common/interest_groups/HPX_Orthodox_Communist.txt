@@ -7,9 +7,18 @@
 	ideologies = {
 		ideology_nonexistent
 	}
+
+	character_ideologies = {
+		ideology_center_leader
+		ideology_republican_leader
+		ideology_socialist_leader
+		ideology_communist
+		ideology_vanguardist
+		ideology_atheist
+	}
 	
 	enable = {
-		always = yes
+		NOT = {has_variable = orthodox_communism_gone}
 	}
 	
 	on_enable = {

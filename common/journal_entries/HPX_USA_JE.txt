@@ -86,7 +86,7 @@
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_republic
 				}
 				change_variable = {
 					name = enacted_laws

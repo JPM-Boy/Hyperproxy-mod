@@ -7,6 +7,24 @@
 	ideologies = {
 		ideology_nonexistent
 	}
+
+	character_ideologies = {
+		ideology_moderate
+		# ideology_republican_leader
+		# ideology_radical
+		# ideology_liberal_leader
+		# ideology_land_reformer
+		ideology_humanitarian
+		# ideology_social_democrat
+		# ideology_corporatist_leader
+		# ideology_socialist_leader
+		ideology_pacifist
+		# ideology_atheist
+		# ideology_socialist_leader
+		# ideology_communist
+		# ideology_anarchist
+		ideology_protectionist
+	}
 	
 	enable = {
 		always = yes
@@ -17,32 +35,6 @@
 			set_ig_trait = ig_trait:ig_trait_left_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
-		}
-		
-		# Put IG initialization here (in an arbitrary IG), so it happens before any on actions (hopefully)
-		# This is a bit of a hack, but it's the only way to do it
-		if = {
-			limit = { game_date > 1836.1.1 }
-			owner = {
-				bpm_setup_country_sta_ideologies = yes
-				bpm_setup_country_rel_ideologies = yes
-				bpm_setup_country_gov_ideologies = yes
-				bpm_setup_country_dop_ideologies = yes
-				bpm_setup_country_eco_ideologies = yes
-				bpm_setup_country_mil_cit_ideologies = yes
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					has_technology_researched = mass_communication
-					AND = {
-						has_technology_researched = democracy
-						bpm_country_starts_with_liberalism = yes
-					}
-				}
-			}
-			bpm_initialize_trade_unions = yes
 		}
 	}
 	on_disable = {}

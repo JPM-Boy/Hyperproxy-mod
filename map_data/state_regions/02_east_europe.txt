@@ -1,7 +1,7 @@
 ﻿STATE_MAZOVIA = {
     id = 154
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0087C9" "x009F60" "x117AE1" "x1AA8FB" "x46B451" "x4969E4" "x4F022C" "x802161" "x809F60" "xC06121" "xC17590" "xDC58D0" "xDE551D" "xE165F5" "xF8C8F6" }
+    provinces = { "x0087C9" "x009F60" "x117AE1" "x1AA8FB" "x46B451" "x4969E4" "x4F022C" "x802161" "x809F60" "xA3A3A9" "xC06121" "xC17590" "xDC58D0" "xDE551D" "xE165F5" "xF8C8F6" }
     city = "xA3A3A9"
     farm = "xC17590"
     mine = "x9444C9"
@@ -38,7 +38,7 @@ STATE_SILESIA = {
 STATE_GREATER_POLAND = {
     id = 156
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x0E40DA" "x1CB894" "x1F6F99" "x24BBED" "x29408F" "x2F0D92" "x471A61" "x577EE4" "x57A53D" "x5FF022" "x6000DF" "x738072" "x8FE2DB" "x955F09" "x9FEDC5" "xA03316" "xA3A3A9" "xA7B86B" "xAB3C62" "xC02B8C" "xC061A0" "xC0E0A0" "xD0A0E0" "xDE06BA" }
+    provinces = { "x0E40DA" "x1CB894" "x1F6F99" "x24BBED" "x29408F" "x2F0D92" "x471A61" "x577EE4" "x57A53D" "x5FF022" "x6000DF" "x738072" "x8FE2DB" "x955F09" "x9FEDC5" "xA03316" "xA7B86B" "xAB3C62" "xC02B8C" "xC061A0" "xC0E0A0" "xD0A0E0" "xDE06BA" }
     city = "xA03316"
     farm = "x9FEDC5"
     mine = "xc02B8C"

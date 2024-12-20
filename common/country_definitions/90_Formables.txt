@@ -109,3 +109,11 @@ IBE = {
 	cultures = {spanish portuguese galician andalusian}
 	capital = STATE_TOLEDO
 }
+
+EURO = {
+	color = { 50 50 130 }
+	country_type = recognized
+	tier = hegemony
+	cultures = {british french north_german south_german occitan north_italian south_italian}
+	capital = STATE_ILE_DE_FRANCE
+}

@@ -1,0 +1,372 @@
+﻿je_hpx_fall_soviet = {
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+
+	should_be_pinned_by_default = yes
+	group = bpm_je_group_interest_groups
+	weight = 1000
+
+	scripted_button = remove_communism_button_key
+	scripted_button = add_communism_button_key
+
+	immediate = {
+		this = {
+			save_scope_as = country
+		}
+	}
+	complete = {
+		AND = {
+			government_legitimacy >= 80
+			ig:ig_orthodox_communist = {
+				is_in_government = no
+			}
+			ig:ig_new_leftism = {
+				is_in_government = no
+			}
+			ig:ig_reformist_communist = {
+				is_in_government = no
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = post_soviet.2
+		activate_law = law_type:law_republic
+	}
+
+	timeout = 1825
+	on_timeout = {
+		trigger_event = post_soviet.3
+	}
+}
+
+je_hpx_out_of_power_communism = {
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	group = bpm_je_group_interest_groups
+	should_be_pinned_by_default = yes
+	scripted_progress_bar = communist_nationalism_bar
+	scripted_progress_bar = communist_struggle_bar
+	scripted_progress_bar = communist_progressivism_bar
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = nationalist_communism_desc
+				trigger = {
+					var:nationalist_communism > var:progressive_communism 
+					var:nationalist_communism > var:struggle_communism
+				}
+			}
+			triggered_desc = {
+				desc = progressive_communism_desc
+				trigger = {
+					var:progressive_communism > var:nationalist_communism 
+					var:progressive_communism > var:struggle_communism
+				}
+			}
+			triggered_desc = {
+				desc = struggle_communism_desc
+				trigger = {
+					var:struggle_communism > var:nationalist_communism 
+					var:struggle_communism > var:progressive_communism
+				}
+			}
+			triggered_desc = {
+				desc = neutral_communism_desc
+				fallback = yes
+			}
+		}
+	}
+
+	weight = 750
+	immediate = {
+		owner = {
+			set_variable = {
+				name = nationalist_communism
+				value = 0
+			}
+			set_variable = {
+				name = progressive_communism
+				value = 0
+			}
+			set_variable = {
+				name = struggle_communism
+				value = 0
+			}
+		}
+		
+		this = {
+			save_scope_as = country
+		}
+
+		this.capital = {
+			save_scope_as = capital
+		}
+	}
+
+	complete = {
+		AND = {
+			custom_tooltip = {
+				text = je_hpx_postsoviet_tooltip
+				OR = {
+					var:nationalist_communism >= 100
+					var:progressive_communism >= 100
+					var:struggle_communism >= 100
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {var:progressive_communism >= 100}
+			set_variable = orthodox_communism_gone
+		}
+
+		else_if = {
+			limit = {var:nationalist_communism >= 100}
+			ig:ig_orthodox_communist = {
+				set_interest_group_name = ig_national_communists
+				hpx_ig_make_orthodox_natcom = yes
+			}
+		}
+
+		else_if = {
+			limit = {var:struggle_communism >= 100}
+			ig:ig_orthodox_communist = {
+				set_interest_group_name = ig_militant_communists
+				hpx_ig_make_orthodox_vanguardist = yes
+			}
+		}
+		remove_variable = struggle_communism
+		remove_variable = nationalist_communism
+		remove_variable = progressive_communism
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			30 = 0
+			10 = post_soviet.4
+			10 = post_soviet.5
+			10 = post_soviet.6
+		}
+	}
+}
+
+je_hpx_in_power_communism = {
+	icon = "gfx/interface/icons/ig_icons/revolutionists.dds"
+	group = bpm_je_group_interest_groups
+	scripted_progress_bar = communist_nationalism_bar
+	scripted_progress_bar = communist_vanguardist_bar
+	scripted_progress_bar = communist_reformist_bar
+
+	should_be_pinned_by_default = yes
+	weight = 750
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = nationalist_communism_desc
+				trigger = {
+					var:nationalist_communism > var:reformist_communism 
+					var:nationalist_communism > var:vanguardist_communism
+				}
+			}
+			triggered_desc = {
+				desc = vanguardist_communism_desc
+				trigger = {
+					var:vanguardist_communism > var:nationalist_communism 
+					var:vanguardist_communism > var:reformist_communism
+				}
+			}
+			triggered_desc = {
+				desc = reformist_communism_desc
+				trigger = {
+					var:reformist_communism > var:nationalist_communism 
+					var:reformist_communism > var:vanguardist_communism
+				}
+			}
+			triggered_desc = {
+				desc = neutral_communism_desc
+				fallback = yes
+			}
+		}
+	}
+	immediate = {
+		this = {
+			save_scope_as = country
+		}
+		this.capital = {
+			save_scope_as = capital
+		}
+		owner = {
+			set_variable = {
+				name = nationalist_communism
+				value = 0
+			}
+			set_variable = {
+				name = reformist_communism
+				value = 0
+			}
+			set_variable = {
+				name = vanguardist_communism
+				value = 0
+			}
+		}
+	}
+	complete = {
+		AND = {
+			custom_tooltip = {
+				text = je_hpx_postsoviet_tooltip
+				OR = {
+					var:nationalist_communism >= 100
+					var:reformist_communism >= 100
+					var:vanguardist_communism >= 100
+				}
+			}
+		}
+	}
+	on_complete = {
+		if = {
+			limit = {var:reformist_communism >= 100}
+			ig:ig_orthodox_communist = {
+				hpx_ig_make_orthodox_revisionist = yes
+			}
+		}
+
+		else_if = {
+			limit = {var:nationalist_communism >= 100}
+			ig:ig_orthodox_communist = {
+				set_interest_group_name = ig_national_communists
+				hpx_ig_make_orthodox_natcom = yes
+			}
+		}
+
+		else_if = {
+			limit = {var:vanguardist_communism >= 100}
+			ig:ig_orthodox_communist = {
+				hpx_ig_make_orthodox_vanguardist = yes
+			}
+		}
+		remove_variable = vanguardist_communism
+		remove_variable = nationalist_communism
+		remove_variable = reformist_communism
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			30 = 0
+			10 = post_soviet.7
+			10 = post_soviet.8
+			10 = post_soviet.9
+		}
+	}
+}
+
+je_hpx_new_leftism = {
+	icon = "gfx/interface/icons/ig_icons/new_leftism.dds"
+	group = bpm_je_group_interest_groups
+	scripted_progress_bar = new_left_radicalism_bar
+	scripted_progress_bar = new_left_progress_bar
+
+	should_be_pinned_by_default = yes
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = progressist_new_left_desc
+				trigger = {
+					var:new_left_progress > var:new_left_radicalism 
+				}
+			}
+			triggered_desc = {
+				desc = radical_new_left_desc
+				trigger = {
+					var:new_left_radicalism > var:new_left_progress
+				}
+			}
+			triggered_desc = {
+				desc = neutral_new_left_desc
+				fallback = yes
+			}
+		}
+	}
+	timeout = 1500
+	weight = 1000
+
+	immediate = {
+		this = {
+			save_scope_as = country
+		}
+		owner = {
+			set_variable = {
+				name = new_left_radicalism
+				value = 0
+			}
+			set_variable = {
+				name = new_left_progress
+				value = 0
+			}
+		}
+	}
+	complete = {
+		custom_tooltip = {
+			text = je_hpx_newleftism_tt
+			var:new_left_progress >= 100
+		}
+	}
+	fail = {
+		custom_tooltip = {
+			text = je_hpx_newleftism_rad_tt
+			var:new_left_radicalism >= 100
+		}
+	}
+	on_complete = {
+		custom_tooltip = {
+			text = je_hpx_newleftism_complete_tt
+			if = {
+				limit = {
+					OR = {
+						owner = {
+							country_is_in_europe = yes
+						}
+						owner = c:JAP
+						owner = c:CHL
+					}
+				}
+				ig:ig_new_leftism = {
+					hpx_ig_make_newleftism_neocommunist = yes
+					set_interest_group_name = ig_neo_communists
+				}
+			} else = {
+				ig:ig_new_leftism = {
+					hpx_ig_make_newleftism_radical_progressivism = yes
+					set_interest_group_name = ig_radical_progressives
+				}
+			}
+		}
+		remove_variable = new_left_radicalism
+		remove_variable = new_left_progress
+	}
+	on_fail = {
+		custom_tooltip = {
+			text = je_hpx_newleftism_rad_fail_tt
+			ig:ig_new_leftism = {
+				hpx_ig_make_newleftism_rev_leftism = yes
+				set_interest_group_name = ig_revolutionary_leftism
+			}
+		}
+		remove_variable = new_left_radicalism
+		remove_variable = new_left_progress
+	}
+	on_timeout = {
+		set_variable = new_left_gone
+		remove_variable = new_left_radicalism
+		remove_variable = new_left_progress
+	}
+	on_monthly_pulse = {
+		random_events = {
+			30 = 0
+			10 = post_soviet.10
+			10 = post_soviet.11
+			10 = post_soviet.12
+		}
+	}
+}

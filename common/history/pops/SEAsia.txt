@@ -63,11 +63,19 @@
 		region_state:BUR = {
 			create_pop = {
 				culture = burmese
-				size = 10000000
+				size = 5000000
 			}
 		}
 	}
-	s:STATE_BURMA = {
+	s:STATE_ARAKAN = {
+		region_state:BUR = {
+			create_pop = {
+				culture = burmese
+				size = 5000000
+			}
+		}
+	}
+	s:STATE_MANDALAY = {
 		region_state:BUR = {
 			create_pop = {
 				culture = burmese

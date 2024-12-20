@@ -7,6 +7,17 @@
 	ideologies = {
 		ideology_nonexistent
 	}
+
+	character_ideologies = {
+		ideology_center_leader
+		ideology_republican_leader
+		ideology_liberal_leader
+		ideology_radical
+		ideology_market_liberal
+		ideology_protectionist
+		ideology_land_reformer
+		ideology_reformer
+	}
 	
 	enable = {
 		always = yes

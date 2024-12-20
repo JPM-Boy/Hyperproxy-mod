@@ -8,9 +8,20 @@ ig_ecologist = {
 	ideologies = {
 		ideology_nonexistent
 	}
+
+	character_ideologies = {
+		ideology_center_leader
+		ideology_pacifist
+		ideology_protectionist
+		ideology_radical
+		ideology_liberal_leader
+		ideology_reformer
+		ideology_atheist
+		ideology_humanitarian
+	}
 	
 	enable = {
-		always = yes
+		year > 1990
 	}
 	
 	on_enable = {

@@ -146,8 +146,8 @@
 				bpm_country_is_republic = yes
 				bpm_country_has_modern_agriculture = yes
 				OR = {
-					ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
-					ig:ig_ecologist = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_rural_folk ?= { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_ecologist ?= { bpm_is_strongest_ig_in_government = yes }
 				}
 			}
 		}
@@ -302,7 +302,7 @@
 						ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
 						bpm_country_has_modern_agriculture = yes
 					}
-					ig:ig_ecologist = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_ecologist ?= { bpm_is_strongest_ig_in_government = yes }
 				}
 			}
 		}
@@ -485,7 +485,7 @@
 				ig:ig_landowners ?= {
 					bpm_is_strongest_ig_in_government = yes
 				}
-				ig:ig_reactionaries ?= {
+				ig:ig_reactionary ?= {
 					is_marginal = yes
 				}
 			}
@@ -507,7 +507,7 @@
 				ig:ig_armed_forces ?= {
 					bpm_is_strongest_ig_in_government = yes
 				}
-				ig:ig_reactionaries ?= {
+				ig:ig_reactionary ?= {
 					is_marginal = yes
 				}
 			}
@@ -658,6 +658,118 @@
 			exists = scope:actor
 			scope:actor = {
 				has_variable = senegal_subject_var
+			}
+		}
+	}
+}
+
+ARG = { # Argentina
+	dynamic_country_name = {
+		name = dyn_c_argentine_confederation
+		adjective = ARG_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_republic
+					has_law = law_type:law_council_republic
+				}
+				has_law = law_type:law_confederated
+			}
+		}
+	}
+
+	dynamic_country_name = { # Rio de la Plata also has this dynamic name
+		name = dyn_c_river_plate
+		adjective = dyn_c_river_plate_adj
+
+		is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			exists = c:GBR
+			scope:actor ?= {
+				is_subject_of = c:GBR
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_argentina_legionaria
+		adjective = ARG_ADJ
+		
+		is_main_tag_only = yes
+		priority = 30
+		
+		trigger = {
+			scope:actor ?= {
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+CLM = { # Colombia
+	dynamic_country_name = {
+		name = dyn_c_new_granada
+		adjective = dyn_c_new_granada_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			OR = {	
+				scope:actor ?= {
+					NOT = { country_has_primary_culture = cu:colombian }
+				}
+				AND = {
+					exists = c:SPA
+					scope:actor ?= {
+						is_subject_of = c:SPA
+					}
+				}
+			}
+		}
+	}
+}
+
+YUN = { # Yunnan
+	dynamic_country_name = {
+		name = dyn_c_pingnan_guo
+		adjective = dyn_c_pingnan_guo_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			OR = {	
+				scope:actor ?= {
+					has_variable = bpm_pingnan_guo_var
+				}
+			}
+		}
+	}
+}
+
+XIN = { # Kashgar
+	dynamic_country_name = {
+		name = dyn_c_kashgaria
+		adjective = dyn_c_kashgaria_adj
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			OR = {	
+				scope:actor ?= {
+					has_variable = bpm_kashgaria_var
+				}
 			}
 		}
 	}

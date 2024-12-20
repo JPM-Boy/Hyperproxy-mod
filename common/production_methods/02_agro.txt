@@ -40,6 +40,12 @@ pm_fertilization = {
 	unlocking_technologies = {
 		improved_fertilizer
 	}
+	
+	state_modifiers = {
+		unscaled = {
+			state_harvest_condition_drought_impact_mult = 0.05
+		}
+	}
 
 	building_modifiers = {
 		workforce_scaled = {
@@ -61,6 +67,12 @@ pm_chemical_fertilizer = {
 	texture = "gfx/interface/icons/production_method_icons/chemical_fertilizers.dds"
 	unlocking_technologies = {
 		nitrogen_fixation
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_harvest_condition_drought_impact_mult = 0.1
+		}
 	}
 
 	building_modifiers = {
@@ -354,7 +366,7 @@ pm_simple_ranch = {
 	texture = "gfx/interface/icons/production_method_icons/sheep_ranch.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_fabric_add = 5
+			goods_output_fabric_add = 20
 		}
 	}
 }
@@ -368,7 +380,7 @@ pm_sheep_farms = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_grain_add = 10
-			goods_output_fabric_add = 15
+			goods_output_fabric_add = 50
 			goods_output_fertilizer_add = 2.5
 		}
 	}
@@ -389,7 +401,7 @@ pm_intensive_grazing_ranch = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_grain_add = 20
-			goods_output_fabric_add = 25
+			goods_output_fabric_add = 80
 			goods_output_fertilizer_add = 5
 		}
 	}

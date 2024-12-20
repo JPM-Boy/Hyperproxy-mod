@@ -62,7 +62,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:UKR
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -104,7 +104,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:BYE
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -144,7 +144,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:CAU
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -196,7 +196,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:UBD
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -237,7 +237,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:MOL
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -280,7 +280,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:TRC
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -330,7 +330,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:KZH
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {
@@ -376,7 +376,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 			c:RUS = {
 				create_diplomatic_pact = {
     			country = c:CTA
-    			type = dominion
+    			type = puppet
 			}
 			}
 			change_global_variable = {

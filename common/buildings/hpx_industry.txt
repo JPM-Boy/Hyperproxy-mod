@@ -1,6 +1,6 @@
 ﻿building_chips_factory = {
 	building_group = bg_light_industry
-	texture = "gfx/interface/icons/building_icons/chips_industry.dds"
+	icon = "gfx/interface/icons/building_icons/chips_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	ai_nationalization_desire = 0.25 # AI will generally not privatize steel mills due to importance for construction
@@ -26,7 +26,7 @@
 
 building_automotive_factory = {
 	building_group = bg_light_industry
-	texture = "gfx/interface/icons/building_icons/car_industry.dds"
+	icon = "gfx/interface/icons/building_icons/car_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -52,7 +52,7 @@ building_automotive_factory = {
 
 building_appliance_factory = {
 	building_group = bg_light_industry
-	texture = "gfx/interface/icons/building_icons/appliances_industry.dds"
+	icon = "gfx/interface/icons/building_icons/appliances_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -77,7 +77,7 @@ building_appliance_factory = {
 
 building_robotics_factory = {
 	building_group = bg_light_industry
-	texture = "gfx/interface/icons/building_icons/robotics_industry.dds"
+	icon = "gfx/interface/icons/building_icons/robotics_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -101,7 +101,7 @@ building_robotics_factory = {
 
 building_advanced_fabrication_factory = {
 	building_group = bg_light_industry
-	texture = "gfx/interface/icons/building_icons/laser_industry.dds"
+	icon = "gfx/interface/icons/building_icons/laser_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -125,7 +125,7 @@ building_advanced_fabrication_factory = {
 
 building_aerospace_factory = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/missile_industry.dds"
+	icon = "gfx/interface/icons/building_icons/missile_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -149,7 +149,7 @@ building_aerospace_factory = {
 
 building_plastic_industry = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/plastic_industry.dds"
+	icon = "gfx/interface/icons/building_icons/plastic_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -174,7 +174,7 @@ building_plastic_industry = {
 
 building_diesel_industry = {
 	building_group = bg_heavy_industry
-	texture = "gfx/interface/icons/building_icons/diesel_industry.dds"
+	icon = "gfx/interface/icons/building_icons/diesel_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {
@@ -199,7 +199,7 @@ building_diesel_industry = {
 
 building_computers_factory = {
 	building_group = bg_light_industry
-	texture = "gfx/interface/icons/building_icons/computer_industry.dds"
+	icon = "gfx/interface/icons/building_icons/computer_industry.dds"
 	city_type = city
 	levels_per_mesh = 5
 	unlocking_technologies = {

@@ -1,206 +1,132 @@
-﻿calculate_anglo_french_passive_progress = {
-	set_global_variable = { name = french_influence_passive_var value = 0 }
-	set_global_variable = { name = british_influence_passive_var value = 0 }
-	set_global_variable = { name = anglo_french_balance_passive_var value = 0 }
-	set_global_variable = { name = england_france_gdp value = 0 }
+﻿hpx_free_france = {
+	create_country = {
+		tag = FRA
+		origin = c:GBR
+		on_created = {bpm_setup_country = yes}
+		state = s:STATE_ILE_DE_FRANCE.region_state:GBR
+	}
+
+	sr:region_occitania = {
+		every_scope_state = {
+			limit = {owner = c:GBR}
+			set_state_owner = c:FRA
+		}
+	}
+
+	sr:region_france = {
+		every_scope_state = {
+			limit = {owner = c:GBR}
+			set_state_owner = c:FRA
+		}
+	}
+}
+
+hpx_free_britain = {
 	
-	c:GBR ?= {
-		every_state = {
-			limit = {
-				OR = {
-					region = sr:region_england
-					region = sr:region_france
-				}
-			}
-		change_global_variable = { name = england_france_gdp add = this.gdp }
-		}
-
+	c:GBR = {
+		change_tag = FRA
 	}
 
-	change_global_variable = { name = england_france_gdp divide = 1000 }
+	create_country = {
+		tag = GBR
+		origin = c:FRA
+		on_created = {bpm_setup_country = yes}
+		state = s:STATE_HOME_COUNTIES.region_state:FRA
+	}
 
-	c:GBR ?= {
+	sr:region_england = {
 		every_scope_state = {
-			limit = {
-				region = sr:region_england
-			}
-			change_global_variable = { name = british_influence_passive_var add = this.gdp }
+			limit = {owner = c:FRA}
+			set_state_owner = c:GBR
 		}
-		change_global_variable = { name = british_influence_passive_var divide = 100 }
-		change_global_variable = { name = british_influence_passive_var divide = global_var:england_france_gdp }
+	}
 
+	sr:region_north_sea_coast = {
 		every_scope_state = {
-			limit = {
-				region = sr:region_france
-			}
-			change_global_variable = { name = french_influence_passive_var add = this.gdp }
+			limit = {owner = c:FRA}
+			set_state_owner = c:GBR
 		}
-		change_global_variable = { name = french_influence_passive_var divide = 100 }
-		change_global_variable = { name = french_influence_passive_var divide = global_var:england_france_gdp }
 	}
-
-	set_global_variable = { name = anglo_french_balance_passive_var value = global_var:french_influence_passive_var }
-	change_global_variable = { name = anglo_french_balance_passive_var subtract = global_var:british_influence_passive_var }
-	change_global_variable = { name = anglo_french_balance_passive_var multiply = 3 }
-}
-
-calculate_anglo_french_ig_progress = {
-	set_global_variable = { name = anglo_french_balance_ig_var value = 0 }
-		every_interest_group = {
-			if = {
-	 			limit = {
-	 				is_in_government = yes
-	 				has_variable = english_var
-	 			}
-	 		change_global_variable = { name = anglo_french_balance_ig_var add = 1}
-	 		}
-	 		if = {
-	 			limit = {
-	 				is_in_government = yes
-	 				has_variable = french_var
-	 			}
-	 		change_global_variable = { name = anglo_french_balance_ig_var subtract = 1}
-	 	}
-		}
-}
-
-calculate_anglo_french_radical_progress = {
-	set_global_variable = { name = anglo_french_balance_radical_var value = 0}
-		c:GBR = {
-			# ENGLISH RADICALS
-			if = {
-				limit = {
-					radical_fraction = {value >= 0.3 culture = cu:british}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var subtract = 3}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.2 culture = cu:british}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var subtract = 2}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.1 culture = cu:british}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var subtract = 1}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.05 culture = cu:british}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var subtract = 0.5}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.025 culture = cu:british}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var subtract = 0.25}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.01 culture = cu:british}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var subtract = 0.1}
-			}
-			# FRENCH RADICALS
-			if = {
-				limit = {
-					radical_fraction = {value >= 0.3 culture = cu:french}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var add = 3}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.2 culture = cu:french}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var add = 2}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.1 culture = cu:french}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var add = 1}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.05 culture = cu:french}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var add = 0.5}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.025 culture = cu:french}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var add = 0.25}
-			}
-			else_if = {
-				limit = {
-					radical_fraction = {value >= 0.01 culture = cu:french}
-				}
-				change_global_variable = { name = anglo_french_balance_radical_var add = 0.1}
-			}
-
-		}
-}
-
-calculate_anglo_french_event_progress = {
-	set_global_variable = { name = anglo_french_balance_event_var }
-
-	set_global_variable = {
-	name = anglo_french_balance_ig_var 
-	value = 0}
-}
-
-update_anglo_french_progressbar_tooltips = {
-	je:je_hpx_anglo_french_influence = {
-		if = {
-			limit = {
-				"scripted_bar_progress(french_english_progress_bar)" < 0
-			}
-			set_bar_progress = { value = 0 name = french_english_progress_bar }
-		}
-		if = {
-			limit = {
-				"scripted_bar_progress(french_english_progress_bar)" > 200
-			}
-			set_bar_progress = { value = 200 name = french_english_progress_bar }
-		}
-		set_global_variable = { name = anglo_influence_progress value = "scripted_bar_progress(french_english_progress_bar)" }
-		set_global_variable = { name = french_influence_progress value = 200 }
-		change_global_variable = { name = french_influence_progress subtract = global_var:anglo_influence_progress }
+	c:GBR = {
+		remove_primary_culture = cu:french
+	}
+	c:FRA = {
+		remove_primary_culture = cu:british
 	}
 }
 
-calculate_anglo_french_events = {
+anglo_french_effects = {
 	if = {
-		limit = {global_var:anglo_influence_progress <= 75}
-		trigger_event = hpx_GBR_event.6
-	}
-	if = {
-		limit = {global_var:anglo_influence_progress <= 50}
-		trigger_event = hpx_GBR_event.8
-	} 
-	if = {
-		limit = {global_var:french_influence_progress <= 50}
-		trigger_event = hpx_GBR_event.7
+		limit = {
+			AND = {
+				var:anglo_progress >= 175
+				NOT = {has_law = law_type:law_monarchy}
+			}
+		}
+		activate_law = law_type:law_monarchy
+	} else_if = {
+		limit = {
+			AND = {
+				var:anglo_progress >= 150
+				NOT = {capital = s:STATE_HOME_COUNTIES.region_state:GBR }
+			}
+		}
+		set_capital = STATE_HOME_COUNTIES
+	} else_if = {
+		limit = {
+			AND = {
+				var:french_progress >= 175
+				NOT = {has_law = law_type:law_republic}
+			}
+		}
+		activate_law = law_type:law_republic
+	} else_if = {
+		limit = {
+			AND = {
+				var:french_progress >= 150
+				NOT = {capital = s:STATE_ILE_DE_FRANCE.region_state:GBR }
+			}
+		}
+		set_capital = STATE_ILE_DE_FRANCE
 	}
 }
-
 
 setup_space_race_lists = {
-
-	add_to_global_variable_list = {name = unmanned_moon target = c:GBR}
-	add_to_global_variable_list = {name = unmanned_moon target = c:USA}
-	add_to_global_variable_list = {name = unmanned_moon target = c:RUS}
-	add_to_global_variable_list = {name = manned_moon target = c:USA}
-
+	add_to_global_variable_list = {name = space_agency target = c:GBR}
+	add_to_global_variable_list = {name = space_agency target = c:USA}
+	add_to_global_variable_list = {name = space_agency target = c:RUS}
+	every_in_global_list = {
+		variable = space_agency
+		set_variable = {
+			name = space_agency_funds
+			value = 1
+		}
+		set_variable = {
+			name = space_agency_total_funds
+			value = 10
+		}
+		set_variable = {
+			name = observatories
+			value = 0
+		}
+		set_variable = {
+			name = research_facilities
+			value = 0
+		}
+		set_variable = {
+			name = satelites
+			value = 0
+		}
+		set_variable = {
+			name = launch_facilities
+			value = 1
+		}
+	}
 }
 
 dissolve_soviet = {
-if = {
-	activate_law = law_type:law_presidential_republic
+	if = {
+	activate_law = law_type:law_republic
 
 	create_country = {
 		limit = {
@@ -210,7 +136,7 @@ if = {
 				}
 			}
 		tag = CRI
- 		origin = RUS
+ 		origin = c:RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_CRIMEA.region_state:RUS
 
@@ -224,7 +150,7 @@ if = {
 				}
 			}
 		tag = LIT
-		origin = RUS
+		origin = c:RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_VILNIUS.region_state:RUS
 		state = s:STATE_KAUNAS.region_state:RUS
@@ -239,7 +165,7 @@ if = {
 				}
 			}
 		tag = PRU
-		origin = RUS
+		origin = c:RUS
  		on_created = { bpm_setup_country = yes }
 		state = s:STATE_EAST_PRUSSIA.region_state:RUS
 	}
@@ -252,7 +178,7 @@ if = {
 				}
 			}
 		tag = LAT
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_RIGA.region_state:RUS
 		state = s:STATE_COURLAND.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -265,7 +191,7 @@ if = {
 				}
 			}
 		tag = EST
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_TALINN.region_state:RUS
 		state = s:STATE_TARTU.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -278,7 +204,7 @@ if = {
 				}
 			}
 		tag = BYE
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_MINSK.region_state:RUS
 		state = s:STATE_BREST.region_state:RUS
 		state = s:STATE_MOGILEV.region_state:RUS
@@ -293,7 +219,7 @@ if = {
 				}
 			}
 		tag = MOL
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_MOLDAVIA.region_state:RUS
 		state = s:STATE_DOBRUDJA.region_state:RUS
 		state = s:STATE_BESSARABIA.region_state:RUS
@@ -307,7 +233,7 @@ if = {
 				}
 			}
 		tag = UKR
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_KIEV.region_state:RUS
 		state = s:STATE_VOLHYNIA.region_state:RUS
 		state = s:STATE_EAST_GALICIA.region_state:RUS
@@ -326,7 +252,7 @@ if = {
 				}
 			}
 		tag = GEO
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_GREATER_CAUCASUS.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
@@ -339,7 +265,7 @@ if = {
 				}
 			}
 		tag = ARM
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_ARMENIA.region_state:RUS
 	}
  		on_created = { bpm_setup_country = yes }
@@ -351,8 +277,9 @@ if = {
 				}
 			}
 		tag = AZB
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_AZERBAIJAN.region_state:RUS
+		state = s:STATE_ELIZAVETPOL.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
 
@@ -364,11 +291,13 @@ if = {
 				}
 			}
 		tag = TRC
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
 		state = s:STATE_MERZ.region_state:RUS
 		state = s:STATE_KHORASAN.region_state:RUS
 		state = s:STATE_MAZANDARAN.region_state:RUS
+		state = s:STATE_SEMNAN.region_state:RUS
+		on_created = { bpm_setup_country = yes }
 	}
 
 	create_country = {
@@ -379,7 +308,7 @@ if = {
 				}
 			}
 		tag = UZB
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_UZBEKIA.region_state:RUS
 		state = s:STATE_KHIVA.region_state:RUS
 		state = s:STATE_TURKMENIA.region_state:RUS
@@ -394,7 +323,7 @@ if = {
 				}
 			}
 		tag = TJI
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_TAJIKISTAN.region_state:RUS
 		state = s:STATE_FERGANA.region_state:RUS
  		on_created = { bpm_setup_country = yes }
@@ -408,7 +337,7 @@ if = {
 				}
 			}
 		tag = KYR
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_KIRGHIZIA.region_state:RUS
  		on_created = { bpm_setup_country = yes }
 	}
@@ -421,7 +350,7 @@ if = {
 				}
 			}
 		tag = KZH
-		origin = RUS
+		origin = c:RUS
 		state = s:STATE_URALSK.region_state:RUS
 		state = s:STATE_AKTOBE.region_state:RUS
 		state = s:STATE_AKMOLINSK.region_state:RUS
@@ -439,47 +368,51 @@ if = {
 		}
 		remove_diplomatic_pact = {
 	 		country = c:UKR
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:CAU
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:BYE
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:UBD
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:MOL
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:TRC
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:KZH
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:CTA
-			type = dominion
+			type = puppet
+		}
+
+		every_country = {
+			trigger_event = { id = post_soviet.1 }
 		}
 
 	change_global_variable = {
 		name = global_var:soviet_collapse
 		add = 1
 	}
-}
+	}
 }
 
 dissolve_soviet_hard = {
 	if = {
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		create_country = {
 			limit = {
 				AND = {
@@ -488,7 +421,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = CRI
-	 		origin = RUS
+	 		origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_CRIMEA.region_state:RUS
 
@@ -502,7 +435,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = LIT
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_VILNIUS.region_state:RUS
 			state = s:STATE_KAUNAS.region_state:RUS
@@ -517,7 +450,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = PRU
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_EAST_PRUSSIA.region_state:RUS
 		}
@@ -530,7 +463,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = LAT
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_RIGA.region_state:RUS
 			state = s:STATE_COURLAND.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -543,7 +476,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = EST
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TALINN.region_state:RUS
 			state = s:STATE_TARTU.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -556,7 +489,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = BYE
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_MINSK.region_state:RUS
 			state = s:STATE_BREST.region_state:RUS
 			state = s:STATE_MOGILEV.region_state:RUS
@@ -571,7 +504,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = MOL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_MOLDAVIA.region_state:RUS
 			state = s:STATE_DOBRUDJA.region_state:RUS
 			state = s:STATE_BESSARABIA.region_state:RUS
@@ -585,7 +518,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = UKR
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_KIEV.region_state:RUS
 			state = s:STATE_VOLHYNIA.region_state:RUS
 			state = s:STATE_EAST_GALICIA.region_state:RUS
@@ -604,7 +537,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = GEO
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_GREATER_CAUCASUS.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
@@ -617,7 +550,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = ARM
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_ARMENIA.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -630,8 +563,9 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = AZB
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_AZERBAIJAN.region_state:RUS
+			state = s:STATE_ELIZAVETPOL.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
 
@@ -643,7 +577,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TRC
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TURKMENIA.region_state:RUS
 			state = s:STATE_MERZ.region_state:RUS
 			state = s:STATE_KHORASAN.region_state:RUS
@@ -658,7 +592,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = UZB
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_UZBEKIA.region_state:RUS
 			state = s:STATE_KHIVA.region_state:RUS
 			state = s:STATE_TURKMENIA.region_state:RUS
@@ -673,7 +607,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TJI
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TAJIKISTAN.region_state:RUS
 			state = s:STATE_FERGANA.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -687,7 +621,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = KYR
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_KIRGHIZIA.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
 		}
@@ -700,7 +634,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = KZH
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_URALSK.region_state:RUS
 			state = s:STATE_AKTOBE.region_state:RUS
@@ -719,7 +653,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = YAK
-			origin = RUS
+			origin = c:RUS
 	 		on_created = { bpm_setup_country = yes }
 			state = s:STATE_YAKUTSK.region_state:RUS
 			state = s:STATE_KOLYMA.region_state:RUS
@@ -733,7 +667,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = IKK
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_IRKUTSK.region_state:RUS
 			state = s:STATE_KRASNOYARSK.region_state:RUS
 	 		on_created = { bpm_setup_country = yes }
@@ -747,13 +681,13 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = FRE
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_CHUKOTKA.region_state:RUS
 			state = s:STATE_KAMCHATKA.region_state:RUS
 			state = s:STATE_OKHOTSK.region_state:RUS
 			state = s:STATE_SAKHALIN.region_state:RUS
 			state = s:STATE_AMUR.region_state:RUS
-			#state = s:STATE_OUTER_MANCHURIA.region_state:RUS
+			state = s:STATE_OUTER_MANCHURIA.region_state:RUS
 			 		on_created = { bpm_setup_country = yes }
 
 		}
@@ -766,7 +700,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = SIB
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_UPPER_YENISEYSK.region_state:RUS
 			state = s:STATE_SURGUT.region_state:RUS
 			state = s:STATE_OB.region_state:RUS
@@ -782,7 +716,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = BYT
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_BURYATIA.region_state:RUS
 			state = s:STATE_TRANS_BAIKAL.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -797,7 +731,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TVA
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TUVA.region_state:RUS
 			state = s:STATE_ALTAI.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -811,7 +745,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = TMK
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TOMSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -824,7 +758,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = OMK
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_TOBOLSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -837,7 +771,7 @@ dissolve_soviet_hard = {
 				}
 			}
 			tag = URL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_URAL.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -850,7 +784,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = IDL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_UFA.region_state:RUS
 			state = s:STATE_CHELYABINSK.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -865,7 +799,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = KMI
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_NENETSIA.region_state:RUS
 			state = s:STATE_GALICH.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -880,7 +814,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = PRM
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_PERM.region_state:RUS
 			on_created = { bpm_setup_country = yes }
 		}
@@ -895,7 +829,7 @@ dissolve_soviet_hard = {
 			}
 		create_country = {
 			tag = KRL
-			origin = RUS
+			origin = c:RUS
 			state = s:STATE_KOLA.region_state:RUS
 			state = s:STATE_EAST_KARELIA.region_state:RUS
 			on_created = { bpm_setup_country = yes }
@@ -913,7 +847,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = CHC
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_NORTH_CAUCASUS.region_state:RUS
 				state = s:STATE_STAVROPOL.region_state:RUS
 				state = s:STATE_DAGESTAN.region_state:RUS
@@ -929,7 +863,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = CIR
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_KUBAN.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -943,7 +877,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = MRL
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_VYATKA.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -957,7 +891,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = KLM
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_KALMYKIA.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -971,7 +905,7 @@ dissolve_soviet_hard = {
 			}
 			create_country = {
 				tag = AKH
-				origin = RUS
+				origin = c:RUS
 				state = s:STATE_ASTRAKHAN.region_state:RUS
 				on_created = { bpm_setup_country = yes }
 			}
@@ -983,40 +917,39 @@ dissolve_soviet_hard = {
 		}
 		remove_diplomatic_pact = {
 	 		country = c:UKR
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:CAU
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:BYE
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:UBD
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:MOL
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:TRC
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:KZH
-			type = dominion
+			type = puppet
 		}
 		remove_diplomatic_pact = {
 	 		country = c:CTA
-			type = dominion
+			type = puppet
 		}
 
-		change_global_variable = {
-			name = global_var:soviet_collapse
-			add = 2
+		every_country = {
+			trigger_event = { id = post_soviet.1 }
 		}	
 	}
 }
@@ -1065,5 +998,57 @@ calculate_russian_radical_progress = {
 			name = soviet_unity
 			add = global_var:soviet_radical_var
 		}
+}
+
+refresh_post_soviet_bars = {
+	je:je_hpx_out_of_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:nationalist_communism
+	        name = communist_nationalism_bar
+	    }
+	    set_bar_progress = {
+	        value = owner.var:struggle_communism
+	        name = communist_struggle_bar
+	    }
+	    set_bar_progress = {
+	        value = owner.var:progressive_communism
+	        name = communist_progressivism_bar
+	    }
+	}
+	je:je_hpx_in_power_communism ?= {
+	    set_bar_progress = {
+	        value = owner.var:nationalist_communism
+	        name = communist_nationalism_bar
+	    }
+	    set_bar_progress = {
+	        value = owner.var:vanguardist_communism
+	        name = communist_vanguardist_bar
+	    }
+	    set_bar_progress = {
+	        value = owner.var:reformist_communism
+	        name = communist_reformist_bar
+	    }
+	}
+}
+
+refresh_new_left_bars = {
+	je:je_hpx_new_leftism ?= {
+		set_bar_progress = {
+			value = owner.var:new_left_progress
+	        name = new_left_progress_bar
+	    }
+	    set_bar_progress = {
+			value = owner.var:new_left_radicalism
+	        name = new_left_radicalism_bar
+	    }
+	}
+}
+
+refresh_anglo_french = {
+	je:je_hpx_anglo_french_influence ?= {
+		set_bar_progress = {
+			value = owner.var:anglo_progress
+	        name = french_english_progress_bar
+	    }
 	}
 }

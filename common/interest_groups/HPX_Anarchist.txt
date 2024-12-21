@@ -26,6 +26,8 @@
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
 		}
+
+		bpm_initialize_anarchist = yes
 	}
 	on_disable = {}
 	on_character_ig_membership = {}

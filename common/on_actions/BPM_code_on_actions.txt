@@ -17,10 +17,6 @@ on_monthly_pulse_country = {
 		bpm_update_enactment_success_on_action
 		bpm_on_actions_colonial_check
 		hpx_single_party_reload
-	}
-}
-on_monthly_pulse = {
-	on_actions = {
 		hpx_eu_reload
 	}
 }
@@ -46,6 +42,15 @@ hpx_space_agency_funds = {
 hpx_eu_reload = {
 	effect = {
 		eu_voting = yes
+		if = {
+			limit = {
+				AND = {
+					has_variable = eu_member
+					NOT = {this = c:GBR}
+				}
+			}
+			change_relations = { country = c:GBR value = 4 }
+		}
 	}
 }
 hpx_single_party_reload = {

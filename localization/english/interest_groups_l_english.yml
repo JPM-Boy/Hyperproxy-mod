@@ -81,7 +81,7 @@ ig_reactionary_desc:0 "Reactionaries are a broad tent of those who want to go ba
 ig_reformist_communist:0 "Revisionist Communists"
 ig_reformist_communist_only_icon:0 "@ig_reformist_communist!"
 ig_reformist_communist_desc:0 "Reformist Socialists vary in their commitment to reformism and socialism. On the radical end, such as the French Possibilists and the German USPD, are those who prioritize reforms in the present while holding revolution as a long-term goal. In the middle are those who believe that socialism can be attained by reforms alone, such as Eduard Bernstein's faction in the SPD. Finally, on the right wing are those who want to strike a compromise betwen capitalism and socialism, eventually becoming what we know as social democracy today."
-
+ ig_variant_reformist_communist:0 "[GetInterestGroupVariant('ig_reformist_communist',GetPlayer).GetNameWithCountryVariant]"
 #Revolutionaries
 ig_orthodox_communist:0 "Orthodox Communists"
 ig_orthodox_communist_only_icon:0 "@ig_orthodox_communist!"

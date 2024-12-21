@@ -39,6 +39,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 	 			tag = UKR
 	 			origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_KHARKOV.region_state:RUS = {
@@ -90,6 +91,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = BYE
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_BREST.region_state:RUS = {
@@ -105,7 +107,7 @@ hpx_RUS_event.1 = { # Give Autonomy
 				create_diplomatic_pact = {
     			country = c:BYE
     			type = puppet
-			}
+				}
 			}
 			change_global_variable = {
 				name = soviet_unity_autonomy
@@ -132,6 +134,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = CAU
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_ARMENIA.region_state:RUS = {
@@ -172,6 +175,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = UBD
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_VILNIUS.region_state:RUS = {
@@ -224,6 +228,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = MOL
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_BESSARABIA.region_state:RUS = {
@@ -265,6 +270,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = TRC
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_MERZ.region_state:RUS = {
@@ -308,6 +314,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = KZH
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_AKTOBE.region_state:RUS = {
@@ -358,6 +365,7 @@ hpx_RUS_event.1 = { # Give Autonomy
  				tag = CTA
  				origin = c:RUS
  				state = scope:countrycapital
+				on_created = { bpm_setup_country = yes }
 			}
 
 			s:STATE_UZBEKIA.region_state:RUS = {

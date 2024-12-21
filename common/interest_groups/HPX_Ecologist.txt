@@ -30,6 +30,7 @@ ig_ecologist = {
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
 		}
+		bpm_initialize_ecologist = yes
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
@@ -92,7 +93,7 @@ ig_ecologist = {
 			}
 			# Literacy adds to agpops
 			if = {
-				limit = { strata < rich }
+				limit = { strata < upper }
 				add = {
 					desc = "POP_EDUCATED_FARMERS"
 					value = literacy_rate
@@ -102,7 +103,7 @@ ig_ecologist = {
 			# Agsocs
 			if = {
 				limit = {
-					strata < rich
+					strata < upper
 					scope:interest_group = { has_variable = bpm_ig_is_socialist_var }
 				}
 				if = {

@@ -367,7 +367,7 @@ post_soviet.9 = {
 	}
 
 	option = {
-		name = post_soviet.9.a
+		name = post_soviet.9.b
 		custom_tooltip = {
 			text = add_5_nationalism_tt
 			change_variable = {
@@ -379,7 +379,7 @@ post_soviet.9 = {
 		refresh_post_soviet_bars = yes
 	}
 	option = {
-		name = post_soviet.9.b
+		name = post_soviet.9.c
 
 		custom_tooltip = {
 			text = add_5_vanguardism_tt
@@ -392,7 +392,7 @@ post_soviet.9 = {
 		refresh_post_soviet_bars = yes
 	}
 	option = {
-		name = post_soviet.9.c
+		name = post_soviet.9.a
 		default_option = yes
 		custom_tooltip = {
 			text = add_5_reformism_tt

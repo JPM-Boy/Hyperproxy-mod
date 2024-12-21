@@ -95,6 +95,17 @@ setup_space_race_lists = {
 	add_to_global_variable_list = {name = space_agency target = c:GBR}
 	add_to_global_variable_list = {name = space_agency target = c:USA}
 	add_to_global_variable_list = {name = space_agency target = c:RUS}
+
+	add_to_global_variable_list = { name = moon_flyby target = c:GBR}
+	add_to_global_variable_list = { name = moon_flyby target = c:USA}
+	add_to_global_variable_list = { name = moon_flyby target = c:RUS}
+
+	add_to_global_variable_list = { name = moon_orbit target = c:USA}
+	add_to_global_variable_list = { name = moon_orbit target = c:RUS}
+
+	add_to_global_variable_list = { name = moon_landing target = c:USA}
+
+
 	every_in_global_list = {
 		variable = space_agency
 		set_variable = {

@@ -2,6 +2,21 @@
     if = {
         limit = { NOT = {global_var:eu_treaty_selection = -1}}
         every_in_global_list = {
+            variable = eu_memberlist
+            save_scope_as = eu_member_target
+            remove_list_global_variable = {
+                name = eu_memberlist
+                target = scope:eu_member_target
+            }
+        }
+        every_country = {
+            limit = {has_variable = eu_member}
+            add_to_global_variable_list = {
+                name = eu_memberlist
+                target = this
+            }
+        }
+        every_in_global_list = {
             variable = eu_vote_yes
             save_scope_as = yes_country
             remove_list_global_variable = {

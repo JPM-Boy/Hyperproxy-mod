@@ -52,7 +52,7 @@ pm_trade_center_merchant_guilds = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 	
 	unlocking_laws = {
-		law_mercantilism
+		law_export_promotion
 	}
 	
 	building_modifiers = { 
@@ -68,7 +68,7 @@ pm_trade_center_privately_owned = {
 	disallowing_laws = {
 		law_command_economy
 		law_cooperative_ownership
-		law_mercantilism
+		law_export_promotion
 	}
 	
 	building_modifiers = { 

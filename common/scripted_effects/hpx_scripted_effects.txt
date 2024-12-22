@@ -278,8 +278,9 @@ dissolve_soviet = {
 		tag = ARM
 		origin = c:RUS
 		state = s:STATE_ARMENIA.region_state:RUS
+		on_created = { bpm_setup_country = yes }
 	}
- 		on_created = { bpm_setup_country = yes }
+
 	create_country = {
 		limit = {
 				AND = {
@@ -414,10 +415,10 @@ dissolve_soviet = {
 			trigger_event = { id = post_soviet.1 }
 		}
 
-	change_global_variable = {
-		name = global_var:soviet_collapse
-		add = 1
-	}
+		change_global_variable = {
+			name = soviet_collapse
+			add = 1
+		}
 	}
 }
 

@@ -137,7 +137,7 @@ window = {
                                     direction = vertical
                                     textbox = {
                                         using = fontsize_large
-                                        text = "Yearly Funds"
+                                        text = "#yellow Yearly Funds"
                                         multiline = yes
                                         autoresize = yes
                                         using = default_list_position
@@ -191,8 +191,9 @@ window = {
                                             direction = horizontal
                                             textbox = {
                                                 autoresize = yes
-                                                text = "[GetPlayer.MakeScope.Var('observatories').GetValue] Observatories"
+                                                text = "[GetPlayer.MakeScope.Var('observatories').GetValue] #O Observatories"
                                                 minimumsize = {160 30}
+                                                tooltip = OBSERVATORIES
                                             }
                                             textbox = {
                                                 autoresize = yes
@@ -212,7 +213,8 @@ window = {
                                             direction = horizontal
                                             textbox = {
                                                 autoresize = yes
-                                                text = "[GetPlayer.MakeScope.Var('research_facilities').GetValue] Research Facilities"
+                                                text = "[GetPlayer.MakeScope.Var('research_facilities').GetValue] #O Research Facilities"
+                                                tooltip = RESEARCH_FACILITIES
                                                 minimumsize = {160 30}
                                             }
                                             textbox = {
@@ -233,7 +235,8 @@ window = {
                                             direction = horizontal
                                             textbox = {
                                                 autoresize = yes
-                                                text = "[GetPlayer.MakeScope.Var('satelites').GetValue] Satelites"
+                                                text = "[GetPlayer.MakeScope.Var('satelites').GetValue] #O Satelites"
+                                                tooltip = SATELITES
                                                 minimumsize = {160 30}
                                             }
                                             textbox = {
@@ -254,7 +257,8 @@ window = {
                                             direction = horizontal
                                             textbox = {
                                                 autoresize = yes
-                                                text = "[GetPlayer.MakeScope.Var('launch_facilities').GetValue] Launch Facilities"
+                                                text = "[GetPlayer.MakeScope.Var('launch_facilities').GetValue] #O Launch Facilities"
+                                                tooltip = LAUNCH_FACILITIES
                                                 minimumsize = {160 30}
                                             }
                                             textbox = {
@@ -336,19 +340,40 @@ window = {
                     }
                 }
                 textbox = {
-                    margin_top = 20
                     margin_bottom = 10
                     using = default_list_position
                     using = fontsize_large
-                    text = SPACE_INFORMATION
+                    text = SPACE_DECISIONS
                     align = center|nobaseline
                     multiline = yes
                     autoresize = yes
                 }
                 scrollbox = {
+                    margin_top = 20
                     minimumsize = {540 240}
                     using = default_list_position
                     blockoverride "scrollbox_content" {
+                        flowcontainer = {
+                            direction = vertical
+                            flowcontainer = {
+                                spacing = 10
+                                direction = horizontal
+                                button = {
+                                    using = default_button_primary_action
+                                    size = { 250 40 }
+                                    text = "Send Colonists to Luna"
+                                }
+                                button = {
+                                    using = default_button_primary_action
+                                    size = { 250 40 }
+                                    text = "Send Colonists to Mars"
+                                }
+
+                            }
+
+
+                        }
+
                     }
                 }
             }
@@ -779,49 +804,46 @@ window = {
                 visible = "[GetVariableSystem.Exists('sr_colonies')]"
                 margin_top = 5
                 spacing = 12
-
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    visible = yes
-                    spacing = 6
-
-                    textbox = {
-                        parentanchor = hcenter
-                        using = fontsize_large
-                        text = "Unmanned Moon Mission"
-
-                        align = center|nobaseline
-                        maximumsize = { @panel_width_minus_20 -1 }
-                        multiline = yes
-                        autoresize = yes
-                    }
-
-                    divider_decorative = {}
+                textbox = {
+                    using = default_list_position
+                    using = fontsize_mega
+                    text = "#b Moon Colonies"
+                    multiline = yes
+                    autoresize = yes
                 }
-
-                # Culture countries and flags
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    spacing = 6
-
-                    dynamicgridbox = {
-                        parentanchor = hcenter
-                        datamodel = "[GetGlobalList('unmanned_moon')]"
-                        flipdirection = yes
-                        block "datamodel_wrap" {
-                            datamodel_wrap = 8
-                        }
-
-                        item = {
-                            container = {
-                                minimumsize = { 60 40 }
-
+                divider_decorative = {}
+                dynamicgridbox = {
+                    datamodel = "[GetGlobalList('space_states')]"
+                    datamodel_wrap = 2
+                    flipdirection = yes
+                    item = {
+                        flowcontainer = {
+                            direction = vertical
+                            spacing = 10
+                            background = {
+                                using = entry_bg
+                            }
+                            minimumsize = {260 120}
+                            textbox = {
+                                using = default_list_position
+                                text = "[Scope.AccessState.GetName]"
+                                parentanchor = center
+                                multiline = yes
+                                autoresize = yes
+                            }
+                            divider_decorative = {}
+                            flowcontainer = {
+                                direction = horizontal
+                                margin_left = 10
+                                textbox = {
+                                    minimumsize = {170 30}
+                                    text = "#O Colonists:#! #b [Scope.AccessState.GetPopulationSize|k]"
+                                    multiline = yes
+                                }
                                 small_flag = {
-                                    visible = "[Scope.AccessCountry]"
-                                    datacontext = "[Scope.AccessCountry]"
-                                    parentanchor = center
+                                    visible = "[Scope.AccessState.GetCountry]"
+                                    datacontext = "[Scope.AccessState.GetCountry]"
+                                    parentanchor = left
 
                                     blockoverride "flag_tooltip" {
                                         tooltipwidget = {
@@ -830,54 +852,60 @@ window = {
                                     }
                                 }
                             }
+                            divider_decorative = {}
+                            button = {
+                                datacontext = "[Scope.GetState]"
+                                using = default_button_map_interaction
+                                using = default_list_position
+                                align = top|center
+                                size = { 200 30 }
+                                text = "#b Access State"
+                                onclick = "[InformationPanelBar.OpenStatePanel(State.AccessSelf)]"
+                            }
+                            divider_decorative = {}
                         }
                     }
                 }
-
+                textbox = {
+                    using = default_list_position
+                    using = fontsize_mega
+                    text = "#b Mars Colonies"
+                    multiline = yes
+                    autoresize = yes
+                }
                 divider_decorative = {}
-
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    visible = yes
-                    spacing = 6
-
-                    textbox = {
-                        parentanchor = hcenter
-                        using = fontsize_large
-                        text = "Manned Moon Mission"
-
-                        align = center|nobaseline
-                        maximumsize = { @panel_width_minus_20 -1 }
-                        multiline = yes
-                        autoresize = yes
-                    }
-
-                    divider_decorative = {}
-                }
-
-                # Culture countries and flags
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    spacing = 6
-
-                    dynamicgridbox = {
-                        parentanchor = hcenter
-                        datamodel = "[GetGlobalList('manned_moon')]"
-                        flipdirection = yes
-                        block "datamodel_wrap" {
-                            datamodel_wrap = 8
-                        }
-
-                        item = {
-                            container = {
-                                minimumsize = { 60 40 }
-
+                dynamicgridbox = {
+                    datamodel = "[GetGlobalList('space_states')]"
+                    datamodel_wrap = 2
+                    flipdirection = yes
+                    item = {
+                        flowcontainer = {
+                            direction = vertical
+                            spacing = 10
+                            background = {
+                                using = entry_bg
+                            }
+                            minimumsize = {260 120}
+                            textbox = {
+                                using = default_list_position
+                                text = "[Scope.AccessState.GetName]"
+                                parentanchor = center
+                                multiline = yes
+                                autoresize = yes
+                            }
+                            divider_decorative = {}
+                            flowcontainer = {
+                                direction = horizontal
+                                margin_left = 10
+                                textbox = {
+                                    minimumsize = {170 30}
+                                    text = "#O Colonists:#! #b [Scope.AccessState.GetPopulationSize|k]"
+                                    multiline = yes
+                                }
                                 small_flag = {
-                                    visible = "[Scope.AccessCountry]"
-                                    datacontext = "[Scope.AccessCountry]"
-                                    parentanchor = center
+                                    visible = "[Scope.AccessState.GetCountry]"
+                                    datacontext = "[Scope.AccessState.GetCountry]"
+                                    parentanchor = left
 
                                     blockoverride "flag_tooltip" {
                                         tooltipwidget = {
@@ -886,174 +914,20 @@ window = {
                                     }
                                 }
                             }
-                        }
-                    }
-                }
-
-                divider_decorative = {}
-
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    visible = yes
-                    spacing = 6
-
-                    textbox = {
-                        parentanchor = hcenter
-                        using = fontsize_large
-                        text = "Space Station"
-
-                        align = center|nobaseline
-                        maximumsize = { @panel_width_minus_20 -1 }
-                        multiline = yes
-                        autoresize = yes
-                    }
-
-                    divider_decorative = {}
-                }
-
-                # Culture countries and flags
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    spacing = 6
-
-                    dynamicgridbox = {
-                        parentanchor = hcenter
-                        datamodel = "[GetGlobalList('space_station')]"
-                        flipdirection = yes
-                        block "datamodel_wrap" {
-                            datamodel_wrap = 8
-                        }
-
-                        item = {
-                            container = {
-                                minimumsize = { 60 40 }
-
-                                small_flag = {
-                                    visible = "[Scope.AccessCountry]"
-                                    datacontext = "[Scope.AccessCountry]"
-                                    parentanchor = center
-
-                                    blockoverride "flag_tooltip" {
-                                        tooltipwidget = {
-                                            FancyTooltip_Country = {}
-                                        }
-                                    }
-                                }
+                            divider_decorative = {}
+                            button = {
+                                datacontext = "[Scope.GetState]"
+                                using = default_button_map_interaction
+                                using = default_list_position
+                                align = top|center
+                                size = { 200 30 }
+                                text = "#b Access State"
+                                onclick = "[InformationPanelBar.OpenStatePanel(State.AccessSelf)]"
                             }
+                            divider_decorative = {}
                         }
                     }
                 }
-                divider_decorative = {}
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    visible = yes
-                    spacing = 6
-
-                    textbox = {
-                        parentanchor = hcenter
-                        using = fontsize_large
-                        text = "Unmanned Mars Mission"
-
-                        align = center|nobaseline
-                        maximumsize = { @panel_width_minus_20 -1 }
-                        multiline = yes
-                        autoresize = yes
-                    }
-
-                    divider_decorative = {}
-                }
-
-                # Culture countries and flags
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    spacing = 6
-
-                    dynamicgridbox = {
-                        parentanchor = hcenter
-                        datamodel = "[GetGlobalList('unmanned_mars')]"
-                        flipdirection = yes
-                        block "datamodel_wrap" {
-                            datamodel_wrap = 8
-                        }
-
-                        item = {
-                            container = {
-                                minimumsize = { 60 40 }
-
-                                small_flag = {
-                                    visible = "[Scope.AccessCountry]"
-                                    datacontext = "[Scope.AccessCountry]"
-                                    parentanchor = center
-
-                                    blockoverride "flag_tooltip" {
-                                        tooltipwidget = {
-                                            FancyTooltip_Country = {}
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                divider_decorative = {}
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    visible = yes
-                    spacing = 6
-
-                    textbox = {
-                        parentanchor = hcenter
-                        using = fontsize_large
-                        text = "Manned Mars Mission"
-
-                        align = center|nobaseline
-                        maximumsize = { @panel_width_minus_20 -1 }
-                        multiline = yes
-                        autoresize = yes
-                    }
-
-                    divider_decorative = {}
-                }
-
-                # Culture countries and flags
-                flowcontainer = {
-                    parentanchor = hcenter
-                    direction = vertical
-                    spacing = 6
-
-                    dynamicgridbox = {
-                        parentanchor = hcenter
-                        datamodel = "[GetGlobalList('manned_mars')]"
-                        flipdirection = yes
-                        block "datamodel_wrap" {
-                            datamodel_wrap = 8
-                        }
-
-                        item = {
-                            container = {
-                                minimumsize = { 60 40 }
-
-                                small_flag = {
-                                    visible = "[Scope.AccessCountry]"
-                                    datacontext = "[Scope.AccessCountry]"
-                                    parentanchor = center
-
-                                    blockoverride "flag_tooltip" {
-                                        tooltipwidget = {
-                                            FancyTooltip_Country = {}
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                divider_decorative = {}
             }
         }
     }

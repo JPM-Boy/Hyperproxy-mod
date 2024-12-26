@@ -461,6 +461,8 @@ window = {
                                 parentanchor = top|center
                                 size = { 320 40 }
                                 text = "Send Mission"
+                                enabled = "[GetScriptedGui('moon_flyby').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                onclick = "[GetScriptedGui('moon_flyby').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                             }
                         }
                     }
@@ -523,6 +525,8 @@ window = {
                                 parentanchor = top|center
                                 size = { 320 40 }
                                 text = "Send Mission"
+                                enabled = "[GetScriptedGui('moon_orbit').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                onclick = "[GetScriptedGui('moon_orbit').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                             }
                         }
                     }
@@ -585,6 +589,8 @@ window = {
                                 parentanchor = top|center
                                 size = { 320 40 }
                                 text = "Send Mission"
+                                enabled = "[GetScriptedGui('moon_landing').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                onclick = "[GetScriptedGui('moon_landing').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                             }
                         }
                     }
@@ -668,6 +674,8 @@ window = {
                                 parentanchor = top|center
                                 size = { 320 40 }
                                 text = "Send Mission"
+                                enabled = "[GetScriptedGui('mars_flyby').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                onclick = "[GetScriptedGui('mars_flyby').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                             }
                         }
                     }
@@ -730,6 +738,8 @@ window = {
                                 parentanchor = top|center
                                 size = { 320 40 }
                                 text = "Send Mission"
+                                enabled = "[GetScriptedGui('mars_orbit').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                onclick = "[GetScriptedGui('mars_orbit').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                             }
                         }
                     }
@@ -792,6 +802,8 @@ window = {
                                 parentanchor = top|center
                                 size = { 320 40 }
                                 text = "Send Mission"
+                                enabled = "[GetScriptedGui('mars_landing').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                onclick = "[GetScriptedGui('mars_landing').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                             }
                         }
                     }
@@ -813,7 +825,7 @@ window = {
                 }
                 divider_decorative = {}
                 dynamicgridbox = {
-                    datamodel = "[GetGlobalList('space_states')]"
+                    datamodel = "[GetGlobalList('moon_states')]"
                     datamodel_wrap = 2
                     flipdirection = yes
                     item = {
@@ -875,7 +887,7 @@ window = {
                 }
                 divider_decorative = {}
                 dynamicgridbox = {
-                    datamodel = "[GetGlobalList('space_states')]"
+                    datamodel = "[GetGlobalList('mars_states')]"
                     datamodel_wrap = 2
                     flipdirection = yes
                     item = {

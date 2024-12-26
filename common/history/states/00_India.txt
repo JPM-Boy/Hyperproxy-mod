@@ -2,7 +2,60 @@
 # "It's because of differing methods of editing throughout the production of the game. Quote marks are unnecessary, but harmless if present."
 
 STATES = {
-
+	s:STATE_MOON_ONE = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { xD1DDAF }
+		}
+	}
+	s:STATE_MOON_TWO = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { x8F8226 }
+		}
+	}
+	s:STATE_MOON_THREE = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { xE05FD2 }
+		}
+	}
+	s:STATE_MOON_FOUR = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { xAB0AB8 }
+		}
+	}
+	s:STATE_MOON_FIVE = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { x243803 }
+		}
+	}
+	s:STATE_MOON_SIX = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { xA3E6C2 }
+		}
+	}
+	s:STATE_MARS_ONE = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { x0A81A8 }
+		}
+	}
+	s:STATE_MARS_TWO = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { xD7CB6A }
+		}
+	}
+	s:STATE_MARS_THREE = {
+		create_state = {
+			country = c:MOON
+			owned_provinces = { xE99A6A }
+		}
+	}
 	s:STATE_INDIAN_OCEAN_TERRITORY = {
 		create_state = {
 			country = c:GBR

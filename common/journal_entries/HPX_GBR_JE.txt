@@ -41,7 +41,6 @@
 				trigger_event = hpx_GBR_event.1
 			}
 		}
-		
 		if = {
 			limit = {var:anglo_progress >= 200}
 			hpx_free_france = yes
@@ -49,8 +48,8 @@
 			limit = {var:french_progress >= 200}
 			hpx_free_britain = yes
 		}
-		remove_variable = var:anglo_progress
-		remove_variable = var:french_progress
+		remove_variable = anglo_progress
+		remove_variable = french_progress
 	}
 	invalid = {
 		exists = c:EURO

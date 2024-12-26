@@ -196,7 +196,7 @@
 		}
 	}
 	s:STATE_SORBIA = {
-		region_state:SRB = {
+		region_state:EGE = {
 			create_pop = {
 				culture = sorb
 				size = 2400000
@@ -204,7 +204,7 @@
 		}
 	}
 	s:STATE_POMERANIA = {
-		region_state:VEL = {
+		region_state:EGE = {
 			create_pop = {
 				culture = sorb
 				size = 2350000

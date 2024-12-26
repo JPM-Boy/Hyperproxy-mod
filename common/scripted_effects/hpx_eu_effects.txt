@@ -76,10 +76,30 @@
 }
 european_unification = {
     change_tag = EURO
+    if = {
+        limit = {c:EURO = {has_law = law_type:law_council_republic}}
+        law_type:law_council_republic = {
+            save_scope_as = euro_law
+        }
+    } else_if = {
+        limit = {c:EURO = {has_law = law_type:law_republic}}
+        law_type:law_republic = {
+            save_scope_as = euro_law
+        }
+    } else_if = {
+        limit = {c:EURO = {has_law = law_type:law_corporatocracy}}
+        law_type:law_corporatocracy = {
+            save_scope_as = euro_law
+        }
+    } else = {
+        law_type:law_republic = {
+            save_scope_as = euro_law
+        }
+    }
     every_in_global_list = {
         variable = eu_memberlist
         save_scope_as = state_region_owner
-        activate_law = law_type:law_republic
+        activate_law = scope:euro_law
         c:EURO = {
             if = {
                 limit = {NOT = {scope:state_region_owner = c:EURO}}

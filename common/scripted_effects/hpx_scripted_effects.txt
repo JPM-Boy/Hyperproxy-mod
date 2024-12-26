@@ -99,12 +99,29 @@ setup_space_race_lists = {
 	add_to_global_variable_list = { name = moon_flyby target = c:GBR}
 	add_to_global_variable_list = { name = moon_flyby target = c:USA}
 	add_to_global_variable_list = { name = moon_flyby target = c:RUS}
+	c:GBR = {set_variable = moon_flyby}
+	c:USA = {set_variable = moon_flyby}
+	c:RUS = {set_variable = moon_flyby}
+
 
 	add_to_global_variable_list = { name = moon_orbit target = c:USA}
 	add_to_global_variable_list = { name = moon_orbit target = c:RUS}
+	c:USA = {set_variable = moon_orbit}
+	c:RUS = {set_variable = moon_orbit}
 
 	add_to_global_variable_list = { name = moon_landing target = c:USA}
+	c:USA = {set_variable = moon_landing}
 
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_ONE.region_state:MOON }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_TWO.region_state:MOON }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_THREE.region_state:MOON }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_FOUR.region_state:MOON }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_FIVE.region_state:MOON }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_SIX.region_state:MOON }
+
+	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_ONE.region_state:MOON }
+	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_TWO.region_state:MOON }
+	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_THREE.region_state:MOON }
 
 	every_in_global_list = {
 		variable = space_agency

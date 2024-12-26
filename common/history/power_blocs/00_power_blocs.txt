@@ -54,8 +54,6 @@
 
 			member = c:POL
 			member = c:CZH
-			member = c:VEL
-			member = c:SRB
 			member = c:EGE
 			member = c:AUS
 			member = c:VEN

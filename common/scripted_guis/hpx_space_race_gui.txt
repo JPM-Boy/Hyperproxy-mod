@@ -11,6 +11,7 @@
         }
     }
 }
+
 more_space_funds = {
     scope = country
     effect = {
@@ -34,7 +35,6 @@ more_space_funds = {
         }
     }
 }
-
 less_space_funds = {
     scope = country
     effect = {
@@ -75,7 +75,6 @@ buy_observatories = {
         }
     }
 }
-
 buy_facilities = {
     scope = country
     effect = {
@@ -89,7 +88,6 @@ buy_facilities = {
         }
     }
 }
-
 buy_satelites = {
     scope = country
     effect = {
@@ -103,7 +101,6 @@ buy_satelites = {
         }
     }
 }
-
 buy_launch = {
     scope = country
     effect = {
@@ -146,6 +143,89 @@ buy_launch = {
         add_to_global_variable_list = {
             name = space_agency
             target = this
+        }
+    }
+}
+
+moon_flyby = {
+    scope = country
+    effect = {
+        set_variable = moon_flyby_done
+        add_to_global_variable_list = {name = moon_flyby target = this}
+    }
+
+    is_valid = {
+        NOT = { has_variable = moon_flyby_done}
+    }
+}
+moon_orbit = {
+    scope = country
+    effect = {
+        set_variable = moon_orbit_done
+        add_to_global_variable_list = {name = moon_orbit target = this}
+    }
+
+    is_valid = {
+        AND = {
+            NOT = { has_variable = moon_orbit_done}
+            has_variable = moon_flyby_done
+        }
+    }
+}
+moon_landing = {
+    scope = country
+    effect = {
+        set_variable = moon_landing_done
+        add_to_global_variable_list = {name = moon_landing target = this}
+
+    }
+
+    is_valid = {
+        AND = {
+            NOT = { has_variable = moon_landing_done}
+            has_variable = moon_orbit_done
+        }
+    }
+}
+
+mars_flyby = {
+    scope = country
+    effect = {
+        set_variable = mars_flyby_done
+        add_to_global_variable_list = {name = mars_flyby target = this}
+    }
+
+    is_valid = {
+        NOT = { has_variable = mars_flyby_done}
+        has_variable = moon_orbit_done
+    }
+}
+mars_orbit = {
+    scope = country
+    effect = {
+        set_variable = mars_orbit_done
+        add_to_global_variable_list = {name = mars_orbit target = this}
+    }
+
+    is_valid = {
+        AND = {
+            NOT = { has_variable = mars_orbit_done}
+            has_variable = mars_flyby_done
+        }
+    }
+}
+mars_landing = {
+    scope = country
+    effect = {
+        set_variable = mars_landing_done
+        add_to_global_variable_list = {name = mars_landing target = this}
+
+    }
+
+    is_valid = {
+        AND = {
+            NOT = { has_variable = mars_landing_done}
+            has_variable = mars_orbit_done
         }
     }
 }

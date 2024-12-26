@@ -1,0 +1,17 @@
+﻿l_english:
+ je_hpx_communist_health_regime: "Health of our Regime"
+ authoritarianism_bar_name: "Authoritarianism"
+ authoritarianism_bar_desc: "Authoritarianism - [ROOT.Var('authoritarianism').GetValue]"
+ autonomy_bar_name: "Autonomy"
+ autonomy_bar_desc: "Autonomy - [ROOT.Var('autonomy').GetValue]"
+
+ autonomy_0: "If #O Autonomy#! reaches 0"
+ autonomy_100: "If #O Autonomy#! reaches 100"
+
+ hpx_eastern_europe.1.t: "Intervention in [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"
+ hpx_eastern_europe.1.d: "A high-ranking Soviet general seeks your approval for a military intervention in a rebellious [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]. Will you uphold unity through force or explore alternative solutions?"
+ hpx_eastern_europe.1.f: "\" The Ogre does what Ogres can, Deeds quite impossible for Man. But one prize is beyond his reach, The Ogre cannot master Speech: About a subjugated plain, Among its desperate and slain, The Ogre stalks with hands on hips, While drivel gushes from his lips.\"\n\n--W.H. Auden"
+ hpx_eastern_europe.1.a: "General, prepare the tanks..."
+ hpx_eastern_europe.1.b: "Leave them alone."
+
+ SOVIET_INVASION: "#r You will declare war on [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"

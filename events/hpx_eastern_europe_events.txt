@@ -1,0 +1,29 @@
+﻿namespace = hpx_eastern_europe
+
+hpx_eastern_europe.1 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_eastern_europe.1.t
+	desc = hpx_eastern_europe.1.d
+	flavor = hpx_eastern_europe.1.f
+	duration = 3
+
+	option = {
+		name = hpx_eastern_europe.1.a
+		custom_tooltip = {
+			create_diplomatic_play = {
+				type = dp_make_protectorate
+				target_country = root.var:target_invasion
+			}
+			text = SOVIET_INVASION
+		}
+	}
+	option = {
+		name = hpx_eastern_europe.1.b
+		change_relations = { country = root.var:target_invasion value = 30 }
+	}
+}

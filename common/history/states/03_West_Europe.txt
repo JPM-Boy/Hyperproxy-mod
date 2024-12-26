@@ -692,7 +692,7 @@ STATES = {
 	}
 	s:STATE_SORBIA = {
 		create_state = {
-			country = c:SRB
+			country = c:EGE
 			owned_provinces = { 
 				xC00121 x272E48 xC108EA x732DC0 x614121 xDF4020 x1B72C9 x169073 xCE74AB x60BF20 x94D624
 			}

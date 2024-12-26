@@ -1,0 +1,56 @@
+﻿je_hpx_communist_health_regime = {
+    should_be_pinned_by_default = yes
+    group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+    scripted_progress_bar = authoritarianism_bar
+    scripted_progress_bar = autonomy_bar
+    immediate = {
+        set_variable = { name = autonomy value = 50 }
+        set_variable = { name = authoritarianism value = 50 }
+    }
+    fail = {
+        OR = {
+            NOT = {has_law = law_type:law_council_republic}
+            custom_tooltip = {
+                text = autonomy_0
+                var:autonomy <= 0
+            }
+            custom_tooltip = {
+                text = autonomy_100
+                var:autonomy >= 100
+            }
+        }
+	}
+    on_weekly_pulse = {
+        effect = {
+            je:je_hpx_communist_health_regime ?= {
+                set_bar_progress = {
+                    value = owner.var:autonomy
+                    name = autonomy_bar
+                }
+                set_bar_progress = {
+                    value = owner.var:authoritarianism
+                    name = authoritarianism_bar
+                }
+            }
+        }
+    }
+    on_fail = {
+        if = {
+            limit = {var:autonomy <= 0}
+            c:RUS = {
+                create_diplomatic_pact = { country = prev type = protectorate }
+            }
+
+        } else_if = {
+            limit = {var:autonomy >= 100}
+            c:RUS = {
+                set_variable = { name = target_invasion value = prev.owner }
+                trigger_event = {id = hpx_eastern_europe.1}
+            }
+        }
+    }
+
+    timeout = 9125
+}

@@ -1,5 +1,16 @@
 ﻿# Strategic Regions in Africa
-
+region_moon = {
+	graphical_culture = "asian"
+	capital_province = xD1DDAF
+	states = {STATE_MOON_ONE STATE_MOON_TWO STATE_MOON_THREE STATE_MOON_FOUR STATE_MOON_FIVE STATE_MOON_SIX}
+	map_color = { 0.5 0 0 }
+}
+region_mars = {
+	graphical_culture = "asian"
+	capital_province = x0A81A8
+	states = {STATE_MARS_ONE STATE_MARS_TWO STATE_MARS_THREE }
+	map_color = { 0.5 0 0 }
+}
 region_nile_basin = {
 	graphical_culture = "arabic"
 	capital_province = x50D060

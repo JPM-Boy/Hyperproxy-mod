@@ -1,3 +1,13 @@
+MOON = {
+	color = { 0 178 178 }
+
+	country_type = decentralized
+
+	tier = empire
+
+	cultures = { catalan }
+	capital = STATE_MOON_ONE
+}
 GER = {
 	color = { 147 130 110 }
 	

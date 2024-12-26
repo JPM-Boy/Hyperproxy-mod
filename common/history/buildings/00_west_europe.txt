@@ -5442,13 +5442,13 @@ s:STATE_WESTERN_NORWAY={
 		}
 	}
 	s:STATE_POMERANIA={
-		region_state:VEL={
+		region_state:EGE={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:VEL"
+						country="c:EGE"
 						levels=3
 						region="STATE_POMERANIA"
 					}
@@ -5461,7 +5461,7 @@ s:STATE_WESTERN_NORWAY={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VEL"
+						country="c:EGE"
 						levels=1
 						region="STATE_POMERANIA"
 					}
@@ -5474,7 +5474,7 @@ s:STATE_WESTERN_NORWAY={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VEL"
+						country="c:EGE"
 						levels=3
 						region="STATE_POMERANIA"
 					}
@@ -5487,13 +5487,13 @@ s:STATE_WESTERN_NORWAY={
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:VEL"
+						country="c:EGE"
 						levels=1
 						region="STATE_POMERANIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:VEL"
+						country="c:EGE"
 						levels=1
 						region="STATE_POMERANIA"
 					}
@@ -5505,7 +5505,7 @@ s:STATE_WESTERN_NORWAY={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:VEL"
+						country="c:EGE"
 						levels=1
 					}
 				}
@@ -7512,13 +7512,13 @@ s:STATE_WESTERN_NORWAY={
 		}
 	}
 	s:STATE_SORBIA={
-		region_state:SRB={
+		region_state:EGE={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SRB"
+						country="c:EGE"
 						levels=2
 						region="STATE_SORBIA"
 					}
@@ -7531,7 +7531,7 @@ s:STATE_WESTERN_NORWAY={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SRB"
+						country="c:EGE"
 						levels=1
 						region="STATE_SORBIA"
 					}
@@ -7544,7 +7544,7 @@ s:STATE_WESTERN_NORWAY={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SRB"
+						country="c:EGE"
 						levels=1
 						region="STATE_SORBIA"
 					}
@@ -7557,7 +7557,7 @@ s:STATE_WESTERN_NORWAY={
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SRB"
+						country="c:EGE"
 						levels=1
 						region="STATE_SORBIA"
 					}
@@ -7569,7 +7569,7 @@ s:STATE_WESTERN_NORWAY={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:SRB"
+						country="c:EGE"
 						levels=1
 					}
 				}

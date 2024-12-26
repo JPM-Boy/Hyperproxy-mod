@@ -278,7 +278,7 @@
 	
 	s:STATE_POMERANIA = {
 		create_state = {
-			country = c:VEL
+			country = c:EGE
 			owned_provinces = { xA9BD82 x8C6982 x19AE19 x3C26DD x6A53CF x86E6F2 xCDEAE4 xA0C020 xD4C37D x8D1E12 xEF5730 x8001A0 x89A2A9 x28CEC2 xB90BFF x514C51 xF77289 }
 		}
 		

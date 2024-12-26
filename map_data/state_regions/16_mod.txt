@@ -49,3 +49,107 @@ STATE_LABRADOR = {
     }
     naval_exit_id = 3045
 }
+
+STATE_MOON_ONE = {
+    id = 5003
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xD1DDAF" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+
+STATE_MOON_TWO = {
+    id = 5004
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x8F8226" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+STATE_MOON_THREE = {
+    id = 5005
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xE05FD2" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+
+STATE_MOON_FOUR = {
+    id = 5006
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xAB0AB8" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+STATE_MOON_FIVE = {
+    id = 5007
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x243803" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+
+STATE_MOON_SIX = {
+    id = 5008
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xA3E6C2" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+STATE_MARS_ONE = {
+    id = 5009
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "x0A81A8" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+STATE_MARS_TWO = {
+    id = 5010
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xD7CB6A" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}
+
+STATE_MARS_THREE = {
+    id = 5011
+    subsistence_building = "building_subsistence_farms"
+    provinces = { "xE99A6A" }
+    arable_land = 0
+    arable_resources = { "bg_livestock_ranches" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_rare_elements_mining = 100
+    }
+}

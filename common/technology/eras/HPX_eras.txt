@@ -1,1 +1,59 @@
+﻿era_6 = { #	1940s/1950s
+	technology_cost = 20000 # for progress bonuses, use a rounded third: 6000
+	start_date = 1940.01.01
+	end_date = 1959.12.31
+}
 
+era_7 = { #1960s/1970s
+	technology_cost = 25000 # for progress bonuses, use a rounded third: 8000
+	start_date = 1960.01.01
+	end_date = 1979.12.31
+}
+
+era_8 = { #1980s/1990s
+	technology_cost = 30000 # for progress bonuses, use a rounded third: 10000
+	start_date = 1980.01.01
+	end_date = 1999.12.31
+}
+
+era_9 = { #2000s/2010s
+	technology_cost = 35000 # for progress bonuses, use a rounded third: 12000
+	start_date = 2000.01.01
+	end_date = 2019.12.31
+}
+
+era_10 = { #2020s/2030s
+	technology_cost = 40000 # for progress bonuses, use a rounded third: 13000
+	start_date = 2020.01.01
+	end_date = 2039.12.31
+}
+
+era_11 = { #2040s/2050s
+	technology_cost = 45000 # for progress bonuses, use a rounded third: 15000
+	start_date = 2040.01.01
+	end_date = 2059.12.31
+}
+
+era_12 = { #2060s/2070s
+	technology_cost = 50000 # for progress bonuses, use a rounded third: 17000
+	start_date = 2060.01.01
+	end_date = 2079.12.31
+}
+
+era_13 = { #2080s/2090s
+	technology_cost = 55000 # for progress bonuses, use a rounded third: 18000
+	start_date = 2080.01.01
+	end_date = 2099.12.31
+}
+
+era_14 = { #2100s/2110s
+	technology_cost = 60000 # for progress bonuses, use a rounded third: 20000
+	start_date = 2100.01.01
+	end_date = 2119.12.31
+}
+
+era_15 = { #2120s/2130s
+	technology_cost = 65000 # for progress bonuses, use a rounded third: 22000
+	start_date = 2120.01.01
+	end_date = 2139.12.31
+}

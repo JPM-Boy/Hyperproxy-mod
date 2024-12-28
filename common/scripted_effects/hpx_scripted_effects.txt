@@ -1081,3 +1081,152 @@ refresh_anglo_french = {
 	    }
 	}
 }
+
+communist_health_update = {
+	clamp_variable = {
+		name = authoritarianism
+		min = 0
+		max = 100
+	}
+	if = {
+		limit = {
+			root = {
+				has_modifier = modifier_neutral_authoritarianism
+			}
+		}
+		root = { remove_modifier = modifier_neutral_authoritarianism }
+	}
+	else_if = {
+		limit = {
+			root = {
+				has_modifier = modifier_more_authoritarianism
+			}
+		}
+		root = {
+			remove_modifier = modifier_more_authoritarianism
+		}
+	}
+	else_if = {
+		limit = {
+			root = {
+				has_modifier = modifier_less_authoritarianism
+			}
+		}
+		root = { remove_modifier = modifier_less_authoritarianism }
+	} else_if = {
+		limit = {
+			root = {
+				has_modifier = modifier_max_authoritarianism
+			}
+		}
+		root = { remove_modifier = modifier_max_authoritarianism }
+	}
+	if = {
+		limit = {
+			AND = {
+				root.var:authoritarianism >= 55
+				root.var:authoritarianism < 100
+			}
+		}
+		set_variable = {
+			name = authoritarianism_multiplier
+			value = {
+				add = root.var:authoritarianism
+				add = -55
+				divide = 45
+			}
+		}
+		root = {
+			add_modifier = {
+				name = modifier_more_authoritarianism
+				multiplier = root.var:authoritarianism_multiplier
+			}
+		}
+	} else_if = {
+		limit = {
+			AND = {
+				root.var:authoritarianism < 45
+				root.var:authoritarianism > 0
+			}
+
+		}
+		set_variable = {
+			name = authoritarianism_multiplier
+			value = {
+				add = 45
+				subtract = root.var:authoritarianism
+				divide = 45
+			}
+		}
+		root = {
+			add_modifier = {
+				name = modifier_less_authoritarianism
+				multiplier = root.var:authoritarianism_multiplier
+			}
+		}
+	} else_if = {
+		limit = { root.var:authoritarinism >= 100}
+		root = {
+			add_modifier = {
+				name = modifier_max_authoritarianism
+			}
+		}
+	} else_if = {
+		limit = {root.var:authoritarianism <= 0}
+		root = {
+			set_variable = liberal_revolution_communism
+		}
+		create_political_movement = { type = movement_liberal }
+		add_radicals = { value = 0.9 }
+		add_modifier = {name = modifier_liberal_revolution_wrong_side years = 5}
+	}
+	else = {
+		root = {
+			add_modifier = {
+				name = modifier_neutral_authoritarianism
+			}
+		}
+	}
+	set_variable = {
+		name = authoritarianism_multiplier_50
+		value = {
+			add = 50
+			multiply = root.var:authoritarianism_multiplier
+		}
+	}
+	set_variable = {
+		name = authoritarianism_multiplier_30
+		value = {
+			add = 30
+			multiply = root.var:authoritarianism_multiplier
+		}
+	}
+	set_variable = {
+		name = authoritarianism_multiplier_40
+		value = {
+			add = 40
+			multiply = root.var:authoritarianism_multiplier
+		}
+	}
+	set_variable = {
+		name = authoritarianism_multiplier_25
+		value = {
+			add = 25
+			multiply = root.var:authoritarianism_multiplier
+		}
+	}
+	set_variable = {
+		name = authoritarianism_multiplier_20
+		value = {
+			add = 20
+			multiply = root.var:authoritarianism_multiplier
+		}
+	}
+	set_variable = {
+		name = authoritarianism_multiplier_10
+		value = {
+			add = 10
+			multiply = root.var:authoritarianism_multiplier
+		}
+	}
+}

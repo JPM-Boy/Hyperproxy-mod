@@ -2656,6 +2656,18 @@ movement_liberal = {
 
 		if = {
 			limit = {
+				owner = {
+					has_variable = liberal_revolution_communism
+				}
+			}
+			multiply = {
+				value = 50
+				desc = "LIBERAL_REVOLUTION_COMMUNISM"
+			}
+		}
+
+		if = {
+			limit = {
 				strata = upper
 			}
 			if = {
@@ -2766,7 +2778,7 @@ movement_liberal = {
 		}
 		
 		weight = {
-			value = 100
+			value = 1000
 		}	
 	
 		state_weight = {
@@ -2781,7 +2793,7 @@ movement_liberal = {
 		}
 		
 		weight = {
-			value = 1000
+			value = 0
 		}
 
 		state_weight = {
@@ -2805,8 +2817,19 @@ movement_liberal = {
 				add = {
 					value = 0.1
 					desc = "NO_INSTITUTION_schools"
-				}		
-			}				
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_variable = liberal_revolution_communism
+					}
+				}
+				multiply = {
+					value = 50
+					desc = "LIBERAL_REVOLUTION_COMMUNISM"
+				}
+			}
 		}
 	}		
 }

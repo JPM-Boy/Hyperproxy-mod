@@ -46,6 +46,12 @@ je_hpx_germany = {
 	}
 
 	on_complete = {
+		c:GBR.power_bloc = {
+			save_scope_as = edo
+		}
+		c:RUS.power_bloc = {
+			save_scope_as = warsaw
+		}
 		if = {
 			limit = { root ?= c:WGE}
 			change_tag = GER
@@ -58,5 +64,15 @@ je_hpx_germany = {
 			set_capital = STATE_BRANDENBURG
 			annex ?= c:WGE
 		}
+		if = {
+			limit = { c:GER = {has_law = law_type:law_republic}  }
+			root = {join_power_bloc = scope:edo}
+		} else_if =  {
+			limit = { c:GER = {has_law = law_type:law_council_republic}  }
+			root = {join_power_bloc = scope:warsaw}
+		}
+		add_primary_culture = cu:north_german
+		add_primary_culture = cu:south_german
+		remove_primary_culture = cu:sorb
 	}
 }

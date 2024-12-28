@@ -7,7 +7,10 @@
     scripted_progress_bar = autonomy_bar
     immediate = {
         set_variable = { name = autonomy value = 50 }
+        set_variable = { name = autonomy_change value = 0}
         set_variable = { name = authoritarianism value = 50 }
+        set_variable = { name = authoritarianism_change value = 0}
+
     }
     fail = {
         OR = {
@@ -20,8 +23,19 @@
                 text = autonomy_100
                 var:autonomy >= 100
             }
+            custom_tooltip = {
+                text = started_liberal_revolution
+                has_variable = liberal_revolution_communism
+            }
         }
 	}
+    on_monthly_pulse = {
+        effect = {
+            change_variable = { name = autonomy add = var:autonomy_change }
+            change_variable = { name = authoritarianism add = var:authoritarianism_change }
+            communist_health_update = yes
+        }
+    }
     on_weekly_pulse = {
         effect = {
             je:je_hpx_communist_health_regime ?= {
@@ -51,6 +65,4 @@
             }
         }
     }
-
-    timeout = 9125
 }

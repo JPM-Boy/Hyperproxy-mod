@@ -1,0 +1,26 @@
+﻿authoritarianism_tooltip = {
+    type = country
+    random_valid = no
+
+    text = {
+        trigger = {
+            root.var:authoritarianism < 45
+        }
+        localization_key = authoritarianism_tooltip_very_low
+    }
+
+    text = {
+        trigger = {
+            root.var:authoritarianism >= 45
+            root.var:authoritarianism < 55
+        }
+        localization_key = authoritarianism_tooltip_medium
+    }
+
+    text = {
+        trigger = {
+            root.var:authoritarianism >= 55
+        }
+        localization_key = authoritarianism_tooltip_very_high
+    }
+}

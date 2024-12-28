@@ -58,16 +58,6 @@ french_media_encouraged = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     state_assimilation_mult = -0.15
 }
-great_assimilation_policy = {
-    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-    state_assimilation_mult = 10
-    state_radicals_from_discrimination_mult = 5
-}
-assimilation_policy = {
-    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-    state_assimilation_mult = 5
-    state_radicals_from_discrimination_mult = 2.5 
-}
 imf_loan = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 }
@@ -83,4 +73,47 @@ the_great_shift = {
     country_prestige_add = 50
     state_loyalists_from_sol_change_accepted_culture_mult = 0.15
     country_society_tech_research_speed_mult = 0.15
+}
+
+modifier_neutral_authoritarianism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+}
+
+modifier_more_authoritarianism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_orthodox_communist_pop_attraction_mult = 0.5
+    state_birth_rate_mult = 0.25
+    country_suppression_cost_mult = -0.5
+    interest_group_ig_reformist_communist_pop_attraction_mult = -0.3
+
+}
+
+modifier_less_authoritarianism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_orthodox_communist_pop_attraction_mult = -0.5
+    country_loan_interest_rate_mult = -0.1
+    interest_group_ig_reformist_communist_pop_attraction_mult = 0.3
+    country_loyalism_increases_full_acceptance_mult = 0.1
+    country_loyalism_increases_second_rate_citizen_mult = 0.1
+}
+
+modifier_max_authoritarianism = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    country_weekly_innovation_max_add = -30
+    state_bureaucracy_population_base_cost_factor_mult = 0.5
+    building_group_bg_agriculture_throughput_add = -0.9
+    country_radicals_from_legitimacy_mult = 4
+}
+
+modifier_liberal_revolution_wrong_side = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    unit_army_offense_mult = -0.5
+    unit_defense_mult = -0.5
+    unit_morale_loss_mult = 1
+    interest_group_ig_orthodox_communist_pop_attraction_mult = -0.85
+    interest_group_ig_orthodox_communist_pol_str_mult = -0.8
+    interest_group_ig_liberals_pop_attraction_mult = 0.85
+    interest_group_ig_liberal_pol_str_mult = 0.8
+
+
 }

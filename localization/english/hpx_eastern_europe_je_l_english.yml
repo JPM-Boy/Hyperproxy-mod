@@ -1,9 +1,15 @@
 ﻿l_english:
  je_hpx_communist_health_regime: "Health of our Regime"
+ je_hpx_communist_health_regime_reason: "#b Current effects due to #r Authoritarianism#!#!\n[ROOT.GetCountry.GetCustom('authoritarianism_tooltip')]"
+
+ authoritarianism_tooltip_medium: "@divider_start!@divider_mid!@divider_end!\n    None\n@divider_start!@divider_mid!@divider_end!"
+ authoritarianism_tooltip_very_high: "@divider_start!@divider_mid!@divider_end!\n#green -#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|+]#!%#! Suppression Cost\n#green +#variable [ROOT.Var('authoritarianism_multiplier_25').GetValue|+]#!%#! Birth Rate\n#green +#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|+]#!%#! $ig_variant_orthodox_communist$ Pop Attraction\n#red -#variable [ROOT.Var('authoritarianism_multiplier_30').GetValue|-]#!%#! $ig_variant_reformist_communist$ Pop Attraction\n@divider_start!@divider_mid!@divider_end!\n#r If it reaches 100 you will instead gain:#!\n[GetStaticModifier('modifier_max_authoritarianism').GetDesc]"
+ authoritarianism_tooltip_very_low: "@divider_start!@divider_mid!@divider_end!\n#green -#variable [ROOT.Var('authoritarianism_multiplier_10').GetValue|+]#!%#! Interest Rate\n#green +#variable [ROOT.Var('authoritarianism_multiplier_10').GetValue|+]#!%#! Loyalist increase to Tier IV and V Citizens\n#red -#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|-]#!%#! $ig_variant_orthodox_communist$ Pop Attraction\n#green +#variable [ROOT.Var('authoritarianism_multiplier_30').GetValue|+]#!%#! $ig_variant_reformist_communist$ Pop Attraction\n@divider_start!@divider_mid!@divider_end!\n#blue #b If it reaches 0 you will start a Liberal Revolution."
+
  authoritarianism_bar_name: "Authoritarianism"
- authoritarianism_bar_desc: "Authoritarianism - [ROOT.Var('authoritarianism').GetValue]"
+ authoritarianism_bar_desc: "Authoritarianism - #r [ROOT.Var('authoritarianism').GetValue]"
  autonomy_bar_name: "Autonomy"
- autonomy_bar_desc: "Autonomy - [ROOT.Var('autonomy').GetValue]"
+ autonomy_bar_desc: "Autonomy - #blue #b [ROOT.Var('autonomy').GetValue]"
 
  autonomy_0: "If #O Autonomy#! reaches 0"
  autonomy_100: "If #O Autonomy#! reaches 100"
@@ -15,3 +21,6 @@
  hpx_eastern_europe.1.b: "Leave them alone."
 
  SOVIET_INVASION: "#r You will declare war on [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"
+ LIBERAL_REVOLUTION_COMMUNISM: "Liberal Revolution brewing in a Communist Country."
+ started_liberal_revolution: "You started a Liberal Revolution"
+ modifier_liberal_revolution_wrong_side: "Wrong side in a Revolution"

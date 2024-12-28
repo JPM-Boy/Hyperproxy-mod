@@ -1,4 +1,246 @@
 ﻿MILITARY_FORMATIONS = {
+	c:POL = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_poland
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GREATER_POLAND
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LESSER_POLAND
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SILESIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MAZOVIA
+				count = 12
+			}
+		}
+	}
+	c:EGE = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_germany
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BRANDENBURG
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_POMERANIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SORBIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MECKLENBURG
+				count = 12
+			}
+		}
+	}
+	c:CZH = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_danubia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BOHEMIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MORAVIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_EAST_SLOVAKIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WEST_SLOVAKIA
+				count = 12
+			}
+		}
+	}
+	c:AUS = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_germany
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_AUSTRIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SLOVENIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ISTRIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_STYRIA
+				count = 12
+			}
+		}
+	}
+	c:WAL = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_danubia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_WALLACHIA
+				count = 12
+			}
+		}
+	}
+	c:GRE = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ATTICA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MACEDONIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_THESSALIA
+				count = 12
+			}
+		}
+	}
+	c:VEN = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_italy
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VENETIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOMBARDY
+				count = 12
+			}
+		}
+	}
+	c:BUL = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BULGARIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_THRACE
+				count = 12
+			}
+		}
+	}
+	c:ALB = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ALBANIA
+				count = 12
+			}
+		}
+	}
+	c:YUG = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_balkans
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CROATIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_SERBIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BOSNIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SOUTHERN_SERBIA
+				count = 12
+			}
+		}
+	}
+	c:HUN = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_danubia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TRANSDANUBIA
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CENTRAL_HUNGARY
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BEKES
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NORTHERN_TRANSYLVANIA
+				count = 12
+			}
+		}
+	}
 	c:GBR = {
 		create_military_formation = {
 			type = army

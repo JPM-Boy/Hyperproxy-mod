@@ -38,8 +38,28 @@ BRZ = {
 	
 	tier = empire
 	
-	cultures = { brazilian }
+	cultures = { dutch }
+	capital = STATE_NEW_AMSTERDAM
+}
+ANT = {
+	color = hex{ 5261ce }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { french }
 	capital = STATE_RIO_DE_JANEIRO
+}
+AMZ = {
+	color = hex{ ce6152 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { amazonian }
+	capital = STATE_AMAZONAS
 }
 
 PRG = {

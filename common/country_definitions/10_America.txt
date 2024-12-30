@@ -32,7 +32,7 @@ CHL = {
 }
 
 BRZ = {
-	color = hex{ 52ce61 }
+	color = hex{ 9e714a }
 	
 	country_type = recognized
 	
@@ -42,7 +42,7 @@ BRZ = {
 	capital = STATE_NEW_AMSTERDAM
 }
 ANT = {
-	color = hex{ 5261ce }
+	color = hex{ 5273af }
 
 	country_type = recognized
 
@@ -52,7 +52,7 @@ ANT = {
 	capital = STATE_RIO_DE_JANEIRO
 }
 AMZ = {
-	color = hex{ ce6152 }
+	color = hex{ 327548 }
 
 	country_type = recognized
 

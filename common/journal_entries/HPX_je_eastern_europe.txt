@@ -35,6 +35,17 @@
             change_variable = { name = authoritarianism add = var:authoritarianism_change }
             communist_health_update = yes
         }
+        random_events = {
+            80 = 0
+            10 = hpx_eastern_europe.2
+            10 = hpx_eastern_europe.3
+            10 = hpx_eastern_europe.4
+            10 = hpx_eastern_europe.5
+            10 = hpx_eastern_europe.6
+            10 = hpx_eastern_europe.7
+            10 = hpx_eastern_europe.8
+            10 = hpx_eastern_europe.9
+        }
     }
     on_weekly_pulse = {
         effect = {

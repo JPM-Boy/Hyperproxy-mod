@@ -6,7 +6,7 @@ hpx_eastern_europe.1 = { # Occupation of Rome
 
 	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
 	title = hpx_eastern_europe.1.t
 	desc = hpx_eastern_europe.1.d
 	flavor = hpx_eastern_europe.1.f
@@ -25,5 +25,181 @@ hpx_eastern_europe.1 = { # Occupation of Rome
 	option = {
 		name = hpx_eastern_europe.1.b
 		change_relations = { country = root.var:target_invasion value = 30 }
+	}
+}
+
+hpx_eastern_europe.2 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.2.t
+	desc = hpx_eastern_europe.2.d
+	flavor = hpx_eastern_europe.2.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.2.a
+		change_variable = { name = authoritarianism_change add = -5 }
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.2.b
+		change_variable = { name = authoritarianism_change add = 5 }
+		change_variable = { name = autonomy_change add = -5 }
+	}
+}
+
+hpx_eastern_europe.3 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.3.t
+	desc = hpx_eastern_europe.3.d
+	flavor = hpx_eastern_europe.3.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.3.a
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.3.b
+		change_variable = { name = authoritarianism_change add = 5 }
+	}
+}
+
+hpx_eastern_europe.4 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.4.t
+	desc = hpx_eastern_europe.4.d
+	flavor = hpx_eastern_europe.4.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.4.a
+		change_variable = { name = authoritarianism_change add = -5 }
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.4.b
+		change_variable = { name = authoritarianism_change add = 5 }
+		change_variable = { name = autonomy_change add = -5 }
+	}
+}
+
+hpx_eastern_europe.5 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.5.t
+	desc = hpx_eastern_europe.5.d
+	flavor = hpx_eastern_europe.5.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.5.a
+		change_variable = { name = authoritarianism_change add = -5 }
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.5.b
+		change_variable = { name = authoritarianism_change add = 5 }
+		change_variable = { name = autonomy_change add = -5 }
+	}
+}
+
+hpx_eastern_europe.6 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.6.t
+	desc = hpx_eastern_europe.6.d
+	flavor = hpx_eastern_europe.6.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.6.a
+		change_variable = { name = authoritarianism_change add = -5 }
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.6.b
+		change_variable = { name = authoritarianism_change add = 5 }
+		change_variable = { name = autonomy_change add = -5 }
+	}
+}
+
+hpx_eastern_europe.7 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.7.t
+	desc = hpx_eastern_europe.7.d
+	flavor = hpx_eastern_europe.7.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.7.a
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.7.b
+		change_variable = { name = authoritarianism_change add = 5 }
+	}
+}
+
+hpx_eastern_europe.8 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.8.t
+	desc = hpx_eastern_europe.8.d
+	flavor = hpx_eastern_europe.8.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.8.a
+		change_variable = { name = autonomy_change add = 5 }
+	}
+	option = {
+		name = hpx_eastern_europe.8.b
+		change_variable = { name = authoritarianism_change add = 5 }
+	}
+}
+
+hpx_eastern_europe.9 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.9.t
+	desc = hpx_eastern_europe.9.d
+	flavor = hpx_eastern_europe.9.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.9.a
+		change_variable = { name = authoritarianism_change add = -5 }
+	}
+	option = {
+		name = hpx_eastern_europe.9.b
+		change_variable = { name = autonomy_change add = -5 }
 	}
 }

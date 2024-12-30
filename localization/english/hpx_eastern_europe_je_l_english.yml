@@ -1,10 +1,10 @@
 ﻿l_english:
  je_hpx_communist_health_regime: "Health of our Regime"
- je_hpx_communist_health_regime_reason: "#b Current effects due to #r Authoritarianism#!#!\n[ROOT.GetCountry.GetCustom('authoritarianism_tooltip')]"
+ je_hpx_communist_health_regime_reason: "#b Current effects due to #r Authoritarianism#!#!\n[ROOT.GetCountry.GetCustom('authoritarianism_tooltip')]\nThe Eastern European regimes during the #O Cold War#! were defined by their ideological alignment with the #r Soviet Union#! and their membership in the expanded #O Warsaw Pact#!.\n\nThe catastrophic nuclear bombing of #r Bucharest#! by the #b United States#! in 1946 left deep scars across Eastern Europe. Intended to deter Soviet influence, the event instead galvanized regional solidarity, prompting Greece, Austria, and Northern Italy to join the Warsaw Pact.\n\nThis expanded alliance brought diversity but also heightened challenges in maintaining cohesion. While nations like Greece and Northern Italy sought greater autonomy from Soviet power, others, like Bulgaria and East Germany, embraced a highly centralized model, aligning closely with Moscow. This divergence created a delicate balancing act, with member states alternating between demands for independence and the unyielding grip of authoritarianism within their borders.\n\nThe bombing of Bucharest, a haunting reminder of Western aggression, cemented the narrative of a defensive alliance, justifying the authoritarian policies of regimes seeking to suppress dissent. Yet, it also sparked debates within the bloc about the limits of Soviet control. Greece, for example, with its strong tradition of partisan independence, frequently clashed with Moscow’s directives, while Austria leveraged its position as a strategic bridge between East and West to maintain some degree of self-governance.\n\nThe tension between autonomy and authoritarianism became defining characteristics of the Eastern Bloc. Leaders in these regimes had to navigate demands for local control against the need to maintain unity and Soviet approval. In Northern Italy, intellectual communism often clashed with the agrarian collectivism favored by Moscow, creating an ideological rift that further stressed the alliance.\n\nUltimately, the regimes of Eastern Europe existed in a state of constant negotiation—both internally, as they struggled to balance liberty with control, and externally, as they mediated their loyalty to the Soviet Union. These dynamics made the expanded Warsaw Pact a uniquely fragile, yet surprisingly resilient, political entity during the Cold War."
 
  authoritarianism_tooltip_medium: "@divider_start!@divider_mid!@divider_end!\n    None\n@divider_start!@divider_mid!@divider_end!"
  authoritarianism_tooltip_very_high: "@divider_start!@divider_mid!@divider_end!\n#green -#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|+]#!%#! Suppression Cost\n#green +#variable [ROOT.Var('authoritarianism_multiplier_25').GetValue|+]#!%#! Birth Rate\n#green +#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|+]#!%#! $ig_variant_orthodox_communist$ Pop Attraction\n#red -#variable [ROOT.Var('authoritarianism_multiplier_30').GetValue|-]#!%#! $ig_variant_reformist_communist$ Pop Attraction\n@divider_start!@divider_mid!@divider_end!\n#r If it reaches 100 you will instead gain:#!\n[GetStaticModifier('modifier_max_authoritarianism').GetDesc]"
- authoritarianism_tooltip_very_low: "@divider_start!@divider_mid!@divider_end!\n#green -#variable [ROOT.Var('authoritarianism_multiplier_10').GetValue|+]#!%#! Interest Rate\n#green +#variable [ROOT.Var('authoritarianism_multiplier_10').GetValue|+]#!%#! Loyalist increase to Tier IV and V Citizens\n#red -#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|-]#!%#! $ig_variant_orthodox_communist$ Pop Attraction\n#green +#variable [ROOT.Var('authoritarianism_multiplier_30').GetValue|+]#!%#! $ig_variant_reformist_communist$ Pop Attraction\n@divider_start!@divider_mid!@divider_end!\n#blue #b If it reaches 0 you will start a Liberal Revolution."
+ authoritarianism_tooltip_very_low: "@divider_start!@divider_mid!@divider_end!\n#green -#variable [ROOT.Var('authoritarianism_multiplier_10').GetValue|+]#!%#! Interest Rate\n#green +#variable [ROOT.Var('authoritarianism_multiplier_10').GetValue|+]#!%#! Loyalist increase to Tier IV and V Citizens\n#red -#variable [ROOT.Var('authoritarianism_multiplier_50').GetValue|-]#!%#! $ig_variant_orthodox_communist$ Pop Attraction\n#green +#variable [ROOT.Var('authoritarianism_multiplier_30').GetValue|+]#!%#! $ig_variant_reformist_communist$ Pop Attraction\n@divider_start!@divider_mid!@divider_end!\n#blue #b If it reaches 0 you will start a Liberal Revolution.#!#!\n"
 
  authoritarianism_bar_name: "Authoritarianism"
  authoritarianism_bar_desc: "Authoritarianism - #r [ROOT.Var('authoritarianism').GetValue]"
@@ -19,6 +19,55 @@
  hpx_eastern_europe.1.f: "\" The Ogre does what Ogres can, Deeds quite impossible for Man. But one prize is beyond his reach, The Ogre cannot master Speech: About a subjugated plain, Among its desperate and slain, The Ogre stalks with hands on hips, While drivel gushes from his lips.\"\n\n--W.H. Auden"
  hpx_eastern_europe.1.a: "General, prepare the tanks..."
  hpx_eastern_europe.1.b: "Leave them alone."
+
+ hpx_eastern_europe.2.t: "Reducing Bureaucratic Inefficiency"
+ hpx_eastern_europe.2.d: "The bureaucracy faces criticism for inefficiency. Reformers suggest delegating more responsibilities, while hardliners advocate downsizing to ensure loyalty."
+ hpx_eastern_europe.2.a: "Delegate responsibilities to local administrators."
+ hpx_eastern_europe.2.b: "Downsize and consolidate power."
+
+ hpx_eastern_europe.3.t: "Central Command vs. Local Authority"
+ hpx_eastern_europe.3.d: "The military discusses whether local commanders should have more independence or if tighter central oversight is necessary for cohesion."
+ hpx_eastern_europe.3.a: "Empower local commanders."
+ hpx_eastern_europe.3.b: "Enforce strict central control."
+
+ hpx_eastern_europe.4.t: "Crafting National Identity"
+ hpx_eastern_europe.4.d: "A new cultural initiative proposes either fostering grassroots projects or organizing state-controlled programs to shape society's values."
+ hpx_eastern_europe.4.a: "Encourage independent cultural expression."
+ hpx_eastern_europe.4.b: "Launch state-led initiatives."
+
+ hpx_eastern_europe.5.t: "Balancing Economic Priorities"
+ hpx_eastern_europe.5.d: "Economic strategists debate whether to provide industries with greater autonomy to innovate or enforce tighter state regulations for consistency."
+ hpx_eastern_europe.5.a: "Allow industries to innovate freely."
+ hpx_eastern_europe.5.b: "Ensure all economic actions follow state plans."
+
+ hpx_eastern_europe.6.t: "Reforming Education Policy"
+ hpx_eastern_europe.6.d: "The education ministry proposes reforms. Progressive officials push for greater academic freedom, while conservatives demand stricter curriculum control."
+ hpx_eastern_europe.6.a: "Expand academic freedom in schools."
+ hpx_eastern_europe.6.b: "Enforce state-approved curricula."
+
+ hpx_eastern_europe.7.t: "Modernizing Military Structures"
+ hpx_eastern_europe.7.d: "Debate arises on military modernization: prioritize decentralization for efficiency or maintain strict control for unity."
+ hpx_eastern_europe.7.a: "Decentralize military operations."
+ hpx_eastern_europe.7.b: "Maintain centralized command."
+
+ hpx_eastern_europe.8.t: "Engaging Worker Councils"
+ hpx_eastern_europe.8.d: "Worker councils request more decision-making power, while party officials fear losing control over production quotas."
+ hpx_eastern_europe.8.a: "Grant worker councils greater autonomy."
+ hpx_eastern_europe.8.b: "Ensure all production decisions remain centralized."
+
+ hpx_eastern_europe.9.t: "Media Policy Under Scrutiny"
+ hpx_eastern_europe.9.d: "The state media department faces demands for liberalization, while party leaders argue for continued editorial oversight."
+ hpx_eastern_europe.9.a: "Allow greater media independence."
+ hpx_eastern_europe.9.b: "Keep strict oversight of media content."
+
+ hpx_eastern_europe.2.f: "After years of bloated bureaucracy stalling essential reforms, a meeting is called at the capital. Ministers and local officials clash over the future of governance. Some advocate a leaner system, while others warn of losing control if too much power is decentralized."
+ hpx_eastern_europe.3.f: "In a tense debate within the Central Committee, fiery speeches echo through the chamber. Some argue that allowing local councils greater freedom will boost regional prosperity, while staunch loyalists insist that only centralized oversight can preserve unity."
+ hpx_eastern_europe.4.f: "At a cultural exhibition celebrating the nation’s heritage, intellectuals and politicians mingle. The question arises: should the regime foster regional traditions to boost morale or enforce a uniform identity to strengthen loyalty to the state?"
+ hpx_eastern_europe.5.f: "A critical conference on economic planning brings together technocrats and party ideologues. One faction pushes for local industries to innovate independently, while others advocate tighter oversight to ensure alignment with national goals."
+ hpx_eastern_europe.6.f: "In a packed lecture hall, educators, students, and party officials debate the curriculum. Should schools emphasize regional needs and aspirations, or should they double down on ideological unity and centralized standards?"
+ hpx_eastern_europe.7.f: "Military leaders convene in secret, debating the next phase of modernization. Some advocate empowering regional commands for efficiency, while others demand tighter central control to ensure ideological alignment."
+ hpx_eastern_europe.8.f: "In a series of tense meetings, party officials and factory managers debate the future of the worker councils. Some see them as a way to promote grassroots unity and productivity, while others fear they may become hotbeds of dissent that weaken the central authority of the state."
+ hpx_eastern_europe.9.f: "A wave of criticism spreads throughout the state-controlled media. Government officials struggle to maintain a balance between controlling the narrative and addressing public dissatisfaction. The question arises: should the media be further centralized, or is it time to allow more regional diversity in reporting?"
 
  SOVIET_INVASION: "#r You will declare war on [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"
  LIBERAL_REVOLUTION_COMMUNISM: "Liberal Revolution brewing in a Communist Country."

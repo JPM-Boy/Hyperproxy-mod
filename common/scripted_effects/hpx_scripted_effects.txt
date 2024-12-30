@@ -1177,7 +1177,7 @@ communist_health_update = {
 			set_variable = liberal_revolution_communism
 		}
 		create_political_movement = { type = movement_liberal }
-		add_radicals = { value = 0.9 }
+		add_radicals = { value = 0.6 }
 		add_modifier = {name = modifier_liberal_revolution_wrong_side years = 5}
 	}
 	else = {

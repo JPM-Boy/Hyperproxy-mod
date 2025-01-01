@@ -77,3 +77,32 @@
         }
     }
 }
+
+je_hpx_west_slavia = {
+    group = je_group_foreign_affairs
+    icon = "gfx/interface/icons/timed_modifier_icons/WSL.dds"
+
+    is_shown_when_inactive = {
+        OR = {
+            country_has_primary_culture = cu:sorb
+            country_has_primary_culture = cu:polish
+            country_has_primary_culture = cu:czech
+        }
+    }
+    possible = {
+        OR = {
+            country_has_primary_culture = cu:sorb
+            country_has_primary_culture = cu:polish
+            country_has_primary_culture = cu:czech
+        }
+    }
+    complete = {
+        custom_tooltip = {
+            text = is_WSL_tt
+            c:WSL ?= this
+        }
+    }
+    on_complete = {
+        trigger_event = {id = hpx_eastern_europe.10}
+    }
+}

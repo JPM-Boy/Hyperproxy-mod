@@ -69,6 +69,16 @@
  hpx_eastern_europe.8.f: "In a series of tense meetings, party officials and factory managers debate the future of the worker councils. Some see them as a way to promote grassroots unity and productivity, while others fear they may become hotbeds of dissent that weaken the central authority of the state."
  hpx_eastern_europe.9.f: "A wave of criticism spreads throughout the state-controlled media. Government officials struggle to maintain a balance between controlling the narrative and addressing public dissatisfaction. The question arises: should the media be further centralized, or is it time to allow more regional diversity in reporting?"
 
+ hpx_eastern_europe.10.t: "Formation of the West Slavic State"
+ hpx_eastern_europe.10.f: "We have made sure that the West will never step over us again.\n Three Hurrahs for the\nWest Slavic State!"
+ hpx_eastern_europe.10.a: "Glory to the W.S.S."
+
+ je_hpx_west_slavia: "A West Slavic State"
+ je_hpx_west_slavia_reason: "The #purple #b West Slavic State#!#! or #purple #b Slavic European State#!#!, was formed in 1997 after the Interventions on Poland and Czechoslovakia by the Soviet Union and East Germany. An important asset to the East. Despite this, they would depart and form their own sphere during the 2010s.\n\n#r If you are playing as East Germany, you have to complete the Sorbian Forces JE. "
+ is_WSL_tt: "#o West Slavic State#! has been formed."
+ WSL_formation_tt: "#b Superevent: #purple West Slavic State"
+
+
  SOVIET_INVASION: "#r You will declare war on [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"
  LIBERAL_REVOLUTION_COMMUNISM: "Liberal Revolution brewing in a Communist Country."
  started_liberal_revolution: "You started a Liberal Revolution"

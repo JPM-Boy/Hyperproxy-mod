@@ -82,6 +82,9 @@ je_hpx_west_slavia = {
     group = je_group_foreign_affairs
     icon = "gfx/interface/icons/timed_modifier_icons/WSL.dds"
 
+    immediate = {
+        this = {save_scope_as = country}
+    }
     is_shown_when_inactive = {
         OR = {
             country_has_primary_culture = cu:sorb
@@ -103,6 +106,17 @@ je_hpx_west_slavia = {
         }
     }
     on_complete = {
-        trigger_event = {id = hpx_eastern_europe.10}
+        custom_tooltip = {
+            text = WSL_formation_tt
+            every_country = {
+                trigger_event = hpx_eastern_europe.10
+            }
+        }
+        this = {
+            s:STATE_EAST_PRUSSIA = {
+                add_claim = PREV
+            }
+        }
+
     }
 }

@@ -9245,7 +9245,13 @@ WLS = { # Wales
 		}
 	}	
 }
-
+WSL = { # West Slavic State
+	flag_definition = {
+		coa = WSL
+		subject_canton = WSL
+		priority = 1000
+	}
+}
 WUR = { # Wurttemberg
 	flag_definition = {
 		coa = WUR

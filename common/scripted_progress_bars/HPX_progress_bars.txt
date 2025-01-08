@@ -36,6 +36,16 @@
 # 	yearly_progress = {
 # 	}
 # }
+slavification_bar = {
+	name = "slavification_bar_name"
+	desc = "slav_bar_desc"
+	second_desc = "germ_bar_desc"
+	double_sided_gold = yes
+
+	start_value = 60
+	min_value = 0
+	max_value = 100
+}
 authoritarianism_bar = {
 	name = "authoritarianism_bar_name"
 	desc = "authoritarianism_bar_desc"

@@ -78,6 +78,13 @@
  is_WSL_tt: "#o West Slavic State#! has been formed."
  WSL_formation_tt: "#b Superevent: #purple West Slavic State"
 
+ je_hpx_sorbia: "Slavicisation of East Germany"
+ je_hpx_sorbia_reason: "After WW2, the eastern states of Nazi Germany was under soviet occupation, and under Stalin order it started a process called #r Slavicisation#!. German Institutions were gradually replaced by Slavic, specially Sorbian Institutions. Sorbian slowly replaced German at school too.\n\nDespite this, the local german population has resisted and even 25 years after the end of the war, the process is still ongoing despite it slowed down significantly.\n\nWill you fully slavify Eastern Germany into a Sorbian Nation or will you resist and fight back the process?"
+ slavification_bar_name: "Slavicisation"
+ slav_bar_desc: "#r Slavicisation - [ROOT.Var('slav_power').GetValue]%"
+ germ_bar_desc: "#blue #b [ROOT.Var('germ_power').GetValue]% - Germanisation"
+ slav_power_tt: "#r Slavicisation#! has been completed"
+ germ_power_tt: "#b #blue Germanisation#!#! has been completed"
 
  SOVIET_INVASION: "#r You will declare war on [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"
  LIBERAL_REVOLUTION_COMMUNISM: "Liberal Revolution brewing in a Communist Country."

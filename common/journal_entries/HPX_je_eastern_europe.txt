@@ -77,7 +77,41 @@
         }
     }
 }
+je_hpx_sorbia = {
+    group = je_group_internal_affairs
+    icon = "gfx/interface/icons/timed_modifier_icons/WSL.dds"
+    should_be_pinned_by_default = yes
+    immediate = {
+        set_variable = { name = slav_power value = 60 }
+        set_variable = { name = germ_power value = 40}
+        je:je_hpx_sorbia ?= {
+            set_bar_progress = {
+                value = owner.var:slav_power
+                name = slavification_bar
+            }
+        }
+    }
+    complete = {
+        custom_tooltip = {
+            text = slav_power_tt
+            var:slav_power >= 100
+        }    }
+    fail = {
+        custom_tooltip = {
+            text = germ_power_tt
+            var:germ_power >= 100
+        }
 
+    }
+    on_fail = {
+        add_primary_culture = cu:north_german
+        remove_primary_culture = cu:sorb
+    }
+    on_complete = {
+        change_tag = SRB
+    }
+    scripted_progress_bar = slavification_bar
+}
 je_hpx_west_slavia = {
     group = je_group_foreign_affairs
     icon = "gfx/interface/icons/timed_modifier_icons/WSL.dds"
@@ -86,17 +120,23 @@ je_hpx_west_slavia = {
         this = {save_scope_as = country}
     }
     is_shown_when_inactive = {
-        OR = {
-            country_has_primary_culture = cu:sorb
-            country_has_primary_culture = cu:polish
-            country_has_primary_culture = cu:czech
+        AND = {
+            OR = {
+                country_has_primary_culture = cu:sorb
+                country_has_primary_culture = cu:polish
+                country_has_primary_culture = cu:czech
+            }
         }
     }
     possible = {
-        OR = {
-            country_has_primary_culture = cu:sorb
-            country_has_primary_culture = cu:polish
-            country_has_primary_culture = cu:czech
+        AND = {
+            OR = {
+                country_has_primary_culture = cu:sorb
+                country_has_primary_culture = cu:polish
+                country_has_primary_culture = cu:czech
+            }
+            NOT = {exists = c:WSL}
+            exists = c:SRB
         }
     }
     complete = {
@@ -117,6 +157,5 @@ je_hpx_west_slavia = {
                 add_claim = PREV
             }
         }
-
     }
 }

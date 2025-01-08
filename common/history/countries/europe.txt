@@ -12,7 +12,7 @@
 	c:RUS = {start_communist = yes}
 	c:FIN = {start_communist = yes}
 	c:POL = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
-	c:EGE = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
+	c:EGE = {start_communist = yes add_journal_entry = { type = je_hpx_sorbia } add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:CZH = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:AUS = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:HUN = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}

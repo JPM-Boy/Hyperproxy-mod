@@ -1,4 +1,7 @@
-l_english:
+﻿l_english:
+
+ papermap_HPX: "Hyperproxy"
+ papermap_HPX_desc: "Tailored for Hyperproxy"
 
 objective_west: "Western Bloc"
 objective_west_desc: "Here do you have some of the most interesting nations of the Western Bloc."

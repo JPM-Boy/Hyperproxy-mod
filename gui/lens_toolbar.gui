@@ -433,7 +433,7 @@ types lens_toolbar_types {
 		}
 
 		### BUTTON
-		button_icon_round_big = {
+		button_icon_square_map_interaction = {
 			size = { 100% 100% }
 			blockoverride "icon" {
 				block "icon_texture" {}

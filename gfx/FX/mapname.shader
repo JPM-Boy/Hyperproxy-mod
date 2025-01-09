@@ -53,7 +53,7 @@ PixelShader =
 
 				// Flatmap color
 				Color = lerp( Color, FlatmapColor, _FlatmapLerp);
-                Alpha *= 0.33f;
+                Alpha *= 0.5f;
 				return float4( Color, Alpha );
 			}
 		]]

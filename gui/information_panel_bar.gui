@@ -95,45 +95,103 @@ types information_panel_bar_types {
 			### SIDEBAR BACKGROUND
 			flowcontainer = {
 				direction = vertical
-
+				container = {size = {50 21}}
 				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_1.dds"
-					size = { 50 171 }
-
-					using = hud_shiny_effect
-				}
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_2.dds"
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_blue.dds"
 					size = { 50 50 }
 
 					using = hud_shiny_effect
 				}
 
 				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_2.dds"
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_yellow.dds"
 					size = { 50 50 }
 
 					using = hud_shiny_effect
 				}
 
 				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_3.dds"
-					size = { 50 230 }
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_green.dds"
+					size = { 50 50 }
 
 					using = hud_shiny_effect
 				}
 
 				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_4.dds"
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_orange.dds"
+					size = { 50 50 }
+
+					using = hud_shiny_effect
+				}
+
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_red.dds"
+					size = { 50 50 }
+
+					using = hud_shiny_effect
+				}
+
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_purple.dds"
+					size = { 50 50 }
+
+					using = hud_shiny_effect
+				}
+				container = {size = {50 21}}
+
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
 					size = { 50 40 }
 
 					using = hud_shiny_effect
 				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				container = {size = {50 20}}
 
 				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_5.dds"
-					size = { 50 128 }
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
+
+					using = hud_shiny_effect
+				}
+				icon = {
+					texture = "gfx/interface/main_hud/sidebar_skin_bg_grey.dds"
+					size = { 50 40 }
 
 					using = hud_shiny_effect
 				}

@@ -136,7 +136,7 @@ je_hpx_west_slavia = {
                 country_has_primary_culture = cu:czech
             }
             NOT = {exists = c:WSL}
-            exists = c:SRB
+            NOT = {this = c:EGE}
         }
     }
     complete = {

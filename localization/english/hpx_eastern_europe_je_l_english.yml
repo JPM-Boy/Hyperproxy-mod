@@ -74,12 +74,13 @@
  hpx_eastern_europe.10.a: "Glory to the W.S.S."
 
  je_hpx_west_slavia: "A West Slavic State"
- je_hpx_west_slavia_reason: "The #purple #b West Slavic State#!#! or #purple #b Slavic European State#!#!, was formed in 1997 after the Interventions on Poland and Czechoslovakia by the Soviet Union and East Germany. An important asset to the East. Despite this, they would depart and form their own sphere during the 2010s.\n\n#r If you are playing as East Germany, you have to complete the Sorbian Forces JE. "
+ je_hpx_west_slavia_reason: "The #purple #b West Slavic State#!#! or #purple #b Slavic European State#!#!, was formed in 1997 after the Interventions on Poland and Czechoslovakia by the Soviet Union and East Germany. An important asset to the East. Despite this, they would depart and form their own sphere during the 2010s.\n\n#r If you are playing as East Germany, you have to complete the Slavicisation JE."
  is_WSL_tt: "#o West Slavic State#! has been formed."
  WSL_formation_tt: "#b Superevent: #purple West Slavic State"
 
  je_hpx_sorbia: "Slavicisation of East Germany"
- je_hpx_sorbia_reason: "After WW2, the eastern states of Nazi Germany was under soviet occupation, and under Stalin order it started a process called #r Slavicisation#!. German Institutions were gradually replaced by Slavic, specially Sorbian Institutions. Sorbian slowly replaced German at school too.\n\nDespite this, the local german population has resisted and even 25 years after the end of the war, the process is still ongoing despite it slowed down significantly.\n\nWill you fully slavify Eastern Germany into a Sorbian Nation or will you resist and fight back the process?"
+
+ je_hpx_sorbia_reason: "After World War Two, the eastern Reichsgau were under Soviet occupation, and under an order from Stalin the territories were subject to #r Slavicisation#!. German institutions were slowly replaced by Slavic, specifically Sorbian, institutions. Sorbian also replaced German as the national language.\n\nDespite this, the local German population has resisted, and even 25 years after the end of the war, the Germans continue to resist the Slavicisation efforts, despite its ongoing, yet stalling, process.\n\nWill you complete the Slavicisation of Eastern Germany, and establish a Sorbian state, or will you resist the Slavicisation and restore an East German nation?"
  slavification_bar_name: "Slavicisation"
  slav_bar_desc: "#r Slavicisation - [ROOT.Var('slav_power').GetValue]%"
  germ_bar_desc: "#blue #b [ROOT.Var('germ_power').GetValue]% - Germanisation"

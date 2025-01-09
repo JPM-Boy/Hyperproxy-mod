@@ -13,3 +13,9 @@
 		locator = "papermap_extension_bottom_locator"
 	}
 }
+
+gui_skin_hpx = {
+	category = ui_skin_theme
+
+	ui_skin = "HPX"
+}

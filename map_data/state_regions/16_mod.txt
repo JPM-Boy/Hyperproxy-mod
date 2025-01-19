@@ -60,6 +60,7 @@ STATE_MOON_ONE = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 
 STATE_MOON_TWO = {
@@ -72,6 +73,7 @@ STATE_MOON_TWO = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 STATE_MOON_THREE = {
     id = 5005
@@ -83,6 +85,7 @@ STATE_MOON_THREE = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 
 STATE_MOON_FOUR = {
@@ -95,6 +98,7 @@ STATE_MOON_FOUR = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 STATE_MOON_FIVE = {
     id = 5007
@@ -106,6 +110,7 @@ STATE_MOON_FIVE = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 
 STATE_MOON_SIX = {
@@ -118,6 +123,7 @@ STATE_MOON_SIX = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 STATE_MARS_ONE = {
     id = 5009
@@ -129,6 +135,7 @@ STATE_MARS_ONE = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 STATE_MARS_TWO = {
     id = 5010
@@ -140,6 +147,7 @@ STATE_MARS_TWO = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }
 
 STATE_MARS_THREE = {
@@ -152,4 +160,5 @@ STATE_MARS_THREE = {
         bg_iron_mining = 50
         bg_rare_elements_mining = 100
     }
+    naval_exit_id = 3016
 }

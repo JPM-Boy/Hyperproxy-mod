@@ -112,16 +112,16 @@ setup_space_race_lists = {
 	add_to_global_variable_list = { name = moon_landing target = c:USA}
 	c:USA = {set_variable = moon_landing}
 
-	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_ONE.region_state:MOON }
-	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_TWO.region_state:MOON }
-	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_THREE.region_state:MOON }
-	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_FOUR.region_state:MOON }
-	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_FIVE.region_state:MOON }
-	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_SIX.region_state:MOON }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_ONE }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_TWO }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_THREE }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_FOUR }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_FIVE }
+	add_to_global_variable_list = { name = moon_states target = s:STATE_MOON_SIX }
 
-	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_ONE.region_state:MOON }
-	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_TWO.region_state:MOON }
-	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_THREE.region_state:MOON }
+	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_ONE }
+	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_TWO }
+	add_to_global_variable_list = { name = mars_states target = s:STATE_MARS_THREE }
 
 	every_in_global_list = {
 		variable = space_agency
@@ -979,7 +979,7 @@ dissolve_soviet_hard = {
 
 		every_country = {
 			trigger_event = { id = post_soviet.1 }
-		}	
+		}
 	}
 }
 

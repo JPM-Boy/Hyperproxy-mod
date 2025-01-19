@@ -830,6 +830,7 @@ window = {
                     flipdirection = yes
                     item = {
                         flowcontainer = {
+                            visible = "[GetScriptedGui('lunar_state_exists').IsShown(GuiScope.SetRoot(Scope.GetStateRegion.MakeScope).End)]"
                             direction = vertical
                             spacing = 10
                             background = {
@@ -838,7 +839,7 @@ window = {
                             minimumsize = {260 120}
                             textbox = {
                                 using = default_list_position
-                                text = "[Scope.AccessState.GetName]"
+                                text = "[Scope.GetStateRegion.GetLargestStateInRegion.GetName]"
                                 parentanchor = center
                                 multiline = yes
                                 autoresize = yes
@@ -849,12 +850,12 @@ window = {
                                 margin_left = 10
                                 textbox = {
                                     minimumsize = {170 30}
-                                    text = "#O Colonists:#! #b [Scope.AccessState.GetPopulationSize|k]"
+                                    text = "#O Colonists:#! #b [Scope.GetStateRegion.GetLargestStateInRegion.GetPopulationSize|k]"
                                     multiline = yes
                                 }
                                 small_flag = {
-                                    visible = "[Scope.AccessState.GetCountry]"
-                                    datacontext = "[Scope.AccessState.GetCountry]"
+                                    visible = "[Scope.GetStateRegion.AccessLargestStateOwner]"
+                                    datacontext = "[Scope.GetStateRegion.AccessLargestStateOwner]"
                                     parentanchor = left
 
                                     blockoverride "flag_tooltip" {
@@ -866,7 +867,7 @@ window = {
                             }
                             divider_decorative = {}
                             button = {
-                                datacontext = "[Scope.GetState]"
+                                datacontext = "[Scope.GetStateRegion.GetLargestStateInRegion]"
                                 using = default_button_map_interaction
                                 using = default_list_position
                                 align = top|center
@@ -892,6 +893,7 @@ window = {
                     flipdirection = yes
                     item = {
                         flowcontainer = {
+                            visible = "[GetScriptedGui('martian_state_exists').IsShown(GuiScope.SetRoot(Scope.GetStateRegion.MakeScope).End)]"
                             direction = vertical
                             spacing = 10
                             background = {
@@ -900,7 +902,7 @@ window = {
                             minimumsize = {260 120}
                             textbox = {
                                 using = default_list_position
-                                text = "[Scope.AccessState.GetName]"
+                                text = "[Scope.GetStateRegion.GetLargestStateInRegion.GetName]"
                                 parentanchor = center
                                 multiline = yes
                                 autoresize = yes
@@ -911,12 +913,12 @@ window = {
                                 margin_left = 10
                                 textbox = {
                                     minimumsize = {170 30}
-                                    text = "#O Colonists:#! #b [Scope.AccessState.GetPopulationSize|k]"
+                                    text = "#O Colonists:#! #b [Scope.GetStateRegion.GetLargestStateInRegion.GetPopulationSize|k]"
                                     multiline = yes
                                 }
                                 small_flag = {
-                                    visible = "[Scope.AccessState.GetCountry]"
-                                    datacontext = "[Scope.AccessState.GetCountry]"
+                                    visible = "[Scope.GetStateRegion.AccessLargestStateOwner]"
+                                    datacontext = "[Scope.GetStateRegion.AccessLargestStateOwner]"
                                     parentanchor = left
 
                                     blockoverride "flag_tooltip" {
@@ -928,7 +930,7 @@ window = {
                             }
                             divider_decorative = {}
                             button = {
-                                datacontext = "[Scope.GetState]"
+                                datacontext = "[Scope.GetStateRegion.GetLargestStateInRegion]"
                                 using = default_button_map_interaction
                                 using = default_list_position
                                 align = top|center

@@ -1,5 +1,4 @@
-﻿#This is a generated file, do not modify unless you know what you are doing!
-xD1DDAF="snow"
+﻿xD1DDAF="snow"
 x8F8226="snow"
 xE05FD2="snow"
 xAB0AB8="snow"

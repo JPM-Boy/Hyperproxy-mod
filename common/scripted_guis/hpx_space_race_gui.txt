@@ -229,3 +229,25 @@ mars_landing = {
         }
     }
 }
+
+lunar_state_exists = {
+    scope = state_region
+    is_shown = {
+        NOT = {
+            any_scope_state = {
+                owner = c:MOON
+            }
+        }
+    }
+}
+
+martian_state_exists = {
+    scope = state_region
+    is_shown = {
+        NOT = {
+            any_scope_state = {
+                owner = c:MOON
+            }
+        }
+    }
+}

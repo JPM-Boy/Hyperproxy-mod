@@ -21,3 +21,13 @@
 	imf_development_loan: "IMF Development Loan"
 
 	the_great_shift: "The Great Shift"
+
+	modifier_berlinguerism: "Berlinguerism"
+	modifier_titoism: "Titoism"
+	modifier_kadarism: "Kádarism"
+
+
+	interest_group_ig_reformist_communist_pol_str_mult:2 "$ig_variant_reformist_communist$ [concept_political_strength]"
+	interest_group_ig_reformist_communist_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_reformist_communist$ [concept_interest_group]"
+	interest_group_ig_new_leftism_pol_str_mult:2 "$ig_variant_new_leftism$ [concept_political_strength]"
+	interest_group_ig_new_leftism_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_new_leftism$ [concept_interest_group]"

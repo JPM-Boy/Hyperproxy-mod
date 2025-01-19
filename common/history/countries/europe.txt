@@ -8,19 +8,19 @@
 	c:SWE = {
 		start_militar = yes
 	}
-	c:YUG = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
+	c:YUG = {start_communist = yes add_journal_entry = { type = je_hpx_titoism }  add_journal_entry = { type = je_hpx_adriatic_communism } add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:RUS = {start_communist = yes}
 	c:FIN = {start_communist = yes}
 	c:POL = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:EGE = {start_communist = yes add_journal_entry = { type = je_hpx_sorbia } add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:CZH = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
-	c:AUS = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
-	c:HUN = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
+	c:AUS = {start_communist = yes add_journal_entry = { type = je_hpx_adriatic_communism }  add_journal_entry = { type = je_hpx_communist_health_regime}}
+	c:HUN = {start_communist = yes add_journal_entry = { type = je_hpx_kadarism } add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:WAL = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:BUL = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
-	c:GRE = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
-	c:ALB = {start_communist = yes}
-	c:VEN = {start_communist = yes add_journal_entry = { type = je_hpx_communist_health_regime}}
+	c:GRE = {start_communist = yes add_journal_entry = { type = je_hpx_adriatic_communism } add_journal_entry = { type = je_hpx_communist_health_regime}}
+	c:ALB = {start_communist = yes add_journal_entry = { type = je_hpx_adriatic_communism } }
+	c:VEN = {start_communist = yes add_journal_entry = { type = je_hpx_berlinguerism } add_journal_entry = { type = je_hpx_adriatic_communism } add_journal_entry = { type = je_hpx_communist_health_regime}}
 	c:COR = {start_communist = yes}
 	c:BEL = {start_monarchy = yes}
 	c:NET = {start_monarchy = yes}

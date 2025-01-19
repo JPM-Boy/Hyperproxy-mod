@@ -73,6 +73,30 @@
  hpx_eastern_europe.10.f: "We have made sure that the West will never step over us again.\n Three Hurrahs for the\nWest Slavic State!"
  hpx_eastern_europe.10.a: "Glory to the W.S.S."
 
+ hpx_eastern_europe.11.t: "Media Reforms Spark Controversy"
+ hpx_eastern_europe.11.d: "The state media is debating whether to produce more programs in Sorbian languages and showcase Slavic traditions. Critics warn this could alienate the German majority, while supporters claim it will enrich East German culture."
+ hpx_eastern_europe.11.f: "In the state broadcaster's office, a heated argument breaks out over a proposed Sorbian-language documentary. The room is divided, with Party directives hanging in the balance."
+ hpx_eastern_europe.11.a: "Highlight cultural diversity in state media."
+ hpx_eastern_europe.11.b: "Reinforce a unified German identity through media."
+
+ hpx_eastern_europe.12.t: "A Festival of Sorbian Culture"
+ hpx_eastern_europe.12.d: "A local Sorbian festival has grown into a national phenomenon, drawing attention to the rich Slavic heritage within East Germany. However, some Party members see this as undermining the German identity of the state. Will the government support the festival or curtail its influence?"
+ hpx_eastern_europe.12.f: "The streets of Bautzen are adorned with intricate Sorbian patterns as children perform folk dances under the watchful eyes of Party officials, who quietly debate the event's ideological implications."
+ hpx_eastern_europe.12.a: "Embrace Sorbian traditions and promote cultural diversity."
+ hpx_eastern_europe.12.b: "Emphasize unity under a German cultural identity."
+
+ hpx_eastern_europe.13.t: "Slavic Studies in Schools"
+ hpx_eastern_europe.13.d: "A proposal to introduce Slavic languages and history into the East German educational system has caused heated debates. Supporters argue it fosters inclusivity, while opponents believe it undermines German identity. How should the Party proceed?"
+ hpx_eastern_europe.13.f: "In classrooms across the country, teachers nervously prepare to either adopt new Slavic-language textbooks or reinforce the primacy of German historical narratives."
+ hpx_eastern_europe.13.a: "Promote a broader, inclusive identity for East Germany."
+ hpx_eastern_europe.13.b: "Strengthen German-centric education and traditions."
+
+ hpx_eastern_europe.14.t: "Cultural Divide in Worker Councils"
+ hpx_eastern_europe.14.d: "Worker councils across East Germany are divided over cultural policies. Sorbian workers demand official recognition of their heritage, while German workers resist changes to workplace traditions. The Party must mediate to avoid unrest."
+ hpx_eastern_europe.14.f: "In a factory in Dresden, two banners hang side by side: one displaying Sorbian patterns, the other a stark German eagle. The workers exchange uneasy glances as Party officials arrive to mediate."
+ hpx_eastern_europe.14.a: "Promote workplace inclusivity and support Slavic representation."
+ hpx_eastern_europe.14.b: "Assert German workplace traditions and unity."
+
  je_hpx_west_slavia: "A West Slavic State"
  je_hpx_west_slavia_reason: "The #purple #b West Slavic State#!#! or #purple #b Slavic European State#!#!, was formed in 1997 after the Interventions on Poland and Czechoslovakia by the Soviet Union and East Germany. An important asset to the East. Despite this, they would depart and form their own sphere during the 2010s.\n\n#r If you are playing as East Germany, you have to complete the Slavicisation JE."
  is_WSL_tt: "#o West Slavic State#! has been formed."
@@ -86,6 +110,20 @@
  germ_bar_desc: "#blue #b [ROOT.Var('germ_power').GetValue]% - Germanisation"
  slav_power_tt: "#r Slavicisation#! has been completed"
  germ_power_tt: "#b #blue Germanisation#!#! has been completed"
+
+ je_hpx_titoism: "Titoism"
+ je_hpx_berlinguerism: "Berlinguerism"
+ je_hpx_titoism_reason: "Titoism, named after the Yugoslav leader Josip Broz Tito, represents a unique approach to socialism that emphasized national independence from foreign control, even within the communist bloc. Tito famously broke with Stalin and the Soviet Union in 1948, advocating for a decentralized, self-managed form of socialism tailored to Yugoslavia’s diverse federation. His vision of a 'third way' inspired non-aligned movements and remains a symbol of defiance against both Western capitalism and Soviet authoritarianism."
+ je_hpx_berlinguerism_reason: "Berlinguerism refers to the political ideas of Enrico Berlinguer, the Italian Communist Party leader who championed 'Eurocommunism' during the Cold War. Berlinguer sought to distance Western European communist parties from Soviet influence, advocating for democratic socialism that respected pluralism and human rights. His emphasis on parliamentary democracy and social justice made him a key figure in reshaping communist ideology in a way that could coexist with liberal democratic institutions."
+
+ je_hpx_adriatic_communism: "Adriatic Communism"
+ adriatic_button: "Support an Adriatic Union"
+ je_hpx_adriatic_communism_reason: "The Adriatic Union, founded in the 1980s was the evolution of the non-alignment position of Yugoslavia and the Eurocommunist strands of Enrico Berlinguer. Breaking ties from the Warsaw Pact, this changed the landscape of Europe massively favouring the dissolution of the Warsaw Pact in the decades after it.\n\nDespite this, the Adriatic Union championed architectural innovation with the start of Adriatic Brutalism and literary works of great renown."
+ adriatic_tt: "At least 3 countries support an Adriatic Union."
+
+ je_hpx_kadarism: "Kádarism"
+ je_hpx_kadarism_reason: "Kádárism is named after János Kádár, the Hungarian leader who rose to power after the 1956 Hungarian Revolution. His approach combined loyalty to the Soviet Union with a focus on economic pragmatism and social stability, leading to what became known as 'Goulash Communism.' Kádár introduced reforms that allowed limited market mechanisms and a relative improvement in living standards, seeking to balance ideological orthodoxy with public contentment. Kádárism symbolized a softer, reformist variant of Eastern Bloc socialism, prioritizing internal harmony over strict adherence to Marxist-Leninist principles."
+
 
  SOVIET_INVASION: "#r You will declare war on [ROOT.Var('target_invasion').GetCountry.GetNameNoFlag]"
  LIBERAL_REVOLUTION_COMMUNISM: "Liberal Revolution brewing in a Communist Country."

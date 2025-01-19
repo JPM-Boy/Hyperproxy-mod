@@ -21,10 +21,12 @@ hpx_eastern_europe.1 = { # Occupation of Rome
 			}
 			text = SOVIET_INVASION
 		}
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.1.b
 		change_relations = { country = root.var:target_invasion value = 30 }
+		ai_chance = 50
 	}
 }
 
@@ -43,11 +45,13 @@ hpx_eastern_europe.2 = { # Occupation of Rome
 		name = hpx_eastern_europe.2.a
 		change_variable = { name = authoritarianism_change add = -5 }
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.2.b
 		change_variable = { name = authoritarianism_change add = 5 }
 		change_variable = { name = autonomy_change add = -5 }
+		ai_chance = 50
 	}
 }
 
@@ -65,10 +69,12 @@ hpx_eastern_europe.3 = { # Occupation of Rome
 	option = {
 		name = hpx_eastern_europe.3.a
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.3.b
 		change_variable = { name = authoritarianism_change add = 5 }
+		ai_chance = 50
 	}
 }
 
@@ -87,11 +93,13 @@ hpx_eastern_europe.4 = { # Occupation of Rome
 		name = hpx_eastern_europe.4.a
 		change_variable = { name = authoritarianism_change add = -5 }
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.4.b
 		change_variable = { name = authoritarianism_change add = 5 }
 		change_variable = { name = autonomy_change add = -5 }
+		ai_chance = 50
 	}
 }
 
@@ -110,11 +118,13 @@ hpx_eastern_europe.5 = { # Occupation of Rome
 		name = hpx_eastern_europe.5.a
 		change_variable = { name = authoritarianism_change add = -5 }
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.5.b
 		change_variable = { name = authoritarianism_change add = 5 }
 		change_variable = { name = autonomy_change add = -5 }
+		ai_chance = 50
 	}
 }
 
@@ -133,11 +143,13 @@ hpx_eastern_europe.6 = { # Occupation of Rome
 		name = hpx_eastern_europe.6.a
 		change_variable = { name = authoritarianism_change add = -5 }
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.6.b
 		change_variable = { name = authoritarianism_change add = 5 }
 		change_variable = { name = autonomy_change add = -5 }
+		ai_chance = 50
 	}
 }
 
@@ -155,10 +167,12 @@ hpx_eastern_europe.7 = { # Occupation of Rome
 	option = {
 		name = hpx_eastern_europe.7.a
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.7.b
 		change_variable = { name = authoritarianism_change add = 5 }
+		ai_chance = 50
 	}
 }
 
@@ -176,10 +190,12 @@ hpx_eastern_europe.8 = { # Occupation of Rome
 	option = {
 		name = hpx_eastern_europe.8.a
 		change_variable = { name = autonomy_change add = 5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.8.b
 		change_variable = { name = authoritarianism_change add = 5 }
+		ai_chance = 50
 	}
 }
 
@@ -197,10 +213,12 @@ hpx_eastern_europe.9 = { # Occupation of Rome
 	option = {
 		name = hpx_eastern_europe.9.a
 		change_variable = { name = authoritarianism_change add = -5 }
+		ai_chance = 50
 	}
 	option = {
 		name = hpx_eastern_europe.9.b
 		change_variable = { name = autonomy_change add = -5 }
+		ai_chance = 50
 	}
 }
 hpx_eastern_europe.10 = {# Dissolution
@@ -221,5 +239,105 @@ hpx_eastern_europe.10 = {# Dissolution
 	option = {
 		name = hpx_eastern_europe.10.a
 		default_option = yes
+	}
+}
+
+hpx_eastern_europe.11 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.11.t
+	desc = hpx_eastern_europe.11.d
+	flavor = hpx_eastern_europe.11.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.11.a
+		change_variable = { name = slav_power add = 5 }
+		change_variable = { name = germ_power add = -5 }
+		ai_chance = 50
+	}
+	option = {
+		name = hpx_eastern_europe.11.b
+		change_variable = { name = germ_power add = 5 }
+		change_variable = { name = slav_power add = -5 }
+		ai_chance = 50
+	}
+}
+
+hpx_eastern_europe.12 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.12.t
+	desc = hpx_eastern_europe.12.d
+	flavor = hpx_eastern_europe.12.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.12.a
+		change_variable = { name = slav_power add = 5 }
+		change_variable = { name = germ_power add = -5 }
+		ai_chance = 50
+	}
+	option = {
+		name = hpx_eastern_europe.12.b
+		change_variable = { name = germ_power add = 5 }
+		change_variable = { name = slav_power add = -5 }
+		ai_chance = 50
+	}
+}
+
+hpx_eastern_europe.13 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.13.t
+	desc = hpx_eastern_europe.13.d
+	flavor = hpx_eastern_europe.13.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.13.a
+		change_variable = { name = slav_power add = 5 }
+		change_variable = { name = germ_power add = -5 }
+		ai_chance = 50
+	}
+	option = {
+		name = hpx_eastern_europe.13.b
+		change_variable = { name = germ_power add = 5 }
+		change_variable = { name = slav_power add = -5 }
+		ai_chance = 50
+	}
+}
+
+hpx_eastern_europe.14 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/RUS.dds"
+	title = hpx_eastern_europe.14.t
+	desc = hpx_eastern_europe.14.d
+	flavor = hpx_eastern_europe.14.f
+	duration = 3
+	option = {
+		name = hpx_eastern_europe.14.a
+		change_variable = { name = slav_power add = 5 }
+		change_variable = { name = germ_power add = -5 }
+		ai_chance = 50
+	}
+	option = {
+		name = hpx_eastern_europe.14.b
+		change_variable = { name = germ_power add = 5 }
+		change_variable = { name = slav_power add = -5 }
+		ai_chance = 50
 	}
 }

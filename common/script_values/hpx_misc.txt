@@ -40,3 +40,12 @@ hpx_imf_debt_total = {
 		}
 	}
 }
+
+adriatic_communist_countries = {
+	every_country = {
+		limit = {
+			has_variable = adriatic_founding_member
+		}
+		add = 1
+	}
+}

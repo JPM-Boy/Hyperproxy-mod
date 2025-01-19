@@ -1,0 +1,19 @@
+﻿adriatic_button_key = {
+	name = "adriatic_button"
+	desc = "adriatic_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		NOT = {has_variable = adriatic_founding_member}
+	}
+	effect = {
+		set_variable = adriatic_founding_member
+	}
+
+	ai_chance = {
+		base = 1000
+	}
+}

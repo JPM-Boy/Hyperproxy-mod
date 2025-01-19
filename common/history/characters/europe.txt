@@ -87,14 +87,27 @@
 	}
 	c:HUN = {
 		create_character = {
-			first_name = "Jenö"
-			last_name = "Fock"
+			first_name = "Janos"
+			last_name = "Kadar"
 			culture = hungarian
 			historical = yes
-			interest_group = ig_orthodox_communist
+			interest_group = ig_reformist_communist
 			ideology = ideology_socialist_leader
 			religion = atheist
-			age = 54
+			age = 58
+			ruler = yes
+			ig_leader = yes
+		}
+	}
+	c:VEN = {
+		create_character = {
+			first_name = "Enrico"
+			last_name = "Berlinguer"
+			culture = north_italian
+			historical = yes
+			interest_group = ig_new_leftism
+			ideology = ideology_moderate
+			age = 48
 			ruler = yes
 			ig_leader = yes
 		}

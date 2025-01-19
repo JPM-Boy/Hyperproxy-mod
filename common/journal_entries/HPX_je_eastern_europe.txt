@@ -63,13 +63,22 @@
     }
     on_fail = {
         if = {
-            limit = {var:autonomy <= 0}
+            limit = {
+                AND = {
+                    c:RUS = {has_law = law_type:law_council_republic}
+                    var:autonomy <= 0
+                }
+            }
             c:RUS = {
                 create_diplomatic_pact = { country = prev type = protectorate }
             }
-
         } else_if = {
-            limit = {var:autonomy >= 100}
+            limit = {
+                AND = {
+                    c:RUS = {has_law = law_type:law_council_republic}
+                    var:autonomy >= 100
+                }
+            }
             c:RUS = {
                 set_variable = { name = target_invasion value = prev.owner }
                 trigger_event = {id = hpx_eastern_europe.1}
@@ -82,13 +91,22 @@ je_hpx_sorbia = {
     icon = "gfx/interface/icons/timed_modifier_icons/WSL.dds"
     should_be_pinned_by_default = yes
     immediate = {
-        set_variable = { name = slav_power value = 60 }
+        set_variable = { name = slav_power value = 60}
         set_variable = { name = germ_power value = 40}
         je:je_hpx_sorbia ?= {
             set_bar_progress = {
                 value = owner.var:slav_power
                 name = slavification_bar
             }
+        }
+    }
+    on_monthly_pulse = {
+        random_events = {
+            60 = 0
+            10 = hpx_eastern_europe.11
+            10 = hpx_eastern_europe.12
+            10 = hpx_eastern_europe.13
+            10 = hpx_eastern_europe.14
         }
     }
     complete = {
@@ -106,6 +124,12 @@ je_hpx_sorbia = {
     on_fail = {
         add_primary_culture = cu:north_german
         remove_primary_culture = cu:sorb
+        custom_tooltip = {
+            text = germanisation_tt
+            every_scope_state = {
+                change_pop_culture = { value = 0.5 target = cu:north_german }
+            }
+        }
     }
     on_complete = {
         change_tag = SRB
@@ -156,6 +180,87 @@ je_hpx_west_slavia = {
             s:STATE_EAST_PRUSSIA = {
                 add_claim = PREV
             }
+        }
+    }
+}
+je_hpx_adriatic_communism = {
+    group = je_group_foreign_affairs
+    icon = "gfx/interface/icons/timed_modifier_icons/YUG.dds"
+    scripted_button = adriatic_button_key
+    immediate = {
+        c:YUG = {
+            create_power_bloc = {
+                name = "Adriatic Union"
+                map_color = {154  84 38}
+
+                identity = identity_military_treaty_organization
+                principle = principle_construction_1
+            }
+        }
+    }
+    complete = {
+        custom_tooltip = {
+            text = adriatic_tt
+            adriatic_communist_countries >= 3
+        }
+    }
+    on_complete = {
+        if = {
+            limit = {NOT = {this = c:YUG}}
+            join_power_bloc = c:YUG
+        }
+    }
+}
+je_hpx_titoism = {
+    group = je_group_internal_affairs
+    icon = "gfx/interface/icons/timed_modifier_icons/YUG.dds"
+    modifiers_while_active = {
+        modifier_titoism
+    }
+    immediate = {
+        c:YUG.ruler ?= {
+            save_scope_as = tito
+        }
+    }
+    fail = {
+        scope:tito = {
+            is_character_alive = no
+        }
+    }
+}
+
+je_hpx_berlinguerism = {
+    group = je_group_internal_affairs
+    icon = "gfx/interface/icons/timed_modifier_icons/ITA_Communism.dds"
+    modifiers_while_active = {
+        modifier_berlinguerism
+    }
+    immediate = {
+        c:VEN.ruler ?= {
+            save_scope_as = berlinguer
+        }
+    }
+    fail = {
+        scope:berlinguer = {
+            is_character_alive = no
+        }
+    }
+}
+
+je_hpx_kadarism = {
+    group = je_group_internal_affairs
+    icon = "gfx/interface/icons/timed_modifier_icons/HUN.dds"
+    modifiers_while_active = {
+        modifier_kadarism
+    }
+    immediate = {
+        c:HUN.ruler ?= {
+            save_scope_as = refrigerator
+        }
+    }
+    fail = {
+        scope:refrigerator = {
+            is_character_alive = no
         }
     }
 }

@@ -24,7 +24,9 @@ je_hpx_germany = {
 	status_desc = {
 		desc = germany_is_divided
 	}
-
+	invalid = {
+		exists = c:SRB
+	}
 	complete = {
 		OR = {
 			OR = {
@@ -34,12 +36,12 @@ je_hpx_germany = {
 
 			}
 			AND = {
-			 c:WGE = {has_law = law_type:law_council_republic}
-			 c:EGE = {has_law = law_type:law_council_republic}
+			 c:WGE ?= {has_law = law_type:law_council_republic}
+			 c:EGE ?= {has_law = law_type:law_council_republic}
 			}
 			AND = {
-			 c:WGE = {NOT = {has_law = law_type:law_council_republic}}
-			 c:EGE = {NOT = {has_law = law_type:law_council_republic}}
+			 c:WGE ?= {NOT = {has_law = law_type:law_council_republic}}
+			 c:EGE ?= {NOT = {has_law = law_type:law_council_republic}}
 			}
 		}
 		
@@ -65,10 +67,10 @@ je_hpx_germany = {
 			annex ?= c:WGE
 		}
 		if = {
-			limit = { c:GER = {has_law = law_type:law_republic}  }
+			limit = { c:GER ?= {has_law = law_type:law_republic}  }
 			root = {join_power_bloc = scope:edo}
 		} else_if =  {
-			limit = { c:GER = {has_law = law_type:law_council_republic}  }
+			limit = { c:GER ?= {has_law = law_type:law_council_republic}  }
 			root = {join_power_bloc = scope:warsaw}
 		}
 		add_primary_culture = cu:north_german

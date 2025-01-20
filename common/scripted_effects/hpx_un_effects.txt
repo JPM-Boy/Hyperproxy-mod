@@ -21,3 +21,9 @@
         }
     }
 }
+
+test = {
+    every_state_region = {
+        limit = { is_homeland = scope:culture }
+    }
+}

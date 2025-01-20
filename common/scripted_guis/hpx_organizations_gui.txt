@@ -1,4 +1,21 @@
-﻿toggle_organization = {
+﻿increase_autonomy = {
+    effect = {
+        if = {
+            limit = { var:autonomy <= 90 }
+            change_variable = { name = autonomy add = 10 }
+        }
+    }
+}
+reduce_autonomy = {
+    effect = {
+        if = {
+            limit = { var:autonomy >= 10 }
+            change_variable = { name = autonomy add = -10 }
+        }
+    }
+}
+
+toggle_organization = {
     effect = {
         if = {
             limit = {

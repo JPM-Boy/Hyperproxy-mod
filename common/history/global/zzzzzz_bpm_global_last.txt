@@ -3,12 +3,5 @@
 		add_journal_entry = {type = je_hpx_new_leftism}
 	#	add_journal_entry = {type = je_hpx_cold_war}
 	}
-	every_state = {
-		if = {
-			limit = { is_incorporated = yes }
-			set_variable = { name = autonomy value = 20 }
-		} else = {
-			set_variable = { name = autonomy value = 50 }
-		}
-	}
+	assign_state_autonomy = yes
 }

@@ -1,0 +1,38 @@
+﻿assign_state_autonomy = {
+	every_state = {
+		if = {
+			limit = { owner = {has_law = law_type:law_unitary} }
+			set_variable = { name = autonomy value = 0 }
+		} else_if = {
+			limit = { owner = {has_law = law_type:law_devolved} }
+			set_variable = { name = autonomy value = 15 }
+		} else_if = {
+			limit = { owner = {has_law = law_type:law_federated} }
+			set_variable = { name = autonomy value = 30 }
+		} else_if = {
+			limit = { owner = {has_law = law_type:law_confederated} }
+			set_variable = { name = autonomy value = 45 }
+		} else_if = {
+			limit = { owner = {has_law = law_type:law_localism} }
+			set_variable = { name = autonomy value = 60 }
+		}
+		if = {
+			limit = { is_incorporated = no }
+			change_variable = { name = autonomy add = 20 }
+		}
+		every_scope_culture = {
+			if = {
+				limit = {
+					culture_is_discriminated_in = owner
+				}
+				prev = {
+					change_variable = { name = autonomy add = 3 }
+				}
+			}
+		}
+		if = {
+			limit = { average_sol < owner.average_sol }
+			change_variable = { name = autonomy add = -3 }
+		}
+	}
+}

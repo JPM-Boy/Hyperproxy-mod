@@ -1833,7 +1833,7 @@ flowcontainer = {
 	flowcontainer = {
 		direction = vertical
 		tooltip = "STATE_PRODUCTION_MARKER_TOOLTIP"
-		visible = "[And(Or(IsZoomLevelNear, And(Not(IsZoomLevelNear), ObjectsEqual(State.AccessSelf, State.AccessStateRegion.GetLargestStateInRegion))), Not(GetVariableSystem.Exists('autonomy_mapmode')))]"
+		visible = "[And3(Or(IsZoomLevelNear, And(Not(IsZoomLevelNear), ObjectsEqual(State.AccessSelf, State.AccessStateRegion.GetLargestStateInRegion))), Not(GetVariableSystem.Exists('autonomy_mapmode')), Not(IsMapModeSelected( 'mm_state_autonomy' )))]"
 
 		background = {
 			visible = "[IsZoomLevelNear]"
@@ -1883,7 +1883,7 @@ flowcontainer = {
 
 	flowcontainer = {
 		direction = vertical
-		visible = "[And(ObjectsEqual(State.GetCountry, GetPlayer), GetVariableSystem.Exists('autonomy_mapmode'))]"
+		visible = "[Or(And(ObjectsEqual(State.GetCountry, GetPlayer), GetVariableSystem.Exists('autonomy_mapmode')),And(IsMapModeSelected( 'mm_state_autonomy' ),ObjectsEqual(State.GetCountry, GetPlayer)))]"
 		widget = {
 			size = { 35 35 }
 			background = {

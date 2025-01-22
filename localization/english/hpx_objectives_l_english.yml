@@ -37,3 +37,4 @@
   STATE_AUTONOMY_DESC: "#O Autonomy#! represents the level of freedom from the central government. Having a low autonomy may increase its efficiency while having a high autonomy helps with loyalists and acceptation."
   INCREASE_STATE_AUTONOMY: "#O Autonomy#! will be increased by #y 10%"
   REDUCE_STATE_AUTONOMY: "#O Autonomy#! will be reduced by #y 10%"
+  mm_state_autonomy: "State Autonomy"

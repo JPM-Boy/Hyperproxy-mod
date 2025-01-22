@@ -1291,9 +1291,11 @@ mm_mass_migration_pull = {
 }
 
 mm_state_autonomy = {
-	map_painting_mode = countries
+	map_painting_mode = states
+	map_names = states
 	map_markers = { production_marker }
-	gradient_border_settings = default
+	gradient_border_settings = states
+	is_visible = yes
 
 	soundeffect = "snapshot:/Dynamic/low_pass_world"
 }

@@ -879,6 +879,14 @@ window = {
                         }
                     }
                 }
+                button = {
+                    using = default_button_primary_action
+                    parentanchor = top|center
+                    size = { 320 40 }
+                    text = "Send Mission"
+                    enabled = "[GetScriptedGui('lunar_colony').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                    onclick = "[GetScriptedGui('lunar_colony').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                }
                 textbox = {
                     using = default_list_position
                     using = fontsize_mega
@@ -941,6 +949,14 @@ window = {
                             divider_decorative = {}
                         }
                     }
+                }
+                button = {
+                    using = default_button_primary_action
+                    parentanchor = top|center
+                    size = { 320 40 }
+                    text = "Send Mission"
+                    enabled = "[GetScriptedGui('martian_colony').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                    onclick = "[GetScriptedGui('martian_colony').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                 }
             }
         }

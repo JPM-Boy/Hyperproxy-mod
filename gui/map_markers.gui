@@ -1886,11 +1886,12 @@ flowcontainer = {
 		visible = "[Or(And(ObjectsEqual(State.GetCountry, GetPlayer), GetVariableSystem.Exists('autonomy_mapmode')),And(IsMapModeSelected( 'mm_state_autonomy' ),ObjectsEqual(State.GetCountry, GetPlayer)))]"
 		widget = {
 			size = { 35 35 }
+			visible = "[LessThanOrEqualTo_CFixedPoint(State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)25')]"
 			background = {
-				texture = "gfx/interface/backgrounds/popup_bg.dds"
+				using = colored_panel_dark
+				color = { 0.51 0.86 0.45 1 }
 			}
 			textbox = {
-				visible = "[LessThanOrEqualTo_CFixedPoint(State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)25')]"
 				text = "#light_green #b [State.MakeScope.GetVariable('autonomy').GetValue]% #!"
 				autoresize = no
 				minimumsize = { 35 35 }
@@ -1899,8 +1900,15 @@ flowcontainer = {
 				fontsize = 12
 				align = center
 			}
+		}
+		widget = {
+			visible = "[And(GreaterThan_CFixedPoint( State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)25'),LessThanOrEqualTo_CFixedPoint(State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)50'))]"
+			size = { 35 35 }
+			background = {
+				using = colored_panel_dark
+				color = { 0.21 0.76 1 1 }
+			}
 			textbox = {
-				visible = "[And(GreaterThan_CFixedPoint( State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)25'),LessThanOrEqualTo_CFixedPoint(State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)50'))]"
 				text = "#blue #b [State.MakeScope.GetVariable('autonomy').GetValue]% #!"
 				autoresize = no
 				minimumsize = { 35 35 }
@@ -1909,8 +1917,15 @@ flowcontainer = {
 				fontsize = 12
 				align = center
 			}
+		}
+		widget = {
+			visible = "[And(GreaterThan_CFixedPoint( State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)50'),LessThanOrEqualTo_CFixedPoint(State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)75'))]"
+			size = { 35 35 }
+			background = {
+				using = colored_panel_dark
+				color = { 1 0.21 0.76 1 }
+			}
 			textbox = {
-				visible = "[And(GreaterThan_CFixedPoint( State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)50'),LessThanOrEqualTo_CFixedPoint(State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)75'))]"
 				text = "#purple #b [State.MakeScope.GetVariable('autonomy').GetValue]% #!"
 				autoresize = no
 				minimumsize = { 35 35 }
@@ -1919,8 +1934,15 @@ flowcontainer = {
 				fontsize = 12
 				align = center
 			}
+		}
+		widget = {
+			visible = "[GreaterThan_CFixedPoint( State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)75')]"
+			size = { 35 35 }
+			background = {
+				using = colored_panel_dark
+				color = { 1 0.76 0.21 1 }
+			}
 			textbox = {
-				visible = "[GreaterThan_CFixedPoint( State.MakeScope.GetVariable('autonomy').GetValue, '(CFixedPoint)75')]"
 				text = "#o #b [State.MakeScope.GetVariable('autonomy').GetValue]% #!"
 				autoresize = no
 				minimumsize = { 35 35 }

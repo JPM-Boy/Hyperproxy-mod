@@ -34,5 +34,14 @@
 			limit = { average_sol < owner.average_sol }
 			change_variable = { name = autonomy add = -3 }
 		}
+		if = {
+			limit = { is_capital = yes }
+			change_variable = { name = autonomy add = -100 }
+		}
+		clamp_variable = {
+			name = autonomy
+			min = 0
+			max = 100
+		}
 	}
 }

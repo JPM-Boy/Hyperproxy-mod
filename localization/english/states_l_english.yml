@@ -1,5 +1,6 @@
 ﻿l_english:
 state_trait_nuked: "Nuked State"
+ state_trait_space: "Space State"
 
 STATE_SORBIA: "Sorbia"
 STATE_LABRADOR: "Labrador"

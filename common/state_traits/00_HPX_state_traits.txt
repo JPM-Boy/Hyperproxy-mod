@@ -10,3 +10,14 @@
 		state_standard_of_living_add = -2
 	}
 }
+
+state_trait_space = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+
+	modifier = {
+		state_birth_rate_mult = 1.5
+		state_education_access_add = 10
+		state_infrastructure_add = 100
+		state_standard_of_living_add = 4
+	}
+}

@@ -299,3 +299,45 @@ east_nigritic={
 	}
 	graphics = african
 }
+
+space_culture={
+	color= rgb{ 222 147 226 }
+	religion = atheist
+	traits = {anglophone european_heritage }
+	male_common_first_names={
+		Anatoli
+		Kuzma
+		Ilya
+		Leonid
+		Makar
+		Nikolai
+		Pjotr
+		Vasili
+		Zahar
+	}
+	female_common_first_names = {
+		Aljona
+		Raisa
+		Valentina
+	}
+	#noble_last_names = {
+	#}
+	common_last_names={
+		Anikin Alekseev Ageikin Atyanin
+		Borzakovski Byabin
+		Dorofejev Devin Doronin
+		Irkaev
+		KljutS_evski Kutorkin
+		Larionov
+		Matvijenko MerkuS_kin
+		OvetS_kin
+		Ryabov
+		Shukshin
+		Voronin
+		Yevseyev
+	}
+	ethnicities = {
+		1 = caucasian
+	}
+	graphics = european
+}

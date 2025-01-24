@@ -1,4 +1,124 @@
-﻿toggle_space_race = {
+﻿lunar_colony = {
+    scope = country
+    effect = {
+        if = {
+            limit = {exists = s:STATE_MOON_ONE.region_state:MOON}
+            s:STATE_MOON_ONE.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MOON_ONE = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }
+            }
+        } else_if = {
+            limit = {exists = s:STATE_MOON_TWO.region_state:MOON}
+            s:STATE_MOON_TWO.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MOON_TWO = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        } else_if = {
+            limit = {exists = s:STATE_MOON_THREE.region_state:MOON}
+            s:STATE_MOON_THREE.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MOON_THREE = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        } else_if = {
+            limit = {exists = s:STATE_MOON_FOUR.region_state:MOON}
+            s:STATE_MOON_FOUR.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MOON_FOUR = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        } else_if = {
+            limit = {exists = s:STATE_MOON_FIVE.region_state:MOON}
+            s:STATE_MOON_FIVE.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MOON_FIVE = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        } else_if = {
+            limit = {exists = s:STATE_MOON_SIX.region_state:MOON}
+            s:STATE_MOON_SIX.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MOON_SIX = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        }
+    }
+
+    is_valid = {
+        has_variable = moon_landing
+        OR = {
+            exists = s:STATE_MOON_ONE.region_state:MOON
+            exists = s:STATE_MOON_TWO.region_state:MOON
+            exists = s:STATE_MOON_THREE.region_state:MOON
+            exists = s:STATE_MOON_FOUR.region_state:MOON
+            exists = s:STATE_MOON_FIVE.region_state:MOON
+            exists = s:STATE_MOON_SIX.region_state:MOON
+        }
+        AND = {
+            NOT = {has_state_in_state_region = STATE_MOON_ONE}
+            NOT = {has_state_in_state_region = STATE_MOON_TWO}
+            NOT = {has_state_in_state_region = STATE_MOON_THREE}
+            NOT = {has_state_in_state_region = STATE_MOON_FOUR}
+            NOT = {has_state_in_state_region = STATE_MOON_FIVE}
+            NOT = {has_state_in_state_region = STATE_MOON_SIX}
+        }
+    }
+}
+martian_colony = {
+    scope = country
+    effect = {
+        if = {
+            limit = {exists = s:STATE_MARS_ONE.region_state:MOON}
+            s:STATE_MARS_ONE.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MARS_ONE = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        } else_if = {
+            limit = {exists = s:STATE_MARS_TWO.region_state:MOON}
+            s:STATE_MARS_TWO.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MARS_TWO = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        } else_if = {
+            limit = {exists = s:STATE_MARS_THREE.region_state:MOON}
+            s:STATE_MARS_THREE.region_state:MOON = {set_state_owner = prev}
+            s:STATE_MARS_THREE = {
+                every_scope_state = {
+                    create_pop = { size = 1000 culture = space_culture }
+                    create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
+                }            }
+        }
+    }
+
+    is_valid = {
+        has_variable = mars_landing
+        OR = {
+            exists = s:STATE_MARS_ONE.region_state:MOON
+            exists = s:STATE_MARS_TWO.region_state:MOON
+            exists = s:STATE_MARS_THREE.region_state:MOON
+        }
+        AND = {
+            NOT = {has_state_in_state_region = STATE_MARS_ONE}
+            NOT = {has_state_in_state_region = STATE_MARS_TWO}
+            NOT = {has_state_in_state_region = STATE_MARS_THREE}
+        }
+    }
+}
+
+toggle_space_race = {
     effect = {
         if = {
             limit = {
@@ -150,40 +270,40 @@ buy_launch = {
 moon_flyby = {
     scope = country
     effect = {
-        set_variable = moon_flyby_done
+        set_variable = moon_flyby
         add_to_global_variable_list = {name = moon_flyby target = this}
     }
 
     is_valid = {
-        NOT = { has_variable = moon_flyby_done}
+        NOT = { has_variable = moon_flyby}
     }
 }
 moon_orbit = {
     scope = country
     effect = {
-        set_variable = moon_orbit_done
+        set_variable = moon_orbit
         add_to_global_variable_list = {name = moon_orbit target = this}
     }
 
     is_valid = {
         AND = {
-            NOT = { has_variable = moon_orbit_done}
-            has_variable = moon_flyby_done
+            NOT = { has_variable = moon_orbit}
+            has_variable = moon_flyby
         }
     }
 }
 moon_landing = {
     scope = country
     effect = {
-        set_variable = moon_landing_done
+        set_variable = moon_landing
         add_to_global_variable_list = {name = moon_landing target = this}
 
     }
 
     is_valid = {
         AND = {
-            NOT = { has_variable = moon_landing_done}
-            has_variable = moon_orbit_done
+            NOT = { has_variable = moon_landing}
+            has_variable = moon_orbit
         }
     }
 }
@@ -191,41 +311,41 @@ moon_landing = {
 mars_flyby = {
     scope = country
     effect = {
-        set_variable = mars_flyby_done
+        set_variable = mars_flyby
         add_to_global_variable_list = {name = mars_flyby target = this}
     }
 
     is_valid = {
-        NOT = { has_variable = mars_flyby_done}
-        has_variable = moon_orbit_done
+        NOT = { has_variable = mars_flyby}
+        has_variable = moon_orbit
     }
 }
 mars_orbit = {
     scope = country
     effect = {
-        set_variable = mars_orbit_done
+        set_variable = mars_orbit
         add_to_global_variable_list = {name = mars_orbit target = this}
     }
 
     is_valid = {
         AND = {
-            NOT = { has_variable = mars_orbit_done}
-            has_variable = mars_flyby_done
+            NOT = { has_variable = mars_orbit}
+            has_variable = mars_flyby
         }
     }
 }
 mars_landing = {
     scope = country
     effect = {
-        set_variable = mars_landing_done
+        set_variable = mars_landing
         add_to_global_variable_list = {name = mars_landing target = this}
 
     }
 
     is_valid = {
         AND = {
-            NOT = { has_variable = mars_landing_done}
-            has_variable = mars_orbit_done
+            NOT = { has_variable = mars_landing}
+            has_variable = mars_orbit
         }
     }
 }

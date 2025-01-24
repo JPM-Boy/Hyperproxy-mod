@@ -36,7 +36,7 @@
 		}
 		if = {
 			limit = { is_capital = yes }
-			change_variable = { name = autonomy add = -100 }
+			change_variable = { name = autonomy add = -20 }
 		}
 		clamp_variable = {
 			name = autonomy

@@ -362,18 +362,19 @@ window = {
                                     using = default_button_primary_action
                                     size = { 250 40 }
                                     text = "Send Colonists to Luna"
+                                    enabled = "[GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue,'(CFixedPoint)250')]"
+                                    onclick = "[GetScriptedGui('luna_colonists').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
                                 }
                                 button = {
                                     using = default_button_primary_action
                                     size = { 250 40 }
                                     text = "Send Colonists to Mars"
+                                    enabled = "[GreaterThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('space_agency_total_funds').GetValue,'(CFixedPoint)250')]"
+                                    onclick = "[GetScriptedGui('mars_colonists').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                                 }
-
                             }
-
-
                         }
-
                     }
                 }
             }

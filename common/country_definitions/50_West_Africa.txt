@@ -300,7 +300,7 @@ ZND = {
 	tier = principality
 	
 	cultures = { azande }
-	capital = STATE_CONGO_ORIENTALE
+	capital = STATE_MUSIKIKONO
 }
 
 DAK = {
@@ -333,7 +333,7 @@ BOB = {
 	tier = principality
 	
 	cultures = { mongo bakongo }
-	capital = STATE_EQUATEUR
+	capital = STATE_MUSIYOHANA
 }
 
 TKE = {

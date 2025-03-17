@@ -194,6 +194,7 @@ STATE_SAINT_LOUIS = {
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {}
+    naval_state_id = 3062
 }
 STATE_AMAPPA = {
     id = 5017
@@ -202,14 +203,20 @@ STATE_AMAPPA = {
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {}
+    naval_exit_id = 3062
 }
 STATE_NEW_AMSTERDAM = {
     id = 5018
     subsistence_building = "building_subsistence_farms"
     provinces = { "x032EA0" "x0973C9" "x0A925F" "x0CB7A9" "x0DFF9A" "x0E7CA9" "x0F585E" "x0FC0EC" "x102F7B" "x124BA3" "x140E0C" "x1A21F3" "x1A2590" "x218050" "x23A1AB" "x26F1F5" "x2B8A36" "x30CFD0" "x344DF2" "x37F7DE" "x3A24E6" "x3AE396" "x3DBD72" "x469A7C" "x4C7639" "x4C763A" "x50BC85" "x510F08" "x516DE8" "x5408F3" "x563E55" "x594558" "x5DCFF3" "x5F988B" "x604190" "x60C011" "x67D67F" "x69F57B" "x6BB748" "x6E0A83" "x72A418" "x756819" "x781B63" "x7BA55B" "x835C1F" "x85E12F" "x8941F9" "x8ED4A6" "x915F53" "x937969" "x9C9F0B" "xA00150" "xA04868" "xA08050" "xA202FC" "xA28EF1" "xA6BA83" "xAD0128" "xB1D72A" "xB20898" "xBE1280" "xC0A070" "xC4D392" "xCB19E2" "xCCF195" "xD54255" "xD95159" "xDC9F66" "xE04111" "xE29237" "xED0C0B" "xED5CF9" "xEF30C9" "xF7C27D" "xFAA9EB" }
-    arable_land = 0
+    arable_land = 20
+    city = "x0E7CA9"
+    port = "xD95159"
+    farm = "xAD0128"
+    mine = "xE04111"
+    wood = "x69F57B"
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    naval_exit_id = 3063
 }
 STATE_ANZIKU_SONGO = {
     id = 5019

@@ -175,150 +175,6 @@
 			}
 		}
 	}
-	s:STATE_ACRE = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = amazonian
-				size = 450000
-			}
-		}
-	}
-	s:STATE_AMAZONAS = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = amazonian
-				size = 1400000
-			}
-		}
-	}
-	s:STATE_PARA = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = amazonic
-				size = 2500000
-			}
-		}
-	}
-	s:STATE_MATO_GROSSO = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 5000000
-			}
-		}
-	}
-	s:STATE_GOIAS = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 3300000
-			}
-		}
-	}
-	s:STATE_MARANHAO = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 2000000
-			}
-		}
-	}
-	s:STATE_PIAUI = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 2000000
-			}
-		}
-	}
-	s:STATE_CEARA = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 4000000
-			}
-		}
-	}
-	s:STATE_RIO_GRANDE_DO_NORTE = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 2000000
-			}
-		}
-	}
-	s:STATE_PARAIBA = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 2000000
-			}
-		}
-	}
-	s:STATE_PERNAMBUCO = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 10000000
-			}
-		}
-	}
-	s:STATE_BAHIA = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 8000000
-			}
-		}
-	}
-	s:STATE_MINAS_GERAIS = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 12000000
-			}
-		}
-	}
-	s:STATE_RIO_DE_JANEIRO = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 13000000
-			}
-		}
-	}
-	s:STATE_SAO_PAULO = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 23000000
-			}
-		}
-	}
-	s:STATE_PARANA = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 6000000
-			}
-		}
-	}
-	s:STATE_SANTA_CATARINA = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 4000000
-			}
-		}
-	}
-	s:STATE_RIO_GRANDE_DO_SUL = {
-		region_state:BRZ = {
-			create_pop = {
-				culture = brazilian
-				size = 9000000
-			}
-		}
-	}
 	s:STATE_URUGUAY = {
 		region_state:URU = {
 			create_pop = {
@@ -442,6 +298,14 @@
 			create_pop = {
 				culture = argentine
 				size = 12000000
+			}
+		}
+	}
+	s:STATE_NEW_AMSTERDAM = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = brazilian
+				size = 10500000
 			}
 		}
 	}

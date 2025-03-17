@@ -674,6 +674,7 @@ STATE_CORRIENTES = {
         type = "bg_oil_extraction"
         undiscovered_amount = 5
     }
+    naval_exit_id = 3065
 }
 
 STATE_TUCUMAN = {

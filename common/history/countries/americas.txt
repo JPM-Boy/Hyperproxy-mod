@@ -1,29 +1,30 @@
 ﻿COUNTRIES = {
-	c:ARG = {
-		start_militar = yes
-		activate_law = law_type:law_technocracy
-	c:PTG = {start_communist = yes}
-	c:ALT = {start_communist = yes}
-	c:MAY = {start_communist = yes}
-	c:CUB = {start_communist = yes}
-	c:NIC = {start_communist = yes}
-	c:BOL = {start_communist = yes}
-	c:USA = {
-		start_presidential = yes
-	}
-	c:CAN = {
-		start_presidential = yes
-	}
-	c:MEX = {start_presidential = yes}
-	c:PEU = {start_presidential = yes}
-	c:CHL = {start_presidential = yes}
-	c:CLM = {start_presidential = yes}
-	c:VNZ = {start_presidential = yes}
-	c:ECU = {start_presidential = yes}
-	c:BRZ = {start_presidential = yes}
-	c:USA = {
-		set_variable = {
-    		name = imf_headquarters_holder
-    		value = 0
-    	}
-	}
+		c:ARG = {
+			start_militar = yes
+			activate_law = law_type:law_technocracy
+		}
+		c:PTG = { start_communist = yes }
+		c:ALT = { start_communist = yes }
+		c:MAY = { start_communist = yes }
+		c:CUB = { start_communist = yes }
+		c:NIC = { start_communist = yes }
+		c:BOL = { start_communist = yes }
+		c:USA = {
+			start_presidential = yes
+		}
+		c:CAN = {
+			start_presidential = yes
+		}
+		c:MEX = { start_presidential = yes }
+		c:PEU = { start_presidential = yes }
+		c:CHL = { start_presidential = yes }
+		c:CLM = { start_presidential = yes }
+		c:VNZ = { start_presidential = yes }
+		c:ECU = { start_presidential = yes }
+		c:BRZ = { start_presidential = yes }
+		c:USA = {
+			set_variable = {
+				name = imf_headquarters_holder
+				value = 0
+			}
+		}

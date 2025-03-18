@@ -160,7 +160,9 @@ STATE_KAGUAZU = {
     provinces = { "x0076E6" "x0F1505" "x17675E" "x1AADD5" "x1C1B7D" "x1C92E2" "x25BD9D" "x265206" "x26F90F" "x2A23E9" "x2ACD4C" "x2AD465" "x2CDDD0" "x2E7F13" "x3880D4" "x409970" "x42A2E2" "x478475" "x4D8530" "x53D7A6" "x5A6439" "x5DDBCA" "x6506ED" "x758198" "x7E10B1" "x857B07" "x861B98" "x987D0C" "x98A3E2" "x9E0077" "xA3DC23" "xA61CC9" "xB347D6" "xB977BC" "xB9F1FF" "xC9955F" "xCA0FAC" "xCD6F40" "xCDF95A" "xD0223C" "xD331D4" "xDD8728" "xE1B118" "xF113B9" "xF9F924" "xFB3C67" "xFB9C08" "xFC7A98" "xFD8937" }
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+        bg_iron_mining = 50
+    }
 }
 
 STATE_GUAPORE = {
@@ -169,7 +171,9 @@ STATE_GUAPORE = {
     provinces = { "x0141D0" "x01BCE8" "x04B286" "x0934A4" "x0C5436" "x0E4B34" "x0F0F7E" "x10504F" "x11330B" "x12B65A" "x15BFE8" "x1774C8" "x1915D6" "x1C5644" "x1CCABD" "x1CF67D" "x1DF7C9" "x1E7015" "x214090" "x22E97D" "x25C093" "x277DD3" "x27C08F" "x29C483" "x2B826F" "x313D66" "x34DF8A" "x364BA6" "x37A4BA" "x3B9107" "x3C8A04" "x3CD803" "x3D90CB" "x3DE3B3" "x3EA80A" "x4045E7" "x405F17" "x41CAAA" "x41EA08" "x4236E9" "x4AE149" "x4B18FB" "x4EA25F" "x4EB3AA" "x4F2BDA" "x5014D8" "x561F28" "x5A3296" "x5A4A14" "x5A9A8E" "x5AC0B3" "x5D0E06" "x62E369" "x643D81" "x647BCC" "x6696CA" "x68945C" "x69DFC4" "x6A5AAF" "x6C5723" "x6EBBB7" "x70F4E3" "x71D9D7" "x724C74" "x754421" "x75CEE8" "x776B49" "x7BFBFD" "x7CD432" "x7E7888" "x81412E" "x83B7C6" "x88DD4E" "x8B778F" "x8D8F6C" "x93EE28" "x96AF4C" "x96CEB1" "x976874" "x9AD896" "x9B7537" "x9C7C22" "x9D43CF" "x9ED33B" "xA18C78" "xA1AF7C" "xA25E6F" "xA28D6D" "xA30D13" "xA5E152" "xA6F2B7" "xA85298" "xA8A2F7" "xABFA19" "xABFB77" "xAECD87" "xAF2A17" "xB26BED" "xB2B9BA" "xB78A12" "xBA3D90" "xBBB067" "xBE0073" "xC2EEA7" "xC48D73" "xC585D3" "xC67143" "xC7ED83" "xC84C89" "xC8BE47" "xCEB8CB" "xCFC8B9" "xD0336A" "xD10967" "xD247CC" "xD370AE" "xD38892" "xD4D11B" "xD5C3C8" "xD8956A" "xDD69F8" "xDF45EF" "xDFF7B7" "xE18406" "xE3AA75" "xE67FA7" "xE70FB1" "xE72C6E" "xEB26F2" "xEB9C41" "xEFAE40" "xF2431F" "xF53054" "xF88DAD" "xF952C1" "xF9BA26" "xFA2457" "xFF1B33" }
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+        bg_iron_mining = 50
+    }
 }
 STATE_TOKANTIJN = {
     id = 5014
@@ -177,7 +181,9 @@ STATE_TOKANTIJN = {
     provinces = { "x030718" "x087FD3" "x184B61" "x22CF25" "x266D5E" "x28361D" "x28C4BB" "x2C715A" "x2EDF1D" "x37E1AD" "x3F707A" "x47CAD2" "x48E459" "x57F295" "x5C3AFC" "x6526AF" "x65A627" "x695BDD" "x75C440" "x774C4A" "x7C0E6D" "x7DEBF8" "x891E70" "x8A7AE1" "x8B2ADA" "x8ED5C9" "x92BC48" "x93C71F" "x990CED" "xA02D57" "xA04190" "xA2A177" "xA59A91" "xB222D4" "xB518E9" "xBB5AB2" "xBD890D" "xBE9939" "xC0126C" "xC42C8F" "xC9A5A3" "xD4E7CE" "xD5ADF0" "xD8EFD5" "xE4A7DA" "xEDC084" "xEE95C4" "xF01E32" "xF41C9C" "xF75947" "xFF81EE" }
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+        bg_iron_mining = 50
+    }
 }
 STATE_ULTIMA_AMAZONAS = {
     id = 5015
@@ -185,7 +191,9 @@ STATE_ULTIMA_AMAZONAS = {
     provinces = { "x01FB64" "x06C624" "x073FDE" "x0A49A7" "x0C14D1" "x0C34F7" "x0C80D5" "x0DD209" "x0E6BAF" "x109595" "x18AF1A" "x1A3B8F" "x1BE381" "x1F175F" "x1F56AE" "x20B9B2" "x20EFD3" "x210144" "x211F43" "x228F62" "x22964C" "x237C27" "x23EFD7" "x24AC59" "x2906D5" "x2994F2" "x2E7EBF" "x2EE626" "x35728C" "x36D9EF" "x379D54" "x3D6A7B" "x3FF111" "x402E72" "x41C051" "x4370B4" "x43D729" "x446753" "x450DE4" "x45EED6" "x46A9DE" "x47BA4D" "x47D460" "x48171B" "x49A43E" "x4A16EA" "x4A8664" "x4CA6CC" "x4D1CA6" "x50FD51" "x5285F9" "x54D63A" "x554D04" "x569250" "x5755E4" "x57DC7A" "x5820C3" "x597DD7" "x5A47CA" "x5C2AA8" "x5DB7DF" "x60FF01" "x62493B" "x6407BA" "x67CDD3" "x681E21" "x6831AB" "x6BE64A" "x6FC2D0" "x6FE8D5" "x717A55" "x71D3B4" "x71E84F" "x72DE57" "x74AF3A" "x75E887" "x7697B7" "x77399A" "x7A431A" "x7B89C9" "x7CDC0B" "x7F0E49" "x80FA90" "x840034" "x8653EE" "x87087A" "x8899C3" "x8976AD" "x8E80DF" "x8F7DE4" "x8F7F6F" "x90539F" "x91C728" "x929F4C" "x950AF3" "x9752DF" "x9E3C4B" "x9FA745" "x9FC0FE" "xA19E99" "xA23B8A" "xA30817" "xA58C2D" "xA5AF12" "xA837D2" "xA8E4E8" "xA92523" "xA9FD52" "xACEB79" "xADB7B9" "xB374FD" "xB43F4F" "xB62AF0" "xB76ECB" "xB8747C" "xBB6578" "xBB7948" "xBD9F17" "xBF360F" "xC04151" "xC45530" "xC51963" "xC53B26" "xCCF73F" "xCEDA54" "xD068EF" "xD246CD" "xD7EC39" "xD9B51B" "xDABCDD" "xDBADFE" "xDC716A" "xDCD7C9" "xE00111" "xE0A9E2" "xE14B14" "xE2A941" "xE2B050" "xE3F904" "xE60BF7" "xE67742" "xE921FB" "xE95326" "xEA326C" "xED3292" "xEDAC7C" "xEE058F" "xF00CED" "xF62EBB" "xF9125F" "xFDC3C4" "xFE4759" "xFF4650" "xFFE4C1" }
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+        bg_iron_mining = 50
+    }
 }
 STATE_SAINT_LOUIS = {
     id = 5016
@@ -193,7 +201,9 @@ STATE_SAINT_LOUIS = {
     provinces = { "x011074" "x03E724" "x042D0E" "x043AE5" "x044CF8" "x06800E" "x07B5EB" "x0BDBE6" "x0C8E72" "x0DB9D9" "x0DE512" "x0E45FF" "x0E5A68" "x14F661" "x189F0F" "x21C011" "x21C090" "x2769F6" "x2941C6" "x2C4A14" "x2EABC5" "x361174" "x3BD188" "x4081F6" "x424458" "x4987DB" "x4F2FCD" "x506683" "x52B7ED" "x5634E8" "x57302A" "x576777" "x57D797" "x584067" "x592F89" "x5D6D8D" "x613F23" "x62EDC5" "x66681E" "x68A97F" "x69BE90" "x735527" "x739075" "x75B6DF" "x772A8C" "x7B9800" "x7DBD66" "x7DCBC3" "x80C250" "x83E18C" "x8564C7" "x88F401" "x89AFD6" "x89E132" "x8A4B48" "x8C3D2C" "x8CF9DE" "x8D0EDA" "x8DF511" "x8FB7B0" "x90FE1E" "x91AB15" "x920A8F" "xA0C011" "xA0C090" "xA33C32" "xA48AAE" "xA4CA4C" "xA4E24B" "xA4F6C2" "xA8B0C0" "xA9AA6B" "xAB0B29" "xAB18E1" "xB169D2" "xB1EFA7" "xB355EE" "xB3940F" "xB5C4BF" "xB634E7" "xB831D5" "xBA0107" "xBA9C2C" "xC688FC" "xC6ECAE" "xC74E19" "xC88B1C" "xCA2BC6" "xCC5915" "xCC8A8A" "xCD6634" "xCE40A2" "xCE8F26" "xD621B3" "xD81DE8" "xDA2527" "xDAA149" "xDCFBF2" "xE38165" "xE39C8B" "xE3C781" "xE3D369" "xECA636" "xF07D68" "xF58072" "xF71214" "xF89BE4" }
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+        bg_iron_mining = 50
+    }
     naval_state_id = 3062
 }
 STATE_AMAPPA = {
@@ -202,7 +212,9 @@ STATE_AMAPPA = {
     provinces = { "x03A6E8" "x049E29" "x04CE13" "x05B90F" "x05CF8B" "x063557" "x0A4B09" "x0A5CA3" "x0EEAC1" "x12590E" "x140E36" "x147984" "x148FB5" "x16CD59" "x1BEEC7" "x1F5190" "x202AD6" "x20DD27" "x20F3FE" "x210190" "x218011" "x26B9C1" "x2717F9" "x27E268" "x30A52C" "x34E831" "x3A069F" "x3FDF4A" "x41552E" "x439BC2" "x456A7F" "x45DA42" "x466026" "x4AA845" "x4AE8F7" "x4BE6EE" "x4DCA73" "x4E60B2" "x554F30" "x5AD2E6" "x600190" "x60476B" "x61BE2C" "x62B50D" "x646762" "x69460E" "x705AB9" "x719492" "x73D4D4" "x7684AE" "x771D68" "x79F381" "x7C32C1" "x80C050" "x819CB3" "x81FC6B" "x8473D1" "x8616BC" "x88F1DE" "x8A8A3E" "x8C64ED" "x8CB00B" "x9A68C5" "x9B8499" "x9CB8B8" "x9F0090" "x9FEDF7" "xA08090" "xA082D3" "xA094C5" "xA22A4C" "xA80863" "xAED9E7" "xB1960A" "xB1CCEE" "xB21306" "xB2D30E" "xB306A1" "xB90B68" "xB93B0C" "xB95681" "xBB88B5" "xBEC87E" "xC0C0D0" "xC2E46E" "xC50FEA" "xC591AC" "xC5C8DB" "xD266C5" "xD2C5AD" "xD364FA" "xD52D37" "xD6E2EA" "xDB86CE" "xDC9757" "xE00190" "xE19BE4" "xE4212F" "xE560D3" "xE60D23" "xE6A9FB" "xE6D232" "xE91C8C" "xEBB90E" "xEC5C04" "xF0345C" "xF20136" "xF23696" "xF5CC32" "xF6408F" }
     arable_land = 0
     arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    capped_resources = {
+        bg_iron_mining = 50
+    }
     naval_exit_id = 3062
 }
 STATE_NEW_AMSTERDAM = {
@@ -223,8 +235,16 @@ STATE_ANZIKU_SONGO = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x03C590" "x077290" "x08302D" "x0866D6" "x0A0CBB" "x0CD600" "x0EBA9B" "x195E39" "x19AA2E" "x1D4C74" "x269967" "x34850C" "x376A4C" "x38E47B" "x3F47E3" "x406070" "x4513A5" "x491B8B" "x4B6E4C" "x552D48" "x55BFC9" "x6D11B0" "x71AE65" "x80E0F0" "x811426" "x82767A" "x8D528D" "x8D5A30" "x956FF5" "x981D9F" "x989470" "x9EC4DA" "xA0F4A3" "xA415F8" "xABF62E" "xB1B163" "xB63B70" "xC0A090" "xCF9269" "xDAA27C" "xE383BC" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
+    city = "x38E47B"
+    port = "x811426"
+    farm = "x0A0CBB"
+    mine = "x4513A5"
+    wood = "xC0A090"
     naval_exit_id = 3104
 }
 STATE_MBANZA_KONGO = {
@@ -232,8 +252,11 @@ STATE_MBANZA_KONGO = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x087B9D" "x0E91BE" "x0F73A9" "x13596E" "x15BBB9" "x24A658" "x2B6E1D" "x32E90E" "x35C8F2" "x42B7B8" "x45360F" "x464D82" "x4764A5" "x4901C3" "x65FACF" "x7F1954" "x82C47B" "x8C112B" "x8F94AF" "x928FE6" "x92BFB2" "x95DB92" "x961734" "x9A6D48" "xA13978" "xA71792" "xA98DF0" "xADA9E9" "xADC6D4" "xB0403C" "xB593B6" "xB5970C" "xB8838B" "xBC72E9" "xBF65DC" "xC7F9BD" "xC93845" "xCE457C" "xCFF013" "xD0721B" "xD30F2F" "xDAAC09" "xDD3D05" "xE20520" "xF00017" "xF15FC0" "xF4AA39" "xFA0904" "xFAB5FE" "xFDCF01" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
     naval_exit_id = 3104
 }
 STATE_NDONGO_CHOKWE = {
@@ -241,8 +264,11 @@ STATE_NDONGO_CHOKWE = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x03B050" "x223B92" "x317712" "x328C62" "x3EB02A" "x3FAA40" "x44D11A" "x4563FE" "x46904B" "x4751C5" "x4D5307" "x5EAE5F" "x5EC8D3" "x610700" "x61B712" "x649428" "x683088" "x6FD2F7" "x70E55C" "x71F000" "x72404E" "x78C387" "x7C0874" "x9127EF" "x97A08F" "x9A6962" "x9D299E" "xA2D384" "xADB506" "xAEDF8D" "xB477E9" "xB92820" "xBC2358" "xBD3AD2" "xBF7C79" "xCFA0E7" "xD13871" "xD45955" "xD4E9E2" "xD7D12D" "xD8809C" "xD9E162" "xE96E66" "xEC44B5" "xECAEC9" "xEF87AC" "xF0B5C8" "xF0D700" "xF27BBF" "xFE2EC3" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
     naval_exit_id = 3104
 }
 STATE_LUNDA = {
@@ -250,86 +276,119 @@ STATE_LUNDA = {
     subsistence_building = "building_subsistence_farms"
     provinces = { "x026C7C" "x085580" "x162508" "x1E660F" "x38EF9A" "x3B96EC" "x42066F" "x60145A" "x60BAFF" "x6C2C7C" "x762355" "x77427E" "x7F002D" "x83904E" "x852DC3" "x864664" "x88222F" "x8833BD" "x8C93B2" "x8FD34F" "x9BC612" "x9BCF5F" "x9E1832" "xAE2519" "xC5BC31" "xC6CC3A" "xD8ED0A" "xDACDF2" "xF62A21" "xFACD1E" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSIYEKE = {
     id = 5023
     subsistence_building = "building_subsistence_farms"
     provinces = { "x07301D" "x105E7E" "x19017C" "x1EE911" "x240C96" "x26A913" "x3057A4" "x38F842" "x403F31" "x46BE86" "x5196FE" "x58502C" "x5C5E88" "x7C5ED1" "x7E5C6B" "x880D71" "x8E5C2C" "x8F9EE5" "x91E34C" "x93B1F8" "x9A89E2" "x9D5FE0" "xA4743F" "xBFE0EF" "xC302BC" "xCE2E7B" "xE1BDDB" "xEDCDD6" "xFA1564" "xFB17EB" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSIKUNDU_MUSILUVAKA = {
     id = 5024
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0C478F" "x11911A" "x1E2B55" "x23FD54" "x2D5A83" "x2DE815" "x30731F" "x41E0F0" "x461B6A" "x5F6A22" "x5FBF03" "x689CB8" "x68D265" "x73084C" "x8695B2" "x8FA7E6" "x9B40FC" "xAD1FDB" "xB27626" "xB3697B" "xB858B9" "xBB6F40" "xC060F0" "xCB6124" "xD8927C" "xDFF631" "xF0276A" "xF15770" "xF29F28" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_KUBA = {
     id = 5025
     subsistence_building = "building_subsistence_farms"
     provinces = { "x13B9F7" "x354D3E" "x3F2E16" "x446615" "x4E12AF" "x662D79" "x6871A4" "x781636" "x887EAD" "x908070" "xA10D56" "xA2F76E" "xAA289E" "xAC6C45" "xB5899D" "xB5E777" "xE27079" "xE27B61" "xE392E2" "xEDA145" "xEFFCF7" "xF49831" "xFB5473" "xFE4BF0" "xFF070B" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_LUBA = {
     id = 5026
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0A1B1F" "x107E49" "x1481BC" "x15E223" "x186E7B" "x2C1E9F" "x2F00E6" "x36A0BB" "x3788AD" "x3B104F" "x3C9DE6" "x3FB184" "x4C5E63" "x4E9500" "x53CF10" "x54A236" "x6268B1" "x645FCD" "x6C9580" "x750DF0" "x75FDD0" "x7AF180" "x7CD240" "x87771C" "x885EAA" "xAC4151" "xAD062C" "xAD40C0" "xB02110" "xB2F68E" "xBD2B47" "xD9B170" "xEA13E1" "xEB5598" "xEC29A0" "xF4CEE0" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSINKOSI = {
     id = 5027
     subsistence_building = "building_subsistence_farms"
     provinces = { "x024FB7" "x187692" "x1C670A" "x1D29C2" "x2A2A05" "x2AFF3B" "x3141F5" "x3D5129" "x47E812" "x525175" "x5361C6" "x541B6A" "x71F6F2" "x78528D" "x7962AB" "x7CA3C6" "x872195" "x8D8AA7" "x8FC2E6" "x90CE04" "x9625E6" "x9898C5" "x99B828" "x99BE2B" "x9B45C3" "x9BBF16" "x9C00BD" "xA1E594" "xA586BD" "xA8795C" "xA99CF3" "xAA2629" "xB8CA50" "xBC39DE" "xBE2801" "xC46105" "xD4C5CC" "xD97719" "xE5F496" "xEC5E35" "xF94CAC" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSIKIKONO = {
     id = 5028
     subsistence_building = "building_subsistence_farms"
     provinces = { "x003BF5" "x016011" "x1BDDD1" "x1C5973" "x21A790" "x24D76F" "x288E79" "x28A575" "x2BED50" "x2CD7C7" "x37D428" "x3B65D3" "x3C6925" "x433477" "x46FA5B" "x580A3E" "x5DCFB4" "x60AA62" "x6C33E1" "x6CFBFA" "x6DEFBB" "x6E6C27" "x73F767" "x833DF7" "x848D1F" "x8652FC" "x894340" "x89A28B" "x8A2D3B" "x911366" "x912D33" "x9392EF" "x9643D3" "x964C06" "xA66EC2" "xB2CBC1" "xB6445A" "xBA41BC" "xBC0455" "xC02010" "xC48E73" "xD8D611" "xDC68BA" "xDFE2C5" "xE4B590" "xE6B25F" "xE79CE4" "xEA0570" "xECEA3F" "xF274D7" "xF3343F" "xF60457" "xFC323F" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSIYOHANA = {
     id = 5029
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0189CE" "x0568F6" "x1DF65B" "x1F6A67" "x21D746" "x23496A" "x23CA3D" "x245B66" "x26F6D7" "x287A3D" "x32D956" "x32F501" "x3E64C9" "x44C391" "x47FB27" "x4AE988" "x547B99" "x55DFE1" "x5AAE1D" "x6315E1" "x64F74D" "x69239A" "x71CEE9" "x7B43D7" "x81CBC9" "x828628" "x87945C" "x8941BB" "x8B73F4" "x98859A" "x99C010" "xA07ADA" "xA17D11" "xA2CE72" "xACC1BD" "xB1EF94" "xBB6510" "xC99932" "xD3F022" "xD939FF" "xE080C6" "xE1673F" "xE9DB6A" "xE9DE6C" "xF1F5C4" "xF691FC" "xF7E188" "xFF0F19" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSIDENGESE_MUSIBANKU = {
     id = 5030
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00AB77" "x037D93" "x0B0B5B" "x12AF57" "x30F98F" "x310F8A" "x57AD06" "x59223C" "x59B6C0" "x5B0E0F" "x60613A" "x70CEB9" "x71D2EF" "x7449D3" "x84E64E" "xB1488F" "xB28685" "xBB349F" "xC0DC10" "xC97739" "xCB4BCF" "xCCED8E" "xD1DE64" "xE05B64" "xE278B7" "xE42825" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_UTETERA_BUSHI = {
     id = 5031
     subsistence_building = "building_subsistence_farms"
     provinces = { "x0160D0" "x05A6E7" "x07242A" "x093D6D" "x135F4B" "x153063" "x15439F" "x21A030" "x223F0E" "x28D2E7" "x2A5811" "x2B239A" "x380B3D" "x401860" "x4575FD" "x4C5241" "x4D4E07" "x5247D2" "x55AAB7" "x563D5E" "x59A9BA" "x59DED0" "x620629" "x668E52" "x67535D" "x68D1B6" "x6CFB58" "x73B1B6" "x782089" "x786C0E" "x7ABE0E" "x7F1BED" "x80E0D0" "x85AB59" "x85DD57" "x86D0DF" "x886533" "x892521" "x91E008" "x99E339" "x9C9DF0" "x9D9072" "x9FF9FF" "xA0A030" "xA1C872" "xA936E2" "xACB239" "xADE217" "xAEB3D4" "xAF4E64" "xAFF1B2" "xB164FA" "xB843E4" "xB982CA" "xBDBDF3" "xC6AF9F" "xCDD8FC" "xD2AB90" "xD794FA" "xDA13AB" "xDAB788" "xDCBFE3" "xE06714" "xE1ECF8" "xE2A642" "xE3A90C" "xE7A782" "xEC1630" "xF51848" "xF8E616" "xFD986B" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }
 STATE_MUSINUANI = {
     id = 5032
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00EC62" "x01E050" "x0243AE" "x02B17D" "x040C3C" "x0B03B1" "x0BBD77" "x0F3567" "x142BDA" "x162FA7" "x17D507" "x19DDCD" "x1A870C" "x1F2FF9" "x1FEDC0" "x209F73" "x20B1EF" "x223541" "x24A74A" "x26A8CE" "x281E37" "x2BDAC0" "x3202D5" "x359C6B" "x3A2B4A" "x3AF918" "x403631" "x44082A" "x457464" "x474EAC" "x485FF5" "x4DC376" "x4F0B70" "x52D55E" "x530E61" "x5F8C84" "x60B2BD" "x65DC7E" "x66D104" "x67E98B" "x6C7A9D" "x6DDBD5" "x73EEE5" "x74FC60" "x75430A" "x768554" "x76F938" "x782AE0" "x7E3537" "x83B258" "x845B38" "x867071" "x86B9C3" "x894227" "x8D0077" "x930D6F" "x94C029" "x95F321" "x9C56C4" "x9D0722" "x9E6083" "xA82701" "xA97CAE" "xB2F385" "xB3BFC1" "xBB9639" "xC31CD2" "xC8B71B" "xCC2E74" "xCD3705" "xCE5D4E" "xD142A3" "xD24A32" "xD2FDC0" "xD30720" "xD39546" "xD67434" "xD6E056" "xD89C62" "xD93887" "xDC7664" "xE00EC9" "xE31D6A" "xE5EAF3" "xE70C3A" "xEB5E44" "xEDCBCD" "xEECA6C" "xF23E3F" "xF5DD95" "xF86F76" "xFBDA6B" "xFC2084" }
     arable_land = 50
-    arable_resources = { "bg_livestock_ranches" }
-    capped_resources = {}
+    arable_resources = { "bg_livestock_ranches" "bg_banana_plantations" }
+    capped_resources = {
+        bg_iron_mining = 50
+        bg_logging = 60
+    }
 }

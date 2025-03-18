@@ -38,7 +38,7 @@ BRZ = {
 	
 	tier = empire
 	
-	cultures = { dutch }
+	cultures = { braziliaans }
 	capital = STATE_NEW_AMSTERDAM
 }
 ANT = {
@@ -48,7 +48,7 @@ ANT = {
 
 	tier = empire
 
-	cultures = { french }
+	cultures = { antartien }
 	capital = STATE_RIO_DE_JANEIRO
 }
 AMZ = {
@@ -80,7 +80,7 @@ URU = {
 	
 	tier = principality
 	
-	cultures = { uruguayan }
+	cultures = { paranean }
 	capital = STATE_URUGUAY
 	is_named_from_capital = yes
 }

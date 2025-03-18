@@ -664,6 +664,7 @@ STATE_CORRIENTES = {
     farm = "x92BEE9"
     mine = "x0EF9D4"
     wood = "x64BE0D"
+    port = "x704010"
     arable_land = 120
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {

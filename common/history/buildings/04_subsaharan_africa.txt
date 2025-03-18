@@ -1,4 +1,593 @@
 ﻿BUILDINGS={
+	s:STATE_ANZIKU_SONGO = {
+		region_state:KON = {
+			create_building = {
+				building = building_port
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MBANZA_KONGO = {
+		region_state:KON = {
+			create_building = {
+				building = building_port
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_NDONGO_CHOKWE = {
+		region_state:KON = {
+			create_building = {
+				building = building_port
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_LUNDA = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSIYEKE = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSIKUNDU_MUSILUVAKA = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_KUBA = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_LUBA = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSINKOSI = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSIKIKONO = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSIYOHANA = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSIDENGESE_MUSIBANKU = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_UTETERA_BUSHI = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+	s:STATE_MUSINUANI = {
+		region_state:KON = {
+			create_building = {
+				building = building_iron_mine
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 10
+					}
+				}
+			}
+			create_building = {
+				building = building_government_administration
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 3
+					}
+				}
+			}
+			create_building = {
+				building = building_banana_plantation
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 2
+					}
+				}
+			}
+			create_building = {
+				building = building_logging_camp
+				add_ownership = {
+					country = {
+						country = c:KON
+						levels = 5
+					}
+				}
+			}
+		}
+	}
+
+
 	s:STATE_IVORY_COAST={
 		region_state:AYI={
 		}

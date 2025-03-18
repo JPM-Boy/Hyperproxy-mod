@@ -168,6 +168,12 @@
 				size = 1000000
 			}
 		}
+		region_state:BOL = {
+			create_pop = {
+				culture = guarani
+				size = 750000
+			}
+		}
 		region_state:ARG = {
 			create_pop = {
 				culture = argentine
@@ -178,8 +184,8 @@
 	s:STATE_URUGUAY = {
 		region_state:URU = {
 			create_pop = {
-				culture = uruguayan
-				size = 3000000
+				culture = paranean
+				size = 7000000
 			}
 		}
 	}
@@ -278,10 +284,10 @@
 		}
 	}
 	s:STATE_CORRIENTES = {
-		region_state:ARG = {
+		region_state:URU = {
 			create_pop = {
-				culture = argentine
-				size = 1400000
+				culture = paranean
+				size = 5000000
 			}
 		}
 	}
@@ -304,8 +310,182 @@
 	s:STATE_NEW_AMSTERDAM = {
 		region_state:BRZ = {
 			create_pop = {
-				culture = brazilian
+				culture = braziliaans
 				size = 10500000
+			}
+		}
+	}
+	s:STATE_RIO_GRANDE_DO_SUL = {
+		region_state:URU = {
+			create_pop = {
+				culture = paranean
+				size = 4500000
+			}
+		}
+	}
+	s:STATE_SANTA_CATARINA = {
+		region_state:URU = {
+			create_pop = {
+				culture = paranean
+				size = 4750000
+			}
+		}
+	}
+	s:STATE_KAGUAZU = {
+		region_state:PRG = {
+			create_pop = {
+				culture = paraguayan
+				size = 825000
+			}
+		}
+	}
+	s:STATE_ACRE = {
+		region_state:BOL = {
+			create_pop = {
+				culture = amazonian
+				size = 350000
+			}
+		}
+	}
+	s:STATE_GUAPORE = {
+		region_state:BOL = {
+			create_pop = {
+				culture = amazonian
+				size = 225000
+			}
+		}
+		region_state:BRZ = {
+			create_pop = {
+				cultures = {
+					braziliaans = 0.25
+					amazonian = 0.75
+				}
+				size = 2450000
+			}
+		}
+	}
+	s:STATE_AMAZONAS = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 930000
+			}
+		}
+	}
+	s:STATE_AMAPPA = {
+		region_state:AMZ = {
+			create_pop = {
+				cultures = {
+					braziliaans = 0.45
+					amazonian = 0.55
+				}
+				size = 3620000
+			}
+		}
+	}
+	s:STATE_PARA = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 4300000
+			}
+		}
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 7150000
+			}
+		}
+	}
+	s:STATE_ULTIMA_AMAZONAS = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 754000
+			}
+		}
+		region_state:CLM = {
+			create_pop = {
+				culture = amazonian
+				size = 95000
+			}
+		}
+	}
+	s:STATE_PARANA = {
+		region_state:ANT = {
+			create_pop = {
+				culture = antartien
+				size = 6800000
+			}
+		}
+	}
+	s:STATE_SAO_PAULO = {
+		region_state:ANT = {
+			create_pop = {
+				culture = antartien
+				size = 11250000
+			}
+		}
+	}
+	s:STATE_RIO_DE_JANEIRO = {
+		region_state:ANT = {
+			create_pop = {
+				culture = antartien
+				size = 14500000
+			}
+		}
+	}
+	s:STATE_MATO_GROSSO = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 3800000
+			}
+		}
+	}
+	s:STATE_GOIAS = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 5100000
+			}
+		}
+	}
+	s:STATE_TOKANTIJN = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 2850000
+			}
+		}
+	}
+	s:STATE_BAHIA = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 7350000
+			}
+		}
+	}
+	s:STATE_SAINT_LOUIS = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 9642000
+			}
+		}
+	}
+	s:STATE_MINAS_GERAIS = {
+		region_state:ANT = {
+			create_pop = {
+				culture = antartien
+				size = 7650000
+			}
+		}
+		region_state:BRZ = {
+			create_pop = {
+				culture = braziliaans
+				size = 1250000
 			}
 		}
 	}

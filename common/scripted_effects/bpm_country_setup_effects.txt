@@ -574,35 +574,35 @@ bpm_setup_basic_igs = {
 	if = {
 		limit = {
 			ig:ig_anarchist ?= { has_ideology = ideology:ideology_nonexistent }
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_anarchist = yes
 	}
 	if = {
 		limit = {
 			ig:ig_cons ?= { has_ideology = ideology:ideology_nonexistent }
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_cons = yes
 	}
 	if = {
 		limit = {
 			ig:ig_ecologist ?= { has_ideology = ideology:ideology_nonexistent }
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_ecologist = yes
 	}
 	if = {
 		limit = {
 			ig:ig_prog ?= { has_ideology = ideology:ideology_nonexistent }
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_prog = yes
 	}
 	if = {
 		limit = {
 			ig:ig_neolib ?= { has_ideology = ideology:ideology_nonexistent }
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_neolib = yes
 	}
@@ -612,21 +612,21 @@ bpm_setup_basic_igs = {
 				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 				ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 			}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_libs = yes
 	}
 	if = {
 		limit = { 
 			ig:ig_reactionary ?= { has_ideology = ideology:ideology_nonexistent}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_reactionaries = yes
 	}
 	if = {
 		limit = { 
 			ig:ig_fascist ?= { has_ideology = ideology:ideology_nonexistent}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_fascist = yes
 	}
@@ -636,7 +636,7 @@ bpm_setup_basic_igs = {
 				ig:ig_orthodox_communist?= { has_ideology = ideology:ideology_nonexistent }
 				ig:ig_reformist_communist?= { has_ideology = ideology:ideology_nonexistent }
 			}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_reform_revolution = yes
 	}
@@ -646,28 +646,28 @@ bpm_setup_basic_igs = {
 				ig:ig_leftpop ?= { has_ideology = ideology:ideology_nonexistent }
 				ig:ig_rightpop ?= { has_ideology = ideology:ideology_nonexistent }
 			}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_populism = yes
 	}
 	if = {
 		limit = { 
 			ig:ig_trade_unions ?= { has_ideology = ideology:ideology_nonexistent}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_trade_unions = yes
 	}
 	if = {
 		limit = {
 			ig:ig_socdem ?= { has_ideology = ideology:ideology_nonexistent}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_socdem = yes
 	}
 	if = {
 		limit = {
 			ig:ig_new_leftism ?= { has_ideology = ideology:ideology_nonexistent}
-			has_technology_researched = democracy
+			has_technology_researched = globalization
 		}
 		bpm_initialize_new_leftism = yes
 	}

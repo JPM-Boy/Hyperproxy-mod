@@ -58,7 +58,7 @@ law_confederated = {
 	}
 
 	unlocking_technologies = {
-		centralization
+		globalization
 	}
 	
 	modifier = {
@@ -128,7 +128,7 @@ law_federated = {
 	}
 
 	unlocking_technologies = {
-		centralization
+		globalization
 	}
 	
 	modifier = {
@@ -195,7 +195,7 @@ law_devolved = {
 	}
 
 	unlocking_technologies = {
-		centralization
+		globalization
 	}
 	
 	modifier = {
@@ -269,7 +269,7 @@ law_unitary = {
 	}
 
 	unlocking_technologies = {
-		centralization
+		globalization
 	}
 	
 	modifier = {
@@ -316,7 +316,7 @@ law_localism = {
 	}
 
 	unlocking_technologies = {
-		centralization
+		globalization
 	}
 	
 	modifier = {

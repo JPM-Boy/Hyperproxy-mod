@@ -25,7 +25,7 @@
 
 		NOT = { has_law = law_type:law_party_single }
 
-		has_technology_researched = democracy
+		has_technology_researched = globalization
 
 		# The government must have one single ruling party
 		custom_tooltip = {

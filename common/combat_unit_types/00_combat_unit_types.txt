@@ -87,7 +87,7 @@ combat_unit_type_line_infantry = {
         unit_morale_loss_add = 10
     }
 
-	unlocking_technologies = { line_infantry }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -144,7 +144,7 @@ combat_unit_type_skirmish_infantry = {
         unit_morale_loss_add = 10
     }
 
-	unlocking_technologies = { general_staff }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -200,7 +200,7 @@ combat_unit_type_trench_infantry = {
         unit_morale_loss_add = 8
     }
 
-	unlocking_technologies = { trench_works }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -256,7 +256,7 @@ combat_unit_type_squad_infantry = {
         unit_morale_loss_add = 6
     }
 
-	unlocking_technologies = { nco_training }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -320,7 +320,7 @@ combat_unit_type_mechanized_infantry = {
         unit_devastation_mult = 0.1
     }
 
-	unlocking_technologies = { mobile_armor }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -384,7 +384,7 @@ combat_unit_type_cannon_artillery = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { artillery }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -452,7 +452,7 @@ combat_unit_type_mobile_artillery = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { napoleonic_warfare }
+	unlocking_technologies = { mechanized_warfare }
 	
     combat_unit_image = {
         trigger = { 
@@ -520,7 +520,7 @@ combat_unit_type_shrapnel_artillery = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { breech_loading_artillery }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -588,7 +588,7 @@ combat_unit_type_siege_artillery = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { defense_in_depth }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -655,7 +655,7 @@ combat_unit_type_heavy_tank = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { mobile_armor }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/artillery_heavy_tank.dds"
@@ -688,7 +688,7 @@ combat_unit_type_hussars = {
         military_formation_movement_speed_mult = 0.25
     }
 
-	unlocking_technologies = { standing_army }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -752,7 +752,7 @@ combat_unit_type_dragoons = {
         #should get modifiers to mobile/surprise battle conditions appearing
     }
 
-	unlocking_technologies = { line_infantry }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -814,7 +814,7 @@ combat_unit_type_cuirassiers = {
         unit_occupation_mult = 0.3
     }
 
-	unlocking_technologies = { line_infantry }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         trigger = { 
@@ -879,7 +879,7 @@ combat_unit_type_lancers = {
         unit_occupation_mult = 0.3
     }
 
-	unlocking_technologies = { napoleonic_warfare }
+	unlocking_technologies = { mechanized_warfare }
     
     combat_unit_image = {
         trigger = { 
@@ -949,7 +949,7 @@ combat_unit_type_light_tanks = {
         military_formation_mobilization_speed_mult = 0.2
     }
 
-	unlocking_technologies = { mobile_armor }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/cavalry_light_tank.dds"
@@ -973,7 +973,7 @@ combat_unit_type_frigate = {
         unit_morale_loss_add = 10
     }
 
-	unlocking_technologies = { navigation }
+	unlocking_technologies = { mechanized_warfare }
 	
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_frigate.dds"
@@ -1006,7 +1006,7 @@ combat_unit_type_monitor = {
         military_formation_movement_speed_mult = 0.2
     }
 
-    unlocking_technologies = { monitor_tech }
+    unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_monitor.dds"
@@ -1033,7 +1033,7 @@ combat_unit_type_destroyer = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { destroyer }
+	unlocking_technologies = { mechanized_warfare }
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_destroyer.dds"
     }
@@ -1062,7 +1062,7 @@ combat_unit_type_torpedo_boat = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { self_propelled_torpedoes }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_torpedo_boat.dds"
@@ -1094,7 +1094,7 @@ combat_unit_type_scout_cruiser = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { sea_lane_strategies }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/light_ships_scout_cruiser.dds"
@@ -1117,7 +1117,7 @@ combat_unit_type_man_o_war = {
         unit_convoy_raiding_mult = -0.5
     }
 
-	unlocking_technologies = { drydocks }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_manowar.dds"
@@ -1148,7 +1148,7 @@ combat_unit_type_ironclad = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { ironclad_tech }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_ironclad.dds"
@@ -1176,7 +1176,7 @@ combat_unit_type_dreadnought = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { dreadnought }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_dreadnought.dds"
@@ -1204,7 +1204,7 @@ combat_unit_type_battleship = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { battleship_tech }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/capital_ships_battleship.dds"
@@ -1234,7 +1234,7 @@ combat_unit_type_submarine = {
         military_formation_movement_speed_mult = 0.2
     }
 
-	unlocking_technologies = { submarine }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/support_ships_submarine.dds"
@@ -1262,7 +1262,7 @@ combat_unit_type_carrier = {
         military_formation_movement_speed_mult = -0.2
     }
 
-	unlocking_technologies = { carrier_tech }
+	unlocking_technologies = { mechanized_warfare }
 
     combat_unit_image = {
         texture = "gfx/unit_illustrations/support_ships_carrier.dds"

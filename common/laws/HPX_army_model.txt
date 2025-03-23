@@ -68,7 +68,7 @@ law_professional_army = {
 	
 	progressiveness = 0
 	
-	unlocking_technologies = { democracy }
+	unlocking_technologies = { globalization }
 	
 	modifier = {
 		unit_morale_loss_mult = -0.1
@@ -155,7 +155,7 @@ law_civil_military = {
 	
 	progressiveness = 0
 	
-	unlocking_technologies = { democracy }
+	unlocking_technologies = { globalization }
 	
 	modifier = {
 		unit_morale_loss_mult = -0.05
@@ -215,7 +215,7 @@ law_private_army = {
 	
 	progressiveness = 0
 	
-	unlocking_technologies = { democracy }
+	unlocking_technologies = { globalization }
 	
 	modifier = {
 		unit_morale_loss_mult = -0.15

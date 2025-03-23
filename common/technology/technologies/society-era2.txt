@@ -1,0 +1,227 @@
+gene_manipulation = {
+	unlocking_technologies = {
+		genetics
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+molecular_medicine = {
+	unlocking_technologies = {
+		gene_manipulation
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+cloning = {
+	unlocking_technologies = {
+		gene_manipulation
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+bioinformatics = {
+	unlocking_technologies = {
+		gene_manipulation
+		knowledge_management
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+genomic_encyclopedia = {
+	unlocking_technologies = {
+		bioinformatics
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+knowledge_management = {
+	unlocking_technologies = {
+		new_imperialism
+		chaos_theory
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+cloud_computing = {
+	unlocking_technologies = {
+		knowledge_management
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+machine_learning = {
+	unlocking_technologies = {
+		cloud_computing
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+derivates = {
+	unlocking_technologies = {
+		third_way
+		chaos_theory
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+chaos_theory = {
+	unlocking_technologies = {
+		new_urbanism
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+communication_networks = {
+	unlocking_technologies = {
+		chaos_theory
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+forensics = {
+	unlocking_technologies = {
+		minority_rights
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+media_psychology = {
+	unlocking_technologies = {
+		forensics
+		online_communities
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+online_communities = {
+	unlocking_technologies = {
+		urban_culture
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+planetary_exploration = {
+	unlocking_technologies = {
+		lunar_exploration
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+space_tourism = {
+	unlocking_technologies = {
+		planetary_exploration
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}

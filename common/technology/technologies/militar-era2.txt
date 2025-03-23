@@ -1,0 +1,70 @@
+﻿stealth = {
+	unlocking_technologies = {
+		advanced_rocketry
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+unmanned_air_vehicles = {
+	unlocking_technologies = {
+		stealth
+		guided_weapons
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+unmanned_naval_vehicles = {
+	unlocking_technologies = {
+		unmanned_air_vehicles
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+cyberwarfare = {
+	unlocking_technologies = {
+		guided_weapons
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+war_simulations = {
+	unlocking_technologies = {
+		cyberwarfare
+	}
+
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}

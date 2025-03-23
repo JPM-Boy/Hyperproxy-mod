@@ -21,7 +21,7 @@
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -65,7 +65,7 @@ law_jingoism = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -101,7 +101,7 @@ law_flexible_foreign_policy = {
 	institution = institution_diplomacy
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -146,7 +146,7 @@ law_justum_bellum = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -189,7 +189,7 @@ law_dove_politics = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -244,7 +244,7 @@ law_armed_neutrality = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -285,7 +285,7 @@ law_disarmed_nation = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {

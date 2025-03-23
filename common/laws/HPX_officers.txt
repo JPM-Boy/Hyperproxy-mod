@@ -19,7 +19,7 @@ law_noble_officers = {
 	}
 
 	unlocking_technologies = {
-		
+		globalization
 	}
 
 	disallowing_laws = {
@@ -60,7 +60,7 @@ law_purchased_officers = {
 	}
 
 	unlocking_technologies = {
-		general_staff
+		globalization
 	}
 
 	disallowing_laws = {
@@ -95,7 +95,7 @@ law_professional_officers = {
 	}
 
 	unlocking_technologies = {
-		general_staff
+		globalization
 	}
 
 	disallowing_laws = {
@@ -131,7 +131,7 @@ law_political_officers = {
 	}
 
 	unlocking_technologies = {
-		political_agitation
+		globalization
 	}
 
 	disallowing_laws = {
@@ -172,7 +172,7 @@ law_elected_officers = {
 	}
 
 	unlocking_technologies = {
-		anarchism
+		globalization
 	}
 
 	disallowing_laws = {

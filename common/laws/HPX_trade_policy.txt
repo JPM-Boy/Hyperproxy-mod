@@ -58,7 +58,7 @@ law_export_promotion = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	modifier = {
@@ -113,7 +113,7 @@ law_import_substitution = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	modifier = {
@@ -168,7 +168,7 @@ law_protectionism = {
 	progressiveness = 50
 	
 	unlocking_technologies = {
-		stock_exchange
+		globalization
 	}
 	
 	tariff_modifier_no_priority = {
@@ -218,7 +218,7 @@ law_free_trade = {
 	}	
 	
 	unlocking_technologies = {
-		stock_exchange
+		globalization
 	}
 	
 	on_enact = {

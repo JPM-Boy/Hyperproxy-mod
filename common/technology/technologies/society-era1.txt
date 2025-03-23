@@ -1,0 +1,454 @@
+﻿franchises = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	modifier = {
+		state_infrastructure_from_population_add = 2
+		state_infrastructure_from_population_max_add = 40	
+		state_building_construction_sector_max_level_add = 10
+		country_max_weekly_construction_progress_add = 10
+		market_land_trade_capacity_add = 50
+	}
+
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+globalization = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
+	category = society
+
+	modifier = {
+		state_tax_capacity_add = 25
+		country_institution_schools_max_investment_add = 1
+		state_education_access_wealth_add = 0.005
+		country_institution_social_security_max_investment_add = 1	
+		country_institution_suffrage_max_investment_add = 1
+		country_influence_mult = 0.1
+		country_diplomatic_play_maneuvers_add = 10
+		country_institution_schools_max_investment_add = 1
+		state_education_access_wealth_add = 0.005
+	}
+
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+mass_media = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/bureaucracy.dds"
+	category = society
+
+	modifier = {
+		country_institution_police_max_investment_add = 2
+		state_tax_capacity_add = 25
+		country_institution_home_affairs_max_investment_add = 1
+		country_institution_centralization_max_investment_add = 1
+	}
+
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+conglomerates = {
+	unlocking_technologies = {
+		franchises
+		globalization
+	}
+
+	modifier = {
+		state_infrastructure_from_population_add = 1
+		state_infrastructure_from_population_max_add = 20
+		state_building_construction_sector_max_level_add = 5
+		country_max_weekly_construction_progress_add = 5
+		market_land_trade_capacity_add = 10
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urban_planning.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+modern_healthcare = {
+	unlocking_technologies = {
+		conglomerates
+	}
+
+	modifier = {
+		country_institution_social_security_max_investment_add = 1
+	}
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+molecular_biology = {
+	unlocking_technologies = {
+		modern_healthcare
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+genetics = {
+	unlocking_technologies = {
+		molecular_biology
+	}
+
+	modifier = {
+		country_institution_health_system_max_investment_add = 1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+pink_collar_work = { #currency_standards
+	unlocking_technologies = {
+		conglomerates
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+third_way = {
+	unlocking_technologies = {
+		pink_collar_work
+		counterculture
+	}
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_institution_suffrage_max_investment_add = 1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+modern_business_structure = {
+	unlocking_technologies = {
+		pink_collar_work
+	}
+
+	modifier = {
+		state_education_access_wealth_add = 0.005
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+new_imperialism = {
+	unlocking_technologies = {
+		modern_business_structure
+	}
+
+	modifier = {
+		country_trade_route_cost_mult = -0.25
+		state_market_access_price_impact = 0.1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+tourism = {
+	unlocking_technologies = {
+		globalization
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+post_modernism = {
+	unlocking_technologies = {
+		globalization
+		mass_media
+	}
+
+	modifier = {
+		country_prestige_mult = 0.05
+	}
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+gastronomy = {
+	unlocking_technologies = {
+		tourism
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+modern_ecology = {
+	unlocking_technologies = {
+		tourism
+	}
+
+	modifier = {
+		state_tax_capacity_add = 25
+		country_institution_home_affairs_max_investment_add = 1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+recycling = {
+	unlocking_technologies = {
+		modern_ecology
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+new_urbanism = {
+	unlocking_technologies = {
+		recycling
+	}
+
+	modifier = {
+		country_minting_mult = 0.1
+		country_loan_interest_rate_add = -0.02
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+gambling = {
+	unlocking_technologies = {
+		tourism
+	}
+
+	modifier = {
+		country_max_companies_add = 1
+
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+counterculture = {
+	unlocking_technologies = {
+		gambling
+		post_modernism
+	}
+
+	modifier = {
+		country_institution_police_max_investment_add = 1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+minority_rights = {
+	unlocking_technologies = {
+		counterculture
+	}
+
+	modifier = {
+		country_authority_mult = 0.1
+		country_institution_centralization_max_investment_add = 1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+radio_astronomy = {
+	unlocking_technologies = {
+		mass_media
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+satelites = {
+	unlocking_technologies = {
+		radio_astronomy
+		globalization
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+lunar_exploration = {
+	unlocking_technologies = {
+		satelites
+	}
+
+	modifier = {
+		country_institution_colonial_affairs_max_investment_add = 2
+		country_max_declared_interests_add = 1
+		country_infamy_generation_against_unrecognized_mult = -0.1
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+modern_sports = {
+	unlocking_technologies = {
+		mass_media
+	}
+
+	modifier = {
+		country_influence_mult = 0.1
+		country_diplomatic_play_maneuvers_add = 10
+		country_institution_schools_max_investment_add = 1
+		state_education_access_wealth_add = 0.005
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+extreme_sports = {
+	unlocking_technologies = {
+		counterculture
+		modern_sports
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+urban_culture = {
+	unlocking_technologies = {
+		extreme_sports
+		minority_rights
+	}
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}

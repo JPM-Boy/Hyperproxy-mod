@@ -1,0 +1,83 @@
+﻿acoustic_weaponry = {
+	unlocking_technologies = {
+		prototyped_pathogens
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+ion_weaponry = {
+	unlocking_technologies = {
+		acoustic_weaponry
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+rapid_recuperation = {
+	unlocking_technologies = {
+		invisibility
+		prototyped_pathogens
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+battlefield_sports = {
+	unlocking_technologies = {
+		rapid_recuperation
+		warmachines
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+nanorobotics = {
+	unlocking_technologies = {
+		biometric_warfare
+		military_robotics
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+warmachines = {
+	unlocking_technologies = {
+		biometric_warfare
+		military_robotics
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}

@@ -26,7 +26,7 @@ law_national_guard = {
 	progressiveness = 25
 
 	unlocking_technologies = {
-		law_enforcement
+		globalization
 	}
 
 	modifier = {
@@ -79,7 +79,7 @@ law_secret_police = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		central_archives
+		globalization
 	}
 
 	unlocking_laws = {

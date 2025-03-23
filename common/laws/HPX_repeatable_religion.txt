@@ -214,7 +214,7 @@ law_repeatable_religion_promote_secular_values = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {
@@ -297,7 +297,7 @@ law_repeatable_religion_anti_religious_violence = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {

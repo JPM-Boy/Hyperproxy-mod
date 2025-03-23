@@ -2247,7 +2247,7 @@ pm_cannons = {
 pm_smoothbores = {
 	texture = "gfx/interface/icons/production_method_icons/smoothbores.dds"
 	unlocking_technologies = {
-		shell_gun
+		mechanized_warfare
 	}
 
 	building_modifiers = {

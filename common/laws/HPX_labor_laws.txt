@@ -39,7 +39,7 @@ law_regulatory_bodies = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		labor_movement
+		globalization
 	}
 
 	institution = institution_workplace_safety
@@ -96,7 +96,7 @@ law_worker_protections = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		human_rights
+		globalization
 	}
 	
 	institution = institution_workplace_safety

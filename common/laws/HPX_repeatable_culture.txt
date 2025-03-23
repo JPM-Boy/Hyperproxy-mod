@@ -133,7 +133,7 @@ law_repeatable_culture_promote_democratic_values = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {
@@ -196,7 +196,7 @@ law_repeatable_culture_promote_absolutist_values = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {
@@ -286,7 +286,7 @@ law_repeatable_culture_promote_patriotic_values = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {
@@ -350,7 +350,7 @@ law_repeatable_culture_promote_socialist_values = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {
@@ -406,7 +406,7 @@ law_repeatable_culture_promote_ultranationalist_values = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_enact = {

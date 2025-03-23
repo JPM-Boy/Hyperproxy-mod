@@ -221,7 +221,7 @@ law_technocracy = {
 	}
 
 	unlocking_technologies = {
-		central_archives 
+		globalization
 	}
 
 	can_impose = {
@@ -296,7 +296,7 @@ law_shareholder_voting = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -403,7 +403,7 @@ law_hybrid_voting = {
 	progressiveness = -25
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -521,7 +521,7 @@ law_majoritarian_voting = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -625,7 +625,7 @@ law_pluralist_voting = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -728,7 +728,7 @@ law_referendum_voting = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -833,7 +833,7 @@ law_anarchy = {
 	progressiveness = 200
 
 	unlocking_technologies = {
-		democracy 
+		globalization
 	}
 	
 	unlocking_laws = {

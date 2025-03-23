@@ -440,7 +440,7 @@ leftwing_party = {
 						has_law = law_type:law_child_labor_allowed
 						has_law = law_type:law_no_social_security
 					}
-					NOT = { has_technology_researched = democracy }
+					NOT = { has_technology_researched = globalization }
 				}
 				bpm_ig_is_proletarian = yes
 			}

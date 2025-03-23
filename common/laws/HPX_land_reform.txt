@@ -96,7 +96,7 @@ law_collectivized_agriculture = {
 		}
 	}
 
-	unlocking_technologies = { democracy }
+	unlocking_technologies = { globalization }
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
@@ -127,7 +127,7 @@ law_commercialized_agriculture = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	modifier = {
@@ -315,7 +315,7 @@ law_community_land_trust = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	modifier = {
@@ -390,7 +390,7 @@ law_sustainable_land_use = {
 		interest_group_ig_ecologist_pol_str_mult = 0.1
 	}
 
-	unlocking_technologies = { democracy }
+	unlocking_technologies = { globalization }
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0

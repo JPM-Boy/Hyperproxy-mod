@@ -1,0 +1,97 @@
+﻿exoskeleton = {
+	unlocking_technologies = {
+		unmanned_naval_vehicles
+		war_simulations
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+microwave_weaponry = {
+	unlocking_technologies = {
+		war_simulations
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+military_robotics = {
+	unlocking_technologies = {
+		exoskeleton
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+invisibility = {
+	unlocking_technologies = {
+		exoskeleton
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+prototyped_pathogens = {
+	unlocking_technologies = {
+		military_robotics
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+weaponized_lasers = {
+	unlocking_technologies = {
+		microwave_weaponry
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+biometric_warfare = {
+	unlocking_technologies = {
+		weaponized_lasers
+	}
+
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = military
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}

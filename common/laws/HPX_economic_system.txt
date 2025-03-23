@@ -69,7 +69,7 @@ law_interventionism = {
 	}
 	
 	unlocking_technologies = {
-		manufacturies
+		globalization
 	}
 	
 	modifier = {
@@ -140,7 +140,7 @@ law_gaian_economy = {
 	}	
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	on_activate = {
@@ -219,7 +219,7 @@ law_laissez_faire = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	on_activate = {
@@ -376,7 +376,7 @@ law_command_economy = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	unlocking_laws = {
@@ -469,7 +469,7 @@ law_corporative_economy = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	on_activate = {

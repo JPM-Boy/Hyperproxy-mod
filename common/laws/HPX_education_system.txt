@@ -41,7 +41,7 @@ law_religious_schools = {
 	progressiveness = 25
 	
 	unlocking_technologies = {
-		rationalism
+		globalization
 	}
 
 	disallowing_laws = {
@@ -146,7 +146,7 @@ law_private_schools = {
 	progressiveness = 25
 	
 	unlocking_technologies = {
-		academia
+		globalization
 	}
 
 	disallowing_laws = {
@@ -248,7 +248,7 @@ law_mixed_schools = {
 	progressiveness = 25
 	
 	unlocking_technologies = {
-		academia
+		globalization
 	}
 
 	disallowing_laws = {
@@ -352,7 +352,7 @@ law_public_schools = {
 	progressiveness = 50
 	
 	unlocking_technologies = {
-		empiricism
+		globalization
 	}
 
 	disallowing_laws = {
@@ -451,7 +451,7 @@ law_online_schools = {
 	progressiveness = 100
 	
 	unlocking_technologies = {
-		empiricism
+		globalization
 	}
 
 	disallowing_laws = {
@@ -550,7 +550,7 @@ law_personalized_education = {
 	progressiveness = 150
 	
 	unlocking_technologies = {
-		empiricism
+		globalization
 	}
 
 	disallowing_laws = {

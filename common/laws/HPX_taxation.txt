@@ -61,7 +61,7 @@ law_per_capita_based_taxation = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	tax_modifier_very_low = {
@@ -134,7 +134,7 @@ law_income_taxation = {
 	}	
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	tax_modifier_very_low = {
@@ -196,7 +196,7 @@ law_wealth_taxation = {
 	}	
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	tax_modifier_very_low = {
@@ -246,7 +246,7 @@ law_expropiation = {
 	}	
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	tax_modifier_very_low = {

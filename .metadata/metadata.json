@@ -34,7 +34,8 @@
       "common/decisions",
       "common/objectives",
       "common/objective_subgoals",
-      "common/achievements"
+      "common/achievements",
+      "common/technology/technologies"
     ]
   }
 }

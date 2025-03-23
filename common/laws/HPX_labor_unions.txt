@@ -68,7 +68,7 @@ law_illegal_labor_unions = {
 	progressiveness = -50
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	disallowing_laws = {
@@ -112,7 +112,7 @@ law_state_controlled_labor_unions = {
 	progressiveness = -25
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	modifier = {
@@ -174,7 +174,7 @@ law_limited_labor_unions = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	modifier = {
@@ -234,7 +234,7 @@ law_syndicalism = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	unlocking_laws = {
@@ -294,7 +294,7 @@ law_socialist_labor_unions = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	unlocking_laws = {

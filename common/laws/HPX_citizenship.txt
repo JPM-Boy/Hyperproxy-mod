@@ -14,7 +14,7 @@ law_ethnostate = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	modifier = {
@@ -340,7 +340,7 @@ law_multicultural = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	on_enact = {
@@ -409,7 +409,7 @@ law_post_citizenship = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 	
 	on_enact = {

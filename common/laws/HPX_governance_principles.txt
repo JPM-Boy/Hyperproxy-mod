@@ -144,7 +144,7 @@ law_republic = {
 	progressiveness = 100
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_impose = {
@@ -350,7 +350,7 @@ law_council_republic = {
 	progressiveness = 200
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	on_activate = {
@@ -485,7 +485,7 @@ law_corporatocracy = {
 	progressiveness = 100
 	
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	can_impose = {

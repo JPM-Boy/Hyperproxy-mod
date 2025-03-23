@@ -228,7 +228,7 @@ law_freedom_of_conscience = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -309,7 +309,7 @@ law_total_separation = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -384,7 +384,7 @@ law_state_atheism = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {

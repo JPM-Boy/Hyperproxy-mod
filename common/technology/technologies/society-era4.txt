@@ -1,0 +1,227 @@
+gene_enhancement = {
+	unlocking_technologies = {
+		replacement_organs
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+genesis_biology = {
+	unlocking_technologies = {
+		gene_enhacement
+		bacterium_engineering
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+augmented_consumables = {
+	unlocking_technologies = {
+		gene_enhancement
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+mainstream_cloning = {
+	unlocking_technologies = {
+		cloning
+		genesis_biology
+		gene_enhancement
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+gene_jurisprudence = {
+	unlocking_technologies = {
+		mainstream_cloning
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+disaster_robots = {
+	unlocking_technologies = {
+		affective_algorithm
+		megacities
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+automated_traffic = {
+	unlocking_technologies = {
+		affective_algorithm
+		megacities
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+nano_architecture = {
+	unlocking_technologies = {
+		marine_architecture
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+automated_robotics = {
+	unlocking_technologies = {
+		disaster_robots
+		automated_traffic
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+brain_machine_interface = {
+	unlocking_technologies = {
+		augmented_reality
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+thought_scanning = {
+	unlocking_technologies = {
+		brain_machine_interface
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+mass_surveilance = {
+	unlocking_technologies = {
+		thought_scanning
+		automated_traffic
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+advanced_environmental_systems = {
+	unlocking_technologies = {
+		asteroid_mining
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+mass_driver = {
+	unlocking_technologies = {
+		advanced_environmental_systems
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+lunar_colonization = {
+	unlocking_technologies = {
+		advanced_environmental_systems
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}
+
+megacorporations = {
+	unlocking_technologies = {
+		lunar_colonization
+	}
+
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	ai_weight = {
+		value = 2 # Very important in general
+	}
+}

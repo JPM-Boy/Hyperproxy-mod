@@ -23,7 +23,7 @@ law_outlawed_dissent = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -61,7 +61,7 @@ law_censorship = {
 	}
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	pop_support = {
@@ -85,7 +85,7 @@ law_right_of_assembly = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {
@@ -152,7 +152,7 @@ law_protected_speech = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		democracy
+		globalization
 	}
 
 	disallowing_laws = {

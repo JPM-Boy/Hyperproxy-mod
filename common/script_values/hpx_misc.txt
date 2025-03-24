@@ -12,10 +12,19 @@ hpx_third_gdp = {
 	}
 }
 
+hpx_space_allocation = {
+	value = {
+		add = root.gold_reserves
+		divide = 3
+		multiply = 0.001
+		round = yes
+	}
+}
+
 hpx_quarter_gdp = {
 	value = {
-	add = scope:quarter_gdp.gdp
-	divide = 4
+		add = scope:quarter_gdp.gdp
+		divide = 4
 	}
 }
 

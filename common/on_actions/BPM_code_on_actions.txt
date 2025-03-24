@@ -22,6 +22,10 @@ on_monthly_pulse_country = {
 }
 hpx_space_agency_funds = {
 	effect = {
+		if = {
+			limit = { NOT = {has_variable = space_agency_total_funds} }
+			set_variable = { name = space_agency_total_funds value = 0 }
+		}
 		change_variable = {
 			name = space_agency_total_funds
 			add = var:space_agency_funds
@@ -30,9 +34,13 @@ hpx_space_agency_funds = {
 			name = space_agency_total_money
 			value = var:space_agency_funds
 		}
+		if = {
+			limit = { NOT = {has_variable = space_agency_total_money} }
+			set_variable = { name = space_agency_total_money value = 0 }
+		}
 		change_variable = {
 			name = space_agency_total_money
-			multiply = -1000000
+			multiply = -1000
 		}
 		owner = {
 			add_treasury = var:space_agency_total_money

@@ -81,25 +81,31 @@ martian_colony = {
             s:STATE_MARS_ONE.region_state:MOON = {set_state_owner = prev}
             s:STATE_MARS_ONE = {
                 every_scope_state = {
+                    limit = {owner = ROOT}
                     create_pop = { size = 1000 culture = space_culture }
                     create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
-                }            }
+                }
+            }
         } else_if = {
             limit = {exists = s:STATE_MARS_TWO.region_state:MOON}
             s:STATE_MARS_TWO.region_state:MOON = {set_state_owner = prev}
             s:STATE_MARS_TWO = {
                 every_scope_state = {
+                    limit = {owner = ROOT}
                     create_pop = { size = 1000 culture = space_culture }
                     create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
-                }            }
+                }
+            }
         } else_if = {
             limit = {exists = s:STATE_MARS_THREE.region_state:MOON}
             s:STATE_MARS_THREE.region_state:MOON = {set_state_owner = prev}
             s:STATE_MARS_THREE = {
                 every_scope_state = {
+                    limit = {owner = ROOT}
                     create_pop = { size = 1000 culture = space_culture }
                     create_building = { building = building_port level = 1 activate_production_methods = { pm_anchorage } }
-                }            }
+                }
+            }
         }
     }
 
@@ -130,6 +136,162 @@ toggle_space_race = {
             set_variable = space_race
         }
     }
+}
+
+set_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        set_variable = {
+            name = space_agency_funds
+            value = 0
+        }
+        if = {
+            limit = {root.gold_reserves > 0}
+            change_variable = {
+                name = space_agency_funds
+                add = this.hpx_space_allocation
+            }
+        }
+        if = {
+            limit = {
+                AND = {
+                    var:space_agency_total_funds > 1
+                    NOT = {is_target_in_variable_list = { name = space_agency target = ROOT }}
+                }
+            }
+            add_to_global_variable_list = {name = space_agency target = ROOT}
+        }
+
+    }
+    ai_is_valid = { country_rank > rank_value:minor_power }   # Whether this SGUI is available to the AI or not (default false)
+    ai_chance = {base = 100}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
+    ai_frequency = 8          # Named value determining how frequently the AI will evaluate this SGUI (in months)
+}
+set_space_facilities = {
+    scope = country
+    effect = {
+        if = {
+            limit = {has_variable = space_agency_total_funds}
+            if = {
+                limit = {NOT = {has_variable = observatories}}
+                set_variable = {
+                    name = observatories
+                    value = 0
+                }
+            }
+            if = {
+                limit = {NOT = {has_variable = research_facilities}}
+                set_variable = {
+                    name = research_facilities
+                    value = 0
+                }
+            }
+            if = {
+                limit = {NOT = {has_variable = satelites}}
+                set_variable = {
+                    name = satelites
+                    value = 0
+                }
+            }
+            if = {
+                limit = {NOT = {has_variable = launch_facilities}}
+                set_variable = {
+                    name = launch_facilities
+                    value = 0
+                }
+            }
+            random_list = {
+                40 = {}
+                10 = {
+                    if = {
+                        limit = {var:space_agency_total_funds >= 10}
+                        change_variable = {
+                            name = space_agency_total_funds
+                            add = -10
+                        }
+                        change_variable = {
+                            name = observatories
+                            add = 1
+                        }
+                        remove_modifier = observatories
+                        add_modifier = {
+                            name = observatories
+                            multiplier = var:observatories
+                        }
+                    }
+                }
+                10 = {
+                    if = {
+                        limit = {var:space_agency_total_funds >= 50}
+                        change_variable = {
+                            name = space_agency_total_funds
+                            add = -50
+                        }
+                        change_variable = {
+                            name = research_facilities
+                            add = 1
+                        }
+                        remove_modifier = research_facilities
+                        add_modifier = {
+                            name = research_facilities
+                            multiplier = var:research_facilities
+                        }
+                    }
+
+                }
+                10 = {
+                    if = {
+                        limit = {var:space_agency_total_funds >= 100}
+                        change_variable = {
+                            name = space_agency_total_funds
+                            add = -100
+                        }
+                        change_variable = {
+                            name = satelites
+                            add = 1
+                        }
+                        remove_modifier = satelites
+                        add_modifier = {
+                            name = satelites
+                            multiplier = var:satelites
+                        }
+                    }
+
+                }
+                10 = {
+                    if = {
+                        limit = {var:space_agency_total_funds >= 250}
+                        change_variable = {
+                            name = space_agency_total_funds
+                            add = -250
+                        }
+                        change_variable = {
+                            name = launch_facilities
+                            add = 1
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    ai_is_valid = { always = yes }   # Whether this SGUI is available to the AI or not (default false)
+    ai_chance = {base = 100}             # The chance that the AI will activate this SGUI (script value between 1 and 100)
+    ai_frequency = 1         # Named value determining how frequently the AI will evaluate this SGUI (in months)
 }
 
 more_space_funds = {
@@ -193,6 +355,11 @@ buy_observatories = {
             name = observatories
             add = 1
         }
+        remove_modifier = observatories
+        add_modifier = {
+            name = observatories
+            multiplier = var:observatories
+        }
     }
 }
 buy_facilities = {
@@ -206,6 +373,11 @@ buy_facilities = {
             name = research_facilities
             add = 1
         }
+        remove_modifier = research_facilities
+        add_modifier = {
+            name = research_facilities
+            multiplier = var:research_facilities
+        }
     }
 }
 buy_satelites = {
@@ -218,6 +390,11 @@ buy_satelites = {
         change_variable = {
             name = satelites
             add = 1
+        }
+        remove_modifier = satelites
+        add_modifier = {
+            name = satelites
+            multiplier = var:satelites
         }
     }
 }
@@ -259,10 +436,6 @@ buy_launch = {
         change_variable = {
             name = launch_facilities
             add = 1
-        }
-        add_to_global_variable_list = {
-            name = space_agency
-            target = this
         }
     }
 }
@@ -360,7 +533,6 @@ lunar_state_exists = {
         }
     }
 }
-
 martian_state_exists = {
     scope = state_region
     is_shown = {

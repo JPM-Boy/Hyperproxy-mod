@@ -1,0 +1,10 @@
+﻿l_english:
+ state_trait_space: "Space"
+ state_trait_tropical: "Tropical Climate"
+ state_trait_temperate: "Temperate Climate"
+ state_trait_subtropical_dry: "Subtropical Dry Climate"
+ state_trait_subtropical_humid: "Subtropical Humid Climate"
+ state_trait_desert: "Desertic Climate"
+ state_trait_boreal: "Boreal Climate"
+ state_trait_steppe: "Steppe Climate"
+ state_trait_polar: "Polar Climate"

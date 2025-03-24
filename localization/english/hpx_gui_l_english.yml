@@ -37,7 +37,7 @@
   MORE_FUNDS: "#b #O +"
   LESS_FUNDS: "#b #O -"
   SATELITE_INFO: "You need a Launch Facility to start your Space Agency."
-  SPACE_RACE_TT: "• #blue #b Agency Funds#!: #!\$[Country.MakeScope.Var('space_agency_total_funds').GetValue]M\n\n• #r Observatories#!: [Country.MakeScope.Var('observatories').GetValue]\n• #g Research Facilities#!: [Country.MakeScope.Var('research_facilities').GetValue]\n• #yellow #b Satelites#!#!: [Country.MakeScope.Var('satelites').GetValue]\n• #purple #b Launch Facilities#!#!: [Country.MakeScope.Var('launch_facilities').GetValue]"
+  SPACE_RACE_TT: "• #blue #b Agency Funds#!: #!\$[Country.MakeScope.Var('space_agency_total_funds').GetValue]M\n\n• #r Observatories#!: [Country.MakeScope.Var('observatories').GetValue]\n• #g Research Facilities#!: [Country.MakeScope.Var('research_facilities').GetValue]\n• #yellow #b Satellites#!#!: [Country.MakeScope.Var('satelites').GetValue]\n• #purple #b Launch Facilities#!#!: [Country.MakeScope.Var('launch_facilities').GetValue]"
 
   OBSERVATORIES: "Each Observatory gives you #G +1 #!Prestige."
   RESEARCH_FACILITIES: "Each Research Facility gives you #G +1 #!Innovation."

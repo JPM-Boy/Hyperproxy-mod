@@ -25,55 +25,47 @@ state_trait_tropical = {
 	icon = "gfx/interface/icons/state_trait_icons/tropical.dds"
 
 	modifier = {
-		building_throughput_add = 1
+		building_throughput_add = -0.1
 	}
 }
 state_trait_temperate = {
 	icon = "gfx/interface/icons/state_trait_icons/temperate.dds"
 
 	modifier = {
-		building_throughput_add = 1
+		building_throughput_add = 0.1
 	}
 }
 state_trait_subtropical_dry = {
 	icon = "gfx/interface/icons/state_trait_icons/subtropical_dry.dds"
 
 	modifier = {
-		building_throughput_add = 1
+		building_throughput_add = 0.2
 	}
 }
 state_trait_subtropical_humid = {
 	icon = "gfx/interface/icons/state_trait_icons/subtropical_humid.dds"
 
 	modifier = {
-		building_throughput_add = 1
+		building_throughput_add = 0.2
 	}
 }
 state_trait_desert = {
 	icon = "gfx/interface/icons/state_trait_icons/desert.dds"
 
 	modifier = {
-		building_throughput_add = 1
+		building_throughput_add = -0.15
 	}
 }
 state_trait_boreal = {
 	icon = "gfx/interface/icons/state_trait_icons/boreal.dds"
 
 	modifier = {
-		building_throughput_add = 1
+		building_throughput_add = 0.05
 	}
 }
 state_trait_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/steppe.dds"
-
-	modifier = {
-		building_throughput_add = 1
-	}
 }
-state_trait_polar = {
+state_trait_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/polar.dds"
-
-	modifier = {
-		building_throughput_add = 1
-	}
 }

@@ -23,6 +23,19 @@ ec_cooldown = {
     icon = gfx/interface/icons/timed_modifier_icons/EU.dds
 }
 
+observatories = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_prestige_add = 1
+}
+research_facilities = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_weekly_innovation_add = 1
+}
+satelites = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    building_throughput_add = 0.01
+}
+
 remove_communism_cooldown = {
     icon = gfx/interface/icons/ig_icons/liberals.dds
 }

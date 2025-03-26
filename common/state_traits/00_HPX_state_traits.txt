@@ -66,6 +66,6 @@ state_trait_boreal = {
 state_trait_steppe = {
 	icon = "gfx/interface/icons/state_trait_icons/steppe.dds"
 }
-state_trait_steppe = {
+state_trait_polar = {
 	icon = "gfx/interface/icons/state_trait_icons/polar.dds"
 }

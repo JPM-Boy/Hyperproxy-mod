@@ -14123,69 +14123,6 @@ argentine= {
 	graphics = european
 }
 
-uruguayan= {
-	color=rgb{ 213 210 187 }
-	religion = catholic
-	traits = { hispanophone european_heritage }
-
-	male_common_first_names = {
-		Antonio Atanasio Alfredo Andres Agustin Angel
-		Bernardo Baltasar
-		Carlos Cesar Claudio Conrado
-		Duvimioso
-		Eduardo Eugenio Enrique Eustaquio
-		Fructuoso Francisco Feliciano Florentino Fermin Fernando
-		Gabriel Gervasio
-		Ismael
-		Joaquin Juan JosE_ Jose_Maria Julio Javier
-		Lorenzo
-		Miguel Manuel Maximo Mariano Mauricio Mateo
-		Orlando
-		Pedro Prudencio Pablo
-		Ramon
-		Salvador Santiago
-		Tomas Teodoro
-		Venancio Valentin
-	}
-	female_common_first_names = {
-		Anastasia Amelia Amanda Adela
-		Carolina Clemencia
-		Dorotea
-		Francisca
-		Javiera Juana JoaquI_na Julia
-		Luisa
-		Matilde Maria Manuela
-		Petrona PrA_xedes Paulina
-	}
-	common_last_names = {
-		Agell Aguirre AlbI_n Anaya Acevedo Aubriot
-		Berro Bustamante Borda BaN_os Battle Benzano
-		Cruz Cuestas Campisteguy Chucarro Castellanos Carve Cervantes Castro de_Castro Cortinas Cal
-		DurA_n
-		Ellauri Etchebarne EstradE_ Elzaurdi EstE_vez
-		Flores Fernandez
-		GirO_ Gomensoro Gonzalez Gorlero
-		Herrera
-		Idiarte
-		Lavalleja Lamas Latorre LarraN_aga LaviN_a Larrosa Lara
-		Morales Miranda Munoz
-		Navarro Nunez
-		Obes OrdO_N_ez
-		Pachedo Pereira PlA_ Piriz Pineiro PeN_alva Pedragosa Paiva
-		Rivera Rodriguez Requena Regules Rivas
-		Suarez Santos Soumastre Serrato Soca Sagastume Saez
-		Tajes Terra Torres
-		Urioste
-		Villalba Varela Villegas Vidal Viera Vidal_Silva
-	}
-
-	ethnicities = {
-		2 = south_american
-		1 = caucasian
-	}
-	graphics = european
-}
-
 paraguayan= {
 	color=rgb{ 140 192 63 }
 	religion = catholic

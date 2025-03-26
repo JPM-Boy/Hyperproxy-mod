@@ -299,7 +299,431 @@ east_nigritic={
 	}
 	graphics = african
 }
+braziliaans= {
+	color= rgb{ 196 153 106 }
+	religion = protestant
+	traits = { beneluxian_culture_group european_heritage }
+	male_common_first_names = {
+		Abraham
+		Adolf
+		Adriaan
+		Alexander
+		Andreas
+		Andries
+		Antonius
+		Antoon
+		Barthout
+		Casimir
+		Christiaan
+		Christoffel
+		Constantijn
+		Cornelis
+		Daniel
+		Daniel_2
+		David
+		Dirk
+		Dominicus
+		Drikus
+		Eduardus
+		Eise
+		Elias
+		Ernst
+		Erwin
+		Frans
+		Frederik
+		Gabriel
+		Gaspar
+		Gerard
+		Gerben
+		Gijsbert
+		Godfried
+		Gustaaf
+		Hans
+		Hendrik
+		Hugo
+		Isaac
+		Jacob
+		Jan
+		Jeroen
+		Johan
+		Joost
+		Jurgen_2
+		Karel
+		Kasper
+		Laurens
+		Lodewijk
+		Luuk
+		Marius
+		Matthijs
+		Maurits
+		Maximiliaan
+		Merkus
+		Moritz
+		Nikolaas
+		Paul
+		Pauwel
+		Pieter
+		Quinten
+		Rafael
+		Richardus
+		Roeland
+		Rogier
+		Ruben
+		Rudolf
+		Rutger
+		Simon
+		Stefan
+		Thomas
+		Victor
+		Vincent
+		Willem
+		Zacharias
+	}
+	female_common_first_names = {
+		Aletta Annewies Anna Anna_Louisa
+		Beatrix
+		Cornelie Christina Catharina Constantia
+		Diderika
+		Emma Eufemia
+		Felicia
+		Goverdine
+		Henrieette
+		Ida
+		Juliana Johanna Jacoba
+		Louise Lessina
+		Maria Martha Margaretha
+		Pauline Petronella
+		Roosje
+		Suzanna Sjoukje Sara
+		Wilhelmina
+	}
+	noble_last_names = {
+		van_Boetzelaer
+		van_Coeverden
+		van_Doorn
+		De_Geer
+		Lampsins van_Lynden van_Lyere
+		van_den_Velden de_Vos_van_Steenwijk
+		van_Egmont
+		van_Saksen-Weimar
+		van_Oranje-Nassau
+		Schimmelpenninck_van_der_Oye
+		Melvill_van_Carnbee
+		van_Wassenaer
+	}
+	common_last_names = {
+		Batenburg
+		Bentinck
+		Boetge
+		Boreel
+		Boumeester
+		Brandt
+		Brouwer
+		Buyskes
+		Broekhof
+		Uiterwijk
+		Chasse
+		Cleerens
+		Cochius
+		Coehoorn
+		Coen
+		Coops
+		Cort-Heyligers
+		Crijnssen
+		Daendels
+		Deijkerhoff
+		Duycker
+		Ellis
+		Engels
+		Engelvaart
+		Evertzen
+		Fabius
+		Gregory
+		Janssens
+		Kater
+		Kool
+		Kortenaer
+		Kruys
+		Kohler
+		Kuiper
+		List
+		Lucas
+		Martena
+		Michiels
+		Nachtegaal
+		Nahuys
+		Nepveu
+		Ongerboer
+		Reijersen
+		Rijk
+		Roell
+		Sabron
+		Schenk
+		Schouten
+		Spiegel
+		Staal
+		Steltman
+		Stokhuyzen
+		Stuyvesant
+		Tasman
+		Trip
+		Van_Utenhove
+		Verspijck
+		Vetter
+		Weitzel
+		Wolterbeek
+		de_Casembroot
+		de_Constant_Rebecque
+		de_Eerens
+		de_Grouwe
+		de_Houtman
+		de_Kock
+		de_Moor
+		de_Rijk
+		de_Winter
+		den_Beer_Poortugael
+		van_Assendelft
+		van_Braam_Houckgeest
+		van_Brederode
+		van_Bronkhorst
+		van_Culemborg
+		van_Dambenoy
+		van_Diemen
+		van_Duivenvoorde
+		van_Galen
+		van_Geen
+		van_Ham
+		van_Haren
+		van_Heemskerck
+		van_Heutsz
+		van_Hoensbroeck
+		van_Huchtenbroek
+		van_Ilpendam
+		van_Keppel
+		van_Marnix
+		van_Nieuwenaar
+		van_Noort
+		van_Pallandt
+		van_Raephorst
+		van_Rechteren
+		van_Renesse
+		van_Riebeeck
+		van_Rossum
+		van_Spilbergen
+		van_Swieten
+		van_Troyen
+		van_Vredenburch
+		van_Walbeeck
+		van_Wesembeke
+		van_Wijngaarden
+		van_Wingle
+		van_den_Bosch
+		van_der_Aa
+		van_der_Capellen
+		van_der_Does
+		van_der_Heijden
+		van_der_Werff
+		van_der_Wijck
+	}
+	male_regal_first_names = {
+		Alexander
+		Ernst_Casimir
+		Frederik_Hendrik
+		Hendrik
+		Maurits
+		Willem Willem_Alexander Willem_Frederik
+	}
+	female_regal_first_names = {
+		Alexia Ariane
+		Beatrix
+		Catharina_Amalia Christina
+		Irene
+		Juliana
+		Margriet
+		Sophie
+		Wilhelmina
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+antartien = {
+	color= rgb{ 106 175 196 }
+	religion = protestant
+	traits = { francophone european_heritage }
 
+	male_common_first_names = {
+		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud Alexis
+		Bertrand Bernardin Bernard Barthelemy
+		Charles Constant Camille Claude CE_lestin Christophe Cyprien
+		Daniel Denis Donat Dominique
+		Elie Eugene Edouard E_tienne Emile Emmanuel E_vrard ElzE_ar
+		Fernand Francois Frederic Felicien Felix Firmin Ferdinand
+		Georges Guillaume Gustave Gaston Guy Germain
+		Henri Hippolyte Hubert Hugo Hercule Hugues Hyacinthe
+		Jacques Jean Joseph Jules Julien Jeremie JE_rO_me Just
+		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide LE_once
+		Matthieu Michel Marcel Maximilien Maxime Maurice MoI_se
+		Napoleon Nicolas
+		Olivier Oscar Octave Odilon
+		Patrice Paul Philippe Pierre Prosper Pascal
+		Quentin
+		Robert Roland Rodolphe Raymond RenE_ RE_my
+		Sebastien Simon
+		Thibaut Thierry Thomas Theophile Theodore ThE_obald
+		Ulysse
+		Vincent Victor
+		Xavier
+		Yves
+	}
+	female_common_first_names = {
+		Adelaide_2 Adele_2 Alexandrine Amelie_2 Angelique Anne Antoinette Athenais Augustine
+		Beatrice Blanche
+		Camille Caroline Catherine Charlotte Claire Clemence Clotilde
+		Delphine Diane DesirE_e
+		Eleonore_2 Ernestine Eugenie Eulalie
+		Francoise
+		Gabrielle
+		Henriette Hortense
+		Jeanne Julie Juliette Justine
+		LE_ontine Leopoldine Louise Louise-Victorine
+		Marcelle Marguerite Marie Marie-Anne Marie-Felix Marthe Mathilde Melanie
+		Pauline Paule
+		SE_raphine Sibylle Sophie Stephanie Suzanne
+		Therese_2
+		Victoire Victorine Virginie
+	}
+	noble_last_names = {
+		d_Aumont
+		Baraguey_d_Hilliers Bergeret de_Beauharnais de_Bussiere de_Broglie de_Boisdeffre
+		de_Chastellux de_Chodron_de_Courcel de_CambacE_rE_s de_Croy de_Castelnau de_Cools
+		Decazes de_Durfort
+		d_Essling
+		Fesch
+		Gros de_Gramont de_Guerin de_Gueydon de_Goyon
+		Kellermann
+		Lagrange de_Lamartine de_La_Luzerne de_Leuchtenberg de_Langle_de_Cary
+		Marbot de_MacMahon de_Montmorency-Laval Maret de_Morny MassE_na
+		de_Noailles Ney_d_Elchingen
+		Oudinot
+		Pasquier de_Pourtales de_Polignac de_Persigny PalE_ologue
+		de_La_Rochefoucauld de_Rochebouet de_Rohan-Chabot
+		Suchet de_Sabran de_Saulx de_SE_rent
+		de_Talleyrand-PE_rigord
+	}
+	common_last_names = {
+		Anthoine Archinard Augereau Aucouturier Alavoine Achard Astouin Astaix Avond
+		Baraguey Bazaine Billot Bosquet Boulanger Bourbaki Boue_de_Lapeyrere Bouet-Willaumez Bugeaud Beaugendre Bronchard Baudet Bodinier Bouillet BiE_re Beslay Bac Bavoux Bezanson Bidard Bonnin Bougueret Boussingault Bouzique Buvignier
+		Caillard Canrobert Courbet Cousin-Mountauban de_Castellane Combes ClouE_ Cornet Colas Chauvet Carrere Chartier Combelles Chaude Colin Cruchon Cauvry ChaudE_ Collet Cottrel Charron Caudrelier Courcelles Cibiel Coquerel Coutenceau
+		Davout Depre Dubail Dubois Duchene Dupetit-Thouars Desbordes DelcassE_ Dortignacq Dargassies Desgrange Daumain Decaup Dozol Duboc Darche Deloffre Dutiron Denizot Dufour Devilly Dhers Dartigue Degy Delpech Daime Delaire DE_gousE_e Daix Delespaul Debrotonne Demortreux Denissel Desaincthorent Ducluzeau Dudouyt
+		Exelmans Emmery Esquirou
+		Foch Forey Franchet_d_Esperey Freycinet Faidherbe Fily Fleury Forestier Figuet Farconnet Ferrouillat Foucqueteau Favart Favand Freslon Fresneau
+		Gallieni Gouraud Guillaumat de_Gaulle Gain Georget Gabory Guillarme Garrigou Genin GE_raud Godivier Germain Gardent Goujon Gonnor Guyon
+		Hamelin Harispe Hoche Humbert d_Hilliers Habierre Herbelin Harquet
+		Jamais Jaures Joffre JaurE_guiberry Jousselin
+		Lebouef Lyautey Leygoute Lignon Lallement Lacroix Lafourcade Le_Bars Lachaise Leman Lorillon Lecointe Langlade Leblanc Lagagner Leroy Lapize Lannelongue Lebon Lebelleguy Lubbert Luminais Luneau Lherbette Lortet
+		Marmontel Murat de_Montaignac Mazel Maitron ME_nager Meili Mathonat Marrast Madesclaire Malbois Mispoulet Milhoux Moutou
+		Niboyet Nivelle Nancy Neboux Nempon Nadaud Nourry Nachet Normant
+		Oudin Ory Osmont
+		Petain Pellissier Pothier Pasquier Pautrat Payan Passerieu Paulmier Ponson PiE_trois Pardon Paullian Perrenet Pigeon Pleignard Plocq
+		Quenon Quinet
+		Ringeval Roux Rabot Riviere Roche Riou Ricaux Roquebert Rottie Royannez Radoing Regembal Reibell Repellin Rouher Royol
+		Saget de_Saint_Arnaud SouliE_ Sobrier StE_venot Soubigou StoecklE_ Simiot Signard Saint-Beuve Saint-Romme
+		Trebutien Trousselier Tuvache Taschereau Tanchard Tassel Teulon Tixier Totain Trinchan
+		Vaillant Ventresque Villette Vivier Vaidis Vilette Voilquin Vilain Vignerte Vinoy Valladier Vavin Vendois Vergnes Vernhette Viox
+		Wattelier Winant Warnet Walferdin
+	}
+	male_regal_first_names = {
+		Antoine
+		Charles
+		Ferdinand-Philippe Francois
+		Henri
+		Louis
+	}
+	female_regal_first_names = {
+		Anne
+		ClE_mentine
+		Francoise
+		HE_lE_ne
+		Isabelle
+		Louise
+		Marie Marie_ThE_rE_se
+	}
+	regal_last_names = {
+		d_Artois
+		Bonaparte de_Bourbon de_Bourbon-CondE_
+		d_Orleans
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+paranean = {
+	color=rgb{ 213 210 187 }
+	religion = catholic
+	traits = { hispanophone european_heritage }
+
+	male_common_first_names = {
+		Antonio Atanasio Alfredo Andres Agustin Angel
+		Bernardo Baltasar
+		Carlos Cesar Claudio Conrado
+		Duvimioso
+		Eduardo Eugenio Enrique Eustaquio
+		Fructuoso Francisco Feliciano Florentino Fermin Fernando
+		Gabriel Gervasio
+		Ismael
+		Joaquin Juan JosE_ Jose_Maria Julio Javier
+		Lorenzo
+		Miguel Manuel Maximo Mariano Mauricio Mateo
+		Orlando
+		Pedro Prudencio Pablo
+		Ramon
+		Salvador Santiago
+		Tomas Teodoro
+		Venancio Valentin
+	}
+	female_common_first_names = {
+		Anastasia Amelia Amanda Adela
+		Carolina Clemencia
+		Dorotea
+		Francisca
+		Javiera Juana JoaquI_na Julia
+		Luisa
+		Matilde Maria Manuela
+		Petrona PrA_xedes Paulina
+	}
+	common_last_names = {
+		Agell Aguirre AlbI_n Anaya Acevedo Aubriot
+		Berro Bustamante Borda BaN_os Battle Benzano
+		Cruz Cuestas Campisteguy Chucarro Castellanos Carve Cervantes Castro de_Castro Cortinas Cal
+		DurA_n
+		Ellauri Etchebarne EstradE_ Elzaurdi EstE_vez
+		Flores Fernandez
+		GirO_ Gomensoro Gonzalez Gorlero
+		Herrera
+		Idiarte
+		Lavalleja Lamas Latorre LarraN_aga LaviN_a Larrosa Lara
+		Morales Miranda Munoz
+		Navarro Nunez
+		Obes OrdO_N_ez
+		Pachedo Pereira PlA_ Piriz Pineiro PeN_alva Pedragosa Paiva
+		Rivera Rodriguez Requena Regules Rivas
+		Suarez Santos Soumastre Serrato Soca Sagastume Saez
+		Tajes Terra Torres
+		Urioste
+		Villalba Varela Villegas Vidal Viera Vidal_Silva
+	}
+
+	ethnicities = {
+		2 = south_american
+		1 = caucasian
+	}
+	
+	graphics = european
+}
 space_culture={
 	color= rgb{ 222 147 226 }
 	religion = atheist
@@ -339,5 +763,6 @@ space_culture={
 	ethnicities = {
 		1 = caucasian
 	}
+
 	graphics = european
 }

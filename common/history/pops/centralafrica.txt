@@ -13,54 +13,6 @@
 			}
 		}
 	}
-	s:STATE_EQUATEUR = {
-		region_state:KON = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 5000000
-			}
-		}
-	}
-	s:STATE_BAS_CONGO = {
-		region_state:KON = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 10000000
-			}
-		}
-	}
-	s:STATE_KASAI = {
-		region_state:KON = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 7500000
-			}
-		}
-	}
-	s:STATE_CONGO_ORIENTALE = {
-		region_state:KON = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 10000000
-			}
-		}
-	}
-	s:STATE_KATANGA = {
-		region_state:KZM = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 5000000
-			}
-		}
-	}
-	s:STATE_NORTH_ANGOLA = {
-		region_state:OVM = {
-			create_pop = {
-				culture = equatorial_bantu
-				size = 2000000
-			}
-		}
-	}
 	s:STATE_EAST_ANGOLA = {
 		region_state:OVM = {
 			create_pop = {

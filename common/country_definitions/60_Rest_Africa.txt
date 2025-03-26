@@ -162,7 +162,7 @@ ZAN = {
 }
 
 KON = {
-	color = { 199 160 139 }
+	color = { 124 112 255 }
 	
 	country_type = recognized
 	
@@ -171,7 +171,7 @@ KON = {
 	religion = catholic
 	
 	cultures = { bakongo }
-	capital = STATE_BAS_CONGO
+	capital = STATE_MBANZA_KONGO
 }
 
 KZM = {

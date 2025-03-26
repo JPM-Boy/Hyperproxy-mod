@@ -344,6 +344,56 @@ less_space_funds = {
     }
 }
 
+more_10_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        change_variable = {
+            name = space_agency_funds
+            add = 10
+        }
+    }
+}
+less_10_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {var:space_agency_funds > 10}
+            change_variable = {
+                name = space_agency_funds
+                add = -10
+            }
+        }
+    }
+}
+
 buy_observatories = {
     scope = country
     effect = {

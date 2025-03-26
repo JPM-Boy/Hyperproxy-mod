@@ -50,7 +50,7 @@ template fontsize_xsmall
 
 template header_font
 {
-	font = "OpenSans"
+	font = "mapfont"
 }
 
 template header_font_size
@@ -60,7 +60,7 @@ template header_font_size
 
 template header_font_fancy
 {
-	font = "OpenSans"
+	font = "mapfont"
 }
 
 template header_font_fancy_size

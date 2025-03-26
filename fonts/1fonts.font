@@ -6,7 +6,7 @@ fontfiles = {
     group = {
         languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" "l_turkish" }
         files = {
-            "fonts/Cairo-Regular.ttf"
+            "fonts/Ac437_Acer_VGA_9x8.ttf"
 			"fonts/ZenOldMincho/ZenOldMincho-Regular.ttf" # Zen Old Mincho is used for Playfair in Japanese
             "fonts/SB-Aggro/SB-Aggro-M.ttf" # SB-Aggro is used for Playfair in Korean
             "fonts/NotoSerif/NotoSerifSC-Black.otf" # Noto Serif is used for Playfair in Simplified Chinese
@@ -56,13 +56,5 @@ font = {
     fontstyle = {
         style = regular
         fontfiles = "mapfont"
-    }
-    fontstyle = {
-        style = bold
-        fontfiles = "PlayfairDisplay-Bold"
-    }
-    fontstyle = {
-        style = italic
-        fontfiles = "PlayfairDisplay-Italic"
     }
 }

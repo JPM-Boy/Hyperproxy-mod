@@ -39,7 +39,7 @@ textformatting = {
 	### RED
 	format = {
 		name = red
-		format = "color:{0.88,0.34,0.34}" #brighter
+		format = "color:{1,0,0.5}" #brighter
 		#format = "color:{0.69,0.28,0.28}" #slightly weaker
 		#format = "color:{0.71,0.24,0.24}"
 	}

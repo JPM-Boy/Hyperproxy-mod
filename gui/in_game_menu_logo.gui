@@ -1,0 +1,13 @@
+types ingame_menu_logo {
+	type v3_logo_animation = container {
+		### letters
+		container = {
+			parentanchor = center
+
+			icon = {
+				size = {600 60}
+				texture = "gfx/interface/illustrations/frontend/hyperproxy.dds"
+			}
+		}
+	}
+}

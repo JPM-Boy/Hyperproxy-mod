@@ -11,7 +11,7 @@ widget = {
 	state = {
 		name = start_title_screen
 		trigger_on_create = yes
-		
+
 		on_start = "[PdxGuiTriggerAllAnimations('main_menu_start')]"
 		on_start = "[PdxGuiTriggerAllAnimations('menu_leaf_animation')]"
 		on_start = "[PdxGuiTriggerAllAnimations('menu_logo_v_start')]"
@@ -76,8 +76,8 @@ widget = {
 				alpha = 1
 				position_x = 150
 			}
-			
-			# Continue Game 
+
+			# Continue Game
 			state = {
 				name = "main_menu_continue"
 				duration = 0.4
@@ -91,129 +91,16 @@ widget = {
 					soundeffect = "event:/SFX/UI/Frontend/start_game"
 				}
 			}
-			
-			# BG top
-			widget = {
-				size = { 400 200 }
-				parentanchor = hcenter
-				
-				icon = {
-					size = { 100% 100% }
-					using = top_header_bg
-					
-					modify_texture = {
-						texture = "gfx/interface/menu/menu_frame_top_mask.dds"
-						spriteType = Corneredstretched
-						texture_density = 2
-						spriteborder = { 125 100 }
-						spriteborder_bottom = 0
-						blend_mode = alphamultiply
-					}
-					modify_texture = {
-						texture = "gfx/interface/menu/menu_header_dec.dds"
-						blend_mode = overlay
-					}
-					
-					using = main_menu_shimmer
-				} 
-				icon = {
-					texture = "gfx/interface/menu/menu_frame_top.dds"
-					size = { 100% 100% }
-					spriteType = Corneredstretched
-					texture_density = 2
-					spriteborder = { 125 100 }
-					spriteborder_bottom = 0
-					
-					using = main_menu_shimmer
-				}
-			}
-			
-			# Animated leafs
-			icon = {
-				texture = "gfx/interface/menu/menu_top_corner.dds"
-				size = { 112 165 }
-				framesize = { 224 330 }
-				scale = 0.9
-				position = { 33 15 } 
-				
-				modify_texture = {
-					name = overlay
-					texture = "gfx/interface/menu/menu_top_corner_overlay.dds"
-					blend_mode = normal
-					alpha = 0
-				}
-				state = {
-					name = main_menu_start
-					delay = 1
-					duration = 2
-					using = Animation_Curve_Default
-					
-					modify_texture = {
-						name = overlay
-						alpha = 0.6
-					}
-				}
 
-				frame = 1
-				
-				using = 24_frames_animation
-				blockoverride "trigger" {
-					name = menu_leaf_animation
-					start_sound = {
-						using = ui_sfx_victoria_logo
-					}
-				}
-				blockoverride "frame_2_delay" {
-					delay = 1.3
-				}
-			} 
-			icon = {
-				texture = "gfx/interface/menu/menu_top_corner.dds"
-				size = { 112 165 }
-				framesize = { 224 330 }
-				scale = 0.9
-				position = { -33 15 }
-				parentanchor = right
-				mirror = horizontal
-				
-				modify_texture = {
-					name = overlay
-					texture = "gfx/interface/menu/menu_top_corner_overlay.dds"
-					blend_mode = normal
-					alpha = 0
-				}
-				state = {
-					name = main_menu_start
-					delay = 1
-					duration = 4
-					using = Animation_Curve_Default
-					
-					modify_texture = {
-						name = overlay
-						alpha = 0.6
-					}
-				}
-				
-				frame = 1
-				
-				using = 24_frames_animation
-				blockoverride "trigger" {
-					name = menu_leaf_animation
-				}
-				blockoverride "frame_2_delay" {
-					delay = 1.3
-				}
-			}
-			
 			# BG bottom
 			widget = {
 				size = { 450 760 }
 				parentanchor = bottom|hcenter
-				
+
 				icon = {
 					size = { 100% 100% }
 					using = default_bg
-					
+
 					modify_texture = {
 						texture = "gfx/interface/menu/menu_frame_bottom_mask.dds"
 						spriteType = Corneredstretched
@@ -230,50 +117,19 @@ widget = {
 					texture_density = 2
 					spriteborder = { 216 225 }
 					spriteborder_bottom = 350
-					
+
 					using = main_menu_shimmer
 				}
 			}
-			
-			### glow effect on top
-			widget = {
-				position = { 0 -400 }
-				parentanchor = center
-				size = { 500 500 }
-				alpha = 0
-				
-				icon = {
-					using = rotate_glow_animation_02
-				}
-				
-				state = {
-					name = main_menu_start
-					delay = 1.5
-					next = 2
-					using = Animation_Curve_Default
-					
-					size = { 800 800 }
-					duration = 0.6
-					alpha = 0.8
-				} 
-				state = {
-					name = 2
-					using = Animation_Curve_Default
-					
-					size = { 500 500 }
-					duration = 0.8
-					alpha = 0.4
-				}
-			}
-			
+
 			v3_logo_animation = {
 				parentanchor = hcenter
-				position = { 0 35 }
-				
-				blockoverride "menu_logo_delay" { 
+				position = { 0 80 }
+
+				blockoverride "menu_logo_delay" {
 					delay = 1.5
 				}
-			} 
+			}
 
 			### BUTTONS  
 			vbox = {
@@ -291,7 +147,7 @@ widget = {
 						text_single = {
 							layoutpolicy_horizontal = expanding
 							margin_left = 5
-							text = "SINGLE_PLAYER"
+							text = "#g SINGLE_PLAYER"
 
 							font = mapfont
 							default_format = "#weak;italic;glow_color:{0.1,0.1,0.1,1}"
@@ -336,7 +192,7 @@ widget = {
 									on_start = "[FrontEndLoadView.PreContinueSaveCheck]"
 								}
 
-								text = "CONTINUE"
+								text = "#g CONTINUE"
 								using = fontsize_large
 								tooltip = FRONTEND_CONTINUE_TT
 
@@ -384,7 +240,7 @@ widget = {
 							using = default_button_primary_big
 							size = { 310 55 }
 							name = "new_game_button"
-							text = "NEW_GAME"
+							text = "#g NEW_GAME"
 
 							font = mapfont
 							using = fontsize_large
@@ -415,7 +271,7 @@ widget = {
 								visible = "[FrontEndLoadView.CanDoContinue]"
 
 								font = mapfont
-								text = "LOAD_GAME"
+								text = "#g LOAD_GAME"
 								using = fontsize_large
 								onclick = "[FrontEndMainView.OnLoad]"
 								using = black_screen_transition_button_sound
@@ -427,7 +283,7 @@ widget = {
 						text_single = {
 							layoutpolicy_horizontal = expanding
 							margin_left = 5
-							text = "MULTI_PLAYER"
+							text = "#g MULTI_PLAYER"
 
 							font = mapfont
 							default_format = "#weak;italic;glow_color:{0.1,0.1,0.1,1}"
@@ -446,7 +302,7 @@ widget = {
 								size = { 310 55 }
 								name = "host_button"
 								font = mapfont
-								text = "HOST_GAME"
+								text = "#g HOST_GAME"
 								using = fontsize_large
 								onclick = "[FrontEndMainView.OnHost]"
 								enabled = "[JominiIsMultiplayerAccessible]"
@@ -460,7 +316,7 @@ widget = {
 								name = "join_button"
 
 								font = mapfont
-								text = "FRONTEND_JOIN_MULTIPLAYER"
+								text = "#g JOIN_GAME"
 								using = fontsize_large
 								onclick = "[FrontEndMainView.OnMultiPlayer]"
 								enabled = "[JominiIsMultiplayerAccessible]"
@@ -518,7 +374,7 @@ widget = {
 						size = { 310 55 }
 						name = "exit_game_button"
 						visible = yes
-						text = "EXIT_TO_DESKTOP"
+						text = "#g EXIT_TO_DESKTOP"
 
 						font = mapfont
 						using = fontsize_large

@@ -1,7 +1,7 @@
 {
   "name" : "Hyperproxy-Mod",
   "id" : "",
-  "version" : "0.5.0",
+  "version" : "0.6.0",
   "supported_game_version" : "1.8.*",
   "picture" : "thumbnail.png",
   "short_description" : "",

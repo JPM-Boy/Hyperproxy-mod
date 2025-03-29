@@ -24,6 +24,9 @@
 		# ideology_communist
 		# ideology_anarchist
 		ideology_protectionist
+		ideology_maoism
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 	}
 	
 	enable = {

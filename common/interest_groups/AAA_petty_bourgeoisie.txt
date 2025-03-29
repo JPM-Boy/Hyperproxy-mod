@@ -26,6 +26,9 @@
 		# ideology_corporatist_leader
 		ideology_authoritarian
 		ideology_reformer
+		ideology_maoism
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 
 	}
 	

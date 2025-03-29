@@ -20,6 +20,8 @@ ig_socdem = {
 		ideology_pacifist
 		ideology_agrarian_socialist_leader
 		ideology_atheist
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 	}
 	
 	enable = {

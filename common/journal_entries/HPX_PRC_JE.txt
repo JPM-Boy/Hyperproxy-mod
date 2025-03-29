@@ -1,0 +1,91 @@
+﻿je_hpx_prc_cultural_revolution = {
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = { c:CHI ?= this }
+	possible = { always = yes }
+
+	scripted_button = maoist_purge
+
+	on_monthly_pulse = {
+		effect = {
+			calculate_china_characters = yes
+		}
+		random_events = {
+			chance_of_no_event = 95
+			5 = hpx_china.2
+		}
+	}
+
+	immediate = {
+		calculate_china_characters = yes
+		c:CHI.ruler ?= {
+			save_scope_as = mao_zedong
+		}
+	}
+
+	modifiers_while_active = {
+		cultural_revolution
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = "MAO_DEATH"
+			scope:mao_zedong = { is_character_alive = no }
+		}
+	}
+
+	on_complete = {
+		add_journal_entry = { type = je_hpx_prc_transitional_chairman }
+		hidden_effect = {
+			if = { ## MAOISTS ##
+				limit = {
+					AND = {
+						root.var:maoists > root.var:reformists
+						root.var:maoists > root.var:liberals
+					}
+				}
+				if = { ## GANG OF FOUR ##
+					limit = { has_variable = lin_biao_incident }
+					create_character = {
+						template = jiang_qing
+					}
+				} else = { ## LIN BIAO ##
+					create_character = {
+						template = lin_biao
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						root.var:reformists > root.var:maoists
+						root.var:reformists > root.var:liberals
+					}
+				}
+				if = { ## HUA GUOFENG ##
+					limit = { has_variable = lin_biao_incident }
+					create_character = {
+						template = hua_guofeng
+					}
+				} else = { ## XU XIANGQIAN ##
+					create_character = {
+						template = xu_xiangqian
+					}
+				}
+			}
+			else = {
+				create_character = { ## ZHOU ENLAI ##
+					template = zhou_enlai
+				}
+			}
+		}
+	}
+}
+
+je_hpx_prc_transitional_chairman = {
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+}

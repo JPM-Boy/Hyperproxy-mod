@@ -115,13 +115,6 @@ ideology_center_leader = {
     			is_interest_group_type = ig_trade_unions
     		}
     	}
-		value = 100 
-		if = {
-			limit = {
-				has_role = agitator
-			}
-			add = -50
-		}
 	}
 	
 	non_interest_group_leader_weight = {

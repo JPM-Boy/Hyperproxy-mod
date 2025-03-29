@@ -1,0 +1,15 @@
+﻿l_english:
+ je_hpx_prc_cultural_revolution: "Cultural Revolution"
+ je_hpx_prc_cultural_revolution_reason: "@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!\nNumber of #r Maoist#! characters in #r China#!: #r [GetPlayer.MakeScope.Var('maoists').GetValue]#!\nNumber of #b;O Moderate Reformists#! characters in #b;O China#!: #b;O [GetPlayer.MakeScope.Var('reformists').GetValue]#!\nNumber of #yellow;b Liberal Reformists#! characters in #yellow;b China#!: #yellow;b [GetPlayer.MakeScope.Var('liberals').GetValue]#!\n@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!\nThe #yellow Cultural Revolution#! is a mass political movement launched by #yellow Mao Zedong#! to reinforce #yellow Communist Party#! control and eliminate 'bourgeois' influences. Led by the #yellow Red Guards#!, the movement targets so-called counter-revolutionaries, leading to widespread #yellow purges#! of officials, intellectuals, and military leaders. Schools, workplaces, and even families are torn apart as loyalty to the #yellow Maoist ideology#! becomes the defining factor for survival. With the party in turmoil, the fate of China hangs in the balance."
+ je_hpx_prc_transitional_chairman: "Transitional Chairman?"
+
+ hpx_china.1.t: "Cultural Revolution: Purge"
+ hpx_china.1.d: "The Cultural Revolution escalates as Mao demands the removal of enemies within. Party officials, intellectuals, and military officers face accusations of disloyalty. The Red Guards push for harsher purges—who shall be targeted to safeguard the revolution?"
+ hpx_china.1.f: "It is man's social being that determines his thinking. Once the correct ideas characteristic of the advanced class are grasped by the masses, these ideas turn into a material force which changes society and changes the world.\n -- Mao Zedong"
+ hpx_china.1.a: "The party can't keep trusting on [SCOPE.sCharacter('reformist_purged').GetFullName]"
+ hpx_china.1.b: "The party can't keep trusting on [SCOPE.sCharacter('liberal_purged').GetFullName]"
+
+ maoist_purge: "Purge in the Party"
+ recent_purge: "Recent Purge"
+ MAO_DEATH: "#r Mao Zedong is not alive."
+ maoist_purge_desc: "We got some files about certain members of our party..."

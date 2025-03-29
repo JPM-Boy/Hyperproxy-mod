@@ -25,6 +25,9 @@
 		# ideology_orleanist
 		# ideology_humanitarian
 		# ideology_land_reformer
+		ideology_maoism
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 	}
 
 	enable = {

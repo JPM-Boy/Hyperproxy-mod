@@ -10,7 +10,7 @@
 			ruler = yes
 			age = 77
 			interest_group = ig_orthodox_communist
-			ideology = ideology_vanguardist
+			ideology = ideology_maoism
 			traits = {
 			}
 		}

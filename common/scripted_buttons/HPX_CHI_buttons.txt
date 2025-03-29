@@ -1,0 +1,24 @@
+﻿maoist_purge = {
+	name = "maoist_purge"
+	desc = "maoist_purge_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		always = yes
+		# NOT = {has_modifier = recent_purge}
+	}
+	effect = {
+		add_modifier = { name = recent_purge months = 12 }
+		add_loyalists = { value = 0.1 }
+		owner = {
+			trigger_event = hpx_china.1
+		}
+	}
+
+	ai_chance = {
+		base = 500
+	}
+}

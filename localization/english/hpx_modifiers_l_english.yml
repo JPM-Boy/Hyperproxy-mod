@@ -26,8 +26,17 @@
 	modifier_titoism: "Titoism"
 	modifier_kadarism: "Kádarism"
 
+	cultural_revolution: "Cultural Revolution"
 
 	interest_group_ig_reformist_communist_pol_str_mult:2 "$ig_variant_reformist_communist$ [concept_political_strength]"
 	interest_group_ig_reformist_communist_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_reformist_communist$ [concept_interest_group]"
 	interest_group_ig_new_leftism_pol_str_mult:2 "$ig_variant_new_leftism$ [concept_political_strength]"
 	interest_group_ig_new_leftism_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_new_leftism$ [concept_interest_group]"
+	interest_group_ig_orthodox_communist_pol_str_mult:2 "$ig_variant_orthodox_communist$ [concept_political_strength]"
+	interest_group_ig_orthodox_communist_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_orthodox_communist$ [concept_interest_group]"
+	interest_group_ig_liberal_pol_str_mult:2 "$ig_variant_liberal$ [concept_political_strength]"
+	interest_group_ig_liberal_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_liberal$ [concept_interest_group]"
+	interest_group_ig_reactionary_pol_str_mult:2 "$ig_variant_reactionary$ [concept_political_strength]"
+	interest_group_ig_reactionary_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_reactionary$ [concept_interest_group]"
+	interest_group_ig_cons_pol_str_mult:2 "$ig_variant_cons$ [concept_political_strength]"
+	interest_group_ig_cons_pol_str_mult_desc:2 "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_cons$ [concept_interest_group]"

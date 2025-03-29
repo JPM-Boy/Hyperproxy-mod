@@ -1,0 +1,64 @@
+﻿namespace = hpx_china
+
+hpx_china.1 = { # Occupation of Rome
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.1.t
+	desc = hpx_china.1.d
+	flavor = hpx_china.1.f
+	duration = 3
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				has_ideology = ideology:ideology_maoism_reformism
+			}
+			save_scope_as = reformist_purged
+		}
+
+		random_scope_character = {
+			limit = {
+				has_ideology = ideology:ideology_maoism_liberal
+			}
+			save_scope_as = liberal_purged
+		}
+	}
+
+	option = {
+		name = hpx_china.1.a
+		scope:reformist_purged = {
+			kill_character = yes
+		}
+	}
+	option = {
+		name = hpx_china.1.b
+		scope:liberal_purged = {
+			kill_character = yes
+		}
+	}
+
+	after = {
+		calculate_china_characters = yes
+	}
+}
+hpx_china.2 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.2.t
+	desc = hpx_china.2.d
+	flavor = hpx_china.2.f
+	duration = 3
+
+	option = {
+		name = hpx_china.2.a
+		set_variable = lin_biao_incident
+	}
+}

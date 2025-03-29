@@ -2,15 +2,15 @@
 	c:USA ?= {
 		create_character = {
 		# Richard Nixon
-			first_name = "Richard"
-			last_name = "Nixon"
+			first_name = "Robert"
+			last_name = "Kennedy"
 			culture = yankee
 			historical = yes
 			ig_leader = yes
 			ruler = yes
-			age = 60
-			interest_group = ig_cons
-			ideology = ideology_traditionalist
+			age = 49
+			interest_group = ig_liberal
+			ideology = ideology_social_democrat
 			traits = {
 			}
 		}

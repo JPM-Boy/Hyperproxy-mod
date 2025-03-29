@@ -15,6 +15,9 @@
 		ideology_communist
 		ideology_vanguardist
 		ideology_atheist
+		ideology_maoism
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 	}
 	
 	enable = {

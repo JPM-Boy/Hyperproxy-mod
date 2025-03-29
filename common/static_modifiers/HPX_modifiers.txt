@@ -150,3 +150,23 @@ modifier_kadarism = {
     country_institution_cost_institution_schools_mult = -0.33
 
 }
+
+cultural_revolution = {
+    icon = gfx/interface/icons/timed_modifier_icons/PRC.dds
+    interest_group_ig_orthodox_communist_pol_str_mult = 1
+    interest_group_ig_reformist_communist_pol_str_mult = 0.5
+    interest_group_ig_new_leftism_pol_str_mult = 0.5
+    interest_group_ig_cons_pol_str_mult = -0.5
+    interest_group_ig_reactionary_pol_str_mult = -0.5
+    interest_group_ig_liberal_pol_str_mult = -0.5
+    country_radicalism_increases_second_rate_citizen_mult = 0.5
+    country_bureaucracy_mult = -0.33
+    state_mortality_mult = 0.25
+    state_tax_waste_add = 0.8
+
+}
+
+recent_purge = {
+    country_loyalists_from_legitimacy_mult = 0.5
+    country_radicals_from_legitimacy_mult = -0.5
+}

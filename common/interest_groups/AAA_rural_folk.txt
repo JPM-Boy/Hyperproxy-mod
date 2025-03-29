@@ -21,6 +21,9 @@
 		# ideology_legitimist
 		ideology_land_reformer
 		ideology_protectionist
+		ideology_maoism
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 		# ideology_reformer
 	}
 	

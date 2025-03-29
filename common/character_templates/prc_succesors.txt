@@ -1,0 +1,56 @@
+﻿jiang_qing = { #GANG OF FOUR
+    first_name = "Jiang"
+    last_name = "Qing"
+    historical = yes
+    culture = cu:han
+    ruler = yes
+	female = yes
+	ig_leader = yes
+    birth_date = 1914.3.1
+    interest_group = ig_orthodox_communist
+    ideology = ideology_maoism
+}
+
+lin_biao = {
+	first_name = "Lin"
+	last_name = "Biao"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	birth_date = 1907.12.5
+	interest_group = ig_orthodox_communist
+	ideology = ideology_maoism
+}
+
+xu_xiangqian = {
+	first_name = "Xu"
+	last_name = "Xiangqian"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	birth_date = 1901.11.8
+	interest_group = ig_orthodox_communist
+	ideology = ideology_maoism_reformism
+}
+
+hua_guofeng = {
+	first_name = "Hua"
+	last_name = "Guofeng"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	birth_date = 1921.2.16
+	interest_group = ig_orthodox_communist
+	ideology = ideology_maoism_reformism
+}
+
+zhou_enlai = {
+	first_name = "Zhou"
+	last_name = "Enlai"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	birth_date = 1898.3.5
+	interest_group = ig_reformist_communist
+	ideology = ideology_maoism_reformism
+}

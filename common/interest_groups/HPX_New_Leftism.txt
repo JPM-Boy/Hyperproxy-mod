@@ -16,6 +16,9 @@
 		ideology_atheist
 		ideology_social_democrat
 		ideology_radical
+		ideology_maoism
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 	}
 	
 	enable = {

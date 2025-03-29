@@ -26,6 +26,8 @@
 		# ideology_bonapartist
 		# ideology_land_reformer
 		ideology_reformer
+		ideology_maoism_reformism
+		ideology_maoism_liberal
 	}
 	
 	enable = {

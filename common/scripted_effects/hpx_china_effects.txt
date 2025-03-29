@@ -1,0 +1,27 @@
+﻿calculate_china_characters = {
+    set_variable = { name = maoists value = 0 }
+    set_variable = { name = reformists value = 0 }
+    set_variable = { name = liberals value = 0 }
+    root = {
+        every_scope_character = {
+            limit = { has_ideology = ideology:ideology_maoism}
+            owner = {
+                change_variable = { name = maoists add = 1 }
+            }
+        }
+
+        every_scope_character = {
+            limit = { has_ideology = ideology:ideology_maoism_reformism}
+            owner = {
+                change_variable = { name = reformists add = 1 }
+            }
+        }
+
+        every_scope_character = {
+            limit = { has_ideology = ideology:ideology_maoism_liberal}
+            owner = {
+                change_variable = { name = liberals add = 1 }
+            }
+        }
+    }
+}

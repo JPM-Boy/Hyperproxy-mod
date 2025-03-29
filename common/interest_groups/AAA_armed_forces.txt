@@ -20,6 +20,8 @@
 		ideology_jingoist_leader
 		ideology_authoritarian
 		# ideology_corporatist_leader
+		ideology_maoism
+		ideology_maoism_reformism
 	}
 	
 	enable = {

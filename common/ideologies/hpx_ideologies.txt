@@ -1,0 +1,130 @@
+﻿ideology_maoism = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_maoism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+
+	}
+
+
+	interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+					c:NAX ?= owner
+				}
+			}
+			add = 900
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_orthodox_communist
+			}
+			add = 100
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+
+	}
+
+
+	non_interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+					c:NAX ?= owner
+				}
+			}
+			add = 900
+		}
+	}
+}
+ideology_maoism_reformism = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_denguism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 900
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	non_interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 900
+		}
+	}
+}
+
+ideology_maoism_liberal = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_liberal_communism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 900
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	non_interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 900
+		}
+	}
+}

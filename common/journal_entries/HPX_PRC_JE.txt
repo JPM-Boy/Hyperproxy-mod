@@ -37,49 +37,52 @@
 	}
 
 	on_complete = {
-		add_journal_entry = { type = je_hpx_prc_transitional_chairman }
-		hidden_effect = {
-			if = { ## MAOISTS ##
-				limit = {
-					AND = {
-						root.var:maoists > root.var:reformists
-						root.var:maoists > root.var:liberals
-					}
-				}
-				if = { ## GANG OF FOUR ##
-					limit = { has_variable = lin_biao_incident }
-					create_character = {
-						template = jiang_qing
-					}
-				} else = { ## LIN BIAO ##
-					create_character = {
-						template = lin_biao
-					}
+		if = { ## MAOISTS ##
+			limit = {
+				AND = {
+					root.var:maoists > root.var:reformists
+					root.var:maoists > root.var:liberals
 				}
 			}
-			else_if = {
-				limit = {
-					AND = {
-						root.var:reformists > root.var:maoists
-						root.var:reformists > root.var:liberals
-					}
+			if = { ## GANG OF FOUR ##
+				limit = { has_variable = lin_biao_incident }
+				create_character = {
+					template = jiang_qing
 				}
-				if = { ## HUA GUOFENG ##
-					limit = { has_variable = lin_biao_incident }
-					create_character = {
-						template = hua_guofeng
-					}
-				} else = { ## XU XIANGQIAN ##
-					create_character = {
-						template = xu_xiangqian
-					}
+				set_variable = jiang_qing
+			} else = { ## LIN BIAO ##
+				create_character = {
+					template = lin_biao
 				}
 			}
-			else = {
-				create_character = { ## ZHOU ENLAI ##
-					template = zhou_enlai
+		}
+		else_if = {
+			limit = {
+				AND = {
+					root.var:reformists > root.var:maoists
+					root.var:reformists > root.var:liberals
 				}
 			}
+			if = { ## HUA GUOFENG ##
+				limit = { has_variable = lin_biao_incident }
+				create_character = {
+					template = hua_guofeng
+				}
+			} else = { ## XU XIANGQIAN ##
+				create_character = {
+					template = xu_xiangqian
+				}
+			}
+		}
+		else = {
+			create_character = { ## ZHOU ENLAI ##
+				template = zhou_enlai
+			}
+		}
+		if = {
+			limit = { NOT = {has_variable = jiang_qing} }
+			add_journal_entry = { type = je_hpx_prc_transitional_chairman }
+			trigger_event = hpx_china.4
 		}
 	}
 }
@@ -88,4 +91,107 @@ je_hpx_prc_transitional_chairman = {
 	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
 	group = je_group_internal_affairs
 	should_be_pinned_by_default = yes
+	weight = 1000
+	timeout = 730
+	scripted_button = challenge_chairman
+	scripted_button = solidify_chairman
+
+	immediate = {
+		set_variable = { name = party value = 65 }
+		set_variable = { name = civil value = 15 }
+		set_variable = { name = militar value = 20 }
+	}
+
+	scripted_progress_bar = china_party
+	scripted_progress_bar = china_civil
+	scripted_progress_bar = china_militar
+
+	complete = {
+		has_variable = challenged_leadership
+	}
+
+	modifiers_while_active = { transitional_china }
+
+	on_complete = {
+		if = {
+			limit = { ruler = { has_template = lin_biao} }
+			create_character = { template = li_xiannian }
+		} else_if = {
+			limit = { ruler = {has_template = hua_guofeng} }
+			create_character = { template = deng_xiaoping }
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = SOLIDIFIED_CHAIRMAN
+			has_variable = solidified_chairman
+		}
+	}
+
+	on_timeout = {
+		hidden_effect = {
+			if = {
+				## PARTY ##
+				limit = {
+					AND = {
+						root.var:party > root.var:civil
+						root.var:party > root.var:militar
+					}
+				}
+				if = { ## Deng Liqun ##
+					limit = { ruler = { has_template = lin_biao} }
+					create_character = {
+						template = deng_liqun
+					}
+				}
+				if = { ## PENG ZHEN ##
+					limit = { ruler = { has_template = xu_xiangqian} }
+					create_character = {
+						template = peng_zhen
+					}
+				}
+				if = { ## BO YIBO ##
+					limit = { ruler = { has_template = zhou_enlai} }
+					create_character = {
+						template = bo_yibo
+					}
+				}
+			} else_if = {
+				## CIVIL ##
+				limit = {
+					AND = {
+						root.var:civil > root.var:party
+						root.var:civil > root.var:militar
+					}
+				}
+				if = { ## DENG XIAOPING ##
+					limit = { ruler = { has_template = xu_xiangqian} }
+					create_character = {
+						template = deng_xiaoping
+					}
+				}
+			} else_if = {
+				## MILITAR ##
+				limit = {
+					AND = {
+						root.var:militar > root.var:party
+						root.var:militar > root.var:civil
+					}
+				}
+				if = { ## Chen Xilian ##
+					limit = { ruler = { has_template = lin_biao} }
+					create_character = {
+						template = chen_xilian
+					}
+				}
+				if = { ## Su Zhenhua ##
+					limit = { ruler = { has_template = xu_xiangqian} }
+					create_character = {
+						template = su_zhenhua
+					}
+				}
+			}
+		}
+	}
 }

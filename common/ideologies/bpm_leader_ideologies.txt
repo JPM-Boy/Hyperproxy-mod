@@ -106,6 +106,12 @@ ideology_center_leader = {
 			}
 			add = 100
 		}
+		if = {
+			limit = {
+				c:CHI ?= owner
+			}
+			add = -1000
+		}
 	}
 
 	non_interest_group_leader_trigger = {
@@ -2326,6 +2332,12 @@ ideology_socialist_leader = {
 				}
 			}
 			add = 80
+		}
+		if = {
+			limit = {
+				c:CHI ?= owner
+			}
+			add = -1000
 		}
 		# Syndicalism JE's influence shifts chances
 		multiply = {

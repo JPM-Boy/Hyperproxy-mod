@@ -128,3 +128,84 @@ ideology_maoism_liberal = {
 		}
 	}
 }
+ideology_ultramaoism = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_ultramaoism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 100
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	non_interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 100
+		}
+	}
+}
+
+ideology_democratic_marxism = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_democratic_marxism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 100
+		}
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+
+	non_interest_group_leader_weight = {
+		value = 0
+		if = {
+			limit = {
+				OR = {
+					c:CHI ?= owner
+				}
+			}
+			add = 100
+		}
+	}
+}

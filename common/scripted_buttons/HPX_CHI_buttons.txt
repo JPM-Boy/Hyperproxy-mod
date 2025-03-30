@@ -22,3 +22,53 @@
 		base = 500
 	}
 }
+challenge_chairman = {
+	name = "challenge_chairman"
+	desc = "challenge_chairman_desc"
+
+	visible = {
+		ruler = {
+			OR = {
+				has_template = lin_biao
+				has_template = hua_guofeng
+			}
+		}
+		OR = {
+			var:party > 70
+			var:civil > 70
+			var:militar > 70
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	effect = {
+		owner = {
+			trigger_event = hpx_china.3
+		}
+	}
+
+	ai_chance = {
+		base = 500
+	}
+}
+solidify_chairman = {
+	name = "solidify_chairman"
+	desc = "solidify_chairman_desc"
+
+	visible = {
+		always = yes
+	}
+
+	effect = {
+		set_variable = solidified_chairman
+	}
+
+	possible = { always = yes }
+
+	ai_chance = {
+		base = 500
+	}
+}

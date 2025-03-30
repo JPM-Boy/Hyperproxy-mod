@@ -19,6 +19,7 @@
 		ideology_maoism
 		ideology_maoism_reformism
 		ideology_maoism_liberal
+		ideology_democratic_marxism
 	}
 	
 	enable = {

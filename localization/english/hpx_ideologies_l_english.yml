@@ -8,3 +8,9 @@ ideology_mon_floating_exchange_desc: "Currency value is determined by market for
 ideology_mon_fixed_exchange_desc: "The government pegs its currency to a stable foreign currency, ensuring trade stability but limiting flexibility in handling economic crises."
 ideology_mon_managed_float_desc: "The currency floats in the market, with occasional government intervention to stabilize it during economic shocks."
 ideology_mon_placeholder_desc: ""
+
+ ideology_maoism: "Maoist"
+ ideology_maoism_reformism: "Moderate Reformist"
+ ideology_maoism_liberal: "Liberal Reformist"
+ ideology_ultramaoism: "Ultra-Maoist"
+ ideology_democratic_marxism: "Democratic Marxist"

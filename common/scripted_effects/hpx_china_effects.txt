@@ -4,7 +4,12 @@
     set_variable = { name = liberals value = 0 }
     root = {
         every_scope_character = {
-            limit = { has_ideology = ideology:ideology_maoism}
+            limit = {
+                OR = {
+                    has_ideology = ideology:ideology_ultramaoism
+                    has_ideology = ideology:ideology_maoism
+                }
+            }
             owner = {
                 change_variable = { name = maoists add = 1 }
             }
@@ -18,10 +23,32 @@
         }
 
         every_scope_character = {
-            limit = { has_ideology = ideology:ideology_maoism_liberal}
+            limit = {
+                OR = {
+                    has_ideology = ideology:ideology_maoism_liberal
+                    has_ideology = ideology:ideology_democratic_marxism
+                }
+            }
             owner = {
                 change_variable = { name = liberals add = 1 }
             }
+        }
+    }
+}
+
+calculate_china_factions = {
+    je:je_hpx_prc_transitional_chairman ?= {
+        set_bar_progress = {
+            value = owner.var:militar
+            name = china_militar
+        }
+        set_bar_progress = {
+            value = owner.var:civil
+            name = china_civil
+        }
+        set_bar_progress = {
+            value = owner.var:party
+            name = china_party
         }
     }
 }

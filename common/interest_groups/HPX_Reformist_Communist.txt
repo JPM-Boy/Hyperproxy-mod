@@ -19,9 +19,11 @@
 		ideology_pacifist
 		ideology_agrarian_socialist_leader
 		ideology_atheist
+		ideology_ultramaoism
 		ideology_maoism
 		ideology_maoism_reformism
 		ideology_maoism_liberal
+		ideology_democratic_marxism
 	}
 	
 	enable = {

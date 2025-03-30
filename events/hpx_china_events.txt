@@ -26,6 +26,16 @@ hpx_china.1 = { # Occupation of Rome
 			}
 			save_scope_as = liberal_purged
 		}
+
+		random_scope_character = {
+			limit = {
+				AND = {
+					has_ideology = ideology:ideology_maoism
+					is_ruler = no
+				}
+			}
+			save_scope_as = maoist_purged
+		}
 	}
 
 	option = {
@@ -37,6 +47,12 @@ hpx_china.1 = { # Occupation of Rome
 	option = {
 		name = hpx_china.1.b
 		scope:liberal_purged = {
+			kill_character = yes
+		}
+	}
+	option = {
+		name = hpx_china.1.c
+		scope:maoist_purged = {
 			kill_character = yes
 		}
 	}
@@ -60,5 +76,256 @@ hpx_china.2 = {
 	option = {
 		name = hpx_china.2.a
 		set_variable = lin_biao_incident
+	}
+
+	option = {
+		name = hpx_china.2.b
+	}
+}
+
+hpx_china.3 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.3.t
+	desc = hpx_china.3.d
+	flavor = hpx_china.3.f
+	duration = 3
+
+	option = {
+		name = hpx_china.3.a
+		set_variable = challenged_leadership
+	}
+}
+
+hpx_china.4 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.4.t
+	desc = hpx_china.4.d
+	flavor = hpx_china.4.f
+	duration = 2
+
+	option = {
+		name = hpx_china.5.t
+		change_variable = { name = party add = -20 }
+		change_variable = { name = civil add = 20 }
+		trigger_event = {id = hpx_china.5 days = 45 }
+	}
+	option = {
+		name = hpx_china.6.t
+		change_variable = { name = party add = -20 }
+		change_variable = { name = militar add = 20 }
+		trigger_event = {id = hpx_china.6 days = 45 }
+	}
+
+	after = {
+		calculate_china_factions = yes
+	}
+}
+
+hpx_china.5 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.5.t
+	desc = hpx_china.5.d
+	flavor = hpx_china.5.f
+	duration = 2
+
+	option = {
+		name = hpx_china.7.t
+		change_variable = { name = party add = 20 }
+		trigger_event = {id = hpx_china.7 days = 45 }
+	}
+	option = {
+		name = hpx_china.8.t
+		change_variable = { name = militar add = 15 }
+		trigger_event = {id = hpx_china.8 days = 45 }
+	}
+
+	after = {
+		calculate_china_factions = yes
+	}
+}
+
+hpx_china.6 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.6.t
+	desc = hpx_china.6.d
+	flavor = hpx_china.6.f
+	duration = 2
+
+	option = {
+		name = hpx_china.8.t
+		change_variable = { name = civil add = 20 }
+		change_variable = { name = militar add = -5 }
+		trigger_event = {id = hpx_china.8 days = 45 }
+	}
+	option = {
+		name = hpx_china.9.t
+		change_variable = { name = party add = 10 }
+		change_variable = { name = civil add = -15 }
+		change_variable = { name = militar add = 10 }
+		trigger_event = {id = hpx_china.9 days = 45 }
+	}
+
+	after = {
+		calculate_china_factions = yes
+	}
+}
+
+hpx_china.7 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.7.t
+	desc = hpx_china.7.d
+	flavor = hpx_china.7.f
+	duration = 2
+
+	option = {
+		name = hpx_china.10.t
+		change_variable = { name = civil add = 20 }
+		change_variable = { name = militar add = -20 }
+		change_variable = { name = party add = -10 }
+		trigger_event = {id = hpx_china.10 days = 45 }
+	}
+	option = {
+		name = hpx_china.11.t
+		change_variable = { name = party add = 30 }
+		change_variable = { name = civil add = -40 }
+		change_variable = { name = militar add = -5 }
+		trigger_event = {id = hpx_china.11 days = 45 }
+	}
+
+	after = {
+		calculate_china_factions = yes
+	}
+}
+
+hpx_china.8 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.8.t
+	desc = hpx_china.8.d
+	flavor = hpx_china.8.f
+	duration = 2
+
+	option = {
+		name = hpx_china.11.t
+		change_variable = { name = party add = 30 }
+		change_variable = { name = civil add = -40 }
+		change_variable = { name = militar add = -5 }
+		trigger_event = {id = hpx_china.11 days = 45 }
+	}
+
+	after = {
+		calculate_china_factions = yes
+	}
+}
+
+hpx_china.9 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.9.t
+	desc = hpx_china.9.d
+	flavor = hpx_china.9.f
+	duration = 2
+
+	option = {
+		name = hpx_china.11.t
+		change_variable = { name = party add = 30 }
+		change_variable = { name = civil add = -40 }
+		change_variable = { name = militar add = -5 }
+		trigger_event = {id = hpx_china.11 days = 45 }
+	}
+
+	option = {
+		name = hpx_china.12.t
+		change_variable = { name = party add = -20 }
+		change_variable = { name = militar add = 25 }
+		trigger_event = {id = hpx_china.12 days = 45 }
+	}
+
+	after = {
+		calculate_china_factions = yes
+	}
+}
+
+hpx_china.10 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.10.t
+	desc = hpx_china.10.d
+	flavor = hpx_china.10.f
+	duration = 2
+
+	option = {
+		name = hpx_china.end
+	}
+}
+
+hpx_china.11 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.11.t
+	desc = hpx_china.11.d
+	flavor = hpx_china.11.f
+	duration = 2
+
+	option = {
+		name = hpx_china.end
+	}
+}
+
+hpx_china.12 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.12.t
+	desc = hpx_china.12.d
+	flavor = hpx_china.12.f
+	duration = 2
+
+	option = {
+		name = hpx_china.end
 	}
 }

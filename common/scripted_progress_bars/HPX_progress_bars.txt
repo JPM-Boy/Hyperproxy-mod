@@ -158,3 +158,35 @@ usa_bar = {
 
 	default = yes
 }
+
+china_militar = {
+	name = china_militar
+	desc = china_militar
+
+	start_value = 20
+	min_value = 0
+	max_value = 100
+
+	default_green = yes
+}
+
+china_party = {
+	name = china_party
+	desc = china_party
+
+	start_value = 65
+	min_value = 0
+	max_value = 100
+
+	default_bad = yes
+}
+china_civil = {
+	name = china_civil
+	desc = china_civil
+
+	start_value = 15
+	min_value = 0
+	max_value = 100
+
+	default = yes
+}

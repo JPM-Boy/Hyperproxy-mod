@@ -8,7 +8,7 @@
 	ig_leader = yes
     birth_date = 1914.3.1
     interest_group = ig_orthodox_communist
-    ideology = ideology_maoism
+    ideology = ideology_ultramaoism
 }
 
 lin_biao = {
@@ -16,6 +16,7 @@ lin_biao = {
 	last_name = "Biao"
 	culture = cu:han
 	ruler = yes
+	historical = yes
 	ig_leader = yes
 	birth_date = 1907.12.5
 	interest_group = ig_orthodox_communist
@@ -27,6 +28,7 @@ xu_xiangqian = {
 	last_name = "Xiangqian"
 	culture = cu:han
 	ruler = yes
+	historical = yes
 	ig_leader = yes
 	birth_date = 1901.11.8
 	interest_group = ig_orthodox_communist
@@ -39,6 +41,7 @@ hua_guofeng = {
 	culture = cu:han
 	ruler = yes
 	ig_leader = yes
+	historical = yes
 	birth_date = 1921.2.16
 	interest_group = ig_orthodox_communist
 	ideology = ideology_maoism_reformism
@@ -49,8 +52,88 @@ zhou_enlai = {
 	last_name = "Enlai"
 	culture = cu:han
 	ruler = yes
+	historical = yes
 	ig_leader = yes
 	birth_date = 1898.3.5
 	interest_group = ig_reformist_communist
+	ideology = ideology_maoism_reformism
+}
+
+li_xiannian = {
+	first_name = "Li"
+	last_name = "Xiannian"
+	culture = cu:han
+	ruler = yes
+	historical = yes
+	ig_leader = yes
+	birth_date = 1909.6.23
+	interest_group = ig_orthodox_communist
+	ideology = ideology_maoism
+}
+
+deng_xiaoping = {
+	first_name = "Deng"
+	last_name = "Xiaoping"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1904.8.22
+	interest_group = ig_reformist_communist
+	ideology = ideology_maoism_liberal
+}
+deng_liqun = {
+	first_name = "Deng"
+	last_name = "Liqun"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1915.11.27
+	interest_group = ig_orthodox_communist
+	ideology = ideology_ultramaoism
+}
+peng_zhen = {
+	first_name = "Peng"
+	last_name = "Zhen"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1902.10.12
+	interest_group = ig_orthodox_communist
+	ideology = ideology_maoism_reformism
+}
+bo_yibo = {
+	first_name = "Bo"
+	last_name = "Yibo"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1908.2.17
+	interest_group = ig_reformist_communist
+	ideology = ideology_maoism_liberal
+}
+chen_xilian = {
+	first_name = "Chen"
+	last_name = "Xilian"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1915.1.4
+	interest_group = ig_orthodox_communist
+	ideology = ideology_maoism
+}
+su_zhenhua = {
+	first_name = "Su"
+	last_name = "Zhenhua"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1912.6.2
+	interest_group = ig_orthodox_communist
 	ideology = ideology_maoism_reformism
 }

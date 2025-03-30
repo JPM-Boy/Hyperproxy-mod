@@ -1,15 +1,79 @@
 ﻿l_english:
  je_hpx_prc_cultural_revolution: "Cultural Revolution"
  je_hpx_prc_cultural_revolution_reason: "@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!\nNumber of #r Maoist#! characters in #r China#!: #r [GetPlayer.MakeScope.Var('maoists').GetValue]#!\nNumber of #b;O Moderate Reformists#! characters in #b;O China#!: #b;O [GetPlayer.MakeScope.Var('reformists').GetValue]#!\nNumber of #yellow;b Liberal Reformists#! characters in #yellow;b China#!: #yellow;b [GetPlayer.MakeScope.Var('liberals').GetValue]#!\n@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!\nThe #yellow Cultural Revolution#! is a mass political movement launched by #yellow Mao Zedong#! to reinforce #yellow Communist Party#! control and eliminate 'bourgeois' influences. Led by the #yellow Red Guards#!, the movement targets so-called counter-revolutionaries, leading to widespread #yellow purges#! of officials, intellectuals, and military leaders. Schools, workplaces, and even families are torn apart as loyalty to the #yellow Maoist ideology#! becomes the defining factor for survival. With the party in turmoil, the fate of China hangs in the balance."
- je_hpx_prc_transitional_chairman: "Transitional Chairman?"
+ je_hpx_prc_transitional_chairman: "Transitional Chairman"
+ je_hpx_prc_transitional_chairman_reason: "With the death of the Great Chairman, the struggle for succession has erupted within the #yellow Communist Party#!. Factions loyal to different ideological visions clash, each seeking to shape the future of China. Though the new chairman has assumed power, their position remains fragile—rivals within the party bureaucracy, the military, and regional leadership openly challenge their authority. Some demand continuity with past policies, while others push for economic or political reform. If the chairman fails to consolidate power quickly, they risk being sidelined—or purged—as another faction seizes control of the revolution’s legacy."
 
  hpx_china.1.t: "Cultural Revolution: Purge"
  hpx_china.1.d: "The Cultural Revolution escalates as Mao demands the removal of enemies within. Party officials, intellectuals, and military officers face accusations of disloyalty. The Red Guards push for harsher purges—who shall be targeted to safeguard the revolution?"
  hpx_china.1.f: "It is man's social being that determines his thinking. Once the correct ideas characteristic of the advanced class are grasped by the masses, these ideas turn into a material force which changes society and changes the world.\n -- Mao Zedong"
  hpx_china.1.a: "The party can't keep trusting on [SCOPE.sCharacter('reformist_purged').GetFullName]"
  hpx_china.1.b: "The party can't keep trusting on [SCOPE.sCharacter('liberal_purged').GetFullName]"
+ hpx_china.1.c: "The party can't keep trusting on [SCOPE.sCharacter('maoist_purged').GetFullName]"
+
+ hpx_china.2.t: "Lin Biao Incident"
+ hpx_china.2.d: "We got some information that our planned successor Lin Biao is planning a coup since some months ago, we are not sure if the information is true or not, but should we do a preventive operation?"
+ hpx_china.2.f: "If the proletariat does not occupy the positions in literature and art, the bourgeoisie certainly will. This is inevitable. And it represents an extremely broad and deep socialist revolution in the realm of ideology. If things are not done properly, revisionism will prevail.\n -- Lin Biao"
+ hpx_china.2.a: "#yellow Lin Biao#! dies in a Plane Crash."
+ hpx_china.2.b: "#yellow Lin Biao#! does not die in a Plane Crash."
+
+ hpx_china.3.t: "[ROOT.GetCountry.GetRuler.GetFullName] Outmaneuvered!"
+ hpx_china.3.d: "The chairman has been outmaneuvered. Facing opposition from party elites and military officials, their grip on power collapsed. A rival has seized control, marking a decisive shift in the #yellow Communist Party#! leadership."
+ hpx_china.3.f: "China completed in the main the socialist transformation of the ownership of the means of production in 1956. From then on, a new question confronted the Chinese revolution - whether contradictions, classes and class struggle still exist in socialist society, whether it remains necessary to continue the socialist revolution and how this revolution is to be carried on. This is also a question for which no correct answer has been found in the international communist movement for a long time.\n -- Hua Guofeng"
+ hpx_china.3.a: "[ROOT.GetCountry.GetRuler.GetFullName] will retire in the Countryside."
+
+ hpx_china.4.t: "Movement in the Party"
+ hpx_china.4.d: "Shifts within the #yellow Communist Party#! have begun as different factions maneuver for influence. Key figures rise and fall as internal alliances shift, shaping the direction of the government."
+ hpx_china.4.f: "The halls of power are never static. One moment, an official holds great influence; the next, they are sidelined by political currents beyond their control."
+
+ hpx_china.5.t: "Empower the Provincial Members"
+ hpx_china.5.d: "Regional party leaders are gaining greater influence as power is distributed beyond the central government. Their role in policymaking and governance is expanding, potentially shifting the balance of authority."
+ hpx_china.5.f: "Strengthening the provinces allows for more responsive governance, but too much autonomy risks weakening central control."
+
+ hpx_china.6.t: "Military Training in Xinjiang"
+ hpx_china.6.d: "Military training operations have been expanded in #yellow Xinjiang#!, aiming to bolster security and maintain stability in the strategically vital region."
+ hpx_china.6.f: "Soldiers march through the rugged terrain, their drills echoing through the mountains and deserts. With every exercise, the region’s military presence grows stronger."
+
+ hpx_china.7.t: "Offer Extra-Autonomy to Xinjiang"
+ hpx_china.7.d: "To ease tensions in #yellow Xinjiang#!, the government is offering greater autonomy, hoping to maintain stability while preventing unrest or separatist sentiment."
+ hpx_china.7.f: "A careful balance must be struck—too little autonomy could fuel discontent, but too much might embolden ambitions for independence."
+
+ hpx_china.8.t: "Re-Balance the Civilian and Military Government"
+ hpx_china.8.d: "The relationship between civilian leadership and the military is being reconsidered. Some advocate for reducing military influence, while others insist on its necessity for national stability."
+ hpx_china.8.f: "A state too reliant on the military risks internal instability, yet one that weakens it too much may be unprepared for external threats."
+
+ hpx_china.9.t: "Centralize more Powers to Beijing"
+ hpx_china.9.d: "The central government is consolidating more power in #yellow Beijing#!, ensuring that regional leadership remains firmly under the control of the party leadership."
+ hpx_china.9.f: "Decisions must be made with a firm hand. The further authority is extended from the capital, the more difficult it is to maintain unity."
+
+ hpx_china.10.t: "Industrialization of the Regions"
+ hpx_china.10.d: "A new push for industrialization aims to transform underdeveloped regions into productive economic hubs, accelerating modernization efforts across the country."
+ hpx_china.10.f: "Factories rise where farmland once lay, smokestacks painting the sky with the marks of progress. Industrialization reshapes the nation, for better or worse."
+
+ hpx_china.11.t: "Promote new Party Members"
+ hpx_china.11.d: "A new wave of party members is being promoted, bringing fresh energy and ideas into the government. Their loyalty and political alignment will shape the future of the party."
+ hpx_china.11.f: "Rejuvenation is essential for the party's survival. But with new members comes uncertainty—who will prove to be the most loyal, and who will seek to challenge the status quo?"
+
+
+ hpx_china.12.t: "Republic of China Border Operations"
+ hpx_china.12.d: "Border tensions with the #yellow Republic of China#! have escalated, prompting new operations to secure contested areas and reaffirm territorial claims."
+ hpx_china.12.f: "Along the border, soldiers stand watch, knowing that at any moment, a single misstep could spark a larger confrontation."
+
+ hpx_china.end: "The Party is looking forwards for National Congress"
 
  maoist_purge: "Purge in the Party"
  recent_purge: "Recent Purge"
+ transitional_china: "Transitional Government"
+ cultural_revolution: "Cultural Revolution"
  MAO_DEATH: "#r Mao Zedong is not alive."
+ SOLIDIFIED_CHAIRMAN: "#r [ROOT.GetCountry.GetRuler.GetFullName] has solidified his rule."
  maoist_purge_desc: "We got some files about certain members of our party..."
+
+ challenge_chairman: "#bold A Challenger has arrived!#!"
+ challenge_chairman_desc: "We could overmaneuver the current Chairman in the Congress..."
+ solidify_chairman: "#bold Solidify your rule#!"
+ solidify_chairman_desc: "Make clear to the party that you are the Successor of Mao Zedong."
+
+ china_party: "Power of the Party - #r [GetPlayer.MakeScope.Var('party').GetValue]%#!"
+ china_civil: "Power of the Civilian Government - #blue;bold [GetPlayer.MakeScope.Var('civil').GetValue]%#!"
+ china_militar: "Power of the Militar Government - #green;bold [GetPlayer.MakeScope.Var('militar').GetValue]%#!"

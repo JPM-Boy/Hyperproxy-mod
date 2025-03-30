@@ -190,3 +190,14 @@ china_civil = {
 
 	default = yes
 }
+
+chinese_revolution = {
+	name = chinese_revolution
+	desc = chinese_revolution
+
+	start_value = 0
+	min_value = 0
+	max_value = 100
+
+	default_bad = yes
+}

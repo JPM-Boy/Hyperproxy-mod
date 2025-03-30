@@ -7,8 +7,7 @@
 	}
 
 	possible = {
-		always = yes
-		# NOT = {has_modifier = recent_purge}
+		NOT = {has_modifier = recent_purge}
 	}
 	effect = {
 		add_modifier = { name = recent_purge months = 12 }

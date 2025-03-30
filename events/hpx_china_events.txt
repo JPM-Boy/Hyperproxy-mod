@@ -22,16 +22,22 @@ hpx_china.1 = { # Occupation of Rome
 
 		random_scope_character = {
 			limit = {
-				has_ideology = ideology:ideology_maoism_liberal
+				OR = {
+					has_ideology = ideology:ideology_maoism_liberal
+					has_ideology = ideology:ideology_democratic_marxism
+				}
 			}
 			save_scope_as = liberal_purged
 		}
 
 		random_scope_character = {
 			limit = {
-				AND = {
-					has_ideology = ideology:ideology_maoism
-					is_ruler = no
+				OR = {
+					AND = {
+						has_ideology = ideology:ideology_maoism
+						is_ruler = no
+					}
+					has_ideology = ideology:ideology_ultramaoism
 				}
 			}
 			save_scope_as = maoist_purged
@@ -145,7 +151,7 @@ hpx_china.5 = {
 
 	option = {
 		name = hpx_china.7.t
-		change_variable = { name = party add = 20 }
+		change_variable = { name = civil add = 20 }
 		trigger_event = {id = hpx_china.7 days = 45 }
 	}
 	option = {

@@ -8,6 +8,23 @@
 on_half_yearly_pulse_country = {
 	on_actions = {
 		on_bpm_half_yearly_pulse_country
+		hpx_china_tension_je
+	}
+}
+
+hpx_china_tension_je = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					game_date > 1984.12.31
+					NOT = { has_variable = 1989_incident }
+					c:CHI ?= this
+				}
+			}
+			set_variable = 1989_incident
+			add_journal_entry = { type = je_hpx_internal_revolution }
+		}
 	}
 }
 

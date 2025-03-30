@@ -3,6 +3,8 @@
  je_hpx_prc_cultural_revolution_reason: "@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!\nNumber of #r Maoist#! characters in #r China#!: #r [GetPlayer.MakeScope.Var('maoists').GetValue]#!\nNumber of #b;O Moderate Reformists#! characters in #b;O China#!: #b;O [GetPlayer.MakeScope.Var('reformists').GetValue]#!\nNumber of #yellow;b Liberal Reformists#! characters in #yellow;b China#!: #yellow;b [GetPlayer.MakeScope.Var('liberals').GetValue]#!\n@divider_start!@divider_mid!@divider_mid!@divider_mid!@divider_end!\nThe #yellow Cultural Revolution#! is a mass political movement launched by #yellow Mao Zedong#! to reinforce #yellow Communist Party#! control and eliminate 'bourgeois' influences. Led by the #yellow Red Guards#!, the movement targets so-called counter-revolutionaries, leading to widespread #yellow purges#! of officials, intellectuals, and military leaders. Schools, workplaces, and even families are torn apart as loyalty to the #yellow Maoist ideology#! becomes the defining factor for survival. With the party in turmoil, the fate of China hangs in the balance."
  je_hpx_prc_transitional_chairman: "Transitional Chairman"
  je_hpx_prc_transitional_chairman_reason: "With the death of the Great Chairman, the struggle for succession has erupted within the #yellow Communist Party#!. Factions loyal to different ideological visions clash, each seeking to shape the future of China. Though the new chairman has assumed power, their position remains fragile—rivals within the party bureaucracy, the military, and regional leadership openly challenge their authority. Some demand continuity with past policies, while others push for economic or political reform. If the chairman fails to consolidate power quickly, they risk being sidelined—or purged—as another faction seizes control of the revolution’s legacy."
+ je_hpx_internal_revolution: "Internal Revolution"
+
 
  hpx_china.1.t: "Cultural Revolution: Purge"
  hpx_china.1.d: "The Cultural Revolution escalates as Mao demands the removal of enemies within. Party officials, intellectuals, and military officers face accusations of disloyalty. The Red Guards push for harsher purges—who shall be targeted to safeguard the revolution?"
@@ -59,7 +61,7 @@
  hpx_china.12.d: "Border tensions with the #yellow Republic of China#! have escalated, prompting new operations to secure contested areas and reaffirm territorial claims."
  hpx_china.12.f: "Along the border, soldiers stand watch, knowing that at any moment, a single misstep could spark a larger confrontation."
 
- hpx_china.end: "The Party is looking forwards for National Congress"
+ hpx_china.end: "The Party is looking forwards for the National Congress"
 
  maoist_purge: "Purge in the Party"
  recent_purge: "Recent Purge"
@@ -77,3 +79,4 @@
  china_party: "Power of the Party - #r [GetPlayer.MakeScope.Var('party').GetValue]%#!"
  china_civil: "Power of the Civilian Government - #blue;bold [GetPlayer.MakeScope.Var('civil').GetValue]%#!"
  china_militar: "Power of the Militar Government - #green;bold [GetPlayer.MakeScope.Var('militar').GetValue]%#!"
+ chinese_revolution: "Progress of the Protests - #r [GetPlayer.MakeScope.Var('internal_revolution').GetValue]%#!"

@@ -52,3 +52,20 @@ calculate_china_factions = {
         }
     }
 }
+
+calculate_internal_revolution = {
+    set_variable = {name = internal_revolution_aid value = 0}
+    change_variable = { name = internal_revolution_aid
+        add = var:liberals
+        multiply = 0.5
+    }
+    change_variable = { name = internal_revolution
+        add = var:internal_revolution_aid
+    }
+    je:je_hpx_prc_transitional_chairman ?= {
+        set_bar_progress = {
+            value = var:internal_revolution
+            name = chinese_revolution
+        }
+    }
+}

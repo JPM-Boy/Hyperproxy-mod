@@ -137,3 +137,49 @@ su_zhenhua = {
 	interest_group = ig_orthodox_communist
 	ideology = ideology_maoism_reformism
 }
+ye_jianying = {
+	first_name = "Ye"
+	last_name = "Jianying"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1897.4.28
+	interest_group = ig_reformist_communist
+	ideology = ideology_maoism_reformism
+
+}
+chen_yun = {
+	first_name = "Chen"
+	last_name = "Yun"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1905.6.13
+	interest_group = ig_reformist_communist
+	ideology = ideology_maoism_reformism
+}
+hu_yaobang = {
+	first_name = "Hu"
+	last_name = "Yaobang"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1915.11.20
+	interest_group = ig_new_leftism
+	ideology = ideology_democratic_marxism
+}
+zhao_ziyang = {
+	first_name = "Zhao"
+	last_name = "Ziyang"
+	culture = cu:han
+	ruler = yes
+	ig_leader = yes
+	historical = yes
+	birth_date = 1919.10.17
+	interest_group = ig_new_leftism
+	ideology = ideology_democratic_marxism
+
+}

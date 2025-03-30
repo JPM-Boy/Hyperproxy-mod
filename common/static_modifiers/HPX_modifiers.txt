@@ -176,6 +176,6 @@ transitional_china = {
 
 recent_purge = {
     icon = gfx/interface/icons/timed_modifier_icons/PRC.dds
-    country_loyalists_from_legitimacy_mult = 0.5
-    country_radicals_from_legitimacy_mult = -0.5
+    country_loyalists_from_legitimacy_mult = 0.2
+    country_radicals_from_legitimacy_mult = -0.2
 }

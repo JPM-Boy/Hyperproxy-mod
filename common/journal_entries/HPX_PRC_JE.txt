@@ -130,8 +130,7 @@ je_hpx_prc_transitional_chairman = {
 	}
 
 	on_timeout = {
-		hidden_effect = {
-			if = {
+		if = {
 				## PARTY ##
 				limit = {
 					AND = {
@@ -157,7 +156,8 @@ je_hpx_prc_transitional_chairman = {
 						template = bo_yibo
 					}
 				}
-			} else_if = {
+			}
+		else_if = {
 				## CIVIL ##
 				limit = {
 					AND = {
@@ -171,7 +171,8 @@ je_hpx_prc_transitional_chairman = {
 						template = deng_xiaoping
 					}
 				}
-			} else_if = {
+			}
+		else_if = {
 				## MILITAR ##
 				limit = {
 					AND = {
@@ -192,6 +193,28 @@ je_hpx_prc_transitional_chairman = {
 					}
 				}
 			}
+	}
+}
+
+je_hpx_internal_revolution = {
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	weight = 1000
+
+	immediate = {
+		set_variable = { name = internal_revolution value = 0 }
+		set_variable = { name = internal_revolution_aid value = 0}
+		calculate_china_characters = yes
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			calculate_china_characters = yes
+			calculate_internal_revolution = yes
 		}
 	}
+
+	scripted_progress_bar = chinese_revolution
+
 }

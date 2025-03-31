@@ -179,3 +179,21 @@ recent_purge = {
     country_loyalists_from_legitimacy_mult = 0.2
     country_radicals_from_legitimacy_mult = -0.2
 }
+
+growing_protests = {
+    icon = gfx/interface/icons/timed_modifier_icons/PRC.dds
+    state_radicals_and_loyalists_from_sol_change_mult = 0.35
+    state_radicalism_increases_full_acceptance_mult = 1
+}
+
+china_pariah = {
+    icon = gfx/interface/icons/timed_modifier_icons/PRC.dds
+    country_infamy_decay_mult = -0.5
+    country_improve_relations_speed_mult = -0.33
+    country_prestige_add = -50
+}
+unprepared_army = {
+    icon = gfx/interface/icons/timed_modifier_icons/PRC.dds
+    unit_army_offense_mult = -0.5
+    unit_army_defense_mult = -0.33
+}

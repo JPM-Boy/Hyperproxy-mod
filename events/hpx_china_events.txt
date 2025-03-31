@@ -335,3 +335,96 @@ hpx_china.12 = {
 		name = hpx_china.end
 	}
 }
+hpx_china.13 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.13.t
+	desc = hpx_china.13.d
+	flavor = hpx_china.13.f
+	duration = 2
+
+	option = {
+		name = hpx_china.13.a
+		every_scope_character = {
+			limit = {
+				is_ruler = no
+				OR = {
+					has_ideology = ideology:ideology_maoism_liberal
+					has_ideology = ideology:ideology_democratic_marxism
+				}
+			}
+			set_ideology = ideology:ideology_maoism_reformism
+		}
+		set_variable = tiananmen_tanks
+		add_modifier = { name = china_pariah years = 30 }
+		kill_population = { value = 800 }
+	}
+	option = {
+		trigger	= { NOT = {has_variable = jiang_qing}}
+		show_as_unavailable = { always = yes }
+		name = hpx_china.13.b
+	}
+}
+hpx_china.14 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/timed_modifier_icons/PRC.dds"
+	title = hpx_china.14.t
+	desc = hpx_china.14.d
+	flavor = hpx_china.14.f
+	duration = 2
+
+	immediate = {
+		create_country = {
+			tag = XIN
+			origin = c:CHI
+			on_created = {bpm_setup_country = yes}
+			state = s:STATE_DZUNGARIA.region_state:CHI
+		}
+		s:STATE_TIANSHAN = {
+			every_scope_state = {
+				limit = { owner = c:CHI }
+				set_state_owner = c:XIN
+			}
+		}
+		create_country = {
+			tag = MCH
+			origin = c:CHI
+			on_created = {bpm_setup_country = yes}
+			state = s:STATE_SOUTHERN_MANCHURIA.region_state:CHI
+		}
+		s:STATE_NORTHERN_MANCHURIA = {
+			every_scope_state = {
+				limit = { owner = c:CHI }
+				set_state_owner = c:MCH
+			}
+		}
+		s:STATE_SHENGJING = {
+			every_scope_state = {
+				limit = { owner = c:CHI }
+				set_state_owner = c:MCH
+			}
+		}
+	}
+
+	option = {
+		name = hpx_china.14.a
+		create_diplomatic_pact = { type = puppet country = c:XIN }
+		create_diplomatic_pact = { type = puppet country = c:MCH }
+
+	}
+
+	option = {
+		name = hpx_china.14.b
+		create_diplomatic_play = { type = dp_annex_war target_country = c:XIN  }
+		create_diplomatic_play = { type = dp_annex_war target_country = c:MCH }
+
+	}
+}

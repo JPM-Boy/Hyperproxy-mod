@@ -409,3 +409,25 @@ URL = { #URAL
 
 	capital = STATE_URAL
 }
+MCH = { #Manchuria
+	color = rgb { 189 70 94 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { manchu han }
+
+	capital = STATE_SOUTHERN_MANCHURIA
+}
+XIN = { #Xinjiang
+	color = rgb { 189 106 70 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { uighur han }
+
+	capital = STATE_DZUNGARIA
+}

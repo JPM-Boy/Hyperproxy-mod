@@ -71,3 +71,174 @@ solidify_chairman = {
 		base = 500
 	}
 }
+liberal_purge = {
+	name = "liberal_purge"
+	desc = "liberal_purge_desc"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		NOT = {has_modifier = recent_purge}
+		var:internal_revolution >= 50
+	}
+	effect = {
+		add_modifier = { name = recent_purge months = 1 }
+		add_loyalists = { value = 0.05 }
+		hidden_effect = {
+			random_scope_character = {
+				limit = {
+					is_ruler = no
+					OR = {
+						has_ideology = ideology:ideology_maoism_liberal
+						has_ideology = ideology:ideology_democratic_marxism
+					}
+				}
+				interest_group = {
+					save_scope_as = IG
+				}
+				kill_character = yes
+			}
+			scope:IG.leader = {
+				set_ideology = ideology:ideology_maoism
+				random = {
+					chance = 50
+					set_ideology = ideology:ideology_maoism_reformism
+				}
+			}
+		}
+
+		calculate_china_characters = yes
+	}
+
+	ai_chance = {
+		base = 500
+	}
+}
+liberalize_party = {
+	name = "liberalize_party"
+	desc = "liberalize_party_desc"
+
+	visible = {
+		var:internal_revolution >= 90
+	}
+
+	possible = {
+		NOT = {has_variable = liberal_party}
+		var:internal_revolution >= 90
+	}
+
+	ai_chance = {
+		base = 500
+	}
+
+	effect = {
+		set_variable = liberal_party
+		if = { ## Ye Jianying ##
+			limit = {
+				ruler = {
+					OR = {
+						has_template = lin_biao
+						has_template = deng_liqun
+						has_template = li_xiannian
+						has_template = chen_xilian
+					}
+				}
+			}
+			create_character = {
+				template = ye_jianying
+			}
+		}
+		if = { ## Chen Yun ##
+			limit = {
+				ruler = {
+					OR = {
+						has_template = xu_xiangqian
+						has_template = peng_zhen
+						has_template = su_zhenhua
+					}
+				}
+			}
+			create_character = {
+				template = chen_yun
+			}
+		}
+		if = { ## Hu Yaobang ##
+			limit = {
+				ruler = {
+					has_template = hua_guofeng
+				}
+			}
+			create_character = {
+				template = hu_yaobang
+			}
+		}
+		if = { ## Zhao Ziyang ##
+			limit = {
+				ruler = {
+					OR = {
+						has_template = zhou_enlai
+						has_template = bo_yibo
+					}
+				}
+			}
+			create_character = {
+				template = zhao_ziyang
+			}
+		}
+		if = {
+			limit = { ruler = {has_template = deng_xiaoping} }
+			random_list = {
+				50 = {
+					create_character = {
+						template = zhao_ziyang
+					}
+				}
+				50 = {
+					create_character = {
+						template = hu_yaobang
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_scope_character = {
+				limit = {
+					is_ruler = no
+					has_ideology = ideology:ideology_maoism_liberal
+				}
+				random = {
+					chance = 50
+					set_ideology = ideology:ideology_democratic_marxism
+				}
+			}
+			every_scope_character = {
+				limit = {
+					is_ruler = no
+					OR = {
+						has_ideology = ideology:ideology_ultramaoism
+						has_ideology = ideology:ideology_maoism
+					}
+				}
+				set_ideology = ideology:ideology_maoism_liberal
+				random = {
+					chance = 50
+					set_ideology = ideology:ideology_democratic_marxism
+				}
+			}
+			every_scope_character = {
+				limit = {
+					is_ruler = no
+					has_ideology = ideology:ideology_maoism_reformism
+				}
+				set_ideology = ideology:ideology_maoism_liberal
+				random = {
+					chance = 75
+					set_ideology = ideology:ideology_democratic_marxism
+				}
+			}
+		}
+	}
+
+}

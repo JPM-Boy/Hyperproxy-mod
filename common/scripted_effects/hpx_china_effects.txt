@@ -54,18 +54,67 @@ calculate_china_factions = {
 }
 
 calculate_internal_revolution = {
-    set_variable = {name = internal_revolution_aid value = 0}
-    change_variable = { name = internal_revolution_aid
-        add = var:liberals
-        multiply = 0.5
-    }
-    change_variable = { name = internal_revolution
-        add = var:internal_revolution_aid
-    }
-    je:je_hpx_prc_transitional_chairman ?= {
-        set_bar_progress = {
+    set_variable = {
+        name = internal_revolution
+        value = {
             value = var:internal_revolution
+            add = {
+                value = var:liberals
+                multiply = 0.5
+            }
+        }
+    }
+    je:je_hpx_internal_revolution ?= {
+        set_bar_progress = {
+            value = owner.var:internal_revolution
             name = chinese_revolution
         }
+    }
+    remove_modifier = growing_protests
+    if = {
+        limit = { var:internal_revolution >= 20 }
+        add_modifier = growing_protests
+    }
+    if = {
+        limit = { var:internal_revolution >= 30 }
+        random = {
+            chance = 50
+            random_scope_character = {
+                limit = {
+                    is_ruler = no
+                }
+                interest_group = {
+                    save_scope_as = IG
+                }
+                kill_character = yes
+            }
+            scope:IG.leader = {
+                set_ideology = ideology:ideology_maoism_liberal
+                random = {
+                    chance = 50
+                    set_ideology = ideology:ideology_democratic_marxism
+                }
+            }
+        }
+    }
+    if = {
+        limit = {
+            AND = {
+                var:internal_revolution >= 70
+                NOT = {has_variable = tiananmen_incident}
+            }
+        }
+        set_variable = tiananmen_incident
+        trigger_event = hpx_china.13
+    }
+    if = {
+        limit = {
+            AND = {
+                var:internal_revolution >= 80
+                NOT = {has_variable = autonomy_incident}
+            }
+        }
+        set_variable = autonomy_incident
+        trigger_event = hpx_china.14
     }
 }

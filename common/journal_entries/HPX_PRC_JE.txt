@@ -204,7 +204,6 @@ je_hpx_internal_revolution = {
 
 	immediate = {
 		set_variable = { name = internal_revolution value = 0 }
-		set_variable = { name = internal_revolution_aid value = 0}
 		calculate_china_characters = yes
 	}
 
@@ -215,6 +214,47 @@ je_hpx_internal_revolution = {
 		}
 	}
 
+	fail = {
+		custom_tooltip = {
+			text = TIANANMEN_TANKS
+			has_variable = tiananmen_tanks
+		}
+
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = WAR_WITH_ROC
+			var:internal_revolution >= 100
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = WAR_WITH_CHINA
+			c:TPG = {
+				create_diplomatic_play = {
+					type = dp_return_state
+					target_state = s:STATE_GUANGDONG.region_state:CHI
+					target_country = c:CHI
+					war = yes
+					add_war_goal = {holder = c:TPG type = return_state target_state = s:STATE_JIANGXI.region_state:CHI }
+					add_war_goal = {holder = c:TPG type = return_state target_state = s:STATE_GUANGXI.region_state:CHI }
+					add_war_goal = {holder = c:CHI type = return_state target_state = s:STATE_SOUTHERN_ANHUI.region_state:TPG }
+					add_war_goal = {holder = c:CHI type = return_state target_state = s:STATE_NANJING.region_state:TPG }
+					add_war_goal = {holder = c:CHI type = return_state target_state = s:STATE_SHAOZHOU.region_state:TPG }
+				}
+			}
+		}
+
+		add_modifier = {
+			name = unprepared_army
+			years = 5
+		}
+	}
+
 	scripted_progress_bar = chinese_revolution
+	scripted_button = liberal_purge
+	scripted_button = liberalize_party
 
 }

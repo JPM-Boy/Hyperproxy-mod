@@ -4,3 +4,4 @@ gui/HPX_organizations_main.gui = organization_panel
 gui/HPX_imf_main.gui = imf_window
 gui/HPX_eu_main.gui = eu_window
 gui/HPX_un_main.gui = un_window
+gui/HPX_USA_gov.gui = usa_gov_window

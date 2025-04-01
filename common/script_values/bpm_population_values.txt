@@ -5,6 +5,15 @@
 	}
 }
 
+hpx_total_population = {
+	value = 0
+	owner = {
+		every_scope_state = {
+			add = state_population
+		}
+	}
+}
+
 bpm_proletarian_popularity = {
 	value = 0
 	every_interest_group = {

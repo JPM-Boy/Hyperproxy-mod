@@ -40,6 +40,27 @@ hpx_misc.1 = { # Lore
 		this = {
 			save_scope_as = nation_scope
 		}
+		if = {
+			limit = {c:USA = this}
+			set_variable = {
+				name = state_divisor
+				value = {
+					add = bpm_total_population
+					divide = 435
+				}
+			}
+			every_scope_state = {
+				set_variable = {
+					name = seats
+					value = {
+						add = state_population
+						divide = owner.var:state_divisor
+						min = 1
+						round = yes
+					}
+				}
+			}
+		}
 	}
 	option = {
 		name = hpx_misc.1.a

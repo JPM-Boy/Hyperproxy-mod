@@ -11,6 +11,19 @@
         }
     }
 }
+toggle_usa_gov = {
+    effect = {
+        if = {
+            limit = {
+                has_variable = usa_gov
+            }
+            remove_variable = usa_gov
+        }
+        else = {
+            set_variable = usa_gov
+        }
+    }
+}
 toggle_imf = {
     effect = {
         if = {

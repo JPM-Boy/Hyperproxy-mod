@@ -123,3 +123,11 @@
 		}
 	}
 }
+je_hpx_usa_government = {
+	icon = "gfx/interface/icons/timed_modifier_icons/USA.dds"
+	group = je_group_internal_affairs
+	should_be_pinned_by_default = yes
+	weight = 10000
+
+	scripted_button = government_menu_button
+}

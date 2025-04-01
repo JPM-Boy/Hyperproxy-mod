@@ -564,6 +564,8 @@ bpm_ig_is_institutional = {
 			is_interest_group_type = ig_petty_bourgeoisie
 			is_interest_group_type = ig_rural_folk
 			is_interest_group_type = ig_minority
+			is_interest_group_type = ig_academia
+			is_interest_group_type = ig_security
 		}
 	}
 }

@@ -1,0 +1,316 @@
+﻿ fullscreen_block_window = {
+     name = "usa_gov_window"
+     size = { 100% 107% }
+     position = {0 -70}
+     layer = layer_ingame_window
+     visible = "[GetPlayer.MakeScope.Var('usa_gov').IsSet]"
+     blockoverride "animation_state_block" {
+        state = {
+            name = _show
+            # Close other open panels before showing this one
+            on_finish = "[InformationPanelBar.ClosePanel]"
+            on_finish = "[MapListPanelManager.CloseCurrentPanel]"
+        }
+    }
+     block "back_button_fullscreen" {
+        back_button_large = {
+            position = { 11 15 }
+            parentanchor = top|left
+            onclick = "[GetScriptedGui('toggle_usa_gov').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
+            input_action = "back"
+        }
+
+        close_button_large = {
+            name = "tutorial_highlight_close_button"
+            parentanchor = top|right
+            onclick = "[GetScriptedGui('toggle_usa_gov').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
+            shortcut = "close_window"
+            position = { -55 116 }
+        }
+    }
+     blockoverride "window_header_name"
+     {
+         text = "Government of the United States"
+         default_format = "#bold"
+     }
+     blockoverride "scrollarea_content" {
+         flowcontainer = {
+             direction = horizontal
+             parentanchor = topleft
+             flowcontainer = {
+                 direction = vertical
+                 flowcontainer = {
+                     direction = horizontal
+                     margin_top = 20
+                     margin_left = 20
+                     margin_right = 20
+                     spacing = 20
+                     background = {
+                         using = dark_area
+                         alpha = 0.35
+                     }
+                     flowcontainer = {
+                         parentanchor = hcenter|vcenter
+                         direction = vertical
+                         spacing = 10
+                         character_portrait_medium_torso = {
+                             datacontext = "[AccessPlayer.AccessRuler]"
+                             using = tooltip_above
+                             blockoverride "show_hat" {}
+                             blockoverride "highlight" {}
+                         }
+                         textbox = {
+                             using = fontsize_large
+                             text = "Vicepresident"
+                             align = center
+                             parentanchor = center|top
+                         }
+                         textbox = {
+                             margin_top = 20
+                             using = fontsize_large
+                             text = "[GetPlayer.GetRuler.GetFullName]"
+                             align = center
+                             parentanchor = center|top
+                         }
+                     }
+                     flowcontainer = {
+                         parentanchor = center|top
+                         direction = vertical
+                         spacing = 10
+                         textbox = {
+                             using = fontsize_large
+                             text = "[GetPlayer.GetRuler.GetFullNameWithTitle]"
+                             align = center
+                             parentanchor = center|top
+                         }
+                         character_portrait_xl_torso = {
+                             datacontext = "[AccessPlayer.AccessRuler]"
+                             using = tooltip_above
+                             blockoverride "show_hat" {}
+                             blockoverride "highlight" {}
+                         }
+                     }
+                     flowcontainer = {
+                         parentanchor = hcenter|vcenter
+                         direction = vertical
+                         spacing = 10
+                         character_portrait_medium_torso = {
+                             datacontext = "[AccessPlayer.AccessRuler]"
+                             using = tooltip_above
+                             blockoverride "show_hat" {}
+                             blockoverride "highlight" {}
+                         }
+                         textbox = {
+                             using = fontsize_large
+                             text = "House Speaker"
+                             align = center
+                             parentanchor = center|top
+                         }
+                         textbox = {
+                             margin_top = 20
+                             using = fontsize_large
+                             text = "[GetPlayer.GetRuler.GetFullName]"
+                             align = center
+                             parentanchor = center|top
+                         }
+                     }
+                 }
+                 textbox = {
+
+                     margin_top = 30
+                     align = center|nobaseline
+                     size = { 670 40 }
+                     using = fontsize_xl
+                     text = "#bold Governor Ideologies"
+                     margin_bottom = 40
+                 }
+                 flowcontainer = {
+                     spacing = 40
+                     direction = horizontal
+                     parentanchor = vcenter
+                     widget = {
+                         size = { 100 100 }
+                         background = {
+                             using = dark_area
+                             alpha = 0.35
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = simple_frame
+                         }
+                         vbox = {
+                             size = { 100 100 }
+                             icon = {
+                                 texture = "gfx/interface/icons/ig_icons/revolutionists.dds"
+                                 size = { 40 40 }
+                                 tooltip = "Communist Governors"
+                                 parentanchor = top|vcenter
+                             }
+                             textbox = { # Communist Governors
+                                 align = top|center
+                                 size = { 100 0 }
+                                 using = fontsize_large
+                                 text = "[GetPlayer.MakeScope.GetVariable('communist_governors').GetValue]"
+                             }
+                         }
+                     }
+                     widget = {
+                         size = { 100 100 }
+                         background = {
+                             using = dark_area
+                             alpha = 0.35
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = simple_frame
+                         }
+                         vbox = {
+                             size = { 100 100 }
+                             icon = {
+                                 texture = "gfx/interface/icons/ig_icons/socdem.dds"
+                                 tooltip = "Progressive Governors"
+                                 size = { 40 40 }
+                                 parentanchor = top|vcenter
+                             }
+                             textbox = { # Communist Governors
+                                 align = top|center
+                                 size = { 100 0 }
+                                 using = fontsize_large
+                                 text = "[GetPlayer.MakeScope.GetVariable('progressive_governors').GetValue]"
+                             }
+                         }
+                     }
+                     widget = {
+                         size = { 100 100 }
+                         background = {
+                             using = dark_area
+                             alpha = 0.35
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = simple_frame
+                         }
+                         vbox = {
+                             size = { 100 100 }
+                             icon = {
+                                 texture = "gfx/interface/icons/ig_icons/liberals.dds"
+                                 size = { 40 40 }
+                                 tooltip = "Liberal Governors"
+                                 parentanchor = top|vcenter
+                             }
+                             textbox = { # Communist Governors
+                                 align = top|center
+                                 size = { 100 0 }
+                                 using = fontsize_large
+                                 text = "[GetPlayer.MakeScope.GetVariable('liberal_governors').GetValue]"
+                             }
+                         }
+                     }
+                     widget = {
+                         size = { 100 100 }
+                         background = {
+                             using = dark_area
+                             alpha = 0.35
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = simple_frame
+                         }
+                         vbox = {
+                             size = { 100 100 }
+                             icon = {
+                                 texture = "gfx/interface/icons/ig_icons/conservatives.dds"
+                                 size = { 40 40 }
+                                 tooltip = "Conservative Governors"
+                                 parentanchor = top|vcenter
+                             }
+                             textbox = { # Communist Governors
+                                 align = top|center
+                                 size = { 100 0 }
+                                 using = fontsize_large
+                                 text = "[GetPlayer.MakeScope.GetVariable('conservative_governors').GetValue]"
+                             }
+                         }
+                     }
+                     widget = {
+                         size = { 100 100 }
+                         background = {
+                             using = dark_area
+                             alpha = 0.35
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = simple_frame
+                         }
+                         vbox = {
+                             size = { 100 100 }
+                             icon = {
+                                 texture = "gfx/interface/icons/ig_icons/reactionaries.dds"
+                                 size = { 40 40 }
+                                 tooltip = "Reactionary Governors"
+                                 parentanchor = top|vcenter
+                             }
+                             textbox = { # Communist Governors
+                                 align = top|center
+                                 size = { 100 0 }
+                                 using = fontsize_large
+                                 text = "[GetPlayer.MakeScope.GetVariable('reactionary_governors').GetValue]"
+                             }
+                         }
+                     }
+                 }
+             }
+             flowcontainer = {
+                 direction = vertical
+                 flowcontainer = {
+                     direction = horizontal
+                     widget = {
+                         size = {180 50}
+                         background = {
+                             using = dark_area
+                             using = frame_small_mask
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = frame_small
+                         }
+                         textbox = {
+                             text = "Far-Left"
+                             multiline = yes
+                             size = { 100% 100% }
+                             align = center
+                         }
+                     }
+                 }
+                 dynamicgridbox = {
+                     datamodel_wrap = 6
+                     flipdirection = yes
+                     datamodel = "[GetPlayer.MakeScope.GetList('states')]"
+                     item = {
+                         widget = {
+                             datacontext = "[Scope.AccessState]"
+                             size = { 180 50 }
+                             background = {
+                                 using = simple_header_colored
+                                 color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                             icon = {
+                                 size = {100% 100%}
+                                 using = simple_frame
+                             }
+                             textbox = {
+                                 text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
+                                 multiline = yes
+                                 size = { 100% 100% }
+                                 align = center
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+}
+

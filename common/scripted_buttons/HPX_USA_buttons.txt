@@ -1,0 +1,19 @@
+﻿government_menu_button = {
+	name = "government_menu_button"
+	desc = "government_menu_button"
+
+	visible = {
+		always = yes
+	}
+
+	possible = {
+		always = yes
+	}
+	effect = {
+		set_variable = usa_gov
+	}
+
+	ai_chance = {
+		base = 1000
+	}
+}

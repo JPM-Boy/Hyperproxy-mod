@@ -1,30 +1,172 @@
 ﻿COUNTRIES = {
-		c:ARG = {
-			start_militar = yes
-			activate_law = law_type:law_technocracy
+	c:ARG = {
+		start_militar = yes
+		activate_law = law_type:law_technocracy
+	}
+	c:PTG = { start_communist = yes }
+	c:ALT = { start_communist = yes }
+	c:MAY = { start_communist = yes }
+	c:CUB = { start_communist = yes }
+	c:NIC = { start_communist = yes }
+	c:BOL = { start_communist = yes }
+	c:USA = {
+		start_presidential = yes
+	}
+	c:CAN = {
+		start_presidential = yes
+	}
+	c:MEX = { start_presidential = yes }
+	c:PEU = { start_presidential = yes }
+	c:CHL = { start_presidential = yes }
+	c:CLM = { start_presidential = yes }
+	c:VNZ = { start_presidential = yes }
+	c:ECU = { start_presidential = yes }
+	c:BRZ = { start_presidential = yes }
+	c:USA = {
+		set_variable = {
+			name = imf_headquarters_holder
+			value = 0
 		}
-		c:PTG = { start_communist = yes }
-		c:ALT = { start_communist = yes }
-		c:MAY = { start_communist = yes }
-		c:CUB = { start_communist = yes }
-		c:NIC = { start_communist = yes }
-		c:BOL = { start_communist = yes }
-		c:USA = {
-			start_presidential = yes
+		set_variable = uses_governor_system
+		add_journal_entry = {
+			type = je_hpx_usa_government
 		}
-		c:CAN = {
-			start_presidential = yes
+		set_variable = {
+			# ig_liberal
+			# ig_classical_liberal
+			name = liberal_governors
+			value = 0
 		}
-		c:MEX = { start_presidential = yes }
-		c:PEU = { start_presidential = yes }
-		c:CHL = { start_presidential = yes }
-		c:CLM = { start_presidential = yes }
-		c:VNZ = { start_presidential = yes }
-		c:ECU = { start_presidential = yes }
-		c:BRZ = { start_presidential = yes }
-		c:USA = {
+		set_variable = {
+			# ig_conservative
+			name = conservative_governors
+			value = 0
+		}
+		set_variable = {
+			# Social Democrats
+			# New left
+			name = progressive_governors
+			value = 0
+		}
+		set_variable = {
+			# Refsoc
+			# Revsoc
+			name = communist_governors
+			value = 0
+		}
+		set_variable = {
+			# ig_reactionary
+			# Fascist
+			name = reactionary_governors
+			value = 0
+		}
+		set_variable = {
+			name = state_number
+			value = 52
+		}
+		every_scope_state = {
+			if = {
+				limit = {
+					AND = {
+						is_incorporated = yes
+						NOT = { this = capital }
+					}
+				}
+				owner = {
+					add_to_variable_list = {
+						name = states
+						target = prev
+					}
+				}
+			}
+			owner = {
+				random_interest_group = {
+					limit = {
+						bpm_ig_is_ideological = yes
+					}
+					save_scope_as = ig_governor
+				}
+			}
 			set_variable = {
-				name = imf_headquarters_holder
-				value = 0
+				name = governor
+				value = scope:ig_governor
+			}
+			if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_liberal
+							is_interest_group_type = ig_classical_liberal
+						}
+					}
+				}
+				owner = {
+					change_variable = {
+						name = liberal_governors
+						add = 1
+					}
+				}
+			} else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_cons
+						}
+					}
+				}
+				owner = {
+					change_variable = {
+						name = conservative_governors
+						add = 1
+					}
+				}
+			} else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_socdem
+							is_interest_group_type = ig_new_leftism
+						}
+					}
+				}
+				owner = {
+					change_variable = {
+						name = progressive_governors
+						add = 1
+					}
+				}
+			} else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_orthodox_communist
+							is_interest_group_type = ig_reformist_communist
+						}
+					}
+				}
+				owner = {
+					change_variable = {
+						name = communist_governors
+						add = 1
+					}
+				}
+			} else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_fascist
+							is_interest_group_type = ig_reactionary
+						}
+					}
+				}
+				owner = {
+					change_variable = {
+						name = reactionary_governors
+						add = 1
+					}
+				}
 			}
 		}
+
+	}
+}

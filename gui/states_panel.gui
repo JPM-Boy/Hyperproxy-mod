@@ -973,7 +973,7 @@ types state_panel_types
 					direction = vertical
 					spacing = -10
 					textbox = {
-						text = "#bold Governor"
+						text = "#bold Ideology"
 						autoresize = no
 						minimumsize = { 70 35 }
 						maximumsize = { 70 35 }

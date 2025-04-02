@@ -263,11 +263,12 @@
                  }
              }
              flowcontainer = {
-                 direction = vertical
+                 direction = horizontal
+                 spacing = 10
                  flowcontainer = {
-                     direction = horizontal
+                     direction = vertical
                      widget = {
-                         size = {180 50}
+                         size = {222 50}
                          background = {
                              using = dark_area
                              using = frame_small_mask
@@ -283,33 +284,214 @@
                              align = center
                          }
                      }
-                 }
-                 dynamicgridbox = {
-                     datamodel_wrap = 6
-                     flipdirection = yes
-                     datamodel = "[GetPlayer.MakeScope.GetList('states')]"
-                     item = {
-                         widget = {
-                             datacontext = "[Scope.AccessState]"
-                             size = { 180 50 }
-                             background = {
-                                 using = simple_header_colored
-                                 color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                             }
-                             icon = {
-                                 size = {100% 100%}
-                                 using = simple_frame
-                             }
-                             textbox = {
-                                 text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
-                                 multiline = yes
-                                 size = { 100% 100% }
-                                 align = center
+                     dynamicgridbox = {
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('communist_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     align = center
+                                 }
                              }
                          }
                      }
-                 }
+                 } #FAR LEFT
+                 flowcontainer = {
+                     direction = vertical
+                     widget = {
+                         size = {222 50}
+                         background = {
+                             using = dark_area
+                             using = frame_small_mask
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = frame_small
+                         }
+                         textbox = {
+                             text = "Left-Wing"
+                             multiline = yes
+                             size = { 100% 100% }
+                             align = center
+                         }
+                     }
+                     dynamicgridbox = {
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('progressive_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     align = center
+                                 }
+                             }
+                         }
+                     }
+                 } #LEFT WING
+                 flowcontainer = {
+                     direction = vertical
+                     widget = {
+                         size = {222 50}
+                         background = {
+                             using = dark_area
+                             using = frame_small_mask
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = frame_small
+                         }
+                         textbox = {
+                             text = "Center"
+                             multiline = yes
+                             size = { 100% 100% }
+                             align = center
+                         }
+                     }
+                     dynamicgridbox = {
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('liberal_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     align = center
+                                 }
+                             }
+                         }
+                     }
+                 } #CENTER LEFT
+                 flowcontainer = {
+                     direction = vertical
+                     widget = {
+                         size = {222 50}
+                         background = {
+                             using = dark_area
+                             using = frame_small_mask
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = frame_small
+                         }
+                         textbox = {
+                             text = "Right-Wing"
+                             multiline = yes
+                             size = { 100% 100% }
+                             align = center
+                         }
+                     }
+                     dynamicgridbox = {
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('conservative_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     align = center
+                                 }
+                             }
+                         }
+                     }
+                 } #RIGHT WING
+                 flowcontainer = {
+                     direction = vertical
+                     widget = {
+                         size = {222 50}
+                         background = {
+                             using = dark_area
+                             using = frame_small_mask
+                         }
+                         icon = {
+                             size = {100% 100%}
+                             using = frame_small
+                         }
+                         textbox = {
+                             text = "Far-Right"
+                             multiline = yes
+                             size = { 100% 100% }
+                             align = center
+                         }
+                     }
+                     dynamicgridbox = {
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('reactionary_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     align = center
+                                 }
+                             }
+                         }
+                     }
+                 } #RIGHT WING
              }
+
          }
      }
 }

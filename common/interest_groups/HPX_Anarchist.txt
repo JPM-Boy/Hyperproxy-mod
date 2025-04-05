@@ -3,10 +3,12 @@
 	texture = "gfx/interface/icons/ig_icons/anarchists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
 	index = 21
+
 	
 	ideologies = {
 		ideology_nonexistent
 	}
+
 
 	character_ideologies = {
 		ideology_center_leader
@@ -17,7 +19,7 @@
 	}
 	
 	enable = {
-		year > 2000
+		always = yes
 	}
 	
 	on_enable = {

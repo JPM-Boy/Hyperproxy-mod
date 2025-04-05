@@ -23,43 +23,19 @@
 	c:ECU = { start_presidential = yes }
 	c:BRZ = { start_presidential = yes }
 	c:USA = {
+		set_next_election_date = 1972.6.1
 		set_variable = {
 			name = imf_headquarters_holder
 			value = 0
 		}
 		set_variable = uses_governor_system
+		set_variable = american_parties
 		add_journal_entry = {
 			type = je_hpx_usa_government
 		}
-		set_variable = {
-			# ig_liberal
-			# ig_classical_liberal
-			name = liberal_governors
-			value = 0
-		}
-		set_variable = {
-			# ig_conservative
-			name = conservative_governors
-			value = 0
-		}
-		set_variable = {
-			# Social Democrats
-			# New left
-			name = progressive_governors
-			value = 0
-		}
-		set_variable = {
-			# Refsoc
-			# Revsoc
-			name = communist_governors
-			value = 0
-		}
-		set_variable = {
-			# ig_reactionary
-			# Fascist
-			name = reactionary_governors
-			value = 0
-		}
+		set_variable = { name = democrat_party_seats value = 304 }
+		set_variable = { name = republican_party_seats value = 234 }
+
 		set_variable = {
 			name = state_number
 			value = 52
@@ -67,103 +43,117 @@
 		every_scope_state = {
 			if = {
 				limit = {
-					AND = {
-						is_incorporated = yes
-						NOT = { this = capital }
-					}
+					is_incorporated = yes
+					is_capital = no
 				}
 				owner = {
 					add_to_variable_list = {
 						name = states
 						target = prev
 					}
+					random_interest_group = {
+						limit = {
+							OR = {
+								is_interest_group_type = ig_liberal
+								is_interest_group_type = ig_classical_liberal
+								is_interest_group_type = ig_socdem
+								is_interest_group_type = ig_cons
+								is_interest_group_type = ig_reactionary
+							}
+						}
+						save_scope_as = ig_governor
+					}
 				}
-			}
-			owner = {
-				random_interest_group = {
+				set_variable = {
+					name = governor
+					value = scope:ig_governor
+				}
+				if = {
 					limit = {
-						bpm_ig_is_ideological = yes
+						var:governor = {
+							OR = {
+								is_interest_group_type = ig_liberal
+							}
+						}
 					}
-					save_scope_as = ig_governor
+					save_scope_as = liberal_state
+					owner = {
+						add_to_variable_list = {
+							name = liberal_states
+							target = scope:liberal_state
+						}
+
+					}
 				}
-			}
-			set_variable = {
-				name = governor
-				value = scope:ig_governor
-			}
-			if = {
-				limit = {
-					var:governor = {
-						OR = {
-							is_interest_group_type = ig_liberal
-							is_interest_group_type = ig_classical_liberal
+				else_if = {
+					limit = {
+						var:governor = {
+							OR = {
+								is_interest_group_type = ig_cons
+								is_interest_group_type = ig_classical_liberal
+							}
+						}
+					}
+					save_scope_as = conservative_state
+
+					owner = {
+						add_to_variable_list = {
+							name = conservative_states
+							target = scope:conservative_state
 						}
 					}
 				}
-				owner = {
-					change_variable = {
-						name = liberal_governors
-						add = 1
+				else_if = {
+					limit = {
+						var:governor = {
+							OR = {
+								is_interest_group_type = ig_socdem
+							}
+						}
 					}
-				}
-			} else_if = {
-				limit = {
-					var:governor = {
-						OR = {
-							is_interest_group_type = ig_cons
+					save_scope_as = progressive_state
+					owner = {
+						add_to_variable_list = {
+							name = progressive_states
+							target = scope:progressive_state
 						}
 					}
 				}
-				owner = {
-					change_variable = {
-						name = conservative_governors
-						add = 1
+				else_if = {
+					limit = {
+						var:governor = {
+							OR = {
+								is_interest_group_type = ig_orthodox_communist
+								is_interest_group_type = ig_reformist_communist
+								is_interest_group_type = ig_new_leftism
+							}
+						}
 					}
-				}
-			} else_if = {
-				limit = {
-					var:governor = {
-						OR = {
-							is_interest_group_type = ig_socdem
-							is_interest_group_type = ig_new_leftism
+					save_scope_as = communist_state
+					owner = {
+						add_to_variable_list = {
+							name = communist_states
+							target = scope:communist_state
 						}
 					}
 				}
-				owner = {
-					change_variable = {
-						name = progressive_governors
-						add = 1
-					}
-				}
-			} else_if = {
-				limit = {
-					var:governor = {
-						OR = {
-							is_interest_group_type = ig_orthodox_communist
-							is_interest_group_type = ig_reformist_communist
+				else_if = {
+					limit = {
+						var:governor = {
+							OR = {
+								is_interest_group_type = ig_fascist
+								is_interest_group_type = ig_reactionary
+							}
 						}
 					}
-				}
-				owner = {
-					change_variable = {
-						name = communist_governors
-						add = 1
-					}
-				}
-			} else_if = {
-				limit = {
-					var:governor = {
-						OR = {
-							is_interest_group_type = ig_fascist
-							is_interest_group_type = ig_reactionary
+					save_scope_as = reactionary_state
+					owner = {
+						add_to_variable_list = {
+							name = reactionary_states
+							target = scope:reactionary_state
 						}
 					}
-				}
-				owner = {
-					change_variable = {
-						name = reactionary_governors
-						add = 1
-					}
+
 				}
 			}
 		}

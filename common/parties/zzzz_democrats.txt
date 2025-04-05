@@ -1,8 +1,8 @@
 ﻿# Bastion of the Intelligenstia, also appeals to Industrialists
 # Can sometimes sway PB and Rural Folk when they have common interests
 
-centre_right_party = {
-	color = hsv{ 0.16 1 0.9 }
+democrat_party = {
+	color = hsv{ 0.60 1 0.9 }
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -21,17 +21,17 @@ centre_right_party = {
 		}
 	}
 	icon = {
-		default = "/gfx/interface/icons/political_parties/liberal.dds"
+		default = "/gfx/interface/icons/political_parties/democrats.dds"
 	}
 	unlocking_technologies = {
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
-		NOT = {has_variable = american_parties}
+		has_variable = american_parties
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = centre_right_party } }
+		NOT = { bpm_is_party_banned = { PARTY = democrat_party } }
 		owner = {
 			country_has_voting_franchise = yes
 		}
@@ -85,7 +85,7 @@ centre_right_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_variable = centre_right_party_leader }
+				leader = { has_variable = democrat_party_leader }
 			}
 			add = {
 				value = 100
@@ -94,7 +94,7 @@ centre_right_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_variable = anti_centre_right_party_leader }
+				leader = { has_variable = anti_democrat_party_leader }
 			}
 			add = {
 				value = -100
@@ -104,7 +104,7 @@ centre_right_party = {
 		if = {
 			limit = {
 				var:bpm_current_party ?= {
-					is_party_type = centre_right_party
+					is_party_type = democrat_party
 					has_party_member = prev
 				}
 			}
@@ -226,7 +226,7 @@ centre_right_party = {
 		}
 		if = { # radicals will cooperate with weaker liberals
 			limit = {
-				is_interest_group_type = ig_prog
+				is_interest_group_type = ig_socdem
 				is_powerful = no
 				owner = {
 					any_interest_group = {
@@ -258,10 +258,10 @@ centre_right_party = {
 		if = { # armed forces will join if a more powerful member has jingoist leader
 			limit = {
 				is_interest_group_type = ig_armed_forces
-				exists = owner.py:centre_right_party
+				exists = owner.py:democrat_party
 				owner = {
 					any_interest_group = {
-						is_member_of_party = owner.py:centre_right_party
+						is_member_of_party = owner.py:democrat_party
 						is_powerful = yes
 						leader = { has_ideology = ideology:ideology_jingoist_leader }
 					}
@@ -440,41 +440,6 @@ centre_right_party = {
 				desc = "from_descentralism"
 			}
 		}
-		if = { # north andean and mexican liberals like descentralism
-			limit = {
-				owner = {
-					OR = {
-						country_has_primary_culture = cu:north_andean
-						country_has_primary_culture = cu:mexican
-					}
-				}
-				OR = {
-					has_ideology = ideology:ideology_sta_minimal_state
-					has_ideology = ideology:ideology_sta_decentralized_state
-					has_ideology = ideology:ideology_sta_federated_state
-				}
-			}
-			add = {
-				value = 10
-				desc = "from_descentralism"
-			}
-		}
-		if = { # platinean liberals like centralism
-			limit = {
-				owner = {
-					country_has_primary_culture = cu:platinean
-					NOT = { THIS = c:PRG }
-				}
-				OR = {
-					has_ideology = ideology:ideology_sta_powerful_state
-					has_ideology = ideology:ideology_sta_security_state
-				}
-			}
-			add = {
-				value = 10
-				desc = "from_centralism"
-			}
-		}
 		if = { # conservative-liberals don't love radicals
 			limit = {
 				bpm_ig_is_liberal_conservative = yes
@@ -482,7 +447,7 @@ centre_right_party = {
 					bpm_leader_is_radical_liberal = no
 				}
 				owner = {
-					py:centre_right_party ?= {
+					py:democrat_party ?= {
 						any_member = {
 							OR = {
 								bpm_ig_is_radical_liberal = yes
@@ -504,7 +469,7 @@ centre_right_party = {
 					leader = { bpm_leader_is_radical_liberal = yes }
 				}
 				owner = {
-					py:centre_right_party ?= {
+					py:democrat_party ?= {
 						any_member = {
 							bpm_ig_is_liberal_conservative = yes
 							leader = { bpm_leader_is_radical_liberal = no }
@@ -531,7 +496,7 @@ centre_right_party = {
 				}
 				owner = {
 					ig:ig_liberal = {
-						party ?= { is_party_type = centre_right_party }
+						party ?= { is_party_type = democrat_party }
 						leader = { bpm_leader_is_progressive_liberal = yes }
 					}
 				}
@@ -548,7 +513,7 @@ centre_right_party = {
 					any_interest_group = {
 						has_ideology = ideology:ideology_wel_paternalistic_welfare
 						has_party = yes
-						party = { is_party_type = centre_right_party }
+						party = { is_party_type = democrat_party }
 					}
 				}
 			}

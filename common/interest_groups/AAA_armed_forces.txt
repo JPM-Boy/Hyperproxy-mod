@@ -40,32 +40,6 @@
 				bpm_copy_variable_from_civil_war_origin = yes
 			}
 		}
-		# Caudillo Ideology
-		if = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:platinean
-					country_has_primary_culture = cu:south_andean
-					country_has_primary_culture = cu:north_andean
-					country_has_primary_culture = cu:central_american
-					country_has_primary_culture = cu:mexican
-				}
-			}
-			ig:ig_armed_forces = {
-				bpm_ig_make_caudillismo = yes
-			}
-		}
-		# Samurai
-		else_if = {
-			limit = {
-				country_has_primary_culture = cu:japanese
-				NOT = { has_global_variable = fall_of_the_samurai_global_var }
-			}
-			ig:ig_armed_forces = {
-				bpm_ig_make_samurai = yes
-				set_interest_group_name = ig_samurai
-			}
-		}
 	}
 	on_disable = {}
 	on_character_ig_membership = {}

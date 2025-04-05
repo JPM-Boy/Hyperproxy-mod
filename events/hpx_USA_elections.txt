@@ -1,0 +1,138 @@
+﻿namespace = hpx_usa_elections
+
+hpx_usa_elections.1 = { #REPUBLICAN PARTY
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.1.t
+	desc = hpx_usa_elections.1.d
+	flavor = hpx_usa_elections.1.f
+	duration = 2
+
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.1.reactionary
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_reactionary = {is_member_of_party = owner.py:republican_party}
+		}
+		hpx_republican_reactionary_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.1.fascist
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_fascist = {is_member_of_party = owner.py:republican_party}
+		}
+		hpx_republican_fascist_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.1.conservative
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_cons = {is_member_of_party = owner.py:republican_party}
+		}
+		hpx_republican_conservative_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.1.classical_liberal
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:republican_party}
+		}
+		hpx_republican_classical_liberal_candidate = yes
+	}
+}
+
+hpx_usa_elections.2 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.2.t
+	desc = hpx_usa_elections.2.d
+	flavor = hpx_usa_elections.2.f
+	duration = 2
+
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.2.liberal
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_liberal = {is_member_of_party = owner.py:democrat_party}
+		}
+		hpx_democrat_liberal_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.2.classical_liberal
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:democrat_party}
+		}
+		hpx_democrat_classical_liberal_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.2.socdem
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_socdem = {is_member_of_party = owner.py:democrat_party}
+		}
+		hpx_democrat_socdem_candidate = yes
+	}
+} #DEMOCRAT PARTY
+hpx_usa_elections.3 = { # REPUBLICAN PARTY OPPOSITION
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			20 = {
+				trigger = { owner.ig:ig_reactionary = {is_member_of_party = owner.py:republican_party} }
+				hpx_republican_reactionary_candidate = yes
+			}
+			20 = {
+				trigger = { owner.ig:ig_fascist = {is_member_of_party = owner.py:republican_party} }
+				hpx_republican_fascist_candidate = yes
+			}
+			20 = {
+				trigger = { owner.ig:ig_cons = {is_member_of_party = owner.py:republican_party} }
+				hpx_republican_conservative_candidate = yes
+			}
+			20 = {
+				trigger = { owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:republican_party} }
+				hpx_republican_classical_liberal_candidate = yes
+			}
+		}
+	}
+}
+hpx_usa_elections.4 = { # DEMOCRAT PARTY OPPOSITION
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			20 = {
+				trigger = {	owner.ig:ig_liberal = {is_member_of_party = owner.py:democrat_party} }
+				hpx_democrat_liberal_candidate = yes
+			}
+			20 = {
+				trigger = {	owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:democrat_party} }
+				hpx_democrat_classical_liberal_candidate = yes
+			}
+			20 = {
+				trigger = {	owner.ig:ig_socdem = {is_member_of_party = owner.py:democrat_party} }
+				hpx_democrat_socdem_candidate = yes
+			}
+		}
+	}
+}

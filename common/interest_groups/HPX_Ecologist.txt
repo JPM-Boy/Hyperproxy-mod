@@ -42,7 +42,7 @@ ig_ecologist = {
 	}
 	
 	pop_weight = {
-		value = 20	
+		value = 20
 
 		##### RURAL POP WEIGHTS ONLY #####
 		if = {

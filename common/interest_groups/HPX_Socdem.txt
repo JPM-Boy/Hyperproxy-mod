@@ -47,6 +47,20 @@ ig_socdem = {
 	pop_weight = {
 		value = 20
 
+		if = {
+			limit = {
+				state = {
+					var:governor ?= {
+						is_interest_group_type = ig_socdem
+					}
+				}
+			}
+			add = {
+				desc = "PROGRESSIVE_STATE"
+				value = 200
+			}
+		}
+
 		add = {
 			desc = "UNEMPLOYED"
 			if = {

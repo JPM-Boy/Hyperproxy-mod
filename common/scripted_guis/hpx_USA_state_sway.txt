@@ -1,0 +1,265 @@
+﻿sway_state_left = {
+    scope = state
+    effect = {
+        if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = reactionary_states
+                        THIS = root
+                    }
+                }
+            }
+            random_list = {
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_cons
+                    }
+                }
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_classical_liberal
+                    }
+                }
+            }
+
+            owner = {
+                remove_list_variable = {
+                    name = reactionary_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = conservative_states
+                    target = root
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = conservative_states
+                        THIS = root
+                    }
+                }
+            }
+            set_variable = {
+                name = governor
+                value = owner.ig:ig_liberal
+            }
+            owner = {
+                remove_list_variable = {
+                    name = conservative_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = liberal_states
+                    target = root
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = liberal_states
+                        THIS = root
+                    }
+                }
+            }
+            random_list = {
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_socdem
+                    }
+                }
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_new_leftism
+                    }
+                }
+            }
+            owner = {
+                remove_list_variable = {
+                    name = liberal_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = progressive_states
+                    target = root
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = progressive_states
+                        THIS = root
+                    }
+                }
+            }
+            random_list = {
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_orthodox_communist
+                    }
+                }
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_reformist_communist
+                    }
+                }
+            }
+            owner = {
+                remove_list_variable = {
+                    name = progressive_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = communist_states
+                    target = root
+                }
+            }
+        }
+    }
+}
+
+sway_state_right = {
+    scope = state
+    effect = {
+        if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = communist_states
+                        THIS = root
+                    }
+                }
+            }
+            random_list = {
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_socdem
+                    }
+                }
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_new_leftism
+                    }
+                }
+            }
+
+            owner = {
+                remove_list_variable = {
+                    name = communist_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = progressive_states
+                    target = root
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = progressive_states
+                        THIS = root
+                    }
+                }
+            }
+            set_variable = {
+                name = governor
+                value = owner.ig:ig_liberal
+            }
+            owner = {
+                remove_list_variable = {
+                    name = progressive_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = liberal_states
+                    target = root
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = liberal_states
+                        THIS = root
+                    }
+                }
+            }
+            random_list = {
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_cons
+                    }
+                }
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_classical_liberal
+                    }
+                }
+            }
+            owner = {
+                remove_list_variable = {
+                    name = liberal_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = conservative_states
+                    target = root
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    any_in_list = {
+                        variable = conservative_states
+                        THIS = root
+                    }
+                }
+            }
+            random_list = {
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_reactionary
+                    }
+                }
+                1 = {
+                    set_variable = {
+                        name = governor
+                        value = owner.ig:ig_fascist
+                    }
+                }
+            }
+            owner = {
+                remove_list_variable = {
+                    name = conservative_states
+                    target = root
+                }
+                add_to_variable_list = {
+                    name = reactionary_states
+                    target = root
+                }
+            }
+        }
+    }
+}

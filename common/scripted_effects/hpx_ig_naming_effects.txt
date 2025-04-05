@@ -1,0 +1,113 @@
+﻿hpx_rename_igs = {
+    hidden_effect = {
+        hpx_rename_anarchist_ig = yes
+        hpx_rename_communist_ig = yes
+        hpx_rename_revisionist_ig = yes
+        hpx_rename_new_left_ig = yes
+        hpx_rename_socdem_ig = yes
+
+        hpx_rename_classical_libs_ig = yes
+
+        hpx_rename_reactionary_ig = yes
+        hpx_rename_fascist_ig = yes
+    }
+}
+
+hpx_rename_anarchist_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_anarchist ?= { set_interest_group_name = ig_yippies }
+    }
+}
+hpx_rename_communist_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_orthodox_communist ?= { set_interest_group_name = ig_weathermen }
+    }
+}
+hpx_rename_revisionist_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_reformist_communist ?= { set_interest_group_name = ig_communists }
+    }
+}
+hpx_rename_new_left_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_new_leftism ?= { set_interest_group_name = ig_democratic_socialists }
+    }
+}
+hpx_rename_socdem_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_socdem ?= { set_interest_group_name = ig_progresssives }
+    }
+}
+hpx_rename_classical_libs_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+            ig:ig_classical_liberal = {is_member_of_party = owner.py:republican_party}
+        }
+        ig:ig_classical_liberal ?= { set_interest_group_name = ig_rockefeller }
+    } else_if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+            ig:ig_classical_liberal = {is_member_of_party = owner.py:democrat_party}
+        }
+        ig:ig_classical_liberal ?= { set_interest_group_name = ig_dixiecrat }
+    }
+}
+hpx_rename_reactionary_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_reactionary ?= { set_interest_group_name = ig_western_conservative }
+    }
+}
+hpx_rename_fascist_ig = {
+    if = {
+        limit = {
+            OR = {
+                country_has_primary_culture = cu:yankee
+                country_has_primary_culture = cu:dixie
+            }
+        }
+        ig:ig_fascist ?= { set_interest_group_name = ig_bircherist }
+    }
+}

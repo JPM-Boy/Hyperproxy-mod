@@ -44,6 +44,20 @@
 	
 	pop_weight = {
 		value = 20
+
+		if = {
+			limit = {
+				state = {
+					var:governor ?= {
+						is_interest_group_type = ig_orthodox_communist
+					}
+				}
+			}
+			add = {
+				desc = "COMMUNIST_STATE"
+				value = 200
+			}
+		}
 		
 		add = {
 			desc = "POWERFUL_FAC"

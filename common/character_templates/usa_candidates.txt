@@ -1,0 +1,180 @@
+﻿ronald_reagan = {
+    first_name = "Ronald"
+    last_name = "Reagan"
+    historical = yes
+    culture = cu:yankee
+	ig_leader = yes
+    birth_date = 1911.2.6
+    interest_group = ig_reactionary
+    ideology = ideology_ultramaoism
+}
+hubert_humphrey = {
+	first_name = "Hubert"
+	last_name = "Humphrey"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1911.5.27
+	interest_group = ig_liberal
+	ideology = ideology_ultramaoism
+}
+george_wallace = {
+	first_name = "George"
+	last_name = "Wallace"
+	historical = yes
+	culture = cu:dixie
+	ig_leader = yes
+	birth_date = 1919.8.25
+	interest_group = ig_classical_liberal
+	ideology = ideology_ultramaoism
+}
+edmund_muskie = {
+	first_name = "Edmund"
+	last_name = "Muskie"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1914.3.28
+	interest_group = ig_socdem
+	ideology = ideology_ultramaoism
+}
+strom_thurmond = {
+	first_name = "Strom"
+	last_name = "Thurmond"
+	historical = yes
+	culture = cu:dixie
+	ig_leader = yes
+	birth_date = 1902.12.5
+	interest_group = ig_fascist
+	ideology = ideology_ultramaoism
+}
+pat_buchanan = {
+	first_name = "Pat"
+	last_name = "Buchanan"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1938.11.2
+	interest_group = ig_fascist
+	ideology = ideology_ultramaoism
+}
+paul_laxalt = {
+	first_name = "Paul"
+	last_name = "Laxalt"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1922.8.2
+	interest_group = ig_reactionary
+	ideology = ideology_ultramaoism
+}
+john_ashbrook = {
+	first_name = "John"
+	last_name = "Ashbrook"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1928.9.21
+	interest_group = ig_cons
+	ideology = ideology_ultramaoism
+}
+ernest_hollings = {
+	first_name = "Ernest"
+	last_name = "Hollings"
+	historical = yes
+	culture = cu:dixie
+	ig_leader = yes
+	birth_date = 1922.1.1
+	interest_group = ig_classical_liberal
+	ideology = ideology_ultramaoism
+}
+howard_baker = {
+	first_name = "Howard"
+	last_name = "Baker"
+	historical = yes
+	culture = cu:dixie
+	ig_leader = yes
+	birth_date = 1925.11.15
+	interest_group = ig_cons
+	ideology = ideology_ultramaoism
+}
+bob_dole = {
+	first_name = "Bob"
+	last_name = "Dole"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1923.7.22
+	interest_group = ig_cons
+	ideology = ideology_ultramaoism
+}
+nelson_rockefeller = {
+	first_name = "Nelson"
+	last_name = "Rockefeller"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1908.7.8
+	interest_group = ig_classical_liberal
+	ideology = ideology_ultramaoism
+}
+gerald_ford = {
+	first_name = "Gerald"
+	last_name = "Ford"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1913.7.14
+	interest_group = ig_classical_liberal
+	ideology = ideology_ultramaoism
+}
+frank_church = {
+	first_name = "Frank"
+	last_name = "Church"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1924.7.25
+	interest_group = ig_socdem
+	ideology = ideology_ultramaoism
+}
+mo_udall = {
+	first_name = "Mo"
+	last_name = "Udall"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1922.6.15
+	interest_group = ig_liberal
+	ideology = ideology_ultramaoism
+}
+jimmy_carter = {
+	first_name = "Jimmy"
+	last_name = "Carter"
+	historical = yes
+	culture = cu:dixie
+	ig_leader = yes
+	birth_date = 1924.10.1
+	interest_group = ig_liberal
+	ideology = ideology_ultramaoism
+}
+ted_kennedy = {
+	first_name = "Ted"
+	last_name = "Kennedy"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1932.2.22
+	interest_group = ig_socdem
+	ideology = ideology_ultramaoism
+}
+george_bush = {
+	first_name = "George"
+	last_name = "Bush"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1924.6.12
+	interest_group = ig_classical_liberal
+	ideology = ideology_ultramaoism
+}

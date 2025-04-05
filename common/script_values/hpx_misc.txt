@@ -58,3 +58,9 @@ adriatic_communist_countries = {
 		add = 1
 	}
 }
+
+hpx_party_clout = {
+	every_member = {
+		add = bpm_ig_clout
+	}
+}

@@ -39,6 +39,20 @@
 	
 	pop_weight = {
 		value = 8
+
+		if = {
+			limit = {
+				state = {
+					var:governor ?= {
+						is_interest_group_type = ig_reactionary
+					}
+				}
+			}
+			add = {
+				desc = "REACTIONARY_STATE"
+				value = 200
+			}
+		}
 	
 		add = {
 			desc = "SLAVERY_SUPPORTERS"
@@ -121,7 +135,7 @@
 				}
 			}
 			else_if = {
-				limit = { strata = poor }
+				limit = { strata = lower }
 				add = {
 					desc = "PATCON_LOWER_CLASS"
 					value = 25

@@ -46,7 +46,7 @@ hpx_misc.1 = { # Lore
 				name = state_divisor
 				value = {
 					add = bpm_total_population
-					divide = 435
+					divide = 538
 				}
 			}
 			every_scope_state = {

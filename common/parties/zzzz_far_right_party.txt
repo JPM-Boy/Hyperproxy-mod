@@ -146,7 +146,7 @@ far_right_party = {
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
-		always = yes
+		NOT = {has_variable = american_parties}
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes

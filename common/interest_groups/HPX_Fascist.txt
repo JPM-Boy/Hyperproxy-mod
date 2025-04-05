@@ -39,7 +39,19 @@
 	
 	pop_weight = {
 		value = 0
-	
+		if = {
+			limit = {
+				state = {
+					var:governor ?= {
+						is_interest_group_type = ig_fascist
+					}
+				}
+			}
+			add = {
+				desc = "REACTIONARY_STATE"
+				value = 200
+			}
+		}
 		add = {
 			desc = "POP_CAPITALISTS"
 			if = {

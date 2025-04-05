@@ -25,7 +25,7 @@ interest_group_bpm_can_not_promise_cabinet_to_bool = { # If true, you can not sw
 country_base_law_enactment_support_add = {
 	decimals=1
 	color=good
-	gamed_data={
+	game_data={
 		ai_value=0
 	}
 }

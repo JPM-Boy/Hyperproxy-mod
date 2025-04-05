@@ -1,8 +1,8 @@
 ﻿# Bastion of the Landowners
 # Can also appeal to the Devout, PB, and Industrialists
 
-rightwing_party = {
-	color = hsv{ 0.57 1 1 }
+republican_party = {
+	color = hsv{ 0.0 1 0.9 }
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -21,17 +21,17 @@ rightwing_party = {
 		}
 	}
 	icon = {
-		default = "/gfx/interface/icons/political_parties/conservatism.dds"
+		default = "/gfx/interface/icons/political_parties/republicans.dds"
 	}
 	unlocking_technologies = {
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
-		NOT = {has_variable = american_parties}
+		has_variable = american_parties
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = rightwing_party } }
+		NOT = { bpm_is_party_banned = { PARTY = republican_party } }
 		owner = {
 			country_has_voting_franchise = yes
 			}
@@ -79,7 +79,7 @@ rightwing_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_variable = rightwing_party_leader }
+				leader = { has_variable = republican_party_leader }
 			}
 			add = {
 				value = 100
@@ -88,7 +88,7 @@ rightwing_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_variable = anti_rightwing_party_leader }
+				leader = { has_variable = anti_republican_party_leader }
 			}
 			add = {
 				value = -100
@@ -98,7 +98,7 @@ rightwing_party = {
 		if = {
 			limit = {
 				var:bpm_current_party ?= {
-					is_party_type = rightwing_party
+					is_party_type = republican_party
 					has_party_member = prev
 				}
 			}
@@ -231,10 +231,10 @@ rightwing_party = {
 		if = { # armed forces will join if a more powerful member has jingoist leader
 			limit = {
 				is_interest_group_type = ig_armed_forces
-				exists = owner.py:rightwing_party
+				exists = owner.py:republican_party
 				owner = {
 					any_interest_group = {
-						is_member_of_party = owner.py:rightwing_party
+						is_member_of_party = owner.py:republican_party
 						is_powerful = yes
 						leader = { has_ideology = ideology:ideology_jingoist_leader }
 					}
@@ -388,161 +388,6 @@ rightwing_party = {
 				desc = "from_no_police"
 			}
 		}
-		if = { # legitimists dislike bonapartists
-			limit = {
-				is_interest_group_type = ig_reactionary
-				owner = {
-					any_interest_group = {
-						OR = {
-							leader = { has_ideology = ideology:ideology_bonapartist }
-						}
-						has_party = yes
-						party = { is_party_type = rightwing_party }
-					}
-				}
-			}
-			add = {
-				value = -10
-				desc = "from_legitimist"
-			}
-		}
-		if = { # arbitrary weight for Andrew Jackson to be in the right party
-			limit = {
-				leader = {
-					OR = {
-						has_variable = is_andrew_jackson
-						has_ideology = ideology:ideology_jacksonian_democrat
-					}
-				}
-			}
-			add = {
-				value = 50
-				desc = "bpm_from_jackson"
-			}
-		}
-		if = { # imperial brazilian conservatives like centralism
-			limit = {
-				owner = {
-					country_has_primary_culture = cu:brazilian
-					OR = { 
-						has_law = law_type:law_monarchy 
-						has_law = law_type:law_theocracy
-					}
-				}
-				OR = {
-					has_ideology = ideology:ideology_sta_powerful_state
-					has_ideology = ideology:ideology_sta_security_state
-				}
-			}
-			add = {
-				value = 10
-				desc = "from_centralism"
-			}
-		}
-		if = { # north andean and mexican conservatives like centralism
-			limit = {
-				owner = {
-					OR = {
-						country_has_primary_culture = cu:north_andean
-						country_has_primary_culture = cu:mexican
-					}
-				}
-				OR = {
-					has_ideology = ideology:ideology_sta_powerful_state
-					has_ideology = ideology:ideology_sta_security_state
-				}
-			}
-			add = {
-				value = 10
-				desc = "from_centralism"
-			}
-		}
-		if = { # platinean conservatives like descentralism
-			limit = {
-				owner = {
-					country_has_primary_culture = cu:platinean
-					NOT = { THIS = c:PRG }
-				}
-				OR = {
-					has_ideology = ideology:ideology_sta_minimal_state
-					has_ideology = ideology:ideology_sta_decentralized_state
-					has_ideology = ideology:ideology_sta_federated_state
-				}
-			}
-			add = {
-				value = 10
-				desc = "from_descentralism"
-			}
-		}
-		if = { # argentine positivists
-			limit = {
-				owner = {
-					THIS = c:ARG
-					NOT = { has_law = law_type:law_confederated }
-				}
-				OR = {
-					has_ideology = ideology:ideology_dop_technocrat
-					leader = {
-						has_ideology = ideology:ideology_positivist
-					}
-				}
-			}
-			add = {
-				value = 30
-				desc = "from_positivism"
-			}
-		}
-		if = { # arbitrary weight for American devouts to be in the right party
-			limit = {
-				owner = {
-					bpm_country_has_unfree_labor = yes
-					THIS = c:USA
-				}
-				is_interest_group_type = ig_devout
-			}
-			add = {
-				value = -15
-				desc = "bpm_from_american_devout"
-			}
-		}
-		if = { # arbitrary weight for American reactionaries to stay with the dems (for now)
-			limit = {
-				owner = {
-					THIS = c:USA
-				}
-				is_interest_group_type = ig_reactionary
-			}
-			add = {
-				value = 20
-				desc = "bpm_from_american_reactionaries"
-			}
-		}
-		if = { # arbitrary weight for Bonapartists to be in the right party
-			limit = {
-				owner = {
-					country_has_primary_culture = cu:french
-				}
-				is_interest_group_type = ig_neolib
-			}
-			add = {
-				value = 10
-				desc = "bpm_from_bonapartism"
-			}
-		}
-		if = { # arbitrary weight for Bonapartists to be in the right party
-			limit = {
-				owner = {
-					country_has_primary_culture = cu:french
-					has_law = law_type:law_monarchy
-					has_variable = bonapartist_restoration_var
-				}
-				is_interest_group_type = ig_neolib
-			}
-			add = {
-				value = 20
-				desc = "bpm_from_bonapartism"
-			}
-		}
 		if = {
 			limit = {
 				is_interest_group_type = ig_classical_liberal
@@ -550,7 +395,7 @@ rightwing_party = {
 					any_interest_group = {
 						has_ideology = ideology:ideology_wel_paternalistic_welfare
 						has_party = yes
-						party = { is_party_type = rightwing_party }
+						party = { is_party_type = republican_party }
 					}
 				}
 			}
@@ -572,7 +417,7 @@ rightwing_party = {
 							bpm_ig_is_non_paternal_conservative = yes
 						}
 						has_party = yes
-						party = { is_party_type = rightwing_party }
+						party = { is_party_type = republican_party }
 					}
 				}
 			}
@@ -593,32 +438,13 @@ rightwing_party = {
 				desc = "bpm_anarchist_anti_party"
 			}
 		}
-		if = { # brazilian monarchism in republic
-			limit = {
-				OR = {
-					bpm_ig_is_monarchist = yes
-					leader = { bpm_leader_is_reactionary = yes }
-				}
-				owner = {
-					country_has_primary_culture = cu:brazilian
-					NOR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
-					}
-				}
-			}
-			add = {
-				value = -50
-				desc = "from_monarchist"
-			}
-		}
 		if = { # reactionaries take over if conservatives are in Liberal Party
 			limit = {
 				is_interest_group_type = ig_reactionary
 				owner = {
 					ig:ig_cons = {
 						has_party = yes
-						party = { NOT = { is_party_type = rightwing_party } }
+						party = { NOT = { is_party_type = republican_party } }
 					}
 				}
 			}

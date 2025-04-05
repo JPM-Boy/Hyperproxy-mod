@@ -37,9 +37,11 @@
      }
      blockoverride "scrollarea_content" {
          flowcontainer = {
+             spacing = 10
              direction = horizontal
              parentanchor = topleft
              flowcontainer = {
+                 spacing = 10
                  direction = vertical
                  flowcontainer = {
                      direction = horizontal
@@ -117,149 +119,75 @@
                          }
                      }
                  }
-                 textbox = {
-
-                     margin_top = 30
-                     align = center|nobaseline
-                     size = { 670 40 }
-                     using = fontsize_xl
-                     text = "#bold Governor Ideologies"
-                     margin_bottom = 40
+                 widget = {
+                     size = {100% 100}
+                     flowcontainer = {
+                         direction = vertical
+                         textbox = {
+                             align = center|nobaseline
+                             size = { 670 50 }
+                             using = fontsize_xl
+                             text = "#bold Electoral College"
+                         }
+                         flowcontainer = {
+                             direction = horizontal
+                             widget = {
+                                 size = { 330 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = { 0 0.25 1 1 }
+                                 }
+                                 icon = {
+                                     size = { 100% 100% }
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "#blue;bold Democrat Party#! - #yellow;bold [GetPlayer.MakeScope.Var('democrat_party_seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     margin_left = 10
+                                 }
+                             }
+                             widget = {
+                                 size = { 330 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = { 1 0 0 1 }
+                                 }
+                                 icon = {
+                                     size = { 100% 100% }
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "#r Republican Party#! - #yellow;bold [GetPlayer.MakeScope.Var('republican_party_seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     margin_left = 10
+                                 }
+                             }
+                         }
+                     }
                  }
-                 flowcontainer = {
-                     spacing = 40
-                     direction = horizontal
-                     parentanchor = vcenter
-                     widget = {
-                         size = { 100 100 }
-                         background = {
-                             using = dark_area
-                             alpha = 0.35
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = simple_frame
-                         }
-                         vbox = {
-                             size = { 100 100 }
-                             icon = {
-                                 texture = "gfx/interface/icons/ig_icons/revolutionists.dds"
-                                 size = { 40 40 }
-                                 tooltip = "Communist Governors"
-                                 parentanchor = top|vcenter
-                             }
-                             textbox = { # Communist Governors
-                                 align = top|center
-                                 size = { 100 0 }
-                                 using = fontsize_large
-                                 text = "[GetPlayer.MakeScope.GetVariable('communist_governors').GetValue]"
-                             }
+                 widget = {
+                     size = {100% 400}
+                     background = {
+                         using = dark_area
+                         alpha = 0.35
+                         modify_texture = {
+                             using = simple_frame_mask
                          }
                      }
-                     widget = {
-                         size = { 100 100 }
-                         background = {
-                             using = dark_area
-                             alpha = 0.35
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = simple_frame
-                         }
-                         vbox = {
-                             size = { 100 100 }
-                             icon = {
-                                 texture = "gfx/interface/icons/ig_icons/socdem.dds"
-                                 tooltip = "Progressive Governors"
-                                 size = { 40 40 }
-                                 parentanchor = top|vcenter
-                             }
-                             textbox = { # Communist Governors
-                                 align = top|center
-                                 size = { 100 0 }
-                                 using = fontsize_large
-                                 text = "[GetPlayer.MakeScope.GetVariable('progressive_governors').GetValue]"
-                             }
-                         }
+                     icon = {
+                         size = { 100% 100% }
+                         using = simple_frame
                      }
-                     widget = {
-                         size = { 100 100 }
-                         background = {
-                             using = dark_area
-                             alpha = 0.35
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = simple_frame
-                         }
-                         vbox = {
-                             size = { 100 100 }
-                             icon = {
-                                 texture = "gfx/interface/icons/ig_icons/liberals.dds"
-                                 size = { 40 40 }
-                                 tooltip = "Liberal Governors"
-                                 parentanchor = top|vcenter
-                             }
-                             textbox = { # Communist Governors
-                                 align = top|center
-                                 size = { 100 0 }
-                                 using = fontsize_large
-                                 text = "[GetPlayer.MakeScope.GetVariable('liberal_governors').GetValue]"
-                             }
-                         }
-                     }
-                     widget = {
-                         size = { 100 100 }
-                         background = {
-                             using = dark_area
-                             alpha = 0.35
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = simple_frame
-                         }
-                         vbox = {
-                             size = { 100 100 }
-                             icon = {
-                                 texture = "gfx/interface/icons/ig_icons/conservatives.dds"
-                                 size = { 40 40 }
-                                 tooltip = "Conservative Governors"
-                                 parentanchor = top|vcenter
-                             }
-                             textbox = { # Communist Governors
-                                 align = top|center
-                                 size = { 100 0 }
-                                 using = fontsize_large
-                                 text = "[GetPlayer.MakeScope.GetVariable('conservative_governors').GetValue]"
-                             }
-                         }
-                     }
-                     widget = {
-                         size = { 100 100 }
-                         background = {
-                             using = dark_area
-                             alpha = 0.35
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = simple_frame
-                         }
-                         vbox = {
-                             size = { 100 100 }
-                             icon = {
-                                 texture = "gfx/interface/icons/ig_icons/reactionaries.dds"
-                                 size = { 40 40 }
-                                 tooltip = "Reactionary Governors"
-                                 parentanchor = top|vcenter
-                             }
-                             textbox = { # Communist Governors
-                                 align = top|center
-                                 size = { 100 0 }
-                                 using = fontsize_large
-                                 text = "[GetPlayer.MakeScope.GetVariable('reactionary_governors').GetValue]"
-                             }
-                         }
-                     }
+                 }
+                 button = {
+                     using = default_button
+                     size = { 100% 100 }
+                     onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+                     text = "Sway States"
+                     using = fontsize_xl
                  }
              }
              flowcontainer = {
@@ -285,6 +213,7 @@
                          }
                      }
                      dynamicgridbox = {
+                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
                          datamodel_wrap = 1
                          flipdirection = yes
                          datamodel = "[GetPlayer.MakeScope.GetList('communist_states')]"
@@ -304,7 +233,44 @@
                                      text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
                                      multiline = yes
                                      size = { 100% 100% }
+                                    margin_left = 10
+                                 }
+                             }
+                         }
+                     }
+                     dynamicgridbox = {
+                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('communist_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.GetName]"
                                      align = center
+                                     multiline = yes
+                                     size = { 172 50 }
+                                     margin_left = 50
+                                 }
+                                 button = {
+                                     parentanchor = right
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
                                  }
                              }
                          }
@@ -330,6 +296,7 @@
                          }
                      }
                      dynamicgridbox = {
+                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
                          datamodel_wrap = 1
                          flipdirection = yes
                          datamodel = "[GetPlayer.MakeScope.GetList('progressive_states')]"
@@ -349,7 +316,54 @@
                                      text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
                                      multiline = yes
                                      size = { 100% 100% }
+                                     margin_left = 10
+                                 }
+                             }
+                         }
+                     }
+                     dynamicgridbox = {
+                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('progressive_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.GetName]"
                                      align = center
+                                     multiline = yes
+                                     size = { 172 50 }
+                                     margin_left = 50
+                                 }
+                                 button = {
+                                     parentanchor = right
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
+                                 }
+                                 button = {
+                                     parentanchor = left
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
                                  }
                              }
                          }
@@ -375,6 +389,54 @@
                          }
                      }
                      dynamicgridbox = {
+                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('liberal_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.GetName]"
+                                     align = center
+                                     multiline = yes
+                                     size = { 172 50 }
+                                     margin_left = 50
+                                 }
+                                 button = {
+                                     parentanchor = right
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
+                                 }
+                                 button = {
+                                     parentanchor = left
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
+                                 }
+                             }
+                         }
+                     }
+                     dynamicgridbox = {
+                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
                          datamodel_wrap = 1
                          flipdirection = yes
                          datamodel = "[GetPlayer.MakeScope.GetList('liberal_states')]"
@@ -394,7 +456,7 @@
                                      text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
                                      multiline = yes
                                      size = { 100% 100% }
-                                     align = center
+                                     margin_left = 10
                                  }
                              }
                          }
@@ -420,6 +482,54 @@
                          }
                      }
                      dynamicgridbox = {
+                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('conservative_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.GetName]"
+                                     align = center
+                                     multiline = yes
+                                     size = { 172 50 }
+                                     margin_left = 50
+                                 }
+                                 button = {
+                                     parentanchor = right
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
+                                 }
+                                 button = {
+                                     parentanchor = left
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+
+                                 }
+                             }
+                         }
+                     }
+                     dynamicgridbox = {
+                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
                          datamodel_wrap = 1
                          flipdirection = yes
                          datamodel = "[GetPlayer.MakeScope.GetList('conservative_states')]"
@@ -439,7 +549,7 @@
                                      text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
                                      multiline = yes
                                      size = { 100% 100% }
-                                     align = center
+                                     margin_left = 10
                                  }
                              }
                          }
@@ -465,6 +575,43 @@
                          }
                      }
                      dynamicgridbox = {
+                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
+                         datamodel_wrap = 1
+                         flipdirection = yes
+                         datamodel = "[GetPlayer.MakeScope.GetList('reactionary_states')]"
+                         item = {
+                             widget = {
+                                 datacontext = "[Scope.AccessState]"
+                                 size = { 222 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
+                                 }
+                                 icon = {
+                                     size = {100% 100%}
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "[State.GetName]"
+                                     align = center
+                                     multiline = yes
+                                     size = { 172 50 }
+                                     margin_left = 50
+                                 }
+                                 button = {
+                                     parentanchor = left
+                                     size = { 50 50 }
+                                     icon = {
+                                         size = { 50 50 }
+                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
+                                     }
+                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                 }
+                             }
+                         }
+                     }
+                     dynamicgridbox = {
+                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
                          datamodel_wrap = 1
                          flipdirection = yes
                          datamodel = "[GetPlayer.MakeScope.GetList('reactionary_states')]"
@@ -484,12 +631,12 @@
                                      text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
                                      multiline = yes
                                      size = { 100% 100% }
-                                     align = center
+                                     margin_left = 10
                                  }
                              }
                          }
                      }
-                 } #RIGHT WING
+                 } #FAR RIGHT
              }
 
          }

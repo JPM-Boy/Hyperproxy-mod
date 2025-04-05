@@ -42,6 +42,20 @@ ig_classical_liberal = {
 	
 	pop_weight = {
 		value = 40
+
+		if = {
+			limit = {
+				state = {
+					var:governor ?= {
+						is_interest_group_type = ig_classical_liberal
+					}
+				}
+			}
+			add = {
+				desc = "CLASSICAL_LIBERAL_STATE"
+				value = 200
+			}
+		}
 	
 		add = {
 			desc = "SLAVERY_DETRACTORS"

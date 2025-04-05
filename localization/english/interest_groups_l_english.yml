@@ -8,12 +8,12 @@ ig_cons_desc:0 "Conservatives refer to the broad set of people who want to prese
 ig_english_cons: "English Conservatives"
 
 #Security
-ig_security:0 "Security Interests"
+ig_security:0 "Security Agencies"
 ig_security_only_icon:0 "@ig_security!"
 ig_security_desc:0 "WIP"
 
 #Academia
-ig_academia:0 "Academic Interests"
+ig_academia:0 "Academia"
 ig_academia_only_icon:0 "@ig_academia!"
 ig_academia_desc:0 "WIP"
 
@@ -21,6 +21,7 @@ ig_academia_desc:0 "WIP"
 ig_anarchist:0 "Anarchists"
 ig_anarchist_only_icon:0 "@ig_anarchist!"
 ig_anarchist_desc:0 "Anarchists refer to the broad groups that believe in the immediate abolition of the state. Varied in specific beliefs, anarchists usually follow the tradition of Proudhon and Bakunin against other types of socialism, attempting to form non-hierarchical labor alliances seeking to either outgrow the state or overthrow it in one fell swoop."
+ ig_yippies: "Yippies"
 
 #Ecologists
 ig_ecologist:0 "Ecologists"
@@ -39,6 +40,8 @@ ig_english_ecologist: "English Hippies"
 ig_fascist:0 "Fascists"
 ig_fascist_only_icon:0 "@ig_fascist!"
 ig_fascist_desc:0 "An extreme-right ideology, fascism is difficult to define in specific terms. Generally characterized by national chauvinism, a reverence of the state, and a rabid hostility to any Left-wing or perceived foreign elements, it is just as much inundated with contradictions -- while fascists often espouse deeply traditional values, they also glorify the efficiency of modern industry and war. This strange coupling of traditionalism with modernity is part of what sets e.g. clerical fascism apart from traditional moralism, and Italian Futurism apart from socialism."
+
+ ig_bircherist: "Bircherists"
 
 #Left Populists
 ig_leftpop:0 "Left-Wing Populists"
@@ -64,6 +67,9 @@ ig_classical_liberal:0 "Classical Liberals"
 ig_classical_liberal_only_icon:0 "@ig_classical_liberal!"
 ig_classical_liberal_desc:0 "WIP"
 
+ ig_rockefeller: "Rockefeller Faction"
+ ig_dixiecrat: "Dixiecrats"
+
 #Neoliberals
 ig_neolib:0 "Neo-Liberals"
 ig_neolib_only_icon:0 "@ig_neolib!"
@@ -80,16 +86,20 @@ ig_reactionary_only_icon:0 "@ig_reactionary!"
 ig_reactionary_desc:0 "Reactionaries are a broad tent of those who want to go back to the good old days, who unlike niche interest groups elevate their nostalgia to a general politics. The specifics of what they want depends on what the good old days were like (or seemed to be) in each particular country. Subsections of this group include monarchic absolutists, religious moralists, or even wealthy peasants"ig_variant_orthodox_communist:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_reactionary:0 "[GetInterestGroupVariant('ig_reactionary',GetPlayer).GetNameWithCountryVariant]"
 
+ ig_western_conservative: "Western Conservatives"
+
 #Reformists
 ig_reformist_communist:0 "Revisionist Communists"
 ig_reformist_communist_only_icon:0 "@ig_reformist_communist!"
 ig_reformist_communist_desc:0 "Reformist Socialists vary in their commitment to reformism and socialism. On the radical end, such as the French Possibilists and the German USPD, are those who prioritize reforms in the present while holding revolution as a long-term goal. In the middle are those who believe that socialism can be attained by reforms alone, such as Eduard Bernstein's faction in the SPD. Finally, on the right wing are those who want to strike a compromise betwen capitalism and socialism, eventually becoming what we know as social democracy today."
  ig_variant_reformist_communist:0 "[GetInterestGroupVariant('ig_reformist_communist',GetPlayer).GetNameWithCountryVariant]"
+ ig_communists: "Communists"
 #Revolutionaries
 ig_orthodox_communist:0 "Orthodox Communists"
 ig_orthodox_communist_only_icon:0 "@ig_orthodox_communist!"
 ig_orthodox_communist_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
 ig_variant_orthodox_communist:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"
+ ig_weathermen: "Weathermen"
 
 ig_french_revsoc: "French Communists"
 
@@ -98,6 +108,8 @@ ig_new_leftism:0 "New Leftism"
 ig_new_leftism_only_icon:0 "@ig_new_leftism!"
 ig_new_leftism_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
 ig_variant_new_leftism:0 "[GetInterestGroupVariant('ig_new_leftism',GetPlayer).GetNameWithCountryVariant]"
+
+ ig_democratic_socialists: "Democratic Socialists"
 
 ig_revolutionary_leftism: "Revolutionary Leftists"
 ig_radical_progressives: "Radical Progressists"
@@ -108,6 +120,8 @@ ig_neo_communists: "Neo Communists"
 ig_socdem:0 "Social Democrats"
 ig_socdem_only_icon:0 "@ig_socdem!"
 ig_socdem_desc:0 "Social democracy, aims to integrate capitalist economies with substantial government intervention to achieve social justice and reduce economic inequality. It emphasizes comprehensive social welfare systems, including universal healthcare and education, as well as strong labor rights and protections. Social democrats advocate for progressive taxation and redistributive policies to ensure equitable wealth distribution. They prioritize democratic governance, civil liberties, and inclusive policies, striving to create a fair and just society while maintaining a regulated yet dynamic market economy."
+
+ ig_progresssives: "Progressives"
 
 ig_minority:0 "Minority Interests"
 ig_minority_only_icon:0 "@ig_minority!"

@@ -1,43 +1,13 @@
-﻿# Social democrats extremely attracted to this ideology
+# Social democrats extremely attracted to this ideology
 # Attracts weak leftists and liberals
 # Available for Trade Unions pre-Socialism
 
-leftwing_party = {
-	color = hsv{ 0.98 0.9 1 }
-	name = {
-		first_valid = {
-			triggered_desc = {
-				desc = party_socialist_SPA
-				trigger = {
-					exists = c:SPA
-					THIS = c:SPA
-				}
-			}
-			triggered_desc = {
-				desc = party_socialist_RUS
-				trigger = {
-					exists = c:RUS
-					THIS = c:RUS
-				}
-			}
-			triggered_desc = {
-				desc = party_socialist_CAT
-				trigger = {
-					exists = c:CAT
-					THIS = c:CAT
-				}
-			}
-			triggered_desc = {
-				desc = party_socialist
-				trigger = {
-					always = yes
-				}
-			}
-		}
-	}
+progressive_party = {
+	color = hsv{ 0.08 0.7 0.8 }
+	name = { desc = progressive_party}
 	
 	icon = {
-		default = "/gfx/interface/icons/political_parties/socialist.dds"
+		default = "/gfx/interface/icons/political_parties/social_democrats.dds"
 	}
 	unlocking_technologies = {
 	}
@@ -47,15 +17,14 @@ leftwing_party = {
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = leftwing_party } }
-		OR = {
-			owner = {
+		NOT = { bpm_is_party_banned = { PARTY = progressive_party } }
+		owner = {
 			any_interest_group = {
 				bpm_ig_is_proletarian = yes
 				is_marginal = no
 			}
-			country_has_voting_franchise = yes
-			}
+		}
+		OR = {
 			AND = {
 				bpm_ig_is_right_wing = no
 				bpm_ig_is_liberal_conservative = no
@@ -63,15 +32,13 @@ leftwing_party = {
 				leader = { bpm_leader_is_right_wing = no }
 			}
 			leader = { bpm_leader_is_radical_socialist = yes }
-			bpm_leader_is_progressive_liberal = yes
 		}
-
 		trigger_if = {
 			limit = {
 				bpm_ig_is_institutional = yes
+				NOT = { is_interest_group_type = ig_trade_unions }
 			}
 			bpm_ig_is_upper_institutional = no
-			NOT = { leader = { has_ideology = ideology:ideology_moderate } }
 		}
 	}
 	join_weight = {
@@ -81,7 +48,7 @@ leftwing_party = {
 		}
 		if = {
 			limit = {
-				owner = { has_variable = bpm_party_establishment_leftwing }
+				owner = { has_variable = bpm_party_establishment_centre_left }
 				NOR = {
 					bpm_ig_is_radical_opposition = yes
 					bpm_ig_is_very_radical_opposition = yes
@@ -98,18 +65,9 @@ leftwing_party = {
 						subtract = 12
 					}
 				}
-				multiply = owner.var:bpm_party_establishment_leftwing
+				multiply = owner.var:bpm_party_establishment_centre_left
 				multiply = owner.var:bpm_political_stability
 				divide = 10000
-			}
-		}
-		if = {
-			limit = {
-				is_interest_group_type = ig_ecologist
-			}
-			add = {	
-				value = 10
-				desc = "hpx_green_party"
 			}
 		}
 		if = {
@@ -123,27 +81,25 @@ leftwing_party = {
 		}
 		if = {
 			limit = {
-				bpm_ig_is_institutional = yes
-				owner = {
-					has_law = law_type:law_council_republic
-				}
+				is_interest_group_type = ig_ecologist
 			}
 			add = {	
-				value = 20
-				desc = "hpx_institutional_council"
+				value = 10
+				desc = "hpx_green_party"
 			}
 		}
 		if = {
 			limit = {
 				var:bpm_current_party ?= {
-					is_party_type = leftwing_party
+					is_party_type = progressive_party
 					has_party_member = prev
 				}
 			}
 			add = {
 				value = bpm_party_loyalty_values
 			}
-		}		if = { # socialists like socialism
+		}
+		if = { # socialists like socialism
 			limit = {
 				leader = { 
 					bpm_leader_is_socialist = yes
@@ -186,9 +142,9 @@ leftwing_party = {
 				desc = "bpm_from_party_socialist"
 			}
 		}
-		if = { # ecologists are inclined towards socialism
+		if = { # trade unions are inclined towards socialism
 			limit = {
-				is_interest_group_type = ig_ecologist
+				is_interest_group_type = ig_trade_unions
 				NOT = { owner = { has_law = law_type:law_illegal_labor_unions } }
 			}
 			add = {	
@@ -198,7 +154,7 @@ leftwing_party = {
 		}
 		if = { # trade unions are inclined towards socialism
 			limit = {
-				is_interest_group_type = ig_socdem
+				is_interest_group_type = ig_trade_unions
 				owner = { has_law = law_type:law_illegal_labor_unions }
 			}
 			add = {	
@@ -206,23 +162,22 @@ leftwing_party = {
 				desc = "bpm_from_illegal_trade_unions"
 			}
 		}
-		if = { # powerful social democrats love social democracy
+		if = { # anarchist
 			limit = {
-				is_powerful = yes
 				OR = {
-					leader = { bpm_leader_is_party_socialist = yes }
-					bpm_ig_is_party_socialist = yes
+					bpm_ig_is_anarchist = yes
+					leader = { bpm_leader_is_anarchist = yes }
 				}
 			}
-			add = {	
-				value = 10
-				desc = "bpm_from_powerful_party_socialist"
+			add = {
+				value = -30
+				desc = "bpm_anarchist_anti_party"
 			}
 		}
-		if = { # ecologists and progressists will fall in line behind stronger leftists
+		if = { # trade unions will fall in line behind stronger leftists
 			limit = {
 				OR = {
-					is_interest_group_type = ig_prog
+					is_interest_group_type = ig_trade_unions
 					is_interest_group_type = ig_ecologist
 				}
 				is_powerful = no
@@ -440,7 +395,7 @@ leftwing_party = {
 						has_law = law_type:law_child_labor_allowed
 						has_law = law_type:law_no_social_security
 					}
-					NOT = { has_technology_researched = globalization }
+					NOT = { has_technology_researched = socialism }
 				}
 				bpm_ig_is_proletarian = yes
 			}
@@ -476,14 +431,14 @@ leftwing_party = {
 		}
 		if = { # IG will only join social democrats if a properly proletarian IG is in it
 			limit = {
-				NOT = { is_interest_group_type = ig_new_leftism }
+				NOT = { is_interest_group_type = ig_socdem }
 				OR = {
-					NOT = { exists = owner.py:leftwing_party }
+					NOT = { exists = owner.py:progressive_party }
 					AND = {
-						exists = owner.py:leftwing_party
+						exists = owner.py:progressive_party
 						owner = {
-							ig:ig_new_leftism ?= {
-								NOT = { is_member_of_party = owner.py:leftwing_party }
+							ig:ig_socdem = {
+								NOT = { is_member_of_party = owner.py:progressive_party }
 							}
 						}
 					}

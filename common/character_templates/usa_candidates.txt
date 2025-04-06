@@ -178,3 +178,90 @@ george_bush = {
 	interest_group = ig_classical_liberal
 	ideology = ideology_ultramaoism
 }
+robert_kennedy = {
+	first_name = "Robert"
+	last_name = "Kennedy"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	ruler = yes
+	birth_date = 1925.11.20
+	interest_group = ig_socdem
+	ideology = ideology_ultramaoism
+}
+george_mcgovern = {
+	first_name = "George"
+	last_name = "McGovern"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1922.7.19
+	interest_group = ig_socdem
+	ideology = ideology_ultramaoism
+}
+walter_mondale = {
+	first_name = "Walter"
+	last_name = "Mondale"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1928.1.5
+	interest_group = ig_socdem
+	ideology = ideology_ultramaoism
+}
+michael_harrington = {
+	first_name = "Michael"
+	last_name = "Harrington"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1928.2.24
+	interest_group = ig_new_leftism
+	ideology = ideology_ultramaoism
+}
+bernie_sanders = {
+	first_name = "Bernie"
+	last_name = "Sanders"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1941.9.8
+	interest_group = ig_new_leftism
+	ideology = ideology_ultramaoism
+}
+gus_hall = {
+	first_name = "Gus"
+	last_name = "Hall"
+	historical = yes
+	culture = cu:yankee
+	ig_leader = yes
+	birth_date = 1910.10.8
+	interest_group = ig_reformist_communist
+	ideology = ideology_ultramaoism
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

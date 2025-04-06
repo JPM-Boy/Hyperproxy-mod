@@ -120,7 +120,7 @@
                      }
                  }
                  widget = {
-                     size = {100% 100}
+                     size = {100% 150}
                      flowcontainer = {
                          direction = vertical
                          textbox = {
@@ -166,10 +166,49 @@
                                  }
                              }
                          }
+                         flowcontainer = {
+                             direction = horizontal
+                             widget = {
+                                 visible = "[GetPlayer.MakeScope.Var('progressive_party_enabled').IsSet]"
+                                 size = { 330 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = { 1 0.33 0 1 }
+                                 }
+                                 icon = {
+                                     size = { 100% 100% }
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "#gold;bold Progressive Party#! - #yellow;bold [GetPlayer.MakeScope.Var('progressive_party_seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     margin_left = 10
+                                 }
+                             }
+                             widget = {
+                                 size = { 330 50 }
+                                 background = {
+                                     using = simple_header_colored
+                                     color = { 0.8 0.8 0.8 1 }
+                                 }
+                                 icon = {
+                                     size = { 100% 100% }
+                                     using = simple_frame
+                                 }
+                                 textbox = {
+                                     text = "#bold Independents#! - #yellow;bold [GetPlayer.MakeScope.Var('independent_seats').GetValue]"
+                                     multiline = yes
+                                     size = { 100% 100% }
+                                     margin_left = 10
+                                 }
+                             }
+                         }
+
                      }
                  }
                  widget = {
-                     size = {100% 400}
+                     size = {100% 340}
                      background = {
                          using = dark_area
                          alpha = 0.35

@@ -5,6 +5,6 @@ tags={
     "New Nations"
 }
 name="Hyperproxy"
-supported_version="1.8.6"
+supported_version="1.8.7"
 #noinspection ParadoxScriptUnresolvedPathReference
 picture = "thumbnail.png"

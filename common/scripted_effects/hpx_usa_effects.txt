@@ -81,6 +81,33 @@ hpx_democrat_classical_liberal_candidate = {
 	}
 	set_variable = { name = democrat_candidate value = owner.ig:ig_classical_liberal.leader  }
 }
+hpx_progressive_socdem_candidate = {
+	if = {
+		limit = { AND { game_date < 1980.1.1 game_date >= 1978.1.1}}
+		create_character = { template = george_mcgovern }
+	} else_if = {
+		limit = { game_date < 1988.1.1 }
+		create_character = { template = walter_mondale }
+	}
+	set_variable = { name = progressive_candidate value = owner.ig:ig_socdem.leader  }
+}
+hpx_progressive_new_leftism_candidate = {
+	if = {
+		limit = { game_date < 1984.1.1 }
+		create_character = { template = michael_harrington }
+	} else_if = {
+		limit = { game_date < 1988.1.1 }
+		create_character = { template = bernie_sanders }
+	}
+	set_variable = { name = progressive_candidate value = owner.ig:ig_new_leftism.leader  }
+}
+hpx_progressive_refsoc_candidate = {
+	if = {
+		limit = { game_date < 1988.1.1 }
+		create_character = { template = gus_hall }
+	}
+	set_variable = { name = progressive_candidate value = owner.ig:ig_reformist_communist.leader  }
+}
 hpx_state_election_list_reestructuring = {
 	if = {
 		limit = {

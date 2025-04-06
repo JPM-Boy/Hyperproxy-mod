@@ -45,6 +45,10 @@ hpx_on_election_campaign_start = {
 				}
 				trigger_event = hpx_usa_elections.1
 				trigger_event = hpx_usa_elections.4
+				if = {
+					limit = { owner = {has_variable = progressive_party_enabled} }
+					trigger_event = hpx_usa_elections.6
+				}
 			}
 			if = {
 				limit = {
@@ -52,6 +56,19 @@ hpx_on_election_campaign_start = {
 				}
 				trigger_event = hpx_usa_elections.2
 				trigger_event = hpx_usa_elections.3
+				if = {
+					limit = { owner = {has_variable = progressive_party_enabled} }
+					trigger_event = hpx_usa_elections.6
+				}
+			}
+			if = {
+				limit = {
+					owner = {has_variable = progressive_party_enabled}
+					scope:main_party = {is_party_type = progressive_party}
+				}
+				trigger_event = hpx_usa_elections.5
+				trigger_event = hpx_usa_elections.3
+				trigger_event = hpx_usa_elections.4
 			}
 		}
 	}
@@ -66,6 +83,11 @@ hpx_on_election_campaign_end = {
 					has_variable = uses_governor_system
 				}
 			}
+			if = {
+				limit = {owner = {has_variable = progressive_party_enabled}}
+				set_variable = { name = progressive_party_seats value = 0 }
+			}
+			set_variable = { name = independent_seats value = 0 }
 			set_variable = { name = democrat_party_seats value = 0 }
 			set_variable = { name = republican_party_seats value = 0 }
 
@@ -80,7 +102,7 @@ hpx_on_election_campaign_end = {
 							}
 						}
 					}
-					if = {
+					else_if = {
 						limit = { var:governor = {is_member_of_party = owner.py:democrat_party}  }
 						owner = {
 							change_variable = {
@@ -89,8 +111,25 @@ hpx_on_election_campaign_end = {
 							}
 						}
 					}
+					else_if = {
+						limit = { var:governor = {is_member_of_party = owner.py:progressive_party}  }
+						owner = {
+							change_variable = {
+								name = progressive_party_seats
+								add = prev.var:seats
+							}
+						}
+					}
+					else = {
+						owner = {
+							change_variable = {
+								name = independent_seats
+								add = prev.var:seats
+							}
+						}
+					}
 				}
-
+				trigger_event = hpx_usa_elections.8
 				#ELECTIONS
 				if = {
 					limit = {
@@ -116,7 +155,19 @@ hpx_on_election_campaign_end = {
 				}
 				else_if = {
 					limit = {
+						AND = {
+							ruler.interest_group.party = owner.py:progressive_party
+							var:progressive_party_seats >= 270
+						}
+					}
+					var:progressive_candidate ?= {
+						set_character_as_ruler = yes
+					}
+				}
+				else_if = {
+					limit = {
 						var:republican_party_seats > var:democrat_party_seats
+						var:republican_party_seats > var:progressive_party_seats
 					}
 					var:republican_candidate ?= {
 						set_character_as_ruler = yes
@@ -124,7 +175,17 @@ hpx_on_election_campaign_end = {
 				}
 				else_if = {
 					limit = {
+						var:progressive_party_seats > var:democrat_party_seats
+						var:progressive_party_seats > var:republican_party_seats
+					}
+					var:progressive_candidate ?= {
+						set_character_as_ruler = yes
+					}
+				}
+				else_if = {
+					limit = {
 						var:democrat_party_seats > var:republican_party_seats
+						var:democrat_party_seats > var:progressive_party_seats
 					}
 					var:democrat_candidate ?= {
 						set_character_as_ruler = yes
@@ -259,6 +320,12 @@ on_monthly_pulse_country = {
 		bpm_on_actions_colonial_check
 		hpx_single_party_reload
 		hpx_eu_reload
+		hpx_progressive_party_spawn
+	}
+}
+hpx_progressive_party_spawn = {
+	events = {
+		hpx_usa_elections.7
 	}
 }
 hpx_space_agency_funds = {

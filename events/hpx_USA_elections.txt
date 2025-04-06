@@ -136,3 +136,167 @@ hpx_usa_elections.4 = { # DEMOCRAT PARTY OPPOSITION
 		}
 	}
 }
+hpx_usa_elections.5 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.5.t
+	desc = hpx_usa_elections.5.d
+	flavor = hpx_usa_elections.5.f
+	duration = 2
+
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.5.socdem
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_socdem = {is_member_of_party = owner.py:progressive_party}
+		}
+		hpx_progressive_socdem_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.5.new_leftism
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_new_leftism = {is_member_of_party = owner.py:progressive_party}
+		}
+		hpx_progressive_new_leftism_candidate = yes
+	}
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.5.refsoc
+		show_as_unavailable = { always = yes }
+		trigger = {
+			owner.ig:ig_reformist_communist = {is_member_of_party = owner.py:progressive_party}
+		}
+		hpx_progressive_refsoc_candidate = yes
+	}
+} #PROGRESSIVE PARTY
+hpx_usa_elections.6 = { # PROGRESSIVE PARTY OPPOSITION
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			20 = {
+				trigger = {	owner.ig:ig_socdem = {is_member_of_party = owner.py:progressive_party} }
+				hpx_progressive_socdem_candidate = yes
+			}
+			20 = {
+				trigger = {	owner.ig:ig_new_leftism = {is_member_of_party = owner.py:progressive_party} }
+				hpx_progressive_new_leftism_candidate = yes
+			}
+			20 = {
+				trigger = {	owner.ig:ig_reformist_communist = {is_member_of_party = owner.py:progressive_party} }
+				hpx_progressive_refsoc_candidate = yes
+			}
+		}
+	}
+}
+hpx_usa_elections.7 = {
+	type = country_event
+	placement = root
+
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.7.t
+	desc = hpx_usa_elections.7.d
+	flavor = hpx_usa_elections.7.f
+	duration = 2
+
+	trigger = {
+		AND = {
+			NOT = {has_variable = progressive_party_enabled}
+			game_date >= 1971.6.1
+		}
+	}
+
+	immediate = { set_variable = progressive_party_enabled }
+
+	option = {
+		ai_chance = {base = 1}
+		name = hpx_usa_elections.7.a
+		ruler = {
+			kill_character = yes
+		}
+		create_character = { template = robert_kennedy }
+
+	}
+}
+hpx_usa_elections.8 = {
+	type = country_event
+	placement = root
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.8.t
+	desc = hpx_usa_elections.8.d
+	flavor = hpx_usa_elections.8.f
+	duration = 1
+
+	immediate = {
+
+	}
+
+	option = {
+		name = hpx_usa_elections.8.no
+		show_as_unavailable = { always = yes }
+		trigger = {
+			OR = {
+				var:republican_party_seats >= 270
+				var:progressive_party_seats >= 270
+				var:democrat_party_seats >= 270
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					ruler.interest_group.party = owner.py:republican_party
+					var:republican_party_seats >= 270
+				}
+			}
+			var:republican_candidate ?= {
+				set_character_as_ruler = yes
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ruler.interest_group.party = owner.py:democrat_party
+					var:democrat_party_seats >= 270
+				}
+			}
+			var:democrat_candidate ?= {
+				set_character_as_ruler = yes
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					ruler.interest_group.party = owner.py:progressive_party
+					var:progressive_party_seats >= 270
+				}
+			}
+			var:progressive_candidate ?= {
+				set_character_as_ruler = yes
+			}
+		}
+	}
+
+	option = {
+		name = hpx_usa_elections.8.dem_rep
+		show_as_unavailable = { always = yes }
+		trigger = { has_variable = progressive_party_enabled }
+	}
+
+	option = {
+		name = hpx_usa_elections.8.dem_prog
+		show_as_unavailable = { always = yes }
+		trigger = { has_variable = progressive_party_enabled }
+	}
+}

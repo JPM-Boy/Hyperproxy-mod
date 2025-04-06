@@ -13,26 +13,11 @@ progressive_party = {
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
-		NOT = {has_variable = american_parties}
+		has_variable = american_parties
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
 		NOT = { bpm_is_party_banned = { PARTY = progressive_party } }
-		owner = {
-			any_interest_group = {
-				bpm_ig_is_proletarian = yes
-				is_marginal = no
-			}
-		}
-		OR = {
-			AND = {
-				bpm_ig_is_right_wing = no
-				bpm_ig_is_liberal_conservative = no
-				NOT = { has_ideology = ideology:ideology_eco_laissez_faire }
-				leader = { bpm_leader_is_right_wing = no }
-			}
-			leader = { bpm_leader_is_radical_socialist = yes }
-		}
 		trigger_if = {
 			limit = {
 				bpm_ig_is_institutional = yes
@@ -43,36 +28,31 @@ progressive_party = {
 	}
 	join_weight = {
 		value = {
-			value = 0
+			value = -100
 			desc = "base_value"
 		}
 		if = {
-			limit = {
-				owner = { has_variable = bpm_party_establishment_centre_left }
-				NOR = {
-					bpm_ig_is_radical_opposition = yes
-					bpm_ig_is_very_radical_opposition = yes
-				}
-			}
+			limit = { owner = {has_variable = progressive_party_enabled} }
 			add = {
-				desc = "bpm_from_party_establishment"
-				value = {
-					value = 20
-					if = {
-						limit = {
-							bpm_ig_is_institutional = yes
-						}
-						subtract = 12
-					}
-				}
-				multiply = owner.var:bpm_party_establishment_centre_left
-				multiply = owner.var:bpm_political_stability
-				divide = 10000
+				value = 100
+				desc "hpx_progressive_party"
 			}
 		}
 		if = {
 			limit = {
-				is_interest_group_type = ig_classical_liberal
+				is_interest_group_type = ig_socdem
+			}
+			add = {
+				value = 30
+				desc = "hpx_hating_left"
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_classical_liberal
+					is_interest_group_type = ig_liberal
+				}
 			}
 			add = {	
 				value = -30
@@ -124,12 +104,12 @@ progressive_party = {
 		}
 		if = { # party socialists love socialism
 			limit = {
-				leader = { 
+				leader = {
 					has_ideology = ideology:ideology_social_democrat
 				}
 			}
 			add = {	
-				value = 5
+				value = 15
 				desc = "bpm_from_labor_radical_leader"
 			}
 		}
@@ -447,24 +427,6 @@ progressive_party = {
 			add = {
 				value = -100
 				desc = "bpm_no_socdems_in_party"
-			}
-		}
-		if = { # Anti-electoralism
-			limit = {
-				bpm_ig_is_anti_electoralist_socialist = yes
-			}
-			add = {
-				value = -10
-				desc = "bpm_anti_electoralist"
-			}
-		}
-		if = { # Strong anti-electoralism
-			limit = {
-				bpm_ig_is_strongly_anti_electoralist_socialist = yes
-			}
-			add = {
-				value = -30
-				desc = "bpm_strongly_anti_electoralist"
 			}
 		}
 	}

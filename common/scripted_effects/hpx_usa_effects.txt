@@ -83,7 +83,10 @@ hpx_democrat_classical_liberal_candidate = {
 }
 hpx_progressive_socdem_candidate = {
 	if = {
-		limit = { AND { game_date < 1980.1.1 game_date >= 1978.1.1}}
+		limit = { game_date < 1976.1.1 }
+	}
+	else_if = {
+		limit = { game_date < 1980.1.1}
 		create_character = { template = george_mcgovern }
 	} else_if = {
 		limit = { game_date < 1988.1.1 }

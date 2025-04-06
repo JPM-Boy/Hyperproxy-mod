@@ -240,7 +240,10 @@ hpx_usa_elections.8 = {
 	duration = 1
 
 	immediate = {
-
+		set_variable = { name = dem_rep_coalition value = 0 }
+		set_variable = { name = dem_prog_coalition value = 0 }
+		set_variable = { name = dem_rep_coalition value = { add = var:democrat_party_seats add = var:republican_party_seats } }
+		set_variable = { name = dem_prog_coalition value = { add = var:democrat_party_seats add = var:progressive_party_seats } }
 	}
 
 	option = {
@@ -291,12 +294,74 @@ hpx_usa_elections.8 = {
 	option = {
 		name = hpx_usa_elections.8.dem_rep
 		show_as_unavailable = { always = yes }
-		trigger = { has_variable = progressive_party_enabled }
+		trigger = {
+			AND = {
+				has_variable = progressive_party_enabled
+				var:dem_rep_coalition >= 270
+			}
+		}
+		trigger_event = hpx_usa_elections.9
 	}
 
 	option = {
 		name = hpx_usa_elections.8.dem_prog
 		show_as_unavailable = { always = yes }
-		trigger = { has_variable = progressive_party_enabled }
+		trigger = {
+			AND = {
+				has_variable = progressive_party_enabled
+				var:dem_prog_coalition >= 270
+			}
+		}
+		trigger_event = hpx_usa_elections.10
+	}
+}
+
+hpx_usa_elections.9 = {
+	type = country_event
+	placement = root
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.9.t
+	desc = hpx_usa_elections.9.d
+	flavor = hpx_usa_elections.9.f
+	duration = 1
+
+	option = {
+		name = hpx_usa_elections.9.rep
+		var:republican_candidate ?= {
+			set_character_as_ruler = yes
+		}
+	}
+	option = {
+		name = hpx_usa_elections.9.dem
+		var:democrat_candidate ?= {
+			set_character_as_ruler = yes
+		}
+	}
+}
+
+hpx_usa_elections.10 = {
+	type = country_event
+	placement = root
+	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/firstIntl.dds"
+	title = hpx_usa_elections.10.t
+	desc = hpx_usa_elections.10.d
+	flavor = hpx_usa_elections.10.f
+	duration = 1
+
+	option = {
+		name = hpx_usa_elections.10.prog
+		var:progressive_candidate ?= {
+			set_character_as_ruler = yes
+		}
+	}
+	option = {
+		name = hpx_usa_elections.10.dem
+		var:democrat_candidate ?= {
+			set_character_as_ruler = yes
+		}
 	}
 }

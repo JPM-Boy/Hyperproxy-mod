@@ -8,17 +8,6 @@
 	}
 	set_variable = { name = republican_candidate value = owner.ig:ig_reactionary.leader  }
 }
-hpx_republican_fascist_candidate = {
-	if = {
-		limit = { game_date < 1980.1.1 }
-		create_character = { template = strom_thurmond }
-	} else_if = {
-		limit = { game_date < 1988.1.1 }
-		create_character = { template = pat_buchanan }
-	}
-	set_variable = { name = republican_candidate value = owner.ig:ig_fascist.leader  }
-
-}
 hpx_republican_conservative_candidate = {
 	if = {
 		limit = { game_date < 1976.1.1 }
@@ -71,7 +60,7 @@ hpx_democrat_socdem_candidate = {
 	}
 	set_variable = { name = democrat_candidate value = owner.ig:ig_socdem.leader  }
 }
-hpx_democrat_classical_liberal_candidate = {
+hpx_democrat_fascist_candidate = {
 	if = {
 		limit = { game_date < 1984.1.1 }
 		create_character = { template = george_wallace }
@@ -208,9 +197,9 @@ hpx_setup_party_map = {
 				OR = {
 					is_interest_group_type = ig_liberal
 					is_interest_group_type = ig_socdem
-					is_interest_group_type = ig_classical_liberal
 					is_interest_group_type = ig_orthodox_communist
 					is_interest_group_type = ig_reformist_communist
+					is_interest_group_type = ig_fascist
 					is_interest_group_type = ig_new_leftism
 
 				}
@@ -226,7 +215,7 @@ hpx_setup_party_map = {
 			var:governor = {
 				OR = {
 					is_interest_group_type = ig_cons
-					is_interest_group_type = ig_fascist
+					is_interest_group_type = ig_classical_liberal
 					is_interest_group_type = ig_reactionary
 				}
 			}

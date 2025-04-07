@@ -35,19 +35,11 @@ democrat_party = {
 		owner = {
 			country_has_voting_franchise = yes
 		}
-		leader = { # far right won't join liberal parties
-			NOR = {
-				bpm_leader_is_reactionary = yes
-				bpm_leader_is_fascist = yes
-			}
-		}
 		NAND = { # far left won't join liberal parties
 			bpm_ig_is_institutional = no
 			leader = { bpm_leader_is_radical_socialist = yes }
 		}
-		NOR = {
-			bpm_ig_is_traditionalist = yes
-			bpm_ig_is_fascist = yes
+		NOT = {
 			bpm_ig_is_actually_desiring_socialism = yes
 		}
 		NOT = { # unreformed conservatives should not join the liberals
@@ -163,6 +155,15 @@ democrat_party = {
 			add = {
 				value = 5
 				desc = "bpm_from_liberal_ig"
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_fascist
+			}
+			add = {
+				value = 50
+				desc = "hpx_dixiecrats"
 			}
 		}
 		if = { # liberals love liberalism

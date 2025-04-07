@@ -86,7 +86,7 @@ ig_reactionary_only_icon:0 "@ig_reactionary!"
 ig_reactionary_desc:0 "Reactionaries are a broad tent of those who want to go back to the good old days, who unlike niche interest groups elevate their nostalgia to a general politics. The specifics of what they want depends on what the good old days were like (or seemed to be) in each particular country. Subsections of this group include monarchic absolutists, religious moralists, or even wealthy peasants"ig_variant_orthodox_communist:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_reactionary:0 "[GetInterestGroupVariant('ig_reactionary',GetPlayer).GetNameWithCountryVariant]"
 
- ig_western_conservative: "Western Conservatives"
+ ig_fusionists: "Fusionists"
 
 #Reformists
 ig_reformist_communist:0 "Revisionist Communists"

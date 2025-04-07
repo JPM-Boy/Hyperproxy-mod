@@ -52,6 +52,15 @@
 				value = 200
 			}
 		}
+		if = {
+			limit = {
+				has_pop_culture = dixie
+			}
+			add = {
+				desc = "DIXIECRATS"
+				value = 500
+			}
+		}
 		add = {
 			desc = "POP_CAPITALISTS"
 			if = {

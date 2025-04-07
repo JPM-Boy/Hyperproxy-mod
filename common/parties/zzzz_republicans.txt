@@ -34,15 +34,14 @@ republican_party = {
 		NOT = { bpm_is_party_banned = { PARTY = republican_party } }
 		owner = {
 			country_has_voting_franchise = yes
-			}
+		}
 		OR = {
 			NOT = { 
 			bpm_ig_is_radical_left = yes
 			}
 			Leader = {
-				NOR = {
+				NOT = {
 					bpm_leader_is_socialist = yes
-					bpm_leader_is_radical_liberal = yes
 				}
 			}
 		}
@@ -75,6 +74,15 @@ republican_party = {
 				multiply = owner.var:bpm_party_establishment_rightwing
 				multiply = owner.var:bpm_political_stability
 				divide = 10000
+			}
+		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_classical_liberal
+			}
+			add = {
+				value = 15
+				desc = "hpx_rockefeller_faction"
 			}
 		}
 		if = {

@@ -23,15 +23,6 @@ hpx_usa_elections.1 = { #REPUBLICAN PARTY
 	}
 	option = {
 		ai_chance = {base = 1}
-		name = hpx_usa_elections.1.fascist
-		show_as_unavailable = { always = yes }
-		trigger = {
-			owner.ig:ig_fascist = {is_member_of_party = owner.py:republican_party}
-		}
-		hpx_republican_fascist_candidate = yes
-	}
-	option = {
-		ai_chance = {base = 1}
 		name = hpx_usa_elections.1.conservative
 		show_as_unavailable = { always = yes }
 		trigger = {
@@ -76,9 +67,9 @@ hpx_usa_elections.2 = {
 		name = hpx_usa_elections.2.classical_liberal
 		show_as_unavailable = { always = yes }
 		trigger = {
-			owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:democrat_party}
+			owner.ig:ig_fascist = {is_member_of_party = owner.py:democrat_party}
 		}
-		hpx_democrat_classical_liberal_candidate = yes
+		hpx_democrat_fascist_candidate = yes
 	}
 	option = {
 		ai_chance = {base = 1}
@@ -101,8 +92,8 @@ hpx_usa_elections.3 = { # REPUBLICAN PARTY OPPOSITION
 				hpx_republican_reactionary_candidate = yes
 			}
 			20 = {
-				trigger = { owner.ig:ig_fascist = {is_member_of_party = owner.py:republican_party} }
-				hpx_republican_fascist_candidate = yes
+				trigger = {	owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:republican_party} }
+				hpx_republican_classical_liberal_candidate = yes
 			}
 			20 = {
 				trigger = { owner.ig:ig_cons = {is_member_of_party = owner.py:republican_party} }
@@ -126,8 +117,8 @@ hpx_usa_elections.4 = { # DEMOCRAT PARTY OPPOSITION
 				hpx_democrat_liberal_candidate = yes
 			}
 			20 = {
-				trigger = {	owner.ig:ig_classical_liberal = {is_member_of_party = owner.py:democrat_party} }
-				hpx_democrat_classical_liberal_candidate = yes
+				trigger = {	owner.ig:ig_fascist = {is_member_of_party = owner.py:democrat_party} }
+				hpx_democrat_fascist_candidate = yes
 			}
 			20 = {
 				trigger = {	owner.ig:ig_socdem = {is_member_of_party = owner.py:democrat_party} }

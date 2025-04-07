@@ -75,18 +75,8 @@ hpx_rename_classical_libs_ig = {
                 country_has_primary_culture = cu:yankee
                 country_has_primary_culture = cu:dixie
             }
-            ig:ig_classical_liberal = {is_member_of_party = owner.py:republican_party}
         }
         ig:ig_classical_liberal ?= { set_interest_group_name = ig_rockefeller }
-    } else_if = {
-        limit = {
-            OR = {
-                country_has_primary_culture = cu:yankee
-                country_has_primary_culture = cu:dixie
-            }
-            ig:ig_classical_liberal = {is_member_of_party = owner.py:democrat_party}
-        }
-        ig:ig_classical_liberal ?= { set_interest_group_name = ig_dixiecrat }
     }
 }
 hpx_rename_reactionary_ig = {
@@ -97,7 +87,7 @@ hpx_rename_reactionary_ig = {
                 country_has_primary_culture = cu:dixie
             }
         }
-        ig:ig_reactionary ?= { set_interest_group_name = ig_western_conservative }
+        ig:ig_reactionary ?= { set_interest_group_name = ig_fusionists }
     }
 }
 hpx_rename_fascist_ig = {
@@ -108,6 +98,6 @@ hpx_rename_fascist_ig = {
                 country_has_primary_culture = cu:dixie
             }
         }
-        ig:ig_fascist ?= { set_interest_group_name = ig_bircherist }
+        ig:ig_fascist ?= { set_interest_group_name = ig_dixiecrat }
     }
 }

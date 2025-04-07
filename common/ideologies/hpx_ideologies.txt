@@ -87,7 +87,6 @@ ideology_maoism_reformism = {
 		}
 	}
 }
-
 ideology_maoism_liberal = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_liberal_communism.dds"
 	character_ideology = yes
@@ -168,7 +167,6 @@ ideology_ultramaoism = {
 		}
 	}
 }
-
 ideology_democratic_marxism = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_democratic_marxism.dds"
 	character_ideology = yes
@@ -207,5 +205,232 @@ ideology_democratic_marxism = {
 			}
 			add = 100
 		}
+	}
+}
+ideology_intellectual = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_intelectual.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_libertarian = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_libertarian.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_labor_progressive = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_labor_progressivism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_institutional_progressive = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_institutional_progressivism.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_decentralist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_decentralizer.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_segregationist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_segregationist.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_citizenship = {
+		law_ethnostate = approve
+		law_national_supremacy = strongly_approve
+		law_racial_segregation = strongly_approve
+		law_cultural_exclusion = neutral
+		law_multicultural = strongly_disapprove
+		law_post_citizenship = strongly_disapprove
+	}
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_evangelist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_evangelist.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	lawgroup_church_and_state = {
+		law_religious_supremacy = approve
+		law_religious_institution = strongly_approve
+		law_freedom_of_conscience = disapprove
+		law_total_separation = strongly_disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_paleoconservative = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_paleocon.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_technocrat = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_technocrat.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
+	}
+}
+ideology_leader_populist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_populist.dds"
+	character_ideology = yes
+	show_in_list = yes
+
+	interest_group_leader_trigger = {
+		always = yes
+	}
+
+	interest_group_leader_weight = {
+		value = 100
+	}
+
+	non_interest_group_leader_trigger = {
+		always = yes
+	}
+
+	non_interest_group_leader_weight = {
+		value = 100
 	}
 }

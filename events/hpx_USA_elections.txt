@@ -258,10 +258,7 @@ hpx_usa_elections.8 = {
 		}
 		if = {
 			limit = {
-				AND = {
-					ruler.interest_group.party = owner.py:republican_party
-					var:republican_party_seats >= 270
-				}
+				var:republican_party_seats >= 270
 			}
 			var:republican_candidate ?= {
 				set_character_as_ruler = yes
@@ -269,10 +266,7 @@ hpx_usa_elections.8 = {
 		}
 		else_if = {
 			limit = {
-				AND = {
-					ruler.interest_group.party = owner.py:democrat_party
-					var:democrat_party_seats >= 270
-				}
+				var:democrat_party_seats >= 270
 			}
 			var:democrat_candidate ?= {
 				set_character_as_ruler = yes
@@ -280,10 +274,7 @@ hpx_usa_elections.8 = {
 		}
 		else_if = {
 			limit = {
-				AND = {
-					ruler.interest_group.party = owner.py:progressive_party
-					var:progressive_party_seats >= 270
-				}
+				var:progressive_party_seats >= 270
 			}
 			var:progressive_candidate ?= {
 				set_character_as_ruler = yes

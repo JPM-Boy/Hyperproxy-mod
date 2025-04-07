@@ -10,7 +10,7 @@
 			ruler = yes
 			age = 49
 			interest_group = ig_liberal
-			ideology = ideology_social_democrat
+			ideology = ideology_labor_progressive
 			traits = {
 			}
 		}

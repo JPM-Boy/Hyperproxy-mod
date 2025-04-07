@@ -6,7 +6,7 @@
 	ig_leader = yes
     birth_date = 1911.2.6
     interest_group = ig_reactionary
-    ideology = ideology_ultramaoism
+    ideology = ideology_evangelist
 }
 hubert_humphrey = {
 	first_name = "Hubert"
@@ -16,7 +16,7 @@ hubert_humphrey = {
 	ig_leader = yes
 	birth_date = 1911.5.27
 	interest_group = ig_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_labor_progressive
 }
 george_wallace = {
 	first_name = "George"
@@ -26,7 +26,7 @@ george_wallace = {
 	ig_leader = yes
 	birth_date = 1919.8.25
 	interest_group = ig_classical_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_leader_populist
 }
 edmund_muskie = {
 	first_name = "Edmund"
@@ -36,7 +36,7 @@ edmund_muskie = {
 	ig_leader = yes
 	birth_date = 1914.3.28
 	interest_group = ig_socdem
-	ideology = ideology_ultramaoism
+	ideology = ideology_institutional_progressive
 }
 strom_thurmond = {
 	first_name = "Strom"
@@ -46,7 +46,7 @@ strom_thurmond = {
 	ig_leader = yes
 	birth_date = 1902.12.5
 	interest_group = ig_fascist
-	ideology = ideology_ultramaoism
+	ideology = ideology_segregationist
 }
 pat_buchanan = {
 	first_name = "Pat"
@@ -56,7 +56,7 @@ pat_buchanan = {
 	ig_leader = yes
 	birth_date = 1938.11.2
 	interest_group = ig_fascist
-	ideology = ideology_ultramaoism
+	ideology = ideology_paleoconservative
 }
 paul_laxalt = {
 	first_name = "Paul"
@@ -66,7 +66,7 @@ paul_laxalt = {
 	ig_leader = yes
 	birth_date = 1922.8.2
 	interest_group = ig_reactionary
-	ideology = ideology_ultramaoism
+	ideology = ideology_evangelist
 }
 john_ashbrook = {
 	first_name = "John"
@@ -76,7 +76,7 @@ john_ashbrook = {
 	ig_leader = yes
 	birth_date = 1928.9.21
 	interest_group = ig_cons
-	ideology = ideology_ultramaoism
+	ideology = ideology_paleoconservative
 }
 ernest_hollings = {
 	first_name = "Ernest"
@@ -86,7 +86,7 @@ ernest_hollings = {
 	ig_leader = yes
 	birth_date = 1922.1.1
 	interest_group = ig_classical_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_segregationist
 }
 howard_baker = {
 	first_name = "Howard"
@@ -96,7 +96,7 @@ howard_baker = {
 	ig_leader = yes
 	birth_date = 1925.11.15
 	interest_group = ig_cons
-	ideology = ideology_ultramaoism
+	ideology = ideology_moderate
 }
 bob_dole = {
 	first_name = "Bob"
@@ -106,7 +106,7 @@ bob_dole = {
 	ig_leader = yes
 	birth_date = 1923.7.22
 	interest_group = ig_cons
-	ideology = ideology_ultramaoism
+	ideology = ideology_moderate
 }
 nelson_rockefeller = {
 	first_name = "Nelson"
@@ -116,7 +116,7 @@ nelson_rockefeller = {
 	ig_leader = yes
 	birth_date = 1908.7.8
 	interest_group = ig_classical_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_liberal_leader
 }
 gerald_ford = {
 	first_name = "Gerald"
@@ -126,7 +126,7 @@ gerald_ford = {
 	ig_leader = yes
 	birth_date = 1913.7.14
 	interest_group = ig_classical_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_moderate
 }
 frank_church = {
 	first_name = "Frank"
@@ -136,7 +136,7 @@ frank_church = {
 	ig_leader = yes
 	birth_date = 1924.7.25
 	interest_group = ig_socdem
-	ideology = ideology_ultramaoism
+	ideology = ideology_libertarian
 }
 mo_udall = {
 	first_name = "Mo"
@@ -146,7 +146,7 @@ mo_udall = {
 	ig_leader = yes
 	birth_date = 1922.6.15
 	interest_group = ig_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_institutional_progressive
 }
 jimmy_carter = {
 	first_name = "Jimmy"
@@ -156,7 +156,7 @@ jimmy_carter = {
 	ig_leader = yes
 	birth_date = 1924.10.1
 	interest_group = ig_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_decentralist
 }
 ted_kennedy = {
 	first_name = "Ted"
@@ -166,7 +166,7 @@ ted_kennedy = {
 	ig_leader = yes
 	birth_date = 1932.2.22
 	interest_group = ig_socdem
-	ideology = ideology_ultramaoism
+	ideology = ideology_labor_progressive
 }
 george_bush = {
 	first_name = "George"
@@ -176,7 +176,7 @@ george_bush = {
 	ig_leader = yes
 	birth_date = 1924.6.12
 	interest_group = ig_classical_liberal
-	ideology = ideology_ultramaoism
+	ideology = ideology_technocrat
 }
 robert_kennedy = {
 	first_name = "Robert"
@@ -187,7 +187,7 @@ robert_kennedy = {
 	ruler = yes
 	birth_date = 1925.11.20
 	interest_group = ig_socdem
-	ideology = ideology_ultramaoism
+	ideology = ideology_leader_populist
 }
 george_mcgovern = {
 	first_name = "George"
@@ -197,7 +197,7 @@ george_mcgovern = {
 	ig_leader = yes
 	birth_date = 1922.7.19
 	interest_group = ig_socdem
-	ideology = ideology_ultramaoism
+	ideology = ideology_pacifist
 }
 walter_mondale = {
 	first_name = "Walter"
@@ -207,7 +207,7 @@ walter_mondale = {
 	ig_leader = yes
 	birth_date = 1928.1.5
 	interest_group = ig_socdem
-	ideology = ideology_ultramaoism
+	ideology = ideology_labor_progressive
 }
 michael_harrington = {
 	first_name = "Michael"
@@ -217,7 +217,7 @@ michael_harrington = {
 	ig_leader = yes
 	birth_date = 1928.2.24
 	interest_group = ig_new_leftism
-	ideology = ideology_ultramaoism
+	ideology = ideology_intellectual
 }
 bernie_sanders = {
 	first_name = "Bernie"
@@ -227,7 +227,7 @@ bernie_sanders = {
 	ig_leader = yes
 	birth_date = 1941.9.8
 	interest_group = ig_new_leftism
-	ideology = ideology_ultramaoism
+	ideology = ideology_leader_populist
 }
 gus_hall = {
 	first_name = "Gus"
@@ -237,7 +237,7 @@ gus_hall = {
 	ig_leader = yes
 	birth_date = 1910.10.8
 	interest_group = ig_reformist_communist
-	ideology = ideology_ultramaoism
+	ideology = ideology_communist
 }
 
 

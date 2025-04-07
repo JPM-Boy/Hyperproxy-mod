@@ -356,3 +356,14 @@ hpx_usa_elections.10 = {
 		}
 	}
 }
+hpx_usa_elections.11 = { # HPX_SETUP_PARTY_MAP
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		every_scope_state = {
+			limit = { is_incorporated = yes is_capital = no }
+			hpx_setup_party_map = yes
+		}
+	}
+}

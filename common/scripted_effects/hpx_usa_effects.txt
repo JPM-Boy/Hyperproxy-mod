@@ -200,3 +200,69 @@ hpx_state_election_list_reestructuring = {
 
 	}
 }
+
+hpx_setup_party_map = {
+	if = {
+		limit = {
+			var:governor = {
+				OR = {
+					is_interest_group_type = ig_liberal
+					is_interest_group_type = ig_socdem
+					is_interest_group_type = ig_classical_liberal
+					is_interest_group_type = ig_orthodox_communist
+					is_interest_group_type = ig_reformist_communist
+					is_interest_group_type = ig_new_leftism
+
+				}
+			}
+		}
+		set_variable = {
+			name = usa_party
+			value = owner.py:democrat_party
+		}
+	}
+	else_if = {
+		limit = {
+			var:governor = {
+				OR = {
+					is_interest_group_type = ig_cons
+					is_interest_group_type = ig_fascist
+					is_interest_group_type = ig_reactionary
+				}
+			}
+		}
+		set_variable = {
+			name = usa_party
+			value = owner.py:republican_party
+		}
+	}
+}
+hpx_refresh_party_map = {
+	if = {
+		limit = {
+			var:governor = {is_member_of_party = owner.py:democrat_party}
+		}
+		set_variable = {
+			name = usa_party
+			value = owner.py:democrat_party
+		}
+	}
+	else_if = {
+		limit = {
+			var:governor = {is_member_of_party = owner.py:republican_party}
+		}
+		set_variable = {
+			name = usa_party
+			value = owner.py:republican_party
+		}
+	}
+	else_if = {
+		limit = {
+			var:governor = {is_member_of_party = owner.py:progressive_party}
+		}
+		set_variable = {
+			name = usa_party
+			value = owner.py:progressive_party
+		}
+	}
+}

@@ -77,12 +77,15 @@
 						}
 					}
 					save_scope_as = liberal_state
+					set_variable = {
+						name = usa_party
+						value = owner.py:democrat_party
+					}
 					owner = {
 						add_to_variable_list = {
 							name = liberal_states
 							target = scope:liberal_state
 						}
-
 					}
 				}
 				else_if = {
@@ -95,7 +98,19 @@
 						}
 					}
 					save_scope_as = conservative_state
-
+					if = {
+						limit = { var:governor = {is_interest_group_type = ig_cons} }
+						set_variable = {
+							name = usa_party
+							value = owner.py:republican_party
+						}
+					} else_if = {
+						limit = { var:governor = {is_interest_group_type = ig_classical_liberal} }
+						set_variable = {
+							name = usa_party
+							value = owner.py:democrat_party
+						}
+					}
 					owner = {
 						add_to_variable_list = {
 							name = conservative_states
@@ -110,6 +125,10 @@
 								is_interest_group_type = ig_socdem
 							}
 						}
+					}
+					set_variable = {
+						name = usa_party
+						value = owner.py:democrat_party
 					}
 					save_scope_as = progressive_state
 					owner = {
@@ -129,6 +148,10 @@
 							}
 						}
 					}
+					set_variable = {
+						name = usa_party
+						value = owner.py:democrat_party
+					}
 					save_scope_as = communist_state
 					owner = {
 						add_to_variable_list = {
@@ -147,6 +170,10 @@
 						}
 					}
 					save_scope_as = reactionary_state
+					set_variable = {
+						name = usa_party
+						value = owner.py:republican_party
+					}
 					owner = {
 						add_to_variable_list = {
 							name = reactionary_states
@@ -157,6 +184,6 @@
 				}
 			}
 		}
-
+		trigger_event = { id = hpx_usa_elections.11 days = 1}
 	}
 }

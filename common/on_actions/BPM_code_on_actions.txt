@@ -101,6 +101,10 @@ hpx_on_election_campaign_end = {
 								add = prev.var:seats
 							}
 						}
+						set_variable = {
+							name = usa_party
+							value = owner.py:republican_party
+						}
 					}
 					else_if = {
 						limit = { var:governor = {is_member_of_party = owner.py:democrat_party}  }
@@ -109,6 +113,10 @@ hpx_on_election_campaign_end = {
 								name = democrat_party_seats
 								add = prev.var:seats
 							}
+						}
+						set_variable = {
+							name = usa_party
+							value = owner.py:democrat_party
 						}
 					}
 					else_if = {
@@ -119,6 +127,10 @@ hpx_on_election_campaign_end = {
 								add = prev.var:seats
 							}
 						}
+						set_variable = {
+							name = usa_party
+							value = owner.py:progressive_party
+						}
 					}
 					else = {
 						owner = {
@@ -128,9 +140,10 @@ hpx_on_election_campaign_end = {
 							}
 						}
 					}
+					hpx_refresh_party_map = yes
 				}
-				trigger_event = hpx_usa_elections.8
 
+				trigger_event = hpx_usa_elections.8
 				every_scope_state = {
 					limit = {
 						is_incorporated = yes

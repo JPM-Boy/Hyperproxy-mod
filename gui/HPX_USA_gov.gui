@@ -229,453 +229,485 @@
                      using = fontsize_xl
                  }
              }
-             flowcontainer = {
-                 direction = horizontal
-                 spacing = 10
-                 flowcontainer = {
-                     direction = vertical
+             widget = {
+                 size = {200 200}
+                 datamodel = "[GetPlayer.MakeScope.GetList('states')]"
+                 item = {
                      widget = {
-                         size = {222 50}
-                         background = {
-                             using = dark_area
-                             using = frame_small_mask
-                         }
-                         icon = {
+                         size = {100% 100%}
+                         position = {100 100}
+                         datacontext = "[Scope.AccessState]"
+                         widget = {
+                             position = {350 0}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_ALASKA'))]"
                              size = {100% 100%}
-                             using = frame_small
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/alaska.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
                          }
-                         textbox = {
-                             text = "Far-Left"
-                             multiline = yes
+                         widget = {
+                             position = {180 0}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_HAWAIIAN_ISLANDS'))]"
                              size = { 100% 100% }
-                             align = center
-                         }
-                     }
-                     dynamicgridbox = {
-                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('communist_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
-                                     multiline = yes
-                                     size = { 100% 100% }
-                                    margin_left = 10
-                                 }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/hawaii.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
                              }
                          }
-                     }
-                     dynamicgridbox = {
-                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('communist_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.GetName]"
-                                     align = center
-                                     multiline = yes
-                                     size = { 172 50 }
-                                     margin_left = 50
-                                 }
-                                 button = {
-                                     parentanchor = right
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
-                             }
-                         }
-                     }
-                 } #FAR LEFT
-                 flowcontainer = {
-                     direction = vertical
-                     widget = {
-                         size = {222 50}
-                         background = {
-                             using = dark_area
-                             using = frame_small_mask
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = frame_small
-                         }
-                         textbox = {
-                             text = "Left-Wing"
-                             multiline = yes
+                         widget = {
+                             position = {508 38}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MAINE'))]"
                              size = { 100% 100% }
-                             align = center
-                         }
-                     }
-                     dynamicgridbox = {
-                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('progressive_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
-                                     multiline = yes
-                                     size = { 100% 100% }
-                                     margin_left = 10
-                                 }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/maine.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
                              }
                          }
-                     }
-                     dynamicgridbox = {
-                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('progressive_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.GetName]"
-                                     align = center
-                                     multiline = yes
-                                     size = { 172 50 }
-                                     margin_left = 50
-                                 }
-                                 button = {
-                                     parentanchor = right
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
-                                 button = {
-                                     parentanchor = left
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
-                             }
-                         }
-                     }
-                 } #LEFT WING
-                 flowcontainer = {
-                     direction = vertical
-                     widget = {
-                         size = {222 50}
-                         background = {
-                             using = dark_area
-                             using = frame_small_mask
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = frame_small
-                         }
-                         textbox = {
-                             text = "Center"
-                             multiline = yes
+                         widget = {
+                             position = {515 106}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_RHODE_ISLAND'))]"
                              size = { 100% 100% }
-                             align = center
-                         }
-                     }
-                     dynamicgridbox = {
-                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('liberal_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.GetName]"
-                                     align = center
-                                     multiline = yes
-                                     size = { 172 50 }
-                                     margin_left = 50
-                                 }
-                                 button = {
-                                     parentanchor = right
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
-                                 button = {
-                                     parentanchor = left
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/rhode_island.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
                              }
                          }
-                     }
-                     dynamicgridbox = {
-                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('liberal_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
-                                     multiline = yes
-                                     size = { 100% 100% }
-                                     margin_left = 10
-                                 }
-                             }
-                         }
-                     }
-                 } #CENTER LEFT
-                 flowcontainer = {
-                     direction = vertical
-                     widget = {
-                         size = {222 50}
-                         background = {
-                             using = dark_area
-                             using = frame_small_mask
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = frame_small
-                         }
-                         textbox = {
-                             text = "Right-Wing"
-                             multiline = yes
+                         widget = {
+                             position = {500 107}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_CONNECTICUT'))]"
                              size = { 100% 100% }
-                             align = center
-                         }
-                     }
-                     dynamicgridbox = {
-                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('conservative_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.GetName]"
-                                     align = center
-                                     multiline = yes
-                                     size = { 172 50 }
-                                     margin_left = 50
-                                 }
-                                 button = {
-                                     parentanchor = right
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_right.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
-                                 button = {
-                                     parentanchor = left
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-
-                                 }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/connecticut.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
                              }
                          }
-                     }
-                     dynamicgridbox = {
-                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('conservative_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
-                                     multiline = yes
-                                     size = { 100% 100% }
-                                     margin_left = 10
-                                 }
-                             }
-                         }
-                     }
-                 } #RIGHT WING
-                 flowcontainer = {
-                     direction = vertical
-                     widget = {
-                         size = {222 50}
-                         background = {
-                             using = dark_area
-                             using = frame_small_mask
-                         }
-                         icon = {
-                             size = {100% 100%}
-                             using = frame_small
-                         }
-                         textbox = {
-                             text = "Far-Right"
-                             multiline = yes
+                         widget = {
+                             position = {500 95}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MASSACHUSETTS'))]"
                              size = { 100% 100% }
-                             align = center
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/massachussets.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
                          }
-                     }
-                     dynamicgridbox = {
-                         visible = "[GetVariableSystem.Exists( 'state_swaying' )]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('reactionary_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.GetName]"
-                                     align = center
-                                     multiline = yes
-                                     size = { 172 50 }
-                                     margin_left = 50
-                                 }
-                                 button = {
-                                     parentanchor = left
-                                     size = { 50 50 }
-                                     icon = {
-                                         size = { 50 50 }
-                                         texture = "/gfx/interface/buttons/button_icons/move_left.dds"
-                                     }
-                                     onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
-                                 }
+                         widget = {
+                             position = {504 70}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NEW_HAMPSHIRE'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/new_hampshire.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {492 72}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_VERMONT'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/vermont.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {446 76}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NEW_YORK'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/new_york.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {488 120}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NEW_JERSEY'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/new_jersey.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {440 115}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_PENNSYLVANIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/pennsylvania.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {485 141}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_DELAWARE'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/delaware.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {452 143}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MARYLAND'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/maryland.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {427 142}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_WEST_VIRGINIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/west_virginia.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {422 151}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_VIRGINIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/virginia.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {352 70}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MICHIGAN'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/michigan.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {403 124 }
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_OHIO'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/ohio.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {369 162}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_KENTUCKY'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/kentucky.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {380 132}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_INDIANA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/indiana.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {332 78}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_WISCONSIN'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/wisconsin.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {347 128}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_ILLINOIS'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/illinois.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {298 51}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MINNESOTA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/minesota.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {302 118}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_IOWA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/iowa.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {362 188}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_TENNESSEE'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/tennesse.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {418 179}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NORTH_CAROLINA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/north_carolina.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {427 205}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_SOUTH_CAROLINA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/south_carolina.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {390 255}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_FLORIDA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/florida.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {404 209}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_GEORGIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/georgia.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {380 213}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_ALABAMA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/alabama.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {350 215}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MISSISSIPPI'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/mississippi.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {308 152}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MISSOURI'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/missouri.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {318 199}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_ARKANSAS'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/arkansas.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {325 240}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_LOUISIANA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/louisiana.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {242 53}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NORTH_DAKOTA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/north_dakota.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {239 89}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_SOUTH_DAKOTA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/south_dakota.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {237 123}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NEBRASKA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/nebraska.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {248 157}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_KANSAS'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/kansas.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {151 39}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_MONTANA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/montana.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {176 93}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_WYOMING'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/wyoming.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {128 38}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_IDAHO'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/idaho.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {73 -70}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_BRITISH_COLUMBIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/cascadia.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {85 26}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_WASHINGTON'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/washington.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {67 55}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_OREGON'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/oregon.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {185 142}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_COLORADO'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/colorado.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {140 123}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_UTAH'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/utah.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {200 200}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_TEXAS'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/texas.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {240 195}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_OKLAHOMA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/oklahoma.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {176 188}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NEW_MEXICO'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/new_mexico.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {122 179}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_ARIZONA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/arizona.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {93 111}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_NEVADA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/nevada.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {60 100}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_CALIFORNIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/california.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
+                             }
+                         }
+                         widget = {
+                             position = {98 223}
+                             visible = "[EqualTo_string(State.GetStateRegion.GetNameNoFormatting, Localize('STATE_BAJA_CALIFORNIA'))]"
+                             size = { 100% 100% }
+                             icon = {
+                                 texture = "/gfx/interface/icons/state_icons/baja_california.dds"
+                                 color = "[Scope.Var('governor').GetInterestGroup.GetColor]"
                              }
                          }
                      }
-                     dynamicgridbox = {
-                         visible = "[Not(GetVariableSystem.Exists( 'state_swaying' ))]"
-                         datamodel_wrap = 1
-                         flipdirection = yes
-                         datamodel = "[GetPlayer.MakeScope.GetList('reactionary_states')]"
-                         item = {
-                             widget = {
-                                 datacontext = "[Scope.AccessState]"
-                                 size = { 222 50 }
-                                 background = {
-                                     using = simple_header_colored
-                                     color = "[State.MakeScope.Var('governor').GetInterestGroup.GetColor]"
-                                 }
-                                 icon = {
-                                     size = {100% 100%}
-                                     using = simple_frame
-                                 }
-                                 textbox = {
-                                     text = "[State.MakeScope.Var('governor').GetInterestGroup.GetTextIcon] - [State.GetName] - [State.MakeScope.Var('seats').GetValue]"
-                                     multiline = yes
-                                     size = { 100% 100% }
-                                     margin_left = 10
-                                 }
-                             }
-                         }
-                     }
-                 } #FAR RIGHT
+                 }
+
              }
 
          }

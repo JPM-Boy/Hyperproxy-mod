@@ -37,9 +37,9 @@
      }
      blockoverride "scrollarea_content" {
          flowcontainer = {
-             spacing = 10
+             spacing = 80
              direction = horizontal
-             parentanchor = topleft
+             parentanchor = hcenter
              flowcontainer = {
                  spacing = 10
                  direction = vertical
@@ -51,30 +51,9 @@
                      spacing = 20
                      background = {
                          using = dark_area
-                         alpha = 0.35
-                     }
-                     flowcontainer = {
-                         parentanchor = hcenter|vcenter
-                         direction = vertical
-                         spacing = 10
-                         character_portrait_medium_torso = {
-                             datacontext = "[AccessPlayer.AccessRuler]"
-                             using = tooltip_above
-                             blockoverride "show_hat" {}
-                             blockoverride "highlight" {}
-                         }
-                         textbox = {
-                             using = fontsize_large
-                             text = "Vicepresident"
-                             align = center
-                             parentanchor = center|top
-                         }
-                         textbox = {
-                             margin_top = 20
-                             using = fontsize_large
-                             text = "[GetPlayer.GetRuler.GetFullName]"
-                             align = center
-                             parentanchor = center|top
+                         alpha = 0.4
+                         modify_texture = {
+                             using = simple_frame_mask
                          }
                      }
                      flowcontainer = {
@@ -95,25 +74,25 @@
                          }
                      }
                      flowcontainer = {
-                         parentanchor = hcenter|vcenter
+                         parentanchor = vcenter
                          direction = vertical
                          spacing = 10
+                         datacontext = "[AccessPlayer.MakeScope.Var('vice').GetCharacter]"
                          character_portrait_medium_torso = {
-                             datacontext = "[AccessPlayer.AccessRuler]"
                              using = tooltip_above
                              blockoverride "show_hat" {}
                              blockoverride "highlight" {}
                          }
                          textbox = {
                              using = fontsize_large
-                             text = "House Speaker"
+                             text = "Vicepresident"
                              align = center
                              parentanchor = center|top
                          }
                          textbox = {
                              margin_top = 20
                              using = fontsize_large
-                             text = "[GetPlayer.GetRuler.GetFullName]"
+                             text = "[GetPlayer.MakeScope.Var('vice').GetCharacter.GetFullName]"
                              align = center
                              parentanchor = center|top
                          }
@@ -125,14 +104,14 @@
                          direction = vertical
                          textbox = {
                              align = center|nobaseline
-                             size = { 670 50 }
+                             size = { 500 50 }
                              using = fontsize_xl
                              text = "#bold Electoral College"
                          }
                          flowcontainer = {
                              direction = horizontal
                              widget = {
-                                 size = { 330 50 }
+                                 size = { 250 50 }
                                  background = {
                                      using = simple_header_colored
                                      color = { 0 0.25 1 1 }
@@ -149,7 +128,7 @@
                                  }
                              }
                              widget = {
-                                 size = { 330 50 }
+                                 size = { 250 50 }
                                  background = {
                                      using = simple_header_colored
                                      color = { 1 0 0 1 }
@@ -170,7 +149,7 @@
                              direction = horizontal
                              widget = {
                                  visible = "[GetPlayer.MakeScope.Var('progressive_party_enabled').IsSet]"
-                                 size = { 330 50 }
+                                 size = { 250 50 }
                                  background = {
                                      using = simple_header_colored
                                      color = { 1 0.33 0 1 }
@@ -187,7 +166,7 @@
                                  }
                              }
                              widget = {
-                                 size = { 330 50 }
+                                 size = { 250 50 }
                                  background = {
                                      using = simple_header_colored
                                      color = { 0.8 0.8 0.8 1 }
@@ -233,6 +212,15 @@
                  direction = vertical
                  flowcontainer = {
                      direction = horizontal
+                     parentanchor = hcenter
+                     background = {
+                         using = dark_area
+                         using = frame_small_mask
+                     }
+                     icon = {
+                         size = {100% 100%}
+                         using = frame_small
+                     }
                      widget = {
                          size = {500 450}
                          datamodel = "[GetPlayer.MakeScope.GetList('states')]"
@@ -1274,6 +1262,7 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_right.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
 
                                      }
                                  }
@@ -1357,6 +1346,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_right.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
 
                                      }
                                      button = {
@@ -1367,6 +1358,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_left.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
 
                                      }
                                  }
@@ -1424,6 +1417,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_right.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
 
                                      }
                                      button = {
@@ -1434,6 +1429,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_left.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
 
                                      }
                                  }
@@ -1517,6 +1514,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_right.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_right').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
 
                                      }
                                      button = {
@@ -1527,6 +1526,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_left.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
 
                                      }
                                  }
@@ -1610,6 +1611,8 @@
                                              texture = "/gfx/interface/buttons/button_icons/move_left.dds"
                                          }
                                          onclick = "[GetScriptedGui('sway_state_left').Execute( GuiScope.SetRoot( State.MakeScope ).End )]"
+                                         onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+
                                      }
                                  }
                              }

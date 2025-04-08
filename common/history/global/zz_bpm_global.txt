@@ -130,4 +130,22 @@
 			value = 0
 		}
 	}
+
+	c:USA = {
+		random_interest_group = {
+			limit = {
+				OR = {
+					is_interest_group_type = ig_fascist
+					is_interest_group_type = ig_socdem
+				}
+			}
+			leader = {
+				save_scope_as = vice_scope
+			}
+		}
+		set_variable = {
+			name = vice
+			value = scope:vice_scope
+		}
+	}
 }

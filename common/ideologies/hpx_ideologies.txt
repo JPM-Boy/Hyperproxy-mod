@@ -8,6 +8,33 @@
 
 	}
 
+	lawgroup_governance_principles = {
+		law_council_republic = strongly_approve
+		law_republic = strongly_disapprove
+		law_monarchy = strongly_disapprove
+		law_corporatocracy = neutral
+		law_theocracy = strongly_disapprove
+	}
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_approve
+		law_community_land_trust = approve
+		law_tenant_farmers = neutral
+		law_customary_land_tenure = disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_serfdom = strongly_disapprove
+	}
+	lawgroup_taxation = {
+		law_wealth_taxation = approve
+		law_expropiation = strongly_approve
+		law_per_capita_based_taxation = disapprove
+	}
+	lawgroup_church_and_state = {
+		law_state_atheism = approve
+		law_total_separation = strongly_approve
+		law_freedom_of_conscience = strongly_disapprove
+		law_religious_institution = strongly_disapprove
+		law_religious_supremacy = strongly_disapprove
+	}
 
 	interest_group_leader_weight = {
 		value = 0
@@ -52,6 +79,34 @@ ideology_maoism_reformism = {
 	character_ideology = yes
 	show_in_list = yes
 
+	lawgroup_governance_principles = {
+		law_council_republic = approve
+		law_republic = strongly_disapprove
+		law_monarchy = strongly_disapprove
+		law_corporatocracy = neutral
+		law_theocracy = strongly_disapprove
+	}
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = approve
+		law_community_land_trust = neutral
+		law_tenant_farmers = disapprove
+		law_customary_land_tenure = strongly_disapprove
+		law_commercialized_agriculture = disapprove
+		law_serfdom = strongly_disapprove
+	}
+	lawgroup_taxation = {
+		law_wealth_taxation = neutral
+		law_expropiation = approve
+		law_per_capita_based_taxation = strongly_disapprove
+	}
+	lawgroup_church_and_state = {
+		law_state_atheism = strongly_approve
+		law_total_separation = approve
+		law_freedom_of_conscience = neutral
+		law_religious_institution = strongly_disapprove
+		law_religious_supremacy = strongly_disapprove
+	}
+
 
 	interest_group_leader_trigger = {
 		always = yes
@@ -91,6 +146,34 @@ ideology_maoism_liberal = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_liberal_communism.dds"
 	character_ideology = yes
 	show_in_list = yes
+
+	lawgroup_governance_principles = {
+		law_council_republic = approve
+		law_republic = strongly_disapprove
+		law_monarchy = strongly_disapprove
+		law_corporatocracy = neutral
+		law_theocracy = strongly_disapprove
+	}
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = neutral
+		law_community_land_trust = neutral
+		law_tenant_farmers = approve
+		law_customary_land_tenure = strongly_disapprove
+		law_commercialized_agriculture = approve
+		law_serfdom = strongly_disapprove
+	}
+	lawgroup_taxation = {
+		law_wealth_taxation = approve
+		law_expropiation = neutral
+		law_per_capita_based_taxation = strongly_disapprove
+	}
+	lawgroup_church_and_state = {
+		law_state_atheism = neutral
+		law_total_separation = strongly_approve
+		law_freedom_of_conscience = neutral
+		law_religious_institution = strongly_disapprove
+		law_religious_supremacy = strongly_disapprove
+	}
 
 
 	interest_group_leader_trigger = {
@@ -132,6 +215,34 @@ ideology_ultramaoism = {
 	character_ideology = yes
 	show_in_list = yes
 
+	lawgroup_governance_principles = {
+		law_council_republic = strongly_approve
+		law_republic = strongly_disapprove
+		law_monarchy = strongly_disapprove
+		law_corporatocracy = strongly_disapprove
+		law_theocracy = strongly_disapprove
+	}
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_approve
+		law_community_land_trust = neutral
+		law_tenant_farmers = disapprove
+		law_customary_land_tenure = strongly_disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_serfdom = strongly_disapprove
+	}
+	lawgroup_taxation = {
+		law_wealth_taxation = strongly_disapprove
+		law_expropiation = strongly_approve
+		law_per_capita_based_taxation = strongly_disapprove
+	}
+	lawgroup_church_and_state = {
+		law_state_atheism = strongly_approve
+		law_total_separation = strongly_disapprove
+		law_freedom_of_conscience = strongly_disapprove
+		law_religious_institution = strongly_disapprove
+		law_religious_supremacy = strongly_disapprove
+	}
+
 
 	interest_group_leader_trigger = {
 		always = yes
@@ -172,6 +283,34 @@ ideology_democratic_marxism = {
 	character_ideology = yes
 	show_in_list = yes
 
+	lawgroup_governance_principles = {
+		law_council_republic = neutral
+		law_republic = strongly_approve
+		law_monarchy = strongly_disapprove
+		law_corporatocracy = approve
+		law_theocracy = strongly_disapprove
+	}
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = neutral
+		law_community_land_trust = approve
+		law_tenant_farmers = neutral
+		law_customary_land_tenure = strongly_disapprove
+		law_commercialized_agriculture = strongly_approve
+		law_serfdom = strongly_disapprove
+	}
+	lawgroup_taxation = {
+		law_wealth_taxation = approve
+		law_expropiation = disapprove
+		law_per_capita_based_taxation = strongly_disapprove
+	}
+	lawgroup_church_and_state = {
+		law_state_atheism = neutral
+		law_total_separation = strongly_approve
+		law_freedom_of_conscience = neutral
+		law_religious_institution = strongly_disapprove
+		law_religious_supremacy = strongly_disapprove
+	}
+
 
 	interest_group_leader_trigger = {
 		always = yes
@@ -207,10 +346,38 @@ ideology_democratic_marxism = {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
 ideology_intellectual = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_intelectual.dds"
 	character_ideology = yes
 	show_in_list = yes
+
+	lawgroup_trade_policy = {
+		law_free_trade = strongly_approve
+		law_isolationism = strongly_disapprove
+		law_import_substitution = neutral
+		law_protectionism = disapprove
+		law_export_promotion = approve
+	}
+
+	lawgroup_education_system = {
+		law_private_schools = approve
+		law_public_schools = neutral
+		law_mixed_schools = strongly_approve
+		law_religious_schools = disapprove
+		law_no_schools = strongly_disapprove
+		law_online_schools = strongly_approve
+	}
 
 	interest_group_leader_trigger = {
 		always = yes
@@ -233,6 +400,28 @@ ideology_libertarian = {
 	character_ideology = yes
 	show_in_list = yes
 
+	lawgroup_trade_policy = {
+		law_free_trade = strongly_approve
+		law_isolationism = strongly_disapprove
+		law_import_substitution = neutral
+		law_protectionism = disapprove
+		law_export_promotion = approve
+	}
+
+	lawgroup_monetary_policies = {
+		law_floating_exchange_rate = strongly_approve
+		law_managed_float = strongly_disapprove
+		law_fixed_exchange_rate = strongly_disapprove
+	}
+
+	lawgroup_centralization = {
+		law_localism = strongly_approve
+		law_confederated = approve
+		law_federated = neutral
+		law_devolved = disapprove
+		law_unitary = strongly_disapprove
+	}
+
 	interest_group_leader_trigger = {
 		always = yes
 	}
@@ -253,6 +442,20 @@ ideology_labor_progressive = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_labor_progressivism.dds"
 	character_ideology = yes
 	show_in_list = yes
+
+	lawgroup_labor_rights = {
+		law_worker_protections = strongly_approve
+		law_regulatory_bodies = approve
+		law_no_workers_rights = strongly_disapprove
+	}
+
+	lawgroup_work_hours = {
+		law_8_hours = strongly_approve
+		law_10_hours = neutral
+		law_12_hours = disapprove
+		law_14_hours = strongly_disapprove
+		law_unlimited_hours = strongly_disapprove
+	}
 
 	interest_group_leader_trigger = {
 		always = yes
@@ -275,6 +478,21 @@ ideology_institutional_progressive = {
 	character_ideology = yes
 	show_in_list = yes
 
+	lawgroup_rights_of_women = {
+		law_womens_suffrage = strongly_approve
+		law_women_in_the_workplace = approve
+		law_women_own_property = neutral
+		law_no_womens_rights = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_multicultural = strongly_approve
+		law_cultural_exclusion = approve
+		law_racial_segregation = strongly_disapprove
+		law_national_supremacy = strongly_disapprove
+		law_ethnostate = strongly_disapprove
+	}
+
 	interest_group_leader_trigger = {
 		always = yes
 	}
@@ -295,6 +513,14 @@ ideology_decentralist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_decentralizer.dds"
 	character_ideology = yes
 	show_in_list = yes
+
+	lawgroup_centralization = {
+		law_localism = strongly_approve
+		law_confederated = approve
+		law_federated = neutral
+		law_devolved = disapprove
+		law_unitary = strongly_disapprove
+	}
 
 	interest_group_leader_trigger = {
 		always = yes
@@ -376,6 +602,22 @@ ideology_paleoconservative = {
 	character_ideology = yes
 	show_in_list = yes
 
+	lawgroup_church_and_state = {
+		law_religious_supremacy = approve
+		law_religious_institution = strongly_approve
+		law_freedom_of_conscience = disapprove
+		law_total_separation = strongly_disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_cultural_exclusion = strongly_approve
+		law_multicultural = strongly_disapprove
+		law_racial_segregation = approve
+		law_national_supremacy = neutral
+		law_ethnostate = strongly_disapprove
+	}
+
 	interest_group_leader_trigger = {
 		always = yes
 	}
@@ -396,6 +638,21 @@ ideology_technocrat = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_technocrat.dds"
 	character_ideology = yes
 	show_in_list = yes
+
+	lawgroup_governance_principles = {
+		law_corporatocracy = strongly_approve
+		law_council_republic = neutral
+		law_republic = disapprove
+	}
+
+	lawgroup_economic_system = {
+		law_corporative_economy = strongly_approve
+		law_command_economy = strongly_approve
+		law_laissez_faire = approve
+		law_interventionism = approve
+		law_traditionalism = disapprove
+		law_cooperative_ownership = strongly_disapprove
+	}
 
 	interest_group_leader_trigger = {
 		always = yes

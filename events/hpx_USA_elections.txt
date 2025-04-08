@@ -254,6 +254,14 @@ hpx_usa_elections.8 = {
 			var:republican_candidate ?= {
 				set_character_as_ruler = yes
 			}
+			random_interest_group = {
+				limit = {
+					is_member_of_party = owner.py:republican_party
+				}
+				leader = {
+					save_scope_as = vice_scope
+				}
+			}
 		}
 		else_if = {
 			limit = {
@@ -261,6 +269,14 @@ hpx_usa_elections.8 = {
 			}
 			var:democrat_candidate ?= {
 				set_character_as_ruler = yes
+			}
+			random_interest_group = {
+				limit = {
+					is_member_of_party = owner.py:democrat_party
+				}
+				leader = {
+					save_scope_as = vice_scope
+				}
 			}
 		}
 		else_if = {
@@ -270,6 +286,18 @@ hpx_usa_elections.8 = {
 			var:progressive_candidate ?= {
 				set_character_as_ruler = yes
 			}
+			random_interest_group = {
+				limit = {
+					is_member_of_party = owner.py:progressive_party
+				}
+				leader = {
+					save_scope_as = vice_scope
+				}
+			}
+		}
+		set_variable = {
+			name = vice
+			value = scope:vice_scope
 		}
 	}
 
@@ -314,11 +342,19 @@ hpx_usa_elections.9 = {
 		var:republican_candidate ?= {
 			set_character_as_ruler = yes
 		}
+		set_variable = {
+			name = vice
+			value = var:democrat_candidate
+		}
 	}
 	option = {
 		name = hpx_usa_elections.9.dem
 		var:democrat_candidate ?= {
 			set_character_as_ruler = yes
+		}
+		set_variable = {
+			name = vice
+			value = var:republican_candidate
 		}
 	}
 }
@@ -339,11 +375,19 @@ hpx_usa_elections.10 = {
 		var:progressive_candidate ?= {
 			set_character_as_ruler = yes
 		}
+		set_variable = {
+			name = vice
+			value = var:democrat_candidate
+		}
 	}
 	option = {
 		name = hpx_usa_elections.10.dem
 		var:democrat_candidate ?= {
 			set_character_as_ruler = yes
+		}
+		set_variable = {
+			name = vice
+			value = var:progressive_candidate
 		}
 	}
 }
@@ -352,9 +396,6 @@ hpx_usa_elections.11 = { # HPX_SETUP_PARTY_MAP
 	hidden = yes
 
 	immediate = {
-		every_scope_state = {
-			limit = { is_incorporated = yes is_capital = no }
-			hpx_setup_party_map = yes
-		}
+		hpx_setup_party_map = yes
 	}
 }

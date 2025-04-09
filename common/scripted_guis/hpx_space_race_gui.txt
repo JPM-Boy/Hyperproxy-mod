@@ -437,9 +437,10 @@ buy_satelites = {
             name = space_agency_total_funds
             add = -100
         }
-        change_variable = {
+        set_variable = {
             name = satelites
             add = 1
+            max = 25
         }
         remove_modifier = satelites
         add_modifier = {

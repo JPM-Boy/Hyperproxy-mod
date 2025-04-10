@@ -128,6 +128,12 @@
                 }
             }
         }
+        owner = {
+            set_variable = {
+                name = hpx_recently_swayed_state
+                months = 2
+            }
+        }
     }
 }
 
@@ -261,5 +267,19 @@ sway_state_right = {
                 }
             }
         }
+        owner = {
+            set_variable = {
+                name = hpx_recently_swayed_state
+                months = 2
+            }
+        }
+    }
+}
+
+hpx_toggle_state_sway = {
+    scope = country
+
+    is_valid = {
+        NOT = { has_variable = hpx_recently_swayed_state }
     }
 }

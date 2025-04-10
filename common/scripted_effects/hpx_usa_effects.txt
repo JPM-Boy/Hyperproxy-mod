@@ -509,6 +509,142 @@ hpx_setup_party_map = {
 			value = owner.py:republican_party
 		}
 	}
+	c:USA = {
+		every_scope_state = {
+			if = {
+				limit = { var:usa_party = owner.py:republican_party }
+				random_list = {
+					1 = {
+						set_variable = {
+							name = governor
+							value = owner.ig:ig_classical_liberal
+						}
+					}
+					1 = {
+						set_variable = {
+							name = governor
+							value = owner.ig:ig_cons
+						}
+					}
+					1 = {
+						set_variable = {
+							name = governor
+							value = owner.ig:ig_reactionary
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { var:usa_party = owner.py:democrat_party }
+				random_list = {
+					1 = {
+						set_variable = {
+							name = governor
+							value = owner.ig:ig_fascist
+						}
+					}
+					1 = {
+						set_variable = {
+							name = governor
+							value = owner.ig:ig_liberal
+						}
+					}
+					1 = {
+						set_variable = {
+							name = governor
+							value = owner.ig:ig_socdem
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_liberal
+						}
+					}
+				}
+				save_scope_as = liberal_state
+				owner = {
+					add_to_variable_list = {
+						name = liberal_states
+						target = scope:liberal_state
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_cons
+							is_interest_group_type = ig_classical_liberal
+						}
+					}
+				}
+				save_scope_as = conservative_state
+				owner = {
+					add_to_variable_list = {
+						name = conservative_states
+						target = scope:conservative_state
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_socdem
+						}
+					}
+				}
+				save_scope_as = progressive_state
+				owner = {
+					add_to_variable_list = {
+						name = progressive_states
+						target = scope:progressive_state
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_orthodox_communist
+							is_interest_group_type = ig_reformist_communist
+							is_interest_group_type = ig_new_leftism
+						}
+					}
+				}
+				save_scope_as = communist_state
+				owner = {
+					add_to_variable_list = {
+						name = communist_states
+						target = scope:communist_state
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					var:governor = {
+						OR = {
+							is_interest_group_type = ig_fascist
+							is_interest_group_type = ig_reactionary
+						}
+					}
+				}
+				save_scope_as = reactionary_state
+				owner = {
+					add_to_variable_list = {
+						name = reactionary_states
+						target = scope:reactionary_state
+					}
+				}
+
+			}
+		}
+
+	}
 
 }
 hpx_refresh_party_map = {

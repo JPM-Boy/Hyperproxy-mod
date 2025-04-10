@@ -204,8 +204,10 @@
                      using = default_button
                      size = { 100% 100 }
                      onclick = "[GetVariableSystem.Toggle('state_swaying')]"
+                     enabled = "[GetScriptedGui('hpx_toggle_state_sway').IsValid(GuiScope.SetRoot( GetPlayer.MakeScope).End)]"
                      text = "Sway States"
                      using = fontsize_xl
+                     tooltip = "SWAY_STATES"
                  }
              }
              flowcontainer = {

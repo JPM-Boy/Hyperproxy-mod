@@ -294,56 +294,6 @@ set_space_facilities = {
     ai_frequency = 1         # Named value determining how frequently the AI will evaluate this SGUI (in months)
 }
 
-more_space_funds = {
-    scope = country
-    effect = {
-        if = {
-            limit = {NOT = {has_variable = space_agency_funds}}
-            set_variable = {
-                name = space_agency_funds
-                value = 0
-            }
-        }
-        if = {
-            limit = {NOT = {has_variable = space_agency_total_funds}}
-            set_variable = {
-                name = space_agency_total_funds
-                value = 0
-            }
-        }
-        change_variable = {
-            name = space_agency_funds
-            add = 1
-        }
-    }
-}
-less_space_funds = {
-    scope = country
-    effect = {
-        if = {
-            limit = {NOT = {has_variable = space_agency_funds}}
-            set_variable = {
-                name = space_agency_funds
-                value = 0
-            }
-        }
-        if = {
-            limit = {NOT = {has_variable = space_agency_total_funds}}
-            set_variable = {
-                name = space_agency_total_funds
-                value = 0
-            }
-        }
-        if = {
-            limit = {var:space_agency_funds > 0}
-            change_variable = {
-                name = space_agency_funds
-                add = -1
-            }
-        }
-    }
-}
-
 more_10_space_funds = {
     scope = country
     effect = {
@@ -385,10 +335,60 @@ less_10_space_funds = {
             }
         }
         if = {
-            limit = {var:space_agency_funds > 10}
+            limit = {var:space_agency_funds > 0}
             change_variable = {
                 name = space_agency_funds
                 add = -10
+            }
+        }
+    }
+}
+
+more_100_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        change_variable = {
+            name = space_agency_funds
+            add = 100
+        }
+    }
+}
+less_100_space_funds = {
+    scope = country
+    effect = {
+        if = {
+            limit = {NOT = {has_variable = space_agency_funds}}
+            set_variable = {
+                name = space_agency_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {NOT = {has_variable = space_agency_total_funds}}
+            set_variable = {
+                name = space_agency_total_funds
+                value = 0
+            }
+        }
+        if = {
+            limit = {var:space_agency_funds > 10}
+            change_variable = {
+                name = space_agency_funds
+                add = -100
             }
         }
     }

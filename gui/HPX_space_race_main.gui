@@ -160,27 +160,27 @@ window = {
                                             direction = horizontal
                                             button_icon_square = {
                                                 size = {60 40}
-                                                text = "+10"
+                                                text = "++"
+                                                fontsize = 24
+                                                onclick = "[GetScriptedGui('more_100_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                            button_icon_square = {
+                                                size = {60 40}
+                                                text = "+"
                                                 fontsize = 24
                                                 onclick = "[GetScriptedGui('more_10_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                                             }
                                             button_icon_square = {
                                                 size = {60 40}
-                                                text = "+1"
-                                                fontsize = 24
-                                                onclick = "[GetScriptedGui('more_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-                                            }
-                                            button_icon_square = {
-                                                size = {60 40}
-                                                text = "-1"
-                                                fontsize = 24
-                                                onclick = "[GetScriptedGui('less_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-                                            }
-                                            button_icon_square = {
-                                                size = {60 40}
-                                                text = "-10"
+                                                text = "-"
                                                 fontsize = 24
                                                 onclick = "[GetScriptedGui('less_10_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                                            }
+                                            button_icon_square = {
+                                                size = {60 40}
+                                                text = "--"
+                                                fontsize = 24
+                                                onclick = "[GetScriptedGui('less_100_space_funds').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
                                             }
                                         }
                                     }

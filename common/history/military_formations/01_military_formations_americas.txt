@@ -123,4 +123,31 @@
 			}
 		}
 	}
+	c:MEX = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_mexico
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MEXICO
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_JALISCO
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VERACRUZ
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_OAXACA
+				count = 12
+			}
+		}
+	}
 }

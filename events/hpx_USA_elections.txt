@@ -202,6 +202,7 @@ hpx_usa_elections.7 = {
 
 	trigger = {
 		AND = {
+			c:USA ?= this
 			NOT = {has_variable = progressive_party_enabled}
 			game_date >= 1971.6.1
 		}

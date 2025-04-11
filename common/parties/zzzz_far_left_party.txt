@@ -287,12 +287,15 @@
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
 		NOT = { bpm_is_party_banned = { PARTY = far_left_party } }
-		owner = {
-			any_interest_group = {
-				bpm_ig_is_proletarian = yes
-				is_marginal = no
+		OR = {
+			owner = {
+				any_interest_group = {
+					bpm_ig_is_proletarian = yes
+					is_marginal = no
+				}
 			}
 		}
+
 	}
 	join_weight = {
 		value = {
@@ -362,6 +365,15 @@
 			add = {	
 				value = 6
 				desc = "bpm_from_socialist_leader"
+			}
+		}
+		if = {
+			limit = {
+				hpx_ig_is_maoist = yes
+			}
+			add = {
+				value = 30
+				desc = "hpx_from_maoism"
 			}
 		}
 		if = { # party socialists love socialism

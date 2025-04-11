@@ -55,6 +55,20 @@ bpm_ig_is_party_socialist = {
 			is_interest_group_type = ig_reformist_communist
 			bpm_ig_is_revolutionary_socialist = yes
 			bpm_ig_is_reformist_socialist = yes
+			hpx_ig_is_maoist = yes
+		}
+	}
+}
+
+hpx_ig_is_maoist = {
+	custom_tooltip = {
+		text = "tooltip_hpx_ig_is_maoist"
+		OR = {
+			has_ideology = ideology:ideology_ultramaoism
+			has_ideology = ideology:ideology_maoism
+			has_ideology = ideology:ideology_maoism_reformism
+			has_ideology = ideology:ideology_maoism_liberal
+
 		}
 	}
 }

@@ -168,7 +168,7 @@ KON = {
 	
 	tier = principality
 
-	religion = catholic
+	religion = oriental_orthodox
 	
 	cultures = { bakongo }
 	capital = STATE_MBANZA_KONGO

@@ -16356,7 +16356,7 @@ yoruba= {
 
 bakongo= {
 	color= hsv{ 0.28 0.29 0.60 }
-	religion = animist
+	religion = oriental_orthodox
 	traits = { central_african_culture_group bantu african_heritage }
 	male_common_first_names = {
 		Garcia
@@ -16802,7 +16802,7 @@ teda= {
 
 equatorial_bantu= { # Gabon + Cameroon + CAR
 	color= rgb{ 227 194 96 }
-	religion = animist
+	religion = protestant
 	traits = { central_african_culture_group bantu african_heritage }
 	male_common_first_names = {
 		Bakar
@@ -18113,7 +18113,7 @@ unyamwezi= {
 
 lacustrine_bantu= { # Lake Victoria + Lake Tanganyika + Lake Malawi
 	color= hsv{ 0.58 0.51 0.96 }
-	religion = animist
+	religion = protestant
 	traits = { east_african_culture_group bantu african_heritage }
 	male_common_first_names = {
 		Amadi

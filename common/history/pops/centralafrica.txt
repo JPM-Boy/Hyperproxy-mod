@@ -16,7 +16,7 @@
 	s:STATE_MBANZA_KONGO = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 18200000
 			}
 		}
@@ -24,7 +24,7 @@
 	s:STATE_ANZIKU_SONGO = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 9310000
 			}
 		}
@@ -32,7 +32,7 @@
 	s:STATE_MUSIKUNDU_MUSILUVAKA = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 5600000
 			}
 		}
@@ -40,7 +40,7 @@
 	s:STATE_MUSIDENGESE_MUSIBANKU = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 2300000
 			}
 		}
@@ -48,7 +48,7 @@
 	s:STATE_MUSIKIKONO = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 845000
 			}
 		}
@@ -56,7 +56,7 @@
 	s:STATE_MUSINUANI = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 3100000
 			}
 		}
@@ -64,7 +64,7 @@
 	s:STATE_MUSIYOHANA = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 1000000
 			}
 		}
@@ -72,7 +72,7 @@
 	s:STATE_UTETERA_BUSHI = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 8100000
 			}
 		}
@@ -80,7 +80,7 @@
 	s:STATE_KUBA = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 3900000
 			}
 		}
@@ -88,7 +88,7 @@
 	s:STATE_LUBA = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 5100000
 			}
 		}
@@ -96,7 +96,7 @@
 	s:STATE_MUSINKOSI = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 5700000
 			}
 		}
@@ -104,7 +104,7 @@
 	s:STATE_MUSIYEKE = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 2000000
 			}
 		}
@@ -112,7 +112,7 @@
 	s:STATE_LUNDA = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 2500000
 			}
 		}
@@ -120,7 +120,7 @@
 	s:STATE_NDONGO_CHOKWE = {
 		region_state:KON = {
 			create_pop = {
-				culture = equatorial_bantu
+				culture = bakongo
 				size = 7000000
 			}
 		}

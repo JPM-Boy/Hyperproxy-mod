@@ -7,3 +7,51 @@ je_hpx_usa_the_great_shift_goal: "At least five #blue Progressive Laws#! have pa
 je_hpx_usa_government: "American Government"
 je_hpx_usa_government_reason: "Work in Progress"
 government_menu_button: "Enter"
+
+ hpx_usa_elections.1.t: "Republican Primaries"
+ hpx_usa_elections.1.d: "The race for the Republican nomination has begun. Across the country, factions within the party are battling to define its future—between old-guard conservatives, rising populists, and reform-minded moderates. As the primaries unfold, the direction of the right is far from settled."
+ hpx_usa_elections.1.f: "“This isn’t just another election—it’s a struggle for the soul of our party. Will we double down on tradition, or chart a new course for a changing America?”"
+ hpx_usa_elections.1.reactionary: "Fusionist Faction"
+ hpx_usa_elections.1.conservative: "Conservative Faction"
+ hpx_usa_elections.1.classical_liberal: "Rockefeller Faction"
+
+ hpx_usa_elections.2.t: "Democrat Primaries"
+ hpx_usa_elections.2.d: "The Democratic Party enters its primary season amid growing tensions between its wings. Progressives demand bold transformation, while centrists push for stability and pragmatism. As candidates take the stage, the outcome may redefine the party’s identity for years to come."
+ hpx_usa_elections.2.f: "“It’s not enough to win—we must decide *why* we’re running. Are we the party of bold ideas or careful steps?”"
+ hpx_usa_elections.2.liberal: "Liberal Candidate"
+ hpx_usa_elections.2.classical_liberal: "Dixiecrat Candidate"
+ hpx_usa_elections.2.socdem: "Progressive Candidate"
+
+ hpx_usa_elections.5.t: "Progressive Primaries"
+ hpx_usa_elections.5.d: "With the Progressive Party gaining momentum, its primaries have become a battleground between grassroots organizers, social democrats, and idealist reformers. The challenge lies not just in choosing a candidate, but in uniting a movement built on bold promises and varied visions."
+ hpx_usa_elections.5.f: "“We are not here to be an echo of the old parties. We are here to *build* something new, together.”"
+ hpx_usa_elections.5.socdem: "Progressive Candidate"
+ hpx_usa_elections.5.new_leftism: "Socialist Candidate"
+ hpx_usa_elections.5.refsoc: "Communist Candidate"
+
+ hpx_usa_elections.7.t: "[GetPlayer.GetRuler.GetFullNameWithTitle] is leaving the party"
+ hpx_usa_elections.7.d: "With the most conservative factions of the Democrat Party being highly critical of their own government, the president has decided to create its own party, stirring chaos on the Democrat Party."
+ hpx_usa_elections.7.f: "“Whenever men take the law into their own hands, the loser is the law. And when the law loses, freedom languishes.”"
+ hpx_usa_elections.7.a: "We will keep our support to our President."
+
+ hpx_usa_elections.8.t: "Form a Government"
+ hpx_usa_elections.8.d: "With the election results in, no single party holds a majority. As the leading force, you now face a critical decision: rule alone as a minority, or form a coalition government. The Democrats, Progressives, and Republicans all have diverging visions for the nation—and their cooperation comes at a cost."
+ hpx_usa_elections.8.f: "“Unity is strength, they say. But sometimes, unity means compromise. And sometimes... compromise means surrender.”"
+ hpx_usa_elections.8.no: "We have won the majority of the seats"
+ hpx_usa_elections.8.dem_rep: "Democrat-Republican Coalition"
+ hpx_usa_elections.8.dem_prog: "Democrat-Progressive Coalition"
+
+ hpx_usa_elections.9.t: "Who Leads the Coalition?"
+ hpx_usa_elections.9.d: "The Democratic-Republican coalition is fragile, held together by the urgent need for governance. But one question remains unsettled: who takes the reins? Both sides claim the mandate to lead, but only one can step forward as the primary force behind the administration."
+ hpx_usa_elections.9.f: "“A house divided still needs an address. And a government divided still needs a leader.”"
+ hpx_usa_elections.9.rep: "Republican President"
+ hpx_usa_elections.9.dem: "Democrat President"
+
+
+ hpx_usa_elections.10.t: "Choosing a Direction"
+ hpx_usa_elections.10.d: "The alliance between Democrats and Progressives is rooted in shared opposition—but not always shared priorities. As talks progress, it becomes clear: one party must lead, the other follow. The balance struck here could define the coalition’s success—or its collapse."
+ hpx_usa_elections.10.f: "“Do we lead the change, or do we temper it? Every revolution has its moment of decision.”"
+ hpx_usa_elections.10.prog: "Progressive President"
+ hpx_usa_elections.10.dem: "Democrat President"
+
+

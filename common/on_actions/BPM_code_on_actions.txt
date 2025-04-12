@@ -265,6 +265,12 @@ hpx_china_tension_je = {
 	}
 }
 
+on_monthly_pulse = {
+	on_actions = {
+		hpx_space_agency_clean
+	}
+}
+
 on_monthly_pulse_country = {
 	on_actions = {
 		on_bpm_monthly_pulse_country
@@ -273,6 +279,17 @@ on_monthly_pulse_country = {
 		hpx_single_party_reload
 		hpx_eu_reload
 		hpx_progressive_party_spawn
+	}
+}
+hpx_space_agency_clean = {
+	effect = {
+		clear_global_variable_list = space_agency
+		every_country = {
+			limit = {
+				var:space_agency_total_funds >= 1
+			}
+			add_to_global_variable_list = {name = space_agency target = this}
+		}
 	}
 }
 hpx_progressive_party_spawn = {

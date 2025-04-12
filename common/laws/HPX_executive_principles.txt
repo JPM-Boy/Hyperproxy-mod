@@ -11,6 +11,13 @@ law_appointed_by_hos = {
 		country_authority_add = 100
 		country_legitimacy_headofstate_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.1
+		country_bpm_hog_inst = yes
+		country_bpm_cabinet_hos_bonus = yes
+		country_bpm_cabinet_institution_bonus = yes
+		
+		country_synergy_from_hos_hog_compatibility = 30
+		country_synergy_from_ideological_compatibility = 30
+		country_synergy_from_hos_in_government = 30
 	}
 
 	can_enact = {
@@ -20,6 +27,7 @@ law_appointed_by_hos = {
 			}
 			NOT = { has_modifier = brz_regency }
 		}
+		NOT = { has_modifier = bpm_bakufu_administrative_state }
 	}
 
 	disallowing_laws = {
@@ -27,6 +35,12 @@ law_appointed_by_hos = {
 	}
 
 	on_activate = {
+		if = {
+			limit = {
+				has_law = law_type:law_parliamentary_republic
+			}
+			activate_law = law_type:law_presidential_republic
+		}
 		hidden_effect = {
 			var:bpm_headofgov ?= {
 				bpm_unappoint_as_hog = yes
@@ -66,8 +80,17 @@ law_appointed_on_advice = {
 	modifier = {
 		#interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.5
 		#state_tax_capacity_mult = 0.25
+		country_bpm_hog_advice_on_ruler_veto = yes
 		country_legitimacy_govt_total_votes_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.25
+		country_bpm_hog_top_advice = yes
+		country_bpm_cabinet_hos_bonus = yes
+		country_bpm_cabinet_hog_bonus = yes
+		country_bpm_cabinet_clout_bonus = yes
+
+		country_synergy_from_hos_hog_compatibility = 20
+		country_synergy_from_ideological_compatibility = 50
+		country_synergy_from_hos_in_government = 20
 	}
 
 	can_enact = {
@@ -77,13 +100,19 @@ law_appointed_on_advice = {
 			}
 			NOT = { has_modifier = brz_regency }
 		}
+		NOT = { has_modifier = bpm_bakufu_administrative_state }
 	}
 
 	disallowing_laws = {
-		law_supreme_legislature
 	}
 
 	on_activate = {
+		if = {
+			limit = {
+				has_law = law_type:law_parliamentary_republic
+			}
+			activate_law = law_type:law_presidential_republic
+		}
 		hidden_effect = {
 			var:bpm_headofgov ?= {
 				bpm_unappoint_as_hog = yes
@@ -123,9 +152,14 @@ law_answers_to_legislature = {
 	modifier = {
 		#interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.5
 		#state_tax_capacity_mult = 0.25
+		country_bpm_hog_veto = yes
 		country_authority_add = -100
 		country_legitimacy_govt_total_votes_add = 20
 		country_legitimacy_ideological_incoherence_mult = 0.33
+		country_bpm_hog_top_parlelec = yes
+		country_bpm_cabinet_government_bonus = yes
+
+		country_synergy_from_ideological_compatibility = 80
 	}
 
 	can_enact = {
@@ -138,6 +172,12 @@ law_answers_to_legislature = {
 	}
 
 	on_activate = {
+		if = {
+			limit = {
+				has_law = law_type:law_presidential_republic
+			}
+			activate_law = law_type:law_parliamentary_republic
+		}
 		#if = {
 		#	limit = {
 		#		has_law = law_type:law_advisory_body
@@ -188,6 +228,12 @@ law_no_separate_hog = {
 		country_authority_add = 200
 		country_legitimacy_headofstate_add = 10
 		country_legitimacy_ideological_incoherence_mult = 0.5
+		country_bpm_hog_hoshogsame = yes
+		country_bpm_cabinet_hos_bonus = yes
+		country_bpm_cabinet_party_bonus = yes
+
+		country_synergy_base_add = 40
+		country_synergy_from_ideological_compatibility = 60
 	}
 
 	can_enact = {
@@ -197,13 +243,19 @@ law_no_separate_hog = {
 			}
 			NOT = { has_modifier = brz_regency }
 		}
+		NOT = { has_modifier = bpm_bakufu_administrative_state }
 	}
 
 	disallowing_laws = {
-		law_supreme_legislature
 	}
 
 	on_activate = {
+		if = {
+			limit = {
+				has_law = law_type:law_parliamentary_republic
+			}
+			activate_law = law_type:law_presidential_republic
+		}
 		hidden_effect = {
 			var:bpm_headofgov ?= {
 				bpm_unappoint_as_hog = yes

@@ -76,10 +76,10 @@ anglo_french_effects = {
 		limit = {
 			AND = {
 				var:french_progress >= 175
-				NOT = {has_law = law_type:law_republic}
+				NOT = {has_law = law_type:law_parliamentary_republic}
 			}
 		}
-		activate_law = law_type:law_republic
+		activate_law = law_type:law_parliamentary_republic
 	} else_if = {
 		limit = {
 			AND = {
@@ -154,7 +154,7 @@ setup_space_race_lists = {
 
 dissolve_soviet = {
 	if = {
-	activate_law = law_type:law_republic
+	activate_law = law_type:law_presidential_republic
 
 	create_country = {
 		limit = {
@@ -441,7 +441,7 @@ dissolve_soviet = {
 
 dissolve_soviet_hard = {
 	if = {
-		activate_law = law_type:law_republic
+		activate_law = law_type:law_parliamentary_republic
 		create_country = {
 			limit = {
 				AND = {

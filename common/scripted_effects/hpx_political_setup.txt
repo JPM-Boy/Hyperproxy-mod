@@ -1,7 +1,7 @@
 ﻿# Very high liberalism, e.g. USA
 
 start_parliamentary = {
-	activate_law = law_type:law_republic
+	activate_law = law_type:law_parliamentary_republic
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_pluralist_voting
 	activate_law = law_type:law_per_capita_based_taxation
@@ -25,7 +25,7 @@ start_parliamentary = {
 
 start_presidential = {
 	activate_law = law_type:law_flexible_foreign_policy
-	activate_law = law_type:law_republic
+	activate_law = law_type:law_presidential_republic
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_majoritarian_voting
 	activate_law = law_type:law_per_capita_based_taxation
@@ -49,7 +49,7 @@ start_presidential = {
 start_militar = {
 	activate_law = law_type:law_jingoism
 
-	activate_law = law_type:law_republic
+	activate_law = law_type:law_presidential_republic
 	activate_law = law_type:law_state_religion
 	activate_law = law_type:law_military_junta
 	activate_law = law_type:law_national_supremacy
@@ -108,6 +108,9 @@ start_monarchy = {
 
 start_communist = {
 	activate_law = law_type:law_flexible_foreign_policy
+	activate_law = law_type:law_appointed_by_hos
+	activate_law = law_type:law_advisory_body
+
 
 	activate_law = law_type:law_council_republic
 	activate_law = law_type:law_autocracy

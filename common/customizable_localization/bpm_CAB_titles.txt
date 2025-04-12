@@ -40,12 +40,6 @@ bpm_hog_title_country_spec = {
 
 	text = {
 		trigger = {
-			bpm_shogunate_trigger = yes
-		}
-		localization_key = bpm_hog_title_default_shogunate
-	}
-	text = {
-		trigger = {
 			OR = {
 				has_law = law_type:law_council_republic
 			}

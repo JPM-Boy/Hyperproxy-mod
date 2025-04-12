@@ -1,4 +1,10 @@
-﻿on_yearly_pulse_country = {
+﻿on_five_year_pulse_country = {
+	on_actions = {
+		on_bpm_five_year_pulse_country
+	}
+}
+
+on_yearly_pulse_country = {
 	on_actions = {
 		on_bpm_yearly_pulse_country
 		hpx_space_agency_funds
@@ -15,253 +21,14 @@ on_half_yearly_pulse_country = {
 on_election_campaign_end = {
 	on_actions = {
 		hpx_on_election_campaign_end
+		bpm_update_enactment_success_on_action
+		bpm_on_actions_colonial_check
 	}
 }
 
 on_election_campaign_start = {
 	on_actions = {
 		hpx_on_election_campaign_start
-	}
-}
-
-hpx_on_election_campaign_start = {
-	effect = {
-		if = {
-			limit = {
-				owner = {
-					has_variable = american_parties
-					has_variable = uses_governor_system
-				}
-			}
-			ordered_active_party = {
-				limit = { NOT = {is_party_type = one_party_independents} }
-				order_by = hpx_party_clout
-				position = 0
-				save_scope_as = main_party
-			}
-			if = {
-				limit = {
-					scope:main_party = {is_party_type = republican_party}
-				}
-				trigger_event = hpx_usa_elections.1
-				trigger_event = hpx_usa_elections.4
-				if = {
-					limit = { owner = {has_variable = progressive_party_enabled} }
-					trigger_event = hpx_usa_elections.6
-				}
-			}
-			if = {
-				limit = {
-					scope:main_party = {is_party_type = democrat_party}
-				}
-				trigger_event = hpx_usa_elections.2
-				trigger_event = hpx_usa_elections.3
-				if = {
-					limit = { owner = {has_variable = progressive_party_enabled} }
-					trigger_event = hpx_usa_elections.6
-				}
-			}
-			if = {
-				limit = {
-					owner = {has_variable = progressive_party_enabled}
-					scope:main_party = {is_party_type = progressive_party}
-				}
-				trigger_event = hpx_usa_elections.5
-				trigger_event = hpx_usa_elections.3
-				trigger_event = hpx_usa_elections.4
-			}
-		}
-	}
-}
-
-hpx_on_election_campaign_end = {
-	effect = {
-		if = {
-			limit = {
-				owner = {
-					has_variable = american_parties
-					has_variable = uses_governor_system
-				}
-			}
-			if = {
-				limit = {owner = {has_variable = progressive_party_enabled}}
-				set_variable = { name = progressive_party_seats value = 0 }
-			}
-			set_variable = { name = independent_seats value = 0 }
-			set_variable = { name = democrat_party_seats value = 0 }
-			set_variable = { name = republican_party_seats value = 0 }
-
-			owner = {
-				every_scope_state = {
-					if = {
-						limit = { var:governor = {is_member_of_party = owner.py:republican_party}  }
-						owner = {
-							change_variable = {
-								name = republican_party_seats
-								add = prev.var:seats
-							}
-						}
-						set_variable = {
-							name = usa_party
-							value = owner.py:republican_party
-						}
-					}
-					else_if = {
-						limit = { var:governor = {is_member_of_party = owner.py:democrat_party}  }
-						owner = {
-							change_variable = {
-								name = democrat_party_seats
-								add = prev.var:seats
-							}
-						}
-						set_variable = {
-							name = usa_party
-							value = owner.py:democrat_party
-						}
-					}
-					else_if = {
-						limit = { var:governor = {is_member_of_party = owner.py:progressive_party}  }
-						owner = {
-							change_variable = {
-								name = progressive_party_seats
-								add = prev.var:seats
-							}
-						}
-						set_variable = {
-							name = usa_party
-							value = owner.py:progressive_party
-						}
-					}
-					else = {
-						owner = {
-							change_variable = {
-								name = independent_seats
-								add = prev.var:seats
-							}
-						}
-					}
-					hpx_refresh_party_map = yes
-				}
-
-				trigger_event = hpx_usa_elections.8
-				every_scope_state = {
-					limit = {
-						is_incorporated = yes
-						is_capital = no
-					}
-					if = {
-						limit = {
-							var:governor = {
-								is_interest_group_type = ig_liberal
-							}
-						}
-						random_list = {
-							2 = {}
-							1 = { set_variable = { name = governor value = owner.ig:ig_socdem} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_new_leftism} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_classical_liberal} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_cons} }
-						}
-					}
-					else_if = {
-						limit = {
-							var:governor = {
-								OR = {
-									is_interest_group_type = ig_new_leftism
-									is_interest_group_type = ig_socdem
-								}
-							}
-						}
-						random_list = {
-							2 = {}
-							2 = { set_variable = { name = governor value = owner.ig:ig_liberal} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_reformist_communist} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_orthodox_communist} }
-						}
-					}
-					else_if = {
-						limit = {
-							var:governor = {
-								OR = {
-									is_interest_group_type = ig_orthodox_communist
-									is_interest_group_type = ig_reformist_communist
-								}
-							}
-						}
-						random_list = {
-							2 = {}
-							1 = { set_variable = { name = governor value = owner.ig:ig_socdem} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_new_leftism} }
-						}
-					}
-					else_if = {
-						limit = {
-							var:governor = {
-								OR = {
-									is_interest_group_type = ig_cons
-									is_interest_group_type = ig_classical_liberal
-								}
-							}
-						}
-						random_list = {
-							2 = {}
-							2 = { set_variable = { name = governor value = owner.ig:ig_liberal} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_fascist} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_reactionary} }
-
-						}
-					}
-					else_if = {
-						limit = {
-							var:governor = {
-								OR = {
-									is_interest_group_type = ig_fascist
-									is_interest_group_type = ig_reactionary
-								}
-							}
-						}
-						random_list = {
-							2 = {}
-							1 = { set_variable = { name = governor value = owner.ig:ig_cons} }
-							1 = { set_variable = { name = governor value = owner.ig:ig_classical_liberal} }
-						}
-					}
-				}
-
-				clear_variable_list = conservative_states
-				clear_variable_list = liberal_states
-				clear_variable_list = communist_states
-				clear_variable_list = progressive_states
-				clear_variable_list = reactionary_states
-
-				#LIST SETUP
-				every_scope_state = {
-					if = {
-						limit = {
-							is_incorporated = yes
-							is_capital = no
-						}
-						hpx_state_election_list_reestructuring = yes
-					}
-				}
-			}
-		}
-	}
-}
-
-hpx_china_tension_je = {
-	effect = {
-		if = {
-			limit = {
-				AND = {
-					game_date > 1984.12.31
-					NOT = { has_variable = 1989_incident }
-					c:CHI ?= this
-				}
-			}
-			set_variable = 1989_incident
-			add_journal_entry = { type = je_hpx_internal_revolution }
-		}
 	}
 }
 
@@ -281,96 +48,11 @@ on_monthly_pulse_country = {
 		hpx_progressive_party_spawn
 	}
 }
-hpx_space_agency_clean = {
-	effect = {
-		clear_global_variable_list = space_agency
-		every_country = {
-			limit = {
-				var:space_agency_total_funds >= 1
-			}
-			add_to_global_variable_list = {name = space_agency target = this}
-		}
-	}
-}
-hpx_progressive_party_spawn = {
-	events = {
-		hpx_usa_elections.7
-	}
-}
-hpx_space_agency_funds = {
-	effect = {
-		if = {
-			limit = { NOT = {has_variable = space_agency_total_funds} }
-			set_variable = { name = space_agency_total_funds value = 0 }
-		}
-		change_variable = {
-			name = space_agency_total_funds
-			add = var:space_agency_funds
-		}
-		set_variable = {
-			name = space_agency_total_money
-			value = var:space_agency_funds
-		}
-		if = {
-			limit = { NOT = {has_variable = space_agency_total_money} }
-			set_variable = { name = space_agency_total_money value = 0 }
-		}
-		change_variable = {
-			name = space_agency_total_money
-			multiply = -1000
-		}
-		owner = {
-			add_treasury = var:space_agency_total_money
-		}
-	}
-}
-hpx_eu_reload = {
-	effect = {
-		eu_voting = yes
-		if = {
-			limit = {
-				AND = {
-					has_variable = eu_member
-					NOT = {this = c:GBR}
-				}
-			}
-			change_relations = { country = c:GBR value = 4 }
-		}
-	}
-}
-hpx_single_party_reload = {
-	effect = {
-		bpm_update_single_party_ideology_support = yes
-	}
-}
 
-on_law_activated = {
-	on_actions = {
-		on_bpm_law_activated
-	}
-}
 
-on_secession_start = {
+on_wargoal_enforced = {
 	on_actions = {
-		on_bpm_seccession_start
-	}
-}
-
-on_revolution_start = {
-	on_actions = {
-		on_bpm_revolution_start
-	}
-}
-
-on_capitulation = {
-	on_actions = {
-		on_bpm_capitulation
-	}
-}
-
-on_diplo_play_war_start = {
-	on_actions = {
-		on_bpm_diplo_play_war_start
+		on_bpm_wargoal_enforced
 	}
 }
 
@@ -386,6 +68,33 @@ on_investment_decreased ={
 	}
 }
 
+# Root = The applicable country
+# scope:technology = The technology type they just acquired
+on_acquired_technology = {
+	on_actions = {
+		on_bpm_acquired_technology
+		on_bpm_acquired_technology_peoples_spring
+	}
+}
+
+on_country_released_as_independent = {
+	on_actions = {
+		on_bpm_country_releasing
+	}
+}
+
+on_country_released_as_own_subject = {
+	on_actions = {
+		on_bpm_country_releasing
+	}
+}
+
+on_country_released_as_overlord_subject = {
+	on_actions = {
+		on_bpm_country_releasing
+	}
+}
+
 on_country_formed = {
 	on_actions = {
 		on_bpm_country_formed
@@ -394,13 +103,22 @@ on_country_formed = {
 
 on_revolution_end = {
 	on_actions = {
+		on_bpm_country_releasing
 		on_bpm_civil_war_won
 	}
 }
 
-on_default = {
+on_peace_agreement_signed_war_participant = {
 	on_actions = {
-		on_bpm_default
+		on_bpm_peace_agreement_signed_war_participant
+	}
+}
+
+
+
+on_party_created = {
+	on_actions = {
+		on_bpm_party_created
 	}
 }
 
@@ -419,8 +137,20 @@ on_character_creation = {
 	}
 }
 
+on_bpm_five_year_pulse_country = {
+	effect = {
+		every_interest_group = {
+			limit = { bpm_interest_group_is_activated = yes }
+			bpm_reorder_ideologies = yes
+		}
+	}
+}
+
 on_bpm_yearly_pulse_country = {
 	effect = {
+		bpm_rename_igs = yes
+		bpm_update_variants = yes
+		bpm_create_necessary_movements = yes
 		if = {
 			limit = { 
 				NOT = { has_global_variable = bpm_je_march_to_radicalism_progress }
@@ -436,11 +166,15 @@ on_bpm_yearly_pulse_country = {
 
 on_bpm_half_yearly_pulse_country = {
 	events = {
+		bpm_ig_attraction_utils.2
 		bpm_union_laws.1
 	}
 	effect = {
 		owner = { 
 			update_party_support = yes
+			bpm_setup_country_stubbornness = yes
+			bpm_half_yearly_decrement_party_loyalty = yes
+			bpm_setup_basic_igs = yes
 			bpm_ig_update_ig_ban_support = yes
 		}
 	}
@@ -449,6 +183,9 @@ on_bpm_half_yearly_pulse_country = {
 on_bpm_monthly_pulse_country = {
 	events = {
 		bpm_misc.1
+		bpm_misc.3
+		bpm_ig_attraction_utils.1
+		bpm_clear_stubbornness_utils.3
 		bpm_colony_events.2
 		bpm_colony_events.3
 	}

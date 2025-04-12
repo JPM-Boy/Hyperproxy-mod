@@ -30,7 +30,7 @@
 
 	on_complete = {
 		trigger_event = post_soviet.2
-		activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 	}
 
 	timeout = 1825

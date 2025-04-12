@@ -1,4 +1,4 @@
-﻿bpm_party_establishment_trend = {
+bpm_party_establishment_trend = {
     value = 0
 
     subtract = {
@@ -18,7 +18,7 @@
     }
     add = {
         value = bpm_party_establishment_trend_lower_institutional
-        divide = 2
+        divide = 2 
         desc = "bpm_party_establishment_trend_lower_institutional"
     }
     add = {
@@ -40,7 +40,7 @@
     save_temporary_value_as = current
     if = {
         limit = {
-            any_member ?= {
+            any_member = {
                 owner.var:bpm_political_stability > 66
             }
         }
@@ -51,7 +51,7 @@
     }
     else_if = {
         limit = {
-            any_member ?= {
+            any_member = {
                 owner.var:bpm_political_stability < 33
             }
         }

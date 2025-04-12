@@ -105,6 +105,20 @@ lawgroup_work_time_regulations = {
 	regressive_movement_chance = 0.1
 }
 
+lawgroup_labor_unions = {
+	law_group_category = economy
+	affected_by_regime_change = yes
+	
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.5
+
+	change_allowed_trigger = {
+		ig:ig_trade_unions = {
+			bpm_interest_group_is_activated = yes 
+		}
+	}
+}
+
 lawgroup_officers = {
 	law_group_category = power_structure
 	affected_by_regime_change = yes

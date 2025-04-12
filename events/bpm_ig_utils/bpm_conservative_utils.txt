@@ -1,0 +1,117 @@
+﻿namespace = bpm_conservative_utils
+
+bpm_conservative_utils.1 = {
+	type = country_event
+	placement = root
+	hidden = yes
+
+	trigger = {
+		owner = {
+			OR = { 
+				has_law = law_type:law_council_republic 
+			}
+			any_interest_group = {
+				bpm_ig_is_moderate_conservative = yes
+				NOT = { has_modifier = bpm_very_stubborn_ig }
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			every_interest_group = {
+				limit = {
+					bpm_ig_is_moderate_conservative = yes
+				}
+				add_modifier = { name = bpm_very_stubborn_ig }
+			}
+		}
+	}
+}
+
+bpm_conservative_utils.2 = {
+	type = country_event
+	placement = root
+	hidden = yes
+
+	trigger = {
+		owner = { 
+			NOT = { has_law = law_type:law_council_republic }
+			any_interest_group = {
+				bpm_ig_is_moderate_conservative = yes
+				has_modifier = bpm_very_stubborn_ig
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			every_interest_group = {
+				limit = {
+					bpm_ig_is_moderate_conservative = yes
+				}
+				remove_modifier = bpm_very_stubborn_ig
+			}
+		}
+	}
+}
+
+# bpm_conservative_utils.3 = {
+# 	type = country_event
+# 	placement = root
+# 	hidden = yes
+
+# 	trigger = {
+# 		owner = {
+# 			any_interest_group = {
+# 				bpm_ig_is_right_wing = yes
+# 				is_being_suppressed = yes
+# 				NOT = { has_ideology = ideology_dop_dissent }
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		owner = {
+# 			every_interest_group = {
+# 				limit = {
+# 					bpm_ig_is_right_wing = yes
+# 					is_being_suppressed = yes
+# 					NOT = { has_ideology = ideology_dop_dissent }
+# 				}
+# 				bpm_remove_all_dop_ideologies = yes
+# 				add_ideology = ideology_dop_dissent
+# 				bpm_reorder_ideologies = yes
+# 			}
+# 		}
+# 	}
+# }
+
+# bpm_conservative_utils.4 = {
+# 	type = country_event
+# 	placement = root
+# 	hidden = yes
+
+# 	trigger = {
+# 		owner = {
+# 			any_interest_group = {
+# 				bpm_ig_is_right_wing = yes
+# 				is_being_suppressed = no
+# 				has_ideology = ideology_dop_dissent
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		owner = {
+# 			every_interest_group = {
+# 				limit = {
+# 					bpm_ig_is_right_wing = yes
+# 					is_being_suppressed = no
+# 					has_ideology = ideology_dop_dissent
+# 				}
+# 				remove_ideology = ideology_dop_dissent
+# 			}
+# 		}
+# 	}
+# }

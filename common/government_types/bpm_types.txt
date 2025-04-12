@@ -143,7 +143,13 @@ gov_parliamentary_dictatorship = {
 	possible = {
 		has_law = law_type:law_republic
 		has_law = law_type:law_advisory_body 
-		country_has_voting_franchise = no # => Most likely law_autocracy
+		#country_has_voting_franchise = no # => Most likely law_autocracy
+		OR = { 
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_technocracy
+			has_law = law_type:law_military_junta
+		}
 	}
 
 	on_government_type_change = {
@@ -166,7 +172,13 @@ gov_parliamentary_elected_dictatorship = {
 	possible = {
 		has_law = law_type:law_republic
 		has_law = law_type:law_advisory_body 
-		country_has_voting_franchise = yes
+		#country_has_voting_franchise = yes
+		NOR = { 
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_technocracy
+			has_law = law_type:law_military_junta
+		}
 	}
 
 	on_government_type_change = {

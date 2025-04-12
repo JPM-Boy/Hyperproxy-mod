@@ -51,8 +51,16 @@ education_laws.1 = {
 			limit ={ is_player = yes}
 
 			random_interest_group = { 
-				limit ={
-					bpm_ig_disapproves_enactment = yes
+					limit ={
+						bpm_ig_disapproves_enactment = yes
+						bpm_ig_is_ideological = yes
+					}
+					bpm_ig_increase_law_enactment_approval_medium = yes
+				}
+
+			random_interest_group = { 
+				limit ={ 
+					bpm_ig_is_institutional = yes
 				}
 				bpm_ig_increase_law_enactment_approval_medium = yes
 			}
@@ -78,6 +86,7 @@ education_laws.1 = {
 			random_interest_group = { 
 				limit ={
 					bpm_ig_disapproves_enactment = yes
+					bpm_ig_is_ideological = yes
 				}
 				bpm_ig_increase_law_enactment_approval_medium = yes
 			}
@@ -155,7 +164,7 @@ education_laws.2 = {
 		}
 		every_interest_group ={ 
 			limit ={
-				has_ideology = ideology:ideology_patriotic
+				bpm_ig_is_patriotic = yes
 			}
 			add_modifier = {
 				name = undisciplined_children
@@ -221,7 +230,7 @@ education_laws.3 = {
 			limit ={ is_player = yes}
 			every_interest_group = {
 				limit = {
-					is_marginal = no
+					bpm_ig_is_marginal = no
 					OR ={ 
 						has_ideology = ideology:ideology_wel_no_welfare
 						has_ideology = ideology:ideology_wel_religious_welfare
@@ -320,6 +329,9 @@ education_laws.4 = {
 					literacy_rate > 0.4
 				}
 				random_interest_group ={ 
+					limit ={ 
+						bpm_ig_is_institutional = yes
+					}
 					bpm_ig_increase_law_enactment_approval_medium = yes
 				}
 			}
@@ -503,7 +515,7 @@ education_laws.5 = {
 		}
 		every_interest_group = {
 			limit = {
-				has_ideology = ideology:ideology_patriarchal
+				bpm_ig_is_sexist = yes
 			}
 			add_modifier = {
 				name = mixed_sex_education

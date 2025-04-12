@@ -17,6 +17,8 @@ bpm_misc.1 = { # A Word of Warning
 
 	trigger = {
 		always = no
+		# is_player = yes
+		# NOT = { has_global_variable = bpm_2_2_save_var }
 	}
 
 	immediate = {
@@ -41,6 +43,20 @@ bpm_misc.2 = { # Delayed initialization of Political Stability and renames
 	immediate = {
 		bpm_rename_igs = yes
 		bpm_update_political_stability = yes
+	}
+}
+
+bpm_misc.5 = {
+	type = country_event
+	placement = root
+	hidden = yes
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		recalculate_pop_ig_support = yes
 	}
 }
 
@@ -77,3 +93,4 @@ bpm_misc.3 = { # Delayed repeatable law reset
 	}
 
 }
+

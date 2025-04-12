@@ -1,4 +1,8 @@
-﻿# PROLETARIAN IGS
+﻿bpm_ig_is_marginal = {
+	ig_clout < 0.02
+}
+
+# PROLETARIAN IGS
 
 bpm_ig_is_revolutionary_socialist = {
 	custom_tooltip = {
@@ -126,7 +130,7 @@ bpm_ig_is_proletarian = {
 		text = "tooltip_bpm_ig_is_proletarian"
 		OR = {
 			AND = {
-				is_interest_group_type = ig_prog
+				is_interest_group_type = ig_trade_unions
 				owner = { 
 					NOT = { has_law = law_type:law_state_controlled_labor_unions }
 				}
@@ -155,7 +159,7 @@ bpm_ig_is_actually_desiring_socialism = {
 }
 
 bpm_ig_is_socialist_trade_unions = {
-	is_interest_group_type = ig_prog
+	is_interest_group_type = ig_trade_unions
 	OR = {
 		leader ?= { bpm_leader_is_socialist = yes }
 		has_ideology = ideology:ideology_dop_syndical_unionist
@@ -178,6 +182,7 @@ bpm_ig_is_agrarian = {
 			has_ideology = ideology:ideology_eco_agrarian_autarky
 			has_ideology = ideology:ideology_eco_colonialist
 			has_ideology = ideology:ideology_eco_debt_serf_economy
+			has_ideology = ideology:ideology_eco_slave_colonialist
 		}
 	}
 }
@@ -497,6 +502,7 @@ bpm_ig_is_anti_democratic = {
 			has_ideology = ideology:ideology_dop_autocrat
 			has_ideology = ideology:ideology_dop_party_socialist
 			has_ideology = ideology:ideology_dop_dissent
+			has_ideology = ideology:ideology_dop_organic_power
 		}
 	}
 }
@@ -856,7 +862,7 @@ bpm_ig_law_can_be_promised = {
 bpm_ig_wants_promise = {
 	# The government cannot make promises to itself
 	is_in_government = no
-	is_marginal = no
+	bpm_ig_is_marginal = no
 	any_preferred_law = {
 		bpm_ig_law_can_be_promised = yes
 	}

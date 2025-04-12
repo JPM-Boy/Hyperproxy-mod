@@ -79,6 +79,14 @@ hpx_china.2 = {
 	flavor = hpx_china.2.f
 	duration = 3
 
+	trigger = {
+		NOT = {has_variable = lin_biao_incident_happened}
+	}
+
+	immediate = {
+		set_variable = lin_biao_incident_happened
+	}
+
 	option = {
 		name = hpx_china.2.a
 		set_variable = lin_biao_incident

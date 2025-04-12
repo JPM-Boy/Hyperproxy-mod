@@ -1,7 +1,7 @@
 {
-  "name" : "Hyperproxy - Prepared for a new Cold War?",
+  "name" : "Hyperproxy",
   "id" : "",
-  "version" : "0.7.0",
+  "version" : "0.8.0",
   "supported_game_version" : "1.8.*",
   "picture" : "thumbnail.png",
   "short_description" : "",

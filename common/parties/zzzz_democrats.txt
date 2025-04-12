@@ -53,6 +53,16 @@ democrat_party = {
 		}
 		if = {
 			limit = {
+				owner = { has_variable = progressive_party_enabled}
+				is_interest_group_type = ig_socdem
+			}
+			add = {
+				desc = "hpx_kennedy_separation"
+				value = -100
+			}
+		}
+		if = {
+			limit = {
 				owner = { has_variable = bpm_party_establishment_centre_right }
 				NOR = {
 					bpm_ig_is_radical_opposition = yes

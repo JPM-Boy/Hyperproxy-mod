@@ -6,7 +6,6 @@
 	bpm_setup_country_dop_ideologies = yes
 	bpm_setup_country_eco_ideologies = yes
 	bpm_setup_country_mil_cit_ideologies = yes
-	bpm_setup_country_wel_ideologies = yes
 	bpm_setup_country_je = yes
 	bpm_setup_country_modifiers = yes
 	bpm_setup_country_stubbornness = yes
@@ -519,22 +518,6 @@ bpm_setup_country_mil_cit_ideologies = {
 	}
 
 	
-}
-
-bpm_setup_country_wel_ideologies = {
-	if = {
-		limit = { bpm_country_is_in_new_world = yes }
-		if = {
-			limit = { country_has_state_religion = rel:catholic }
-			ig:ig_reactionary ?= { 
-				if = {
-					limit = { has_ideology = ideology:ideology_wel_no_welfare }
-				}
-				remove_ideology = ideology_wel_no_welfare
-				add_ideology = ideology_wel_religious_welfare
-			}
-		}
-	}
 }
 
 bpm_update_ai_cheats = {

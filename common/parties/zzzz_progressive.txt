@@ -35,7 +35,7 @@ progressive_party = {
 			limit = { owner = {has_variable = progressive_party_enabled} }
 			add = {
 				value = 100
-				desc "hpx_progressive_party"
+				desc = "hpx_progressive_party"
 			}
 		}
 		if = {

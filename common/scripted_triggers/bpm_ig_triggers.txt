@@ -327,6 +327,7 @@ bpm_ig_is_left_wing = {
 	custom_tooltip = {
 		text = "tooltip_bpm_ig_is_left_wing"
 		OR = {
+			is_interest_group_type = ig_socdem
 			bpm_ig_is_liberal = yes
 			bpm_ig_is_labor = yes
 		}

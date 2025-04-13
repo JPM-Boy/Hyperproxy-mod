@@ -30,6 +30,21 @@ hpx_update_movements_oa = {
                 }
                 save_scope_as = hpx_movement_communist
             }
+            random_political_movement = {
+                limit = {
+                    is_political_movement_type = hpx_movement_counterculture
+                }
+                save_scope_as = hpx_movement_counterculture
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_counterculture
+                }
+                set_variable = {
+                    name = hpx_counterculture_movement
+                    value = scope:hpx_movement_counterculture
+                }
+            }
             if = {
                 limit = {
                     exists = scope:hpx_movement_communist
@@ -56,6 +71,26 @@ hpx_update_splits_oa = {
         if = {
             limit = {
                 is_player = yes
+            }
+            # Counterculture Movement
+            if = {
+                limit = {
+                    has_variable = hpx_counterculture_movement
+                    ig:ig_socdem = {
+                        has_variable = hpx_movement_counterculture_pressure
+                    }
+                    OR = {
+                        ig:ig_socdem.var:hpx_movement_counterculture_pressure > 0.2
+                        AND = {
+                            var:hpx_counterculture_movement.political_movement_radicalism > 0.3
+                            var:hpx_counterculture_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_counterculture_split }
+                    }
+                }
+                hpx_do_hpx_counterculture_split = yes
             }
             # Communist Split
             if = {

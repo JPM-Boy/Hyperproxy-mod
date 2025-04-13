@@ -28,14 +28,17 @@
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
 		}
-
-		bpm_initialize_anarchist = yes
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				ig:ig_anarchist = {
+					hpx_interest_group_is_activated = yes
+				}
+			}
 		}
 	}
 	

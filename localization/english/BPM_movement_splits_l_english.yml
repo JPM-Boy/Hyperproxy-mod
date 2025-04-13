@@ -129,6 +129,19 @@
   hpx_movement_communist_faction_communist_name: "Revisionist Faction"
   hpx_movement_communist_faction_communist_significant: "$bpm_movement_is_significant_tooltip$"
 
+  hpx_movement_counterculture_faction_default_name: "Counterculture Faction"
+  hpx_movement_counterculture_faction_socdem_name: "Counterculture Faction"
+  hpx_movement_counterculture_faction_socdem_significant: "$bpm_movement_is_significant_tooltip$"
+
+
+
+
+
+
+
+
+
+
   #   #bpm_liberal_movement_faction_orthodox_leading: "$bpm_liberal_movement_faction_default_leading$""
 
 # Nationalist

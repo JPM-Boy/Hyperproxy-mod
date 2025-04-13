@@ -10,6 +10,13 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
+			is_political_movement_type = hpx_movement_counterculture
+		}
+		localization_key = hpx_movement_counterculture_faction
+	}
+
+	text = {
+		trigger = {
 			is_political_movement_type = hpx_movement_communist
 		}
 		localization_key = hpx_movement_communist_faction
@@ -42,6 +49,28 @@ bpm_faction_cusloc = {
 		}
 		fallback = yes
 		localization_key = bpm_nothing
+	}
+}
+
+hpx_movement_counterculture_faction = {
+	type = interest_group
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				is_interest_group_type = ig_socdem
+			}
+		}
+		localization_key = hpx_movement_counterculture_faction_socdem
+	}
+
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = hpx_movement_counterculture_faction_default
 	}
 }
 

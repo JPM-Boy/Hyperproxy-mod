@@ -18,6 +18,10 @@ hpx_do_hpx_communist_split = {
 	hpx_add_movement_interaction = { int = hpx_communist_split }
 	trigger_event = { id = hpx_movement_evolution.2 days = 31 }
 }
+hpx_do_hpx_counterculture_split = {
+	hpx_add_movement_interaction = { int = hpx_counterculture_split }
+	trigger_event = { id = hpx_movement_evolution.3 days = 31 }
+}
 
 
 hpx_do_ai_splits = {
@@ -32,6 +36,21 @@ hpx_do_ai_splits = {
 			is_political_movement_type = hpx_movement_communist
 		}
 		save_scope_as = hpx_movement_communist
+	}
+	random_political_movement = {
+		limit = {
+			is_political_movement_type = hpx_movement_counterculture
+		}
+		save_scope_as = hpx_movement_counterculture
+	}
+	if = {
+		limit = {
+			exists = scope:hpx_movement_counterculture
+		}
+		set_variable = {
+			name = hpx_countecultu_movement
+			value = scope:hpx_movement_counterculture
+		}
 	}
 	if = {
 		limit = {
@@ -50,6 +69,23 @@ hpx_do_ai_splits = {
 			name = hpx_communist_movement
 			value = scope:hpx_movement_communist
 		}
+	}
+	if = {
+		limit = {
+			has_variable = hpx_counterculture_movement
+			OR = {
+				ig:ig_socdem = {
+					has_variable = hpx_movement_counterculture_pressure
+				}
+			}
+
+			var:hpx_counterculture_movement.political_movement_support > 0.15
+
+			NOT = {
+				hpx_has_movement_interaction = { int = hpx_counterculture_split }
+			}
+		}
+		hpx_do_hpx_counterculture_split = yes
 	}
 	if = {
 		limit = { 

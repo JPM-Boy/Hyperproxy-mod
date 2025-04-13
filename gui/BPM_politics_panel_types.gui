@@ -391,7 +391,7 @@
 
 							widget = {
 								size = { 25 25 }
-								visible = "[Not(IsDataModelEmpty(InterestGroup.MakeScope.GetList('bpm_factions')))`]"
+								visible = "[Not(IsDataModelEmpty(InterestGroup.MakeScope.GetList('hpx_factions')))`]"
 
 								button = {
 									using = expand_arrow
@@ -783,7 +783,7 @@
 					visible = "[GetVariableSystem.Exists(Concatenate('bpm_ig_expanded', InterestGroup.GetName))]"
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = preferred
-					datamodel = "[InterestGroup.MakeScope.GetList('bpm_factions')]"
+					datamodel = "[InterestGroup.MakeScope.GetList('hpx_factions')]"
 
 					item = {
 						politics_panel_faction_item = {}
@@ -925,7 +925,7 @@
 							align = nobaseline
 							elide = right
 							fontsize_min = 12
-							raw_text = "#tooltippable [SelectLocalization(GreaterThan_CFixedPoint(InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self), '(CFixedPoint)0.1'), 'Pressured', 'Influenced')]#! (#v [Multiply_CFixedPoint(InterestGroup.MakeScope.ScriptValue('bpm_influenced_clout_sv_div'), InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self))|%0]#!)"	
+							raw_text = "#tooltippable [SelectLocalization(GreaterThan_CFixedPoint(InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self), '(CFixedPoint)0.1'), 'Pressured', 'Influenced')]#! (#v [Multiply_CFixedPoint(InterestGroup.MakeScope.ScriptValue('hpx_influenced_clout_sv_div'), InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self))|%0]#!)"
 						}
 					}
 					expand = {}

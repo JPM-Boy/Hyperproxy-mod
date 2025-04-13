@@ -1,0 +1,55 @@
+hpx_movement_setter = {
+    if = {
+        limit = {
+            NAND = {
+                has_variable = hpx_largest_faction
+                has_variable = hpx_largest_faction_pressure
+            }
+        }
+        set_variable = {
+            name = hpx_largest_faction
+            value = scope:polmov
+        }
+        set_variable = {
+            name = hpx_largest_faction_pressure
+            value = scope:result
+        }
+    }
+    else_if = {
+        limit = {
+            scope:result > var:hpx_largest_faction_pressure
+        }
+        set_variable = {
+            name = hpx_largest_faction
+            value = scope:polmov
+        }
+        set_variable = {
+            name = hpx_largest_faction_pressure
+            value = scope:result
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_liberal
+            }
+        }
+        set_variable = {
+            name = hpx_movement_liberal_pressure
+            value = scope:result
+        }
+    }
+}
+hpx_movement_getter = {
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_liberal
+            }
+        }
+        set_variable = {
+            name = hpx_movement_pressure_getter_result
+            value = var:hpx_movement_liberal_pressure
+        }
+    }
+}

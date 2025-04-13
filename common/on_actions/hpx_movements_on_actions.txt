@@ -1,0 +1,113 @@
+﻿on_monthly_pulse_country = {
+    on_actions = {
+        hpx_update_movements_oa
+        hpx_update_splits_oa
+        hpx_update_factions_oa
+    }
+}
+
+on_yearly_pulse_country = {
+    on_actions = {
+        hpx_do_ai_splits_oa
+    }
+}
+
+hpx_update_movements_oa = {
+    effect = {
+        if = {
+            limit = { 
+                is_player = yes
+            }
+            random_political_movement = {
+                limit = {
+                    is_political_movement_type = hpx_movement_liberal
+                }
+                save_scope_as = hpx_movement_liberal
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_liberal
+                }
+                set_variable = {
+                    name = hpx_liberal_movement
+                    value = scope:hpx_movement_liberal
+                }
+            }
+        }
+    } 
+}
+hpx_update_splits_oa = {
+    effect = {
+        if = {
+            limit = {
+                is_player = yes
+            }
+            # Liberal Split
+            if = {
+                limit = { 
+                    has_variable = hpx_liberal_movement
+                    ig:ig_classical_liberal = {
+                        has_variable = hpx_movement_liberal_pressure
+                    }
+                    OR = { 
+                        ig:ig_classical_liberal.var:hpx_movement_liberal_pressure > 0.2
+                        AND = {
+                            var:hpx_liberal_movement.political_movement_radicalism > 0.3
+                            var:hpx_liberal_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_liberal_split }
+                    }
+                }
+                hpx_do_hpx_liberal_split = yes
+            }
+        }
+    }
+}
+
+hpx_do_ai_splits_oa = {
+    effect = {
+        if = {
+            limit = {
+                is_player = no
+            }
+            hpx_do_ai_splits = yes
+        }
+    }
+}
+
+hpx_update_factions_oa = {
+    effect = { 
+        if = {
+            limit = {
+                is_player = yes 
+                game_date > 1970.1.20
+            }
+            every_interest_group = { 
+                save_scope_as = selected_ig
+                owner = {
+                    every_political_movement = {
+                        limit = { any_influenced_interest_group = { type = scope:selected_ig.type } }
+                        scope:selected_ig = { add_to_variable_list = { name = hpx_factions target = prev } }
+                    }
+                }
+                set_variable = { 
+                    name = hpx_influenced_clout
+                    value = 0
+                }
+                set_variable = { 
+                    name = hpx_strongly_influenced_clout
+                    value = 0
+                }
+                remove_variable = hpx_largest_faction_pressure
+                remove_variable = hpx_largest_faction
+
+            }
+            set_variable = {
+                name = hpx_movement_factions_reload
+                days = 1
+            }
+        }
+    }
+}

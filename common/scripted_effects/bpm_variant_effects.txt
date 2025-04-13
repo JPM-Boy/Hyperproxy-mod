@@ -2,7 +2,7 @@ bpm_update_variants = {
 	every_interest_group = {
 		set_variable = {
 			name = bpm_cached_largest_faction
-			value = var:bpm_largest_faction
+			value = var:hpx_largest_faction
 		}
 	}
 	if = {
@@ -312,8 +312,8 @@ bpm_update_liberal_variant = {
 	ig:ig_liberals ?= {
 		if = {
 			limit = {
-				has_variable = bpm_largest_faction
-				var:bpm_largest_faction = {
+				has_variable = hpx_largest_faction
+				var:hpx_largest_faction = {
 					is_political_movement_type = movement_religious_majority
 				}
 			}
@@ -332,8 +332,8 @@ bpm_update_trade_unions_variant = {
 	ig:ig_trade_unions ?= {
 		if = {
 			limit = {
-				has_variable = bpm_largest_faction
-				var:bpm_largest_faction = {
+				has_variable = hpx_largest_faction
+				var:hpx_largest_faction = {
 					OR = { 
 						is_political_movement_type = movement_religious_majority
 						is_political_movement_type = movement_cultural_majority 
@@ -448,8 +448,8 @@ bpm_add_laissez_faire_trait = {
 bpm_add_trait = {
 	if = {
 		limit = {
-			has_variable = bpm_largest_faction
-			var:bpm_largest_faction = {
+			has_variable = hpx_largest_faction
+			var:hpx_largest_faction = {
 				$condition$ = yes
 			}
 		}

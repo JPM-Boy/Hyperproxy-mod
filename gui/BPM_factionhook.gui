@@ -26,7 +26,7 @@ widget = {
 
                 item = {
                     hbox = {
-                        visible = "[GetPlayer.MakeScope.Var('bpm_movement_factions_reload').IsSet]"
+                        visible = "[GetPlayer.MakeScope.Var('hpx_movement_factions_reload').IsSet]"
                         state = {
                             name = _show
                             on_start = "[GetScriptedGui('bpm_movement_factions_sg').Execute(GuiScope.SetRoot(InterestGroup.MakeScope).AddScope('polmov', PoliticalMovement.MakeScope).AddScope('result', MakeScopeValue(InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self))).End)]"

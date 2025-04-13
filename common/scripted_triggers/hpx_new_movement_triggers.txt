@@ -1,0 +1,32 @@
+hpx_interest_group_is_activated_subp = {
+	trigger_if = {
+		limit = { is_interest_group_type = ig_$ig$ }
+		owner = { 
+			hpx_interest_group_is_activated_$ig$ = yes
+		}
+	}
+}
+
+hpx_interest_group_is_activated_liberal = {
+	NOT = { is_country_type = decentralized }
+	hpx_has_movement_interaction = { int = hpx_liberal_split }
+}
+hpx_interest_group_is_activated_academia = {
+	NOT = { is_country_type = decentralized }
+	hpx_has_movement_interaction = { int = hpx_liberal_split }
+}
+
+hpx_interest_group_is_activated = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				hpx_interest_group_is_activated_subp = { ig = liberal }
+				hpx_interest_group_is_activated_subp = { ig = academia }
+			}
+			custom_tooltip = {
+				text = "BPM_IS_RULER_IG"
+				owner.ruler.interest_group = this
+			}
+		}
+	}
+}

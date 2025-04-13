@@ -1,0 +1,27 @@
+hpx_activate_interest_group_initialize = {
+	hpx_activate_interest_group_liberal_and_academia = yes
+}
+hpx_activate_interest_group_liberal_and_academia = {
+	if = {
+		limit = {
+			OR = {
+				hpx_is_pre_modern = no
+				this = owner.ruler.interest_group
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_liberal_split }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				is_secessionist = yes
+				is_revolutionary = yes
+			}
+			civil_war_origin_country = {
+				ig:ig_liberal = { hpx_interest_group_is_activated = yes }
+				ig:ig_academia = { hpx_interest_group_is_activated = yes }
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_liberal_split }
+	}
+}

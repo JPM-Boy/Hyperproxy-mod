@@ -1,6 +1,6 @@
-bpm_has_movement_interaction = {
+hpx_has_movement_interaction = {
     is_target_in_variable_list = {
-        name = bpm_movement_interactions
+        name = hpx_movement_interactions
         target = flag:$int$
     }
 }
@@ -39,7 +39,9 @@ bpm_movement_supports_enacting_current_law = {
         }
     }
 }
-
+hpx_is_pre_modern = {
+    NOT = { has_technology_researched = mass_media }
+}
 bpm_is_probably_pre_industrial = { 
     OR = { 
         is_country_type = decentralized

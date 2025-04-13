@@ -91,7 +91,7 @@ lobby_pro_country = {
 				target = scope:target_country
 			}
 		}
-		bpm_interest_group_is_activated = yes
+		hpx_interest_group_is_activated = yes
 	}
 	
 	join_weight = {
@@ -957,7 +957,7 @@ lobby_anti_country = {
 				target = scope:target_country
 			}
 		}
-		bpm_interest_group_is_activated = yes
+		hpx_interest_group_is_activated = yes
 	}
 	
 	join_weight = {
@@ -1723,7 +1723,7 @@ lobby_pro_overlord = {
 				target = scope:target_country
 			}
 		}
-		bpm_interest_group_is_activated = yes
+		hpx_interest_group_is_activated = yes
 	}
 	
 	join_weight = {
@@ -2150,7 +2150,7 @@ lobby_anti_overlord = {
 				target = scope:target_country
 			}
 		}
-		bpm_interest_group_is_activated = yes
+		hpx_interest_group_is_activated = yes
 	}
 	
 	join_weight = {

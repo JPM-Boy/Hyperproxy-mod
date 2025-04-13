@@ -1,0 +1,51 @@
+hpx_add_movement_interaction = {
+    add_to_variable_list = {
+		name = hpx_movement_interactions
+		target = flag:$int$
+	}
+}
+# ---
+# wip
+
+#---
+hpx_do_hpx_liberal_split = {
+	ig:ig_classical_liberal = {set_interest_group_name = ig_hpx_classical_liberal}
+	hpx_add_movement_interaction = { int = hpx_liberal_split }
+	trigger_event = { id = hpx_movement_evolution.1 days = 31 }
+}
+
+
+hpx_do_ai_splits = {
+	random_political_movement = {
+		limit = {
+			is_political_movement_type = hpx_movement_liberal
+		}
+		save_scope_as = hpx_movement_liberal
+	}
+	if = {
+		limit = {
+			exists = scope:hpx_movement_liberal
+		}
+		set_variable = {
+			name = hpx_liberal_movement
+			value = scope:hpx_movement_liberal
+		}
+	}
+	if = {
+		limit = { 
+			has_variable = hpx_liberal_movement
+			OR = {
+				ig:ig_classical_liberal = {
+					has_variable = hpx_movement_liberal_pressure
+				}
+			}
+
+			var:hpx_liberal_movement.political_movement_support > 0.15
+
+			NOT = {
+				hpx_has_movement_interaction = { int = hpx_liberal_split }
+			}
+		}
+		hpx_do_hpx_liberal_split = yes
+	}
+}

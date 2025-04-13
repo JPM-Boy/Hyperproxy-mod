@@ -215,23 +215,45 @@ bpm_initialize_neolib = {
 	}
 }
 
-bpm_initialize_libs = {
+bpm_initialize_academia = {
 	if = {
 		limit = {
-			OR = {
-				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
+			ig:ig_academia ?= {has_ideology = ideology:ideology_nonexistent}
+		}
+		ig:ig_academia = {
+			remove_ideology = ideology_nonexistent
+			add_ideology = ideology_dop_moderate_democrat
+			add_ideology = ideology_sta_weak_state
+			add_ideology = ideology_cit_liberal_nationalist
+			# Vanilla
+
+			add_ideology = ideology_anti_clerical
+			add_ideology = ideology_meritocratic
+			add_ideology = ideology_anti_slavery
+			every_scope_character = {
+				limit = {
+					has_ideology = ideology:ideology_placeholder_leader
+				}
+				set_ideology = ideology:ideology_center_leader
 			}
+			bpm_reorder_ideologies = yes
+		}
+	}
+}
+
+bpm_initialize_modern_libs = {
+	if = {
+		limit = {
+			ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 		}
 		ig:ig_liberal = {
 			remove_ideology = ideology_nonexistent
-			add_ideology = ideology_mil_militarist
 			add_ideology = ideology_ban_averse
 			add_ideology = ideology_gov_liberal_republican
 			add_ideology = ideology_dop_radical_democrat
 			add_ideology = ideology_eco_laissez_faire
 			add_ideology = ideology_mon_floating_exchange
-			
+
 			# Vanilla
 			add_ideology = ideology_liberal
 			add_ideology = ideology_plutocratic
@@ -245,6 +267,15 @@ bpm_initialize_libs = {
 				set_ideology = ideology:ideology_center_leader
 			}
 			bpm_reorder_ideologies = yes
+		}
+	}
+
+}
+
+bpm_initialize_libs = {
+	if = {
+		limit = {
+			ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 		}
 		ig:ig_classical_liberal ?= {
 			remove_ideology = ideology_nonexistent

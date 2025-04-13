@@ -62,33 +62,33 @@ bpm_liberal_movements_support = {
     }
 }
 
-bpm_influenced_clout_sv = {
+hpx_influenced_clout_sv = {
     value = 0
     if = {
         limit = {
-            has_variable = bpm_influenced_clout
+            has_variable = hpx_influenced_clout
         }
-        add = var:bpm_influenced_clout
+        add = var:hpx_influenced_clout
     }
 }
 
-bpm_strongly_influenced_clout_sv = {
+hpx_strongly_influenced_clout_sv = {
     value = 0
     if = {
         limit = {
-            has_variable = bpm_strongly_influenced_clout
+            has_variable = hpx_strongly_influenced_clout
         }
-        add = var:bpm_strongly_influenced_clout
+        add = var:hpx_strongly_influenced_clout
     }
 }
 
-bpm_influenced_clout_sv_div = {
+hpx_influenced_clout_sv_div = {
     value = 1
     if = {
         limit = {
-            bpm_influenced_clout_sv > 0
+            hpx_influenced_clout_sv > 0
         }
-        divide = bpm_influenced_clout_sv
+        divide = hpx_influenced_clout_sv
     }
 }
 
@@ -106,26 +106,26 @@ bpm_unaligned_clout = {
 }
 
 bpm_unaligned_clout_idg = {
-    value = bpm_influenced_clout_sv
-    subtract = bpm_strongly_influenced_clout_sv
-    divide = bpm_influenced_clout_sv
+    value = hpx_influenced_clout_sv
+    subtract = hpx_strongly_influenced_clout_sv
+    divide = hpx_influenced_clout_sv
 }
 
 bpm_unaligned_clout_ing = {
     value = 1
-    subtract = bpm_strongly_influenced_clout_sv
+    subtract = hpx_strongly_influenced_clout_sv
 }
 
 ##
 BPM_LIBERAL_STRENGTH = {
     value = 0.5
-    add = owner.modifier:country_liberal_movement_support_add
+    add = owner.modifier:country_hpx_liberal_movement_support_add
     min = 0
 }
 
 BPM_CONSERVATIVE_STRENGTH = {
     value = 1
-    add = owner.modifier:country_liberal_movement_support_add
+    add = owner.modifier:country_hpx_liberal_movement_support_add
     min = 0
 }
 

@@ -725,7 +725,7 @@ country_reactionary_movement_support_add = {
 	color=good
 }
 
-country_liberal_movement_support_add = {
+country_hpx_liberal_movement_support_add = {
 	decimals=0
 	percent=yes
 	color=good

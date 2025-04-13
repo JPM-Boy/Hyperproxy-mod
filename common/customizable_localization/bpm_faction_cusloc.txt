@@ -10,9 +10,9 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
-			is_political_movement_type = movement_liberal
+			is_political_movement_type = hpx_movement_liberal
 		}
-		localization_key = bpm_liberal_movement_faction
+		localization_key = hpx_movement_liberal_faction
 	}
 
 	text = {
@@ -378,29 +378,31 @@ bpm_feminist_movement_faction = {
 	}
 }
 
-bpm_liberal_movement_faction = {
+hpx_movement_liberal_faction = {
 	type = interest_group
 	random_valid = no
 
 	text = {
 		trigger = {
-			is_interest_group_type = ig_liberals
+			OR = {
+				is_interest_group_type = ig_liberal
+			}
 		}
-		localization_key = bpm_liberal_movement_faction_orthodox
+		localization_key = hpx_movement_liberal_faction_orthodox
 	}
 
 	text = {
 		trigger = {
 			is_interest_group_type = ig_intelligentsia
 		}
-		localization_key = bpm_liberal_movement_faction_intellectuals
+		localization_key = hpx_movement_liberal_faction_intellectuals
 	}
 
 	text = {
 		trigger = {
 			is_interest_group_type = ig_industrialists
 		}
-		localization_key = bpm_liberal_movement_faction_industrialists
+		localization_key = hpx_movement_liberal_faction_industrialists
 	}
 
 	text = {
@@ -408,7 +410,7 @@ bpm_liberal_movement_faction = {
 			always = no
 		}
 		fallback = yes
-		localization_key = bpm_liberal_movement_faction_default
+		localization_key = hpx_movement_liberal_faction_default
 	}
 }
 

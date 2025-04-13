@@ -54,7 +54,7 @@ ig_rightpop_only_icon:0 "@ig_rightpop!"
 ig_rightpop_desc:0 "Populism refers to the many movements usually centered in a single figure that appeal to the mainstream people who feel that the elites do not care about them."
 
 #Liberal
-ig_liberal:0 "Liberals"
+ig_liberal:0 "Modern Liberals"
 ig_liberal_only_icon:0 "@ig_liberal!"
 ig_liberal_desc:0 "Modern liberalism, focuses on individual freedoms, democratic governance, and the rule of law while advocating for economic policies that combine free-market principles with some level of government intervention. It prioritizes civil liberties, human rights, and equality of opportunity, emphasizing the importance of social welfare, education, and healthcare to ensure that all individuals can participate fully in society."
 
@@ -63,9 +63,13 @@ ig_moderate_liberals: "Moderate Liberals"
  ig_variant_liberal:0 "[GetInterestGroupVariant('ig_liberal',GetPlayer).GetNameWithCountryVariant]"
 
 #Libertarianism
-ig_classical_liberal:0 "Classical Liberals"
+ig_classical_liberal:0 "Liberals"
+ ig_hpx_classical_liberal: "Classical Liberal"
 ig_classical_liberal_only_icon:0 "@ig_classical_liberal!"
 ig_classical_liberal_desc:0 "WIP"
+
+ ig_variant_classical_liberal:0 "[GetInterestGroupVariant('ig_classical_liberal',GetPlayer).GetNameWithCountryVariant]"
+
 
  ig_rockefeller: "Rockefeller Faction"
  ig_dixiecrat: "Dixiecrats"

@@ -5,13 +5,7 @@
 	index = 3
 
 	ideologies = {
-		ideology_dop_moderate_democrat
-		ideology_sta_weak_state
-		ideology_cit_liberal_nationalist
-		# Vanilla
-		ideology_anti_clerical
-		ideology_meritocratic
-		ideology_anti_slavery
+		ideology_nonexistent
 	}
 
 	character_ideologies = {
@@ -43,10 +37,15 @@
 	}
 	on_disable = {}	
 	on_character_ig_membership = {}
-	
+
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				ig:ig_academia = {
+					hpx_interest_group_is_activated = yes
+				}
+			}
 		}
 	}
 

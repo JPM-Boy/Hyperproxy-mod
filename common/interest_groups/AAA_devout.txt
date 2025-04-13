@@ -295,7 +295,7 @@
 			limit = { is_pop_type = peasants }
 			add = {
 				desc = "POP_PEASANTS"
-				value = 70
+				value = 1
 			}
 		}
 		else_if = {

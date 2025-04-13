@@ -5,19 +5,19 @@ bpm_movement_factions_sg = {
         result
     }
     effect = {
-        bpm_movement_setter = yes
+        hpx_movement_setter = yes
         save_scope_as = selected_ig
         if = {
             limit = {
                 scope:polmov = { any_influenced_interest_group = { type = scope:selected_ig.type } }
             }
             change_variable = {
-                name = bpm_strongly_influenced_clout
+                name = hpx_strongly_influenced_clout
                 add = scope:result
             }
         }
         change_variable = {
-            name = bpm_influenced_clout
+            name = hpx_influenced_clout
             add = scope:result
         }
     }
@@ -42,7 +42,7 @@ bpm_movement_is_leading_faction_sg = {
     }
     is_shown = {
         scope:polmov.political_movement_support > 0.1
-        var:bpm_largest_faction ?= scope:polmov 
+        var:hpx_largest_faction ?= scope:polmov
     }
 }
 
@@ -52,7 +52,7 @@ bpm_movement_is_significant_faction_sg = {
         polmov
     }
     is_shown = {
-        bpm_movement_is_significant_faction = yes
+        hpx_movement_is_significant_faction = yes
     }
 }
 

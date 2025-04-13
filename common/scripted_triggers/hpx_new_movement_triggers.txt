@@ -15,6 +15,10 @@ hpx_interest_group_is_activated_academia = {
 	NOT = { is_country_type = decentralized }
 	hpx_has_movement_interaction = { int = hpx_liberal_split }
 }
+hpx_interest_group_is_activated_reformist_communist = {
+	NOT = { is_country_type = decentralized }
+	hpx_has_movement_interaction = { int = hpx_communist_split }
+}
 
 hpx_interest_group_is_activated = {
 	hidden_trigger = {
@@ -22,6 +26,7 @@ hpx_interest_group_is_activated = {
 			AND = {
 				hpx_interest_group_is_activated_subp = { ig = liberal }
 				hpx_interest_group_is_activated_subp = { ig = academia }
+				hpx_interest_group_is_activated_subp = { ig = reformist_communist }
 			}
 			custom_tooltip = {
 				text = "BPM_IS_RULER_IG"

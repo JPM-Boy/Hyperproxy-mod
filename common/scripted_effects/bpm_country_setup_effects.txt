@@ -654,12 +654,9 @@ bpm_setup_basic_igs = {
 	}
 	if = {
 		limit = {
-			OR = {
-				ig:ig_orthodox_communist ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_reformist_communist ?= { has_ideology = ideology:ideology_nonexistent }
-			}
+			ig:ig_orthodox_communist ?= { has_ideology = ideology:ideology_nonexistent }
 		}
-		bpm_initialize_reform_revolution = yes
+		bpm_initialize_communist = yes
 	}
 	if = {
 		limit = {

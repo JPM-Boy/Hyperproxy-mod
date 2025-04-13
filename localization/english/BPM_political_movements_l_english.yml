@@ -40,3 +40,6 @@
 
  hpx_movement_liberal: "Liberal Movement"
  hpx_movement_liberal_name: "$hpx_movement_liberal$"
+
+ hpx_movement_communist: "Communist Movement"
+ hpx_movement_communist_name: "$hpx_movement_communist$"

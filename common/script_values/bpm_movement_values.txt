@@ -131,7 +131,7 @@ BPM_CONSERVATIVE_STRENGTH = {
 
 BPM_SOCIALIST_STRENGTH = {
     value = 1
-    add = owner.modifier:country_populist_movement_support_add
+    add = owner.modifier:country_hpx_communist_movement_support_add
     if = {
         limit = {
             has_global_variable = first_intl_chain_complete_var
@@ -149,6 +149,6 @@ BPM_REACTIONARY_STRENGTH = {
 
 BPM_LABOR_STRENGTH = {
     value = 1
-    add = owner.modifier:country_populist_movement_support_add
+    add = owner.modifier:country_hpx_communist_movement_support_add
     min = 0
 }

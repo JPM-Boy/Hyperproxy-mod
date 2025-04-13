@@ -10,16 +10,16 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
-			is_political_movement_type = hpx_movement_liberal
+			is_political_movement_type = hpx_movement_communist
 		}
-		localization_key = hpx_movement_liberal_faction
+		localization_key = hpx_movement_communist_faction
 	}
 
 	text = {
 		trigger = {
-			is_political_movement_type = movement_feminist
+			is_political_movement_type = hpx_movement_liberal
 		}
-		localization_key = bpm_feminist_movement_faction
+		localization_key = hpx_movement_liberal_faction
 	}
 
 	text = {
@@ -38,118 +38,6 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
-			is_political_movement_type = movement_anti_slavery
-		}
-		localization_key = bpm_anti_slavery_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_royalist_absolutist
-		}
-		localization_key = bpm_royalist_absolutist_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_royalist_constitutional
-		}
-		localization_key = bpm_royalist_constitutional_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_socialist
-		}
-		localization_key = bpm_socialist_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_anarchist
-		}
-		localization_key = bpm_anarchist_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type =  movement_radical 
-		}
-		localization_key = bpm_radical_movement_faction
-	}
-	text = {
-		trigger = {
-			is_political_movement_type = movement_market_liberal
-		}
-		localization_key = bpm_market_liberal_faction_name
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_labor
-		}
-		localization_key = bpm_labor_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_pro_slavery
-		}
-		localization_key = bpm_pro_slavery_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_reactionary
-		}
-		localization_key = bpm_reactionary_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_land_reform
-		}
-		localization_key = bpm_land_reform_movement_faction
-	}
-
-	text = {
-		trigger ={
-			is_political_movement_type = movement_fascist
-		}
-		localization_key = bpm_fascist_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_national_liberal
-		}
-		localization_key = bpm_national_liberal_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_communist
-		}
-		localization_key = bpm_communist_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_modernizer
-		}
-		localization_key = bpm_modernizer_movement_faction
-	}
-
-	text = {
-		trigger = {
-			is_political_movement_type = movement_reformist_socialist
-		}
-		localization_key = bpm_reformist_socialist_movement_faction
-	}
-
-
-	text = {
-		trigger = {
 			always = no
 		}
 		fallback = yes
@@ -157,203 +45,17 @@ bpm_faction_cusloc = {
 	}
 }
 
-bpm_reformist_socialist_movement_faction = {
+hpx_movement_communist_faction = {
 	type = interest_group
 	random_valid = no
 
 	text = {
 		trigger = {
-			always = no
+			OR = {
+				is_interest_group_type = ig_orthodox_communist
+			}
 		}
-		fallback = yes
-		localization_key = bpm_reformist_socialist_movement_faction_default
-	}
-}
-
-bpm_modernizer_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_modernizer_movement_faction_default
-	}
-}
-
-bpm_land_reform_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_land_reform_movement_faction_default
-	}
-}
-
-bpm_fascist_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_fascist_movement_faction_default
-	}
-}
-
-bpm_communist_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_communist_movement_faction_default
-	}
-}
-
-bpm_anarchist_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_anarchist_movement_faction_default
-	}
-}
-
-bpm_socialist_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_socialist_movement_faction_default
-	}
-}
-
-bpm_royalist_constitutional_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_royalist_constitutional_movement_faction_default
-	}
-}
-
-bpm_national_liberal_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_national_liberal_movement_faction_default
-	}
-}
-
-bpm_labor_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_labor_movement_faction_default
-	}
-}
-
-bpm_pro_slavery_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_pro_slavery_movement_faction_default
-	}
-}
-
-bpm_anti_slavery_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_anti_slavery_movement_faction_default
-	}
-}
-
-bpm_market_liberal_faction_name = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_market_liberal_faction_name_default
-	}
-}
-
-bpm_radical_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			c:FRA ?= owner
-		}
-		localization_key = bpm_radical_movement_faction_france
-	}
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_radical_movement_faction_default
-	}
-}
-
-bpm_royalist_absolutist_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			is_interest_group_type = ig_landowners
-		}
-		localization_key = bpm_royalist_absolutist_movement_faction_landies
+		localization_key = hpx_movement_communist_faction_communist
 	}
 
 	text = {
@@ -361,20 +63,7 @@ bpm_royalist_absolutist_movement_faction = {
 			always = no
 		}
 		fallback = yes
-		localization_key = bpm_royalist_absolutist_movement_faction_default
-	}
-}
-
-bpm_feminist_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_feminist_movement_faction_default
+		localization_key = hpx_movement_communist_faction_default
 	}
 }
 
@@ -447,18 +136,6 @@ bpm_religious_majority_movement_faction = {
 	}
 }
 
-bpm_reactionary_movement_faction = {
-	type = interest_group
-	random_valid = no
-
-	text = {
-		trigger = {
-			always = no
-		}
-		fallback = yes
-		localization_key = bpm_reactionary_movement_faction_default
-	}
-}
 
 bpm_nothing = {
 	text = {

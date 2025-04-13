@@ -13,6 +13,11 @@ hpx_do_hpx_liberal_split = {
 	hpx_add_movement_interaction = { int = hpx_liberal_split }
 	trigger_event = { id = hpx_movement_evolution.1 days = 31 }
 }
+hpx_do_hpx_communist_split = {
+	ig:ig_orthodox_communist = {set_interest_group_name = ig_hpx_orthodox_communist}
+	hpx_add_movement_interaction = { int = hpx_communist_split }
+	trigger_event = { id = hpx_movement_evolution.2 days = 31 }
+}
 
 
 hpx_do_ai_splits = {
@@ -22,6 +27,12 @@ hpx_do_ai_splits = {
 		}
 		save_scope_as = hpx_movement_liberal
 	}
+	random_political_movement = {
+		limit = {
+			is_political_movement_type = hpx_movement_communist
+		}
+		save_scope_as = hpx_movement_communist
+	}
 	if = {
 		limit = {
 			exists = scope:hpx_movement_liberal
@@ -29,6 +40,15 @@ hpx_do_ai_splits = {
 		set_variable = {
 			name = hpx_liberal_movement
 			value = scope:hpx_movement_liberal
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:hpx_movement_communist
+		}
+		set_variable = {
+			name = hpx_communist_movement
+			value = scope:hpx_movement_communist
 		}
 	}
 	if = {
@@ -47,5 +67,22 @@ hpx_do_ai_splits = {
 			}
 		}
 		hpx_do_hpx_liberal_split = yes
+	}
+	if = {
+		limit = {
+			has_variable = hpx_communist_movement
+			OR = {
+				ig:ig_orthodox_communist = {
+					has_variable = hpx_communist_movement_pressure
+				}
+			}
+
+			var:hpx_communist_movement.political_movement_support > 0.15
+
+			NOT = {
+				hpx_has_movement_interaction = { int = hpx_communist_split }
+			}
+		}
+		hpx_do_hpx_communist_split = yes
 	}
 }

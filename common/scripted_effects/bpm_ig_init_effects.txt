@@ -215,6 +215,40 @@ bpm_initialize_neolib = {
 	}
 }
 
+bpm_initialize_reformist_communist = {
+	if = {
+		limit = {
+			ig:ig_reformist_communist ?= { has_ideology = ideology:ideology_nonexistent }
+		}
+		ig:ig_reformist_communist = {
+			remove_ideology = ideology_nonexistent
+			add_ideology = ideology_gov_moderate_proletarian
+			add_ideology = ideology_dop_radical_democrat
+			add_ideology = ideology_sta_progressive_state
+			add_ideology = ideology_cit_internationalist
+			add_ideology = ideology_rel_radical_secularist
+			add_ideology = ideology_mil_antimilitarist
+			add_ideology = ideology_eco_proletarian_economy
+			add_ideology = ideology_wel_expanded_public_welfare
+			add_ideology = ideology_fem_gender_egalitarian
+			add_ideology = ideology_ban_opposed
+			add_ideology = ideology_mon_fixed_exchange
+			# Vanilla ideologies
+			add_ideology = ideology_proletarian
+			add_ideology = ideology_egalitarian
+			add_ideology = ideology_socialist
+
+			every_scope_character = {
+				limit = {
+					has_ideology = ideology:ideology_placeholder_leader
+				}
+				set_ideology = ideology:ideology_center_leader
+			}
+			bpm_reorder_ideologies = yes
+		}
+	}
+}
+
 bpm_initialize_academia = {
 	if = {
 		limit = {
@@ -471,39 +505,10 @@ bpm_initialize_new_leftism = {
 	}
 }
 
-bpm_initialize_reform_revolution = {
+bpm_initialize_communist = {
 	if = {
 		limit = {
-			OR = {
-				ig:ig_orthodox_communist ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_reformist_communist ?= { has_ideology = ideology:ideology_nonexistent }
-			}
-		}
-		ig:ig_reformist_communist = {
-			remove_ideology = ideology_nonexistent
-			add_ideology = ideology_gov_moderate_proletarian
-			add_ideology = ideology_dop_radical_democrat
-			add_ideology = ideology_sta_progressive_state
-			add_ideology = ideology_cit_internationalist
-			add_ideology = ideology_rel_radical_secularist
-			add_ideology = ideology_mil_antimilitarist
-			add_ideology = ideology_eco_proletarian_economy
-			add_ideology = ideology_wel_expanded_public_welfare
-			add_ideology = ideology_fem_gender_egalitarian
-			add_ideology = ideology_ban_opposed
-			add_ideology = ideology_mon_fixed_exchange
-			# Vanilla ideologies
-			add_ideology = ideology_proletarian
-			add_ideology = ideology_egalitarian
-			add_ideology = ideology_socialist
-
-			every_scope_character = {
-				limit = {
-					has_ideology = ideology:ideology_placeholder_leader
-				}
-				set_ideology = ideology:ideology_center_leader
-			}
-			bpm_reorder_ideologies = yes
+			ig:ig_orthodox_communist ?= { has_ideology = ideology:ideology_nonexistent }
 		}
 
 		ig:ig_orthodox_communist = {

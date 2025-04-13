@@ -99,7 +99,8 @@ ig_reformist_communist_desc:0 "Reformist Socialists vary in their commitment to 
  ig_variant_reformist_communist:0 "[GetInterestGroupVariant('ig_reformist_communist',GetPlayer).GetNameWithCountryVariant]"
  ig_communists: "Communists"
 #Revolutionaries
-ig_orthodox_communist:0 "Orthodox Communists"
+ig_orthodox_communist:0 "Communists"
+ ig_hpx_orthodox_communist: "Orthodox Communists"
 ig_orthodox_communist_only_icon:0 "@ig_orthodox_communist!"
 ig_orthodox_communist_desc:0 "Revolutionist Socialists, the progenitors to later Communists, believe that an international dictatorship of the proletariat is the only way to achieve socialism. To them, the struggle for reforms is one component of class struggle, as a means of building the revolutionary consciousness necessary to win political power. Usually, revolutionists also cohere around a mass party as a repository for political experience. Examples include the early German SPD, the German Spartacists, and the Russian Bolsheviks."
 ig_variant_orthodox_communist:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"

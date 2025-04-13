@@ -713,7 +713,7 @@ country_synergy_from_hos_in_government = {
 
 # Movements
 
-country_populist_movement_support_add = {
+country_hpx_communist_movement_support_add = {
 	decimals=0
 	percent=yes
 	color=good

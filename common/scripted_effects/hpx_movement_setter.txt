@@ -39,6 +39,17 @@ hpx_movement_setter = {
             value = scope:result
         }
     }
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_communist
+            }
+        }
+        set_variable = {
+            name = hpx_movement_communist_pressure
+            value = scope:result
+        }
+    }
 }
 hpx_movement_getter = {
     if = {
@@ -50,6 +61,17 @@ hpx_movement_getter = {
         set_variable = {
             name = hpx_movement_pressure_getter_result
             value = var:hpx_movement_liberal_pressure
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_communist
+            }
+        }
+        set_variable = {
+            name = hpx_movement_pressure_getter_result
+            value = var:hpx_movement_communist_pressure
         }
     }
 }

@@ -24,6 +24,21 @@ hpx_update_movements_oa = {
                 }
                 save_scope_as = hpx_movement_liberal
             }
+            random_political_movement = {
+                limit = {
+                    is_political_movement_type = hpx_movement_communist
+                }
+                save_scope_as = hpx_movement_communist
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_communist
+                }
+                set_variable = {
+                    name = hpx_communist_movement
+                    value = scope:hpx_movement_communist
+                }
+            }
             if = {
                 limit = {
                     exists = scope:hpx_movement_liberal
@@ -41,6 +56,26 @@ hpx_update_splits_oa = {
         if = {
             limit = {
                 is_player = yes
+            }
+            # Communist Split
+            if = {
+                limit = {
+                    has_variable = hpx_communist_movement
+                    ig:ig_orthodox_communist = {
+                        has_variable = hpx_movement_communist_pressure
+                    }
+                    OR = {
+                        ig:ig_orthodox_communist.var:hpx_movement_communist_pressure > 0.2
+                        AND = {
+                            var:hpx_communist_movement.political_movement_radicalism > 0.3
+                            var:hpx_communist_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_communist_split }
+                    }
+                }
+                hpx_do_hpx_communist_split = yes
             }
             # Liberal Split
             if = {

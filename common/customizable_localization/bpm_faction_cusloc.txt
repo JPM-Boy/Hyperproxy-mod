@@ -10,6 +10,13 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
+			is_political_movement_type = hpx_movement_capital_modernizer
+		}
+		localization_key = hpx_movement_capital_modernizer_faction
+	}
+
+	text = {
+		trigger = {
 			is_political_movement_type = hpx_movement_counterculture
 		}
 		localization_key = hpx_movement_counterculture_faction
@@ -45,10 +52,61 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
+			is_political_movement_type = hpx_movement_military_modernizer
+		}
+		localization_key = hpx_movement_military_modernizer_faction
+	}
+
+	text = {
+		trigger = {
 			always = no
 		}
 		fallback = yes
 		localization_key = bpm_nothing
+	}
+}
+
+hpx_movement_capital_modernizer_faction = {
+	type = interest_group
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+			}
+		}
+		localization_key = hpx_movement_capital_modernizer_faction_intelligentsia
+	}
+
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = hpx_movement_capital_modernizer_faction_default
+	}
+}
+
+hpx_movement_military_modernizer_faction = {
+	type = interest_group
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				is_interest_group_type = ig_armed_forces
+			}
+		}
+		localization_key = hpx_movement_military_modernizer_faction_armed_forces
+	}
+
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = hpx_movement_military_modernizer_faction_default
 	}
 }
 
@@ -107,20 +165,6 @@ hpx_movement_liberal_faction = {
 			}
 		}
 		localization_key = hpx_movement_liberal_faction_orthodox
-	}
-
-	text = {
-		trigger = {
-			is_interest_group_type = ig_intelligentsia
-		}
-		localization_key = hpx_movement_liberal_faction_intellectuals
-	}
-
-	text = {
-		trigger = {
-			is_interest_group_type = ig_industrialists
-		}
-		localization_key = hpx_movement_liberal_faction_industrialists
 	}
 
 	text = {

@@ -198,6 +198,33 @@ on_bpm_monthly_pulse_country = {
 		hpx_rename_igs = yes
 		if = {
 			limit = {
+				ig:ig_industrialists ?= {
+					has_ideology = ideology:ideology_nonexistent
+					hpx_interest_group_is_activated = yes
+				}
+			}
+			bpm_initialize_industrialists = yes
+		}
+		if = {
+			limit = {
+				ig:ig_trade_unions ?= {
+					has_ideology = ideology:ideology_nonexistent
+					hpx_interest_group_is_activated = yes
+				}
+			}
+			bpm_initialize_trade_unions = yes
+		}
+		if = {
+			limit = {
+				ig:ig_security ?= {
+					has_ideology = ideology:ideology_nonexistent
+					hpx_interest_group_is_activated = yes
+				}
+			}
+			bpm_initialize_security = yes
+		}
+		if = {
+			limit = {
 				ig:ig_reformist_communist ?= {
 					has_ideology = ideology:ideology_nonexistent
 					hpx_interest_group_is_activated = yes

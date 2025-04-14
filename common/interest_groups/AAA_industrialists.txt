@@ -5,13 +5,7 @@
 	index = 2
 
 	ideologies = {
-		ideology_sta_powerful_state
-		ideology_mil_patriotic
-		ideology_eco_laissez_faire
-		# Vanilla
-		ideology_plutocratic
-		ideology_laissez_faire
-		ideology_individualist
+		ideology_nonexistent
 	}
 
 	character_ideologies = {
@@ -43,15 +37,15 @@
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
-	
+
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
-		}
-		OR = {
-			is_pop_type = capitalists
-			is_pop_type = engineers
-			is_pop_type = shopkeepers
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				ig:ig_industrialists = {
+					hpx_interest_group_is_activated = yes
+				}
+			}
 		}
 	}
 	

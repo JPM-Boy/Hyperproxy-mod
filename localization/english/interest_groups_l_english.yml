@@ -134,3 +134,5 @@ ig_minority_desc:0 "Minority Interests is a coalition representing the diverse e
 
 ig_variant_minority:0 "[GetInterestGroupVariant('ig_minority',GetPlayer).GetNameWithCountryVariant]"
 interest_group_ig_minority_pol_str_mult:1 "$ig_variant_minority$ Political Strength"
+
+ ig_hpx_small_business: "Small Business"

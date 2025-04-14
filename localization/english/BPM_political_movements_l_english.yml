@@ -47,3 +47,9 @@
  hpx_movement_counterculture: "Counterculture Movement"
  hpx_movement_counterculture_name: "$hpx_movement_counterculture$"
 
+ hpx_movement_military_modernizer: "Military Movement"
+ hpx_movement_military_modernizer_name: "$hpx_movement_military_modernizer$"
+
+ hpx_movement_capital_modernizer: "Capital Movement"
+ hpx_movement_capital_modernizer_name: "$hpx_movement_capital_modernizer$"
+

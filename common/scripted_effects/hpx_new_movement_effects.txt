@@ -2,6 +2,32 @@ hpx_activate_interest_group_initialize = {
 	hpx_activate_interest_group_liberal_and_academia = yes
 	hpx_activate_interest_group_revisionist = yes
 	hpx_activate_interest_group_anarchist_and_new_left = yes
+	hpx_activate_interest_group_security = yes
+	hpx_activate_interest_group_trade_unions_and_industrialists = yes
+
+}
+hpx_activate_interest_group_security = {
+	if = {
+		limit = {
+			OR = {
+				hpx_is_pre_modern = no
+				this = owner.ruler.interest_group
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_militar_modernizer }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				is_secessionist = yes
+				is_revolutionary = yes
+			}
+			civil_war_origin_country = {
+				ig:ig_security = { hpx_interest_group_is_activated = yes }
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_militar_modernizer }
+	}
 }
 hpx_activate_interest_group_anarchist_and_new_left = {
 	if = {
@@ -48,6 +74,30 @@ hpx_activate_interest_group_revisionist = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_communist_split }
+	}
+}
+hpx_activate_interest_group_trade_unions_and_industrialists = {
+	if = {
+		limit = {
+			OR = {
+				hpx_is_pre_modern = no
+				this = owner.ruler.interest_group
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_capital_modernizer }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				is_secessionist = yes
+				is_revolutionary = yes
+			}
+			civil_war_origin_country = {
+				ig:ig_industrialists = { hpx_interest_group_is_activated = yes }
+				ig:ig_trade_unions = { hpx_interest_group_is_activated = yes }
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_capital_modernizer }
 	}
 }
 hpx_activate_interest_group_liberal_and_academia = {

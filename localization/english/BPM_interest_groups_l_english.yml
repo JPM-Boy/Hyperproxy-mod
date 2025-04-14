@@ -342,7 +342,7 @@
 
 # Nonideological
 # Village Interests
- ig_rural_folk:0 "Village Interests"
+ ig_rural_folk:0 "Rural Folk"
  ig_rural_folk_only_icon:0 "@rural_folk_bpm!"
  ig_rural_folk_desc:0 "A non-ideological power bloc representing the diverse interests of rural folk and local powerbrokers. While often incoherent, such village interests are generally aligned towards local autonomy and traditional values."
  ig_rus_obschina:0 "Obschinas"
@@ -355,14 +355,14 @@
  ig_national_grange_desc:0 "The Farmers' Alliances are farmer advocacy groups with ambitions of becoming a producers union. The Alliances endorse a series of reform packages, from railroad and utility reform to tariff reduction and a state buyer system of subtreasuries. Some, like the Colored Farmers' Alliance, are radical in their social politics, advocating for an end to segregation and alliances with Republicans over Democrats."
 
 # Business Interests
- ig_industrialists:0 "Business Interests"
+ ig_industrialists:0 "Corporation Interests"
  ig_industrialists_only_icon:0 "@industrialists_bpm!"
  ig_bourgeoisie:0 "Bourgeoisie"
  ig_bourgeoisie_desc:0 "The Bourgeoisie are the class of wealthy urban merchants. They have little ideological commitments, beyond expanding their wealth and power... for now."
  ig_industrialists_desc:0 "A non-ideological power bloc representing the interests of big businesses. Generally committed to limiting government oversight, on all other issues they side with whatever benefits monopoly capital at any moment."
 
 # Aristocratic Interests
- ig_landowners:0 "Aristocratic Interests"
+ ig_landowners:0 "Traditional Elites"
  ig_landowners_only_icon:0 "@landowners_bpm!"
  ig_landowners_desc:0 "A non-ideological power bloc representing the interests of traditionally powerful families. Generally committed to preserving their power, they are plagued by squabbles over ancient grudges."
  ig_slaver_interests:0 "Slaver Interests"
@@ -375,7 +375,7 @@
  ig_mesafint_desc:0 "The Mesafint were the hereditary nobles of the empire, often dominating the leadership of the various provinces. Their main interest lies in fighting to keep their privilages and autonomy whilst fighting for influence over the court in Gondar."
 
 # Professional Interests
- ig_intelligentsia:0 "Professional Interests"
+ ig_intelligentsia:0 "Traditional Business"
  ig_intelligentsia_only_icon:0 "@intelligentsia_bpm!"
  ig_intelligentsia_desc:0 "A non-ideological power bloc representing the interests of professionals and merchants. Typically organized into professional associations, craft unions, traditional guilds, and informal cartels, these groups fear encroachment from big businesses as well as the unwashed masses. Examples range from Dutch and Italian merchant guilds to the American Federation of Labor."
  ig_rus_meschane:0 "Meschane Interests"

@@ -20,6 +20,12 @@ hpx_update_movements_oa = {
             }
             random_political_movement = {
                 limit = {
+                    is_political_movement_type = hpx_movement_military_modernizer
+                }
+                save_scope_as = hpx_movement_military_modernizer
+            }
+            random_political_movement = {
+                limit = {
                     is_political_movement_type = hpx_movement_liberal
                 }
                 save_scope_as = hpx_movement_liberal
@@ -35,6 +41,30 @@ hpx_update_movements_oa = {
                     is_political_movement_type = hpx_movement_counterculture
                 }
                 save_scope_as = hpx_movement_counterculture
+            }
+            random_political_movement = {
+                limit = {
+                    is_political_movement_type = hpx_movement_capital_modernizer
+                }
+                save_scope_as = hpx_movement_capital_modernizer
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_capital_modernizer
+                }
+                set_variable = {
+                    name = hpx_capital_modernizer_movement
+                    value = scope:hpx_movement_capital_modernizer
+                }
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_military_modernizer
+                }
+                set_variable = {
+                    name = hpx_military_modernizer_movement
+                    value = scope:hpx_movement_military_modernizer
+                }
             }
             if = {
                 limit = {
@@ -71,6 +101,46 @@ hpx_update_splits_oa = {
         if = {
             limit = {
                 is_player = yes
+            }
+            # Capital Movement
+            if = {
+                limit = {
+                    has_variable = hpx_capital_modernizer_movement
+                    ig:ig_intelligentsia = {
+                        has_variable = hpx_movement_capital_modernizer_pressure
+                    }
+                    OR = {
+                        ig:ig_intelligentsia.var:hpx_movement_capital_modernizer_pressure > 0.2
+                        AND = {
+                            var:hpx_capital_modernizer_movement.political_movement_radicalism > 0.3
+                            var:hpx_capital_modernizer_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_capital_modernizer }
+                    }
+                }
+                hpx_do_hpx_capital_split = yes
+            }
+            # Security Movement
+            if = {
+                limit = {
+                    has_variable = hpx_military_modernizer_movement
+                    ig:ig_armed_forces = {
+                        has_variable = hpx_movement_military_modernizer_pressure
+                    }
+                    OR = {
+                        ig:ig_armed_forces.var:hpx_movement_military_modernizer_pressure > 0.2
+                        AND = {
+                            var:hpx_military_modernizer_movement.political_movement_radicalism > 0.3
+                            var:hpx_military_modernizer_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_militar_modernizer }
+                    }
+                }
+                hpx_do_hpx_military_split = yes
             }
             # Counterculture Movement
             if = {

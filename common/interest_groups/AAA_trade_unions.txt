@@ -66,24 +66,13 @@
 			}
 		}
 	}
-	
+
 	pop_potential = {
-		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
-			is_pop_type = soldiers
-			is_pop_type = officers
-		}
 		custom_tooltip = {
 			text = BPM_VALID_POP_FOR_IG
 			owner = {
-				NOT = {
-					is_country_type = decentralized
-				}
-				ig:ig_trade_unions ?= {
-					NOT = {
-						has_ideology = ideology:ideology_nonexistent
-					}
+				ig:ig_trade_unions = {
+					hpx_interest_group_is_activated = yes
 				}
 			}
 		}

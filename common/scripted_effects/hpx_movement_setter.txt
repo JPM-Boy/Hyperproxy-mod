@@ -31,6 +31,28 @@ hpx_movement_setter = {
     if = {
         limit = {
             scope:polmov = {
+                is_political_movement_type = hpx_movement_capital_modernizer
+            }
+        }
+        set_variable = {
+            name = hpx_movement_capital_modernizer_pressure
+            value = scope:result
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_military_modernizer
+            }
+        }
+        set_variable = {
+            name = hpx_movement_military_modernizer_pressure
+            value = scope:result
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
                 is_political_movement_type = hpx_movement_liberal
             }
         }
@@ -66,12 +88,34 @@ hpx_movement_getter = {
     if = {
         limit = {
             scope:polmov = {
+                is_political_movement_type = hpx_movement_capital_modernizer
+            }
+        }
+        set_variable = {
+            name = hpx_movement_pressure_getter_result
+            value = var:hpx_movement_capital_modernizer_pressure
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
                 is_political_movement_type = hpx_movement_liberal
             }
         }
         set_variable = {
             name = hpx_movement_pressure_getter_result
             value = var:hpx_movement_liberal_pressure
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_military_modernizer
+            }
+        }
+        set_variable = {
+            name = hpx_movement_pressure_getter_result
+            value = var:hpx_movement_military_modernizer_pressure
         }
     }
     if = {

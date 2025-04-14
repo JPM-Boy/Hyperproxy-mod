@@ -8,25 +8,30 @@ hpx_interest_group_is_activated_subp = {
 }
 
 hpx_interest_group_is_activated_liberal = {
-	NOT = { is_country_type = decentralized }
 	hpx_has_movement_interaction = { int = hpx_liberal_split }
 }
 hpx_interest_group_is_activated_academia = {
-	NOT = { is_country_type = decentralized }
 	hpx_has_movement_interaction = { int = hpx_liberal_split }
 }
 hpx_interest_group_is_activated_reformist_communist = {
-	NOT = { is_country_type = decentralized }
 	hpx_has_movement_interaction = { int = hpx_communist_split }
 }
 hpx_interest_group_is_activated_anarchist = {
-	NOT = { is_country_type = decentralized }
 	hpx_has_movement_interaction = { int = hpx_counterculture_split }
 }
 hpx_interest_group_is_activated_new_leftism = {
-	NOT = { is_country_type = decentralized }
 	hpx_has_movement_interaction = { int = hpx_counterculture_split }
 }
+hpx_interest_group_is_activated_security = {
+	hpx_has_movement_interaction = { int = hpx_militar_modernizer }
+}
+hpx_interest_group_is_activated_trade_unions = {
+	hpx_has_movement_interaction = { int = hpx_capital_modernizer }
+}
+hpx_interest_group_is_activated_industrialists = {
+	hpx_has_movement_interaction = { int = hpx_capital_modernizer }
+}
+
 
 hpx_interest_group_is_activated = {
 	hidden_trigger = {
@@ -37,6 +42,9 @@ hpx_interest_group_is_activated = {
 				hpx_interest_group_is_activated_subp = { ig = reformist_communist }
 				hpx_interest_group_is_activated_subp = { ig = anarchist }
 				hpx_interest_group_is_activated_subp = { ig = new_leftism }
+				hpx_interest_group_is_activated_subp = { ig = security }
+				hpx_interest_group_is_activated_subp = { ig = trade_unions }
+				hpx_interest_group_is_activated_subp = { ig = industrialists }
 			}
 			custom_tooltip = {
 				text = "BPM_IS_RULER_IG"

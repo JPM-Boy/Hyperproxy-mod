@@ -111,14 +111,6 @@
 #   bpm_liberal_movement_faction_default_leading: "#tooltip_header Lead by Liberals#!\n$TOOLTIP_DELIMITER$\nThe #gold $bpm_liberal_movement_faction_default_name$#! is currently leading and exerts ideological pressure for this [Concept('concept_interest_group', 'Interest Group')] to support [GetLawType('law_separated_powers').GetName] and #gold Suffrage#!."
   hpx_movement_liberal_faction_default_significant: "$bpm_movement_is_significant_tooltip$"
 
-  hpx_movement_liberal_faction_intellectuals_name: "$hpx_liberal_movement_faction_default_name$"
-#   bpm_liberal_movement_faction_intellectuals_leading: "$bpm_liberal_movement_faction_default_leading$"
-  hpx_movement_liberal_faction_intellectuals_significant: "$bpm_movement_is_significant_tooltip$"
-
-  hpx_movement_liberal_faction_industrialists_name: "$hpx_liberal_movement_faction_default_name$"
-#   bpm_liberal_movement_faction_industrialists_leading: "$bpm_liberal_movement_faction_default_leading$"
-  hpx_movement_liberal_faction_industrialists_significant: "$bpm_movement_is_significant_tooltip$"
-
   hpx_movement_liberal_faction_orthodox_name: "Orthodox Faction"
 #   #bpm_liberal_movement_faction_orthodox_leading: "$bpm_liberal_movement_faction_default_leading$""
 
@@ -132,6 +124,15 @@
   hpx_movement_counterculture_faction_default_name: "Counterculture Faction"
   hpx_movement_counterculture_faction_socdem_name: "Counterculture Faction"
   hpx_movement_counterculture_faction_socdem_significant: "$bpm_movement_is_significant_tooltip$"
+
+  hpx_movement_military_modernizer_faction_default_name: "Modernizer Faction"
+  hpx_movement_military_modernizer_faction_armed_forces_name: "Modernizer Faction"
+  hpx_movement_military_modernizer_faction_armed_forces_significant: "$bpm_movement_is_significant_tooltip$"
+
+  hpx_movement_capital_modernizer_faction_default_name: "Capital Faction"
+  hpx_movement_capital_modernizer_faction_intelligentsia_name: "Capital Faction"
+  hpx_movement_capital_modernizer_faction_intelligentsia_significant: "$bpm_movement_is_significant_tooltip$"
+
 
 
 

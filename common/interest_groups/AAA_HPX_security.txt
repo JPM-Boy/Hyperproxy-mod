@@ -5,12 +5,7 @@
 	index = 0
 	
 	ideologies = {
-		ideology_dop_oligarch
-		ideology_sta_powerful_state
-		ideology_jingoist
-		# Vanilla
-		ideology_loyalist
-		ideology_patriotic
+		ideology_nonexistent
 	}
 
 	character_ideologies = {
@@ -35,45 +30,19 @@
 			set_ig_trait = ig_trait:ig_trait_military_well_oiled_machine
 			set_ig_trait = ig_trait:ig_trait_military_systematic_opposition
 		}
-		# Caudillo Ideology
-		if = {
-			limit = {
-				OR = {
-					country_has_primary_culture = cu:platinean
-					country_has_primary_culture = cu:south_andean
-					country_has_primary_culture = cu:north_andean
-					country_has_primary_culture = cu:central_american
-					country_has_primary_culture = cu:mexican
-				}
-			}
-			ig:ig_security = {
-				bpm_ig_make_caudillismo = yes
-			}
-		}
-		# Samurai
-		else_if = {
-			limit = {
-				country_has_primary_culture = cu:japanese
-				NOT = { has_global_variable = fall_of_the_samurai_global_var }
-			}
-			ig:ig_security = {
-				bpm_ig_make_samurai = yes
-				set_interest_group_name = ig_samurai
-			}
-		}
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
-	
+
 	pop_potential = {
-		OR = {
-			is_pop_type = soldiers
-			is_pop_type = officers
-			is_pop_type = aristocrats
-			is_pop_type = bureaucrats
-			is_pop_type = capitalists
-			is_pop_type = shopkeepers
-		}		
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				ig:ig_security = {
+					hpx_interest_group_is_activated = yes
+				}
+			}
+		}
 	}
 	
 	pop_weight = {

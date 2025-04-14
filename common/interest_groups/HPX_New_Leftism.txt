@@ -23,7 +23,7 @@
 	}
 	
 	enable = {
-		NOT = {has_variable = new_left_gone}
+		always = yes
 	}
 	
 	on_enable = {

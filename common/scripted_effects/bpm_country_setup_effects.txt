@@ -627,10 +627,7 @@ bpm_setup_basic_igs = {
 	}
 	if = {
 		limit = {
-			OR = {
-				ig:ig_liberal ?= { has_ideology = ideology:ideology_nonexistent }
-				ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
-			}
+			ig:ig_classical_liberal ?= { has_ideology = ideology:ideology_nonexistent }
 		}
 		bpm_initialize_libs = yes
 	}
@@ -660,12 +657,6 @@ bpm_setup_basic_igs = {
 			}
 		}
 		bpm_initialize_populism = yes
-	}
-	if = {
-		limit = { 
-			ig:ig_trade_unions ?= { has_ideology = ideology:ideology_nonexistent}
-		}
-		bpm_initialize_trade_unions = yes
 	}
 	if = {
 		limit = {

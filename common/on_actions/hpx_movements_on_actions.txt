@@ -54,6 +54,21 @@ hpx_update_movements_oa = {
                 }
                 save_scope_as = hpx_movement_environmental
             }
+            random_political_movement = {
+                limit = {
+                    is_political_movement_type = hpx_movement_neoliberal
+                }
+                save_scope_as = hpx_movement_neoliberal
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_neoliberal
+                }
+                set_variable = {
+                    name = hpx_neoliberal_movement
+                    value = scope:hpx_movement_neoliberal
+                }
+            }
             if = {
                 limit = {
                     exists = scope:hpx_movement_environmental
@@ -116,6 +131,33 @@ hpx_update_splits_oa = {
         if = {
             limit = {
                 is_player = yes
+            }
+            # Neoliberal Movement
+            if = {
+                limit = {
+                    has_variable = hpx_neoliberal_movement
+                    OR = {
+                        ig:ig_reactionary = {
+                            has_variable = hpx_movement_neoliberal_pressure
+                        }
+                        ig:ig_cons = {
+                            has_variable = hpx_movement_neoliberal_pressure
+                        }
+                    }
+
+                    OR = {
+                        ig:ig_cons.var:hpx_movement_neoliberal_pressure > 0.2
+                        ig:ig_reactionary.var:hpx_movement_neoliberal_pressure > 0.2
+                        AND = {
+                            var:hpx_neoliberal_movement.political_movement_radicalism > 0.3
+                            var:hpx_neoliberal_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_neoliberal_mov }
+                    }
+                }
+                hpx_do_hpx_neoliberal_split = yes
             }
             # Environmental Movement
             if = {

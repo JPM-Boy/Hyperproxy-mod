@@ -5,7 +5,43 @@ hpx_activate_interest_group_initialize = {
 	hpx_activate_interest_group_security = yes
 	hpx_activate_interest_group_trade_unions_and_industrialists = yes
 	hpx_activate_interest_group_ecologist = yes
+	hpx_activate_interest_group_neoliberal_and_neocon = yes
 
+}
+hpx_activate_interest_group_neoliberal_and_neocon = {
+	if = {
+		limit = {
+			OR = {
+				is_secessionist = yes
+				is_revolutionary = yes
+			}
+			civil_war_origin_country = {
+				ig:ig_neoliberal = { hpx_interest_group_is_activated = yes }
+				ig:ig_neocon = { hpx_interest_group_is_activated = yes }
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_neoliberal_mov }
+		if = {
+			limit = { owner = c:USA }
+			ig:ig_reactionary = {set_interest_group_name = ig_paleocon}
+		} else = {
+			ig:ig_reactionary = {set_interest_group_name = ig_natcons}
+		}
+		ig:ig_cons = {set_interest_group_name = ig_social_cons}
+	}
+	else_if = {
+		limit = {
+			this = owner.ruler.interest_group
+		}
+		hpx_add_movement_interaction = { int = hpx_neoliberal_mov }
+		if = {
+			limit = { owner = c:USA }
+			ig:ig_reactionary = {set_interest_group_name = ig_paleocon}
+		} else = {
+			ig:ig_reactionary = {set_interest_group_name = ig_natcons}
+		}
+		ig:ig_cons = {set_interest_group_name = ig_social_cons}
+	}
 }
 hpx_activate_interest_group_security = {
 	if = {

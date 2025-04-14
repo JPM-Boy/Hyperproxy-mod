@@ -17,6 +17,13 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
+			is_political_movement_type = hpx_movement_neoliberal
+		}
+		localization_key = hpx_movement_neoliberal_faction
+	}
+
+	text = {
+		trigger = {
 			is_political_movement_type = hpx_movement_capital_modernizer
 		}
 		localization_key = hpx_movement_capital_modernizer_faction
@@ -70,6 +77,28 @@ bpm_faction_cusloc = {
 		}
 		fallback = yes
 		localization_key = bpm_nothing
+	}
+}
+hpx_movement_neoliberal_faction = {
+	type = interest_group
+	random_valid = no
+
+	text = {
+		trigger = {
+			OR = {
+				is_interest_group_type = ig_cons
+				is_interest_group_type = ig_reactionary
+			}
+		}
+		localization_key = hpx_movement_neoliberal_faction_neoliberal
+	}
+
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = hpx_movement_neoliberal_faction_default
 	}
 }
 hpx_movement_environmental_faction = {

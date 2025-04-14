@@ -33,7 +33,17 @@ hpx_do_hpx_environmental_split = {
 	ig:ig_rural_folk = {set_interest_group_name = ig_agricultural_interests}
 	hpx_add_movement_interaction = { int = hpx_environmental_mov }
 	trigger_event = { id = hpx_movement_evolution.4 days = 31 }
-
+}
+hpx_do_hpx_neoliberal_split = {
+	ig:ig_cons = {set_interest_group_name = ig_social_cons}
+	if = {
+		limit = { owner = c:USA }
+		ig:ig_reactionary = {set_interest_group_name = ig_paleocon}
+	} else = {
+		ig:ig_reactionary = {set_interest_group_name = ig_natcons}
+	}
+	hpx_add_movement_interaction = { int = hpx_neoliberal_mov }
+	trigger_event = { id = hpx_movement_evolution.5 days = 31 }
 }
 
 
@@ -73,6 +83,21 @@ hpx_do_ai_splits = {
 			is_political_movement_type = hpx_movement_environmental
 		}
 		save_scope_as = hpx_movement_environmental
+	}
+	random_political_movement = {
+		limit = {
+			is_political_movement_type = hpx_movement_neoliberal
+		}
+		save_scope_as = hpx_movement_neoliberal
+	}
+	if = {
+		limit = {
+			exists = scope:hpx_movement_neoliberal
+		}
+		set_variable = {
+			name = hpx_neoliberal_movement
+			value = scope:hpx_movement_neoliberal
+		}
 	}
 	if = {
 		limit = {
@@ -127,6 +152,25 @@ hpx_do_ai_splits = {
 			name = hpx_communist_movement
 			value = scope:hpx_movement_communist
 		}
+	}
+	if = {
+		limit = {
+			has_variable = hpx_neoliberal_movement
+			OR = {
+				ig:ig_cons = {
+					has_variable = hpx_movement_neoliberal_pressure
+				}
+				ig:ig_reactionary = {
+					has_variable = hpx_movement_neoliberal_pressure
+				}
+			}
+			var:hpx_neoliberal_movement.political_movement_support > 0.15
+
+			NOT = {
+				hpx_has_movement_interaction = { int = hpx_neoliberal_mov }
+			}
+		}
+		hpx_do_hpx_neoliberal_split = yes
 	}
 	if = {
 		limit = {

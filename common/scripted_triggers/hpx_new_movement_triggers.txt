@@ -34,6 +34,12 @@ hpx_interest_group_is_activated_industrialists = {
 hpx_interest_group_is_activated_ecologist = {
 	hpx_has_movement_interaction = { int = hpx_environmental_mov }
 }
+hpx_interest_group_is_activated_neoliberal = {
+	hpx_has_movement_interaction = { int = hpx_neoliberal_mov }
+}
+hpx_interest_group_is_activated_neocon = {
+	hpx_has_movement_interaction = { int = hpx_neoliberal_mov }
+}
 
 
 hpx_interest_group_is_activated = {
@@ -49,6 +55,8 @@ hpx_interest_group_is_activated = {
 				hpx_interest_group_is_activated_subp = { ig = trade_unions }
 				hpx_interest_group_is_activated_subp = { ig = industrialists }
 				hpx_interest_group_is_activated_subp = { ig = ecologist }
+				hpx_interest_group_is_activated_subp = { ig = neoliberal }
+				hpx_interest_group_is_activated_subp = { ig = neocon }
 
 			}
 			custom_tooltip = {

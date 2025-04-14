@@ -137,6 +137,10 @@
   hpx_movement_environmental_faction_rural_folk_name: "Ecologist Faction"
   hpx_movement_environmental_faction_rural_folk_significant: "$bpm_movement_is_significant_tooltip$"
 
+  hpx_movement_neoliberal_faction_default_name: "Neoliberal Faction"
+  hpx_movement_neoliberal_faction_neoliberal_name: "Neoliberal Faction"
+  hpx_movement_neoliberal_faction_neoliberal_significant: "$bpm_movement_is_significant_tooltip$"
+
 
 
 

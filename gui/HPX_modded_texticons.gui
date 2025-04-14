@@ -8,6 +8,24 @@
   }
 }
 texticon = {
+  icon = ig_neoliberal
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/ig_icons/market_liberals.dds"
+    size = {30 30}
+    fontsize = 26
+  }
+}
+texticon = {
+  icon = ig_neocon
+  iconsize = {
+    offset = { 0 6 }
+    texture = "gfx/interface/icons/ig_icons/national_liberals.dds"
+    size = {30 30}
+    fontsize = 26
+  }
+}
+texticon = {
   icon = ig_classical_liberal
   iconsize = {
     offset = { 0 6 }

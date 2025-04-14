@@ -198,6 +198,24 @@ on_bpm_monthly_pulse_country = {
 		hpx_rename_igs = yes
 		if = {
 			limit = {
+				ig:ig_neoliberal ?= {
+					has_ideology = ideology:ideology_nonexistent
+					hpx_interest_group_is_activated = yes
+				}
+			}
+			bpm_initialize_neoliberal = yes
+		}
+		if = {
+			limit = {
+				ig:ig_neocon ?= {
+					has_ideology = ideology:ideology_nonexistent
+					hpx_interest_group_is_activated = yes
+				}
+			}
+			bpm_initialize_neocon = yes
+		}
+		if = {
+			limit = {
 				ig:ig_ecologist ?= {
 					has_ideology = ideology:ideology_nonexistent
 					hpx_interest_group_is_activated = yes

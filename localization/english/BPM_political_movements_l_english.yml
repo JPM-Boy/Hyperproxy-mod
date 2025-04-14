@@ -56,4 +56,6 @@
  hpx_movement_environmental: "Ecologist Movement"
  hpx_movement_environmental_name: "$hpx_movement_environmental$"
 
+ hpx_movement_neoliberal: "Neoliberal Movement"
+ hpx_movement_neoliberal_name: "$hpx_movement_neoliberal$"
 

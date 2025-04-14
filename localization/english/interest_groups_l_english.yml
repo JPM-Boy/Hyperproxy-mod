@@ -64,7 +64,7 @@ ig_moderate_liberals: "Moderate Liberals"
 
 #Libertarianism
 ig_classical_liberal:0 "Liberals"
- ig_hpx_classical_liberal: "Classical Liberal"
+ ig_hpx_classical_liberal: "Classical Liberals"
 ig_classical_liberal_only_icon:0 "@ig_classical_liberal!"
 ig_classical_liberal_desc:0 "WIP"
 
@@ -87,7 +87,7 @@ ig_prog_desc:0 "Progressivism, focuses on addressing social inequalities and pro
 #Reactionaries
 ig_reactionary:0 "Reactionaries"
 ig_reactionary_only_icon:0 "@ig_reactionary!"
-ig_reactionary_desc:0 "Reactionaries are a broad tent of those who want to go back to the good old days, who unlike niche interest groups elevate their nostalgia to a general politics. The specifics of what they want depends on what the good old days were like (or seemed to be) in each particular country. Subsections of this group include monarchic absolutists, religious moralists, or even wealthy peasants"ig_variant_orthodox_communist:0 "[GetInterestGroupVariant('ig_orthodox_communist',GetPlayer).GetNameWithCountryVariant]"
+ig_reactionary_desc:0 "Reactionaries are a broad tent of those who want to go back to the good old days, who unlike niche interest groups elevate their nostalgia to a general politics. The specifics of what they want depends on what the good old days were like (or seemed to be) in each particular country. Subsections of this group include monarchic absolutists, religious moralists, or even wealthy peasants"
  ig_variant_reactionary:0 "[GetInterestGroupVariant('ig_reactionary',GetPlayer).GetNameWithCountryVariant]"
 
  ig_fusionists: "Fusionists"
@@ -137,3 +137,13 @@ interest_group_ig_minority_pol_str_mult:1 "$ig_variant_minority$ Political Stren
 
  ig_hpx_small_business: "Small Business"
  ig_agricultural_interests: "Agricultural Interests"
+
+ ig_social_cons: "Social Conservatives"
+ ig_natcons: "National Conservatives"
+ ig_paleocon: "Paleoconservatives"
+
+ ig_neoliberal: "Neoliberals"
+ ig_neoliberal_only_icon:0 "@ig_neoliberal!"
+
+ ig_neocon: "Neoconservatives"
+ ig_neocon_only_icon:0 "@ig_neocon!"

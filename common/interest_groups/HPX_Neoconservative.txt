@@ -1,6 +1,6 @@
 ﻿ig_neocon = {
-	color = hsv{ 0.57 1 1 }
-	texture = "gfx/interface/icons/ig_icons/conservatives.dds"
+	color = hsv{ 0.45 1 0.37 }
+	texture = "gfx/interface/icons/ig_icons/national_liberals.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
 	index = 21
 	
@@ -38,8 +38,13 @@
 	on_character_ig_membership = {}
 	
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				ig:ig_neocon = {
+					hpx_interest_group_is_activated = yes
+				}
+			}
 		}
 	}
 	

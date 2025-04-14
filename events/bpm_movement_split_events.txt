@@ -254,3 +254,69 @@ hpx_movement_evolution.4 = {
 		}
 	}
 }
+# Neoliberalism and Neoconservatism
+hpx_movement_evolution.5 = {
+	type = country_event
+	placement = root
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	title = hpx_movement_evolution.5.t
+	desc = hpx_movement_evolution.5.d
+	flavor = hpx_movement_evolution.5.f
+	duration = 3
+
+	dlc = dlc_bpm
+
+	trigger = {
+		NOT = {
+			has_variable = hpx_neoliberal_split_occurred
+		}
+	}
+
+	immediate = {
+		random_interest_group = {
+			limit = { is_interest_group_type = ig_neoliberal }
+			save_scope_as = new_ig
+		}
+		random_interest_group = {
+			limit = { is_interest_group_type = ig_neocon }
+			save_scope_as = new_ig2
+		}
+		set_variable = hpx_neoliberal_split_occurred
+	}
+
+	option = {
+		name = hpx_movement_evolution.5.a
+		default_option = yes
+		custom_tooltip = {
+			text = bpm_movement_splits_neoliberal_tt
+		}
+		scope:new_ig = {
+			add_modifier = {
+				name = bpm_ig_gaining_support
+				multiplier = 2
+				months = normal_modifier_time
+			}
+		}
+		scope:new_ig2 = {
+			add_modifier = {
+				name = bpm_ig_gaining_support
+				multiplier = 2
+				months = normal_modifier_time
+			}
+		}
+	}
+	option = {
+		name = hpx_movement_evolution.5.b
+		default_option = yes
+		custom_tooltip = {
+			text = bpm_movement_splits_neoliberal_tt
+		}
+	}
+}
+

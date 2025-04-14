@@ -31,6 +31,9 @@ hpx_interest_group_is_activated_trade_unions = {
 hpx_interest_group_is_activated_industrialists = {
 	hpx_has_movement_interaction = { int = hpx_capital_modernizer }
 }
+hpx_interest_group_is_activated_ecologist = {
+	hpx_has_movement_interaction = { int = hpx_environmental_mov }
+}
 
 
 hpx_interest_group_is_activated = {
@@ -45,6 +48,8 @@ hpx_interest_group_is_activated = {
 				hpx_interest_group_is_activated_subp = { ig = security }
 				hpx_interest_group_is_activated_subp = { ig = trade_unions }
 				hpx_interest_group_is_activated_subp = { ig = industrialists }
+				hpx_interest_group_is_activated_subp = { ig = ecologist }
+
 			}
 			custom_tooltip = {
 				text = "BPM_IS_RULER_IG"

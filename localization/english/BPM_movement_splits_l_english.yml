@@ -133,6 +133,11 @@
   hpx_movement_capital_modernizer_faction_intelligentsia_name: "Capital Faction"
   hpx_movement_capital_modernizer_faction_intelligentsia_significant: "$bpm_movement_is_significant_tooltip$"
 
+  hpx_movement_environmental_faction_default_name: "Ecologist Faction"
+  hpx_movement_environmental_faction_rural_folk_name: "Ecologist Faction"
+  hpx_movement_environmental_faction_rural_folk_significant: "$bpm_movement_is_significant_tooltip$"
+
+
 
 
 

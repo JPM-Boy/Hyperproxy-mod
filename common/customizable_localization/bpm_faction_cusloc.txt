@@ -10,6 +10,13 @@ bpm_faction_cusloc = {
 
 	text = {
 		trigger = {
+			is_political_movement_type = hpx_movement_environmental
+		}
+		localization_key = hpx_movement_environmental_faction
+	}
+
+	text = {
+		trigger = {
 			is_political_movement_type = hpx_movement_capital_modernizer
 		}
 		localization_key = hpx_movement_capital_modernizer_faction
@@ -65,7 +72,27 @@ bpm_faction_cusloc = {
 		localization_key = bpm_nothing
 	}
 }
+hpx_movement_environmental_faction = {
+	type = interest_group
+	random_valid = no
 
+	text = {
+		trigger = {
+			OR = {
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		localization_key = hpx_movement_environmental_faction_rural_folk
+	}
+
+	text = {
+		trigger = {
+			always = no
+		}
+		fallback = yes
+		localization_key = hpx_movement_environmental_faction_default
+	}
+}
 hpx_movement_capital_modernizer_faction = {
 	type = interest_group
 	random_valid = no

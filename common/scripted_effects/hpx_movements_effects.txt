@@ -29,6 +29,12 @@ hpx_do_hpx_capital_split = {
 	ig:ig_intelligentsia = {set_interest_group_name = ig_hpx_small_business}
 	hpx_add_movement_interaction = { int = hpx_capital_modernizer }
 }
+hpx_do_hpx_environmental_split = {
+	ig:ig_rural_folk = {set_interest_group_name = ig_agricultural_interests}
+	hpx_add_movement_interaction = { int = hpx_environmental_mov }
+	trigger_event = { id = hpx_movement_evolution.4 days = 31 }
+
+}
 
 
 hpx_do_ai_splits = {
@@ -61,6 +67,21 @@ hpx_do_ai_splits = {
 			is_political_movement_type = hpx_movement_capital_modernizer
 		}
 		save_scope_as = hpx_movement_capital_modernizer
+	}
+	random_political_movement = {
+		limit = {
+			is_political_movement_type = hpx_movement_environmental
+		}
+		save_scope_as = hpx_movement_environmental
+	}
+	if = {
+		limit = {
+			exists = scope:hpx_movement_environmental
+		}
+		set_variable = {
+			name = hpx_environmental_movement
+			value = scope:hpx_movement_environmental
+		}
 	}
 	if = {
 		limit = {
@@ -106,6 +127,23 @@ hpx_do_ai_splits = {
 			name = hpx_communist_movement
 			value = scope:hpx_movement_communist
 		}
+	}
+	if = {
+		limit = {
+			has_variable = hpx_environmental_movement
+			OR = {
+				ig:ig_rural_folk = {
+					has_variable = hpx_movement_environmental_pressure
+				}
+			}
+
+			var:hpx_environmental_movement.political_movement_support > 0.15
+
+			NOT = {
+				hpx_has_movement_interaction = { int = hpx_environmental_mov }
+			}
+		}
+		hpx_do_hpx_environmental_split = yes
 	}
 	if = {
 		limit = {

@@ -4,6 +4,7 @@ hpx_activate_interest_group_initialize = {
 	hpx_activate_interest_group_anarchist_and_new_left = yes
 	hpx_activate_interest_group_security = yes
 	hpx_activate_interest_group_trade_unions_and_industrialists = yes
+	hpx_activate_interest_group_ecologist = yes
 
 }
 hpx_activate_interest_group_security = {
@@ -62,6 +63,7 @@ hpx_activate_interest_group_revisionist = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_communist_split }
+		ig:ig_orthodox_communist = {set_interest_group_name = ig_hpx_orthodox_communist}
 	}
 	else_if = {
 		limit = {
@@ -74,6 +76,7 @@ hpx_activate_interest_group_revisionist = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_communist_split }
+		ig:ig_orthodox_communist = {set_interest_group_name = ig_hpx_orthodox_communist}
 	}
 }
 hpx_activate_interest_group_trade_unions_and_industrialists = {
@@ -85,6 +88,7 @@ hpx_activate_interest_group_trade_unions_and_industrialists = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_capital_modernizer }
+		ig:ig_intelligentsia = {set_interest_group_name = ig_hpx_small_business}
 	}
 	else_if = {
 		limit = {
@@ -98,6 +102,7 @@ hpx_activate_interest_group_trade_unions_and_industrialists = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_capital_modernizer }
+		ig:ig_intelligentsia = {set_interest_group_name = ig_hpx_small_business}
 	}
 }
 hpx_activate_interest_group_liberal_and_academia = {
@@ -109,6 +114,7 @@ hpx_activate_interest_group_liberal_and_academia = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_liberal_split }
+		ig:ig_classical_liberal = {set_interest_group_name = ig_hpx_classical_liberal}
 	}
 	else_if = {
 		limit = {
@@ -122,5 +128,28 @@ hpx_activate_interest_group_liberal_and_academia = {
 			}
 		}
 		hpx_add_movement_interaction = { int = hpx_liberal_split }
+		ig:ig_classical_liberal = {set_interest_group_name = ig_hpx_classical_liberal}
+	}
+}
+hpx_activate_interest_group_ecologist = {
+	if = {
+		limit = {
+			OR = {
+				is_secessionist = yes
+				is_revolutionary = yes
+			}
+			civil_war_origin_country = {
+				ig:ig_ecologist = { hpx_interest_group_is_activated = yes }
+			}
+		}
+		hpx_add_movement_interaction = { int = hpx_environmental_mov }
+		ig:ig_rural_folk = {set_interest_group_name = ig_agricultural_interests}
+	}
+	else_if = {
+		limit = {
+			this = owner.ruler.interest_group
+		}
+		hpx_add_movement_interaction = { int = hpx_environmental_mov }
+		ig:ig_rural_folk = {set_interest_group_name = ig_agricultural_interests}
 	}
 }

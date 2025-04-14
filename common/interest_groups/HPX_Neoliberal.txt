@@ -1,7 +1,7 @@
 ﻿# Market Liberals => Libertarians
-ig_classical_liberal = {
-	color = hsv{ 0.16 1 0.5 }
-	texture = "gfx/interface/icons/ig_icons/classical_liberal.dds"
+ig_neoliberal = {
+	color = hsv{ 0.45 1 0.7 }
+	texture = "gfx/interface/icons/ig_icons/market_liberals.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
 	index = 21
 	
@@ -25,7 +25,7 @@ ig_classical_liberal = {
 	}
 	
 	on_enable = {
-		ig:ig_classical_liberal = {
+		ig:ig_neoliberal = {
 			# set_ig_trait = ig_trait:ig_trait_left_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
@@ -47,7 +47,7 @@ ig_classical_liberal = {
 			limit = {
 				state = {
 					var:governor ?= {
-						is_interest_group_type = ig_classical_liberal
+						is_interest_group_type = ig_neoliberal
 					}
 				}
 			}

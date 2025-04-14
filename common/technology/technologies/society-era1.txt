@@ -153,7 +153,7 @@ third_way = {
 	}
 
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/ig_icons/libertarians.dds"
 	category = society
 
 	ai_weight = {
@@ -171,7 +171,7 @@ modern_business_structure = {
 	}
 
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/ig_icons/market_liberals.dds"
 	category = society
 
 	ai_weight = {
@@ -255,7 +255,7 @@ modern_ecology = {
 	}
 
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/ig_icons/agrarian_populists.dds"
 	category = society
 
 	ai_weight = {
@@ -326,7 +326,7 @@ counterculture = {
 	}
 
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/ig_icons/new_leftism.dds"
 	category = society
 
 	ai_weight = {

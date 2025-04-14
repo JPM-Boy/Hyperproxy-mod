@@ -42,6 +42,17 @@ hpx_movement_setter = {
     if = {
         limit = {
             scope:polmov = {
+                is_political_movement_type = hpx_movement_environmental
+            }
+        }
+        set_variable = {
+            name = hpx_movement_environmental_pressure
+            value = scope:result
+        }
+    }
+    if = {
+        limit = {
+            scope:polmov = {
                 is_political_movement_type = hpx_movement_military_modernizer
             }
         }
@@ -85,6 +96,17 @@ hpx_movement_setter = {
     }
 }
 hpx_movement_getter = {
+    if = {
+        limit = {
+            scope:polmov = {
+                is_political_movement_type = hpx_movement_environmental
+            }
+        }
+        set_variable = {
+            name = hpx_movement_pressure_getter_result
+            value = var:hpx_movement_environmental_pressure
+        }
+    }
     if = {
         limit = {
             scope:polmov = {

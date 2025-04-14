@@ -69,7 +69,7 @@ bpm_initialize_ecologist = {
 		ig:ig_ecologist = {
 			remove_ideology = ideology_nonexistent
 
-			add_ideology = ideology_dop_moderate_proletarian
+			add_ideology = ideology_gov_moderate_proletarian
 			add_ideology = ideology_sta_decentralized_state
 			add_ideology = ideology_cit_liberal_nationalist
 			add_ideology = ideology_rel_secularist

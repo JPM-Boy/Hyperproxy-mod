@@ -48,6 +48,21 @@ hpx_update_movements_oa = {
                 }
                 save_scope_as = hpx_movement_capital_modernizer
             }
+            random_political_movement = {
+                limit = {
+                    is_political_movement_type = hpx_movement_environmental
+                }
+                save_scope_as = hpx_movement_environmental
+            }
+            if = {
+                limit = {
+                    exists = scope:hpx_movement_environmental
+                }
+                set_variable = {
+                    name = hpx_environmental_movement
+                    value = scope:hpx_movement_environmental
+                }
+            }
             if = {
                 limit = {
                     exists = scope:hpx_movement_capital_modernizer
@@ -101,6 +116,26 @@ hpx_update_splits_oa = {
         if = {
             limit = {
                 is_player = yes
+            }
+            # Environmental Movement
+            if = {
+                limit = {
+                    has_variable = hpx_environmental_movement
+                    ig:ig_rural_folk = {
+                        has_variable = hpx_movement_environmental_pressure
+                    }
+                    OR = {
+                        ig:ig_rural_folk.var:hpx_movement_environmental_pressure > 0.2
+                        AND = {
+                            var:hpx_environmental_movement.political_movement_radicalism > 0.3
+                            var:hpx_environmental_movement.political_movement_support > 0.3
+                        }
+                    }
+                    NOT = {
+                        hpx_has_movement_interaction = { int = hpx_environmental_mov }
+                    }
+                }
+                hpx_do_hpx_environmental_split = yes
             }
             # Capital Movement
             if = {

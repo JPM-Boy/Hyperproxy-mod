@@ -13,7 +13,7 @@ ig_security_only_icon:0 "@ig_security!"
 ig_security_desc:0 "WIP"
 
 #Academia
-ig_academia:0 "Academia"
+ig_academia:0 "Academic Interests"
 ig_academia_only_icon:0 "@ig_academia!"
 ig_academia_desc:0 "WIP"
 
@@ -136,3 +136,4 @@ ig_variant_minority:0 "[GetInterestGroupVariant('ig_minority',GetPlayer).GetName
 interest_group_ig_minority_pol_str_mult:1 "$ig_variant_minority$ Political Strength"
 
  ig_hpx_small_business: "Small Business"
+ ig_agricultural_interests: "Agricultural Interests"

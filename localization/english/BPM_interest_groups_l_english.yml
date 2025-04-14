@@ -355,7 +355,7 @@
  ig_national_grange_desc:0 "The Farmers' Alliances are farmer advocacy groups with ambitions of becoming a producers union. The Alliances endorse a series of reform packages, from railroad and utility reform to tariff reduction and a state buyer system of subtreasuries. Some, like the Colored Farmers' Alliance, are radical in their social politics, advocating for an end to segregation and alliances with Republicans over Democrats."
 
 # Business Interests
- ig_industrialists:0 "Corporation Interests"
+ ig_industrialists:0 "Corporate Interests"
  ig_industrialists_only_icon:0 "@industrialists_bpm!"
  ig_bourgeoisie:0 "Bourgeoisie"
  ig_bourgeoisie_desc:0 "The Bourgeoisie are the class of wealthy urban merchants. They have little ideological commitments, beyond expanding their wealth and power... for now."

@@ -53,3 +53,7 @@
  hpx_movement_capital_modernizer: "Capital Movement"
  hpx_movement_capital_modernizer_name: "$hpx_movement_capital_modernizer$"
 
+ hpx_movement_environmental: "Ecologist Movement"
+ hpx_movement_environmental_name: "$hpx_movement_environmental$"
+
+

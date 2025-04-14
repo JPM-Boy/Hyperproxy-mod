@@ -21,7 +21,7 @@ ig_ecologist = {
 	}
 	
 	enable = {
-		year > 1990
+		always = yes
 	}
 	
 	on_enable = {
@@ -30,14 +30,18 @@ ig_ecologist = {
 			set_ig_trait = ig_trait:ig_trait_left_bastion_of_freedom
 			set_ig_trait = ig_trait:ig_trait_left_systematic_opposition
 		}
-		bpm_initialize_ecologist = yes
 	}
 	on_disable = {}
 	on_character_ig_membership = {}
 	
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				ig:ig_ecologist = {
+					hpx_interest_group_is_activated = yes
+				}
+			}
 		}
 	}
 	

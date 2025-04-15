@@ -197,48 +197,48 @@ bpm_reload_institution_modifiers_schools = {
         var:bpm_minister_of_schools.interest_group = {
 
             bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = schools
                 MOD = bpm_schools_agpops_modifier
             }
 
             bpm_reload_modifier_inst_singlet = {
-                IG1 = anarchists
+                IG1 = anarchist
                 INST = schools
                 MOD = bpm_schools_anarchists_modifier
             }
 
-            bpm_reload_modifier_inst_doublet = {
-                IG1 = conservatives
-                IG2 = reactionaries
+            bpm_reload_modifier_inst_triplet = {
+                IG1 = cons
+                IG2 = reactionary
+                IG3 = neocon
                 INST = schools
                 MOD = bpm_schools_cons_modifier
             }
 
             bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = schools
                 MOD = bpm_schools_fash_modifier
             }
 
             bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = schools
                 MOD = bpm_schools_libs_modifier
             }
 
             bpm_reload_modifier_inst_doublet = {
-                IG1 = radicals
-                IG2 = reformist_socialists
+                IG1 = socdem
+                IG2 = reformist_communist
                 INST = schools
                 MOD = bpm_schools_lefts_modifier
             }
 
-            bpm_reload_modifier_inst_doublet = {
-                IG1 = revolutionist_socialists
-                IG2 = socialists
+            bpm_reload_modifier_inst_singlet = {
+                IG1 = orthodox_communist
                 INST = schools
                 MOD = bpm_schools_commies_modifier
             }
@@ -319,26 +319,27 @@ bpm_reload_institution_modifiers_colonial_affairs = {
         }
         var:bpm_minister_of_colonial_affairs.interest_group = {
            bpm_reload_modifier_inst_doublet = {
-                IG1 = conservatives
-                IG2 = reactionaries
+                IG1 = cons
+                IG2 = reactionary
                 INST = colonial_affairs
                 MOD = bpm_colonial_affairs_cons_modifier
            }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = colonial_affairs
                 MOD = bpm_colonial_affairs_fash_modifier
            }
-           bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+            bpm_reload_modifier_inst_triplet = {
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = colonial_affairs
                 MOD = bpm_colonial_affairs_libs_modifier
-           }
-           bpm_reload_modifier_inst_doublet = {
-                IG1 = reformist_socialists
-                IG2 = radicals
+            }
+
+            bpm_reload_modifier_inst_doublet = {
+                IG1 = socdem
+                IG2 = reformist_communist
                 INST = colonial_affairs
                 MOD = bpm_colonial_affairs_lefts_modifier
            }
@@ -398,31 +399,31 @@ bpm_reload_institution_modifiers_social_security = {
         }
         var:bpm_minister_of_social_security.interest_group = {
            bpm_reload_modifier_inst_doublet = {
-                IG1 = agrarian_populists
-                IG2 = anarchists
+                IG1 = ecologist
+                IG2 = anarchist
                 INST = social_security
                 MOD = bpm_social_security_rursocs_modifier
            }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = conservatives
+                IG1 = cons
                 INST = social_security
                 MOD = bpm_social_security_cons_modifier
            }
            bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = social_security
                 MOD = bpm_social_security_liberals_modifier
            }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = radicals
-                IG2 = reformist_socialists
+                IG1 = socdem
+                IG2 = reformist_communist
                 INST = social_security
                 MOD = bpm_social_security_lefts_modifier
            }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 IG2 = socialists
                 INST = social_security
                 MOD = bpm_social_security_commies_modifier
@@ -493,28 +494,28 @@ bpm_reload_institution_modifiers_social_security = {
         }
         var:bpm_minister_of_workplace_safety.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = workplace_safety
                 MOD = bpm_workplace_safety_agpops_modifier
             }
            bpm_reload_modifier_inst_quartet = {
-                IG1 = anarchists
-                IG2 = radicals
-                IG3 = reformist_socialists
+                IG1 = anarchist
+                IG2 = socdem
+                IG3 = reformist_communist
                 IG4 = socialists
                 INST = workplace_safety
                 MOD = bpm_workplace_safety_lefts_modifier
             }
            bpm_reload_modifier_inst_quartet = {
-                IG1 = conservatives
-                IG2 = liberals
-                IG3 = market_liberals
-                IG4 = national_liberals
+                IG1 = cons
+                IG2 = liberal
+                IG3 = classical_liberal
+                IG4 = neoliberal
                 INST = workplace_safety
                 MOD = bpm_workplace_safety_neutralidg_modifier
             }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 INST = workplace_safety
                 MOD = bpm_workplace_safety_commies_modifier
             }
@@ -570,37 +571,37 @@ bpm_reload_institution_modifiers_police = {
         }
         var:bpm_minister_of_police.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = police
                 MOD = bpm_police_agpops_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = conservatives
-                IG2 = reactionaries
+                IG1 = cons
+                IG2 = reactionary
                 INST = police
                 MOD = bpm_police_cons_modifier
             }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = police
                 MOD = bpm_police_fash_modifier
             }
            bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = police
                 MOD = bpm_police_liberals_modifier
             }
            bpm_reload_modifier_inst_triplet = {
-                IG1 = radicals
-                IG2 = reformist_socialists
+                IG1 = socdem
+                IG2 = reformist_communist
                 IG3 = socialists
                 INST = police
                 MOD = bpm_police_lefts_modifier
             }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 INST = police
                 MOD = bpm_police_commies_modifier
             }
@@ -678,20 +679,20 @@ bpm_reload_institution_modifiers_home_affairs = {
         }
         var:bpm_minister_of_home_affairs.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = conservatives
+                IG1 = cons
                 INST = home_affairs
                 MOD = bpm_home_affairs_cons_modifier
             }
            bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = home_affairs
                 MOD = bpm_home_affairs_liberals_modifier
             }
            bpm_reload_modifier_inst_triplet = {
-                IG1 = radicals
-                IG2 = reformist_socialists
+                IG1 = socdem
+                IG2 = reformist_communist
                 IG3 = socialists
                 INST = home_affairs
                 MOD = bpm_home_affairs_pseudoleft_modifier
@@ -714,13 +715,13 @@ bpm_reload_institution_modifiers_home_affairs = {
                     owner = { has_law = law_type:law_guaranteed_liberties }
                 }
                 bpm_reload_modifier_inst_singlet = {
-                    IG1 = agrarian_populists
+                    IG1 = ecologist
                     INST = home_affairs
                     MOD = bpm_home_affairs_agpops_modifier
                 }
                bpm_reload_modifier_inst_doublet = {
-                    IG1 = anarchists
-                    IG2 = revolutionist_socialists
+                    IG1 = anarchist
+                    IG2 = orthodox_communist
                     INST = home_affairs
                     MOD = bpm_home_affairs_leftists_modifier
                 }
@@ -747,8 +748,8 @@ bpm_reload_institution_modifiers_home_affairs = {
                     MOD = bpm_home_affairs_neutraling_modifier
                 }
                 bpm_reload_modifier_inst_doublet = {
-                    IG1 = fascists
-                    IG2 = reactionaries
+                    IG1 = fascist
+                    IG2 = reactionary
                     INST = home_affairs
                     MOD = bpm_home_affairs_reacs_modifier
                 }
@@ -792,20 +793,20 @@ bpm_reload_institution_modifiers_centralization = {
         }
         var:bpm_minister_of_centralization.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = centralization
                 MOD = bpm_centralization_agpops_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = conservatives
-                IG2 = reactionaries
+                IG1 = cons
+                IG2 = reactionary
                 INST = centralization
                 MOD = bpm_centralization_cons_modifier
             }
            bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = centralization
                 MOD = bpm_centralization_libs_modifier
             }
@@ -873,12 +874,12 @@ bpm_reload_institution_modifiers_culture = {
         }
         var:bpm_minister_of_culture.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = culture
                 MOD = bpm_culture_fash_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = reactionaries
+                IG1 = reactionary
                 IG2 = landowners
                 INST = culture
                 MOD = bpm_culture_reactionary_modifier
@@ -895,8 +896,8 @@ bpm_reload_institution_modifiers_culture = {
                     OR = {
                         is_interest_group_type = ig_conservatives
                         is_interest_group_type = ig_liberals
-                        is_interest_group_type = ig_market_liberals
-                        is_interest_group_type = ig_national_liberals
+                        is_interest_group_type = ig_classical_liberal
+                        is_interest_group_type = ig_neoliberal
                         is_interest_group_type = ig_radicals
                         is_interest_group_type = ig_reformist_socialists
                         is_interest_group_type = ig_industrialists
@@ -961,28 +962,28 @@ bpm_reload_institution_modifiers_health_system = {
         }
         var:bpm_minister_of_health_system.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = health_system
                 MOD = bpm_health_system_agpops_modifier
             }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = anarchists
+                IG1 = anarchist
                 INST = health_system
                 MOD = bpm_health_system_anarchists_modifier
             }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = health_system
                 MOD = bpm_health_system_neutralidg_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = radicals
-                IG2 = reformist_socialists
+                IG1 = socdem
+                IG2 = reformist_communist
                 INST = health_system
                 MOD = bpm_health_system_lefts_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 IG2 = socialists
                 INST = health_system
                 MOD = bpm_health_system_commies_modifier
@@ -1058,37 +1059,37 @@ bpm_reload_institution_modifiers_suffrage = {
         }
         var:bpm_minister_of_suffrage.interest_group = {
            bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = suffrage
                 MOD = bpm_suffrage_agpops_modifier
             }
            bpm_reload_modifier_inst_singlet = {
-                IG1 = anarchists
+                IG1 = anarchist
                 INST = suffrage
                 MOD = bpm_suffrage_anarchists_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = conservatives
-                IG2 = reactionaries
+                IG1 = cons
+                IG2 = reactionary
                 INST = suffrage
                 MOD = bpm_suffrage_cons_modifier
             }
            bpm_reload_modifier_inst_quartet = {
-                IG1 = fascists
-                IG2 = liberals
-                IG3 = market_liberals
-                IG4 = national_liberals
+                IG1 = fascist
+                IG2 = liberal
+                IG3 = classical_liberal
+                IG4 = neoliberal
                 INST = suffrage
                 MOD = bpm_suffrage_neutralidg_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = radicals
-                IG2 = reformist_socialists
+                IG1 = socdem
+                IG2 = reformist_communist
                 INST = suffrage
                 MOD = bpm_suffrage_lefts_modifier
             }
            bpm_reload_modifier_inst_doublet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 IG2 = socialists
                 INST = suffrage
                 MOD = bpm_suffrage_commies_modifier
@@ -1159,49 +1160,49 @@ bpm_reload_institution_modifiers_diplomacy = {
         }
         var:bpm_minister_of_diplomacy.interest_group = {
         bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = diplomacy
                 MOD = bpm_diplomacy_agpops_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = anarchists
+                IG1 = anarchist
                 INST = diplomacy
                 MOD = bpm_diplomacy_anarchists_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = conservatives
+                IG1 = cons
                 INST = diplomacy
                 MOD = bpm_diplomacy_cons_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = diplomacy
                 MOD = bpm_diplomacy_fash_modifier
             }
         bpm_reload_modifier_inst_doublet = {
-                IG1 = liberals
-                IG2 = radicals
+                IG1 = liberal
+                IG2 = socdem
                 INST = diplomacy
                 MOD = bpm_diplomacy_libs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = market_liberals
+                IG1 = classical_liberal
                 INST = diplomacy
                 MOD = bpm_diplomacy_marlibs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = national_liberals
+                IG1 = neoliberal
                 INST = diplomacy
                 MOD = bpm_diplomacy_natlibs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = reactionaries
+                IG1 = reactionary
                 INST = diplomacy
                 MOD = bpm_diplomacy_reacs_modifier
             }
         bpm_reload_modifier_inst_triplet = {
-                IG1 = reformist_socialists
-                IG2 = revolutionist_socialists
+                IG1 = reformist_communist
+                IG2 = orthodox_communist
                 IG3 = socialists
                 INST = diplomacy
                 MOD = bpm_diplomacy_socs_modifier
@@ -1273,44 +1274,44 @@ bpm_reload_institution_modifiers_economy_noncr = {
         }
         var:bpm_minister_of_economy.interest_group = {
         bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = economy
                 MOD = bpm_economy_agpops_modifier
             }
         bpm_reload_modifier_inst_doublet = {
-                IG1 = conservatives
-                IG2 = reactionaries
+                IG1 = cons
+                IG2 = reactionary
                 INST = economy
                 MOD = bpm_economy_cons_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = economy
                 MOD = bpm_economy_fash_modifier
             }
         bpm_reload_modifier_inst_doublet = {
-                IG1 = liberals
-                IG2 = national_liberals
+                IG1 = liberal
+                IG2 = neoliberal
                 INST = economy
                 MOD = bpm_economy_libs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = market_liberals
+                IG1 = classical_liberal
                 INST = economy
                 MOD = bpm_economy_marlibs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = radicals
+                IG1 = socdem
                 INST = economy
                 MOD = bpm_economy_radicals_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = reformist_socialists
+                IG1 = reformist_communist
                 INST = economy
                 MOD = bpm_economy_reformists_modifier
             }
         bpm_reload_modifier_inst_doublet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 IG2 = socialists
                 INST = economy
                 MOD = bpm_economy_commies_modifier
@@ -1390,49 +1391,49 @@ bpm_reload_institution_modifiers_economy_cr = {
         }
         var:bpm_minister_of_economy.interest_group = {
         bpm_reload_modifier_inst_singlet = {
-                IG1 = agrarian_populists
+                IG1 = ecologist
                 INST = economy
                 MOD = bpm_economy_cr_agpops_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = anarchists
+                IG1 = anarchist
                 INST = economy
                 MOD = bpm_economy_cr_anarchist_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = conservatives
+                IG1 = cons
                 INST = economy
                 MOD = bpm_economy_cr_cons_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = fascists
+                IG1 = fascist
                 INST = economy
                 MOD = bpm_economy_cr_fash_modifier
             }
         bpm_reload_modifier_inst_triplet = {
-                IG1 = liberals
-                IG2 = market_liberals
-                IG3 = national_liberals
+                IG1 = liberal
+                IG2 = classical_liberal
+                IG3 = neoliberal
                 INST = economy
                 MOD = bpm_economy_cr_libs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = radicals
+                IG1 = socdem
                 INST = economy
                 MOD = bpm_economy_cr_radicals_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = reactionaries
+                IG1 = reactionary
                 INST = economy
                 MOD = bpm_economy_cr_reacs_modifier
             }
         bpm_reload_modifier_inst_singlet = {
-                IG1 = reformist_socialists
+                IG1 = reformist_communist
                 INST = economy
                 MOD = bpm_economy_cr_reformists_modifier
             }
         bpm_reload_modifier_inst_doublet = {
-                IG1 = revolutionist_socialists
+                IG1 = orthodox_communist
                 IG2 = socialists
                 INST = economy
                 MOD = bpm_economy_cr_commies_modifier

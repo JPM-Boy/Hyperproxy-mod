@@ -182,7 +182,7 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_agrarian_populists
+						 is_interest_group_type = ig_ecologist
 				  }
 			   }
 			}
@@ -193,7 +193,7 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_anarchists
+						 is_interest_group_type = ig_anarchist
 				  }
 			   }
 			}
@@ -204,8 +204,8 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_conservatives
-						 is_interest_group_type = ig_reactionaries
+						 is_interest_group_type = ig_cons
+						 is_interest_group_type = ig_reactionary
 				  }
 			   }
 			}
@@ -216,7 +216,7 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_fascists
+						 is_interest_group_type = ig_fascist
 				  }
 			   }
 			}
@@ -227,9 +227,9 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_liberals
-						 is_interest_group_type = ig_market_liberals
-						 is_interest_group_type = ig_national_liberals
+						 is_interest_group_type = ig_liberal
+						 is_interest_group_type = ig_classical_liberal
+						 is_interest_group_type = ig_neoliberal
 				  }
 			   }
 			}
@@ -240,8 +240,8 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_radicals
-						 is_interest_group_type = ig_reformist_socialists
+						 is_interest_group_type = ig_socdem
+						 is_interest_group_type = ig_reformist_communist
 				  }
 			   }
 			}
@@ -252,7 +252,7 @@ bpm_minister_of_schools_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_revolutionist_socialists
+						 is_interest_group_type = ig_orthodox_communist
 						 is_interest_group_type = ig_socialists
 				  }
 			   }
@@ -356,8 +356,8 @@ bpm_minister_of_colonial_affairs_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_conservatives
-						 is_interest_group_type = ig_reactionaries
+						 is_interest_group_type = ig_cons
+						 is_interest_group_type = ig_reactionary
 				  }
 			   }
 			}
@@ -368,7 +368,7 @@ bpm_minister_of_colonial_affairs_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_fascists
+						 is_interest_group_type = ig_fascist
 				  }
 			   }
 			}
@@ -379,9 +379,9 @@ bpm_minister_of_colonial_affairs_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_liberals
-						 is_interest_group_type = ig_market_liberals
-						 is_interest_group_type = ig_national_liberals
+						 is_interest_group_type = ig_liberal
+						 is_interest_group_type = ig_classical_liberal
+						 is_interest_group_type = ig_neoliberal
 				  }
 			   }
 			}
@@ -392,8 +392,8 @@ bpm_minister_of_colonial_affairs_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_reformist_socialists
-						 is_interest_group_type = ig_radicals
+						 is_interest_group_type = ig_reformist_communist
+						 is_interest_group_type = ig_socdem
 				  }
 			   }
 			}
@@ -463,8 +463,8 @@ bpm_minister_of_social_security_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_agrarian_populists
-						 is_interest_group_type = ig_anarchists
+						 is_interest_group_type = ig_ecologist
+						 is_interest_group_type = ig_anarchist
 				  }
 			   }
 			}
@@ -475,7 +475,7 @@ bpm_minister_of_social_security_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_conservatives
+						 is_interest_group_type = ig_cons
 				  }
 			   }
 			}
@@ -486,9 +486,9 @@ bpm_minister_of_social_security_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_liberals
-						 is_interest_group_type = ig_market_liberals
-						 is_interest_group_type = ig_national_liberals
+						 is_interest_group_type = ig_liberal
+						 is_interest_group_type = ig_classical_liberal
+						 is_interest_group_type = ig_neoliberal
 				  }
 			   }
 			}
@@ -499,8 +499,8 @@ bpm_minister_of_social_security_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_radicals
-						 is_interest_group_type = ig_reformist_socialists
+						 is_interest_group_type = ig_socdem
+						 is_interest_group_type = ig_reformist_communist
 				  }
 			   }
 			}
@@ -511,7 +511,7 @@ bpm_minister_of_social_security_modifier = {
 		trigger = {
 			interest_group = {
 				OR = {
-						 is_interest_group_type = ig_revolutionist_socialists
+						 is_interest_group_type = ig_orthodox_communist
 						 is_interest_group_type = ig_socialists
 				  }
 			   }
@@ -596,7 +596,7 @@ bpm_minister_of_police_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -607,8 +607,8 @@ bpm_minister_of_police_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -619,7 +619,7 @@ bpm_minister_of_police_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
+                    is_interest_group_type = ig_fascist
                 }
             }
         }
@@ -630,9 +630,9 @@ bpm_minister_of_police_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -643,8 +643,8 @@ bpm_minister_of_police_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -656,7 +656,7 @@ bpm_minister_of_police_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_orthodox_communist
                 }
             }
         }
@@ -760,7 +760,7 @@ bpm_minister_of_workplace_safety_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -771,10 +771,10 @@ bpm_minister_of_workplace_safety_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -785,9 +785,9 @@ bpm_minister_of_workplace_safety_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_anarchists
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_anarchist
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -799,7 +799,7 @@ bpm_minister_of_workplace_safety_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_orthodox_communist
                 }
             }
         }
@@ -851,7 +851,7 @@ bpm_minister_of_home_affairs_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -862,8 +862,8 @@ bpm_minister_of_home_affairs_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_anarchists
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_anarchist
+                    is_interest_group_type = ig_orthodox_communist
                 }
                 owner = { has_law = law_type:law_guaranteed_liberties }
             }
@@ -875,7 +875,7 @@ bpm_minister_of_home_affairs_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
+                    is_interest_group_type = ig_cons
                 }
             }
         }
@@ -886,8 +886,8 @@ bpm_minister_of_home_affairs_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_fascist
+                    is_interest_group_type = ig_reactionary
                 }
                 owner = { NOT = { has_law = law_type:law_guaranteed_liberties } } 
             }
@@ -899,9 +899,9 @@ bpm_minister_of_home_affairs_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -912,8 +912,8 @@ bpm_minister_of_home_affairs_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -999,7 +999,7 @@ bpm_minister_of_centralization_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -1010,8 +1010,8 @@ bpm_minister_of_centralization_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -1022,9 +1022,9 @@ bpm_minister_of_centralization_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -1035,10 +1035,10 @@ bpm_minister_of_centralization_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_fascist
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -1073,7 +1073,7 @@ bpm_minister_of_culture_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
+                    is_interest_group_type = ig_fascist
                 }
             }
         }
@@ -1097,12 +1097,12 @@ bpm_minister_of_culture_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
                     is_interest_group_type = ig_industrialists
                     is_interest_group_type = ig_intelligentsia
                 }
@@ -1115,9 +1115,9 @@ bpm_minister_of_culture_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
-                    is_interest_group_type = ig_anarchists
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_ecologist
+                    is_interest_group_type = ig_anarchist
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                     is_interest_group_type = ig_rural_folk
                     is_interest_group_type = ig_trade_unions
@@ -1131,7 +1131,7 @@ bpm_minister_of_culture_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_reactionary
                     is_interest_group_type = ig_landowners
                 }
             }
@@ -1149,7 +1149,7 @@ bpm_minister_of_health_system_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -1160,7 +1160,7 @@ bpm_minister_of_health_system_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_anarchists
+                    is_interest_group_type = ig_anarchist
                 }
             }
         }
@@ -1171,11 +1171,11 @@ bpm_minister_of_health_system_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -1186,8 +1186,8 @@ bpm_minister_of_health_system_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
                 }
             }
         }
@@ -1198,7 +1198,7 @@ bpm_minister_of_health_system_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -1293,7 +1293,7 @@ bpm_minister_of_suffrage_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -1304,7 +1304,7 @@ bpm_minister_of_suffrage_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_anarchists
+                    is_interest_group_type = ig_anarchist
                 }
             }
         }
@@ -1315,8 +1315,8 @@ bpm_minister_of_suffrage_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -1327,10 +1327,10 @@ bpm_minister_of_suffrage_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_fascist
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -1341,8 +1341,8 @@ bpm_minister_of_suffrage_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_radicals
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_socdem
+                    is_interest_group_type = ig_reformist_communist
                 }
             }
         }
@@ -1353,7 +1353,7 @@ bpm_minister_of_suffrage_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -1438,7 +1438,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_anarchists
+                    is_interest_group_type = ig_anarchist
                 }
             }
         }
@@ -1449,8 +1449,8 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_reformist_socialists
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_reformist_communist
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -1462,7 +1462,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -1473,8 +1473,8 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_radicals
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_socdem
                 }
             }
         }
@@ -1485,7 +1485,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -1496,7 +1496,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_market_liberals
+                    is_interest_group_type = ig_classical_liberal
                 }
             }
         }
@@ -1507,7 +1507,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
+                    is_interest_group_type = ig_cons
                 }
             }
         }
@@ -1518,7 +1518,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -1529,7 +1529,7 @@ bpm_minister_of_diplomacy_modifier = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
+                    is_interest_group_type = ig_fascist
                 }
             }
         }
@@ -1631,7 +1631,7 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -1662,8 +1662,8 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_cons
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -1674,7 +1674,7 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
+                    is_interest_group_type = ig_fascist
                 }
             }
         }
@@ -1685,8 +1685,8 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -1697,7 +1697,7 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_market_liberals
+                    is_interest_group_type = ig_classical_liberal
                 }
             }
         }
@@ -1708,7 +1708,7 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_radicals
+                    is_interest_group_type = ig_socdem
                 }
             }
         }
@@ -1719,7 +1719,7 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_reformist_communist
                 }
             }
         }
@@ -1730,7 +1730,7 @@ bpm_minister_of_economy_modifier_noncr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                 }
             }
@@ -1813,7 +1813,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_agrarian_populists
+                    is_interest_group_type = ig_ecologist
                 }
             }
         }
@@ -1824,7 +1824,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_conservatives
+                    is_interest_group_type = ig_cons
                 }
             }
         }
@@ -1835,7 +1835,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_anarchists
+                    is_interest_group_type = ig_anarchist
                 }
             }
         }
@@ -1846,7 +1846,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_fascists
+                    is_interest_group_type = ig_fascist
                 }
             }
         }
@@ -1857,9 +1857,9 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_liberals
-                    is_interest_group_type = ig_market_liberals
-                    is_interest_group_type = ig_national_liberals
+                    is_interest_group_type = ig_liberal
+                    is_interest_group_type = ig_classical_liberal
+                    is_interest_group_type = ig_neoliberal
                 }
             }
         }
@@ -1870,7 +1870,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_radicals
+                    is_interest_group_type = ig_socdem
                 }
             }
         }
@@ -1881,7 +1881,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_reactionaries
+                    is_interest_group_type = ig_reactionary
                 }
             }
         }
@@ -1892,7 +1892,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_reformist_socialists
+                    is_interest_group_type = ig_reformist_communist
                 }
             }
         }
@@ -1903,7 +1903,7 @@ bpm_minister_of_economy_modifier_cr = {
         trigger = {
             interest_group = {
                 OR = {
-                    is_interest_group_type = ig_revolutionist_socialists
+                    is_interest_group_type = ig_orthodox_communist
                     is_interest_group_type = ig_socialists
                 }
             }

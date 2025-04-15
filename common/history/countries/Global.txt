@@ -1,6 +1,14 @@
 ﻿COUNTRIES = {
 	every_country = {
-		effect_starting_technology_tier_1_tech = yes
 		start_parliamentary = yes
+		if = {
+			limit = {
+				always = yes
+			}
+			starting_technology_non_western = yes
+		}
+		else = {
+			starting_technology_western = yes
+		}
 	}
 }

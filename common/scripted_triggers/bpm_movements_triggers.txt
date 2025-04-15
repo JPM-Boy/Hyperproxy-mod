@@ -39,8 +39,8 @@ bpm_movement_supports_enacting_current_law = {
         }
     }
 }
-hpx_is_pre_modern = {
-    NOT = { has_technology_researched = mass_media }
+hpx_is_non_western = {
+    NOT = { has_technology_researched = post_modernism }
 }
 bpm_is_probably_pre_industrial = { 
     OR = { 

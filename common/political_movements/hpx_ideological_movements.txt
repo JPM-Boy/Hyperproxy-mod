@@ -1587,6 +1587,8 @@ hpx_movement_environmental = {
 	creation_trigger = {
 		NOT = { is_country_type = decentralized }
 		has_technology_researched = modern_ecology
+		hpx_interest_group_is_activated_trade_unions = yes
+		hpx_interest_group_is_activated_industrialists = yes
 	}
 	creation_weight = {
 		value = 500
@@ -1877,6 +1879,7 @@ hpx_movement_neoliberal = {
 	creation_trigger = {
 		NOT = { is_country_type = decentralized }
 		has_technology_researched = modern_business_structure
+		hpx_interest_group_is_activated_liberal = yes
 	}
 	creation_weight = {
 		value = 10000

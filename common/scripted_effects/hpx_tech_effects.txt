@@ -1,0 +1,44 @@
+starting_technology_western = {
+    # Economic
+    add_technology_researched = enclosure
+    add_technology_researched = manufacturies
+    add_technology_researched = steelworking
+    add_technology_researched = shaft_mining
+    add_technology_researched = distillation
+    add_technology_researched = prospecting
+
+    # Military
+    add_technology_researched = radar
+    add_technology_researched = rocketry
+    add_technology_researched = mechanized_warfare
+
+    # Cultural
+    add_technology_researched = franchises
+    add_technology_researched = mass_media
+    add_technology_researched = globalization
+    add_technology_researched = conglomerates
+    add_technology_researched = tourism
+    add_technology_researched = post_modernism
+    add_technology_researched = radio_astronomy
+    add_technology_researched = modern_sports
+}
+
+starting_technology_non_western = {
+    # Economic
+    add_technology_researched = enclosure
+    add_technology_researched = manufacturies
+    add_technology_researched = steelworking
+    add_technology_researched = shaft_mining
+    add_technology_researched = distillation
+    add_technology_researched = prospecting
+
+    # Military
+    add_technology_researched = radar
+    add_technology_researched = rocketry
+    add_technology_researched = mechanized_warfare
+
+    # Cultural
+    add_technology_researched = franchises
+    add_technology_researched = mass_media
+    add_technology_researched = globalization
+}

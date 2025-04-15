@@ -47,7 +47,7 @@ hpx_activate_interest_group_security = {
 	if = {
 		limit = {
 			OR = {
-				hpx_is_pre_modern = no
+				hpx_is_non_western = no
 				this = owner.ruler.interest_group
 			}
 		}
@@ -70,7 +70,7 @@ hpx_activate_interest_group_anarchist_and_new_left = {
 	if = {
 		limit = {
 			OR = {
-				hpx_is_pre_modern = no
+				hpx_is_non_western = no
 				this = owner.ruler.interest_group
 			}
 		}
@@ -94,7 +94,7 @@ hpx_activate_interest_group_revisionist = {
 	if = {
 		limit = {
 			OR = {
-				hpx_is_pre_modern = no
+				hpx_is_non_western = no
 				this = owner.ruler.interest_group
 			}
 		}
@@ -119,7 +119,7 @@ hpx_activate_interest_group_trade_unions_and_industrialists = {
 	if = {
 		limit = {
 			OR = {
-				hpx_is_pre_modern = no
+				hpx_is_non_western = no
 				this = owner.ruler.interest_group
 			}
 		}
@@ -145,7 +145,7 @@ hpx_activate_interest_group_liberal_and_academia = {
 	if = {
 		limit = {
 			OR = {
-				hpx_is_pre_modern = no
+				hpx_is_non_western = no
 				this = owner.ruler.interest_group
 			}
 		}

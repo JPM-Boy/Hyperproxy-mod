@@ -55,13 +55,13 @@
 			}
 			add = {
 				desc = "URBAN_POP"
-				value = 20
+				value = 4
 			}
 			if = {
 				limit = { is_employed = no }
 				add = {
 					desc = "URBAN_UNEMPLOYED"
-					value = 100
+					value = 5
 				}
 			}
 		}
@@ -76,12 +76,12 @@
 			}
 			add = {
 				desc = "POP_PROLETARIAT"
-				value = 50
+				value = 20
 			}
 			add = {
 				desc = "POP_EDUCATED_PROLETARIAT"
 				value = literacy_rate
-				multiply = 20
+				multiply = 10
 			}
 		}
 
@@ -95,7 +95,7 @@
 					}
 				}
 				value = literacy_rate
-				multiply = 20
+				multiply = 10
 			}
 		}	
 

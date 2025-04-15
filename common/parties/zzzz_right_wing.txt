@@ -162,6 +162,15 @@ rightwing_party = {
 		}
 		if = { # conservatives love conservativism
 			limit = {
+				is_interest_group_type = ig_neocon
+			}
+			add = {
+				value = 15
+				desc = "bpm_from_neocon_ig"
+			}
+		}
+		if = { # conservatives love conservativism
+			limit = {
 				bpm_ig_is_moderate_conservative = yes
 				bpm_ig_is_liberal_conservative = no
 			}

@@ -334,6 +334,17 @@ bpm_ig_is_left_wing = {
 	}
 }
 
+hpx_ig_is_left_wing_in_liberal_country = {
+	custom_tooltip = {
+		text = "tooltip_hpx_ig_is_left_wing_in_liberal_country"
+		OR = {
+			is_interest_group_type = ig_socdem
+			bpm_ig_is_labor = yes
+		}
+		owner = {NOT = { has_law = law_type:law_council_republic }}
+	}
+}
+
 bpm_ig_is_pro_public_welfare = {
 	custom_tooltip = {
 		text = "tooltip_bpm_ig_is_pro_welfare"

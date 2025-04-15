@@ -240,6 +240,21 @@ centre_right_party = {
 				desc = "bpm_from_liberal_coalition"
 			}
 		}
+		if = {
+			limit = {
+				is_interest_group_type = ig_neocon
+				owner = {
+					any_interest_group = {
+						is_member_of_party = owner.py:centre_right_party
+						is_interest_group_type = ig_neoliberal
+					}
+				}
+			}
+			add = {
+				value = -20
+				desc = "from_neoliberal_neocon"
+			}
+		}
 		if = { # against hereditary bureacrats
 			limit = {
 				law_stance = {

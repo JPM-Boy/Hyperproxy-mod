@@ -224,12 +224,6 @@ bpm_cabinet_type_name = {
 	}
 	text = {
 		trigger = {
-			bpm_shogunate_trigger = yes
-		}
-		localization_key = bpm_cabinet_name_shogunate
-	}
-	text = {
-		trigger = {
 			always = no
 		}
 		fallback = yes

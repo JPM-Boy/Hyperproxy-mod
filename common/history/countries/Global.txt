@@ -1,8 +1,5 @@
 ﻿COUNTRIES = {
 	every_country = {
-		limit = {
-			NOT = {c:MEX ?= this}
-		}
 		effect_starting_technology_tier_1_tech = yes
 		start_parliamentary = yes
 	}

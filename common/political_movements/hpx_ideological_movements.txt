@@ -12,12 +12,19 @@ hpx_movement_liberal = {
 
 	creation_trigger = {
 		NOT = { is_country_type = decentralized }
+		hpx_interest_group_is_activated_neoliberal = no
+		hpx_interest_group_is_activated_neocon = no
 	}
 	creation_weight = {
 		value = 10000
 	}
 	on_created = {
 		add_movement_enthusiasm_modifier = yes
+	}
+
+	disband_trigger = {
+		hpx_interest_group_is_activated_neoliberal = yes
+		hpx_interest_group_is_activated_neocon = yes
 	}
 
 	character_support_trigger = {
@@ -330,6 +337,7 @@ hpx_movement_liberal = {
 	revolution = {
 		possible = {
 			political_movement_support >= 0.15
+			owner = {NOT = {has_law = law_type:law_council_republic}}
 		}
 
 		weight = {
@@ -751,9 +759,8 @@ hpx_movement_counterculture = {
 
 	can_pressure_interest_group = {
 		OR = {
-			bpm_ig_is_left_wing = yes
-			bpm_ig_is_radical_left = yes
-
+			bpm_ig_is_liberal = yes
+			hpx_ig_is_left_wing_in_liberal_country = yes
 		}
 	}
 

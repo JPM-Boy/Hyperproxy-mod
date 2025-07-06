@@ -1,0 +1,42 @@
+{
+  "name" : "Hyperproxy",
+  "id" : "",
+  "version" : "0.8.0",
+  "supported_game_version" : "1.8.*",
+  "picture" : "thumbnail.png",
+  "short_description" : "",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true,
+    "replace_paths" : [
+      "common/history/pops",
+      "common/history/countries",
+      "common/history/characters",
+      "common/history/diplomacy",
+      "common/interest_groups",
+      "common/country_definitions",
+      "common/power_blocs",
+      "common/history/states",
+      "common/history/population",
+      "common/country_formation",
+      "common/history/military_formations",
+      "common/history/diplomatic_plays",
+      "common/history/global",
+      "common/history/military_deployments",
+      "events",
+      "common/journal_entries",
+      "common/interest_groups",
+      "common/parties",
+      "common/laws",
+      "common/political_movements",
+      "common/dynamic_country_names",
+      "common/dynamic_country_map_colors",
+      "common/decisions",
+      "common/objectives",
+      "common/objective_subgoals",
+      "common/achievements",
+      "common/technology/technologies"
+    ]
+  }
+}

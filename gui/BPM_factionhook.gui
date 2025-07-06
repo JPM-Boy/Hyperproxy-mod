@@ -5,10 +5,10 @@ widget = {
     #size = { 40 40 }
     #using = Animation_ShowHide_Quick
     
-    #visible = "[And( IsInGame, And( Not( IsPauseMenuShown ), Not( IsGameOverScreenShown )))]"
+    visible = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 	#parentanchor = top|right
 	#position = { -50 100 }
-	#size = { 640 %100 }
+	#size = { 640 100% }
 	#filter_mouse = all
 	#allow_outside = yes
 	#alwaystransparent = no

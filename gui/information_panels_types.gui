@@ -16,7 +16,7 @@ types information_panels_types
 		alpha = 0
 		
 		using = sidepanel_label_background
-
+		
 		button = {
 			block "onclick" {}
 			size = { 100% 100% }
@@ -45,7 +45,7 @@ types information_panels_types
 		alpha = 0
 		
 		using = sidepanel_label_background
-
+		
 		button = {
 			block "onclick" {}
 			size = { 100% 100% }

@@ -20,7 +20,7 @@ laws_police.1 = { # advance
 
 	duration = 3
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		has_law = law_type:law_no_police
@@ -71,17 +71,14 @@ laws_police.1 = { # advance
 		scope:assassination_target_ig = {
 			add_modifier = {
 				name = well_protected_ig
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		if = { 
 			limit = { 
 				is_player = yes
 			}
-			random_interest_group ={ 
-				limit = { 
-					bpm_ig_disagrees_to_neutral_enactment = yes
-				}
+			scope:they_dont_like_laws_ig ={ 
 				bpm_ig_increase_law_enactment_approval_medium = yes
 			}
 		}
@@ -100,17 +97,14 @@ laws_police.1 = { # advance
 		scope:they_dont_like_laws_ig = {
 			add_modifier = {
 				name = under_suspicion_ig
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		if = { 
 			limit = { 
 				is_player = yes
 			}
-			random_interest_group ={ 
-				limit = { 
-					bpm_ig_disagrees_to_neutral_enactment = yes
-				}
+			scope:they_dont_like_laws_ig ={ 
 				bpm_ig_increase_law_enactment_approval_medium = yes
 			}
 		}
@@ -142,7 +136,7 @@ laws_police.2 = { # debate
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		has_law = law_type:law_no_police
@@ -161,6 +155,18 @@ laws_police.2 = { # debate
 		currently_enacting_law = {
     		save_scope_as = current_law_scope
     	}
+		random_interest_group = { 
+			limit = { 
+				bpm_ig_disapproves_to_neutral_enactment = yes
+			}
+			save_scope_as = ig_disapprives_to_neutral
+		}
+		random_interest_group = { 
+			limit = { 
+				bpm_ig_approves_to_neutral_enactment = yes
+			}
+			save_scope_as = ig_apprives_to_neutral
+		}
     }
 
     cancellation_trigger = {
@@ -174,26 +180,17 @@ laws_police.2 = { # debate
 			limit = {is_player = yes}
 			random_list = { 
 				1 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_disapproves_to_neutral_enactment = yes
-						}
+					scope:ig_disapprives_to_neutral = { 
 						bpm_ig_increase_law_enactment_approval_medium = yes
 					}
 				}
 				3 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_disapproves_to_neutral_enactment = yes
-						}
+					scope:ig_disapprives_to_neutral = { 
 						bpm_ig_increase_law_enactment_approval_small = yes
 					}
 				}
 				3 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_neutral_to_approves_enactment = yes
-						}
+					scope:ig_apprives_to_neutral = { 
 						bpm_ig_decrease_law_enactment_approval_medium = yes
 					}
 				}
@@ -231,18 +228,12 @@ laws_police.2 = { # debate
 			}
 			random_list = { 
 				3 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_disapproves_to_neutral_enactment = yes
-						}
+					scope:ig_disapprives_to_neutral = { 
 						bpm_ig_increase_law_enactment_approval_medium = yes
 					}
 				}
 				1 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_neutral_to_approves_enactment = yes
-						}
+					scope:ig_apprives_to_neutral = { 
 						bpm_ig_decrease_law_enactment_approval_big = yes
 					}
 				}
@@ -273,18 +264,12 @@ laws_police.2 = { # debate
 			}
 			random_list = { 
 				2 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_disapproves_to_neutral_enactment = yes
-						}
+					scope:ig_disapprives_to_neutral = { 
 						bpm_ig_increase_law_enactment_approval_medium = yes
 					}
 				}
 				2 = { 
-					random_interest_group = { 
-						limit = { 
-							bpm_ig_neutral_to_approves_enactment = yes
-						}
+					scope:ig_apprives_to_neutral = { 
 						bpm_ig_decrease_law_enactment_approval_small = yes
 					}
 				}
@@ -327,12 +312,12 @@ laws_police.3 = { # stall event
 
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
 
-	cooldown = { months = normal_modifier_time }
+	cooldown = { days = normal_modifier_time }
 
 	trigger = {
 		any_political_movement = {
 			political_movement_support > 10
-			any_supporting_interest_group = {
+			any_influenced_interest_group = {
 				bpm_ig_is_marginal = no
 			}
 		}
@@ -388,7 +373,7 @@ laws_police.3 = { # stall event
 				bpm_ig_decrease_law_enactment_approval_medium = yes
 			}
 		}
-		else ={ 
+		else = { 
 			add_enactment_modifier = {
 				name = violently_suppressed_rally_bad_aftermath
 			}
@@ -396,7 +381,7 @@ laws_police.3 = { # stall event
 		scope:rally_movement = {
 			add_modifier = {
 				name = placated_rally_ig
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 	}
@@ -407,20 +392,20 @@ laws_police.3 = { # stall event
 		scope:rally_movement = {
 			add_modifier = {
 				name = suppressed_rally_ig
-				months = normal_modifier_time
+				days = normal_modifier_time
 			}
 		}
 		if = { 
 			limit = { is_player = yes }
 			random_list = { 
 				1 = { 
-					rally_movement_ig = { 
-						bpm_ig_decrease_law_enactment_approval_big = yes
+					scope:rally_movement_ig = { 
+						bpm_ig_decrease_law_enactment_approval_medium = yes
 					}
 				}
 				1 = { 
-					rally_movement_ig = { 
-						bpm_ig_increase_law_enactment_approval_big = yes
+					scope:rally_movement_ig = { 
+						bpm_ig_increase_law_enactment_approval_medium = yes
 					}
 				}
 			}
@@ -443,17 +428,17 @@ laws_police.3 = { # stall event
 	option = {
 		name = laws_police.3.c
 		if = { 
-			limit ={ 
+			limit = { 
 				is_player = yes
 			}
 			random_list = { 
 				1 = { 
-					rally_movement_ig = { 
+					scope:rally_movement_ig = { 
 						bpm_ig_decrease_law_enactment_approval_big = yes
 					}
 				}
 				3 = { 
-					rally_movement_ig = { 
+					scope:rally_movement_ig = { 
 						bpm_ig_increase_law_enactment_approval_big = yes
 					}
 				}

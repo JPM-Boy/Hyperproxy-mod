@@ -120,6 +120,13 @@ bpm_unaligned_clout_ing = {
 BPM_LIBERAL_STRENGTH = {
     value = 0.5
     add = owner.modifier:country_hpx_liberal_movement_support_add
+    if = {
+        limit = {
+            owner = { is_ai = yes }
+        }
+        # the AI will literally do nothing otherwise
+        multiply = 1.5
+    }
     min = 0
 }
 
@@ -136,6 +143,7 @@ BPM_SOCIALIST_STRENGTH = {
         limit = {
             has_global_variable = first_intl_chain_complete_var
         }
+        # the AI will literally do nothing otherwise
         multiply = 2
     }
     min = 0

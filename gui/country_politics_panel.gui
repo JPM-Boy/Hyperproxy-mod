@@ -12,12 +12,13 @@
 types country_panel_types
 {
 	type country_panel_politics_content = flowcontainer {
-		datacontext = "[CountryPanel.AccessCountry]"
+		datacontext = "[CountryPanel.GetCountry]"
 		using = default_list_position
 		direction = vertical
-		minimumsize = { @panel_width -1 }
-		maximumsize = { @panel_width -1 }
+		minimumsize = { @panel_width_plus_14 -1 }
+		maximumsize = { @panel_width_plus_14 -1 }
 		margin_top = 10	
+		max_update_rate = 8
 		
 		### TOP INFO
 		flowcontainer = {
@@ -93,7 +94,7 @@ types country_panel_types
 				
 					fixedgridbox = {
 						parentanchor = left
-						datamodel = "[CountryPanel.AccessCountry.AccessInterestGroupsInGovernment]"
+						datamodel = "[CountryPanel.GetCountry.AccessInterestGroupsInGovernment]"
 						datamodel_wrap = 4
 						addcolumn = 65
 						addrow = 65
@@ -167,7 +168,7 @@ types country_panel_types
 					
 					fixedgridbox = {
 						parentanchor = left
-						datamodel = "[CountryPanel.AccessCountry.AccessInterestGroupsInOpposition]"
+						datamodel = "[CountryPanel.GetCountry.AccessInterestGroupsInOpposition]"
 						datamodel_wrap = 4
 						addcolumn = 65
 						addrow = 65
@@ -210,8 +211,9 @@ types country_panel_types
 		### MOVEMENTS
 		default_header = {
 			parentanchor = hcenter
+
 			blockoverride "text" {
-				text = POLITICAL_MOVEMENTS
+				text = "POLITICAL_MOVEMENTS"
 			}
 		}	
 
@@ -221,32 +223,31 @@ types country_panel_types
 			blockoverride "visible" {
 				visible = "[IsDataModelEmpty(Country.AccessPoliticalMovements)]"
 			}
+
 			blockoverride "text" {
 				text = "NO_POLITICAL_MOVEMENTS"
 			}
 		}	
 
 		flowcontainer = {
-			direction = vertical
 			visible = "[Not(IsDataModelEmpty(Country.AccessPoliticalMovements))]"
+			direction = vertical
 			datamodel = "[Country.AccessPoliticalMovements]"
 			parentanchor = hcenter
 			spacing = 5		
 
 			item = {
-				country_panel_political_movement_item = {}
+				politics_panel_political_movement_item = {}
 			}
 		}
 		
 		widget = { size = { 10 10 } }
 
 		### POLITICAL LOBBIES
-
-		### MOVEMENTS
 		default_header = {
 			parentanchor = hcenter
 			blockoverride "text" {
-				text = POLITICAL_LOBBIES
+				text = "POLITICAL_LOBBIES"
 			}
 		}	
 
@@ -256,6 +257,7 @@ types country_panel_types
 			blockoverride "visible" {
 				visible = "[IsDataModelEmpty(Country.GetPoliticalLobbies)]"
 			}
+
 			blockoverride "text" {
 				text = "NO_POLITICAL_LOBBIES"
 			}
@@ -321,11 +323,12 @@ types country_panel_types
 		widget = { size = { 10 10 } }
 		
 		flowcontainer = {
+			parentanchor = hcenter
 			direction = horizontal
 			
 			textbox = {
 				size = { 180 25 }
-				align = center|nobaseline
+				align = hcenter|nobaseline
 				using = fontsize_large
 				fontsize_min = 14
 				elide = right
@@ -335,7 +338,7 @@ types country_panel_types
 			
 			textbox = {
 				size = { 180 25 }
-				align = center|nobaseline
+				align = hcenter|nobaseline
 				using = fontsize_large
 				fontsize_min = 14
 				elide = right
@@ -345,7 +348,7 @@ types country_panel_types
 			
 			textbox = {
 				size = { 180 25 }
-				align = center|nobaseline
+				align = hcenter|nobaseline
 				using = fontsize_large
 				fontsize_min = 14
 				elide = right
@@ -465,34 +468,35 @@ types country_panel_types
 			flipdirection = yes
 
 			item = {
-				flowcontainer = {
-					spacing = 10
-					minimumsize = { 270 100 }
-					maximumsize = { 270 100 }
-					margin = { 10 10 }
+				button = {
+					using = default_button
+					size = { 270 100 }
+					onclick = "[InformationPanelBar.OpenCompanyPanel(Company.Self)]"
 
 					tooltipwidget = {
 						FancyTooltip_Company = {}
 					}
 
-					background = {
-						using = entry_bg_simple
-					}
+					flowcontainer = {
+						parentanchor = center
+						spacing = 5
 
-					icon = {
-						size = { 80 80 }
-						texture = "[Company.GetCompanyType.GetIcon]"
+						icon = {
+							parentanchor = vcenter
+							size = { 80 80 }
+							texture = "[Company.GetCompanyType.GetIcon]"
+						}
 
-					}
-					textbox = {
-						text = "[Company.GetName]"
-						maximumsize = { 160 80 }
-						multiline = yes
-						parentanchor = vcenter
-						align = nobaseline
-						autoresize = yes
-						using = fontsize_large
-						fontsize_min = 12
+						textbox = {
+							parentanchor = vcenter
+							maximumsize = { 170 80 }
+							multiline = yes
+							align = nobaseline
+							autoresize = yes
+							using = fontsize_large
+							fontsize_min = 12
+							text = "[Company.GetNameNoFormatting]"
+						}
 					}
 				}
 			}
@@ -515,8 +519,7 @@ types country_panel_types
 			blockoverride "text" {
 				text = "POPULATION"
 			}
-		}	
-		
+		}		
 
 		### Pop statistics
 		flowcontainer = {
@@ -668,6 +671,20 @@ types country_panel_types
 			}
 		}
 
+
+		population_acceptance_status_chart_with_label_flowcontainer = {
+			margin_bottom = 10
+
+			blockoverride "distribution_label" {
+				text = "ACCEPTANCE_STATUS_DISTRIBUTION_LABEL_COUNTRY"
+			}
+
+			blockoverride "barchart_datamodel" {
+				datamodel = "[Country.GetAllAcceptanceStatusSegments]"
+			}
+		}
+
+
 		button = {
 			parentanchor = hcenter
 			using = default_button
@@ -682,17 +699,21 @@ types country_panel_types
 	### LAW ITEM WITH IMPOSE OPTION
 	type country_panel_law_item = button {
 		size = { 170 65 }
-		onclick = "[RightClickMenuManager.ShowForImposeLaw(Law.AccessSelf)]"
-		
 		using = default_button
 
-		tooltipwidget = {
-			FancyTooltip_Law = {
-				blockoverride "text_before" {
-   				visible = "[Not(GreaterThan_int32(Law.GetGroup.GetNumImposeOptions( Country.Self ), '(int32)0'))]"
-   				text =  "IMPOSE_LAW_NO_OPTIONS"
-   				margin_bottom = 15
-   			}
+		block "law_onclick" {
+			onclick = "[RightClickMenuManager.ShowForImposeLaw(Law.AccessSelf)]"
+		}
+
+		block "law_item_tooltip" {
+			tooltipwidget = {
+				FancyTooltip_LawWithCountryContext = {
+					blockoverride "text_before" {
+		   				visible = "[Not(GreaterThan_int32(Law.GetGroup.GetNumImposeOptions( Country.Self ), '(int32)0'))]"
+		   				margin_bottom = 15
+		   				text =  "IMPOSE_LAW_NO_OPTIONS"
+		   			}
+				}
 			}
 		}
 
@@ -703,27 +724,54 @@ types country_panel_types
 		
 			law_icon = {
 				size = { 40 40 }
-			}		
-			
-			textbox = {
+			}
+
+			vbox = {
 				layoutpolicy_horizontal = expanding
-				align = center|nobaseline
-				fontsize_min = 10
-				multiline = yes
-				
-				text = "[Law.GetNameNoFormatting]"
+				layoutpolicy_vertical = expanding
+
+				expand = {}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					align = nobaseline
+					minimumsize = { -1 20 }
+					using = fontsize_small
+					multiline = yes
+					text = "[Law.GetGroup.GetNameNoFormatting]"
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { -1 20 }
+					align = nobaseline
+					fontsize_min = 10
+					multiline = yes
+					text = "[Law.GetNameNoFormatting]"
+				}
+
+				expand = {}
 			}
 		}
+
+		block "law_highlighting" {}
 		
 		### Number of impose options available shows in the corner of the button
 		textbox = {
-			raw_text = "#bold [Law.GetGroup.GetNumImposeOptions( Country.Self )]#!"
+			block "impose_number_visibility" {
+				visible = "[GreaterThan_int32(Law.GetGroup.GetNumImposeOptions( Country.Self ), '(int32)0')]"
+			}
+
 			parentanchor = top|right
 			position = { -5 0 }
 			autoresize = yes
 			align = right|nobaseline
-			visible = "[GreaterThan_int32(Law.GetGroup.GetNumImposeOptions( Country.Self ), '(int32)0')]"
 			using = fontsize_small
+
+			block "impose_number_text" {
+				raw_text = "#b [Law.GetGroup.GetNumImposeOptions( Country.Self )|+]#!"
+			}
+
 			background = {
 				using = default_background
 				margin = { 8 4 }
@@ -736,7 +784,7 @@ types country_panel_types
 		size = { 170 65 }
 		
 		tooltipwidget = {
-			FancyTooltip_Law = {
+			FancyTooltip_LawWithCountryContext = {
 				blockoverride "text_before" {
    				text =  "LAW_BEING_ENACTED_DESC"
    				margin_bottom = 15
@@ -766,13 +814,31 @@ types country_panel_types
 				}
 			}
 			
-			textbox = {
+			vbox = {
 				layoutpolicy_horizontal = expanding
-				align = center|nobaseline
-				fontsize_min = 10
-				multiline = yes
-				
-				text = "[Law.GetNameNoFormatting]"
+				layoutpolicy_vertical = expanding
+
+				expand = {}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					align = nobaseline
+					minimumsize = { -1 20 }
+					using = fontsize_small
+					multiline = yes
+					text = "[Law.GetGroup.GetNameNoFormatting]"
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = { -1 20 }
+					align = nobaseline
+					fontsize_min = 10
+					multiline = yes
+					text = "[Law.GetNameNoFormatting]"
+				}
+
+				expand = {}
 			}
 		}
 
@@ -782,106 +848,6 @@ types country_panel_types
 
 		icon = {
 			using = highlighted_square_selection
-		}
-
-	}
-	
-	### MOVEMENT ITEM
-	type country_panel_political_movement_item = widget {
-		size = { @panel_width_minus_10 55 }
-		
-		background = {		
-			using = dark_area 	
-		}
-		
-		hbox = {
-			layoutpolicy_horizontal = expanding
-			margin = { 5 0 }
-			spacing = 5
-			
-			law_icon = {
-				datacontext = "[PoliticalMovement.GetLaw]"
-				size = { 50 50 }
-			} 
-		
-			vbox = {
-				layoutpolicy_horizontal = expanding
-				spacing = 2
-				
-				textbox = {
-					layoutpolicy_horizontal = expanding
-					size = { 0 20 }
-					align = center|nobaseline
-					elide = right
-					fontsize_min = 12
-					
-					text = "[PoliticalMovement.GetName]"
-					
-					background = {
-						using = dark_area
-						alpha = 0.3
-						margin_bottom = 4
-						margin_top = 2
-						
-						modify_texture = {
-							texture = "gfx/interface/masks/fade_horizontal_center.dds"
-							blend_mode = alphamultiply
-						}
-					}
-				}
-				
-				hbox = {
-					layoutpolicy_horizontal = expanding
-					
-					hbox = {
-						layoutpolicy_horizontal = preferred
-						layoutpolicy_vertical = preferred
-						visible = "[Not(IsDataModelEmpty(PoliticalMovement.GetSupportingInterestGroups))]"
-						datamodel = "[PoliticalMovement.GetSupportingInterestGroups]"
-
-						item = {
-							ig_button = {
-								size = { 25 25 }
-								tooltip = "CLOUT_PIECHART"
-							}
-						}
-					}
-
-					textbox = {
-						layoutpolicy_horizontal = expanding
-						size = { 0 20 }
-						align = center|nobaseline
-						elide = right
-						fontsize_min = 12
-						
-						text = "POLITICAL_MOVEMENT_SUPPORT_WITH_LABEL"
-						tooltip = "POLITICAL_MOVEMENT_SUPPORT_TOOLTIP"
-					}
-
-					textbox = {
-						layoutpolicy_horizontal = expanding
-						size = { 0 20 }
-						align = center|nobaseline
-						elide = right
-						fontsize_min = 12
-						
-						visible = "[Not(PoliticalMovement.IsPlacated)]"
-						text = "POLITICAL_MOVEMENT_RADICALISM_WITH_LABEL"
-						tooltip = "POLITICAL_MOVEMENT_RADICALISM_TOOLTIP"
-					}
-
-					#textbox = {
-					#	layoutpolicy_horizontal = expanding
-					#	size = { 0 20 }
-					#	align = center|nobaseline
-					#	elide = right
-					#	fontsize_min = 12
-					#	
-					#	visible = "[PoliticalMovement.IsPlacated]"
-					#	text = "[concept_political_movement_placated]"
-					#}
-				}
-			}
 		}
 	}
 	

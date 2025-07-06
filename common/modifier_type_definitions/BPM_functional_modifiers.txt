@@ -98,7 +98,7 @@ country_law_enactment_ruler_veto_bypass = {
 country_base_law_enactment_support_add = {
 	decimals=1
 	color=good
-	gamed_data={
+	game_data={
 		ai_value=0
 	}
 }
@@ -288,14 +288,14 @@ country_bpm_forpol_minister_appointment_switches_law = {
 country_bpm_minimum_pro_country_lobby_amount = {
 	decimals=0
 	color=neutral
-	gamed_data={
+	game_data={
 		ai_value=0
 	}
 }
 country_bpm_minimum_anti_country_lobby_amount = {
 	decimals=0
 	color=neutral
-	gamed_data={
+	game_data={
 		ai_value=0
 	}
 }
@@ -327,7 +327,7 @@ interest_group_bpm_can_not_promise_cabinet_to_bool = { # If true, you can not sw
 country_base_law_enactment_support_add = {
 	decimals=1
 	color=good
-	gamed_data={
+	game_data={
 		ai_value=0
 	}
 }
@@ -400,7 +400,7 @@ country_law_enactment_ruler_veto_bypass = {
 country_base_law_enactment_support_add = {
 	decimals=1
 	color=good
-	gamed_data={
+	game_data={
 		ai_value=0
 	}
 }
@@ -729,4 +729,22 @@ country_hpx_liberal_movement_support_add = {
 	decimals=0
 	percent=yes
 	color=good
+}
+
+# Consciousness
+
+country_labor_consciousness_change_add = {
+	decimals=2
+	color=good
+}
+
+country_liberal_consciousness_change_add = {
+	decimals=2
+	color=good
+}
+
+country_bpm_labor_consciousness_target_mult = {
+	decimals = 0
+	percent = yes
+	color = good
 }

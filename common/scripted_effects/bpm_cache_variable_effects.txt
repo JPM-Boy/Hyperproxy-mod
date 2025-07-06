@@ -37,6 +37,17 @@ bpm_cache_country_variables_monthly_effect = {
 		}
 		set_variable = bpm_country_has_powerful_fascists_var
 	}
+	if = {
+		limit = {
+			owner = { NOT = { has_law = law_type:law_council_republic } }
+			OR = {
+				ig:ig_revolutionist_socialists ?= { is_powerful = yes }
+				ig:ig_anarchists ?= { is_powerful = yes }
+				ig:ig_reformist_socialists ?= { is_powerful = yes }
+			}
+		}
+		set_variable = bpm_country_has_powerful_socialists_var
+	}
 	# set_variable = {
 	# 	name = bpm_ig_attraction_to_reformists_from_stability_var
 	# 	value = ig_attraction_to_reformists_from_stability
@@ -334,7 +345,7 @@ bpm_cache_country_variables_half_yearly_effect = {
 	# 	limit = { 
 	# 		owner = {
 	# 			ig:ig_trade_unions = {
-	# 				is_marginal = no
+	# 				bpm_ig_is_marginal = no
 	# 			}
 	# 		}
 	# 	}
@@ -346,10 +357,10 @@ bpm_cache_country_variables_half_yearly_effect = {
 			owner = {
 				OR = {
 					ig:ig_trade_unions ?= { bpm_ig_is_popular = yes }
-					ig:ig_socialists ?= { is_marginal = no }
-					ig:ig_anarchists ?= { is_marginal = no }
-					ig:ig_revolutionist_socialists ?= { is_marginal = no }
-					ig:ig_reformist_socialists ?= { is_marginal = no }
+					ig:ig_socialists ?= { bpm_ig_is_marginal = no }
+					ig:ig_anarchists ?= { bpm_ig_is_marginal = no }
+					ig:ig_revolutionist_socialists ?= { bpm_ig_is_marginal = no }
+					ig:ig_reformist_socialists ?= { bpm_ig_is_marginal = no }
 				}
 			}
 		}

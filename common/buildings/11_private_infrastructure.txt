@@ -163,7 +163,7 @@ building_trade_center = {
 	city_type = city
 	levels_per_mesh = 10
 
-	lens = infrastructure
+	lens = development
 
 	icon = "gfx/interface/icons/building_icons/building_trade_center.dds"
 
@@ -172,9 +172,9 @@ building_trade_center = {
 		pmg_ownership_building_trade_center
 	}
 
-	buildable = no
-	expandable = no
-	downsizeable = no
+	buildable = yes
+	expandable = yes
+	downsizeable = yes
 	ownership_type = self
 	can_switch_owner = no
 
@@ -186,7 +186,7 @@ building_manor_house = {
 	city_type = farm
 	levels_per_mesh = 10
 
-	lens = infrastructure
+	lens = urban
 
 	icon = "gfx/interface/icons/building_icons/building_manor_houses.dds"
 
@@ -316,7 +316,7 @@ building_financial_district = {
 	city_type = city
 	levels_per_mesh = 10
 
-	lens = infrastructure
+	lens = urban
 
 	icon = "gfx/interface/icons/building_icons/building_financial_district.dds"
 
@@ -589,7 +589,7 @@ building_company_headquarter = {
 	city_type = city
 	levels_per_mesh = 10
 
-	lens = infrastructure
+	lens = urban
 
 	icon = "gfx/interface/icons/building_icons/building_company_hq.dds"
 

@@ -610,9 +610,9 @@ bg_arts = {
 }
 
 bg_power = {
-	category = development
+	category = infrastructure
 	
-	lens = infrastructure	
+	lens = development	
 
 	always_possible = yes
 	
@@ -637,13 +637,14 @@ bg_power = {
 bg_government = {
 	category = development
 
+	lens = development
+
 	always_possible = yes
 	
 	is_government_funded = yes
 	
 	economy_of_scale = yes
-	
-	lens = government
+
 	
 	urbanization = 20
 	infrastructure_usage_per_level = 1
@@ -662,7 +663,7 @@ bg_bureaucracy = {
 bg_trade = {
 	parent_group = bg_urban_facilities
 	
-	category = urban
+	category = development
 	
 	lens = trade
 
@@ -672,9 +673,9 @@ bg_trade = {
 	
 	always_self_owning = yes
 	
-	created_by_trade_routes = yes
+	created_by_trade_routes = no
 	
-	auto_place_buildings = yes
+	auto_place_buildings = no
 	
 	min_hiring_rate = 1.0
 	max_hiring_rate = 1.0
@@ -721,7 +722,7 @@ bg_owner_buildings = {
 	
 	min_productivity_to_hire = 10.0
 
-	category = urban
+	category = development
 
 	lens = trade
 
@@ -784,7 +785,7 @@ bg_construction = {
 
 	infrastructure_usage_per_level = 2
 
-	lens = government
+	lens = development
 
 	is_government_funded = yes
 	

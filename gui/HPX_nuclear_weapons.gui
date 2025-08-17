@@ -1,0 +1,16 @@
+types panel_military {
+	type nuclear_weapons_content = flowcontainer {
+		direction = vertical
+
+		#Title
+		textbox = {
+			margin = { 0 10 }
+			parentanchor = hcenter
+			autoresize = yes
+			text = "NUCLEAR_WEAPONS_TAB_TITLE"
+			default_format = "#title"
+		}
+
+		#section for count of nukes
+	}
+}
